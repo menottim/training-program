@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training Program — In-Season Multi-Sport Athlete</title>
+<style>
+  :root {
+    --primary: #1a1a2e;
+    --accent: #e94560;
+    --accent2: #0f3460;
+    --bg: #ffffff;
+    --bg-alt: #f8f9fa;
+    --border: #dee2e6;
+    --text: #212529;
+    --text-muted: #6c757d;
+    --success: #198754;
+    --warning: #fd7e14;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 3.5rem; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 2rem;
+    background: var(--bg);
+  }
+
+  /* Navigation */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-inner {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-inner::-webkit-scrollbar { display: none; }
+  .nav a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.6rem 0.75rem;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    transition: color 0.15s, background 0.15s;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+  }
+  .nav a:hover, .nav a:focus {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    border-bottom-color: var(--accent);
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 2rem;
+  }
+  .header h1 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+    margin-bottom: 0.25rem;
+  }
+  .header .subtitle {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+  .header .stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  .header .stat {
+    text-align: center;
+  }
+  .header .stat-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .header .stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+  }
+
+  /* Goals banner */
+  .goals {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .goal {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .goal:nth-child(1) { background: var(--accent); color: #fff; }
+  .goal:nth-child(2) { background: var(--accent2); color: #fff; }
+  .goal:nth-child(3) { background: var(--primary); color: #fff; }
+  .goal .priority {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* Section */
+  h2 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin: 2.5rem 0 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 1.05rem;
+    color: var(--accent2);
+    margin: 1.5rem 0 0.5rem;
+    page-break-after: avoid;
+  }
+
+  /* Week overview */
+  .week-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-bottom: 1.5rem;
+  }
+  .day-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .day-card .day-name {
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .day-card .day-type {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .day-card.game { background: #fff3f3; border-color: var(--accent); }
+  .day-card.game .day-type { background: var(--accent); color: #fff; }
+  .day-card.train { background: #f0f4ff; border-color: var(--accent2); }
+  .day-card.train .day-type { background: var(--accent2); color: #fff; }
+  .day-card.rest { background: var(--bg-alt); }
+  .day-card.rest .day-type { background: #e9ecef; color: var(--text-muted); }
+  .day-card .day-detail {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0 1.5rem;
+    font-size: 0.85rem;
+  }
+  thead th {
+    background: var(--primary);
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  thead th:first-child { border-radius: 6px 0 0 0; }
+  thead th:last-child { border-radius: 0 6px 0 0; }
+  tbody td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tbody tr:nth-child(even) { background: var(--bg-alt); }
+  tbody tr:last-child td:first-child { border-radius: 0 0 0 6px; }
+  tbody tr:last-child td:last-child { border-radius: 0 0 6px 0; }
+  td.exercise { font-weight: 600; }
+  td.exercise a {
+    color: var(--accent2);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent2);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  td.exercise a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .achilles-protocol a { color: var(--warning); border-bottom: 1px dotted var(--warning); text-decoration: none; }
+  .achilles-protocol a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  td.sets { white-space: nowrap; color: var(--accent2); font-weight: 600; }
+  td.notes { color: var(--text-muted); font-size: 0.8rem; }
+
+  /* Info boxes */
+  .info-box {
+    border-left: 4px solid var(--accent2);
+    background: #f0f4ff;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.85rem;
+  }
+  .info-box.warning {
+    border-left-color: var(--warning);
+    background: #fff8f0;
+  }
+  .info-box.success {
+    border-left-color: var(--success);
+    background: #f0fff4;
+  }
+  .info-box strong {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* Targets table */
+  .targets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  .target-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .target-card .lift-name {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+  .target-card .current {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  .target-card .arrow {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin: 0.25rem 0;
+  }
+  .target-card .target {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--success);
+  }
+  .target-card .ratio {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+  }
+
+  /* Nutrition grid */
+  .nutrition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1rem;
+  }
+  .nutrition-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-alt);
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  .nutrition-item .label { color: var(--text-muted); }
+  .nutrition-item .value { font-weight: 700; }
+
+  /* Signals table */
+  .signal-row {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+  .signal-row:last-child { border-bottom: none; }
+  .signal-trigger {
+    flex: 1;
+    font-weight: 600;
+    color: var(--warning);
+  }
+  .signal-action {
+    flex: 1.5;
+    color: var(--text-muted);
+  }
+
+  /* Phase tabs */
+  .phase {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    page-break-inside: avoid;
+  }
+  .phase-header {
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .phase-header .weeks {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    background: #e9ecef;
+    padding: 2px 10px;
+    border-radius: 12px;
+  }
+  .phase:nth-child(1) .phase-header { background: #e8f0fe; color: var(--accent2); }
+  .phase:nth-child(2) .phase-header { background: #fde8ec; color: var(--accent); }
+  .phase:nth-child(3) .phase-header { background: #e8f5e9; color: var(--success); }
+  .phase-body { padding: 1rem; }
+
+  /* Achilles section */
+  .achilles-protocol {
+    background: #fffde7;
+    border: 1px solid #fff9c4;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .achilles-protocol h4 {
+    color: var(--warning);
+    margin-bottom: 0.5rem;
+  }
+  .achilles-protocol ul {
+    margin-left: 1.25rem;
+    font-size: 0.85rem;
+  }
+  .achilles-protocol li { margin-bottom: 0.25rem; }
+
+  /* Deload */
+  .deload-box {
+    background: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .deload-box h4 { color: var(--success); margin-bottom: 0.5rem; }
+  .deload-box ul { margin-left: 1.25rem; font-size: 0.85rem; }
+  .deload-box li { margin-bottom: 0.25rem; }
+
+  /* Footer */
+  .footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  /* Activity Log */
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .dash-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  .dash-card .dash-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+  .dash-card .dash-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+  }
+  .dash-card .dash-sub {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  .dash-card.improving .dash-value { color: var(--success); }
+  .dash-card.warning .dash-value { color: var(--warning); }
+
+  /* Strength chart (pure CSS bar chart) */
+  .bar-chart {
+    margin: 1rem 0;
+    padding-right: 2rem;
+  }
+  .bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+  }
+  .bar-label {
+    width: 130px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 0.75rem;
+    flex-shrink: 0;
+  }
+  .bar-track {
+    flex: 1;
+    height: 22px;
+    background: #eee;
+    border-radius: 4px;
+    position: relative;
+    overflow: visible;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    transition: width 0.3s;
+    overflow: hidden;
+  }
+  .bar-target {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    width: 2px;
+    background: var(--text);
+    opacity: 0.5;
+    border-radius: 1px;
+  }
+  .bar-target-label {
+    position: absolute;
+    top: 3px;
+    right: -2.25rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  /* Activity log table */
+  .log-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    margin: 0.75rem 0;
+  }
+  .log-table thead th {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.5rem;
+  }
+  .log-table tbody td {
+    padding: 0.4rem 0.5rem;
+    vertical-align: top;
+  }
+  .log-table .tag {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .tag-game { background: #fde8ec; color: var(--accent); }
+  .tag-train { background: #e8f0fe; color: var(--accent2); }
+  .tag-recovery { background: #e9ecef; color: var(--text-muted); }
+  .tag-rest { background: #f5f5f5; color: #aaa; }
+
+  .empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border: 2px dashed var(--border);
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+
+  .week-summary {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    background: var(--bg-alt);
+  }
+  .week-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .week-summary-header h4 {
+    font-size: 0.85rem;
+    color: var(--primary);
+  }
+  .week-summary-header .week-tags {
+    display: flex;
+    gap: 0.25rem;
+  }
+  .week-mini-stat {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: #e8f0fe;
+    color: var(--accent2);
+  }
+
+  /* Print */
+  @media print {
+    .nav { display: none; }
+    body { padding: 0.5rem; padding-top: 0.5rem; font-size: 10pt; max-width: 100%; }
+    .header { padding: 1rem 0; }
+    h2 { margin-top: 1.5rem; }
+    .phase { page-break-inside: avoid; }
+    .week-grid { gap: 2px; }
+    .day-card { min-height: 60px; padding: 0.25rem; }
+    .targets-grid { page-break-inside: avoid; }
+    .info-box, .achilles-protocol, .deload-box { page-break-inside: avoid; }
+    table { page-break-inside: avoid; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top">Overview</a>
+    <a href="#week">Week</a>
+    <a href="#phases">Phases</a>
+    <a href="#targets">Targets</a>
+    <a href="#achilles">Achilles</a>
+    <a href="#recovery">Recovery</a>
+    <a href="#nutrition">Nutrition</a>
+    <a href="#deload">Deload</a>
+    <a href="#modify">Modify</a>
+    <a href="#tracker">Tracker</a>
+  </div>
+</nav>
+
+<div id="top" class="header">
+  <h1>In-Season Training Program</h1>
+  <p class="subtitle">Multi-Sport Athlete &middot; Perpetual In-Season &middot; Age 40</p>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">6'1" / 220</div>
+      <div class="stat-label">Height / Weight</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">~20%</div>
+      <div class="stat-label">Body Fat</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">3 Games/wk</div>
+      <div class="stat-label">BB Tue + BB &amp; Hockey Sun</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">3 Sessions/wk</div>
+      <div class="stat-label">Training Days</div>
+    </div>
+  </div>
+</div>
+
+<div class="goals">
+  <div class="goal"><span class="priority">Priority 1</span> Injury Prevention</div>
+  <div class="goal"><span class="priority">Priority 2</span> Strength &amp; Power</div>
+  <div class="goal"><span class="priority">Priority 3</span> Vertical / Above the Rim</div>
+</div>
+
+<!-- WEEKLY OVERVIEW -->
+<h2 id="week">&#128197; Weekly Overview</h2>
+<div class="week-grid">
+  <div class="day-card game">
+    <div class="day-name">Sun</div>
+    <div class="day-type">Game x2</div>
+    <div class="day-detail">Basketball AM<br>Hockey PM</div>
+  </div>
+  <div class="day-card rest">
+    <div class="day-name">Mon</div>
+    <div class="day-type">Recovery</div>
+    <div class="day-detail">Low-intensity cardio, foam roll, achilles protocol</div>
+  </div>
+  <div class="day-card game">
+    <div class="day-name">Tue</div>
+    <div class="day-type">Game</div>
+    <div class="day-detail">Optional AM prehab<br>Basketball PM</div>
+  </div>
+  <div class="day-card train">
+    <div class="day-name">Wed</div>
+    <div class="day-type">Train</div>
+    <div class="day-detail"><strong>Lower Heavy</strong><br>Deadlift, split squat, hamstrings</div>
+  </div>
+  <div class="day-card train">
+    <div class="day-name">Thu</div>
+    <div class="day-type">Train</div>
+    <div class="day-detail"><strong>Upper + Power</strong><br>Press, pull, med ball</div>
+  </div>
+  <div class="day-card train">
+    <div class="day-name">Fri</div>
+    <div class="day-type">Train</div>
+    <div class="day-detail"><strong>Lower Mod + Plyo</strong><br>Lighter, explosive</div>
+  </div>
+  <div class="day-card rest">
+    <div class="day-name">Sat</div>
+    <div class="day-type">Recovery</div>
+    <div class="day-detail">Mobility, activation, pre-game prep</div>
+  </div>
+</div>
+
+<div class="info-box">
+  <strong>Why Wed/Thu/Fri?</strong>
+  48+ hours between heavy training and games. Wednesday is furthest from all games. Friday is deliberately the lightest session (~36 hrs before Sunday AM).
+</div>
+
+<!-- PHASE 1 -->
+<h2 id="phases">&#9881;&#65039; Training Phases</h2>
+
+<div class="phase">
+  <div class="phase-header">
+    Phase 1: Foundation
+    <span class="weeks">Weeks 1–6</span>
+  </div>
+  <div class="phase-body">
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Rebuild your strength base. No plyometrics yet — tendons and connective tissue need preparation first. Focus on progressive overload with controlled tempos.</p>
+
+    <h3>Wednesday — Lower Body Strength (Heavy)</h3>
+    <table>
+      <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/GluteusMaximus/TBDeadlift" target="_blank">Trap Bar Deadlift</a></td><td class="sets">4 &times; 5</td><td class="notes">Start at 225 lbs, add 5 lbs/week</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Quadriceps/DBSingleLegSplitSquat" target="_blank">Bulgarian Split Squat</a></td><td class="sets">3 &times; 8/leg</td><td class="notes">DB in each hand, progress load weekly</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Hamstrings/BWHamstringRaise" target="_blank">Nordic Hamstring Curl</a></td><td class="sets">3 &times; 5</td><td class="notes">Eccentric focus, band assist if needed</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/GluteusMaximus/DBSingleLegStiffLegDeadlift" target="_blank">Single-Leg RDL</a></td><td class="sets">3 &times; 8/leg</td><td class="notes">DB, 3 sec eccentric</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Soleus/LVSeatedCalfRaise" target="_blank">Seated Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes">6RM load, 3s up / 3s down</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Thursday — Upper Body + Core + Power Intro</h3>
+    <table>
+      <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/PectoralSternal/DBBenchPress" target="_blank">DB Bench Press</a></td><td class="sets">4 &times; 6</td><td class="notes">Progress to barbell at 60 lb DBs</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/LatissimusDorsi/WtPullup" target="_blank">Weighted Pull-up</a> / <a href="https://exrx.net/WeightExercises/LatissimusDorsi/CBFrontPulldown" target="_blank">Lat Pulldown</a></td><td class="sets">4 &times; 6</td><td class="notes">Add weight when BW &times; 6 is easy</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/DeltoidAnterior/DBShoulderPress" target="_blank">DB Overhead Press</a></td><td class="sets">3 &times; 8</td><td class="notes">Standing, engages core</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/DeltoidPosterior/CBStandingRearDeltRowRope" target="_blank">Face Pulls</a></td><td class="sets">3 &times; 15</td><td class="notes">Shoulder health / prehab</td></tr>
+        <tr><td class="exercise"><a href="https://weighttraining.guide/exercises/cable-horizontal-pallof-press/" target="_blank">Pallof Press</a></td><td class="sets">3 &times; 10/side</td><td class="notes">Anti-rotation core stability</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/Plyometrics/MBSlamBounce" target="_blank">Med Ball Slam</a></td><td class="sets">3 &times; 6</td><td class="notes">Full hip extension, explosive intent</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Friday — Lower Moderate + Movement Quality</h3>
+    <table>
+      <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Kettlebell/KBGobletSquat" target="_blank">Goblet Squat</a></td><td class="sets">3 &times; 10</td><td class="notes">Full depth, controlled tempo</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/GluteusMaximus/BBHipThrust" target="_blank">Hip Thrust</a></td><td class="sets">3 &times; 10</td><td class="notes">Barbell, glute activation</td></tr>
+        <tr><td class="exercise">Lateral Band Walk</td><td class="sets">3 &times; 12/dir</td><td class="notes">Ankle &amp; knee stability</td></tr>
+        <tr><td class="exercise">Single-Leg Balance</td><td class="sets">2 &times; 30s/leg</td><td class="notes">Unstable surface, proprioception</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Gastrocnemius/BBStandingCalfRaise" target="_blank">Standing Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes">Heavy, slow tempo</td></tr>
+        <tr><td class="exercise">Banded Ankle Dorsiflexion</td><td class="sets">2 &times; 10/side</td><td class="notes">Ankle mobility</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    Phase 2: Strength-Power
+    <span class="weeks">Weeks 7–12</span>
+  </div>
+  <div class="phase-body">
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Introduce low-volume plyometrics. Continue building strength. Plyometric benefits taper after ~4 weeks, so we cycle them in blocks.</p>
+
+    <h3>Wednesday — Lower Body Strength (Heavy)</h3>
+    <table>
+      <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/GluteusMaximus/TBDeadlift" target="_blank">Trap Bar Deadlift</a></td><td class="sets">4 &times; 3–5</td><td class="notes">Work toward 315+</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Quadriceps/BBSquat" target="_blank">Back Squat</a> or <a href="https://exrx.net/WeightExercises/Quadriceps/BBFrontSquat" target="_blank">Front Squat</a></td><td class="sets">4 &times; 5</td><td class="notes">Rebuild squat pattern</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Hamstrings/BWHamstringRaise" target="_blank">Nordic Hamstring Curl</a></td><td class="sets">3 &times; 5</td><td class="notes">Unassisted by now</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Gastrocnemius/BWSingleLegCalfRaise" target="_blank">Single-Leg Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes">Loaded, slow tempo</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Thursday — Upper + Power</h3>
+    <table>
+      <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/PectoralSternal/BBBenchPress" target="_blank">Barbell Bench Press</a></td><td class="sets">4 &times; 5</td><td class="notes"></td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/LatissimusDorsi/WtPullup" target="_blank">Weighted Pull-up</a></td><td class="sets">4 &times; 5</td><td class="notes"></td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/OlympicLifts/PushPress" target="_blank">DB Push Press</a></td><td class="sets">3 &times; 6</td><td class="notes">Explosive leg drive into press</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/BackGeneral/DBLyingRow" target="_blank">Chest-Supported Row</a></td><td class="sets">3 &times; 8</td><td class="notes"></td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/Plyometrics/MBOverheadBackwardThrow" target="_blank">Med Ball Overhead Toss</a></td><td class="sets">3 &times; 5</td><td class="notes">Maximal intent, full hip extension</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/Plyometrics/MBSideThrowWall" target="_blank">Rotational Med Ball Throw</a></td><td class="sets">3 &times; 5/side</td><td class="notes">Hockey crossover benefit</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Friday — Power + Plyometrics (Low Volume)</h3>
+    <table>
+      <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td class="exercise"><a href="https://exrx.net/Plyometrics/BoxJump" target="_blank">Box Jump</a> (step down)</td><td class="sets">3 &times; 4</td><td class="notes">Always step down — protect achilles</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/GluteusMaximus/TBDeadlift" target="_blank">Trap Bar Jump Squat</a></td><td class="sets">3 &times; 3</td><td class="notes">~30% DL max, max height</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/Plyometrics/BroadJump" target="_blank">Broad Jump</a></td><td class="sets">3 &times; 3</td><td class="notes">Full reset between reps</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Quadriceps/DBSingleLegSplitSquat" target="_blank">Bulgarian Split Squat</a></td><td class="sets">3 &times; 6/leg</td><td class="notes">Moderate load</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/Aerobic/Exercises/Shuffle" target="_blank">Banded Lateral Shuffle</a></td><td class="sets">3 &times; 8/dir</td><td class="notes">Agility + ankle stability</td></tr>
+        <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/Gastrocnemius/BBStandingCalfRaise" target="_blank">Standing Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes"></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    Phase 3: Power Realization
+    <span class="weeks">Weeks 13+</span>
+  </div>
+  <div class="phase-body">
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Continue cycling 4-week plyometric blocks with 2-week deload/maintenance blocks. Keep pushing strength numbers toward targets. Maintain Phase 2 structure but progress loads.</p>
+  </div>
+</div>
+
+<!-- STRENGTH TARGETS -->
+<h2 id="targets">&#127919; Strength Targets</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Your fastest path to jumping higher is getting stronger. Plyometrics on a weak base produce minimal returns.</p>
+
+<div class="targets-grid">
+  <div class="target-card">
+    <div class="lift-name">Trap Bar Deadlift</div>
+    <div class="current">225 &times; 5 (1.0x BW)</div>
+    <div class="arrow">&darr;</div>
+    <div class="target">385+ &times; 5</div>
+    <div class="ratio">12-month target &middot; 1.75x BW</div>
+  </div>
+  <div class="target-card">
+    <div class="lift-name">Back Squat</div>
+    <div class="current">185 &times; 5 (0.84x BW)</div>
+    <div class="arrow">&darr;</div>
+    <div class="target">315 &times; 5</div>
+    <div class="ratio">12-month target &middot; 1.4x BW</div>
+  </div>
+  <div class="target-card">
+    <div class="lift-name">Bench Press</div>
+    <div class="current">155 &times; 5 (0.7x BW)</div>
+    <div class="arrow">&darr;</div>
+    <div class="target">225 &times; 5</div>
+    <div class="ratio">12-month target &middot; 1.0x BW</div>
+  </div>
+</div>
+
+<div class="info-box success">
+  <strong>The Key Metric for Vertical Jump</strong>
+  Research shows a trap bar deadlift of 2.0–2.5x bodyweight is the benchmark for elite jumping. At your current strength levels, every pound added to the bar translates directly to inches on your vertical.
+</div>
+
+<!-- ACHILLES PROTOCOL -->
+<h2 id="achilles">&#129520; Achilles Tendinopathy Protocol</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Bilateral management — Heavy Slow Resistance (HSR) preferred over isolated eccentric training for in-season athletes. 3&times;/week, integrated into training days.</p>
+
+<div class="achilles-protocol">
+  <h4>Protocol (3x/week: Wed, Fri, + 1 Recovery Day)</h4>
+  <ul>
+    <li><strong><a href="https://exrx.net/WeightExercises/Soleus/LVSeatedCalfRaise" target="_blank">Seated Calf Raise</a> (HSR):</strong> 3 &times; 6 @ 6RM — 3 sec concentric / 3 sec eccentric</li>
+    <li><strong><a href="https://exrx.net/WeightExercises/Gastrocnemius/BBStandingCalfRaise" target="_blank">Standing Calf Raise</a> (HSR):</strong> 3 &times; 6 @ 6RM — same tempo</li>
+    <li><strong><a href="https://exrx.net/WeightExercises/Gastrocnemius/BWSingleLegCalfRaise" target="_blank">Single-Leg Eccentric Heel Drop</a></strong> (lighter days): 3 &times; 15</li>
+  </ul>
+  <br>
+  <h4>Rules</h4>
+  <ul>
+    <li>Morning stiffness is expected and OK</li>
+    <li>Pain during exercise up to 3–4/10 is acceptable</li>
+    <li>If game-day achilles pain exceeds 5/10, reduce Friday plyo volume the following week</li>
+    <li>Always <strong>step down</strong> from box jumps — never rebound</li>
+    <li>Maintain protocol during deload weeks at full load (tendons respond differently)</li>
+  </ul>
+</div>
+
+<!-- RECOVERY -->
+<h2 id="recovery">&#128164; Recovery Days</h2>
+
+<h3>Monday — Post-Double Game Day</h3>
+<table>
+  <thead><tr><th>Activity</th><th>Duration</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td class="exercise">Low-intensity cycling or swimming</td><td class="sets">15–20 min</td><td class="notes">30–40% peak HR, anti-inflammatory</td></tr>
+    <tr><td class="exercise">Foam rolling / massage gun</td><td class="sets">10 min</td><td class="notes">Quads, calves, IT band, glutes</td></tr>
+    <tr><td class="exercise"><a href="https://health.clevelandclinic.org/90-90-stretch" target="_blank">Hip 90/90 mobility flow</a></td><td class="sets">5 min</td><td class="notes">Hip mobility maintenance</td></tr>
+    <tr><td class="exercise">HSR calf raise protocol (<a href="https://exrx.net/WeightExercises/Soleus/LVSeatedCalfRaise" target="_blank">seated</a> + <a href="https://exrx.net/WeightExercises/Gastrocnemius/BBStandingCalfRaise" target="_blank">standing</a>)</td><td class="sets">10 min</td><td class="notes">If achilles feels OK (&lt; 3/10 pain)</td></tr>
+  </tbody>
+</table>
+
+<h3>Saturday — Pre-Game Prep</h3>
+<table>
+  <thead><tr><th>Activity</th><th>Duration</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td class="exercise">Light dynamic warmup</td><td class="sets">10 min</td><td class="notes">Prepare without fatiguing</td></tr>
+    <tr><td class="exercise">Ankle mobility + banded dorsiflexion</td><td class="sets">5 min</td><td class="notes">Range of motion</td></tr>
+    <tr><td class="exercise">Single-leg balance work</td><td class="sets">5 min</td><td class="notes">Proprioception</td></tr>
+    <tr><td class="exercise"><a href="https://exrx.net/WeightExercises/GluteusMaximus/BWLyingHipExtension" target="_blank">Glute bridges</a> + band walks</td><td class="sets">5 min</td><td class="notes">Activation</td></tr>
+    <tr><td class="exercise">Hip flexor stretching</td><td class="sets">5 min</td><td class="notes">Counteract hockey posture</td></tr>
+  </tbody>
+</table>
+
+<!-- NUTRITION -->
+<h2 id="nutrition">&#127860; Body Composition &amp; Nutrition</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Target: ~15% BF (~205–210 lbs) over 6–9 months via gradual recomposition. No aggressive cuts — protect game performance and recovery.</p>
+
+<div class="nutrition-grid">
+  <div class="nutrition-item"><span class="label">Training Day Calories</span><span class="value">2,400–2,600</span></div>
+  <div class="nutrition-item"><span class="label">Rest Day Calories</span><span class="value">2,100–2,300</span></div>
+  <div class="nutrition-item"><span class="label">Protein (daily)</span><span class="value">180–200g</span></div>
+  <div class="nutrition-item"><span class="label">Hydration (daily)</span><span class="value">3L+ (more game days)</span></div>
+  <div class="nutrition-item"><span class="label">Creatine</span><span class="value">5g/day, every day</span></div>
+  <div class="nutrition-item"><span class="label">Sleep</span><span class="value">7.5–8.5 hrs minimum</span></div>
+</div>
+
+<div class="info-box">
+  <strong>Carb Timing</strong>
+  Higher carbs on game days (Sun, Tue) and training days (Wed, Thu, Fri). Lower carbs on recovery days (Mon, Sat). This fuels performance without excess.
+</div>
+
+<div class="info-box success">
+  <strong>Why Recomp Matters for Your Vertical</strong>
+  Every 1 lb of fat lost is dead weight you no longer lift off the ground. A 10 lb fat loss (while maintaining muscle) makes you ~5% more powerful relative to bodyweight — measurable inches on your vertical with zero strength gains needed.
+</div>
+
+<!-- DELOAD -->
+<h2 id="deload">&#128260; Deload Protocol (Every 4th Week)</h2>
+<div class="deload-box">
+  <h4>Every 4th Week</h4>
+  <ul>
+    <li>Reduce all training loads by 40–50%</li>
+    <li>Keep sets and reps the same (maintains movement quality)</li>
+    <li>Achilles protocol stays at full load (tendons respond differently to deloads)</li>
+    <li>Prioritize sleep, nutrition, soft tissue work</li>
+    <li>Play games normally</li>
+  </ul>
+</div>
+
+<!-- AUTOREGULATION -->
+<h2 id="modify">&#9888;&#65039; When to Modify</h2>
+<div style="margin:0.75rem 0;">
+  <div class="signal-row">
+    <div class="signal-trigger">Achilles pain &gt; 5/10 during games</div>
+    <div class="signal-action">Drop Friday plyos for 2 weeks, increase HSR volume</div>
+  </div>
+  <div class="signal-row">
+    <div class="signal-trigger">General fatigue / poor sleep 3+ days</div>
+    <div class="signal-action">Take an extra recovery day, skip Thursday</div>
+  </div>
+  <div class="signal-row">
+    <div class="signal-trigger">Strength plateau 3+ weeks</div>
+    <div class="signal-action">Deload, then switch rep scheme (5&times;3 instead of 4&times;5)</div>
+  </div>
+  <div class="signal-row">
+    <div class="signal-trigger">Knee or hip pain emerging</div>
+    <div class="signal-action">Add hip mobility work, reduce squat depth temporarily</div>
+  </div>
+  <div class="signal-row">
+    <div class="signal-trigger">Feeling great and fully recovered</div>
+    <div class="signal-action">Don't add volume — add load to existing sets</div>
+  </div>
+</div>
+
+<div class="info-box warning">
+  <strong>Golden Rule for Masters Athletes</strong>
+  Recovery capacity is your limiting factor, not training capacity. Melatonin drops and cortisol rises with age. When in doubt, do less and sleep more. You can always add — you can't un-injure.
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- ACTIVITY TRACKER                                -->
+<!-- ═══════════════════════════════════════════════ -->
+
+<h2 id="tracker" style="margin-top:3rem;">&#128202; Activity Tracker</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Program start: March 2026 &middot; Phase 1: Foundation</p>
+
+<!-- Dashboard Summary -->
+<div class="dashboard">
+  <div class="dash-card">
+    <div class="dash-value">1</div>
+    <div class="dash-label">Week</div>
+    <div class="dash-sub">of Phase 1</div>
+  </div>
+  <div class="dash-card">
+    <div class="dash-value">0 / 2</div>
+    <div class="dash-label">Sessions / Games</div>
+    <div class="dash-sub">total logged</div>
+  </div>
+  <div class="dash-card">
+    <div class="dash-value">220</div>
+    <div class="dash-label">Body Weight</div>
+    <div class="dash-sub">lbs &middot; starting</div>
+  </div>
+  <div class="dash-card">
+    <div class="dash-value">—</div>
+    <div class="dash-label">Achilles Avg</div>
+    <div class="dash-sub">pain 0–10</div>
+  </div>
+</div>
+
+<!-- Strength Progress Bars -->
+<h3>Strength Progress vs. 12-Month Targets</h3>
+<div class="bar-chart">
+  <div class="bar-row">
+    <div class="bar-label">TB Deadlift</div>
+    <div class="bar-track">
+      <div class="bar-fill" style="width:58%;background:var(--accent2);">225 &times; 5</div>
+      <div class="bar-target" style="left:100%;"><div class="bar-target-label">385</div></div>
+    </div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Back Squat</div>
+    <div class="bar-track">
+      <div class="bar-fill" style="width:59%;background:var(--accent);">185 &times; 5</div>
+      <div class="bar-target" style="left:100%;"><div class="bar-target-label">315</div></div>
+    </div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Bench Press</div>
+    <div class="bar-track">
+      <div class="bar-fill" style="width:69%;background:var(--success);">155 &times; 5</div>
+      <div class="bar-target" style="left:100%;"><div class="bar-target-label">225</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Weekly Logs -->
+<h3>Activity Log</h3>
+
+<div class="week-summary">
+  <div class="week-summary-header">
+    <h4>Week 1 — Mar 8–14</h4>
+    <div class="week-tags">
+      <span class="week-mini-stat">0 sessions</span>
+      <span class="week-mini-stat">2 games</span>
+    </div>
+  </div>
+  <table class="log-table">
+    <thead><tr><th>Date</th><th>Type</th><th>Details</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Sun 3/8</td>
+        <td><span class="tag tag-game">Game</span></td>
+        <td>Basketball &middot; 30 min &middot; moderate intensity</td>
+        <td>Whole-foot compression/squeezing pain (both feet). Likely sock fit issue — not structural. Try non-compression cushioned socks + check lacing.</td>
+      </tr>
+      <tr>
+        <td>Sun 3/8</td>
+        <td><span class="tag tag-game">Game</span></td>
+        <td>Hockey &middot; 30 min ice time &middot; high intensity</td>
+        <td>PM session. Double game day complete.</td>
+      </tr>
+      <tr>
+        <td>Mon 3/9</td>
+        <td><span class="tag tag-recovery">Recovery</span></td>
+        <td>Recovery day &middot; Bike 12 min, seated calf raise HSR 3&times;10 (BW/25/50 lbs), 90/90 stretches, massage gun</td>
+        <td>Tired + lower back tightness AM. Light arch pain on bike when on balls of feet — resolved by moving to mid-foot pedal position. Calf raises felt good ramping up.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <p>Program designed March 2026 &middot; Based on current sports medicine research &middot; Consult a physician before beginning</p>
+  <p style="margin-top:0.25rem;">Review and adjust every 6 weeks based on progress and how your body responds</p>
+</div>
+
+</body>
+</html>

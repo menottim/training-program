@@ -46,6 +46,19 @@
       "duration": "30 min",
       "intensity": "high",
       "notes": "Initial left achilles pain pre-game, resolved with warm-up + single-leg calf raises. No pain during game. Thorlo socks helped with foot compression issues from 3/8."
+    },
+    {
+      "date": "2026-03-11",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 1)",
+      "exercises": [
+        { "name": "Trap Bar Deadlift", "sets": "4x5", "weight": "225 lbs" },
+        { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "BW" },
+        { "name": "Glute Ham Raise", "sets": "3x5", "weight": "BW" },
+        { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "20 lb DBs" },
+        { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "90/135/135 lbs" }
+      ],
+      "notes": "First lifting session of the program. All exercises as prescribed. GHR chosen over Nordic."
     }
   ],
   "bodyLog": []

@@ -527,6 +527,53 @@
   .tag-recovery { background: #e9ecef; color: var(--text-muted); }
   .tag-rest { background: #f5f5f5; color: #aaa; }
 
+  /* Progress log tables */
+  .progress-log {
+    margin: 0.25rem 0 1.5rem;
+  }
+  .progress-log h4 {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+  }
+  .progress-log table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    margin: 0;
+    background: #fafbfc;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .progress-log thead th {
+    background: #e9ecef;
+    color: var(--text);
+    font-size: 0.7rem;
+    padding: 0.35rem 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border-radius: 0;
+  }
+  .progress-log thead th:first-child { border-radius: 0; }
+  .progress-log thead th:last-child { border-radius: 0; }
+  .progress-log tbody td {
+    padding: 0.3rem 0.5rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .progress-log tbody td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .progress-log tbody tr:last-child td { border-bottom: none; }
+  .progress-log tbody tr:nth-child(even) { background: #f4f5f6; }
+  .progress-log .empty-cell { color: #ccc; }
+
   .empty-state {
     text-align: center;
     padding: 2rem;
@@ -696,6 +743,7 @@
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">Seated Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes">6RM load, 3s up / 3s down</td></tr>
       </tbody>
     </table>
+    <div id="progress-phase1-wed"></div>
 
     <h3>Thursday — Upper Body + Core + Power Intro</h3>
     <table>
@@ -709,6 +757,7 @@
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/slam" target="_blank">Med Ball Slam</a></td><td class="sets">3 &times; 6</td><td class="notes">Full hip extension, explosive intent</td></tr>
       </tbody>
     </table>
+    <div id="progress-phase1-thu"></div>
 
     <h3>Friday — Lower Moderate + Movement Quality</h3>
     <table>
@@ -722,6 +771,7 @@
         <tr><td class="exercise">Banded Ankle Dorsiflexion</td><td class="sets">2 &times; 10/side</td><td class="notes">Ankle mobility</td></tr>
       </tbody>
     </table>
+    <div id="progress-phase1-fri"></div>
   </div>
 </div>
 
@@ -743,6 +793,7 @@
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/bodyweight-single-leg-calf-raise" target="_blank">Single-Leg Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes">Loaded, slow tempo</td></tr>
       </tbody>
     </table>
+    <div id="progress-phase2-wed"></div>
 
     <h3>Thursday — Upper + Power</h3>
     <table>
@@ -756,6 +807,7 @@
         <tr><td class="exercise">Rotational Med Ball Throw</td><td class="sets">3 &times; 5/side</td><td class="notes">Hockey crossover benefit</td></tr>
       </tbody>
     </table>
+    <div id="progress-phase2-thu"></div>
 
     <h3>Friday — Power + Plyometrics (Low Volume)</h3>
     <table>
@@ -769,6 +821,7 @@
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-calf-raises" target="_blank">Standing Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes"></td></tr>
       </tbody>
     </table>
+    <div id="progress-phase2-fri"></div>
   </div>
 </div>
 
@@ -1106,6 +1159,83 @@
     });
   }
   document.getElementById('activity-log-mount').innerHTML = logHTML;
+
+  // Progress Log rendering — pivot activityLog into exercise × week tables
+  var dayAbbrevMap = { Wed: 'wed', Thu: 'thu', Fri: 'fri' };
+  var phasePattern = /\((\w+)\s+Phase\s+(\d+)\)/;
+
+  function renderProgressLogs() {
+    // Collect all training entries with parseable activity names
+    var matched = [];
+    activityLog.forEach(function(entry) {
+      if (entry.type !== 'training' || !entry.exercises) return;
+      var m = phasePattern.exec(entry.activity || '');
+      if (!m) return;
+      var dayAbbr = dayAbbrevMap[m[1]];
+      var phaseNum = parseInt(m[2], 10);
+      if (!dayAbbr) return;
+      var entryDate = new Date(entry.date + 'T00:00:00');
+      var entryWeek = Math.max(1, Math.ceil((Math.floor((entryDate - startDate) / 86400000) + 1) / 7));
+      matched.push({ day: dayAbbr, phase: phaseNum, week: entryWeek, exercises: entry.exercises });
+    });
+
+    // Group by phase+day
+    var groups = {};
+    matched.forEach(function(m) {
+      var key = 'progress-phase' + m.phase + '-' + m.day;
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(m);
+    });
+
+    // Render each group into its mount point
+    Object.keys(groups).forEach(function(mountId) {
+      var el = document.getElementById(mountId);
+      if (!el) return;
+
+      var entries = groups[mountId];
+      // Build exercise -> week -> weight map (preserve insertion order)
+      var exerciseNames = [];
+      var exerciseMap = {};
+      var allWeeks = [];
+
+      entries.forEach(function(entry) {
+        if (allWeeks.indexOf(entry.week) === -1) allWeeks.push(entry.week);
+        entry.exercises.forEach(function(ex) {
+          if (!exerciseMap[ex.name]) {
+            exerciseMap[ex.name] = {};
+            exerciseNames.push(ex.name);
+          }
+          exerciseMap[ex.name][entry.week] = ex.weight || '\u2014';
+        });
+      });
+
+      allWeeks.sort(function(a, b) { return a - b; });
+
+      // Build table HTML
+      var headerCells = '<th>Exercise</th>' + allWeeks.map(function(w) {
+        return '<th>Wk ' + w + '</th>';
+      }).join('');
+
+      var bodyRows = exerciseNames.map(function(name) {
+        var cells = allWeeks.map(function(w) {
+          var val = exerciseMap[name][w];
+          if (val) return '<td>' + val + '</td>';
+          return '<td class="empty-cell">\u2014</td>';
+        }).join('');
+        return '<tr><td>' + name + '</td>' + cells + '</tr>';
+      }).join('');
+
+      el.innerHTML = '<div class="progress-log">' +
+        '<h4>Progress Log</h4>' +
+        '<table>' +
+          '<thead><tr>' + headerCells + '</tr></thead>' +
+          '<tbody>' + bodyRows + '</tbody>' +
+        '</table>' +
+      '</div>';
+    });
+  }
+
+  renderProgressLogs();
 })();
 </script>
 

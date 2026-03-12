@@ -61,5 +61,7 @@
       "notes": "First lifting session of the program. All exercises as prescribed. GHR chosen over Nordic."
     }
   ],
-  "bodyLog": []
+  "bodyLog": [
+    { "date": "2026-03-11", "weight": 218.3, "bodyFatPct": 22.7 }
+  ]
 }

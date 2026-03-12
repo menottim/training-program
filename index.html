@@ -414,7 +414,7 @@
   /* Activity Log */
   .dashboard {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 0.5rem;
     margin: 1rem 0;
   }
@@ -975,6 +975,9 @@
 <!-- Strength Progress Bars (rendered from data.json) -->
 <div id="strength-mount"></div>
 
+<!-- Body Composition History (rendered from data.json) -->
+<div id="body-log-mount"></div>
+
 <!-- Activity Log (rendered from data.json) -->
 <div id="activity-log-mount"></div>
 
@@ -1016,6 +1019,12 @@
     : athlete.startWeight;
   const weightSub = bodyLog.length > 0 ? 'lbs' : 'lbs &middot; starting';
 
+  const latestBF = bodyLog.length > 0 && bodyLog[bodyLog.length - 1].bodyFatPct != null
+    ? bodyLog[bodyLog.length - 1].bodyFatPct
+    : null;
+  const bfDisplay = latestBF != null ? latestBF + '%' : (athlete.bodyFatPct != null ? athlete.bodyFatPct + '% est.' : '\u2014');
+  const bfSub = athlete.bodyFatPct != null ? 'from ' + athlete.bodyFatPct + '% est.' : '';
+
   const achillesEntries = activityLog.filter(e => e.achillesPain != null);
   const achillesAvg = achillesEntries.length > 0
     ? (achillesEntries.reduce((s, e) => s + e.achillesPain, 0) / achillesEntries.length).toFixed(1)
@@ -1043,12 +1052,34 @@
       '<div class="dash-sub">' + weightSub + '</div>',
     '</div>',
     '<div class="dash-card">',
+      '<div class="dash-value">' + bfDisplay + '</div>',
+      '<div class="dash-label">Body Fat</div>',
+      '<div class="dash-sub">' + bfSub + '</div>',
+    '</div>',
+    '<div class="dash-card">',
       '<div class="dash-value">' + achillesAvg + '</div>',
       '<div class="dash-label">Achilles Avg</div>',
       '<div class="dash-sub">pain 0\u201310</div>',
     '</div>',
     '</div>'
   ].join('');
+
+  // Body Composition History
+  if (bodyLog.length > 0) {
+    var compRows = bodyLog.map(function(entry) {
+      var bf = entry.bodyFatPct;
+      var w = entry.weight;
+      var fatMass = bf != null ? (w * bf / 100).toFixed(1) : '\u2014';
+      var leanMass = bf != null ? (w - w * bf / 100).toFixed(1) : '\u2014';
+      var bfCell = bf != null ? bf + '%' : '\u2014';
+      return '<tr><td>' + entry.date + '</td><td>' + w + '</td><td>' + bfCell + '</td><td>' + leanMass + '</td><td>' + fatMass + '</td></tr>';
+    });
+    document.getElementById('body-log-mount').innerHTML =
+      '<h3 style="margin-top:2rem;">Body Composition</h3>' +
+      '<table class="log-table"><thead><tr>' +
+      '<th>Date</th><th>Weight</th><th>Body Fat %</th><th>Lean Mass</th><th>Fat Mass</th>' +
+      '</tr></thead><tbody>' + compRows.join('') + '</tbody></table>';
+  }
 
   // Strength Progress Bars
   var bw = latestWeight;

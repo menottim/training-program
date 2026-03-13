@@ -59,6 +59,20 @@
         { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "90/135/135 lbs" }
       ],
       "notes": "First lifting session of the program. All exercises as prescribed. GHR chosen over Nordic."
+    },
+    {
+      "date": "2026-03-12",
+      "type": "training",
+      "activity": "Upper Body + Core (Thu Phase 1)",
+      "exercises": [
+        { "name": "DB Bench Press", "sets": "4x6", "weight": "45/60/60/60 lbs" },
+        { "name": "Pull-up (Assisted)", "sets": "4x6", "weight": "BW minus 60 lbs" },
+        { "name": "DB Overhead Press", "sets": "3x8", "weight": "20 lbs" },
+        { "name": "Face Pull", "sets": "3x15", "weight": "as prescribed" },
+        { "name": "Pallof Press", "sets": "2x10/side", "weight": "as prescribed" },
+        { "name": "Cable Woodchop", "sets": "2x10/side", "weight": "as prescribed" }
+      ],
+      "notes": "Second lifting session. Used assist machine for pull-ups (60 lbs off BW). DB bench warm-up at 45, working sets at 60."
     }
   ],
   "bodyLog": [

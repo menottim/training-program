@@ -74,6 +74,14 @@
       ],
       "notes": "Second lifting session. Used assist machine for pull-ups (60 lbs off BW). DB bench warm-up at 45, working sets at 60."
     }
+    {
+      "date": "2026-03-13",
+      "type": "training",
+      "activity": "Surfing",
+      "duration": "45 min",
+      "intensity": "moderate",
+      "notes": "Replaced Friday routine. Good paddling volume — shoulders, arms, and core work. Cross-training session."
+    }
   ],
   "bodyLog": [
     { "date": "2026-03-11", "weight": 218.3, "bodyFatPct": 22.7 }

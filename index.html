@@ -647,6 +647,95 @@
     display: inline-block;
   }
 
+  /* Strength Standards */
+  .standards-section {
+    margin: 1.5rem 0;
+  }
+  .standards-section .info-box {
+    margin-top: 0.75rem;
+  }
+  .standard-row {
+    margin-bottom: 1rem;
+  }
+  .standard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .standard-lift-name {
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  .standard-stats {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+  .standard-stats strong {
+    color: var(--text);
+  }
+  .standard-gauge {
+    position: relative;
+    height: 22px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+  }
+  .standard-zone {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.3px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .standard-marker {
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    width: 3px;
+    background: var(--text);
+    border-radius: 2px;
+    z-index: 2;
+  }
+  .standard-marker::after {
+    content: attr(data-label);
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+  }
+  .standard-level-label {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .standard-ticks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+    padding: 0 2px;
+  }
+  .standard-formula-note {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+
   /* Print */
   @media print {
     .nav { display: none; }
@@ -1013,6 +1102,9 @@
 
 <!-- Strength Progression Chart -->
 <div id="strength-chart-mount"></div>
+
+<!-- Strength Standards Gauges -->
+<div id="standards-mount"></div>
 
 <!-- Body Composition History (rendered from data.json) -->
 <div id="body-log-mount"></div>
@@ -1642,6 +1734,129 @@
       '<div class="chart-legend">' + legendItems.join('') +
         '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = 12-mo target</span>' +
       '</div>');
+  })();
+
+  // ═══════════════════════════════════════════════
+  // STRENGTH STANDARDS (gauge visualization)
+  // ═══════════════════════════════════════════════
+
+  (function renderStrengthStandards() {
+    // Standards from strengthlevel.com for ~220 lb male, expressed as BW ratios
+    // so they scale dynamically with body weight changes
+    var standards = {
+      trapBarDeadlift: {
+        label: 'Trap Bar Deadlift',
+        // Conventional DL standards; TB DL typically ~10% higher
+        ratios: [1.11, 1.45, 1.84, 2.29, 2.75],
+        note: 'Based on conventional deadlift standards (trap bar typically allows ~10% more)'
+      },
+      backSquat: {
+        label: 'Back Squat',
+        ratios: [0.95, 1.25, 1.60, 2.01, 2.43]
+      },
+      benchPress: {
+        label: 'Bench Press',
+        ratios: [0.71, 0.94, 1.22, 1.54, 1.87]
+      }
+    };
+    var levelNames = ['Beginner', 'Novice', 'Intermediate', 'Advanced', 'Elite'];
+    var levelColors = ['#6c9bd2', '#5bb370', '#e8b84b', '#e07840', '#c04050'];
+
+    // Epley formula: estimated 1RM = weight × (1 + reps / 30)
+    function est1RM(weight, reps) {
+      if (reps <= 1) return weight;
+      return Math.round(weight * (1 + reps / 30));
+    }
+
+    var html = '<div class="standards-section">' +
+      '<h3>Strength Standards</h3>' +
+      '<p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem;">' +
+      'Where your lifts rank among all male lifters at your body weight (' + Math.round(bw) + ' lbs). ' +
+      'Based on <a href="https://strengthlevel.com/strength-standards" target="_blank" style="color:var(--accent2)">strengthlevel.com</a> data.</p>';
+
+    var liftKeys = ['trapBarDeadlift', 'backSquat', 'benchPress'];
+    liftKeys.forEach(function(key) {
+      var std = standards[key];
+      var cur = currentLifts[key];
+      var tgt = targets[key];
+      var oneRM = est1RM(cur.weight, cur.reps);
+      var ratio = oneRM / bw;
+
+      // Determine current level
+      var levelIdx = -1;
+      for (var i = 0; i < std.ratios.length; i++) {
+        if (ratio >= std.ratios[i]) levelIdx = i;
+      }
+      var levelText = levelIdx >= 0 ? levelNames[levelIdx] : 'Untrained';
+      var levelColor = levelIdx >= 0 ? levelColors[levelIdx] : '#aaa';
+
+      // Target 1RM and level
+      var tgt1RM = est1RM(tgt.weight, tgt.reps);
+      var tgtRatio = tgt1RM / bw;
+      var tgtLevelIdx = -1;
+      for (var j = 0; j < std.ratios.length; j++) {
+        if (tgtRatio >= std.ratios[j]) tgtLevelIdx = j;
+      }
+      var tgtLevelText = tgtLevelIdx >= 0 ? levelNames[tgtLevelIdx] : 'Untrained';
+
+      // Gauge: zones are proportional to the ratio range
+      // Range from 0 to elite + 20% headroom
+      var gaugeMax = std.ratios[4] * 1.15;
+      var breakpoints = [0].concat(std.ratios);
+
+      var zones = '';
+      for (var z = 0; z < 5; z++) {
+        var zoneStart = breakpoints[z];
+        var zoneEnd = breakpoints[z + 1];
+        var widthPct = ((zoneEnd - zoneStart) / gaugeMax * 100).toFixed(1);
+        zones += '<div class="standard-zone" style="width:' + widthPct + '%;background:' + levelColors[z] + ';">' +
+          (parseFloat(widthPct) > 12 ? levelNames[z] : '') + '</div>';
+      }
+      // Remaining headroom zone
+      var remainPct = ((gaugeMax - std.ratios[4]) / gaugeMax * 100).toFixed(1);
+      zones += '<div class="standard-zone" style="width:' + remainPct + '%;background:#ddd;"></div>';
+
+      // Current marker position
+      var markerPct = Math.min(Math.max(ratio / gaugeMax * 100, 0), 99).toFixed(1);
+      var marker = '<div class="standard-marker" style="left:' + markerPct + '%;" data-label="' + oneRM + ' lbs"></div>';
+
+      // Target marker (lighter, dashed-like)
+      var tgtMarkerPct = Math.min(tgtRatio / gaugeMax * 100, 99).toFixed(1);
+      var tgtMarker = '<div style="position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--text);opacity:0.25;left:' + tgtMarkerPct + '%;z-index:1;border-radius:1px;" title="12-mo target: ' + tgt1RM + ' lbs"></div>';
+
+      // Tick labels showing weights at each threshold
+      var ticks = '<div class="standard-ticks">';
+      ticks += '<span>0</span>';
+      for (var t = 0; t < 5; t++) {
+        ticks += '<span>' + Math.round(std.ratios[t] * bw) + '</span>';
+      }
+      ticks += '</div>';
+
+      html += '<div class="standard-row">' +
+        '<div class="standard-header">' +
+          '<span class="standard-lift-name">' + std.label + '</span>' +
+          '<span class="standard-stats">' +
+            'Est. 1RM: <strong>' + oneRM + ' lbs</strong> (' + ratio.toFixed(2) + 'x BW) \u00b7 ' +
+            '<span class="standard-level-label" style="background:' + levelColor + ';">' + levelText + '</span>' +
+            ' \u2192 Target: ' + tgt1RM + ' lbs (' + tgtLevelText + ')' +
+          '</span>' +
+        '</div>' +
+        '<div style="position:relative;margin-top:16px;">' +
+          '<div class="standard-gauge">' + zones + '</div>' +
+          marker + tgtMarker +
+        '</div>' +
+        ticks +
+      '</div>';
+    });
+
+    html += '<p class="standard-formula-note">' +
+      'Est. 1RM via Epley formula: weight \u00d7 (1 + reps \u00f7 30). ' +
+      'Standards are for male lifters at ' + Math.round(bw) + ' lbs body weight.' +
+      '</p>';
+
+    html += '</div>';
+
+    document.getElementById('standards-mount').insertAdjacentHTML('beforeend', html);
   })();
 
   // ═══════════════════════════════════════════════

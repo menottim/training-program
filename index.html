@@ -1006,7 +1006,13 @@
   const startDate = new Date(athlete.startDate + 'T00:00:00');
   const today = new Date();
   today.setHours(0,0,0,0);
-  const daysSinceStart = Math.max(0, Math.floor((today - startDate) / 86400000));
+  // DST-safe calendar day difference (avoids 23h/25h day issues)
+  function calendarDays(a, b) {
+    var utcA = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+    var utcB = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+    return Math.round((utcB - utcA) / 86400000);
+  }
+  const daysSinceStart = Math.max(0, calendarDays(startDate, today));
   const weekNum = Math.max(1, Math.ceil((daysSinceStart + 1) / 7));
   const phase = weekNum <= 6 ? 1 : weekNum <= 12 ? 2 : 3;
   const phaseNames = { 1: 'Foundation', 2: 'Strength-Power', 3: 'Power Realization' };
@@ -1142,7 +1148,7 @@
   function weekLabel(weekStart) {
     var end = new Date(weekStart);
     end.setDate(weekStart.getDate() + 6);
-    var wn = Math.max(1, Math.ceil((Math.floor((weekStart - startDate) / 86400000) + 1) / 7));
+    var wn = Math.max(1, Math.ceil((calendarDays(startDate, weekStart) + 1) / 7));
     return 'Week ' + wn + ' \u2014 ' + weekStart.toLocaleDateString('en-US',{month:'short'}) + ' ' + weekStart.getDate() + '\u2013' + end.getDate();
   }
 
@@ -1207,7 +1213,7 @@
       var phaseNum = parseInt(m[2], 10);
       if (!dayAbbr) return;
       var entryDate = new Date(entry.date + 'T00:00:00');
-      var entryWeek = Math.max(1, Math.ceil((Math.floor((entryDate - startDate) / 86400000) + 1) / 7));
+      var entryWeek = Math.max(1, Math.ceil((calendarDays(startDate, entryDate) + 1) / 7));
       matched.push({ day: dayAbbr, phase: phaseNum, week: entryWeek, exercises: entry.exercises });
     });
 

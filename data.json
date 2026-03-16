@@ -73,7 +73,7 @@
         { "name": "Cable Woodchop", "sets": "2x10/side", "weight": "as prescribed" }
       ],
       "notes": "Second lifting session. Used assist machine for pull-ups (60 lbs off BW). DB bench warm-up at 45, working sets at 60."
-    }
+    },
     {
       "date": "2026-03-13",
       "type": "training",
@@ -81,6 +81,22 @@
       "duration": "45 min",
       "intensity": "moderate",
       "notes": "Replaced Friday routine. Good paddling volume — shoulders, arms, and core work. Cross-training session."
+    },
+    {
+      "date": "2026-03-15",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "medium",
+      "notes": "Sunday AM session. Week 2 opener."
+    },
+    {
+      "date": "2026-03-15",
+      "type": "game",
+      "activity": "Hockey",
+      "duration": "30 min",
+      "intensity": "high",
+      "notes": "Sunday PM session. Double game day."
     }
   ],
   "bodyLog": [

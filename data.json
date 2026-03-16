@@ -1,8 +1,11 @@
 {
   "athlete": {
-    "height": "6'1\"",
+    "height": "6'2\"",
+    "heightInches": 74,
     "startWeight": 220,
     "bodyFatPct": 20,
+    "targetWeight": 210,
+    "targetBodyFatPct": 15,
     "startDate": "2026-03-08"
   },
   "currentLifts": {

@@ -773,9 +773,10 @@
 <div id="top" class="header">
   <h1>In-Season Training Program</h1>
   <p class="subtitle">Multi-Sport Athlete &middot; Perpetual In-Season &middot; Age 40</p>
-  <div class="stats">
+  <div id="header-stats-mount" class="stats">
+    <!-- Rendered from data.json -->
     <div class="stat">
-      <div class="stat-value">6'1" / 220</div>
+      <div class="stat-value">6'2" / 220</div>
       <div class="stat-label">Height / Weight</div>
     </div>
     <div class="stat">
@@ -1175,6 +1176,60 @@
 
   // Note: innerHTML is used throughout because data.json is a self-authored
   // local file, not user-submitted input. No XSS risk for this personal site.
+
+  // BMI calculation: weight (lbs) / height (in)^2 × 703
+  var heightIn = athlete.heightInches || 74; // default 6'2" = 74 inches
+  function calcBMI(w) { return (w / (heightIn * heightIn) * 703).toFixed(1); }
+  function bmiClass(bmi) {
+    var b = parseFloat(bmi);
+    if (b < 18.5) return 'Underweight';
+    if (b < 25) return 'Normal';
+    if (b < 30) return 'Overweight';
+    return 'Obese';
+  }
+
+  var curBMI = calcBMI(latestWeight);
+  var curBMIClass = bmiClass(curBMI);
+  var tgtWeight = athlete.targetWeight || 210;
+  var tgtBF = athlete.targetBodyFatPct || 15;
+  var tgtBMI = calcBMI(tgtWeight);
+  var tgtBMIClass = bmiClass(tgtBMI);
+
+  var curBFDisplay = latestBF != null ? latestBF + '%' : (athlete.bodyFatPct != null ? '~' + athlete.bodyFatPct + '%' : '\u2014');
+
+  // Lean mass / fat mass calculations
+  var curBFVal = latestBF != null ? latestBF : athlete.bodyFatPct;
+  var curLean = curBFVal != null ? (latestWeight * (1 - curBFVal / 100)).toFixed(0) : '\u2014';
+  var curFat = curBFVal != null ? (latestWeight * curBFVal / 100).toFixed(0) : '\u2014';
+  var tgtLean = (tgtWeight * (1 - tgtBF / 100)).toFixed(0);
+  var tgtFat = (tgtWeight * tgtBF / 100).toFixed(0);
+
+  // Header stats — current vs target
+  document.getElementById('header-stats-mount').insertAdjacentHTML('beforeend', '');
+  var headerMount = document.getElementById('header-stats-mount');
+  headerMount.textContent = ''; // clear static fallback
+
+  var statPairs = [
+    { label: 'Weight', cur: latestWeight + ' lbs', tgt: tgtWeight + ' lbs' },
+    { label: 'Body Fat', cur: curBFDisplay, tgt: tgtBF + '%' },
+    { label: 'BMI', cur: curBMI + ' (' + curBMIClass + ')', tgt: tgtBMI + ' (' + tgtBMIClass + ')' },
+    { label: 'Lean / Fat Mass', cur: curLean + ' / ' + curFat + ' lbs', tgt: tgtLean + ' / ' + tgtFat + ' lbs' }
+  ];
+
+  var statsHTML = '<div class="stat">' +
+    '<div class="stat-value">' + athlete.height + '</div>' +
+    '<div class="stat-label">Height</div>' +
+  '</div>';
+
+  statPairs.forEach(function(s) {
+    statsHTML += '<div class="stat">' +
+      '<div class="stat-value">' + s.cur + '</div>' +
+      '<div class="stat-label">' + s.label + '</div>' +
+      '<div style="font-size:0.65rem;color:var(--text-muted);margin-top:2px;">\u2192 ' + s.tgt + '</div>' +
+    '</div>';
+  });
+
+  headerMount.insertAdjacentHTML('beforeend', statsHTML);
 
   // Dashboard
   document.getElementById('dashboard-mount').innerHTML = [

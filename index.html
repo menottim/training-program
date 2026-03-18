@@ -1478,8 +1478,27 @@
           if (!lastWeek) { upcomingWeights[name] = '\u2014'; return; }
           var lastVal = exerciseMap[name][lastWeek];
           if (!lastVal || lastVal === '\u2014') { upcomingWeights[name] = '\u2014'; return; }
-          // Try to increment numeric weight by 5 for main lifts
-          var clean = lastVal.toLowerCase().replace(/lbs?/g, '').trim();
+          var lower = lastVal.toLowerCase().trim();
+          // BW exercises: suggest adding light DBs
+          if (lower === 'bw') {
+            upcomingWeights[name] = '10 lb DBs';
+            return;
+          }
+          // "X lb DBs" format (e.g., "20 lb DBs")
+          var dbMatch = lower.match(/^(\d+)\s*lb\s*dbs?$/);
+          if (dbMatch) {
+            upcomingWeights[name] = (parseInt(dbMatch[1], 10) + 5) + ' lb DBs';
+            return;
+          }
+          // "BW minus X lbs" format (e.g., assisted pull-ups) — reduce assistance by 5
+          var assistMatch = lower.match(/^bw\s*minus\s*(\d+)\s*lbs?$/);
+          if (assistMatch) {
+            var newAssist = parseInt(assistMatch[1], 10) - 5;
+            upcomingWeights[name] = newAssist > 0 ? 'BW minus ' + newAssist + ' lbs' : 'BW';
+            return;
+          }
+          // Numeric weights: take max across slash-separated values, add 5
+          var clean = lower.replace(/lbs?/g, '').replace(/[^0-9./]/g, '').trim();
           var nums = clean.split('/').map(Number).filter(function(n) { return !isNaN(n) && n > 0; });
           if (nums.length > 0) {
             var maxW = Math.max.apply(null, nums);

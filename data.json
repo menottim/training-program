@@ -100,6 +100,15 @@
       "duration": "30 min",
       "intensity": "high",
       "notes": "Sunday PM session. Double game day."
+    },
+    {
+      "date": "2026-03-17",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "40 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "Tuesday PM session. No achilles pain. Longest game session so far in the program."
     }
   ],
   "bodyLog": [

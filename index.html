@@ -574,6 +574,8 @@
   .progress-log tbody tr:last-child td { border-bottom: none; }
   .progress-log tbody tr:nth-child(even) { background: #f4f5f6; }
   .progress-log .empty-cell { color: #ccc; }
+  .progress-log .upcoming-col { background: #fffbe6; font-style: italic; color: var(--accent2); }
+  .progress-log thead .upcoming-col { background: #fff3cd; color: #856404; font-style: normal; }
 
   .empty-state {
     text-align: center;
@@ -1394,6 +1396,9 @@
   var dayAbbrevMap = { Wed: 'wed', Thu: 'thu', Fri: 'fri' };
   var phasePattern = /\((\w+)\s+Phase\s+(\d+)\)/;
 
+  // Map mount IDs to the phase range they belong to
+  var phaseWeekRange = { 1: [1, 6], 2: [7, 12], 3: [13, 18] };
+
   function renderProgressLogs() {
     // Collect all training entries with parseable activity names
     var matched = [];
@@ -1417,12 +1422,25 @@
       groups[key].push(m);
     });
 
+    // Also ensure mount points for the current phase+day exist in groups even if empty
+    var days = ['wed', 'thu', 'fri'];
+    days.forEach(function(d) {
+      var key = 'progress-phase' + phase + '-' + d;
+      if (!groups[key]) groups[key] = [];
+    });
+
     // Render each group into its mount point
     Object.keys(groups).forEach(function(mountId) {
       var el = document.getElementById(mountId);
       if (!el) return;
 
       var entries = groups[mountId];
+      // Parse phase and day from mount ID
+      var mountMatch = mountId.match(/^progress-phase(\d+)-(\w+)$/);
+      if (!mountMatch) return;
+      var mountPhase = parseInt(mountMatch[1], 10);
+      var mountDay = mountMatch[2];
+
       // Build exercise -> week -> weight map (preserve insertion order)
       var exerciseNames = [];
       var exerciseMap = {};
@@ -1441,10 +1459,44 @@
 
       allWeeks.sort(function(a, b) { return a - b; });
 
+      // Determine if we need an upcoming column
+      var range = phaseWeekRange[mountPhase];
+      var showUpcoming = false;
+      var upcomingWeek = weekNum;
+      if (range && weekNum >= range[0] && weekNum <= range[1] && allWeeks.indexOf(weekNum) === -1) {
+        showUpcoming = true;
+      }
+
+      // If no data and not upcoming, show nothing
+      if (allWeeks.length === 0 && !showUpcoming) return;
+
+      // Project upcoming weights from last logged week
+      var upcomingWeights = {};
+      if (showUpcoming && exerciseNames.length > 0) {
+        var lastWeek = allWeeks.length > 0 ? allWeeks[allWeeks.length - 1] : null;
+        exerciseNames.forEach(function(name) {
+          if (!lastWeek) { upcomingWeights[name] = '\u2014'; return; }
+          var lastVal = exerciseMap[name][lastWeek];
+          if (!lastVal || lastVal === '\u2014') { upcomingWeights[name] = '\u2014'; return; }
+          // Try to increment numeric weight by 5 for main lifts
+          var clean = lastVal.toLowerCase().replace(/lbs?/g, '').trim();
+          var nums = clean.split('/').map(Number).filter(function(n) { return !isNaN(n) && n > 0; });
+          if (nums.length > 0) {
+            var maxW = Math.max.apply(null, nums);
+            upcomingWeights[name] = (maxW + 5) + ' lbs';
+          } else {
+            upcomingWeights[name] = lastVal;
+          }
+        });
+      }
+
       // Build table HTML
       var headerCells = '<th>Exercise</th>' + allWeeks.map(function(w) {
         return '<th>Wk ' + w + '</th>';
       }).join('');
+      if (showUpcoming) {
+        headerCells += '<th class="upcoming-col">Wk ' + upcomingWeek + ' \u2192</th>';
+      }
 
       var bodyRows = exerciseNames.map(function(name) {
         var cells = allWeeks.map(function(w) {
@@ -1452,8 +1504,41 @@
           if (val) return '<td>' + val + '</td>';
           return '<td class="empty-cell">\u2014</td>';
         }).join('');
+        if (showUpcoming) {
+          cells += '<td class="upcoming-col">' + (upcomingWeights[name] || '\u2014') + '</td>';
+        }
         return '<tr><td>' + name + '</td>' + cells + '</tr>';
       }).join('');
+
+      // If upcoming but no history, show the prescribed exercises from the plan table
+      if (showUpcoming && exerciseNames.length === 0) {
+        var phaseBody = el.closest('.phase-body');
+        if (phaseBody) {
+          // Only grab plan tables (not rendered progress log tables inside .progress-log divs)
+          var allTables = phaseBody.querySelectorAll('table');
+          var planTables = [];
+          for (var ti = 0; ti < allTables.length; ti++) {
+            if (!allTables[ti].closest('.progress-log')) planTables.push(allTables[ti]);
+          }
+          var dayIndex = { wed: 0, thu: 1, fri: 2 }[mountDay];
+          var planTable = dayIndex !== undefined ? planTables[dayIndex] : null;
+          if (planTable) {
+            var planRows = planTable.querySelectorAll('tbody tr');
+            var upcomingRows = [];
+            for (var r = 0; r < planRows.length; r++) {
+              var exCell = planRows[r].querySelector('td.exercise');
+              var exName = exCell ? exCell.textContent.trim() : '';
+              if (exName) upcomingRows.push('<tr><td>' + exName + '</td><td class="upcoming-col">\u2014</td></tr>');
+            }
+            if (upcomingRows.length > 0) {
+              headerCells = '<th>Exercise</th><th class="upcoming-col">Wk ' + upcomingWeek + ' \u2192</th>';
+              bodyRows = upcomingRows.join('');
+            }
+          }
+        }
+      }
+
+      if (!bodyRows) return;
 
       el.innerHTML = '<div class="progress-log">' +
         '<h4>Progress Log</h4>' +

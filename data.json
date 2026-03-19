@@ -109,6 +109,19 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Tuesday PM session. No achilles pain. Longest game session so far in the program."
+    },
+    {
+      "date": "2026-03-18",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 1)",
+      "exercises": [
+        { "name": "Trap Bar Deadlift", "sets": "4x5", "weight": "230 lbs" },
+        { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "10 lb DBs" },
+        { "name": "Glute Ham Raise", "sets": "2x5, 1x3", "weight": "BW" },
+        { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "25 lb DBs" },
+        { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "140 lbs" }
+      ],
+      "notes": "Week 2 lower body. All lifts progressed from Week 1. GHR fatigued on last set (3 reps vs 5)."
     }
   ],
   "bodyLog": [

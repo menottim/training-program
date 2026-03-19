@@ -1142,7 +1142,35 @@
     return;
   }
 
-  const { athlete, currentLifts, targets, activityLog, bodyLog } = data;
+  const { athlete, currentLifts: baseLifts, targets, activityLog, bodyLog } = data;
+
+  // Derive currentLifts from activityLog — find the most recent logged weight
+  // for each main lift so we never need to manually update currentLifts in data.json
+  var liftNameMap = {
+    'Trap Bar Deadlift': 'trapBarDeadlift',
+    'Back Squat': 'backSquat',
+    'Bench Press': 'benchPress'
+    // Note: DB Bench Press intentionally excluded — different lift than barbell bench target
+  };
+  var currentLifts = JSON.parse(JSON.stringify(baseLifts)); // clone defaults
+  // Walk activity log in order — last match wins (most recent)
+  activityLog.forEach(function(entry) {
+    if (entry.type !== 'training' || !entry.exercises) return;
+    entry.exercises.forEach(function(ex) {
+      var key = liftNameMap[ex.name];
+      if (!key) return;
+      // Parse weight: take the max numeric value from the weight string
+      var wStr = (ex.weight || '').toLowerCase().replace(/lbs?/g, '').trim();
+      var nums = wStr.split('/').map(Number).filter(function(n) { return !isNaN(n) && n > 0; });
+      if (nums.length === 0) return;
+      var maxW = Math.max.apply(null, nums);
+      // Parse reps from sets string (e.g., "4x5" → 5)
+      var setsMatch = (ex.sets || '').match(/\d+x(\d+)/);
+      var reps = setsMatch ? parseInt(setsMatch[1], 10) : (currentLifts[key] ? currentLifts[key].reps : 5);
+      currentLifts[key] = { weight: maxW, reps: reps };
+    });
+  });
+
   const startDate = new Date(athlete.startDate + 'T00:00:00');
   const today = new Date();
   today.setHours(0,0,0,0);

@@ -137,6 +137,20 @@
       ],
       "notes": "Week 2 upper body. All lifts progressed from Week 1. Switched from assisted pull-ups to lat pulldown, ramped to 135. DB bench all working sets at 65 (was 60). DB OH press up to 25 (was 20)."
     }
+    {
+      "date": "2026-03-20",
+      "type": "training",
+      "activity": "Lower Moderate + Movement Quality (Fri Phase 1)",
+      "exercises": [
+        { "name": "Goblet Squat", "sets": "3x10", "weight": "25 lbs" },
+        { "name": "Hip Thrust (Machine)", "sets": "3x10", "weight": "50 lbs" },
+        { "name": "Lateral Band Walk", "sets": "3x12/dir", "weight": "as prescribed" },
+        { "name": "Single-Leg Balance", "sets": "2x30s/leg", "weight": "as prescribed" },
+        { "name": "Standing Calf Raise (HSR)", "sets": "3x6", "weight": "as prescribed" },
+        { "name": "Banded Ankle Dorsiflexion", "sets": "2x10/side", "weight": "as prescribed" }
+      ],
+      "notes": "Week 2 Friday session. First Friday lower moderate session of the program. Goblet squat at 25 lbs, hip thrust on machine at 50 lbs."
+    }
   ],
   "bodyLog": [
     { "date": "2026-03-11", "weight": 218.3, "bodyFatPct": 22.7 },

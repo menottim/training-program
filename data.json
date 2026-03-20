@@ -122,6 +122,20 @@
         { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "140 lbs" }
       ],
       "notes": "Week 2 lower body. All lifts progressed from Week 1. GHR fatigued on last set (3 reps vs 5)."
+    },
+    {
+      "date": "2026-03-19",
+      "type": "training",
+      "activity": "Upper Body + Core (Thu Phase 1)",
+      "exercises": [
+        { "name": "DB Bench Press", "sets": "4x6", "weight": "65 lbs" },
+        { "name": "Lat Pulldown", "sets": "1x6, 1x6, 2x6", "weight": "95/110/135/135 lbs" },
+        { "name": "DB Overhead Press", "sets": "3x8", "weight": "25 lbs" },
+        { "name": "Face Pull", "sets": "3x15", "weight": "as prescribed" },
+        { "name": "Pallof Press", "sets": "3x10/side", "weight": "as prescribed" },
+        { "name": "Cable Woodchop", "sets": "3x6/side", "weight": "as prescribed" }
+      ],
+      "notes": "Week 2 upper body. All lifts progressed from Week 1. Switched from assisted pull-ups to lat pulldown, ramped to 135. DB bench all working sets at 65 (was 60). DB OH press up to 25 (was 20)."
     }
   ],
   "bodyLog": [

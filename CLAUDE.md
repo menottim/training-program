@@ -116,6 +116,35 @@ After logging, review recent trends and surface observations:
 - Whether a deload week is coming up
 - Any program adjustments worth considering
 
+## Modified Weeks (`modifiedWeeks` in data.json)
+
+When a week has a non-standard schedule (travel, injury, etc.), add it to the `modifiedWeeks` object in data.json. The key is the week number as a string.
+
+```json
+"modifiedWeeks": {
+  "4": {
+    "label": "Deload + Travel",
+    "reason": "Why this week is modified",
+    "schedule": [
+      {
+        "day": "Mon", "date": "2026-03-30", "type": "hotel",
+        "desc": "Lower + Achilles",
+        "exercises": [
+          { "name": "BW Split Squat", "sets": "3×8/leg" },
+          { "name": "Single-Leg Calf Raise", "sets": "3×6/leg", "notes": "HSR tempo" }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**Types:** `game`, `hotel`, `gym-deload`, `rest`
+
+The renderer shows a modified-week card below the weekly overview when the current week has an entry. The activity log also shows an amber banner for modified weeks.
+
+**Logging hotel/gym-deload sessions to activityLog:** When the athlete completes a hotel or gym-deload session, log it to `activityLog` with `"type": "training"` (not "hotel") so it counts in the session tally and renders normally. The `modifiedWeeks` data is the plan; `activityLog` is what actually happened.
+
 ## Things NOT to Do
 
 - **Do NOT manually update `currentLifts`** in data.json — the renderer derives current lifts automatically from activityLog by scanning for the latest logged weight of each main lift
@@ -132,6 +161,7 @@ The renderer scans `activityLog` exercises and maps these exact names:
 ## Known Gaps
 
 - **Week 3 (Mar 22–28):** No training or games — away traveling. No entries to log.
+- **Week 4 (Mar 29–Apr 5):** Modified deload + travel week. Hotel bodyweight sessions Mon–Thu, gym Friday, rest Sat–Sun. No games Tue or Sun. Schedule defined in `data.modifiedWeeks["4"]` and rendered dynamically on the site.
 
 ## Schedule
 

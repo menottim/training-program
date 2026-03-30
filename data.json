@@ -163,5 +163,77 @@
   "bodyLog": [
     { "date": "2026-03-11", "weight": 218.3, "bodyFatPct": 22.7 },
     { "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2 }
-  ]
+  ],
+  "modifiedWeeks": {
+    "4": {
+      "label": "Deload + Travel",
+      "reason": "Travel Mon\u2013Thu, no gym access. Week 3 also missed (travel) \u2014 last lifting was Week 2 (Mar 20). This is a re-entry week.",
+      "schedule": [
+        {
+          "day": "Sun", "date": "2026-03-29", "type": "game",
+          "desc": "Basketball 30 min moderate. No hockey."
+        },
+        {
+          "day": "Mon", "date": "2026-03-30", "type": "hotel",
+          "desc": "Lower + Achilles",
+          "exercises": [
+            { "name": "BW Split Squat", "sets": "3\u00d78/leg" },
+            { "name": "Single-Leg RDL (BW)", "sets": "3\u00d78/leg" },
+            { "name": "Single-Leg Calf Raise (HSR tempo)", "sets": "3\u00d76/leg", "notes": "On a step, 3s up / 3s down" },
+            { "name": "Single-Leg Balance", "sets": "2\u00d730s/leg" },
+            { "name": "Ankle Dorsiflexion Stretch", "sets": "2\u00d710/side" }
+          ]
+        },
+        {
+          "day": "Tue", "date": "2026-03-31", "type": "hotel",
+          "desc": "Upper + Core",
+          "exercises": [
+            { "name": "Push-ups", "sets": "3\u00d712" },
+            { "name": "Pike Push-ups", "sets": "2\u00d78" },
+            { "name": "Inverted Row (desk/table)", "sets": "3\u00d78" },
+            { "name": "Plank", "sets": "3\u00d730s" },
+            { "name": "Dead Bug", "sets": "3\u00d710/side" },
+            { "name": "Bird Dog", "sets": "2\u00d78/side" }
+          ]
+        },
+        {
+          "day": "Wed", "date": "2026-04-01", "type": "hotel",
+          "desc": "Lower + Achilles",
+          "exercises": [
+            { "name": "BW Squat", "sets": "3\u00d712" },
+            { "name": "Glute Bridge", "sets": "3\u00d712" },
+            { "name": "Lateral Lunge", "sets": "2\u00d710/side" },
+            { "name": "Single-Leg Calf Raise (HSR tempo)", "sets": "3\u00d76/leg", "notes": "On a step, 3s up / 3s down" },
+            { "name": "90/90 Hip Stretch", "sets": "2\u00d730s/side" }
+          ]
+        },
+        {
+          "day": "Thu", "date": "2026-04-02", "type": "hotel",
+          "desc": "Upper + Core + Mobility",
+          "exercises": [
+            { "name": "Push-ups", "sets": "3\u00d715" },
+            { "name": "Superman Hold", "sets": "3\u00d720s" },
+            { "name": "Side Plank", "sets": "2\u00d730s/side" },
+            { "name": "World's Greatest Stretch", "sets": "2\u00d75/side" }
+          ]
+        },
+        {
+          "day": "Fri", "date": "2026-04-03", "type": "gym-deload",
+          "desc": "Combined Deload \u2014 Full Body",
+          "exercises": [
+            { "name": "Trap Bar Deadlift", "sets": "2\u00d75", "weight": "195 lbs", "notes": "~85% of 230" },
+            { "name": "Bulgarian Split Squat", "sets": "2\u00d78/leg", "weight": "10 lb DBs" },
+            { "name": "DB Bench Press", "sets": "2\u00d76", "weight": "55 lbs", "notes": "~85% of 65" },
+            { "name": "Lat Pulldown", "sets": "2\u00d76", "weight": "115 lbs" },
+            { "name": "DB Overhead Press", "sets": "2\u00d78", "weight": "20 lbs" },
+            { "name": "Seated Calf Raise (HSR)", "sets": "3\u00d76", "weight": "140 lbs", "notes": "Full load \u2014 no deload on HSR" }
+          ]
+        },
+        {
+          "day": "Sat", "date": "2026-04-04", "type": "rest",
+          "desc": "Rest / Recovery. No games Sun either."
+        }
+      ]
+    }
+  }
 }

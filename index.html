@@ -401,6 +401,127 @@
   .deload-box ul { margin-left: 1.25rem; font-size: 0.85rem; }
   .deload-box li { margin-bottom: 0.25rem; }
 
+  /* Modified Week */
+  .modified-week {
+    margin: 1.5rem 0;
+    border: 2px solid var(--warning);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .modified-week-banner {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ffcc80;
+  }
+  .modified-week-banner h3 {
+    color: #e65100;
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+  }
+  .modified-week-banner p {
+    font-size: 0.8rem;
+    color: #bf360c;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .modified-week-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+  .modified-day {
+    padding: 0.5rem;
+    border-right: 1px solid var(--border);
+    font-size: 0.75rem;
+    min-height: 120px;
+  }
+  .modified-day:last-child { border-right: none; }
+  .modified-day .md-name {
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .modified-day .md-date {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+  .modified-day .md-type {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .modified-day .md-desc {
+    font-size: 0.7rem;
+    color: var(--text);
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .modified-day.type-hotel { background: #fff8e1; }
+  .modified-day.type-hotel .md-type { background: var(--warning); color: #fff; }
+  .modified-day.type-gym-deload { background: #e8f5e9; }
+  .modified-day.type-gym-deload .md-type { background: var(--success); color: #fff; }
+  .modified-day.type-rest { background: var(--bg-alt); }
+  .modified-day.type-rest .md-type { background: #e9ecef; color: var(--text-muted); }
+  .modified-day.type-game { background: #fff3f3; }
+  .modified-day.type-game .md-type { background: var(--accent); color: #fff; }
+  .modified-day .exercise-list {
+    margin: 4px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.6rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  .modified-day .exercise-list li {
+    margin-bottom: 1px;
+    padding-left: 0.6rem;
+    text-indent: -0.6rem;
+  }
+  .modified-day .exercise-list li::before {
+    content: "\2022 ";
+    color: var(--warning);
+  }
+  .modified-day.type-gym-deload .exercise-list li::before {
+    color: var(--success);
+  }
+  .modified-day.type-gym-deload .exercise-list .ex-weight {
+    color: var(--success);
+    font-weight: 600;
+  }
+  .modified-day.md-today {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+  .tag-hotel { background: #fff3e0; color: #e65100; }
+  .tag-gym-deload { background: #e8f5e9; color: var(--success); }
+  .mw-log-banner {
+    font-size: 0.75rem;
+    color: #e65100;
+    background: #fff3e0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  @media (max-width: 700px) {
+    .modified-week-grid {
+      grid-template-columns: 1fr;
+    }
+    .modified-day {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      min-height: auto;
+    }
+    .modified-day:last-child { border-bottom: none; }
+  }
+
   /* Footer */
   .footer {
     margin-top: 3rem;
@@ -847,6 +968,9 @@
   48+ hours between heavy training and games. Wednesday is furthest from all games. Friday is deliberately the lightest session (~36 hrs before Sunday AM).
 </div>
 
+<!-- Modified Week Plan (rendered from data.json when active) -->
+<div id="modified-week-mount"></div>
+
 <!-- PHASE 1 -->
 <h2 id="phases">&#9881;&#65039; Training Phases</h2>
 
@@ -1143,6 +1267,7 @@
   }
 
   const { athlete, currentLifts: baseLifts, targets, activityLog, bodyLog } = data;
+  const modifiedWeeks = data.modifiedWeeks || {};
 
   // Derive currentLifts from activityLog — find the most recent logged weight
   // for each main lift so we never need to manually update currentLifts in data.json
@@ -1292,6 +1417,53 @@
     '</div>'
   ].join('');
 
+  // Modified Week Plan
+  // Note: innerHTML is safe — data.json is self-authored, same trust model as all other renderers above.
+  (function renderModifiedWeek() {
+    var mw = modifiedWeeks[String(weekNum)];
+    if (!mw) return;
+
+    var typeLabels = {
+      'game': 'Game', 'hotel': 'Hotel', 'gym-deload': 'Gym Deload', 'rest': 'Rest'
+    };
+
+    var todayStr = today.getFullYear() + '-' +
+      String(today.getMonth() + 1).padStart(2, '0') + '-' +
+      String(today.getDate()).padStart(2, '0');
+
+    var daysHTML = mw.schedule.map(function(d) {
+      var isToday = d.date === todayStr;
+      var typeClass = 'type-' + d.type;
+      var todayClass = isToday ? ' md-today' : '';
+      var exHTML = '';
+      if (d.exercises && d.exercises.length > 0) {
+        exHTML = '<ul class="exercise-list">' +
+          d.exercises.map(function(ex) {
+            var detail = ex.name + ' ' + ex.sets;
+            if (ex.weight) detail += ' <span class="ex-weight">@ ' + ex.weight + '</span>';
+            return '<li>' + detail + '</li>';
+          }).join('') +
+        '</ul>';
+      }
+      return '<div class="modified-day ' + typeClass + todayClass + '">' +
+        '<div class="md-name">' + d.day + '</div>' +
+        '<div class="md-date">' + d.date.slice(5).replace('-', '/') + '</div>' +
+        '<div class="md-type">' + (typeLabels[d.type] || d.type) + '</div>' +
+        '<div class="md-desc">' + d.desc + '</div>' +
+        exHTML +
+      '</div>';
+    }).join('');
+
+    document.getElementById('modified-week-mount').innerHTML =
+      '<div class="modified-week">' +
+        '<div class="modified-week-banner">' +
+          '<h3>Week ' + weekNum + ': ' + mw.label + '</h3>' +
+          '<p>' + mw.reason + '</p>' +
+        '</div>' +
+        '<div class="modified-week-grid">' + daysHTML + '</div>' +
+      '</div>';
+  })();
+
   // Body Composition History
   if (bodyLog.length > 0) {
     var compRows = bodyLog.map(function(entry) {
@@ -1390,7 +1562,7 @@
       var games = entries.filter(function(e) { return e.type === 'game'; }).length;
       var sessions = entries.filter(function(e) { return e.type === 'training'; }).length;
       var rows = entries.map(function(e) {
-        var tagClass = e.type === 'game' ? 'tag-game' : e.type === 'training' ? 'tag-train' : e.type === 'recovery' ? 'tag-recovery' : 'tag-rest';
+        var tagClass = e.type === 'game' ? 'tag-game' : e.type === 'training' ? 'tag-train' : e.type === 'recovery' ? 'tag-recovery' : e.type === 'hotel' ? 'tag-hotel' : e.type === 'gym-deload' ? 'tag-gym-deload' : 'tag-rest';
         var typeLabel = e.type.charAt(0).toUpperCase() + e.type.slice(1);
         var details = e.activity || '';
         if (e.duration) details += ' \u00b7 ' + e.duration;
@@ -1403,10 +1575,15 @@
           '<td>' + (e.notes || '') + '</td>' +
         '</tr>';
       }).join('');
+      var wn = Math.max(1, Math.ceil((calendarDays(startDate, ws) + 1) / 7));
+      var mwBanner = modifiedWeeks[String(wn)]
+        ? '<span class="mw-log-banner">\u26a0\ufe0f ' + modifiedWeeks[String(wn)].label + '</span>'
+        : '';
       logHTML += '<div class="week-summary">' +
         '<div class="week-summary-header">' +
           '<h4>' + weekLabel(ws) + '</h4>' +
           '<div class="week-tags">' +
+            mwBanner +
             '<span class="week-mini-stat">' + sessions + ' sessions</span>' +
             '<span class="week-mini-stat">' + games + ' games</span>' +
           '</div>' +

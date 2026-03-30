@@ -129,6 +129,10 @@ The renderer scans `activityLog` exercises and maps these exact names:
 - `"Back Squat"` → backSquat
 - `"Bench Press"` → benchPress (barbell only)
 
+## Known Gaps
+
+- **Week 3 (Mar 22–28):** No training or games — away traveling. No entries to log.
+
 ## Schedule
 
 - **Week 1 start date: March 8, 2026** (Sunday)

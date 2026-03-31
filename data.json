@@ -158,6 +158,18 @@
       "duration": "30 min",
       "intensity": "moderate",
       "notes": "Week 4 (deload week) Sunday AM basketball. Shorter session, moderate intensity. No hockey this week."
+    },
+    {
+      "date": "2026-03-31",
+      "type": "training",
+      "activity": "Lower Body — Hotel Gym (Deload Week 4)",
+      "exercises": [
+        { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "10 lb DBs" },
+        { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "30 lb DBs" },
+        { "name": "Single-Leg Calf Raise (HSR)", "sets": "3x6/leg", "weight": "30 lb DB", "notes": "HSR tempo" },
+        { "name": "Leg Curl Machine", "sets": "4x8", "weight": "40/50/70/80 lbs" }
+      ],
+      "notes": "Limited hotel gym. Upgraded from bodyweight hotel plan to weighted exercises. Added leg curls for hamstring volume. Single-leg RDLs jumped to 30 lb DBs (was 25 in Week 2)."
     }
   ],
   "bodyLog": [

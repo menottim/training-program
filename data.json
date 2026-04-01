@@ -170,6 +170,19 @@
         { "name": "Leg Curl Machine", "sets": "4x8", "weight": "40/50/70/80 lbs" }
       ],
       "notes": "Limited hotel gym. Upgraded from bodyweight hotel plan to weighted exercises. Added leg curls for hamstring volume. Single-leg RDLs jumped to 30 lb DBs (was 25 in Week 2)."
+    },
+    {
+      "date": "2026-04-01",
+      "type": "training",
+      "activity": "Upper Body + Core — Hotel Gym (Deload Week 4)",
+      "exercises": [
+        { "name": "DB Bench Press", "sets": "3x10", "weight": "50 lbs" },
+        { "name": "DB Overhead Press", "sets": "3x10", "weight": "30 lbs" },
+        { "name": "Cable Lat Pulldown", "sets": "3x10", "weight": "cable" },
+        { "name": "Pallof Press", "sets": "3x10", "weight": "cable" },
+        { "name": "Cable Woodchoppers", "sets": "3x10", "weight": "cable" }
+      ],
+      "notes": "Swapped planned lower body for upper body. Had access to dumbbells and cable machine — significant upgrade over bodyweight plan. DB press at 50 lbs (down from 65 in Week 2 — appropriate deload range). Good core work with anti-rotation and rotational exercises."
     }
   ],
   "bodyLog": [

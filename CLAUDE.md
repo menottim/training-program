@@ -158,10 +158,27 @@ The renderer scans `activityLog` exercises and maps these exact names:
 - `"Back Squat"` → backSquat
 - `"Bench Press"` → benchPress (barbell only)
 
+## Bench Press Rotation (Starting Week 5)
+
+Alternate weekly on Thursday upper body:
+- **Odd weeks** (5, 7, 9...): Barbell Bench Press 4×5 — log as `"Bench Press"` (maps to benchPress target)
+- **Even weeks** (6, 8, 10...): DB Bench Press 4×6 — log as `"DB Bench Press"` (does NOT map to benchPress target)
+
+This tracks the barbell bench target (225×5) while keeping DB stability work.
+
+## Back Squat Introduction (Starting Week 5)
+
+Back Squat was added to Phase 1 Wednesday as a second compound after TB DL:
+- Phase 1 (Wks 5–6): 3×5 — pattern building, conservative load
+- Phase 2 (Wks 7+): 4×5 — full volume as originally planned
+
+Log as `"Back Squat"` — this maps to the backSquat target (315×5).
+
 ## Known Gaps
 
 - **Week 3 (Mar 22–28):** No training or games — away traveling. No entries to log.
 - **Week 4 (Mar 29–Apr 5):** Modified deload + travel week. Hotel bodyweight sessions Mon–Thu, gym Friday, rest Sat–Sun. No games Tue or Sun. Schedule defined in `data.modifiedWeeks["4"]` and rendered dynamically on the site.
+- **Week 5 (Apr 5–11):** No games (basketball and hockey both off). 4-session push week — Mon/Tue/Thu/Fri. Re-baseline compounds after 20-day gap. Introducing Back Squat and Barbell Bench. Schedule in `data.modifiedWeeks["5"]`. Games resume Sun Apr 12.
 
 ## Schedule
 

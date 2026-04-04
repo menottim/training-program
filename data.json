@@ -275,6 +275,71 @@
           "desc": "Rest / Recovery. No games Sun either."
         }
       ]
+    },
+    "5": {
+      "label": "Push Week (No Games)",
+      "reason": "No basketball or hockey this week (next games Sun Apr 12). Rare opportunity for 4 lifting sessions. Re-baseline compounds after 20-day barbell gap. Introducing Back Squat and Barbell Bench.",
+      "schedule": [
+        {
+          "day": "Sun", "date": "2026-04-05", "type": "rest",
+          "desc": "Rest. No basketball or hockey."
+        },
+        {
+          "day": "Mon", "date": "2026-04-07", "type": "gym-deload",
+          "desc": "Lower Body Heavy — Re-baseline",
+          "exercises": [
+            { "name": "Trap Bar Deadlift", "sets": "4×5", "weight": "225 lbs", "notes": "Re-baseline at Week 2 weight" },
+            { "name": "Back Squat", "sets": "3×5", "weight": "135–155 lbs", "notes": "NEW — pattern session, find working weight" },
+            { "name": "Bulgarian Split Squat", "sets": "3×8/leg", "weight": "10 lb DBs" },
+            { "name": "Glute Ham Raise", "sets": "3×5", "weight": "BW" },
+            { "name": "Single-Leg RDL", "sets": "3×8/leg", "weight": "25 lb DBs" },
+            { "name": "Seated Calf Raise (HSR)", "sets": "3×6", "weight": "140 lbs" }
+          ]
+        },
+        {
+          "day": "Tue", "date": "2026-04-08", "type": "gym-deload",
+          "desc": "Upper Body + Core — BB Bench Baseline",
+          "exercises": [
+            { "name": "Bench Press", "sets": "4×5", "weight": "135 lbs", "notes": "NEW — establish barbell baseline" },
+            { "name": "Lat Pulldown", "sets": "4×6", "weight": "135+ lbs", "notes": "Match or exceed Week 2" },
+            { "name": "DB Overhead Press", "sets": "3×8", "weight": "25 lbs" },
+            { "name": "Face Pull", "sets": "3×15" },
+            { "name": "Pallof Press", "sets": "3×10/side" },
+            { "name": "Cable Woodchop", "sets": "3×6/side" }
+          ]
+        },
+        {
+          "day": "Wed", "date": "2026-04-09", "type": "rest",
+          "desc": "Rest / Recovery"
+        },
+        {
+          "day": "Thu", "date": "2026-04-10", "type": "gym-deload",
+          "desc": "Lower Body #2 — Volume",
+          "exercises": [
+            { "name": "Back Squat", "sets": "3×5", "weight": "based on Monday", "notes": "Second squat session — refine pattern" },
+            { "name": "Bulgarian Split Squat", "sets": "3×8/leg", "weight": "15 lb DBs", "notes": "Progress if Monday felt easy" },
+            { "name": "Glute Ham Raise", "sets": "3×5", "weight": "BW" },
+            { "name": "Single-Leg RDL", "sets": "3×8/leg", "weight": "25–30 lb DBs" },
+            { "name": "Seated Calf Raise (HSR)", "sets": "3×6", "weight": "140 lbs" }
+          ]
+        },
+        {
+          "day": "Fri", "date": "2026-04-11", "type": "gym-deload",
+          "desc": "Lower Moderate + Movement Quality",
+          "exercises": [
+            { "name": "Goblet Squat", "sets": "3×10", "weight": "25–35 lbs" },
+            { "name": "Hip Thrust", "sets": "3×10" },
+            { "name": "Lateral Band Walk", "sets": "3×12/dir" },
+            { "name": "Single-Leg Balance", "sets": "2×30s/leg" },
+            { "name": "Standing Calf Raise (HSR)", "sets": "3×6" },
+            { "name": "Banded Ankle Dorsiflexion", "sets": "2×10/side" }
+          ]
+        },
+        {
+          "day": "Sat", "date": "2026-04-12", "type": "rest",
+          "desc": "Rest before games resume Sunday"
+        }
+      ]
     }
   }
 }

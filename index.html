@@ -536,22 +536,27 @@
       scroll-snap-align: start;
     }
 
-    /* Activity log + progress log tables: horizontal scroll on mobile */
-    .log-table {
-      display: block;
+    /* Activity log tables: scrollable wrapper */
+    .week-summary {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
     }
+    .log-table {
+      min-width: 500px;
+    }
     .log-table td:last-child {
-      min-width: 180px;
+      min-width: 200px;
       white-space: normal;
+      word-wrap: break-word;
     }
 
     /* Progress log tables */
-    .progress-log table {
-      display: block;
+    .progress-log {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+    }
+    .progress-log table {
+      min-width: 450px;
       font-size: 0.75rem;
     }
 

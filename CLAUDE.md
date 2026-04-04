@@ -67,6 +67,8 @@ The renderer uses a regex `/\((\w+)\s+Phase\s+(\d+)\)/` to extract the day and p
     { "name": "DB Bench Press", "sets": "4x6", "weight": "65 lbs" },
     { "name": "Lat Pulldown", "sets": "1x6, 1x6, 2x6", "weight": "95/110/135/135 lbs" }
   ],
+  "sleepHours": 7.5,
+  "proteinGrams": 180,
   "notes": "Summary of session, progression notes"
 }
 ```
@@ -81,6 +83,8 @@ The renderer uses a regex `/\((\w+)\s+Phase\s+(\d+)\)/` to extract the day and p
   "duration": "40 min",
   "intensity": "high",
   "achillesPain": 0,
+  "sleepHours": 7,
+  "proteinGrams": 160,
   "notes": "Session notes"
 }
 ```
@@ -93,6 +97,8 @@ The renderer uses a regex `/\((\w+)\s+Phase\s+(\d+)\)/` to extract the day and p
   "type": "recovery",
   "activity": "Recovery day",
   "details": "Bike 12 min, seated calf raise HSR 3x10, stretches",
+  "sleepHours": 8,
+  "proteinGrams": 170,
   "notes": "How it felt"
 }
 ```
@@ -158,13 +164,13 @@ The renderer scans `activityLog` exercises and maps these exact names:
 - `"Back Squat"` → backSquat
 - `"Bench Press"` → benchPress (barbell only)
 
-## Bench Press Rotation (Starting Week 5)
+## Bench Press Programming (Starting Week 5)
 
-Alternate weekly on Thursday upper body:
-- **Odd weeks** (5, 7, 9...): Barbell Bench Press 4×5 — log as `"Bench Press"` (maps to benchPress target)
-- **Even weeks** (6, 8, 10...): DB Bench Press 4×6 — log as `"DB Bench Press"` (does NOT map to benchPress target)
+Thursday upper body every week:
+- **Barbell Bench Press 4×5** — primary press, log as `"Bench Press"` (maps to benchPress target)
+- **DB Bench Press 3×8** — accessory after BB bench, log as `"DB Bench Press"` (does NOT map to benchPress target)
 
-This tracks the barbell bench target (225×5) while keeping DB stability work.
+BB bench gets weekly frequency for efficient progression toward 225×5 target. DB bench adds chest volume + stability work at lighter load.
 
 ## Back Squat Introduction (Starting Week 5)
 
@@ -184,11 +190,39 @@ Log as `"Back Squat"` — this maps to the backSquat target (315×5).
 
 - **Week 1 start date: March 8, 2026** (Sunday)
 - Weeks run Sunday–Saturday
-- Phase 1: Foundation — Weeks 1–6 (Mar 8 – Apr 18)
-- Phase 2: Strength-Power — Weeks 7–12 (Apr 19 – May 30)
-- Phase 3: Power Realization — Weeks 13+ (May 31 onward)
-- **Deload weeks: every 4th week** (Weeks 4, 8, 12, ...)
+- Phase 1: Foundation — Weeks 1–8 (Mar 8 – May 2). Extended from 6→8 weeks to compensate for Weeks 3–4 travel gap.
+- Phase 2: Strength-Power — Weeks 9–14 (May 3 – Jun 13). Introduces plyometrics + RPE 7-8.
+- Phase 3: Power Realization — Weeks 15+ (Jun 14 onward)
+- **Deload weeks: every 4th week** (Weeks 4, 8, 12, ...). Week 8 is both deload and Phase 1→2 transition.
 - To calculate current week: `ceil((days since March 8 + 1) / 7)`
+
+## Science Review Cadence
+
+**Check the program against the science-based guidelines at least once per week.**
+
+When a new conversation starts:
+1. Calculate current week from start date
+2. Check `data.scienceReviews[]` for the last review date
+3. If the last review was >7 days ago, proactively suggest: _"It's been [N] days since the last science-based program review. Want to do a check against the research guidelines?"_
+
+When performing a science review:
+- Audit HSR compliance (target: 3×/week, every week)
+- Check volume per muscle group against Schoenfeld 2017 minimums (6-10 sets)
+- Review progression rates against expected ranges (Section 7 guidelines)
+- Check body composition trajectory
+- Review sleep/protein averages if tracking data exists
+- Check achilles pain monitoring decision tree
+- Assess phase transition readiness
+- Append findings to `data.scienceReviews[]`
+
+```json
+{
+  "date": "2026-04-04",
+  "week": 4,
+  "findings": "Summary of what the data shows vs guidelines",
+  "changes": "What was adjusted as a result"
+}
+```
 
 ## Equipment Notes
 

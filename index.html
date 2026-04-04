@@ -1047,10 +1047,10 @@
 <div class="phase">
   <div class="phase-header">
     Phase 1: Foundation
-    <span class="weeks">Weeks 1–6</span>
+    <span class="weeks">Weeks 1–8</span>
   </div>
   <div class="phase-body">
-    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Rebuild your strength base. No plyometrics yet — tendons and connective tissue need preparation first. Focus on progressive overload with controlled tempos.</p>
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Rebuild your strength base. No plyometrics yet — tendons and connective tissue need preparation first. Focus on progressive overload with controlled tempos. Extended to 8 weeks (from 6) to compensate for travel gaps in Weeks 3–4.</p>
 
     <h3>Wednesday — Lower Body Strength (Heavy)</h3>
     <table>
@@ -1070,8 +1070,10 @@
     <table>
       <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bench-press" target="_blank">Barbell Bench Press</a> / <a href="https://musclewiki.com/exercise/dumbbell-bench-press" target="_blank">DB Bench Press</a></td><td class="sets">4 &times; 5 / 4 &times; 6</td><td class="notes">Alternate weekly: odd weeks barbell, even weeks DB</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bench-press" target="_blank">Barbell Bench Press</a></td><td class="sets">4 &times; 5</td><td class="notes">Primary press every week. Track toward 225&times;5 target.</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/weighted-pull-ups" target="_blank">Weighted Pull-up</a> / <a href="https://musclewiki.com/exercise/machine-pulldown" target="_blank">Lat Pulldown</a></td><td class="sets">4 &times; 6</td><td class="notes">Add weight when BW &times; 6 is easy</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-bench-press" target="_blank">DB Bench Press</a></td><td class="sets">3 &times; 8</td><td class="notes">Accessory — lighter, stability focus</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-laying-incline-row" target="_blank">Chest-Supported Row</a></td><td class="sets">3 &times; 8</td><td class="notes">Back volume — pulls balanced with presses</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-overhead-press" target="_blank">DB Overhead Press</a></td><td class="sets">3 &times; 8</td><td class="notes">Standing, engages core</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-bar-face-pull" target="_blank">Face Pulls</a></td><td class="sets">3 &times; 15</td><td class="notes">Shoulder health / prehab</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-pallof-press" target="_blank">Pallof Press</a></td><td class="sets">3 &times; 10/side</td><td class="notes">Anti-rotation core stability</td></tr>
@@ -1099,7 +1101,7 @@
 <div class="phase">
   <div class="phase-header">
     Phase 2: Strength-Power
-    <span class="weeks">Weeks 7–12</span>
+    <span class="weeks">Weeks 9–14</span>
   </div>
   <div class="phase-body">
     <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Introduce low-volume plyometrics. Continue building strength. Plyometric benefits taper after ~4 weeks, so we cycle them in blocks.</p>
@@ -1149,7 +1151,7 @@
 <div class="phase">
   <div class="phase-header">
     Phase 3: Power Realization
-    <span class="weeks">Weeks 13+</span>
+    <span class="weeks">Weeks 15+</span>
   </div>
   <div class="phase-body">
     <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Continue cycling 4-week plyometric blocks with 2-week deload/maintenance blocks. Keep pushing strength numbers toward targets. Maintain Phase 2 structure but progress loads.</p>
@@ -1378,7 +1380,7 @@
   }
   const daysSinceStart = Math.max(0, calendarDays(startDate, today));
   const weekNum = Math.max(1, Math.ceil((daysSinceStart + 1) / 7));
-  const phase = weekNum <= 6 ? 1 : weekNum <= 12 ? 2 : 3;
+  const phase = weekNum <= 8 ? 1 : weekNum <= 14 ? 2 : 3;
   const phaseNames = { 1: 'Foundation', 2: 'Strength-Power', 3: 'Power Realization' };
 
   const totalGames = activityLog.filter(e => e.type === 'game').length;
@@ -1399,6 +1401,16 @@
   const achillesAvg = achillesEntries.length > 0
     ? (achillesEntries.reduce((s, e) => s + e.achillesPain, 0) / achillesEntries.length).toFixed(1)
     : '\u2014';
+
+  // Sleep & protein averages (last 7 entries with data)
+  const sleepEntries = activityLog.filter(e => e.sleepHours != null).slice(-7);
+  const sleepAvg = sleepEntries.length > 0
+    ? (sleepEntries.reduce((s, e) => s + e.sleepHours, 0) / sleepEntries.length).toFixed(1)
+    : null;
+  const proteinEntries = activityLog.filter(e => e.proteinGrams != null).slice(-7);
+  const proteinAvg = proteinEntries.length > 0
+    ? Math.round(proteinEntries.reduce((s, e) => s + e.proteinGrams, 0) / proteinEntries.length)
+    : null;
 
   // Note: innerHTML is used throughout because data.json is a self-authored
   // local file, not user-submitted input. No XSS risk for this personal site.
@@ -1485,6 +1497,18 @@
       '<div class="dash-label">Achilles Avg</div>',
       '<div class="dash-sub">pain 0\u201310</div>',
     '</div>',
+    sleepAvg != null ? [
+    '<div class="dash-card' + (parseFloat(sleepAvg) >= 7 ? ' improving' : parseFloat(sleepAvg) < 6 ? ' warning' : '') + '">',
+      '<div class="dash-value">' + sleepAvg + 'h</div>',
+      '<div class="dash-label">Sleep Avg</div>',
+      '<div class="dash-sub">last 7 entries</div>',
+    '</div>'].join('') : '',
+    proteinAvg != null ? [
+    '<div class="dash-card' + (proteinAvg >= 160 ? ' improving' : ' warning') + '">',
+      '<div class="dash-value">' + proteinAvg + 'g</div>',
+      '<div class="dash-label">Protein Avg</div>',
+      '<div class="dash-sub">target 160\u2013220g</div>',
+    '</div>'].join('') : '',
     '</div>'
   ].join('');
 
@@ -1673,7 +1697,7 @@
   var phasePattern = /\((\w+)\s+Phase\s+(\d+)\)/;
 
   // Map mount IDs to the phase range they belong to
-  var phaseWeekRange = { 1: [1, 6], 2: [7, 12], 3: [13, 18] };
+  var phaseWeekRange = { 1: [1, 8], 2: [9, 14], 3: [15, 20] };
 
   function renderProgressLogs() {
     // Collect all training entries with parseable activity names

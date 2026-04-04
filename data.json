@@ -199,6 +199,14 @@
       "notes": "Gym deload session — first barbell work since Week 2 (Mar 20, two weeks ago). TB DL at 195 (~85% of 230). DB bench 55 (~85% of 65). HSR calf raises at full load per protocol. Executed as prescribed in modified week plan."
     }
   ],
+  "scienceReviews": [
+    {
+      "date": "2026-04-04",
+      "week": 4,
+      "findings": "HSR compliance low (33-67%), chest/back volume below 6-set minimum, body comp trending wrong direction, only 2 full training weeks in 4",
+      "changes": "Extended Phase 1 to Week 8, BB bench weekly + DB accessory, added chest-supported row, added sleep/protein tracking, travel-proof HSR protocol recommended"
+    }
+  ],
   "bodyLog": [
     { "date": "2026-03-11", "weight": 218.3, "bodyFatPct": 22.7 },
     { "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2 },
@@ -302,6 +310,8 @@
           "exercises": [
             { "name": "Bench Press", "sets": "4×5", "weight": "135 lbs", "notes": "NEW — establish barbell baseline" },
             { "name": "Lat Pulldown", "sets": "4×6", "weight": "135+ lbs", "notes": "Match or exceed Week 2" },
+            { "name": "DB Bench Press", "sets": "3×8", "weight": "45-50 lbs", "notes": "Accessory — lighter, stability" },
+            { "name": "Chest-Supported Row", "sets": "3×8", "notes": "Back volume" },
             { "name": "DB Overhead Press", "sets": "3×8", "weight": "25 lbs" },
             { "name": "Face Pull", "sets": "3×15" },
             { "name": "Pallof Press", "sets": "3×10/side" },

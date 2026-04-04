@@ -520,6 +520,71 @@
       min-height: auto;
     }
     .modified-day:last-child { border-bottom: none; }
+
+    /* Weekly overview: scroll horizontally instead of squishing 7 columns */
+    .week-grid {
+      display: flex;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      gap: 6px;
+      padding-bottom: 4px;
+    }
+    .day-card {
+      min-width: 110px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+    }
+
+    /* Activity log + progress log tables: horizontal scroll on mobile */
+    .log-table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .log-table td:last-child {
+      min-width: 180px;
+      white-space: normal;
+    }
+
+    /* Progress log tables */
+    .progress-log table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-size: 0.75rem;
+    }
+
+    /* Strength targets grid: stack on mobile */
+    .targets-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* Nutrition grid: stack on mobile */
+    .nutrition-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* Dashboard cards: 2 columns is fine, but allow wrapping */
+    .dashboard {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Progress log tables: ensure readability */
+    .progress-table {
+      font-size: 0.75rem;
+    }
+
+    /* Bar chart labels: tighter on mobile */
+    .bar-label {
+      width: 90px;
+      font-size: 0.7rem;
+    }
+
+    /* Header stats: wrap tighter */
+    .header .stats {
+      gap: 1rem;
+    }
   }
 
   /* Footer */

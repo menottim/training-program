@@ -183,6 +183,20 @@
         { "name": "Cable Woodchoppers", "sets": "3x10", "weight": "cable" }
       ],
       "notes": "Swapped planned lower body for upper body. Had access to dumbbells and cable machine — significant upgrade over bodyweight plan. DB press at 50 lbs (down from 65 in Week 2 — appropriate deload range). Good core work with anti-rotation and rotational exercises."
+    },
+    {
+      "date": "2026-04-04",
+      "type": "training",
+      "activity": "Combined Deload — Full Body (Fri Deload Week 4)",
+      "exercises": [
+        { "name": "Trap Bar Deadlift", "sets": "2x5", "weight": "195 lbs" },
+        { "name": "Bulgarian Split Squat", "sets": "2x8/leg", "weight": "10 lb DBs" },
+        { "name": "DB Bench Press", "sets": "2x6", "weight": "55 lbs" },
+        { "name": "Lat Pulldown", "sets": "2x6", "weight": "115 lbs" },
+        { "name": "DB Overhead Press", "sets": "2x8", "weight": "20 lbs" },
+        { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "140 lbs" }
+      ],
+      "notes": "Gym deload session — first barbell work since Week 2 (Mar 20, two weeks ago). TB DL at 195 (~85% of 230). DB bench 55 (~85% of 65). HSR calf raises at full load per protocol. Executed as prescribed in modified week plan."
     }
   ],
   "bodyLog": [

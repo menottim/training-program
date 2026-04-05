@@ -511,6 +511,8 @@
     display: inline-block;
   }
   @media (max-width: 700px) {
+    .log-form-row { flex-direction: column; }
+
     .modified-week-grid {
       grid-template-columns: 1fr;
     }
@@ -660,6 +662,76 @@
     transform: scale(1.1);
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
+
+  /* Logging Form */
+  .log-form {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem;
+    margin: 1rem 0 1.5rem;
+    background: var(--bg-alt);
+  }
+  .log-form h3 { margin: 0 0 1rem; color: var(--accent); border: none; font-size: 1rem; }
+  .log-form select, .log-form input, .log-form textarea {
+    width: 100%;
+    min-height: 44px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem;
+    background: #fff;
+    color: var(--text);
+    box-sizing: border-box;
+  }
+  .log-form textarea { min-height: 60px; resize: vertical; }
+  .log-form select { appearance: auto; }
+  .log-form input:focus, .log-form select:focus, .log-form textarea:focus {
+    outline: none; border-color: var(--accent2); box-shadow: 0 0 0 2px rgba(15,52,96,0.15);
+  }
+  .log-form-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .log-form-row > * { flex: 1; min-width: 120px; }
+  .log-form-group { margin-bottom: 0.75rem; }
+  .log-form-group label {
+    display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--text-muted); font-weight: 600; margin-bottom: 4px;
+  }
+  .log-form-group .field-error { color: var(--accent); font-size: 0.75rem; margin-top: 2px; }
+  .log-form-group input.invalid, .log-form-group select.invalid { border-color: var(--accent); }
+  .exercise-entry {
+    border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem;
+    margin-bottom: 0.5rem; position: relative; background: #fff;
+  }
+  .exercise-entry .remove-ex {
+    position: absolute; top: 0.25rem; right: 0.5rem; background: none;
+    border: none; color: var(--accent); font-size: 1.2rem; cursor: pointer; padding: 4px;
+  }
+  .add-exercise-btn {
+    border: 2px dashed var(--border); border-radius: 6px; padding: 0.75rem;
+    width: 100%; background: none; cursor: pointer; color: var(--text-muted);
+    font-size: 0.85rem; font-family: inherit; transition: border-color 0.15s;
+  }
+  .add-exercise-btn:hover { border-color: var(--accent2); color: var(--accent2); }
+  .log-submit {
+    background: var(--accent); color: #fff; border: none; border-radius: 6px;
+    padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 600; cursor: pointer;
+    width: 100%; min-height: 48px; margin-top: 0.5rem; font-family: inherit;
+    transition: opacity 0.15s;
+  }
+  .log-submit:hover { opacity: 0.9; }
+  .log-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+  .log-status { margin-top: 0.75rem; padding: 0.5rem 0.75rem; border-radius: 6px; font-size: 0.85rem; }
+  .log-status.success { background: #f0fff4; color: var(--success); border: 1px solid #c8e6c9; }
+  .log-status.error { background: #fff8f0; color: var(--accent); border: 1px solid #ffcc80; }
+  .token-setup input { margin-bottom: 0.5rem; }
+  .token-setup .token-btn {
+    background: var(--accent2); color: #fff; border: none; border-radius: 6px;
+    padding: 0.5rem 1rem; cursor: pointer; font-size: 0.85rem; font-family: inherit;
+  }
+  .log-form-footer { margin-top: 0.75rem; font-size: 0.7rem; color: var(--text-muted); text-align: right; }
+  .log-form-footer a { color: var(--text-muted); cursor: pointer; text-decoration: underline; }
+  .hidden { display: none !important; }
 
   /* Footer */
   .footer {
@@ -1360,6 +1432,9 @@
 <h2 id="tracker" style="margin-top:3rem;">&#128202; Activity Tracker</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Program start: March 2026 &middot; Phase 1: Foundation</p>
 
+<!-- Self-Service Logging Form (rendered by JS) -->
+<div id="log-form-mount"></div>
+
 <!-- Dashboard Summary (rendered from data.json) -->
 <div id="dashboard-mount"></div>
 
@@ -1388,7 +1463,7 @@
 <div id="activity-log-mount"></div>
 
 <!-- Quick Log FAB -->
-<a href="#tracker" class="fab-log" title="Jump to Activity Log">&#128203;</a>
+<a href="#log-form-mount" class="fab-log" title="Log Activity">&#128203;</a>
 
 <div class="footer">
   <p>Program designed March 2026 &middot; Based on current sports medicine research &middot; Consult a physician before beginning</p>
@@ -2440,6 +2515,309 @@
         '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#fd7e14"></span> Pain level (0\u201310)</span>' +
         '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = protocol threshold (5)</span>' +
       '</div>');
+  })();
+
+  // ─── Self-Service Logging Form ───
+  // Note: innerHTML is safe throughout this form — all content is generated from
+  // hardcoded strings, computed variables (phase, weekNum), and user's own form input
+  // on a personal single-user GitHub Pages site. Same trust model as all other renderers.
+  (function logForm() {
+    var REPO = 'menottim/training-program';
+    var FILE = 'data.json';
+    var COMMITTER = { name: 'menottim', email: 'menottim@users.noreply.github.com' };
+    var mount = document.getElementById('log-form-mount');
+    if (!mount) return;
+
+    function getToken() { return localStorage.getItem('gh_pat'); }
+    function setToken(t) { localStorage.setItem('gh_pat', t.trim()); }
+    function clearToken() { localStorage.removeItem('gh_pat'); render(); }
+
+    var today = new Date();
+    var todayStr = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
+
+    var exercisePresets = [
+      { group: 'Lower Body', items: ['Trap Bar Deadlift', 'Back Squat', 'Bulgarian Split Squat', 'Goblet Squat', 'Glute Ham Raise', 'Single-Leg RDL', 'Hip Thrust', 'Hip Thrust (Machine)', 'Lateral Band Walk', 'Single-Leg Balance', 'Leg Curl Machine'] },
+      { group: 'Upper Body', items: ['Bench Press', 'DB Bench Press', 'DB Overhead Press', 'Lat Pulldown', 'Weighted Pull-up', 'Pull-up (Assisted)', 'Chest-Supported Row', 'Face Pull', 'Pallof Press', 'Cable Woodchop', 'Cable Lat Pulldown'] },
+      { group: 'HSR / Calf', items: ['Seated Calf Raise (HSR)', 'Standing Calf Raise (HSR)', 'Single-Leg Calf Raise (HSR)'] },
+      { group: 'Mobility', items: ['Banded Ankle Dorsiflexion'] }
+    ];
+
+    var trainingPresets = [
+      'Lower Body (Wed Phase ' + phase + ')',
+      'Upper Body + Core (Thu Phase ' + phase + ')',
+      'Lower Moderate + Movement Quality (Fri Phase ' + phase + ')'
+    ];
+    var gamePresets = ['Basketball', 'Hockey', 'Surfing'];
+
+    function exerciseSelectHTML(id) {
+      var h = '<select id="' + id + '" style="margin-bottom:4px"><option value="">Select exercise...</option>';
+      exercisePresets.forEach(function(g) {
+        h += '<optgroup label="' + g.group + '">';
+        g.items.forEach(function(item) { h += '<option value="' + item + '">' + item + '</option>'; });
+        h += '</optgroup>';
+      });
+      return h + '<option value="__custom">Custom...</option></select>';
+    }
+
+    var exCount = 0;
+    function exerciseCardHTML() {
+      var id = 'ex-' + (exCount++);
+      return '<div class="exercise-entry" data-exid="' + id + '">' +
+        '<button type="button" class="remove-ex" onclick="this.parentElement.remove()">&times;</button>' +
+        '<div class="log-form-group">' + exerciseSelectHTML(id + '-name') +
+          '<input type="text" id="' + id + '-name-custom" class="hidden" placeholder="Custom exercise name"></div>' +
+        '<div class="log-form-row">' +
+          '<div class="log-form-group"><label>Sets</label><input type="text" id="' + id + '-sets" placeholder="4x5 or 3x8/leg"></div>' +
+          '<div class="log-form-group"><label>Weight</label><input type="text" id="' + id + '-weight" placeholder="225 lbs or BW"></div>' +
+        '</div></div>';
+    }
+
+    function render() {
+      if (!getToken()) {
+        mount.textContent = '';
+        var setup = document.createElement('div');
+        setup.className = 'log-form token-setup';
+        setup.innerHTML = '<h3>Log Activity</h3>' +
+          '<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">One-time setup: enter a GitHub Personal Access Token to enable logging. ' +
+          'Create one at <a href="https://github.com/settings/tokens?type=beta" target="_blank">github.com/settings/tokens</a> — scope: <strong>Contents read/write</strong> for <strong>menottim/training-program</strong>.</p>' +
+          '<input type="password" id="token-input" placeholder="github_pat_...">' +
+          '<button class="token-btn" onclick="window._saveToken()">Save Token</button>' +
+          '<div id="token-status"></div>';
+        mount.appendChild(setup);
+        return;
+      }
+
+      mount.textContent = '';
+      var form = document.createElement('div');
+      form.className = 'log-form';
+      form.innerHTML =
+        '<h3 class="collapsible-header" id="log-form-toggle">Log Activity</h3>' +
+        '<div class="collapsible-body" id="log-form-body">' +
+        '<div class="log-form-group"><label>Type</label><select id="log-type" onchange="window._toggleLogType()">' +
+          '<option value="training">Training Session</option><option value="game">Game</option>' +
+          '<option value="recovery">Recovery</option><option value="body">Body Stats</option></select></div>' +
+        '<div class="log-form-row"><div class="log-form-group"><label>Date</label><input type="date" id="log-date" value="' + todayStr + '"></div></div>' +
+
+        '<div id="fields-training">' +
+          '<div class="log-form-group"><label>Activity Name</label><select id="log-activity-training" onchange="window._toggleCustomActivity()">' +
+            trainingPresets.map(function(p) { return '<option value="' + p + '">' + p + '</option>'; }).join('') +
+            '<option value="__custom">Custom...</option></select>' +
+            '<input type="text" id="log-activity-training-custom" class="hidden" placeholder="e.g., Lower Body (Wed Phase 1)" style="margin-top:4px"></div>' +
+          '<div id="exercise-list">' + exerciseCardHTML() + '</div>' +
+          '<button type="button" class="add-exercise-btn" onclick="window._addExercise()">+ Add Exercise</button></div>' +
+
+        '<div id="fields-game" class="hidden">' +
+          '<div class="log-form-group"><label>Activity</label><select id="log-activity-game" onchange="window._toggleCustomGame()">' +
+            gamePresets.map(function(p) { return '<option value="' + p + '">' + p + '</option>'; }).join('') +
+            '<option value="__custom">Custom...</option></select>' +
+            '<input type="text" id="log-activity-game-custom" class="hidden" placeholder="Game type" style="margin-top:4px"></div>' +
+          '<div class="log-form-row">' +
+            '<div class="log-form-group"><label>Duration</label><input type="text" id="log-duration" placeholder="30 min"></div>' +
+            '<div class="log-form-group"><label>Intensity</label><select id="log-intensity"><option>moderate</option><option>high</option><option>low</option></select></div></div>' +
+          '<div class="log-form-group"><label>Achilles Pain (0-10)</label><input type="number" id="log-achilles" min="0" max="10" step="1" value="0"></div></div>' +
+
+        '<div id="fields-recovery" class="hidden">' +
+          '<div class="log-form-group"><label>Details</label><textarea id="log-recovery-details" placeholder="Bike 12 min, calf raises, stretches..."></textarea></div></div>' +
+
+        '<div id="fields-body" class="hidden">' +
+          '<div class="log-form-row">' +
+            '<div class="log-form-group"><label>Weight (lbs)</label><input type="number" id="log-body-weight" step="0.1" placeholder="221"></div>' +
+            '<div class="log-form-group"><label>Body Fat %</label><input type="number" id="log-body-bf" step="0.1" placeholder="23.3"></div></div></div>' +
+
+        '<div class="log-form-row" style="margin-top:0.75rem">' +
+          '<div class="log-form-group"><label>Sleep (hours)</label><input type="number" id="log-sleep" step="0.5" placeholder="7.5"></div>' +
+          '<div class="log-form-group"><label>Protein (grams)</label><input type="number" id="log-protein" step="5" placeholder="180"></div></div>' +
+        '<div class="log-form-group"><label>Notes</label><textarea id="log-notes" placeholder="How did it feel?"></textarea></div>' +
+
+        '<button class="log-submit" onclick="window._submitLog()">Log Activity</button>' +
+        '<div id="log-status"></div>' +
+        '<div class="log-form-footer"><a onclick="window._clearToken()">Clear saved token</a></div>' +
+        '</div>';
+      mount.appendChild(form);
+
+      var toggle = document.getElementById('log-form-toggle');
+      var body = document.getElementById('log-form-body');
+      body.style.maxHeight = body.scrollHeight + 'px';
+      toggle.addEventListener('click', function() {
+        var collapsed = body.classList.toggle('collapsed');
+        toggle.classList.toggle('collapsed', collapsed);
+        if (!collapsed) body.style.maxHeight = body.scrollHeight + 'px';
+      });
+
+      document.querySelectorAll('.exercise-entry select').forEach(function(sel) {
+        sel.addEventListener('change', function() {
+          var custom = sel.parentElement.querySelector('input[type="text"]');
+          if (custom) custom.classList.toggle('hidden', sel.value !== '__custom');
+        });
+      });
+    }
+
+    window._saveToken = async function() {
+      var input = document.getElementById('token-input');
+      var status = document.getElementById('token-status');
+      var token = input.value.trim();
+      if (!token) { status.textContent = 'Enter a token'; return; }
+      status.textContent = 'Validating...';
+      try {
+        var resp = await fetch('https://api.github.com/repos/' + REPO, { headers: { 'Authorization': 'Bearer ' + token } });
+        if (!resp.ok) throw new Error('Invalid token or no access');
+        setToken(token); render();
+      } catch (e) {
+        status.textContent = e.message + '. Check token scopes.';
+      }
+    };
+    window._clearToken = clearToken;
+
+    window._toggleLogType = function() {
+      var type = document.getElementById('log-type').value;
+      ['training', 'game', 'recovery', 'body'].forEach(function(t) {
+        var el = document.getElementById('fields-' + t);
+        if (el) el.classList.toggle('hidden', t !== type);
+      });
+      var body = document.getElementById('log-form-body');
+      if (body) body.style.maxHeight = body.scrollHeight + 'px';
+    };
+    window._toggleCustomActivity = function() {
+      document.getElementById('log-activity-training-custom').classList.toggle('hidden',
+        document.getElementById('log-activity-training').value !== '__custom');
+    };
+    window._toggleCustomGame = function() {
+      document.getElementById('log-activity-game-custom').classList.toggle('hidden',
+        document.getElementById('log-activity-game').value !== '__custom');
+    };
+    window._addExercise = function() {
+      var list = document.getElementById('exercise-list');
+      list.insertAdjacentHTML('beforeend', exerciseCardHTML());
+      var cards = list.querySelectorAll('.exercise-entry');
+      cards[cards.length - 1].querySelector('select').addEventListener('change', function() {
+        var custom = this.parentElement.querySelector('input[type="text"]');
+        if (custom) custom.classList.toggle('hidden', this.value !== '__custom');
+      });
+      var body = document.getElementById('log-form-body');
+      if (body) body.style.maxHeight = body.scrollHeight + 'px';
+    };
+
+    function buildEntry() {
+      var type = document.getElementById('log-type').value;
+      var entry = { date: document.getElementById('log-date').value, type: type };
+      var sleep = document.getElementById('log-sleep').value;
+      var protein = document.getElementById('log-protein').value;
+      var notes = document.getElementById('log-notes').value.trim();
+
+      if (type === 'training') {
+        var actSel = document.getElementById('log-activity-training');
+        entry.activity = actSel.value === '__custom' ? document.getElementById('log-activity-training-custom').value.trim() : actSel.value;
+        entry.exercises = [];
+        document.querySelectorAll('.exercise-entry').forEach(function(card) {
+          var nameSel = card.querySelector('select');
+          var name = nameSel.value === '__custom' ? card.querySelector('input[id$="-name-custom"]').value.trim() : nameSel.value;
+          var sets = card.querySelector('input[id$="-sets"]').value.trim();
+          var weight = card.querySelector('input[id$="-weight"]').value.trim();
+          if (name && sets) { var ex = { name: name, sets: sets }; if (weight) ex.weight = weight; entry.exercises.push(ex); }
+        });
+      } else if (type === 'game') {
+        var gameSel = document.getElementById('log-activity-game');
+        entry.activity = gameSel.value === '__custom' ? document.getElementById('log-activity-game-custom').value.trim() : gameSel.value;
+        entry.duration = document.getElementById('log-duration').value.trim();
+        entry.intensity = document.getElementById('log-intensity').value;
+        var ach = document.getElementById('log-achilles').value;
+        if (ach !== '') entry.achillesPain = parseFloat(ach);
+      } else if (type === 'recovery') {
+        entry.activity = 'Recovery day';
+        entry.details = document.getElementById('log-recovery-details').value.trim();
+      }
+      if (sleep) entry.sleepHours = parseFloat(sleep);
+      if (protein) entry.proteinGrams = parseInt(protein, 10);
+      if (notes) entry.notes = notes;
+      return entry;
+    }
+
+    function buildBodyEntry() {
+      var e = { date: document.getElementById('log-date').value };
+      var w = document.getElementById('log-body-weight').value;
+      var bf = document.getElementById('log-body-bf').value;
+      if (w) e.weight = parseFloat(w);
+      if (bf) e.bodyFatPct = parseFloat(bf);
+      return e;
+    }
+
+    function validate() {
+      var errors = [], type = document.getElementById('log-type').value;
+      if (!document.getElementById('log-date').value) errors.push('Date is required');
+      if (type === 'training') {
+        var hasEx = false;
+        document.querySelectorAll('.exercise-entry').forEach(function(card) {
+          var sel = card.querySelector('select');
+          var name = sel.value === '__custom' ? card.querySelector('input[id$="-name-custom"]').value.trim() : sel.value;
+          if (name && card.querySelector('input[id$="-sets"]').value.trim()) hasEx = true;
+        });
+        if (!hasEx) errors.push('Add at least one exercise with name and sets');
+      } else if (type === 'game' && !document.getElementById('log-duration').value.trim()) {
+        errors.push('Duration is required');
+      } else if (type === 'body') {
+        if (!document.getElementById('log-body-weight').value && !document.getElementById('log-body-bf').value)
+          errors.push('Enter at least weight or body fat %');
+      }
+      return errors;
+    }
+
+    window._submitLog = async function() {
+      var statusEl = document.getElementById('log-status');
+      var btn = document.querySelector('.log-submit');
+      var errors = validate();
+      if (errors.length) { statusEl.textContent = errors.join('. '); statusEl.className = 'log-status error'; return; }
+
+      btn.disabled = true; btn.textContent = 'Committing...'; statusEl.textContent = '';
+      var token = getToken(), type = document.getElementById('log-type').value;
+
+      try {
+        var getResp = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, { headers: { 'Authorization': 'Bearer ' + token } });
+        if (getResp.status === 401) { clearToken(); throw new Error('Token expired. Please re-enter.'); }
+        if (!getResp.ok) throw new Error('Failed to read data.json: ' + getResp.status);
+        var fileData = await getResp.json();
+        var sha = fileData.sha;
+        var content = decodeURIComponent(escape(atob(fileData.content.replace(/\n/g, ''))));
+        var json = JSON.parse(content);
+
+        var commitMsg;
+        if (type === 'body') {
+          var bodyEntry = buildBodyEntry(); json.bodyLog.push(bodyEntry);
+          commitMsg = 'Log body stats: ' + (bodyEntry.weight ? bodyEntry.weight + ' lbs' : '') +
+            (bodyEntry.weight && bodyEntry.bodyFatPct ? ', ' : '') + (bodyEntry.bodyFatPct ? bodyEntry.bodyFatPct + '% BF' : '') + ' \u2014 ' + bodyEntry.date;
+        } else {
+          var entry = buildEntry(); json.activityLog.push(entry);
+          commitMsg = 'Log ' + type + ': ' + entry.activity + (entry.duration ? ' ' + entry.duration : '') + ' \u2014 ' + entry.date;
+        }
+
+        var newContent = btoa(unescape(encodeURIComponent(JSON.stringify(json, null, 2) + '\n')));
+        var putResp = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, {
+          method: 'PUT', headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: commitMsg, content: newContent, sha: sha, committer: COMMITTER })
+        });
+
+        if (putResp.status === 409) {
+          statusEl.textContent = 'Retrying...'; statusEl.className = 'log-status';
+          var retry = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, { headers: { 'Authorization': 'Bearer ' + token } });
+          var rd = await retry.json(); var rc = decodeURIComponent(escape(atob(rd.content.replace(/\n/g, '')))); var rj = JSON.parse(rc);
+          if (type === 'body') rj.bodyLog.push(buildBodyEntry()); else rj.activityLog.push(buildEntry());
+          var re = btoa(unescape(encodeURIComponent(JSON.stringify(rj, null, 2) + '\n')));
+          putResp = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, {
+            method: 'PUT', headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: commitMsg, content: re, sha: rd.sha, committer: COMMITTER })
+          });
+        }
+        if (!putResp.ok) { var eb = await putResp.json().catch(function() { return {}; }); throw new Error('Commit failed: ' + (eb.message || putResp.status)); }
+
+        statusEl.textContent = 'Logged! Reloading...'; statusEl.className = 'log-status success';
+        btn.textContent = 'Done!';
+        setTimeout(function() { location.reload(); }, 2000);
+      } catch (e) {
+        statusEl.textContent = e.message; statusEl.className = 'log-status error';
+        btn.disabled = false; btn.textContent = 'Log Activity';
+      }
+    };
+
+    render();
   })();
 
   // ─── Today indicator on weekly overview ───

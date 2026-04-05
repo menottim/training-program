@@ -2552,6 +2552,47 @@
     ];
     var gamePresets = ['Basketball', 'Hockey', 'Surfing'];
 
+    // Prescribed workout templates per day
+    var dayTemplates = {
+      'Lower Body (Wed Phase ' + phase + ')': [
+        { name: 'Trap Bar Deadlift', sets: '4x5' },
+        { name: 'Back Squat', sets: '3x5' },
+        { name: 'Bulgarian Split Squat', sets: '3x8/leg' },
+        { name: 'Glute Ham Raise', sets: '3x5' },
+        { name: 'Single-Leg RDL', sets: '3x8/leg' },
+        { name: 'Seated Calf Raise (HSR)', sets: '3x6' }
+      ],
+      'Upper Body + Core (Thu Phase ' + phase + ')': [
+        { name: 'Bench Press', sets: '4x5' },
+        { name: 'Lat Pulldown', sets: '4x6' },
+        { name: 'DB Bench Press', sets: '3x8' },
+        { name: 'Chest-Supported Row', sets: '3x8' },
+        { name: 'DB Overhead Press', sets: '3x8' },
+        { name: 'Face Pull', sets: '3x15' },
+        { name: 'Pallof Press', sets: '3x10/side' },
+        { name: 'Cable Woodchop', sets: '3x6/side' }
+      ],
+      'Lower Moderate + Movement Quality (Fri Phase ' + phase + ')': [
+        { name: 'Goblet Squat', sets: '3x10' },
+        { name: 'Hip Thrust', sets: '3x10' },
+        { name: 'Lateral Band Walk', sets: '3x12/dir' },
+        { name: 'Single-Leg Balance', sets: '2x30s/leg' },
+        { name: 'Standing Calf Raise (HSR)', sets: '3x6' },
+        { name: 'Banded Ankle Dorsiflexion', sets: '2x10/side' }
+      ]
+    };
+
+    // Build last-logged-weight lookup from activityLog
+    var lastWeights = {};
+    activityLog.forEach(function(e) {
+      if (!e.exercises) return;
+      e.exercises.forEach(function(ex) {
+        if (ex.weight && ex.weight !== 'as prescribed' && ex.weight !== 'BW') {
+          lastWeights[ex.name] = ex.weight;
+        }
+      });
+    });
+
     function exerciseSelectHTML(id) {
       var h = '<select id="' + id + '" style="margin-bottom:4px"><option value="">Select exercise...</option>';
       exercisePresets.forEach(function(g) {
@@ -2563,15 +2604,30 @@
     }
 
     var exCount = 0;
-    function exerciseCardHTML() {
+    function exerciseCardHTML(prefill) {
       var id = 'ex-' + (exCount++);
+      var nameVal = prefill ? prefill.name : '';
+      var setsVal = prefill ? prefill.sets : '';
+      var weightVal = prefill ? (prefill.weight || lastWeights[prefill.name] || '') : '';
+
+      // Build select with pre-selected value
+      var selHTML = '<select id="' + id + '-name" style="margin-bottom:4px"><option value="">Select exercise...</option>';
+      exercisePresets.forEach(function(g) {
+        selHTML += '<optgroup label="' + g.group + '">';
+        g.items.forEach(function(item) {
+          selHTML += '<option value="' + item + '"' + (item === nameVal ? ' selected' : '') + '>' + item + '</option>';
+        });
+        selHTML += '</optgroup>';
+      });
+      selHTML += '<option value="__custom">Custom...</option></select>';
+
       return '<div class="exercise-entry" data-exid="' + id + '">' +
         '<button type="button" class="remove-ex" onclick="this.parentElement.remove()">&times;</button>' +
-        '<div class="log-form-group">' + exerciseSelectHTML(id + '-name') +
+        '<div class="log-form-group">' + selHTML +
           '<input type="text" id="' + id + '-name-custom" class="hidden" placeholder="Custom exercise name"></div>' +
         '<div class="log-form-row">' +
-          '<div class="log-form-group"><label>Sets</label><input type="text" id="' + id + '-sets" placeholder="4x5 or 3x8/leg"></div>' +
-          '<div class="log-form-group"><label>Weight</label><input type="text" id="' + id + '-weight" placeholder="225 lbs or BW"></div>' +
+          '<div class="log-form-group"><label>Sets</label><input type="text" id="' + id + '-sets" placeholder="4x5 or 3x8/leg" value="' + esc(setsVal) + '"></div>' +
+          '<div class="log-form-group"><label>Weight</label><input type="text" id="' + id + '-weight" placeholder="225 lbs or BW" value="' + esc(weightVal) + '"></div>' +
         '</div></div>';
     }
 
@@ -2606,7 +2662,7 @@
             trainingPresets.map(function(p) { return '<option value="' + p + '">' + p + '</option>'; }).join('') +
             '<option value="__custom">Custom...</option></select>' +
             '<input type="text" id="log-activity-training-custom" class="hidden" placeholder="e.g., Lower Body (Wed Phase 1)" style="margin-top:4px"></div>' +
-          '<div id="exercise-list">' + exerciseCardHTML() + '</div>' +
+          '<div id="exercise-list">' + (dayTemplates[trainingPresets[0]] || []).map(function(ex) { return exerciseCardHTML(ex); }).join('') + '</div>' +
           '<button type="button" class="add-exercise-btn" onclick="window._addExercise()">+ Add Exercise</button></div>' +
 
         '<div id="fields-game" class="hidden">' +
@@ -2681,8 +2737,29 @@
       if (body) body.style.maxHeight = body.scrollHeight + 'px';
     };
     window._toggleCustomActivity = function() {
-      document.getElementById('log-activity-training-custom').classList.toggle('hidden',
-        document.getElementById('log-activity-training').value !== '__custom');
+      var sel = document.getElementById('log-activity-training');
+      var val = sel.value;
+      document.getElementById('log-activity-training-custom').classList.toggle('hidden', val !== '__custom');
+
+      // Auto-populate exercises from template
+      var template = dayTemplates[val];
+      if (template) {
+        var list = document.getElementById('exercise-list');
+        list.textContent = '';
+        template.forEach(function(ex) {
+          list.insertAdjacentHTML('beforeend', exerciseCardHTML(ex));
+        });
+        // Wire up custom name toggles on new cards
+        list.querySelectorAll('.exercise-entry select').forEach(function(s) {
+          s.addEventListener('change', function() {
+            var custom = this.parentElement.querySelector('input[type="text"]');
+            if (custom) custom.classList.toggle('hidden', this.value !== '__custom');
+          });
+        });
+        // Recalc collapsible height
+        var body = document.getElementById('log-form-body');
+        if (body) body.style.maxHeight = body.scrollHeight + 'px';
+      }
     };
     window._toggleCustomGame = function() {
       document.getElementById('log-activity-game-custom').classList.toggle('hidden',

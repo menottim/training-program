@@ -1489,6 +1489,9 @@
   const { athlete, currentLifts: baseLifts, targets, activityLog, bodyLog } = data;
   const modifiedWeeks = data.modifiedWeeks || {};
 
+  // HTML-escape helper — prevents XSS from data.json string interpolation
+  function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
   // Derive currentLifts from activityLog — find the most recent logged weight
   // for each main lift so we never need to manually update currentLifts in data.json
   var liftNameMap = {
@@ -1559,8 +1562,8 @@
     ? Math.round(proteinEntries.reduce((s, e) => s + e.proteinGrams, 0) / proteinEntries.length)
     : null;
 
-  // Note: innerHTML is used throughout because data.json is a self-authored
-  // local file, not user-submitted input. No XSS risk for this personal site.
+  // Note: innerHTML is used throughout — all data.json strings are passed through
+  // esc() to prevent XSS from any untrusted content.
 
   // BMI calculation: weight (lbs) / height (in)^2 × 703
   var heightIn = athlete.heightInches || 74; // default 6'2" = 74 inches
@@ -1602,7 +1605,7 @@
   ];
 
   var statsHTML = '<div class="stat">' +
-    '<div class="stat-value">' + athlete.height + '</div>' +
+    '<div class="stat-value">' + esc(athlete.height) + '</div>' +
     '<div class="stat-label">Height</div>' +
   '</div>';
 
@@ -1660,7 +1663,7 @@
   ].join('');
 
   // Modified Week Plan
-  // Note: innerHTML is safe — data.json is self-authored, same trust model as all other renderers above.
+  // Note: innerHTML uses esc() for all data.json string interpolation.
   (function renderModifiedWeek() {
     var mw = modifiedWeeks[String(weekNum)];
     if (!mw) return;
@@ -1681,17 +1684,17 @@
       if (d.exercises && d.exercises.length > 0) {
         exHTML = '<ul class="exercise-list">' +
           d.exercises.map(function(ex) {
-            var detail = ex.name + ' ' + ex.sets;
-            if (ex.weight) detail += ' <span class="ex-weight">@ ' + ex.weight + '</span>';
+            var detail = esc(ex.name) + ' ' + esc(ex.sets);
+            if (ex.weight) detail += ' <span class="ex-weight">@ ' + esc(ex.weight) + '</span>';
             return '<li>' + detail + '</li>';
           }).join('') +
         '</ul>';
       }
       return '<div class="modified-day ' + typeClass + todayClass + '">' +
-        '<div class="md-name">' + d.day + '</div>' +
+        '<div class="md-name">' + esc(d.day) + '</div>' +
         '<div class="md-date">' + d.date.slice(5).replace('-', '/') + '</div>' +
-        '<div class="md-type">' + (typeLabels[d.type] || d.type) + '</div>' +
-        '<div class="md-desc">' + d.desc + '</div>' +
+        '<div class="md-type">' + esc(typeLabels[d.type] || d.type) + '</div>' +
+        '<div class="md-desc">' + esc(d.desc) + '</div>' +
         exHTML +
       '</div>';
     }).join('');
@@ -1699,8 +1702,8 @@
     document.getElementById('modified-week-mount').innerHTML =
       '<div class="modified-week">' +
         '<div class="modified-week-banner">' +
-          '<h3>Week ' + weekNum + ': ' + mw.label + '</h3>' +
-          '<p>' + mw.reason + '</p>' +
+          '<h3>Week ' + weekNum + ': ' + esc(mw.label) + '</h3>' +
+          '<p>' + esc(mw.reason) + '</p>' +
         '</div>' +
         '<div class="modified-week-grid">' + daysHTML + '</div>' +
       '</div>';
@@ -1806,20 +1809,20 @@
       var rows = entries.map(function(e) {
         var tagClass = e.type === 'game' ? 'tag-game' : e.type === 'training' ? 'tag-train' : e.type === 'recovery' ? 'tag-recovery' : e.type === 'hotel' ? 'tag-hotel' : e.type === 'gym-deload' ? 'tag-gym-deload' : 'tag-rest';
         var typeLabel = e.type.charAt(0).toUpperCase() + e.type.slice(1);
-        var details = e.activity || '';
-        if (e.duration) details += ' \u00b7 ' + e.duration;
-        if (e.intensity) details += ' \u00b7 ' + e.intensity + ' intensity';
-        if (e.details) details += (details ? ' \u00b7 ' : '') + e.details;
+        var details = esc(e.activity || '');
+        if (e.duration) details += ' \u00b7 ' + esc(e.duration);
+        if (e.intensity) details += ' \u00b7 ' + esc(e.intensity) + ' intensity';
+        if (e.details) details += (details ? ' \u00b7 ' : '') + esc(e.details);
         return '<tr>' +
           '<td>' + fmtDate(e.date) + '</td>' +
-          '<td><span class="tag ' + tagClass + '">' + typeLabel + '</span></td>' +
+          '<td><span class="tag ' + tagClass + '">' + esc(typeLabel) + '</span></td>' +
           '<td>' + details + '</td>' +
-          '<td>' + (e.notes || '') + '</td>' +
+          '<td>' + esc(e.notes || '') + '</td>' +
         '</tr>';
       }).join('');
       var wn = Math.max(1, Math.ceil((calendarDays(startDate, ws) + 1) / 7));
       var mwBanner = modifiedWeeks[String(wn)]
-        ? '<span class="mw-log-banner">\u26a0\ufe0f ' + modifiedWeeks[String(wn)].label + '</span>'
+        ? '<span class="mw-log-banner">\u26a0\ufe0f ' + esc(modifiedWeeks[String(wn)].label) + '</span>'
         : '';
       logHTML += '<div class="week-summary">' +
         '<div class="week-summary-header">' +
@@ -1900,7 +1903,7 @@
             exerciseMap[ex.name] = {};
             exerciseNames.push(ex.name);
           }
-          exerciseMap[ex.name][entry.week] = ex.weight || '\u2014';
+          exerciseMap[ex.name][entry.week] = esc(ex.weight || '\u2014');
         });
       });
 
@@ -1971,9 +1974,9 @@
           return '<td class="empty-cell">\u2014</td>';
         }).join('');
         if (showUpcoming) {
-          cells += '<td class="upcoming-col">' + (upcomingWeights[name] || '\u2014') + '</td>';
+          cells += '<td class="upcoming-col">' + esc(upcomingWeights[name] || '\u2014') + '</td>';
         }
-        return '<tr><td>' + name + '</td>' + cells + '</tr>';
+        return '<tr><td>' + esc(name) + '</td>' + cells + '</tr>';
       }).join('');
 
       // If upcoming but no history, show the prescribed exercises from the plan table
@@ -2092,7 +2095,7 @@
   // ═══════════════════════════════════════════════
   // CHART A: WEEKLY ACTIVITY VOLUME (stacked bar)
   // ═══════════════════════════════════════════════
-  // Note: innerHTML is safe here — all data comes from self-authored data.json
+  // Note: all data.json strings are escaped via esc() before innerHTML interpolation
 
   (function renderVolumeChart() {
     var W = 600, H = 160, pad = { top: 15, right: 20, bottom: 35, left: 40 };

@@ -2553,34 +2553,33 @@
     var gamePresets = ['Basketball', 'Hockey', 'Surfing'];
 
     // Prescribed workout templates per day
-    var dayTemplates = {
-      'Lower Body (Wed Phase ' + phase + ')': [
-        { name: 'Trap Bar Deadlift', sets: '4x5' },
-        { name: 'Back Squat', sets: '3x5' },
-        { name: 'Bulgarian Split Squat', sets: '3x8/leg' },
-        { name: 'Glute Ham Raise', sets: '3x5' },
-        { name: 'Single-Leg RDL', sets: '3x8/leg' },
-        { name: 'Seated Calf Raise (HSR)', sets: '3x6' }
-      ],
-      'Upper Body + Core (Thu Phase ' + phase + ')': [
-        { name: 'Bench Press', sets: '4x5' },
-        { name: 'Lat Pulldown', sets: '4x6' },
-        { name: 'DB Bench Press', sets: '3x8' },
-        { name: 'Chest-Supported Row', sets: '3x8' },
-        { name: 'DB Overhead Press', sets: '3x8' },
-        { name: 'Face Pull', sets: '3x15' },
-        { name: 'Pallof Press', sets: '3x10/side' },
-        { name: 'Cable Woodchop', sets: '3x6/side' }
-      ],
-      'Lower Moderate + Movement Quality (Fri Phase ' + phase + ')': [
-        { name: 'Goblet Squat', sets: '3x10' },
-        { name: 'Hip Thrust', sets: '3x10' },
-        { name: 'Lateral Band Walk', sets: '3x12/dir' },
-        { name: 'Single-Leg Balance', sets: '2x30s/leg' },
-        { name: 'Standing Calf Raise (HSR)', sets: '3x6' },
-        { name: 'Banded Ankle Dorsiflexion', sets: '2x10/side' }
-      ]
-    };
+    var dayTemplates = {};
+    dayTemplates['Lower Body (Wed Phase ' + phase + ')'] = [
+      { name: 'Trap Bar Deadlift', sets: '4x5' },
+      { name: 'Back Squat', sets: '3x5' },
+      { name: 'Bulgarian Split Squat', sets: '3x8/leg' },
+      { name: 'Glute Ham Raise', sets: '3x5' },
+      { name: 'Single-Leg RDL', sets: '3x8/leg' },
+      { name: 'Seated Calf Raise (HSR)', sets: '3x6' }
+    ];
+    dayTemplates['Upper Body + Core (Thu Phase ' + phase + ')'] = [
+      { name: 'Bench Press', sets: '4x5' },
+      { name: 'Lat Pulldown', sets: '4x6' },
+      { name: 'DB Bench Press', sets: '3x8' },
+      { name: 'Chest-Supported Row', sets: '3x8' },
+      { name: 'DB Overhead Press', sets: '3x8' },
+      { name: 'Face Pull', sets: '3x15' },
+      { name: 'Pallof Press', sets: '3x10/side' },
+      { name: 'Cable Woodchop', sets: '3x6/side' }
+    ];
+    dayTemplates['Lower Moderate + Movement Quality (Fri Phase ' + phase + ')'] = [
+      { name: 'Goblet Squat', sets: '3x10' },
+      { name: 'Hip Thrust', sets: '3x10' },
+      { name: 'Lateral Band Walk', sets: '3x12/dir' },
+      { name: 'Single-Leg Balance', sets: '2x30s/leg' },
+      { name: 'Standing Calf Raise (HSR)', sets: '3x6' },
+      { name: 'Banded Ankle Dorsiflexion', sets: '2x10/side' }
+    ];
 
     // Build last-logged-weight lookup from activityLog
     var lastWeights = {};

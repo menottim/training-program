@@ -197,6 +197,21 @@
         { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "140 lbs" }
       ],
       "notes": "Gym deload session — first barbell work since Week 2 (Mar 20, two weeks ago). TB DL at 195 (~85% of 230). DB bench 55 (~85% of 65). HSR calf raises at full load per protocol. Executed as prescribed in modified week plan."
+    },
+    {
+      "date": "2026-04-05",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 1)",
+      "exercises": [
+        { "name": "Trap Bar Deadlift", "sets": "4x5", "weight": "225 lbs" },
+        { "name": "Leg Press Sled", "sets": "3x10, 3x10, 3x5", "weight": "90/180/180 lbs" },
+        { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "10 lb DBs" },
+        { "name": "Glute Ham Raise", "sets": "3x5", "weight": "BW" },
+        { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "25 lb DBs" },
+        { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "140 lbs" }
+      ],
+      "proteinGrams": 99,
+      "notes": "Week 5 Day 1 — re-baseline session. TB DL back to 225 (Week 2 weight) after 20-day gap. Back squat unavailable, substituted slanted leg press sled (90→180 lbs). HSR maintained at 140. Protein tracked: 99g through 2 meals so far."
     }
   ],
   "scienceReviews": [
@@ -212,7 +227,7 @@
     { "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2 },
     { "date": "2026-03-30", "weight": 222 },
     { "date": "2026-04-04", "weight": 221.1, "bodyFatPct": 23.3 },
-    { "date": "2026-04-05", "proteinGrams": 38, "notes": "Breakfast: 4 eggs, 3 bacon, 1 thick slice sourdough" }
+    { "date": "2026-04-05", "proteinGrams": 99, "notes": "Breakfast: 4 eggs, 3 bacon, 1 thick slice sourdough. Lunch: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 3-4 servings chips." }
   ],
   "modifiedWeeks": {
     "4": {

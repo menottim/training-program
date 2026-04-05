@@ -211,7 +211,8 @@
     { "date": "2026-03-11", "weight": 218.3, "bodyFatPct": 22.7 },
     { "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2 },
     { "date": "2026-03-30", "weight": 222 },
-    { "date": "2026-04-04", "weight": 221.1, "bodyFatPct": 23.3 }
+    { "date": "2026-04-04", "weight": 221.1, "bodyFatPct": 23.3 },
+    { "date": "2026-04-05", "proteinGrams": 38, "notes": "Breakfast: 4 eggs, 3 bacon, 1 thick slice sourdough" }
   ],
   "modifiedWeeks": {
     "4": {

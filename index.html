@@ -2614,7 +2614,7 @@
           '<div class="log-form-row">' +
             '<div class="log-form-group"><label>Duration</label><input type="text" id="log-duration" placeholder="30 min"></div>' +
             '<div class="log-form-group"><label>Intensity</label><select id="log-intensity"><option>moderate</option><option>high</option><option>low</option></select></div></div>' +
-          '<div class="log-form-group"><label>Achilles Pain (0-10)</label><input type="number" id="log-achilles" min="0" max="10" step="1" value="0"></div></div>' +
+          '<div class="log-form-group"><label>Achilles Pain (0-10)</label><input type="number" id="log-achilles" min="0" max="10" step="1" placeholder="0"></div></div>' +
 
         '<div id="fields-recovery" class="hidden">' +
           '<div class="log-form-group"><label>Details</label><textarea id="log-recovery-details" placeholder="Bike 12 min, calf raises, stretches..."></textarea></div></div>' +
@@ -2745,6 +2745,11 @@
       var errors = [], type = document.getElementById('log-type').value;
       if (!document.getElementById('log-date').value) errors.push('Date is required');
       if (type === 'training') {
+        var actSel = document.getElementById('log-activity-training');
+        var actName = actSel.value === '__custom' ? document.getElementById('log-activity-training-custom').value.trim() : actSel.value;
+        if (!actName) errors.push('Activity name is required');
+        else if (actSel.value === '__custom' && !/\(\w+\s+Phase\s+\d+\)/.test(actName))
+          errors.push('Custom activity should include (Day Phase N) for progress tracking, e.g., "Lower Body (Wed Phase 1)"');
         var hasEx = false;
         document.querySelectorAll('.exercise-entry').forEach(function(card) {
           var sel = card.querySelector('select');
@@ -2754,6 +2759,8 @@
         if (!hasEx) errors.push('Add at least one exercise with name and sets');
       } else if (type === 'game' && !document.getElementById('log-duration').value.trim()) {
         errors.push('Duration is required');
+      } else if (type === 'recovery') {
+        if (!document.getElementById('log-recovery-details').value.trim()) errors.push('Recovery details are required');
       } else if (type === 'body') {
         if (!document.getElementById('log-body-weight').value && !document.getElementById('log-body-bf').value)
           errors.push('Enter at least weight or body fat %');
@@ -2770,6 +2777,16 @@
       btn.disabled = true; btn.textContent = 'Committing...'; statusEl.textContent = '';
       var token = getToken(), type = document.getElementById('log-type').value;
 
+      // Capture entry data once before any async work (fixes 409 retry consistency)
+      var entryData = type === 'body' ? buildBodyEntry() : buildEntry();
+      var commitMsg;
+      if (type === 'body') {
+        commitMsg = 'Log body stats: ' + (entryData.weight ? entryData.weight + ' lbs' : '') +
+          (entryData.weight && entryData.bodyFatPct ? ', ' : '') + (entryData.bodyFatPct ? entryData.bodyFatPct + '% BF' : '') + ' \u2014 ' + entryData.date;
+      } else {
+        commitMsg = 'Log ' + type + ': ' + entryData.activity + (entryData.duration ? ' ' + entryData.duration : '') + ' \u2014 ' + entryData.date;
+      }
+
       try {
         var getResp = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, { headers: { 'Authorization': 'Bearer ' + token } });
         if (getResp.status === 401) { clearToken(); throw new Error('Token expired. Please re-enter.'); }
@@ -2779,15 +2796,8 @@
         var content = decodeURIComponent(escape(atob(fileData.content.replace(/\n/g, ''))));
         var json = JSON.parse(content);
 
-        var commitMsg;
-        if (type === 'body') {
-          var bodyEntry = buildBodyEntry(); json.bodyLog.push(bodyEntry);
-          commitMsg = 'Log body stats: ' + (bodyEntry.weight ? bodyEntry.weight + ' lbs' : '') +
-            (bodyEntry.weight && bodyEntry.bodyFatPct ? ', ' : '') + (bodyEntry.bodyFatPct ? bodyEntry.bodyFatPct + '% BF' : '') + ' \u2014 ' + bodyEntry.date;
-        } else {
-          var entry = buildEntry(); json.activityLog.push(entry);
-          commitMsg = 'Log ' + type + ': ' + entry.activity + (entry.duration ? ' ' + entry.duration : '') + ' \u2014 ' + entry.date;
-        }
+        if (type === 'body') json.bodyLog.push(entryData);
+        else json.activityLog.push(entryData);
 
         var newContent = btoa(unescape(encodeURIComponent(JSON.stringify(json, null, 2) + '\n')));
         var putResp = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, {
@@ -2799,7 +2809,7 @@
           statusEl.textContent = 'Retrying...'; statusEl.className = 'log-status';
           var retry = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, { headers: { 'Authorization': 'Bearer ' + token } });
           var rd = await retry.json(); var rc = decodeURIComponent(escape(atob(rd.content.replace(/\n/g, '')))); var rj = JSON.parse(rc);
-          if (type === 'body') rj.bodyLog.push(buildBodyEntry()); else rj.activityLog.push(buildEntry());
+          if (type === 'body') rj.bodyLog.push(entryData); else rj.activityLog.push(entryData);
           var re = btoa(unescape(encodeURIComponent(JSON.stringify(rj, null, 2) + '\n')));
           putResp = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + FILE, {
             method: 'PUT', headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },

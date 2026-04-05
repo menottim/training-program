@@ -1711,18 +1711,26 @@
 
   // Body Composition History
   if (bodyLog.length > 0) {
+    var hasNutrition = bodyLog.some(function(e) { return e.sleepHours != null || e.proteinGrams != null; });
     var compRows = bodyLog.map(function(entry) {
       var bf = entry.bodyFatPct;
       var w = entry.weight;
-      var fatMass = bf != null ? (w * bf / 100).toFixed(1) : '\u2014';
-      var leanMass = bf != null ? (w - w * bf / 100).toFixed(1) : '\u2014';
+      var fatMass = bf != null && w != null ? (w * bf / 100).toFixed(1) : '\u2014';
+      var leanMass = bf != null && w != null ? (w - w * bf / 100).toFixed(1) : '\u2014';
       var bfCell = bf != null ? bf + '%' : '\u2014';
-      return '<tr><td>' + entry.date + '</td><td>' + w + '</td><td>' + bfCell + '</td><td>' + leanMass + '</td><td>' + fatMass + '</td></tr>';
+      var wCell = w != null ? w : '\u2014';
+      var row = '<tr><td>' + esc(entry.date) + '</td><td>' + wCell + '</td><td>' + bfCell + '</td><td>' + leanMass + '</td><td>' + fatMass + '</td>';
+      if (hasNutrition) {
+        row += '<td>' + (entry.sleepHours != null ? entry.sleepHours + 'h' : '\u2014') + '</td>';
+        row += '<td>' + (entry.proteinGrams != null ? entry.proteinGrams + 'g' : '\u2014') + '</td>';
+      }
+      return row + '</tr>';
     });
+    var headers = '<th>Date</th><th>Weight</th><th>Body Fat %</th><th>Lean Mass</th><th>Fat Mass</th>';
+    if (hasNutrition) headers += '<th>Sleep</th><th>Protein</th>';
     document.getElementById('body-log-mount').innerHTML =
       '<h3 style="margin-top:2rem;">Body Composition</h3>' +
-      '<table class="log-table"><thead><tr>' +
-      '<th>Date</th><th>Weight</th><th>Body Fat %</th><th>Lean Mass</th><th>Fat Mass</th>' +
+      '<table class="log-table"><thead><tr>' + headers +
       '</tr></thead><tbody>' + compRows.join('') + '</tbody></table>';
   }
 
@@ -2815,8 +2823,14 @@
       var e = { date: document.getElementById('log-date').value };
       var w = document.getElementById('log-body-weight').value;
       var bf = document.getElementById('log-body-bf').value;
+      var sleep = document.getElementById('log-sleep').value;
+      var protein = document.getElementById('log-protein').value;
+      var notes = document.getElementById('log-notes').value.trim();
       if (w) e.weight = parseFloat(w);
       if (bf) e.bodyFatPct = parseFloat(bf);
+      if (sleep) e.sleepHours = parseFloat(sleep);
+      if (protein) e.proteinGrams = parseInt(protein, 10);
+      if (notes) e.notes = notes;
       return e;
     }
 
@@ -2841,8 +2855,9 @@
       } else if (type === 'recovery') {
         if (!document.getElementById('log-recovery-details').value.trim()) errors.push('Recovery details are required');
       } else if (type === 'body') {
-        if (!document.getElementById('log-body-weight').value && !document.getElementById('log-body-bf').value)
-          errors.push('Enter at least weight or body fat %');
+        if (!document.getElementById('log-body-weight').value && !document.getElementById('log-body-bf').value
+            && !document.getElementById('log-sleep').value && !document.getElementById('log-protein').value)
+          errors.push('Enter at least one field (weight, body fat, sleep, or protein)');
       }
       return errors;
     }
@@ -2860,8 +2875,12 @@
       var entryData = type === 'body' ? buildBodyEntry() : buildEntry();
       var commitMsg;
       if (type === 'body') {
-        commitMsg = 'Log body stats: ' + (entryData.weight ? entryData.weight + ' lbs' : '') +
-          (entryData.weight && entryData.bodyFatPct ? ', ' : '') + (entryData.bodyFatPct ? entryData.bodyFatPct + '% BF' : '') + ' \u2014 ' + entryData.date;
+        var parts = [];
+        if (entryData.weight) parts.push(entryData.weight + ' lbs');
+        if (entryData.bodyFatPct) parts.push(entryData.bodyFatPct + '% BF');
+        if (entryData.proteinGrams) parts.push(entryData.proteinGrams + 'g protein');
+        if (entryData.sleepHours) parts.push(entryData.sleepHours + 'h sleep');
+        commitMsg = 'Log body stats: ' + (parts.length ? parts.join(', ') : 'check-in') + ' \u2014 ' + entryData.date;
       } else {
         commitMsg = 'Log ' + type + ': ' + entryData.activity + (entryData.duration ? ' ' + entryData.duration : '') + ' \u2014 ' + entryData.date;
       }

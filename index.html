@@ -592,6 +592,75 @@
     }
   }
 
+  /* Today indicator */
+  .day-card.today {
+    outline: 3px solid var(--accent);
+    outline-offset: -3px;
+    position: relative;
+  }
+  .day-card.today::after {
+    content: 'TODAY';
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+  }
+
+  /* Collapsible sections */
+  .collapsible-header {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .collapsible-header::before {
+    content: '\25BC';
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  .collapsible-header.collapsed::before {
+    transform: rotate(-90deg);
+  }
+  .collapsible-body {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .collapsible-body.collapsed {
+    max-height: 0 !important;
+  }
+
+  /* Quick Log FAB */
+  .fab-log {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 99;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .fab-log:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
   /* Footer */
   .footer {
     margin-top: 3rem;
@@ -1317,6 +1386,9 @@
 
 <!-- Activity Log (rendered from data.json) -->
 <div id="activity-log-mount"></div>
+
+<!-- Quick Log FAB -->
+<a href="#tracker" class="fab-log" title="Jump to Activity Log">&#128203;</a>
 
 <div class="footer">
   <p>Program designed March 2026 &middot; Based on current sports medicine research &middot; Consult a physician before beginning</p>
@@ -2367,6 +2439,146 @@
       '<div class="chart-legend">' +
         '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#fd7e14"></span> Pain level (0\u201310)</span>' +
         '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = protocol threshold (5)</span>' +
+      '</div>');
+  })();
+
+  // ─── Today indicator on weekly overview ───
+  (function highlightToday() {
+    var dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var todayName = dayNames[new Date().getDay()];
+    document.querySelectorAll('.week-grid .day-card').forEach(function(card) {
+      var nameEl = card.querySelector('.day-name');
+      if (nameEl && nameEl.textContent.trim() === todayName) {
+        card.classList.add('today');
+      }
+    });
+  })();
+
+  // ─── Collapsible phase sections ───
+  (function makeCollapsible() {
+    document.querySelectorAll('.phase-body h3').forEach(function(h3) {
+      // Make the h3 a collapsible toggle for its following content until next h3 or end of phase-body
+      h3.classList.add('collapsible-header');
+      var body = document.createElement('div');
+      body.className = 'collapsible-body';
+      var sibling = h3.nextElementSibling;
+      while (sibling && sibling.tagName !== 'H3') {
+        var next = sibling.nextElementSibling;
+        body.appendChild(sibling);
+        sibling = next;
+      }
+      h3.parentNode.insertBefore(body, h3.nextSibling);
+      // Set max-height for animation
+      body.style.maxHeight = body.scrollHeight + 'px';
+      h3.addEventListener('click', function() {
+        var isCollapsed = body.classList.toggle('collapsed');
+        h3.classList.toggle('collapsed', isCollapsed);
+        if (!isCollapsed) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+
+  // ─── HSR compliance tracker ───
+  (function hsrTracker() {
+    // Count HSR sessions in the current week
+    var hsrThisWeek = 0;
+    activityLog.forEach(function(e) {
+      if (!e.exercises) return;
+      var ew = Math.max(1, Math.ceil((calendarDays(startDate, new Date(e.date + 'T00:00:00')) + 1) / 7));
+      if (ew !== weekNum) return;
+      var hasHSR = e.exercises.some(function(ex) {
+        return ex.name && /calf raise/i.test(ex.name) && /hsr/i.test(ex.name);
+      });
+      if (hasHSR) hsrThisWeek++;
+    });
+    var hsrClass = hsrThisWeek >= 3 ? ' improving' : hsrThisWeek === 0 ? ' warning' : '';
+    var dashMount = document.getElementById('dashboard-mount');
+    var dashGrid = dashMount.querySelector('.dashboard');
+    if (dashGrid) {
+      dashGrid.insertAdjacentHTML('beforeend',
+        '<div class="dash-card' + hsrClass + '">' +
+          '<div class="dash-value">' + hsrThisWeek + ' / 3</div>' +
+          '<div class="dash-label">HSR This Week</div>' +
+          '<div class="dash-sub">target: 3×/week</div>' +
+        '</div>');
+    }
+  })();
+
+  // ─── Sleep & Protein trend chart ───
+  (function sleepProteinChart() {
+    var entries = activityLog.filter(function(e) { return e.sleepHours != null || e.proteinGrams != null; });
+    if (entries.length < 2) return; // Need at least 2 points
+
+    var mount = document.getElementById('dashboard-mount');
+    var W = 700, H = 200, padL = 45, padR = 20, padT = 20, padB = 30;
+    var plotW = W - padL - padR, plotH = H - padT - padB;
+
+    var sleepData = entries.filter(function(e) { return e.sleepHours != null; });
+    var proteinData = entries.filter(function(e) { return e.proteinGrams != null; });
+
+    if (sleepData.length < 2 && proteinData.length < 2) return;
+
+    // Sleep scale: 4-10 hours
+    var sMin = 4, sMax = 10;
+    // Protein scale: 0-250g
+    var pMin = 0, pMax = 250;
+
+    var firstDate = new Date(entries[0].date + 'T00:00:00');
+    var lastDate = new Date(entries[entries.length - 1].date + 'T00:00:00');
+    var dateRange = Math.max(1, (lastDate - firstDate) / 86400000);
+
+    function dateX(d) { return padL + ((new Date(d + 'T00:00:00') - firstDate) / 86400000) / dateRange * plotW; }
+    function sleepY(v) { return padT + plotH - ((v - sMin) / (sMax - sMin)) * plotH; }
+    function proteinY(v) { return padT + plotH - ((v - pMin) / (pMax - pMin)) * plotH; }
+
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif">';
+
+    // Grid lines
+    for (var i = 0; i <= 3; i++) {
+      var y = padT + (plotH / 3) * i;
+      svg += '<line x1="' + padL + '" y1="' + y + '" x2="' + (W - padR) + '" y2="' + y + '" stroke="#eee" />';
+    }
+
+    // Sleep target line (7h)
+    var target7 = sleepY(7);
+    svg += '<line x1="' + padL + '" y1="' + target7 + '" x2="' + (W - padR) + '" y2="' + target7 + '" stroke="var(--accent2)" stroke-dasharray="4,3" opacity="0.4" />';
+    svg += '<text x="' + (W - padR + 3) + '" y="' + (target7 + 3) + '" font-size="9" fill="var(--accent2)" opacity="0.6">7h</text>';
+
+    // Sleep line
+    if (sleepData.length >= 2) {
+      var sleepPath = sleepData.map(function(e, i) { return (i === 0 ? 'M' : 'L') + dateX(e.date).toFixed(1) + ',' + sleepY(e.sleepHours).toFixed(1); }).join(' ');
+      svg += '<path d="' + sleepPath + '" fill="none" stroke="var(--accent2)" stroke-width="2" />';
+      sleepData.forEach(function(e) {
+        svg += '<circle cx="' + dateX(e.date).toFixed(1) + '" cy="' + sleepY(e.sleepHours).toFixed(1) + '" r="3" fill="var(--accent2)" />';
+      });
+    }
+
+    // Protein line (right axis)
+    if (proteinData.length >= 2) {
+      var proteinPath = proteinData.map(function(e, i) { return (i === 0 ? 'M' : 'L') + dateX(e.date).toFixed(1) + ',' + proteinY(e.proteinGrams).toFixed(1); }).join(' ');
+      svg += '<path d="' + proteinPath + '" fill="none" stroke="var(--success)" stroke-width="2" />';
+      proteinData.forEach(function(e) {
+        svg += '<circle cx="' + dateX(e.date).toFixed(1) + '" cy="' + proteinY(e.proteinGrams).toFixed(1) + '" r="3" fill="var(--success)" />';
+      });
+    }
+
+    // Left axis labels (sleep)
+    svg += '<text x="' + (padL - 5) + '" y="' + (padT + 4) + '" text-anchor="end" font-size="9" fill="var(--text-muted)">' + sMax + 'h</text>';
+    svg += '<text x="' + (padL - 5) + '" y="' + (padT + plotH + 4) + '" text-anchor="end" font-size="9" fill="var(--text-muted)">' + sMin + 'h</text>';
+
+    svg += '</svg>';
+
+    mount.insertAdjacentHTML('beforeend',
+      '<div class="chart-container" style="margin-top:1.5rem">' +
+        '<h3>Sleep &amp; Protein Tracking</h3>' +
+        svg +
+        '<div class="chart-legend">' +
+          '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:var(--accent2)"></span> Sleep (hours)</span>' +
+          '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:var(--success)"></span> Protein (grams)</span>' +
+          '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = 7h target</span>' +
+        '</div>' +
       '</div>');
   })();
 

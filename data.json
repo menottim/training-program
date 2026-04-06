@@ -210,8 +210,8 @@
         { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "25 lb DBs" },
         { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "140 lbs" }
       ],
-      "proteinGrams": 99,
-      "notes": "Week 5 Day 1 — re-baseline session. TB DL back to 225 (Week 2 weight) after 20-day gap. Back squat unavailable, substituted slanted leg press sled (90→180 lbs). HSR maintained at 140. Protein tracked: 99g through 2 meals so far."
+      "proteinGrams": 156,
+      "notes": "Week 5 Day 1 — re-baseline session. TB DL back to 225 (Week 2 weight) after 20-day gap. Back squat unavailable, substituted slanted leg press sled (90→180 lbs). HSR maintained at 140."
     }
   ],
   "scienceReviews": [
@@ -227,7 +227,7 @@
     { "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2 },
     { "date": "2026-03-30", "weight": 222 },
     { "date": "2026-04-04", "weight": 221.1, "bodyFatPct": 23.3 },
-    { "date": "2026-04-05", "proteinGrams": 99, "notes": "Breakfast: 4 eggs, 3 bacon, 1 thick slice sourdough. Lunch: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 3-4 servings chips." }
+    { "date": "2026-04-05", "proteinGrams": 156, "notes": "Breakfast: 4 eggs, 3 bacon, 1 thick sourdough (~38g). Lunch: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 3-4 servings chips (~61g). Dinner: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 2 servings chips (~57g)." }
   ],
   "modifiedWeeks": {
     "4": {

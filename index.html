@@ -1536,14 +1536,12 @@
   const totalGames = activityLog.filter(e => e.type === 'game').length;
   const totalSessions = activityLog.filter(e => e.type === 'training').length;
 
-  const latestWeight = bodyLog.length > 0
-    ? bodyLog[bodyLog.length - 1].weight
-    : athlete.startWeight;
-  const weightSub = bodyLog.length > 0 ? 'lbs' : 'lbs &middot; starting';
+  const latestWeightEntry = bodyLog.slice().reverse().find(e => e.weight != null);
+  const latestWeight = latestWeightEntry ? latestWeightEntry.weight : athlete.startWeight;
+  const weightSub = latestWeightEntry ? 'lbs' : 'lbs &middot; starting';
 
-  const latestBF = bodyLog.length > 0 && bodyLog[bodyLog.length - 1].bodyFatPct != null
-    ? bodyLog[bodyLog.length - 1].bodyFatPct
-    : null;
+  const latestBFEntry = bodyLog.slice().reverse().find(e => e.bodyFatPct != null);
+  const latestBF = latestBFEntry ? latestBFEntry.bodyFatPct : null;
   const bfDisplay = latestBF != null ? latestBF + '%' : (athlete.bodyFatPct != null ? athlete.bodyFatPct + '% est.' : '\u2014');
   const bfSub = athlete.bodyFatPct != null ? 'from ' + athlete.bodyFatPct + '% est.' : '';
 
@@ -1699,6 +1697,7 @@
       '</div>';
     }).join('');
 
+    // Note: all data.json strings are passed through esc() above
     document.getElementById('modified-week-mount').innerHTML =
       '<div class="modified-week">' +
         '<div class="modified-week-banner">' +
@@ -1707,6 +1706,12 @@
         '</div>' +
         '<div class="modified-week-grid">' + daysHTML + '</div>' +
       '</div>';
+
+    // Hide the default week-grid when a modified week replaces it
+    var defaultGrid = document.querySelector('.week-grid');
+    if (defaultGrid) defaultGrid.style.display = 'none';
+    var infoBox = document.querySelector('.week-grid + .info-box');
+    if (infoBox) infoBox.style.display = 'none';
   })();
 
   // Body Composition History

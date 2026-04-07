@@ -228,7 +228,7 @@
     { "date": "2026-03-30", "weight": 222 },
     { "date": "2026-04-04", "weight": 221.1, "bodyFatPct": 23.3 },
     { "date": "2026-04-05", "proteinGrams": 156, "notes": "Breakfast: 4 eggs, 3 bacon, 1 thick sourdough (~38g). Lunch: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 3-4 servings chips (~61g). Dinner: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 2 servings chips (~57g)." },
-    { "date": "2026-04-06", "proteinGrams": 82, "notes": "Breakfast: Clif Builder Bar Oreo (~20g). Snack: Pure Protein bar (~20g). Lunch: pollo asado quesadilla, El Pueblo Cardiff (~42g)." }
+    { "date": "2026-04-06", "proteinGrams": 152, "notes": "Breakfast: Clif Builder Bar Oreo (~20g). Snack: Pure Protein bar (~20g). Lunch: pollo asado quesadilla, El Pueblo Cardiff (~42g). Dinner: ~10 oz tri-tip + squash (~70g)." }
   ],
   "modifiedWeeks": {
     "4": {

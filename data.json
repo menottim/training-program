@@ -324,11 +324,11 @@
       "reason": "No basketball or hockey this week (next games Sun Apr 12). Rare opportunity for 4 lifting sessions. Re-baseline compounds after 20-day barbell gap. Introducing Back Squat and Barbell Bench.",
       "schedule": [
         {
-          "day": "Sun", "date": "2026-04-05", "type": "rest",
+          "day": "Sun", "date": "2026-04-06", "type": "rest",
           "desc": "Rest. No basketball or hockey."
         },
         {
-          "day": "Mon", "date": "2026-04-07", "type": "gym-deload",
+          "day": "Mon", "date": "2026-04-06", "type": "gym-deload",
           "desc": "Lower Body Heavy — Re-baseline",
           "exercises": [
             { "name": "Trap Bar Deadlift", "sets": "4×5", "weight": "225 lbs", "notes": "Re-baseline at Week 2 weight" },
@@ -340,7 +340,7 @@
           ]
         },
         {
-          "day": "Tue", "date": "2026-04-08", "type": "gym-deload",
+          "day": "Tue", "date": "2026-04-07", "type": "gym-deload",
           "desc": "Upper Body + Core — BB Bench Baseline",
           "exercises": [
             { "name": "Bench Press", "sets": "4×5", "weight": "135 lbs", "notes": "NEW — establish barbell baseline" },
@@ -354,11 +354,11 @@
           ]
         },
         {
-          "day": "Wed", "date": "2026-04-09", "type": "rest",
+          "day": "Wed", "date": "2026-04-08", "type": "rest",
           "desc": "Rest / Recovery"
         },
         {
-          "day": "Thu", "date": "2026-04-10", "type": "gym-deload",
+          "day": "Thu", "date": "2026-04-09", "type": "gym-deload",
           "desc": "Lower Body #2 — Volume",
           "exercises": [
             { "name": "Back Squat", "sets": "3×5", "weight": "based on Monday", "notes": "Second squat session — refine pattern" },
@@ -369,7 +369,7 @@
           ]
         },
         {
-          "day": "Fri", "date": "2026-04-11", "type": "gym-deload",
+          "day": "Fri", "date": "2026-04-10", "type": "gym-deload",
           "desc": "Lower Moderate + Movement Quality",
           "exercises": [
             { "name": "Goblet Squat", "sets": "3×10", "weight": "25–35 lbs" },
@@ -381,7 +381,7 @@
           ]
         },
         {
-          "day": "Sat", "date": "2026-04-12", "type": "rest",
+          "day": "Sat", "date": "2026-04-11", "type": "rest",
           "desc": "Rest before games resume Sunday"
         }
       ]

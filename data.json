@@ -212,6 +212,23 @@
       ],
       "proteinGrams": 156,
       "notes": "Week 5 Day 1 — re-baseline session. TB DL back to 225 (Week 2 weight) after 20-day gap. Back squat unavailable, substituted slanted leg press sled (90→180 lbs). HSR maintained at 140."
+    },
+    {
+      "date": "2026-04-07",
+      "type": "training",
+      "activity": "Upper Body + Core (Thu Phase 1)",
+      "exercises": [
+        { "name": "Bench Press", "sets": "4x5", "weight": "135 lbs" },
+        { "name": "Lat Pulldown", "sets": "4x6", "weight": "135 lbs" },
+        { "name": "DB Bench Press", "sets": "3x8", "weight": "50 lbs" },
+        { "name": "Bent Over Barbell Row", "sets": "3x8", "weight": "135 lbs" },
+        { "name": "DB Overhead Press", "sets": "3x8", "weight": "25 lbs" },
+        { "name": "Face Pull", "sets": "3x15", "weight": "cable" },
+        { "name": "Pallof Press", "sets": "3x10/side", "weight": "cable" },
+        { "name": "Cable Woodchop", "sets": "3x6/side", "weight": "cable" }
+      ],
+      "proteinGrams": 146,
+      "notes": "Week 5 Day 2 — first barbell bench press session. BB bench at 135 as baseline. Lat pulldown matched at 135 (up from 115 in deload). Subbed bent over barbell row for chest-supported row. DB bench and OHP as prescribed. Full core circuit."
     }
   ],
   "scienceReviews": [

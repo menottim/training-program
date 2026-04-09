@@ -339,7 +339,7 @@
       "reason": "No basketball or hockey this week (next games Sun Apr 12). Rare opportunity for 4 lifting sessions. Re-baseline compounds after 20-day barbell gap. Introducing Back Squat and Barbell Bench.",
       "schedule": [
         {
-          "day": "Sun", "date": "2026-04-06", "type": "rest",
+          "day": "Sun", "date": "2026-04-05", "type": "rest",
           "desc": "Rest. No basketball or hockey."
         },
         {
@@ -347,41 +347,44 @@
           "desc": "Lower Body Heavy — Re-baseline",
           "exercises": [
             { "name": "Trap Bar Deadlift", "sets": "4×5", "weight": "225 lbs", "notes": "Re-baseline at Week 2 weight" },
-            { "name": "Back Squat", "sets": "3×5", "weight": "135–155 lbs", "notes": "NEW — pattern session, find working weight" },
+            { "name": "Back Squat", "sets": "3×5", "weight": "135 lbs", "notes": "NEW — pattern session" },
             { "name": "Bulgarian Split Squat", "sets": "3×8/leg", "weight": "10 lb DBs" },
             { "name": "Glute Ham Raise", "sets": "3×5", "weight": "BW" },
             { "name": "Single-Leg RDL", "sets": "3×8/leg", "weight": "25 lb DBs" },
             { "name": "Seated Calf Raise (HSR)", "sets": "3×6", "weight": "140 lbs" }
-          ]
+          ],
+          "status": "done"
         },
         {
           "day": "Tue", "date": "2026-04-07", "type": "gym-deload",
           "desc": "Upper Body + Core — BB Bench Baseline",
           "exercises": [
-            { "name": "Bench Press", "sets": "4×5", "weight": "135 lbs", "notes": "NEW — establish barbell baseline" },
-            { "name": "Lat Pulldown", "sets": "4×6", "weight": "135+ lbs", "notes": "Match or exceed Week 2" },
-            { "name": "DB Bench Press", "sets": "3×8", "weight": "45-50 lbs", "notes": "Accessory — lighter, stability" },
-            { "name": "Chest-Supported Row", "sets": "3×8", "notes": "Back volume" },
+            { "name": "Bench Press", "sets": "4×5", "weight": "135 lbs", "notes": "NEW — barbell baseline established" },
+            { "name": "Lat Pulldown", "sets": "4×6", "weight": "135 lbs" },
+            { "name": "DB Bench Press", "sets": "3×8", "weight": "45 lbs", "notes": "Accessory — lighter, stability" },
+            { "name": "Bent Over Barbell Row", "sets": "3×8", "notes": "Subbed for chest-supported row" },
             { "name": "DB Overhead Press", "sets": "3×8", "weight": "25 lbs" },
             { "name": "Face Pull", "sets": "3×15" },
             { "name": "Pallof Press", "sets": "3×10/side" },
             { "name": "Cable Woodchop", "sets": "3×6/side" }
-          ]
+          ],
+          "status": "done"
         },
         {
-          "day": "Wed", "date": "2026-04-08", "type": "rest",
-          "desc": "Rest / Recovery"
-        },
-        {
-          "day": "Thu", "date": "2026-04-09", "type": "gym-deload",
-          "desc": "Lower Body #2 — Volume",
+          "day": "Wed", "date": "2026-04-08", "type": "gym-deload",
+          "desc": "Lower Body #2 — Volume (moved from Thu)",
           "exercises": [
-            { "name": "Back Squat", "sets": "3×5", "weight": "based on Monday", "notes": "Second squat session — refine pattern" },
-            { "name": "Bulgarian Split Squat", "sets": "3×8/leg", "weight": "15 lb DBs", "notes": "Progress if Monday felt easy" },
+            { "name": "Back Squat", "sets": "3×5", "weight": "135 lbs", "notes": "Matched Monday baseline" },
+            { "name": "Bulgarian Split Squat", "sets": "3×8/leg", "weight": "15 lb DBs" },
             { "name": "Glute Ham Raise", "sets": "3×5", "weight": "BW" },
-            { "name": "Single-Leg RDL", "sets": "3×8/leg", "weight": "25–30 lb DBs" },
-            { "name": "Seated Calf Raise (HSR)", "sets": "3×6", "weight": "140 lbs" }
-          ]
+            { "name": "Single-Leg RDL", "sets": "3×8/leg", "weight": "25 lb DBs" },
+            { "name": "Standing Calf Raise (HSR)", "sets": "3×6", "notes": "HSR tempo" }
+          ],
+          "status": "done"
+        },
+        {
+          "day": "Thu", "date": "2026-04-09", "type": "rest",
+          "desc": "Rest / Recovery"
         },
         {
           "day": "Fri", "date": "2026-04-10", "type": "gym-deload",

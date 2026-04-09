@@ -261,7 +261,7 @@
     { "date": "2026-04-05", "proteinGrams": 156, "notes": "Breakfast: 4 eggs, 3 bacon, 1 thick sourdough (~38g). Lunch: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 3-4 servings chips (~61g). Dinner: turkey sandwich (7 turkey, 3 mozz, 2 bread) + 2 servings chips (~57g)." },
     { "date": "2026-04-06", "proteinGrams": 152, "notes": "Breakfast: Clif Builder Bar Oreo (~20g). Snack: Pure Protein bar (~20g). Lunch: pollo asado quesadilla, El Pueblo Cardiff (~42g). Dinner: ~10 oz tri-tip + squash (~70g)." },
     { "date": "2026-04-07", "proteinGrams": 208, "notes": "Breakfast: 4 eggs + 2 bacon (~30g). Shake: 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit, 2/3 cup NV Protein Granola (~96g). Snack: Clif Builder Bar (~20g). Dinner: tri-tip quesadilla, 2 Fresca tortillas, shredded cheese, ~6 oz tri-tip (~62g)." },
-    { "date": "2026-04-08", "weight": 222.4, "bodyFatPct": 23.6, "proteinGrams": 260, "notes": "Shake #1: 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit, 2/3 cup NV Protein Granola (~96g). Meal: 7.8 oz tri-tip, 60g Kashi Go Protein & Fiber Choc Crunch, 140g whole milk (~78g). Shake #2: default shake without granola (~86g)." }
+    { "date": "2026-04-08", "weight": 222.4, "bodyFatPct": 23.6, "proteinGrams": 281, "notes": "Shake #1: 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit, 2/3 cup NV Protein Granola (~96g). Meal: 7.8 oz tri-tip, 60g Kashi Go Protein & Fiber Choc Crunch, 140g whole milk (~78g). Shake #2: default shake without granola (~86g). Half pollo asado quesadilla, El Pueblo Cardiff (~21g)." }
   ],
   "modifiedWeeks": {
     "4": {

@@ -1672,12 +1672,15 @@
       }
     }
 
-    // Protein from bodyLog (primary) or activityLog (fallback)
+    // Protein + calories from bodyLog (primary) or activityLog (fallback)
     var proteinToday = '\u2014';
+    var caloriesToday = '\u2014';
     var todayBodyLog = bodyLog.find(function(e) { return e.date === todayStr; });
-    if (todayBodyLog && todayBodyLog.proteinGrams != null) {
-      proteinToday = todayBodyLog.proteinGrams + 'g';
-    } else {
+    if (todayBodyLog) {
+      if (todayBodyLog.proteinGrams != null) proteinToday = todayBodyLog.proteinGrams + 'g';
+      if (todayBodyLog.calories != null) caloriesToday = todayBodyLog.calories.toLocaleString();
+    }
+    if (proteinToday === '\u2014') {
       var todayActivity = activityLog.filter(function(e) { return e.date === todayStr; });
       for (var m = 0; m < todayActivity.length; m++) {
         if (todayActivity[m].proteinGrams != null) { proteinToday = todayActivity[m].proteinGrams + 'g'; break; }
@@ -1688,6 +1691,7 @@
     parts.push('<strong>Today:</strong> ' + esc(todayDesc));
     if (nextUpDesc) parts.push('<strong>Next:</strong> ' + esc(nextUpDesc));
     parts.push('<strong>Protein:</strong> ' + proteinToday);
+    parts.push('<strong>Cal:</strong> ' + caloriesToday);
 
     document.getElementById('today-summary').innerHTML = parts.join(' &nbsp;\u00b7&nbsp; ');
   })();
@@ -1714,10 +1718,27 @@
   const sleepAvg = sleepEntries.length > 0
     ? (sleepEntries.reduce((s, e) => s + e.sleepHours, 0) / sleepEntries.length).toFixed(1)
     : null;
-  const proteinEntries = activityLog.filter(e => e.proteinGrams != null).slice(-7);
-  const proteinAvg = proteinEntries.length > 0
-    ? Math.round(proteinEntries.reduce((s, e) => s + e.proteinGrams, 0) / proteinEntries.length)
-    : null;
+  // Protein & calorie averages: merge activityLog + bodyLog, dedupe by date (bodyLog wins)
+  var nutritionByDate = {};
+  activityLog.forEach(function(e) {
+    if (e.proteinGrams != null || e.calories != null) {
+      if (!nutritionByDate[e.date]) nutritionByDate[e.date] = {};
+      if (e.proteinGrams != null) nutritionByDate[e.date].protein = e.proteinGrams;
+      if (e.calories != null) nutritionByDate[e.date].calories = e.calories;
+    }
+  });
+  bodyLog.forEach(function(e) {
+    if (e.proteinGrams != null || e.calories != null) {
+      if (!nutritionByDate[e.date]) nutritionByDate[e.date] = {};
+      if (e.proteinGrams != null) nutritionByDate[e.date].protein = e.proteinGrams;
+      if (e.calories != null) nutritionByDate[e.date].calories = e.calories;
+    }
+  });
+  var nutritionDates = Object.keys(nutritionByDate).sort().slice(-7);
+  var proteinVals = nutritionDates.map(function(d) { return nutritionByDate[d].protein; }).filter(function(v) { return v != null; });
+  const proteinAvg = proteinVals.length > 0 ? Math.round(proteinVals.reduce(function(s,v) { return s+v; }, 0) / proteinVals.length) : null;
+  var calorieVals = nutritionDates.map(function(d) { return nutritionByDate[d].calories; }).filter(function(v) { return v != null; });
+  const calorieAvg = calorieVals.length > 0 ? Math.round(calorieVals.reduce(function(s,v) { return s+v; }, 0) / calorieVals.length) : null;
 
   // Note: innerHTML is used throughout — all data.json strings are passed through
   // esc() to prevent XSS from any untrusted content.
@@ -1816,6 +1837,12 @@
       '<div class="dash-label">Protein Avg</div>',
       '<div class="dash-sub">target 160\u2013220g</div>',
     '</div>'].join('') : '',
+    calorieAvg != null ? [
+    '<div class="dash-card' + (calorieAvg >= 2100 && calorieAvg <= 2600 ? ' improving' : ' warning') + '">',
+      '<div class="dash-value">' + calorieAvg.toLocaleString() + '</div>',
+      '<div class="dash-label">Calorie Avg</div>',
+      '<div class="dash-sub">target 2,100\u20132,600</div>',
+    '</div>'].join('') : '',
     '</div>'
   ].join('');
 
@@ -1889,7 +1916,7 @@
 
   // Body Composition History
   if (bodyLog.length > 0) {
-    var hasNutrition = bodyLog.some(function(e) { return e.sleepHours != null || e.proteinGrams != null; });
+    var hasNutrition = bodyLog.some(function(e) { return e.sleepHours != null || e.proteinGrams != null || e.calories != null; });
     var compRows = bodyLog.map(function(entry) {
       var bf = entry.bodyFatPct;
       var w = entry.weight;
@@ -1901,11 +1928,12 @@
       if (hasNutrition) {
         row += '<td>' + (entry.sleepHours != null ? entry.sleepHours + 'h' : '\u2014') + '</td>';
         row += '<td>' + (entry.proteinGrams != null ? entry.proteinGrams + 'g' : '\u2014') + '</td>';
+        row += '<td>' + (entry.calories != null ? entry.calories.toLocaleString() : '\u2014') + '</td>';
       }
       return row + '</tr>';
     });
     var headers = '<th>Date</th><th>Weight</th><th>Body Fat %</th><th>Lean Mass</th><th>Fat Mass</th>';
-    if (hasNutrition) headers += '<th>Sleep</th><th>Protein</th>';
+    if (hasNutrition) headers += '<th>Sleep</th><th>Protein</th><th>Calories</th>';
     document.getElementById('body-log-mount').innerHTML =
       '<h3 style="margin-top:2rem;">Body Composition</h3>' +
       '<table class="log-table"><thead><tr>' + headers +

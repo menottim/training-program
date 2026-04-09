@@ -105,8 +105,10 @@ The renderer uses a regex `/\((\w+)\s+Phase\s+(\d+)\)/` to extract the day and p
 
 ### Step 4: Append to bodyLog if body stats reported
 
+Body stats, protein, AND calories are tracked in bodyLog. When the user reports food, estimate calories alongside protein and update the day's bodyLog entry (create one if it doesn't exist). Calorie targets: 2,400–2,600 on training/game days, 2,100–2,300 on rest days.
+
 ```json
-{ "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2 }
+{ "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2, "proteinGrams": 180, "calories": 2450 }
 ```
 
 ### Step 5: Commit and push

@@ -499,6 +499,24 @@
     outline: 2px solid var(--accent);
     outline-offset: -2px;
   }
+  .modified-day.md-done {
+    opacity: 0.55;
+  }
+  .modified-day.md-done .md-type {
+    background: #c8e6c9 !important;
+    color: #2e7d32 !important;
+  }
+  .modified-day .md-next-up {
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    padding-top: 4px;
+    border-top: 1px dashed var(--border);
+    line-height: 1.4;
+  }
+  .modified-day .md-next-up strong {
+    color: var(--text);
+  }
   .tag-hotel { background: #fff3e0; color: #e65100; }
   .tag-gym-deload { background: #e8f5e9; color: var(--success); }
   .mw-log-banner {
@@ -1146,6 +1164,7 @@
     <div class="day-name">Mon</div>
     <div class="day-type">Recovery</div>
     <div class="day-detail">Low-intensity cardio, foam roll, achilles protocol</div>
+    <div class="md-next-up"><strong>Next up Tue:</strong> Basketball PM</div>
   </div>
   <div class="day-card game">
     <div class="day-name">Tue</div>
@@ -1171,6 +1190,7 @@
     <div class="day-name">Sat</div>
     <div class="day-type">Recovery</div>
     <div class="day-detail">Mobility, activation, pre-game prep</div>
+    <div class="md-next-up"><strong>Next up Sun:</strong> Basketball AM + Hockey PM</div>
   </div>
 </div>
 
@@ -1432,8 +1452,9 @@
 <h2 id="tracker" style="margin-top:3rem;">&#128202; Activity Tracker</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Program start: March 2026 &middot; Phase 1: Foundation</p>
 
-<!-- Self-Service Logging Form (rendered by JS) -->
+<!-- Self-Service Logging Form (disabled — using CLI instead)
 <div id="log-form-mount"></div>
+-->
 
 <!-- Dashboard Summary (rendered from data.json) -->
 <div id="dashboard-mount"></div>
@@ -1462,8 +1483,9 @@
 <!-- Activity Log (rendered from data.json) -->
 <div id="activity-log-mount"></div>
 
-<!-- Quick Log FAB -->
+<!-- Quick Log FAB (disabled — using CLI instead)
 <a href="#log-form-mount" class="fab-log" title="Log Activity">&#128203;</a>
+-->
 
 <div class="footer">
   <p>Program designed March 2026 &middot; Based on current sports medicine research &middot; Consult a physician before beginning</p>
@@ -1674,10 +1696,11 @@
       String(today.getMonth() + 1).padStart(2, '0') + '-' +
       String(today.getDate()).padStart(2, '0');
 
-    var daysHTML = mw.schedule.map(function(d) {
+    var daysHTML = mw.schedule.map(function(d, idx) {
       var isToday = d.date === todayStr;
       var typeClass = 'type-' + d.type;
       var todayClass = isToday ? ' md-today' : '';
+      var doneClass = d.status === 'done' ? ' md-done' : '';
       var exHTML = '';
       if (d.exercises && d.exercises.length > 0) {
         exHTML = '<ul class="exercise-list">' +
@@ -1688,12 +1711,25 @@
           }).join('') +
         '</ul>';
       }
-      return '<div class="modified-day ' + typeClass + todayClass + '">' +
+      // On rest days, show "Next up" with the next non-rest day's description
+      var nextUpHTML = '';
+      if (d.type === 'rest') {
+        for (var ni = idx + 1; ni < mw.schedule.length; ni++) {
+          var next = mw.schedule[ni];
+          if (next.type !== 'rest') {
+            nextUpHTML = '<div class="md-next-up"><strong>Next up ' + esc(next.day) + ':</strong> ' + esc(next.desc) + '</div>';
+            break;
+          }
+        }
+      }
+      var typeLabel = d.status === 'done' ? '✓ Done' : (typeLabels[d.type] || d.type);
+      return '<div class="modified-day ' + typeClass + todayClass + doneClass + '">' +
         '<div class="md-name">' + esc(d.day) + '</div>' +
         '<div class="md-date">' + d.date.slice(5).replace('-', '/') + '</div>' +
-        '<div class="md-type">' + esc(typeLabels[d.type] || d.type) + '</div>' +
+        '<div class="md-type">' + esc(typeLabel) + '</div>' +
         '<div class="md-desc">' + esc(d.desc) + '</div>' +
         exHTML +
+        nextUpHTML +
       '</div>';
     }).join('');
 
@@ -2533,10 +2569,8 @@
       '</div>');
   })();
 
-  // ─── Self-Service Logging Form ───
-  // Note: innerHTML is safe throughout this form — all content is generated from
-  // hardcoded strings, computed variables (phase, weekNum), and user's own form input
-  // on a personal single-user GitHub Pages site. Same trust model as all other renderers.
+  // ─── Self-Service Logging Form (disabled — using CLI instead) ───
+  /*
   (function logForm() {
     var REPO = 'menottim/training-program';
     var FILE = 'data.json';
@@ -2932,6 +2966,7 @@
 
     render();
   })();
+  */
 
   // ─── Today indicator on weekly overview ───
   (function highlightToday() {

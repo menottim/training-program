@@ -40,7 +40,7 @@ If the user says "the rest as prescribed," look up the prescribed exercises for 
 
 ### Step 3: Append to activityLog in data.json
 
-This is the **ONLY file you need to edit** for activity logging. Append a new entry to the `activityLog[]` array.
+Append a new entry to the `activityLog[]` array. Also check and update `bodyLog[]` if protein or body stats are reported — protein is tracked in bodyLog independently of activity entries, so a day with no workout can still have a protein log.
 
 #### Activity name format (CRITICAL for progress log rendering)
 

@@ -55,24 +55,57 @@
     scrollbar-width: none;
   }
   .nav-inner::-webkit-scrollbar { display: none; }
-  .nav a {
+  .tab-btn {
+    background: none;
+    border: none;
     color: rgba(255,255,255,0.7);
-    text-decoration: none;
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    padding: 0.6rem 0.75rem;
+    padding: 0.7rem 1.2rem;
     white-space: nowrap;
     letter-spacing: 0.3px;
     text-transform: uppercase;
+    cursor: pointer;
     transition: color 0.15s, background 0.15s;
     border-bottom: 2px solid transparent;
     margin-bottom: -2px;
+    font-family: inherit;
   }
-  .nav a:hover, .nav a:focus {
+  .tab-btn:hover, .tab-btn:focus {
     color: #fff;
     background: rgba(255,255,255,0.08);
+  }
+  .tab-btn.active {
+    color: #fff;
     border-bottom-color: var(--accent);
   }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* Today summary bar */
+  .today-summary {
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: var(--text);
+    text-align: center;
+  }
+  .today-summary strong { color: var(--accent2); }
+
+  /* Compact activity log */
+  .show-all-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    color: var(--accent2);
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+    font-family: inherit;
+  }
+  .show-all-btn:hover { background: var(--bg-alt); }
 
   /* Header */
   .header {
@@ -347,7 +380,6 @@
     border: 1px solid var(--border);
     border-radius: 8px;
     margin-bottom: 1.5rem;
-    overflow: hidden;
     page-break-inside: avoid;
   }
   .phase-header {
@@ -366,9 +398,9 @@
     padding: 2px 10px;
     border-radius: 12px;
   }
-  .phase:nth-child(1) .phase-header { background: #e8f0fe; color: var(--accent2); }
-  .phase:nth-child(2) .phase-header { background: #fde8ec; color: var(--accent); }
-  .phase:nth-child(3) .phase-header { background: #e8f5e9; color: var(--success); }
+  .phase:nth-of-type(1) .phase-header { background: #e8f0fe; color: var(--accent2); }
+  .phase:nth-of-type(2) .phase-header { background: #fde8ec; color: var(--accent); }
+  .phase:nth-of-type(3) .phase-header { background: #e8f5e9; color: var(--success); }
   .phase-body { padding: 1rem; }
 
   /* Achilles section */
@@ -529,6 +561,8 @@
     display: inline-block;
   }
   @media (max-width: 700px) {
+    .tab-btn { font-size: 0.7rem; padding: 0.6rem 0.8rem; }
+    .today-summary { font-size: 0.7rem; padding: 0.4rem 0.75rem; }
     .log-form-row { flex-direction: column; }
 
     .modified-week-grid {
@@ -650,6 +684,10 @@
   .collapsible-body {
     overflow: hidden;
     transition: max-height 0.3s ease;
+  }
+  .collapsible-body:not(.collapsed) {
+    overflow: visible;
+    max-height: none !important;
   }
   .collapsible-body.collapsed {
     max-height: 0 !important;
@@ -1090,7 +1128,8 @@
 
   /* Print */
   @media print {
-    .nav { display: none; }
+    .nav, .today-summary { display: none; }
+    .tab-content { display: block !important; }
     body { padding: 0.5rem; padding-top: 0.5rem; font-size: 10pt; max-width: 100%; }
     .header { padding: 1rem 0; }
     h2 { margin-top: 1.5rem; }
@@ -1109,16 +1148,9 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="#top">Overview</a>
-    <a href="#week">Week</a>
-    <a href="#phases">Phases</a>
-    <a href="#targets">Targets</a>
-    <a href="#achilles">Achilles</a>
-    <a href="#recovery">Recovery</a>
-    <a href="#nutrition">Nutrition</a>
-    <a href="#deload">Deload</a>
-    <a href="#modify">Modify</a>
-    <a href="#tracker">Tracker</a>
+    <button class="tab-btn active" data-tab="tab-week">This Week</button>
+    <button class="tab-btn" data-tab="tab-plan">Training Plan</button>
+    <button class="tab-btn" data-tab="tab-ref">Reference</button>
   </div>
 </nav>
 
@@ -1151,6 +1183,13 @@
   <div class="goal"><span class="priority">Priority 2</span> Strength &amp; Power</div>
   <div class="goal"><span class="priority">Priority 3</span> Vertical / Above the Rim</div>
 </div>
+
+<div id="today-summary" class="today-summary"></div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- TAB 1: THIS WEEK                                -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="tab-week" class="tab-content active">
 
 <!-- WEEKLY OVERVIEW -->
 <h2 id="week">&#128197; Weekly Overview</h2>
@@ -1202,7 +1241,31 @@
 <!-- Modified Week Plan (rendered from data.json when active) -->
 <div id="modified-week-mount"></div>
 
-<!-- PHASE 1 -->
+<!-- Dashboard Summary (moved from tracker section) -->
+<div id="dashboard-mount"></div>
+
+<!-- Strength Progress Bars -->
+<div id="strength-mount"></div>
+
+<!-- Body Composition History -->
+<div id="body-log-mount"></div>
+
+<!-- Achilles Pain Trend -->
+<div id="achilles-chart-mount"></div>
+
+<!-- Weekly Activity Volume Chart -->
+<div id="volume-chart-mount"></div>
+
+<!-- Activity Log -->
+<div id="activity-log-mount"></div>
+
+</div><!-- /tab-week -->
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- TAB 2: TRAINING PLAN                            -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="tab-plan" class="tab-content">
+
 <h2 id="phases">&#9881;&#65039; Training Phases</h2>
 
 <div class="phase">
@@ -1331,6 +1394,19 @@
   Research shows a trap bar deadlift of 2.0–2.5x bodyweight is the benchmark for elite jumping. At your current strength levels, every pound added to the bar translates directly to inches on your vertical.
 </div>
 
+<!-- Strength Progression Chart -->
+<div id="strength-chart-mount"></div>
+
+<!-- Strength Standards Gauges -->
+<div id="standards-mount"></div>
+
+</div><!-- /tab-plan -->
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- TAB 3: REFERENCE                                -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="tab-ref" class="tab-content">
+
 <!-- ACHILLES PROTOCOL -->
 <h2 id="achilles">&#129520; Achilles Tendinopathy Protocol</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Bilateral management — Heavy Slow Resistance (HSR) preferred over isolated eccentric training for in-season athletes. 3&times;/week, integrated into training days.</p>
@@ -1402,6 +1478,9 @@
   Every 1 lb of fat lost is dead weight you no longer lift off the ground. A 10 lb fat loss (while maintaining muscle) makes you ~5% more powerful relative to bodyweight — measurable inches on your vertical with zero strength gains needed.
 </div>
 
+<!-- Body Composition Trend Chart -->
+<div id="body-chart-mount"></div>
+
 <!-- DELOAD -->
 <h2 id="deload">&#128260; Deload Protocol (Every 4th Week)</h2>
 <div class="deload-box">
@@ -1445,47 +1524,7 @@
   Recovery capacity is your limiting factor, not training capacity. Melatonin drops and cortisol rises with age. When in doubt, do less and sleep more. You can always add — you can't un-injure.
 </div>
 
-<!-- ═══════════════════════════════════════════════ -->
-<!-- ACTIVITY TRACKER                                -->
-<!-- ═══════════════════════════════════════════════ -->
-
-<h2 id="tracker" style="margin-top:3rem;">&#128202; Activity Tracker</h2>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Program start: March 2026 &middot; Phase 1: Foundation</p>
-
-<!-- Self-Service Logging Form (disabled — using CLI instead)
-<div id="log-form-mount"></div>
--->
-
-<!-- Dashboard Summary (rendered from data.json) -->
-<div id="dashboard-mount"></div>
-
-<!-- Achilles Pain Trend (conditional, only with data) -->
-<div id="achilles-chart-mount"></div>
-
-<!-- Strength Progress Bars (rendered from data.json) -->
-<div id="strength-mount"></div>
-
-<!-- Strength Progression Chart -->
-<div id="strength-chart-mount"></div>
-
-<!-- Strength Standards Gauges -->
-<div id="standards-mount"></div>
-
-<!-- Body Composition History (rendered from data.json) -->
-<div id="body-log-mount"></div>
-
-<!-- Body Composition Trend Chart -->
-<div id="body-chart-mount"></div>
-
-<!-- Weekly Activity Volume Chart -->
-<div id="volume-chart-mount"></div>
-
-<!-- Activity Log (rendered from data.json) -->
-<div id="activity-log-mount"></div>
-
-<!-- Quick Log FAB (disabled — using CLI instead)
-<a href="#log-form-mount" class="fab-log" title="Log Activity">&#128203;</a>
--->
+</div><!-- /tab-ref -->
 
 <div class="footer">
   <p>Program designed March 2026 &middot; Based on current sports medicine research &middot; Consult a physician before beginning</p>
@@ -1554,6 +1593,104 @@
   const weekNum = Math.max(1, Math.ceil((daysSinceStart + 1) / 7));
   const phase = weekNum <= 8 ? 1 : weekNum <= 14 ? 2 : 3;
   const phaseNames = { 1: 'Foundation', 2: 'Strength-Power', 3: 'Power Realization' };
+
+  // ─── Tab Controller ───
+  (function initTabs() {
+    var tabs = document.querySelectorAll('.tab-btn');
+    var contents = document.querySelectorAll('.tab-content');
+    var hashMap = {
+      'tab-week': 'tab-week', 'tab-plan': 'tab-plan', 'tab-ref': 'tab-ref',
+      'week': 'tab-week', 'phases': 'tab-plan', 'targets': 'tab-plan',
+      'achilles': 'tab-ref', 'recovery': 'tab-ref', 'nutrition': 'tab-ref',
+      'deload': 'tab-ref', 'modify': 'tab-ref', 'tracker': 'tab-week', 'top': 'tab-week'
+    };
+    function activateTab(tabId, scrollTarget) {
+      contents.forEach(function(c) { c.classList.toggle('active', c.id === tabId); });
+      tabs.forEach(function(t) { t.classList.toggle('active', t.dataset.tab === tabId); });
+      history.replaceState(null, '', '#' + tabId);
+      // Ensure expanded collapsibles have correct max-height after tab switch
+      var activeTab = document.getElementById(tabId);
+      if (activeTab) {
+        activeTab.querySelectorAll('.collapsible-body:not(.collapsed)').forEach(function(b) {
+          b.style.maxHeight = 'none';
+        });
+      }
+      if (scrollTarget) {
+        var el = document.getElementById(scrollTarget);
+        if (el) setTimeout(function() { el.scrollIntoView({ behavior: 'smooth' }); }, 50);
+      }
+    }
+    tabs.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        activateTab(this.dataset.tab);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+    var h = location.hash.replace('#', '');
+    if (h && hashMap[h]) {
+      activateTab(hashMap[h], h !== hashMap[h] ? h : null);
+    }
+    window._activateTab = activateTab;
+  })();
+
+  // ─── Today Summary Bar ───
+  // Note: all interpolated values pass through esc() for XSS safety.
+  // This is a personal single-user GitHub Pages site with no external input.
+  (function renderTodaySummary() {
+    var dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var todayName = dayNames[today.getDay()];
+    var todayStr = today.getFullYear() + '-' +
+      String(today.getMonth() + 1).padStart(2, '0') + '-' +
+      String(today.getDate()).padStart(2, '0');
+
+    var mw = modifiedWeeks[String(weekNum)];
+    var todayDesc = '';
+    var nextUpDesc = '';
+
+    if (mw) {
+      var schedule = mw.schedule;
+      var todayIdx = -1;
+      for (var i = 0; i < schedule.length; i++) {
+        if (schedule[i].day === todayName) { todayIdx = i; todayDesc = schedule[i].desc; break; }
+      }
+      if (todayIdx === -1) todayDesc = 'Rest';
+      for (var j = (todayIdx >= 0 ? todayIdx + 1 : 0); j < schedule.length; j++) {
+        if (schedule[j].type !== 'rest') {
+          nextUpDesc = schedule[j].day + ': ' + schedule[j].desc;
+          break;
+        }
+      }
+    } else {
+      var std = { Sun: 'Basketball AM + Hockey PM', Mon: 'Recovery', Tue: 'Basketball PM',
+        Wed: 'Lower Heavy', Thu: 'Upper + Core', Fri: 'Lower Moderate', Sat: 'Recovery' };
+      var stdOrder = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+      todayDesc = std[todayName];
+      var si = stdOrder.indexOf(todayName);
+      for (var k = 1; k < 7; k++) {
+        var nd = stdOrder[(si + k) % 7];
+        if (nd !== 'Mon' && nd !== 'Sat') { nextUpDesc = nd + ': ' + std[nd]; break; }
+      }
+    }
+
+    // Protein from bodyLog (primary) or activityLog (fallback)
+    var proteinToday = '\u2014';
+    var todayBodyLog = bodyLog.find(function(e) { return e.date === todayStr; });
+    if (todayBodyLog && todayBodyLog.proteinGrams != null) {
+      proteinToday = todayBodyLog.proteinGrams + 'g';
+    } else {
+      var todayActivity = activityLog.filter(function(e) { return e.date === todayStr; });
+      for (var m = 0; m < todayActivity.length; m++) {
+        if (todayActivity[m].proteinGrams != null) { proteinToday = todayActivity[m].proteinGrams + 'g'; break; }
+      }
+    }
+
+    var parts = ['<strong>Week ' + weekNum + '</strong> Phase ' + phase + ': ' + esc(phaseNames[phase])];
+    parts.push('<strong>Today:</strong> ' + esc(todayDesc));
+    if (nextUpDesc) parts.push('<strong>Next:</strong> ' + esc(nextUpDesc));
+    parts.push('<strong>Protein:</strong> ' + proteinToday);
+
+    document.getElementById('today-summary').innerHTML = parts.join(' &nbsp;\u00b7&nbsp; ');
+  })();
 
   const totalGames = activityLog.filter(e => e.type === 'game').length;
   const totalSessions = activityLog.filter(e => e.type === 'training').length;
@@ -1890,6 +2027,32 @@
     });
   }
   document.getElementById('activity-log-mount').innerHTML = logHTML;
+
+  // ─── Compact activity log: show last 2 weeks by default ───
+  (function compactLog() {
+    var logMount = document.getElementById('activity-log-mount');
+    var summaries = logMount.querySelectorAll('.week-summary');
+    if (summaries.length > 2) {
+      for (var i = 0; i < summaries.length - 2; i++) {
+        summaries[i].style.display = 'none';
+      }
+      var btn = document.createElement('button');
+      btn.className = 'show-all-btn';
+      btn.textContent = 'Show all ' + summaries.length + ' weeks';
+      btn.addEventListener('click', function() {
+        var showAll = btn.textContent.indexOf('Show all') === 0;
+        summaries.forEach(function(s) { s.style.display = showAll ? '' : 'none'; });
+        if (!showAll) {
+          for (var i = 0; i < summaries.length - 2; i++) {
+            summaries[i].style.display = 'none';
+          }
+        }
+        btn.textContent = showAll ? 'Show recent only' : 'Show all ' + summaries.length + ' weeks';
+      });
+      var h3 = logMount.querySelector('h3');
+      if (h3) h3.after(btn);
+    }
+  })();
 
   // Progress Log rendering — pivot activityLog into exercise × week tables
   var dayAbbrevMap = { Wed: 'wed', Thu: 'thu', Fri: 'fri' };
@@ -2980,7 +3143,32 @@
     });
   })();
 
-  // ─── Collapsible phase sections ───
+  // ─── Phase-level collapse (non-current phases start collapsed) ───
+  (function collapsePhases() {
+    document.querySelectorAll('.phase').forEach(function(phaseEl, idx) {
+      var phaseNum = idx + 1;
+      var header = phaseEl.querySelector('.phase-header');
+      var body = phaseEl.querySelector('.phase-body');
+      if (!header || !body) return;
+      header.classList.add('collapsible-header');
+      body.classList.add('collapsible-body');
+      if (phaseNum !== phase) {
+        body.classList.add('collapsed');
+        header.classList.add('collapsed');
+      } else {
+        body.style.maxHeight = 'none';
+      }
+      header.addEventListener('click', function() {
+        var isCollapsed = body.classList.toggle('collapsed');
+        header.classList.toggle('collapsed', isCollapsed);
+        if (!isCollapsed) {
+          body.style.maxHeight = 'none';
+        }
+      });
+    });
+  })();
+
+  // ─── Collapsible day sections within phases ───
   (function makeCollapsible() {
     document.querySelectorAll('.phase-body h3').forEach(function(h3) {
       // Make the h3 a collapsible toggle for its following content until next h3 or end of phase-body
@@ -2994,13 +3182,12 @@
         sibling = next;
       }
       h3.parentNode.insertBefore(body, h3.nextSibling);
-      // Set max-height for animation
-      body.style.maxHeight = body.scrollHeight + 'px';
+      body.style.maxHeight = 'none';
       h3.addEventListener('click', function() {
         var isCollapsed = body.classList.toggle('collapsed');
         h3.classList.toggle('collapsed', isCollapsed);
         if (!isCollapsed) {
-          body.style.maxHeight = body.scrollHeight + 'px';
+          body.style.maxHeight = 'none';
         }
       });
     });

@@ -243,6 +243,21 @@
       ],
       "proteinGrams": 260,
       "notes": "Week 5 Day 3 — pulled Thursday's Lower Body #2 forward to Wednesday. Back squat at 135 (matching Monday's working weight). All accessories as prescribed. Standing calf raise HSR for achilles protocol."
+    },
+    {
+      "date": "2026-04-10",
+      "type": "training",
+      "activity": "Lower Moderate + Movement Quality (Fri Phase 1)",
+      "exercises": [
+        { "name": "Goblet Squat", "sets": "3x10", "weight": "30 lbs" },
+        { "name": "Hip Thrust", "sets": "3x10", "weight": "45 lbs" },
+        { "name": "Lateral Band Walk", "sets": "3x12/dir", "weight": "band" },
+        { "name": "Single-Leg Balance", "sets": "2x30s/leg", "weight": "BW" },
+        { "name": "Standing Calf Raise (HSR)", "sets": "3x6", "notes": "HSR tempo" },
+        { "name": "Banded Ankle Dorsiflexion", "sets": "2x10/side", "weight": "band" }
+      ],
+      "proteinGrams": 144,
+      "notes": "Week 5 Day 4 — Friday lower moderate session. Goblet squat at 30 (top of prescribed range). Hip thrust at 45. HSR maintained. Full mobility circuit."
     }
   ],
   "scienceReviews": [
@@ -398,7 +413,8 @@
             { "name": "Single-Leg Balance", "sets": "2×30s/leg" },
             { "name": "Standing Calf Raise (HSR)", "sets": "3×6" },
             { "name": "Banded Ankle Dorsiflexion", "sets": "2×10/side" }
-          ]
+          ],
+          "status": "done"
         },
         {
           "day": "Sat", "date": "2026-04-11", "type": "rest",

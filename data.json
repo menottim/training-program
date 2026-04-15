@@ -274,6 +274,14 @@
       "duration": "35 min",
       "intensity": "high",
       "notes": "Week 6 — PM session. Double game day complete (basketball AM + hockey PM)."
+    },
+    {
+      "date": "2026-04-14",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "15 min",
+      "intensity": "high",
+      "notes": "Week 6 — Tuesday evening session. Shorter play time than usual."
     }
   ],
   "scienceReviews": [
@@ -298,7 +306,7 @@
     { "date": "2026-04-11", "proteinGrams": 166, "calories": 2350, "notes": "Lunch: bacon egg and cheese burrito, Juanita's Cardiff (~32g/~700cal). Dinner: fish and chips, The Galley at the Marina Chula Vista (~48g/~1100cal). Shake: default without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~550cal)." },
     { "date": "2026-04-12", "proteinGrams": 159, "calories": 3000, "notes": "Breakfast: bagel with 2 tbsp butter (~10g/~490cal). Snack: Clif Builder Bar (~20g/~270cal). Lunch: turkey sandwich (7 turkey, 3 mozz, 2 sourdough) + 2 servings potato chips (~61g/~930cal). Dinner: In-N-Out 4x4 + fries (~68g/~1310cal)." },
     { "date": "2026-04-13", "weight": 222.9, "bodyFatPct": 23.7, "proteinGrams": 140, "calories": 1740, "notes": "Shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Snack: Clif Builder Bar Oreo (~20g/~270cal). Dinner: cheese tortellini 1.5 servings + 1/3 lb ground beef + 1.5 servings Rao's marinara + 2 cookies (~34g/~900cal)." },
-    { "date": "2026-04-14", "proteinGrams": 144, "calories": 1790, "notes": "Breakfast: shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Lunch: 2x Crack Tri-Tip Tacos, Crack Taco Shop (~35g/~650cal) + 1/2 chips and guac (~3g/~300cal) + Clif Builder Bar Oreo (~20g/~270cal)." }
+    { "date": "2026-04-14", "proteinGrams": 191, "calories": 3070, "notes": "Breakfast: shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Lunch: 2x Crack Tri-Tip Tacos, Crack Taco Shop (~35g/~650cal) + 1/2 chips and guac (~3g/~300cal) + Clif Builder Bar Oreo (~20g/~270cal). Dinner: 2 buffalo wings, 10 fries (~14g/~300cal) + 1 serving cheese tortellini, 1/4 lb ground beef, 1/2 cup Rao's marinara (~29g/~580cal) + 1 Coors Light (~1g/~102cal) + 1 large chocolate chip cookie (~3g/~300cal)." }
   ],
   "modifiedWeeks": {
     "4": {

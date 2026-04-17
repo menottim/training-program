@@ -282,6 +282,20 @@
       "duration": "15 min",
       "intensity": "high",
       "notes": "Week 6 — Tuesday evening session. Shorter play time than usual."
+    },
+    {
+      "date": "2026-04-16",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 1)",
+      "exercises": [
+        { "name": "Trap Bar Deadlift", "sets": "4x5", "weight": "230 lbs" },
+        { "name": "Back Squat", "sets": "3x5", "weight": "140 lbs" },
+        { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "20 lb DBs", "notes": "Getting difficult" },
+        { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "30 lb DBs", "notes": "Getting difficult" },
+        { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "145 lbs", "notes": "Last set challenging" }
+      ],
+      "proteinGrams": 155,
+      "notes": "Week 6 Day 1 — Wed session done on Thursday. Progression on all lifts: TB DL 225→230, squat 135→140, BSS 15→20 DBs, SLRDL 25→30 DBs, HSR 140→145. BSS and SLRDL approaching RPE 7+."
     }
   ],
   "scienceReviews": [
@@ -308,7 +322,8 @@
     { "date": "2026-04-13", "weight": 222.9, "bodyFatPct": 23.7, "proteinGrams": 140, "calories": 1740, "notes": "Shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Snack: Clif Builder Bar Oreo (~20g/~270cal). Dinner: cheese tortellini 1.5 servings + 1/3 lb ground beef + 1.5 servings Rao's marinara + 2 cookies (~34g/~900cal)." },
     { "date": "2026-04-14", "proteinGrams": 191, "calories": 3070, "notes": "Breakfast: shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Lunch: 2x Crack Tri-Tip Tacos, Crack Taco Shop (~35g/~650cal) + 1/2 chips and guac (~3g/~300cal) + Clif Builder Bar Oreo (~20g/~270cal). Dinner: 2 buffalo wings, 10 fries (~14g/~300cal) + 1 serving cheese tortellini, 1/4 lb ground beef, 1/2 cup Rao's marinara (~29g/~580cal) + 1 Coors Light (~1g/~102cal) + 1 large chocolate chip cookie (~3g/~300cal)." },
     { "date": "2026-04-15", "weight": 221.8, "bodyFatPct": 23.4, "proteinGrams": 172, "calories": 2030, "notes": "Breakfast: shake without granola or yogurt — 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal). Dinner: shake without granola or yogurt (~64g/~440cal) + 3 fish tacos El Pueblo Cardiff (~38g/~750cal) + JoJo's Creamery jojo size ice cream (~6g/~400cal)." },
-    { "date": "2026-04-16", "proteinGrams": 64, "calories": 440, "notes": "Breakfast: shake without granola or yogurt — 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal)." }
+    { "date": "2026-04-16", "proteinGrams": 155, "calories": 2670, "notes": "Breakfast: shake without granola or yogurt — 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal). Lunch: homemade quesadilla — 2 medium Costco tortillas, 1 cup cheese, 2 slices bacon (~50g/~1130cal). Dinner: chicken sandwich Chick & Hawk Encinitas + 1/2 large fries + 1 mixed drink (~41g/~1100cal)." },
+    { "date": "2026-04-17", "proteinGrams": 64, "calories": 440, "notes": "Breakfast: shake without granola or yogurt — 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal)." }
   ],
   "modifiedWeeks": {
     "4": {

@@ -84,6 +84,8 @@ Parse the user's message for:
 - Body weight / body fat if mentioned
 - Game performance notes if mentioned
 
+__Proactively capture sleep and achilles pain.__ These two fields are prescribed by the science-review workflow (Section 5 recovery; Section 4 achilles pain-monitoring) but Menotti rarely reports them unprompted. If a user reports a training session or game without mentioning sleep or achilles status, __ask once before logging__: "Sleep last night? Any achilles pain during the session?" Do not block logging on the answer, but capture when provided. Data gaps on these two fields compromise the 12-week HSR adaptation check and the Knowles 2018 sleep-intensity auto-regulation.
+
 ### Step 2: Match "as prescribed" exercises
 
 If the user says "the rest as prescribed," look up the prescribed exercises for that day in `index.html`. The training plan is organized by phase and day (Wed = Lower Body, Thu = Upper Body + Core, Fri = Lower Moderate). Log prescribed exercises with weight "as prescribed" unless the user gave specific numbers.
@@ -155,11 +157,13 @@ The renderer uses a regex `/\((\w+)\s+Phase\s+(\d+)\)/` to extract the day and p
 
 ### Step 4: Append to bodyLog if body stats reported
 
-Body stats, protein, AND calories are tracked in bodyLog. When the user reports food, estimate calories alongside protein and update the day's bodyLog entry (create one if it doesn't exist). Calorie targets: 2,400–2,600 on training/game days, 2,100–2,300 on rest days.
+Body stats, protein, calories, and sleep are tracked in bodyLog. When the user reports food, estimate calories alongside protein and update the day's bodyLog entry (create one if it doesn't exist). Calorie targets: 2,400-2,600 on training/game days, 2,100-2,300 on rest days. Sleep target: 7.5-9 hours, individualized per Walsh 2021 IOC consensus.
 
 ```json
-{ "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2, "proteinGrams": 180, "calories": 2450 }
+{ "date": "2026-03-13", "weight": 220.5, "bodyFatPct": 23.2, "proteinGrams": 180, "calories": 2450, "sleepHours": 7.5 }
 ```
+
+`sleepHours` is the previous night's sleep (the one preceding today's date). Capture whenever reported; gaps weaken the science-review fatigue-auto-regulation signals.
 
 ### Step 5: Commit and push
 

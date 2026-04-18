@@ -296,6 +296,21 @@
       ],
       "proteinGrams": 155,
       "notes": "Week 6 Day 1 — Wed session done on Thursday. Progression on all lifts: TB DL 225→230, squat 135→140, BSS 15→20 DBs, SLRDL 25→30 DBs, HSR 140→145. BSS and SLRDL approaching RPE 7+."
+    },
+    {
+      "date": "2026-04-17",
+      "type": "training",
+      "activity": "Upper Body + Core (Thu Phase 1)",
+      "exercises": [
+        { "name": "Bench Press", "sets": "4x5", "weight": "140 lbs", "notes": "Second BB bench session, +5 lbs from Apr 7" },
+        { "name": "Lat Pulldown", "sets": "4x6", "weight": "140 lbs" },
+        { "name": "Bent Over Barbell Row", "sets": "4x6", "weight": "140 lbs" },
+        { "name": "DB Overhead Press", "sets": "3x8", "weight": "30 lbs" },
+        { "name": "Face Pull", "sets": "3x15", "weight": "cable" },
+        { "name": "Pallof Press", "sets": "3x10/side", "weight": "cable" },
+        { "name": "Cable Woodchop", "sets": "3x6/side", "weight": "cable" }
+      ],
+      "notes": "Week 6 Day 2 — Thu upper body pushed to Fri. Closes out Week 6 upper volume (chest 4, back 8, shoulders 6, core 9). Progression across all primary lifts: BB bench 135→140 (benchPress baseline updates), lat pulldown 135→140, bent row 135→140 with added set, DB OHP 25→30. Core circuit RX'd."
     }
   ],
   "scienceReviews": [

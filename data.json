@@ -488,6 +488,16 @@
           "desc": "Rest before games resume Sunday"
         }
       ]
+    },
+    "7": {
+      "label": "Single-Game Sunday",
+      "reason": "Basketball only Sunday Apr 19 — no hockey this week. Reduces systemic load; standard lifting schedule otherwise.",
+      "schedule": [
+        {
+          "day": "Sun", "date": "2026-04-19", "type": "game",
+          "desc": "Basketball only (no hockey)"
+        }
+      ]
     }
   }
 }

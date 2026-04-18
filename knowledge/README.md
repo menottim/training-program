@@ -15,6 +15,10 @@ Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each
 |---|---|---|
 | [sodium-hydration.md](sodium-hydration.md) | Sodium-water balance, acute scale-weight spikes, potassium counterbalance, hyponatremia risk, hydration strategy | 2026-04-18 |
 | [protein-distribution.md](protein-distribution.md) | Daily protein ceiling, per-meal anabolic window, distribution strategy, high-protein safety | 2026-04-18 |
+| [body-composition-measurement.md](body-composition-measurement.md) | Daily weight variance, BIA scales, DEXA protocol, skinfolds, trailing averages, measurement-method tradeoffs | 2026-04-18 |
+| [achilles-tendinopathy-hsr.md](achilles-tendinopathy-hsr.md) | HSR protocol (Beyer), pain monitoring (Silbernagel), tendon adaptation timelines, collagen + vit C, PRP/ESWT/GTN evidence | 2026-04-18 |
+| [in-season-volume.md](in-season-volume.md) | Weekly set targets, minimum effective dose, RPE auto-regulation, tapers vs deloads, progression rules | 2026-04-18 |
+| [recovery-sleep.md](recovery-sleep.md) | Sleep targets, recovery modality hierarchy, CWI tradeoffs, alcohol effects, overtraining red flags | 2026-04-18 |
 
 ## When to consult
 

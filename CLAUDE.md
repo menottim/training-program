@@ -313,91 +313,123 @@ References: Schoenfeld et al. (2017) "Dose-response relationship between weekly 
 
 ### 2. Deload Protocol
 
-**Frequency:** Every 4th week (already programmed). For a 40-year-old athlete with 3 weekly games, this is on the conservative end — if accumulated fatigue or achilles symptoms spike mid-cycle, an earlier deload is warranted.
+See `knowledge/in-season-volume.md` for the primary evidence review. Key update vs prior practice: Coleman et al. 2024 (PeerJ, PMID 38274324) RCT of 39 resistance-trained lifters found that a __prophylactic 1-week deload in non-fatigued lifters reduced strength gains__ without compensating hypertrophy or endurance benefit. Scheduled calendar deloads are not evidence-supported; reactive deloads based on measurable fatigue are.
 
-**How to deload (evidence-based approach):**
-- **Reduce volume 40–50%** — cut total sets roughly in half. This is the primary fatigue driver (Pritchard et al. 2015).
-- **Maintain intensity at 85–95% of current working weights** — preserves neuromuscular adaptations. Dropping weight too far causes detraining without additional recovery benefit.
-- **Practical implementation:** Keep the same exercises, same weight, cut sets from e.g., 4x5 → 2x5, and 3x8 → 2x8.
-- **Keep games on normal schedule** — deload applies to lifting, not sport participation.
-- **HSR protocol stays at full load during deload** — tendons have longer adaptation cycles (6–12 weeks) and don't benefit from reduced load the way muscles do (Magnusson et al. 2010).
-- **Friday session during deload:** Can be replaced entirely with mobility/recovery work if fatigue is high.
+**Frequency:** Currently programmed every 4th week (Weeks 4, 8, 12, ...) because Menotti has an in-season athlete with 3 weekly games, achilles tendinopathy, and is 40 years old — a conservative default. This is a reasonable safety net but should be __skipped when fatigue signals are absent__. If the week before a scheduled deload the athlete is hitting target RPEs, progressing lifts, sleeping well, and achilles is stable, skip the deload and continue the program. Hold the scheduled deload as a contingency, not a command.
 
-**Signs a deload is needed earlier than scheduled:**
-- RPE on working sets is 1–2 points higher than previous week at the same weight
+**Reactive-deload triggers (any 2+ warrant a 4-7 day volume cut):**
+- RPE on working sets is 1-2 points higher than previous week at the same weight
+- Performance drops >5% at matched RPE
 - Achilles morning stiffness lasting >30 min (up from typical <15 min)
 - Sleep quality declining for 3+ consecutive nights
 - Game performance noticeably worse (self-reported)
+- Resting HR elevated >5 bpm above personal norm for 3+ days
+- Persistent morning mood disturbance (Meeusen et al. 2013 overtraining criteria)
 
-References: Pritchard et al. (2015) "Tapering practices of New Zealand's elite raw powerlifters"; Magnusson et al. (2010) on tendon adaptation timelines; Hausswirth & Mujika (2013) "Recovery for Performance in Sport."
+**How to deload when triggered:**
+- __Reduce volume 40-50%__ — cut total sets roughly in half. This is the primary fatigue driver (Pritchard et al. 2015).
+- __Maintain intensity at 85-95% of current working weights__ — preserves neuromuscular adaptations. Dropping weight too far causes detraining without additional recovery benefit.
+- __Practical implementation:__ keep the same exercises and weights, cut sets from e.g. 4x5 → 2x5 and 3x8 → 2x8.
+- __Keep games on normal schedule__ — deload applies to lifting, not sport.
+- __HSR protocol stays at full load during deload__ — tendons have longer adaptation cycles and do not benefit from reduced load the way muscles do (Magnusson and Kjaer 2019).
+- __Friday session during deload__ can be replaced entirely with mobility/recovery work if fatigue is high.
+
+Pre-competition tapers (distinct from reactive deloads) are a different tool: ~14 days, volume cut 41-60% with intensity maintained, produces small performance gains (Bosquet et al. 2007). Not applicable to an in-season recreational athlete without a named competition.
+
+References: Coleman et al. 2024 (PMID 38274324); Bosquet et al. 2007 (PMID 17762369); Pritchard et al. 2015; Magnusson and Kjaer 2019 (PMC6395417); Meeusen et al. 2013 (PMID 23247672). See `knowledge/in-season-volume.md` and `knowledge/recovery-sleep.md`.
 
 ### 3. In-Season Volume Management
 
-**Context:** 3 games/week (2 basketball + 1 hockey) imposes significant systemic and lower-body training stress. Basketball and hockey contribute substantial eccentric load, reactive agility, and cardiovascular demand.
+See `knowledge/in-season-volume.md` for the full evidence review. Key nuance vs prior phrasing:
+
+- The __10+ sets per muscle per week__ figure commonly cited from Schoenfeld 2017 was only a statistical trend (P=0.074), not a validated threshold. Volume dose-response is continuous, not stepped. For an in-season athlete, 6-10 hard sets per muscle per week captures most of the hypertrophy and strength benefit with tolerable fatigue cost.
+- __Game-load to lifting-set equivalence is not established in the literature.__ Basketball research quantifies external load (jumps, Player Load, accelerations) and internal load (sRPE, HR), but no published work converts "1 basketball game = X sets of squats." Treat the sport-contributes-to-lower-body-load framing qualitatively, not quantitatively.
 
 **Weekly set targets (in-season athlete, per muscle group):**
-- **Quads/Glutes/Hamstrings:** 6–10 hard sets/week from lifting. Games add ~4–6 equivalent sets of lower body work (Impellizzeri et al. 2004). Total effective volume is higher than the log shows.
-- **Chest/Back/Shoulders:** 6–10 hard sets/week. Less competition interference.
-- **Core:** 4–6 direct sets/week. Games provide substantial indirect core work.
+- __Quads/glutes/hamstrings:__ 6-10 hard sets/week from lifting. Games add substantial lower-body load, but the exact equivalence is not quantifiable. Total effective volume is higher than the log alone shows.
+- __Chest/back/shoulders:__ 6-10 hard sets/week. Less interference from sport.
+- __Core:__ 4-6 direct sets/week. Games provide substantial indirect core work.
+- __Calves (Achilles HSR):__ 3-4 sets/session, 3x/week, progressive loading per Section 4.
 
-For reference, hypertrophy-oriented research suggests 10–20 sets/muscle/week for growth (Schoenfeld et al. 2017), but in-season athletes should target the lower end and count sport exposure. The goal is maintenance and modest strength gain, not maximizing volume.
+Hypertrophy research suggests 10-20 sets/muscle/week (Schoenfeld 2017), but in-season athletes should target the lower end and count sport exposure qualitatively. Goal is maintenance and modest strength gain, not maximizing volume. For a lifter at 135-lb bench starting weight, in-season __gain__ rather than maintenance is realistic (Baker 2001 showed younger/weaker cohort gained bench 1RM across 29-week season).
 
-**Counting game load:**
-- Each basketball session ≈ moderate lower body training stimulus
-- Each hockey session ≈ moderate-to-high lower body + core stimulus
-- A 3-game week means the lifter is already accumulating significant lower body fatigue before Wednesday's training session
-- If game load increases (extra games, tournaments), reduce lifting volume that week — drop Friday session first, then reduce Wednesday sets
+**Counting game load (qualitative, not quantitative):**
+- Basketball session ≈ moderate lower-body training stimulus.
+- Hockey session ≈ moderate-to-high lower-body and core stimulus.
+- A 3-game week means significant lower-body fatigue is already accumulating before Wednesday's training session.
+- If game load increases (extra games, tournaments), reduce lifting volume that week — drop Friday session first, then reduce Wednesday sets.
 
-References: Impellizzeri et al. (2004) internal vs external training load; Schoenfeld et al. (2017) dose-response for volume; Suchomel et al. (2018) in-season programming for team sport athletes.
+References: Impellizzeri et al. 2004 internal vs external load; Impellizzeri et al. 2019 15-years-on update (PMID 30614348); Schoenfeld et al. 2017 dose-response (PMID 27433992); Schoenfeld et al. 2016 frequency meta-analysis (PMID 27102172); Androulakis-Korakakis et al. 2020 minimum effective dose (PMID 31797219); Baker 2001 (PMID 11710401); Suchomel et al. 2018 (PMID 29372481). Full set in `knowledge/in-season-volume.md`.
 
 ### 4. Achilles Tendinopathy — Evidence-Based Load Management
 
-**HSR Protocol (Heavy Slow Resistance):**
-The program uses HSR over isolated eccentric protocols based on Beyer et al. (2015), which found HSR and eccentric training equally effective for Achilles tendinopathy at 12 weeks, with higher patient satisfaction for HSR due to simpler execution and gym-friendly loading.
+See `knowledge/achilles-tendinopathy-hsr.md` for the full evidence review. Key corrections vs prior phrasing in this file:
 
-**HSR dosing:**
-- 3x/week (Wed, Fri, + 1 recovery day) — current protocol is correct
-- 3×6 at 6RM with 3-sec concentric / 3-sec eccentric — ~6 sec per rep, emphasizing time under tension
-- Progress load when 6 reps are completed with good form and pain ≤3/10 during the exercise
-- HSR load progression is independent of deload cycles — maintain full HSR load even during deload weeks
+- __Beyer 2015 HSR is a progressive 12-week protocol__, not a constant 3x6 at 6RM. Load progresses: 15RM (wk 1), 12RM (wk 2-3), 10RM (wk 4-5), 8RM (wk 6-8), 6RM (wk 9-12). 3 sets, 3x/week, 6-second tempo (3s concentric, 3s eccentric). Using 6RM from week 1 is off-protocol and likely underloads for the first 8 weeks and overloads during the initial adaptation window.
+- __"Heavy" in HSR must actually be heavy__ (Morrison and Cook 2022, PMC9124646). Many published protocols drop below 70% 1RM by later reps due to slow tempo. If every set feels easy, the load is not heavy enough — add weight or use cluster-set variants.
+- __Pain-monitoring numeric thresholds (0-3/4-5/>5)__ are consensus refinements from secondary literature (Martin et al. 2018 JOSPT clinical practice guidelines; Silbernagel et al. 2020), not verbatim in Silbernagel 2007 primary paper. The 24-hour return-to-baseline rule and the continue-sport-with-pain-monitoring framework are directly from Silbernagel 2007.
 
-**Pain monitoring decision tree:**
-- **0–3/10 during exercise:** Acceptable. Continue current protocol. This level of pain during loaded tendon exercises is expected and does not indicate harm (Silbernagel et al. 2007 "pain-monitoring model").
-- **4–5/10 during exercise:** Caution. Maintain current load but do not increase. If pain persists at this level for 2+ weeks, reduce HSR load by 15–20%.
-- **>5/10 during exercise:** Stop the exercise. Reduce load by 25% next session. If >5/10 persists after reduction, flag for possible clinical review.
-- **Game-day achilles pain >5/10:** Drop Friday plyometrics for 2 weeks (already in plan), increase HSR frequency temporarily to 4x/week.
-- **Morning stiffness >30 minutes:** Flag as a regression signal. Consider earlier deload or reduced game minutes.
-- **24-hour rule:** Pain should return to pre-exercise baseline within 24 hours. If achilles pain remains elevated the day after exercise, load was too high — reduce by 10–15% next session.
+**HSR dosing (corrected, follow this when programming):**
+- 3x/week, 3 sets per session, 6-second tempo (3s concentric, 3s eccentric).
+- Load progression over 12 weeks: 15RM → 12RM → 10RM → 8RM → 6RM.
+- Include both straight-knee (gastroc bias) and bent-knee (soleus bias) variants.
+- HSR stays at full load during lifting deloads — tendons have months-long adaptation cycles and do not benefit from reduced load the way muscles do (Magnusson and Kjaer 2019).
 
-**Tendon adaptation timeline:**
-Tendons adapt more slowly than muscle (Magnusson et al. 2010). Expect measurable tendon remodeling improvements at 12+ weeks of consistent HSR. Do not judge HSR effectiveness before 8 weeks minimum. Early improvements are often neural/pain-science related, not structural.
+**Pain-monitoring decision tree** (consensus thresholds, applied from Silbernagel 2007 principles):
+- __0-3/10 during loading:__ acceptable, continue protocol. Pain at this level during loaded tendon exercises is expected and does not indicate harm.
+- __4-5/10 during loading:__ maintain current load, do not increase. If persists at this level for 2+ weeks, reduce HSR load 15-20%.
+- __>5/10 during loading:__ stop the exercise. Reduce load 25% next session. If >5/10 persists after reduction, flag for possible clinical review.
+- __Game-day achilles pain >5/10:__ drop Friday plyometrics for 2 weeks, temporarily increase HSR frequency to 4x/week.
+- __Morning stiffness >30 minutes:__ regression signal. Consider reduced sport minutes, reactive deload, or clinical review if it persists 2+ weeks.
+- __24-hour rule:__ pain should return to pre-exercise baseline within 24 hours. If elevated the day after, load was too high — reduce 10-15% next session.
 
-References: Beyer et al. (2015) "Heavy Slow Resistance versus Eccentric Training as Treatment for Achilles Tendinopathy"; Silbernagel et al. (2007) pain-monitoring model for Achilles tendinopathy; Magnusson et al. (2010) tendon collagen adaptation.
+**Adjuncts** (see `knowledge/achilles-tendinopathy-hsr.md` for full evidence):
+- __Worth trialing (Emerging):__ gelatin 15g or specific collagen peptides ~10-15g + ~50 mg vitamin C, 30-60 min pre-loading (Shaw 2017 PMID 27852613; Praet 2019 PMID 30609761). ESWT as escalation if HSR plateaus at 12 weeks, combined with continued loading (Paantjens 2022).
+- __Not recommended:__ PRP injection (de Vos 2010 JAMA RCT showed no benefit over saline; PMID 20068208). GTN patches (weak/mixed evidence, headache side effect in ~20%).
+- __Uncertain:__ isometric holds for pre-activity analgesia. Strong evidence in patellar tendinopathy (Rio 2015, 2017); Achilles replication has been mixed.
+
+**Tendon adaptation timeline:** tendons adapt slowly. Symptom improvement often precedes structural change on imaging by months. Expect the protocol to run 12+ weeks minimum; full remission at 3-6 months. Do not abandon if 4-6 weeks in and progress is slow (Kjaer et al. 2009 PMID 19706001; Magnusson and Kjaer 2019 PMC6395417).
+
+References: Beyer et al. 2015 (PMID 26018970); Silbernagel et al. 2007 (PMID 17307888); Silbernagel et al. 2020 (PMC7249277); Morrison and Cook 2022 (PMC9124646); Kjaer et al. 2009; Magnusson and Kjaer 2019. Full set in `knowledge/achilles-tendinopathy-hsr.md`.
 
 ### 5. Recovery & Fatigue Monitoring
+
+See `knowledge/recovery-sleep.md` and `knowledge/protein-distribution.md` for full evidence reviews. Key clarifications vs prior phrasing:
+
+- The __post-workout "anabolic window" is 4-6 hours wide__, not 30-60 minutes (Aragon and Schoenfeld 2013 PMID 23360586). Total daily protein and distribution dominate outcomes; narrow post-workout timing is folklore.
+- __Sleep need is individual__, not a fixed 8 hours. 7-9 hours is the NSF adult range (Hirshkowitz et al. 2015 PMID 29073412); Walsh et al. 2021 IOC consensus (PMID 33144349) argues explicitly against one-size-fits-all athlete prescriptions.
+- __Chronic post-lifting cold water immersion blunts hypertrophy__ (Roberts et al. 2015 PMID 26174323). Use CWI for game recovery when next performance is within 48h, not routinely after lifting.
 
 **Session spacing (current schedule is evidence-aligned):**
 - 48+ hours between heavy lifting and games (Suchomel et al. 2018)
 - Wednesday heavy → Sunday game = 3.5 days (optimal)
 - Wednesday heavy → Tuesday game = 6 days (optimal)
-- Friday is deliberately the lightest lifting session, ~36 hours before Sunday AM basketball
+- Friday is deliberately the lightest lifting session, ~36 hours before Sunday AM basketball.
 
 **Auto-regulation signals — when to reduce that session's intensity/volume:**
-- Warm-up sets feel RPE 2+ higher than expected → drop one working set per exercise
-- Achilles morning stiffness persists past warm-up → skip plyometric/explosive components
-- Slept <6 hours → reduce volume 25%, maintain intensity (partial deload)
-- 3+ high-intensity games in the past 5 days → drop Friday session entirely or replace with recovery
+- Warm-up sets feel RPE 2+ higher than expected → drop one working set per exercise.
+- Achilles morning stiffness persists past warm-up → skip plyometric/explosive components.
+- Slept <6 hours → reduce volume 25%, maintain intensity (partial deload). Knowles et al. 2018 (PMID 29422383) shows sleep debt hits compound lifts more than isolation — if sleep-poor, consider swapping squat/deadlift for isolation work.
+- 3+ high-intensity games in the past 5 days → drop Friday session entirely or replace with recovery.
 
-**Sleep (the highest-ROI recovery tool):**
-- Target 7–9 hours. For a 40-year-old athlete, sleep is the single most impactful recovery variable (Vitale et al. 2019).
-- Sleep <6 hours for 3+ nights is a deload trigger (see section 2).
+**Sleep:**
+- Target 7.5-9 hours in bed, consistent bed/wake times ±30 min including weekends (Walsh 2021 IOC consensus; Mah 2011 sleep extension showed measurable basketball performance gains with ~10h in bed, PMID 21731144).
+- Sleep <6 hours for 3+ nights is a reactive-deload trigger.
 
-**Nutrition timing (simple rules):**
-- Protein: 1.6–2.2 g/kg/day (~160–220g at 220 lbs). Distribute across 4+ meals with 30–40g per meal for maximal muscle protein synthesis (Morton et al. 2018).
-- Carb timing: higher carbs on game days (Sun, Tue) and training days (Wed, Thu, Fri) to fuel glycogen-dependent activity. Lower carbs on recovery days (Mon, Sat).
-- Post-game/training: protein + carbs within 2 hours. Not magic, but supports glycogen replenishment and reduces cortisol (Aragon & Schoenfeld 2013).
+**Nutrition timing:**
+- Protein: 1.6-2.2 g/kg/day (~160-220 g at 220 lbs), distributed across 4 meals at ~0.4 g/kg each (Morton et al. 2018 PMID 28698222; Schoenfeld and Aragon 2018). Details in `knowledge/protein-distribution.md`.
+- Carbs: higher on game days (Sun, Tue) and training days (Wed, Thu, Fri); lower on rest days (Mon, Sat).
+- Post-game/training: protein + carbs within 2-3 hours supports glycogen replenishment. The 30-minute window is not evidence-based; the 4-6 hour window is.
 
-References: Vitale et al. (2019) "Sleep Hygiene for Optimizing Recovery in Athletes"; Morton et al. (2018) protein dose-response meta-analysis; Aragon & Schoenfeld (2013) nutrient timing review; Suchomel et al. (2018).
+**Recovery modality ROI hierarchy** (see `knowledge/recovery-sleep.md` for Dupuy 2018 meta-analysis):
+1. Sleep extension and consistency (free, highest evidence).
+2. Zone 2 active recovery walk/bike 20-30 min on off days.
+3. Massage or percussion gun on sore areas (largest DOMS effect size).
+4. Foam rolling pre/post-session (small but real).
+5. Sauna 2-3x/week, 15-20 min on non-training days (moderate evidence for plasma volume and cardiovascular benefits).
+6. Static stretching (useful for ROM goals; does NOT prevent injury per Small 2008 PMID 18785063; do not use as pre-lifting warmup, can transiently reduce force 3-5%).
+
+References: Mah et al. 2011 (PMID 21731144); Walsh et al. 2021 IOC consensus (PMID 33144349); Vitale et al. 2019 (PMID 31288293); Knowles et al. 2018 (PMID 29422383); Aragon and Schoenfeld 2013 (PMID 23360586); Roberts et al. 2015 (PMID 26174323); Dupuy et al. 2018 (PMID 29755363); Meeusen et al. 2013 overtraining consensus (PMID 23247672). Full set in `knowledge/recovery-sleep.md`.
 
 ### 6. Plyometric Introduction (Phase 2+)
 

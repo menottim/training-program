@@ -331,9 +331,10 @@
       "activity": "Basketball",
       "duration": "50 min",
       "intensity": "high",
+      "venue": "indoor",
       "achillesPain": 1,
       "sleepHours": 8,
-      "notes": "Week 7 Day 1 — single-game Sunday per modifiedWeeks.7 (no hockey this week). AM achilles stiffness 1-2/10 (within <15 min typical baseline per Silbernagel framework). During play after warmup 0-1/10. Sleep 8h, at upper end of target. All pain-monitoring signals green."
+      "notes": "Week 7 Day 1 — single-game Sunday per modifiedWeeks.7 (no hockey this week). Indoor court (moderate sweat vs outdoor sun exposure). AM achilles stiffness 1-2/10 (within <15 min typical baseline per Silbernagel framework). During play after warmup 0-1/10. Sleep 8h, at upper end of target. All pain-monitoring signals green."
     },
     {
       "date": "2026-04-19",

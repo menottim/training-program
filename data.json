@@ -334,6 +334,14 @@
       "achillesPain": 1,
       "sleepHours": 8,
       "notes": "Week 7 Day 1 — single-game Sunday per modifiedWeeks.7 (no hockey this week). AM achilles stiffness 1-2/10 (within <15 min typical baseline per Silbernagel framework). During play after warmup 0-1/10. Sleep 8h, at upper end of target. All pain-monitoring signals green."
+    },
+    {
+      "date": "2026-04-19",
+      "type": "recovery",
+      "activity": "Yardwork",
+      "duration": "2 hr",
+      "intensity": "medium",
+      "notes": "Non-programmed activity. Estimated 400-600 cal expenditure depending on tasks (lifting/digging vs raking/mowing). Adds meaningful cumulative Sunday load on top of morning basketball."
     }
   ],
   "scienceReviews": [

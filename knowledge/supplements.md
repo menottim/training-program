@@ -117,10 +117,27 @@ __Recommendation hierarchy for Menotti:__
 4. __All-in-one convenience__: Sparkle Wellness on Amazon has both TENDOFORTE + FORTIGEL + vit C pre-combined. Not NSF/Informed Sport certified (typical for Amazon brands) but the active ingredients are the branded GELITA peptides.
 
 __Dosing specifics:__
-- Time: 30-60 min pre-loading (HSR sessions, basketball, hockey, or general training)
 - Dose: if using GELITA (TENDOFORTE/FORTIGEL) products, 5g is effective per Praet 2019. If using generic hydrolyzed collagen, aim for 10-15g per Shaw 2017 gelatin equivalent.
-- Vitamin C: ~50mg (your iron supplement has 125mg vit C - if timed with pre-workout collagen, it covers both without a separate vit C dose)
-- Duration: Shaw 2017 showed acute collagen-synthesis-marker doubling. Praet 2019 ran for 6 months. Trial for at least 12 weeks alongside the HSR protocol before judging clinical effect.
+- Vitamin C: ~50mg paired with the collagen dose. His iron supplement contains 125mg vit C - if the two are taken together, it covers both.
+- Duration: Shaw 2017 showed acute collagen-synthesis-marker doubling within hours. Praet 2019 ran for 6 months. Jerger 2022 showed Achilles tendon adaptation at 12 weeks. Trial for at least 12 weeks before judging clinical effect.
+
+__Timing: pre-exercise is mechanism-optimized; daily anytime is clinically validated__
+
+Two distinct evidence bases exist for timing:
+
+- __Pre-exercise (30-60 min before loading)__ - __Strong evidence for acute collagen synthesis marker response__. Shaw 2017 showed 15g gelatin + vit C 60 min before 6 min rope-skipping doubled serum PINP (collagen formation marker). Mechanism: amino acids peak at ~60 min post-ingestion, coinciding with the loading window when tendon blood flow briefly rises. Lis & Baar (UC Davis) work on engineered ligaments supports this timing-sensitive model.
+- __Daily chronic dosing (anytime)__ - __Moderate-to-Strong evidence for clinical outcomes__. Praet 2019 (Achilles tendinopathy RCT) and Jerger 2022 (12-week training study) both used daily dosing, not specifically pre-exercise, and achieved clinical improvements. Recent 2024 systematic review (PMC11561013) on long-term collagen + training concluded __daily 15g for 8+ weeks__ drives tendon remodeling.
+
+__No head-to-head RCT has compared pre-exercise vs daily anytime for clinical outcomes.__ Tendon adaptation is slow (8-12+ weeks), so chronic substrate availability plausibly dominates acute timing benefits over the months that matter clinically.
+
+__Practical ranking for adherence + evidence balance:__
+
+1. __Morning shake, daily__ (recommended for most). Highest adherence. Matches clinical trial protocols (Praet 2019, Jerger 2022). Whey does not dilute collagen's effect - they have complementary amino acid profiles (whey is leucine-rich, collagen is glycine/proline/hydroxyproline-rich).
+2. __Bedtime, daily__. Also clinically validated. Glycine has mild sedative effects and pairs well with magnesium glycinate. Theoretical synergy with deep-sleep growth hormone pulses for connective-tissue remodeling.
+3. __Pre-workout 30-60 min before HSR or sport__. Mechanism-optimized per Shaw 2017. Requires consistent workout timing. Only meaningful if schedule allows consistent pre-exercise dosing without missed days on rest days.
+4. __Split dose__ (half morning, half pre-workout on training days). Overkill for the evidence base but defensible if maximizing theoretical mechanism matters.
+
+__Adherence > timing__ for a slow-adapting tissue on a 12-24 week trial. Missing doses to chase perfect timing loses more than sub-optimal timing ever could.
 
 __What to avoid:__
 - __Marine collagen vs bovine__: efficacy is similar; pick based on preference/allergens.
@@ -178,8 +195,11 @@ __What to avoid:__
 7. Mairbäurl H. __Red blood cells in sports: effects of exercise and training on oxygen supply by red blood cells.__ Frontiers in Physiology, 2013. (Red cell dynamics in athletes.)
 4. Jouris KB, McDaniel JL, Weiss EP. __The effect of omega-3 fatty acid supplementation on the inflammatory response to eccentric strength exercise.__ Journal of Sports Science and Medicine, 2011. PMCID: PMC3737804.
 5. Irani M, Farzizadeh R, Abdolmaleki A, Asadi A. __The Effect of Aerobic Exercise With an Omega-3 Supplement on the Tendon Healing Process.__ American Journal of Sports Medicine, 2025. PMID: 40376939.
-6. Shaw G, Lee-Barthel A, Ross ML, Wang B, Baar K. __Vitamin C-enriched gelatin supplementation before intermittent activity augments collagen synthesis.__ American Journal of Clinical Nutrition, 2017; 105(1): 136-143. PMID: 27852613.
-7. Praet SFE, Purdam CR, Welvaert M, et al. __Oral Supplementation of Specific Collagen Peptides Combined with Calf-Strengthening Exercises Enhances Function and Reduces Pain in Achilles Tendinopathy Patients.__ Nutrients, 2019; 11(1): 76. PMID: 30609761.
+6. Shaw G, Lee-Barthel A, Ross ML, Wang B, Baar K. __Vitamin C-enriched gelatin supplementation before intermittent activity augments collagen synthesis.__ American Journal of Clinical Nutrition, 2017; 105(1): 136-143. PMID: 27852613. (Mechanism study: 15g gelatin + vit C 60 min pre-exercise doubled serum PINP.)
+7. Praet SFE, Purdam CR, Welvaert M, et al. __Oral Supplementation of Specific Collagen Peptides Combined with Calf-Strengthening Exercises Enhances Function and Reduces Pain in Achilles Tendinopathy Patients.__ Nutrients, 2019; 11(1): 76. PMID: 30609761. (Clinical trial: TENDOFORTE daily, not specifically pre-exercise.)
+7a. Jerger S, Centner C, Lauber B, et al. __Effects of specific collagen peptide supplementation combined with resistance training on Achilles tendon properties.__ Scandinavian Journal of Medicine & Science in Sports, 2022; 32(10): 1471-1480. (12-week RCT showing Achilles tendon adaptation with daily collagen peptide + resistance training.)
+7b. Aussieker T, Hilkens L, Holwerda AM, et al. __Collagen peptide supplementation in combination with long-term physical training on strength, musculotendinous remodeling, functional recovery, and body composition in healthy adults: A systematic review with meta-analysis.__ Sports Medicine, 2024. PMCID: PMC11561013. (Consensus: daily 15g for 8+ weeks drives tendon remodeling.)
+7c. Lis DM, Baar K. __Effects of Different Vitamin-C Enriched Collagen Derivatives on Collagen Synthesis.__ 2019. (Demonstrated hydrolyzed collagen and gelatin produce near-identical postprandial plasma amino acid profiles at 1 hour - delivery vehicle matters less than dose.)
 8. Aragon AA, Schoenfeld BJ, Wildman R, et al. __International Society of Sports Nutrition position stand: diets and body composition.__ Journal of the International Society of Sports Nutrition, 2017; 14: 16. PMID: 28630601.
 9. Guest NS, VanDusseldorp TA, Nelson MT, et al. __International society of sports nutrition position stand: caffeine and exercise performance.__ Journal of the International Society of Sports Nutrition, 2021; 18(1): 1.
 10. Merry TL, Ristow M. __Do antioxidant supplements interfere with skeletal muscle adaptation to exercise training?__ Journal of Physiology, 2016; 594(18): 5135-5147.
@@ -189,3 +209,4 @@ __What to avoid:__
 
 - __2026-04-19 (initial):__ File initialized. Flagged iron supplementation as highest-priority stack concern under an incorrect assumption Menotti was a non-donor healthy male. Fish oil 980mg flagged as sub-therapeutic. Collagen + vit C surfaced as Emerging Achilles adjunct.
 - __2026-04-19 (correction):__ Menotti disclosed regular Double Reds (Power Red) blood donation 2-3x/year. This recontextualizes iron supplementation from "concerning without indication" to "clinically appropriate per Red Cross and AABB frequent-donor guidance." Each Power Red removes ~470 mg iron; annual donation loss 940-1,410 mg; RISE study (Cable 2011, PMID 22023513) found 47% of frequent male donors develop iron deficiency without supplementation. The 65 mg elemental dose is slightly above the Red Cross 18-38 mg recommendation but within typical OTC tablet strength, and is defensible for 2-3x/year donation frequency. Action changed from "pause and get labs" to "continue supplement; annual ferritin monitoring." Apologized to Menotti for the initial miscalibration. Learning: always ask about blood donation history before commenting on iron supplementation.
+- __2026-04-19 (timing nuance):__ Initial collagen protocol framed as "30-60 min pre-exercise" per Shaw 2017 mechanism. Subsequent review of clinical trial evidence (Praet 2019, Jerger 2022, 2024 systematic review PMC11561013) shows daily dosing (not specifically pre-exercise) achieves clinical outcomes. No head-to-head RCT has compared timing approaches for clinical endpoints. Updated recommendation: daily anytime (morning shake or bedtime) is acceptable and adherence-friendly; pre-exercise is mechanism-optimized but not required. For Menotti's variable training schedule (lifting Wed/Thu/Fri, sport Tue/Sun), morning shake recommended for highest adherence.

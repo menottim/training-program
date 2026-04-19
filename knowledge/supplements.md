@@ -87,8 +87,45 @@ __Practical recommendation:__ Neutral. If diet already includes vegetables, frui
 
 ### Collagen peptides + vitamin C (Achilles-specific)
 
-- __Evidence (Emerging)__: Shaw et al. 2017 (Am J Clin Nutr, PMID 27852613) showed 15g gelatin + 50mg vit C 60 min pre-exercise doubled serum PINP (collagen synthesis marker). Praet et al. 2019 (Nutrients, PMID 30609761) showed 2.5g TENDOFORTE collagen peptides + calf strengthening improved VISA-A faster than exercise alone in Achilles tendinopathy.
-- __Menotti context__: Bilateral Achilles tendinopathy makes this an __Emerging-tier candidate worth trialing__. Timing: 30-60 min before HSR or basketball/hockey. Dose: 10-15g hydrolyzed collagen peptides + ~50mg vit C. Covered in `knowledge/achilles-tendinopathy-hsr.md`.
+- __Evidence (Emerging)__: Shaw et al. 2017 (Am J Clin Nutr, PMID 27852613) showed 15g gelatin + 50mg vit C 60 min pre-exercise doubled serum PINP (collagen synthesis marker). Praet et al. 2019 (Nutrients, PMID 30609761) showed 5g TENDOFORTE® (GELITA bioactive collagen peptide) + calf strengthening improved VISA-A faster than exercise alone in Achilles tendinopathy over 6 months.
+- __Menotti context__: Bilateral Achilles tendinopathy makes this an __Emerging-tier candidate worth trialing__. Timing: 30-60 min before HSR or basketball/hockey. Dose: 10-15g hydrolyzed collagen peptides OR 5g if using specifically GELITA TENDOFORTE/FORTIGEL, plus ~50mg vit C. Covered in `knowledge/achilles-tendinopathy-hsr.md`.
+
+#### Product selection guide
+
+The study evidence points to two specific GELITA bioactive collagen peptide ingredients:
+- __TENDOFORTE® (used in Praet 2019)__ - optimized for tendon and ligament support
+- __FORTIGEL® (used in earlier joint studies)__ - very similar, same manufacturer, different molecular weight profile
+
+Consumer products containing these ingredients are labeled accordingly. Third-party testing (NSF Certified for Sport or Informed Sport) adds an additional quality layer - worth paying for if you value label accuracy and contaminant screening.
+
+| Product | Active ingredient | Certifications | Availability | Relative cost |
+|---|---|---|---|---|
+| [Momentous Collagen Peptides](https://www.livemomentous.com/products/collagen-peptides) | FORTIGEL® (GELITA) | NSF Certified for Sport + Informed Sport | Widely available in US (livemomentous.com, Amazon) | Premium (~$60-70/month at 1 serving/day) |
+| [PILLAR Performance Collagen Repair](https://pillarperformance.us/products/collagen-repair) | TENDOFORTE® (GELITA) - exact Praet 2019 match | Third-party tested (check current certs) | Available in US via pillarperformance.us | Premium |
+| [Thorne Collagen Fit](https://www.thorne.com/ingredients/collagen-peptides) | Hydrolyzed collagen (not specifically TENDOFORTE/FORTIGEL) | NSF Certified for Sport | Widely available | Mid-tier |
+| [Vital Proteins Vital Performance](https://www.vitalproteins.com/blogs/stay-vital/vital-performance-nsf-certified-for-sport) | Hydrolyzed collagen (not specifically TENDOFORTE/FORTIGEL); with hyaluronic acid + vit C in some SKUs | NSF Certified for Sport (Vital Performance line specifically - not all Vital Proteins products) | Widely available | Mid-tier |
+| Sparkle Wellness on Amazon | TENDOFORTE® + FORTIGEL® + vit C pre-mixed | Not third-party sport-certified | Amazon US | Mid-tier |
+
+__Recommendation hierarchy for Menotti:__
+
+1. __Best evidence + athlete certification combo (primary)__: Momentous Collagen Peptides. Contains FORTIGEL® (GELITA bioactive peptide equivalent to TENDOFORTE), dual-certified (NSF for Sport + Informed Sport), widely available, reliable supply chain. Take 1 serving (15g) 30-60 min pre-HSR or sport with ~50mg vit C.
+
+2. __Exact study-protocol match__: PILLAR Performance Collagen Repair. Contains TENDOFORTE® specifically as used in Praet 2019. Lower dose per serving (typically 5g) matching the study. Good if the exact study-match matters to you.
+
+3. __Budget-conscious with good testing__: Thorne Collagen Fit. NSF Certified for Sport. Uses generic hydrolyzed collagen, not specifically TENDOFORTE/FORTIGEL, so evidence is more extrapolated from Shaw 2017 (gelatin) mechanism rather than Praet 2019 directly. At 10-15g dose/day it still activates the mechanism.
+
+4. __All-in-one convenience__: Sparkle Wellness on Amazon has both TENDOFORTE + FORTIGEL + vit C pre-combined. Not NSF/Informed Sport certified (typical for Amazon brands) but the active ingredients are the branded GELITA peptides.
+
+__Dosing specifics:__
+- Time: 30-60 min pre-loading (HSR sessions, basketball, hockey, or general training)
+- Dose: if using GELITA (TENDOFORTE/FORTIGEL) products, 5g is effective per Praet 2019. If using generic hydrolyzed collagen, aim for 10-15g per Shaw 2017 gelatin equivalent.
+- Vitamin C: ~50mg (your iron supplement has 125mg vit C - if timed with pre-workout collagen, it covers both without a separate vit C dose)
+- Duration: Shaw 2017 showed acute collagen-synthesis-marker doubling. Praet 2019 ran for 6 months. Trial for at least 12 weeks alongside the HSR protocol before judging clinical effect.
+
+__What to avoid:__
+- __Marine collagen vs bovine__: efficacy is similar; pick based on preference/allergens.
+- __Products advertising "collagen types I/II/III" as a selling point without GELITA or NSF certification__: marketing signal, not quality signal.
+- __Collagen "elixirs" with added sugar__: just a protein shake dressed up.
 
 ### Caffeine
 

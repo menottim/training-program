@@ -7,10 +7,16 @@
     "targetWeight": 210,
     "targetBodyFatPct": 15,
     "startDate": "2026-03-08",
+    "bloodDonation": {
+      "type": "Double Reds (Power Red) - 2 units RBCs per donation",
+      "frequency": "2-3 per year",
+      "ironLossPerDonation": "~470mg (vs 220-250mg for whole blood)",
+      "annualIronLoss": "940-1,410mg"
+    },
     "dailySupplements": [
       { "name": "One A Day Men's multivitamin", "dose": "1 tablet", "evidenceTier": "Weak (athletes with adequate diet); see knowledge/supplements.md" },
       { "name": "Fish oil", "dose": "1400mg (980mg omega-3 EPA+DHA)", "evidenceTier": "Moderate for athletes; dose may be sub-therapeutic for tendon/recovery effects (2-3g EPA+DHA typical)" },
-      { "name": "Iron + vitamin C", "dose": "65mg elemental iron + 125mg vit C", "evidenceTier": "FLAG: high-dose therapeutic iron without documented deficiency carries hemochromatosis risk per Peeling 2004. Requires recent ferritin/hemoglobin labs or cessation." },
+      { "name": "Iron + vitamin C", "dose": "65mg elemental iron + 125mg vit C", "evidenceTier": "CLINICALLY APPROPRIATE for Double Reds donor (2-3x/year). Red Cross recommends 18-38mg elemental for 120 days post-Power Red; his ~940-1,410mg/year iron loss justifies chronic supplementation. Dose is slightly above official 18-38mg range but within typical OTC tablet strength. Annual ferritin check warranted to confirm iron balance." },
       { "name": "Magnesium glycinate", "dose": "240mg", "evidenceTier": "Moderate; appropriate dose and form for sleep/recovery" },
       { "name": "Creatine monohydrate", "dose": "5g/day", "evidenceTier": "Strong; ISSN position stand" }
     ]

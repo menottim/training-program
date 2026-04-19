@@ -6,7 +6,14 @@
     "bodyFatPct": 20,
     "targetWeight": 210,
     "targetBodyFatPct": 15,
-    "startDate": "2026-03-08"
+    "startDate": "2026-03-08",
+    "dailySupplements": [
+      { "name": "One A Day Men's multivitamin", "dose": "1 tablet", "evidenceTier": "Weak (athletes with adequate diet); see knowledge/supplements.md" },
+      { "name": "Fish oil", "dose": "1400mg (980mg omega-3 EPA+DHA)", "evidenceTier": "Moderate for athletes; dose may be sub-therapeutic for tendon/recovery effects (2-3g EPA+DHA typical)" },
+      { "name": "Iron + vitamin C", "dose": "65mg elemental iron + 125mg vit C", "evidenceTier": "FLAG: high-dose therapeutic iron without documented deficiency carries hemochromatosis risk per Peeling 2004. Requires recent ferritin/hemoglobin labs or cessation." },
+      { "name": "Magnesium glycinate", "dose": "240mg", "evidenceTier": "Moderate; appropriate dose and form for sleep/recovery" },
+      { "name": "Creatine monohydrate", "dose": "5g/day", "evidenceTier": "Strong; ISSN position stand" }
+    ]
   },
   "currentLifts": {
     "trapBarDeadlift": { "weight": 225, "reps": 5 },
@@ -318,7 +325,9 @@
       "activity": "Basketball",
       "duration": "50 min",
       "intensity": "high",
-      "notes": "Week 7 Day 1 — single-game Sunday per modifiedWeeks.7 (no hockey this week). First Sunday back after 2-week stretch of full double-headers."
+      "achillesPain": 1,
+      "sleepHours": 8,
+      "notes": "Week 7 Day 1 — single-game Sunday per modifiedWeeks.7 (no hockey this week). AM achilles stiffness 1-2/10 (within <15 min typical baseline per Silbernagel framework). During play after warmup 0-1/10. Sleep 8h, at upper end of target. All pain-monitoring signals green."
     }
   ],
   "scienceReviews": [
@@ -354,7 +363,7 @@
     { "date": "2026-04-16", "proteinGrams": 155, "calories": 2670, "notes": "Breakfast: shake without granola or yogurt — 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal). Lunch: homemade quesadilla — 2 medium Costco tortillas, 1 cup cheese, 2 slices bacon (~50g/~1130cal). Dinner: chicken sandwich Chick & Hawk Encinitas + 1/2 large fries + 1 mixed drink (~41g/~1100cal)." },
     { "date": "2026-04-17", "proteinGrams": 278, "calories": 3110, "notes": "Breakfast: shake without granola or yogurt (1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit; ~64g/440cal). Lunch: Panda Express plate (fried rice side + 2x teriyaki chicken ~1,120cal/83g) + Clif Builder Bar (280cal/20g) = ~1,400cal/103g. Dinner: 2.5 russet potatoes oven-baked with olive oil (~590cal/11g) + 4 boneless skinless chicken thighs oven-baked with Lawry's seasoned salt (~680cal/100g; ~1,500mg sodium from seasoning) = ~1,270cal/111g. Final: 278g/3,110cal." },
     { "date": "2026-04-18", "weight": 225.8, "bodyFatPct": 24.4, "proteinGrams": 159, "calories": 2820, "notes": "AM weigh-in 225.8/24.4%. +4.0 lbs and +1.0 pt BF vs Apr 15 - acute spike from high-sodium week + glycogen repletion post-Apr 17 training + high-carb dinner. Not a real body-comp change. Breakfast: Nómade breakfast burrito (~700cal/32g estimate). Lunch: 2 boneless skinless chicken thighs (~340cal/50g), 1.5 russet potatoes with olive oil (~366cal/6.5g), 1/4 cup shredded cheese (~113cal/7g), 1 slice bacon (~43cal/3g) = ~860cal/67g. Dinner: half of homemade 5-cheese tortellini dish (Costco tortellini + 2 tbsp butter + 1/2 cup white wine + 1/2 cup parmesan + 3 slices bacon, half portion eaten) = ~1,260cal/60g. Final: 159g/2,820cal." },
-    { "date": "2026-04-19", "proteinGrams": 20, "calories": 270, "notes": "Pre-game: Clif Builder Bar (~20g/270cal). Basketball 50 min high intensity at ~AM Sunday." }
+    { "date": "2026-04-19", "proteinGrams": 20, "calories": 270, "sleepHours": 8, "notes": "Sleep 8h (upper end of target). Pre-game: Clif Builder Bar (~20g/270cal). Basketball 50 min high intensity AM Sunday. Achilles 1-2/10 AM / 0-1/10 during play - green per Silbernagel pain-monitoring." }
   ],
   "modifiedWeeks": {
     "4": {

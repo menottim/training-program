@@ -19,6 +19,7 @@ Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each
 | [achilles-tendinopathy-hsr.md](achilles-tendinopathy-hsr.md) | HSR protocol (Beyer), pain monitoring (Silbernagel), tendon adaptation timelines, collagen + vit C, PRP/ESWT/GTN evidence | 2026-04-18 |
 | [in-season-volume.md](in-season-volume.md) | Weekly set targets, minimum effective dose, RPE auto-regulation, tapers vs deloads, progression rules | 2026-04-18 |
 | [recovery-sleep.md](recovery-sleep.md) | Sleep targets, recovery modality hierarchy, CWI tradeoffs, alcohol effects, overtraining red flags | 2026-04-18 |
+| [supplements.md](supplements.md) | Menotti's daily stack reviewed (multivitamin, fish oil, iron, magnesium, creatine); iron flag; fish oil dose review; collagen/vit D/caffeine alternatives | 2026-04-19 |
 
 ## When to consult
 

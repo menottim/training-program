@@ -46,19 +46,44 @@ Aburto et al. (2013) meta-analyzed 22 RCTs and found increased potassium intake 
 
 For acute (hours-to-days) sodium clearance after a single high-sodium meal, the direct evidence is thinner. Mechanistically, a potassium-rich meal should accelerate sodium excretion, and population-level data support a dose-responsive effect on sodium output. For practical coaching purposes, treat high-potassium foods (potatoes, bananas, leafy greens, Greek yogurt, salmon) as a mild positive adjunct rather than a targeted natriuretic intervention.
 
+## Athlete-Calibrated Daily Sodium Targets
+
+The AHA 2021 general-population target of <2,300 mg/day is designed for sedentary-to-moderately-active adults for cardiovascular-disease prevention. __It is not the right target for a trained athlete with regular sweat losses.__ Using it as a ceiling for an athlete risks chronic low-grade sodium deficiency during training blocks and misreads normal athletic sodium intake as "excessive."
+
+For a __non-hypertensive recreational athlete__ playing 2-3 hours of sport per week plus 3-4 lifting sessions, the evidence supports:
+
+| Context | Target range | Source |
+|---|---|---|
+| Rest days (no sport, no training) | 2,500-3,500 mg | AHA general ceiling + baseline activity |
+| Sport or heavy training days | 3,500-5,000 mg | AHA ceiling + sweat-loss replacement per Baker 2017 |
+| Upper chronic limit to respect | 5,500-6,000 mg/day sustained | Mente 2016 PURE cohort U-shape, cardiovascular risk |
+| Lower floor (avoid sustained intake below) | ~2,500 mg/day | Mente 2016 found higher CV risk below 3 g/day in non-hypertensive adults |
+
+Rationale:
+
+- __Baker 2017__ (Sports Med, PMID 28332116): athletes lose 500-2,000 mg sodium per liter of sweat, with individual variation. A 60-90 min basketball game in moderate conditions produces 1-1.5 L of sweat, so sodium loss per session is 750-2,000 mg.
+- __ACSM position stand on fluid replacement__ (PMID 17277604): during exercise >1 hour, replace with 500-700 mg sodium per liter of rehydration fluid. No blanket daily total.
+- __Mente et al. 2016 PURE__ (Lancet, PMID 27216139): U-shaped cardiovascular risk across 376,628 people. Lowest risk at 3-5 g sodium/day. Risk increased _both_ above ~5 g and below ~3 g. For non-hypertensive adults, very low sodium was associated with higher CVD risk, not lower. (Note: findings are controversial; some researchers argue the U-shape is a statistical artifact. Treat the upper bound as better-supported than the lower bound.)
+
+__Individual calibration note.__ Sweat sodium concentration varies widely (heavy vs light salty sweaters). Signs of being a heavy salty sweater: visible white sodium crystals on skin or clothing after exercise, frequent muscle cramps during sport, persistent afternoon fatigue on training days despite adequate hydration. Heavy salty sweaters may need the upper end of the ranges above or commercial sweat testing.
+
+__Distribution matters as much as total.__ 4,500 mg spread across three moderate-sodium meals is different from 4,500 mg concentrated in one restaurant meal. Acute single-meal sodium loads of 2,000+ mg produce visible same-day or next-day scale spikes via plasma volume expansion; the same total spread across three meals does not. If body-comp reads matter, prefer moderate distribution.
+
 ## Practical Application
 
 1. __Daily scale variance of ±3-5 lbs is normal__ for a 220-lb adult athlete. A single outlier reading should not drive programming changes. Use 7-day trailing averages.
 
 2. __Expect 24-72 hour persistence__ after a high-sodium meal pattern. The scale normalizes on its own as long as sodium intake returns to baseline.
 
-3. __Hydrate normally, not excessively.__ ~3 L/day from food and drink supports optimal kidney function. More than that provides no sodium-clearance benefit and in extreme cases (especially during long endurance sessions) risks hyponatremia.
+3. __Hydrate normally, not excessively.__ ~3 L/day from food and drink on rest days; increase by ~1 L on sport or heavy-training days to replace sweat losses. More than this provides no sodium-clearance benefit and in extreme cases risks hyponatremia.
 
-4. __Potassium-rich foods accelerate normalization modestly.__ Potatoes (~850 mg/medium), bananas (~420 mg), spinach (~840 mg/cooked cup), Greek yogurt (~230 mg/cup), salmon (~450 mg/filet). Target 3,400 mg/day baseline.
+4. __Potassium-rich foods accelerate normalization modestly.__ Potatoes (~850 mg/medium), bananas (~420 mg), spinach (~840 mg/cooked cup), Greek yogurt (~230 mg/cup), salmon (~450 mg/filet). Target 3,400 mg/day baseline (Aburto 2013).
 
-5. __Sweat contributes meaningful sodium loss during games.__ Sweat sodium ranges 500-2000 mg/L with high inter-individual variability (Baker 2017). A hard 60-minute basketball session produces ~500-1000 mg sodium loss for most athletes. Do not replace this loss with high-sodium sports drinks if the goal is sodium reduction.
+5. __Sweat contributes meaningful sodium loss during games.__ A 60-90 min basketball session produces ~750-2,000 mg sodium loss for most athletes (Baker 2017). Plain water is fine for sessions <1 hour; consider electrolyte-containing drinks for longer sessions or hot conditions.
 
 6. __Glycogen-driven weight spikes after training days are expected and desired.__ Do not interpret them as fat gain. A post-training carb-rich meal adding 1-2 lbs of scale weight the next morning is evidence that muscle glycogen is refilling, which is what supports game performance.
+
+7. __Coaching language calibration.__ Do not describe 4,000-5,000 mg sodium on a sport day as "2x target" or "very high." It is within normal athletic range. Do flag single-meal sodium loads >2,000 mg as likely to produce an acute scale spike. Chronic intake >5,500 mg/day warrants a downward adjustment toward the 3-5 g/day optimal zone per Mente 2016.
 
 ## Unresolved or Bleeding-Edge Questions
 
@@ -74,9 +99,12 @@ For acute (hours-to-days) sodium clearance after a single high-sodium meal, the 
 4. Aburto NJ, Hanson S, Gutierrez H, Hooper L, Elliott P, Cappuccio FP. __Effect of increased potassium intake on cardiovascular risk factors and disease: systematic review and meta-analyses.__ BMJ, 2013; 346:f1378. DOI: 10.1136/bmj.f1378.
 5. Rakova N, Jüttner K, Dahlmann A, et al. __Long-term space flight simulation reveals infradian rhythmicity in human Na+ balance.__ Cell Metabolism, 2013; 17(1): 125-131. (Key evidence for osmotically inactive sodium storage and multi-day excretion rhythms.)
 6. Titze J, Dahlmann A, Lerchl K, et al. __Spooky sodium balance.__ Current Opinion in Nephrology and Hypertension, 2014. (Review of non-osmotic sodium storage.)
-7. Mente A, O'Donnell M, Rangarajan S, et al. __Associations of urinary sodium excretion with cardiovascular events in individuals with and without hypertension.__ The Lancet, 2016; 388(10043): 465-475. (PURE study on the U-shaped Na-CVD relationship.)
-8. Baker LB. __Sweating rate and sweat sodium concentration in athletes: a review of methodology and intra/interindividual variability.__ Sports Medicine, 2017; 47(Suppl 1): 111-128.
+7. Mente A, O'Donnell M, Rangarajan S, et al. __Associations of urinary sodium excretion with cardiovascular events in individuals with and without hypertension.__ The Lancet, 2016; 388(10043): 465-475. PMID: 27216139. (PURE study on the U-shaped Na-CVD relationship. Note: findings controversial; some researchers argue the U-shape is a statistical artifact. The upper bound is better-supported than the lower bound.)
+8. Baker LB. __Sweating rate and sweat sodium concentration in athletes: a review of methodology and intra/interindividual variability.__ Sports Medicine, 2017; 47(Suppl 1): 111-128. PMID: 28332116. [PubMed](https://pubmed.ncbi.nlm.nih.gov/28332116/).
+9. Sawka MN, Burke LM, Eichner ER, Maughan RJ, Montain SJ, Stachenfeld NS. __American College of Sports Medicine position stand. Exercise and fluid replacement.__ Medicine and Science in Sports and Exercise, 2007; 39(2): 377-390. PMID: 17277604. [PubMed](https://pubmed.ncbi.nlm.nih.gov/17277604/).
+10. American Heart Association. __How much sodium should I eat per day?__ 2021 dietary guidelines. General-population ceiling of 2,300 mg/day (ideal 1,500 mg) for cardiovascular-disease prevention. (Not calibrated for athletic populations.)
 
 ## Corrections Log
 
 - __2026-04-18:__ Prior coaching asserted "1 g excess sodium retains 4 g water." Per Heer 2000 and Rakova 2013, this is an oversimplification: sodium can be stored osmotically inactively in skin/cartilage/muscle GAGs, and plasma volume rises without proportional body mass increase. The heuristic is still directionally useful but should not be treated as a precise calculation.
+- __2026-04-19:__ Prior coaching used the AHA general-population 2,300 mg/day ceiling as "the target" for Menotti, and flagged 4,000-5,000 mg training-day intake as "2x target / very high." This was miscalibrated for an athlete with regular sweat losses (750-2,000 mg per sport session per Baker 2017). Athlete-calibrated targets are 2,500-3,500 mg on rest days and 3,500-5,000 mg on sport/training days, with a chronic upper limit of 5,500-6,000 mg/day per Mente 2016 PURE U-shape. Rest of knowledge base rephrased: a single-meal sodium load of 2,000+ mg is still worth flagging for acute scale effects, but chronic multi-day intake in the 3-5 g range is normal and healthy for this profile.

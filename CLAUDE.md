@@ -177,6 +177,7 @@ After logging, review recent trends and surface observations:
 - Achilles pain trends
 - Whether a deload week is coming up
 - Any program adjustments worth considering
+- __Progress against `athlete.nutritionGoals`__: on a Mon or Sat, check calorie tracking against the 2,000-2,100 deficit-day target and flag if trending high. When a restaurant meal is logged, note how many restaurant meals have occurred in the calendar week and flag if approaching or exceeding 3. Do not be preachy about this - a factual one-liner is enough.
 
 ## Modified Weeks (`modifiedWeeks` in data.json)
 

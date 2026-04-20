@@ -13,6 +13,28 @@
       "ironLossPerDonation": "~470mg (vs 220-250mg for whole blood)",
       "annualIronLoss": "940-1,410mg"
     },
+    "nutritionGoals": {
+      "primary": "Fat loss while maintaining strength gains and game performance",
+      "rationale": "Apr 20 body-comp overview showed +4.7 lbs fat / +1.9 lbs lean over 6 weeks. Current pattern ~3,000-3,300 cal/day averages landing near maintenance-to-slight-surplus. Goal is to introduce a modest weekly deficit without compromising training or sport.",
+      "setDate": "2026-04-20",
+      "firstEvaluation": "2026-04-24 (next science review)",
+      "goals": [
+        {
+          "name": "Deficit rest days",
+          "target": "2 days per week at 2,000-2,100 cal",
+          "anchorDays": ["Monday", "Saturday"],
+          "weeklyDeficit": "~1,000-1,400 cal = ~0.3-0.4 lb/week fat loss",
+          "rationale": "Mon is post-Sunday-game recovery (low-energy need). Sat is pre-game prep (moderate energy need). Neither is a heavy training or game day. Pairs with Hall 2022 NIH body-weight planner mathematics.",
+          "successMetric": "Weekly average calories across the 2 anchor days <=2,100"
+        },
+        {
+          "name": "Restaurant meal cap",
+          "target": "<=3 restaurant meals per week",
+          "rationale": "Hall 2019 ward study (Cell Metab) showed ultra-processed/restaurant food environments drive ~+500 cal/day spontaneous intake vs matched whole-food diets. Current pattern: 5-7 restaurant meals/week consistently drives 3,000+ cal days. Capping at 3 fixes the weekly caloric creep without needing daily macro tracking.",
+          "successMetric": "Restaurant meals per calendar week <=3"
+        }
+      ]
+    },
     "dailySupplements": [
       { "name": "One A Day Men's multivitamin", "dose": "1 tablet", "evidenceTier": "Weak (athletes with adequate diet); see knowledge/supplements.md" },
       { "name": "Fish oil", "dose": "1400mg (980mg omega-3 EPA+DHA)", "evidenceTier": "Moderate for athletes; dose may be sub-therapeutic for tendon/recovery effects (2-3g EPA+DHA typical)" },

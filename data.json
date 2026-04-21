@@ -23,13 +23,28 @@
         { "test": "Fasting lipid panel", "reason": "Baseline given current 5g/day psyllium (under the 10-15g dose needed for measurable LDL effect). If LDL elevated, bump psyllium to 10g/day for 8-12 weeks and recheck. Also relevant for fish oil dose review (currently 980mg EPA+DHA, sub-therapeutic for lipid effects)." },
         { "test": "25-hydroxy vitamin D", "reason": "One-time baseline. San Diego + outdoor play = likely sufficient, but a data point is cheap. Target 30-60 ng/mL." }
       ],
-      "optional": [
-        { "test": "Total testosterone + free testosterone + SHBG (re-test)", "reason": "Not urgent - Jan 2025 total T was 743 ng/dL (robust, above age-40 average of ~500-600). Reasonable to retest every 1-2 years for longitudinal tracking. Skip if this round of labs gets expensive; not a priority. If testing, add free T + SHBG for better bioavailable-fraction signal (2022 and 2025 were total T only). Collection: morning 7-11 AM, fasted, before exercise, not within 2-3 weeks of a Power Red donation." }
+      "recommendedFollowUpFromJuly2025Panel": [
+        { "test": "TSH + free T4 (thyroid panel)", "reason": "Hyperthyroidism is one of the most common drivers of elevated SHBG. Jul 2025 panel showed SHBG 83 (upper limit 50). Rule out thyroid driver before attributing high SHBG to genetic/idiopathic." },
+        { "test": "AST + ALT + bilirubin (liver enzymes)", "reason": "Liver synthesizes SHBG. Elevated enzymes or altered liver function can increase SHBG. Rule out liver-driven elevation." },
+        { "test": "Fasting insulin + HbA1c", "reason": "Low-insulin states elevate SHBG. Given mixed metabolic picture, worth characterizing insulin sensitivity." },
+        { "test": "Repeat T panel in 3-6 months with free T + SHBG + Estradiol + Prolactin", "reason": "Confirm the elevated-SHBG pattern is persistent, not a one-time reading. Same collection protocol (morning, fasted, pre-exercise, not within 2-3 weeks of Power Red donation)." }
       ]
     },
     "testosteroneHistory": [
       { "date": "2022-05", "totalTestosterone": 521, "unit": "ng/dL", "collectionTime": "unknown", "notes": "Reference range 40s: 264-916 ng/dL. Within normal. Collection time unknown - if drawn afternoon, AM equivalent would have been higher since T is ~50% lower PM vs AM." },
-      { "date": "2025-01", "totalTestosterone": 743, "unit": "ng/dL", "collectionTime": "8am", "notes": "Optimal morning collection. Robust reading - well above age-40 average (~500-600 ng/dL), in upper-normal band. +222 ng/dL vs 2022 though 2022 timing unknown. No clinical concern. Free T and SHBG not drawn - would add useful signal next time." }
+      { "date": "2025-01", "totalTestosterone": 743, "unit": "ng/dL", "collectionTime": "8am", "notes": "Optimal morning collection. Above age-40 average (~500-600 ng/dL). Free T and SHBG not drawn - limited interpretation without them (see 2025-07 panel showing high-SHBG pattern)." },
+      { "date": "2025-07-18", "collectionTime": "08:06",
+        "totalTestosterone": 811, "totalTestosteroneUnit": "ng/dL", "totalTestosteroneRange": "250-1100 ng/dL", "totalTestosteroneFlag": "normal upper-band",
+        "shbg": 83, "shbgUnit": "nmol/L", "shbgRange": "10-50 nmol/L", "shbgFlag": "ELEVATED (66% above upper limit)",
+        "freeTestosterone": 49.4, "freeTestosteroneUnit": "pg/mL", "freeTestosteroneRange": "46.0-224.0 pg/mL", "freeTestosteroneFlag": "low-normal (at floor, 3.4 pg/mL above deficiency threshold)",
+        "bioavailableTestosterone": 110.3, "bioavailableTestosteroneUnit": "ng/dL", "bioavailableTestosteroneRange": "110.0-575.0 ng/dL", "bioavailableTestosteroneFlag": "low-normal (at floor, 0.3 above threshold)",
+        "estradiol": 40, "estradiolUnit": "pg/mL", "estradiolRange": "<=39 pg/mL", "estradiolFlag": "borderline high (1 pt over)",
+        "prolactin": 6.9, "prolactinUnit": "ng/mL", "prolactinRange": "2.0-18.0 ng/mL", "prolactinFlag": "normal",
+        "albumin": 4.9, "albuminUnit": "g/dL", "albuminRange": "3.6-5.1 g/dL", "albuminFlag": "normal upper end",
+        "notes": "KEY FINDING: elevated SHBG (83 vs upper limit 50) is pulling total T out of circulation. Total T 811 is upper-normal but free/bioavailable T are at the BOTTOM of range. This is a 'functionally low-T presentation' despite robust total T. Technically does not meet Endocrine Society 2018 hypogonadism criteria (free T above floor, no reported symptoms). Borderline high estradiol tracks with high total T (aromatization). Prolactin normal rules out pituitary cause. Next step: understand SHBG driver - thyroid (TSH + free T4), liver (AST/ALT/bilirubin), metabolic (fasting insulin / HbA1c). Source: Quest Diagnostics ZD478125F Men's Hormone Panel Expanded, ordering physician MARKS, Lianne, PWN Health.",
+        "lab": "Quest Diagnostics / PWN Health",
+        "orderingPhysician": "Lianne Marks, PWN Health"
+      }
     ],
     "nutritionGoals": {
       "primary": "Steady fat loss preserving lean mass, strength, and game performance",

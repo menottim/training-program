@@ -49,8 +49,23 @@
       { "name": "Fish oil", "dose": "1400mg (980mg omega-3 EPA+DHA)", "evidenceTier": "Moderate for athletes; dose may be sub-therapeutic for tendon/recovery effects (2-3g EPA+DHA typical)" },
       { "name": "Iron + vitamin C", "dose": "65mg elemental iron + 125mg vit C", "evidenceTier": "CLINICALLY APPROPRIATE for Double Reds donor (2-3x/year). Red Cross recommends 18-38mg elemental for 120 days post-Power Red; his ~940-1,410mg/year iron loss justifies chronic supplementation. Dose is slightly above official 18-38mg range but within typical OTC tablet strength. Annual ferritin check warranted to confirm iron balance." },
       { "name": "Magnesium glycinate", "dose": "240mg", "evidenceTier": "Moderate; appropriate dose and form for sleep/recovery" },
-      { "name": "Creatine monohydrate", "dose": "5g/day", "evidenceTier": "Strong; ISSN position stand" }
-    ]
+      { "name": "Creatine monohydrate", "dose": "5g/day (in shake)", "evidenceTier": "Strong; ISSN position stand" },
+      { "name": "Psyllium husk powder", "dose": "5g/day (in shake)", "evidenceTier": "Strong for cholesterol, moderate for glycemic control and satiety. Jovanovski 2018 meta-analysis (Am J Clin Nutr, PMID 30239559): psyllium reduces LDL cholesterol 5-10% at 7-15g/day. 5g/day is modest; could benefit from 2-3x daily dosing or bump to 10g for full LDL effect per FDA qualified health claim threshold." }
+    ],
+    "defaultShakeRecipes": {
+      "full (with granola)": {
+        "ingredients": "1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard whey, 2 tbsp PB Fit, 2/3 cup NV Protein Granola, 5g creatine, 5g psyllium husk powder",
+        "approxMacros": "~96g protein / ~670cal"
+      },
+      "without granola (with yogurt)": {
+        "ingredients": "1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard whey, 2 tbsp PB Fit, 5g creatine, 5g psyllium husk powder",
+        "approxMacros": "~86g protein / ~590cal"
+      },
+      "without granola or yogurt": {
+        "ingredients": "1 cup whole milk, 2 scoops ON Gold Standard whey, 2 tbsp PB Fit, 5g creatine, 5g psyllium husk powder",
+        "approxMacros": "~64g protein / ~460cal"
+      }
+    }
   },
   "currentLifts": {
     "trapBarDeadlift": { "weight": 225, "reps": 5 },
@@ -411,7 +426,7 @@
     { "date": "2026-04-18", "weight": 225.8, "bodyFatPct": 24.4, "proteinGrams": 159, "calories": 2820, "notes": "AM weigh-in 225.8/24.4%. +4.0 lbs and +1.0 pt BF vs Apr 15 - acute spike from high-sodium week + glycogen repletion post-Apr 17 training + high-carb dinner. Not a real body-comp change. Breakfast: Nómade breakfast burrito (~700cal/32g estimate). Lunch: 2 boneless skinless chicken thighs (~340cal/50g), 1.5 russet potatoes with olive oil (~366cal/6.5g), 1/4 cup shredded cheese (~113cal/7g), 1 slice bacon (~43cal/3g) = ~860cal/67g. Dinner: half of homemade 5-cheese tortellini dish (Costco tortellini + 2 tbsp butter + 1/2 cup white wine + 1/2 cup parmesan + 3 slices bacon, half portion eaten) = ~1,260cal/60g. Final: 159g/2,820cal." },
     { "date": "2026-04-19", "proteinGrams": 236, "calories": 3900, "sleepHours": 8, "notes": "Sleep 8h. Pre-game Clif Builder Bar (~20g/270cal). Indoor basketball 50 min high intensity, achilles 1-2/10 AM / 0-1/10 during play (green per Silbernagel). 2hr medium-intensity yardwork (digging + squatting, real lower-body load). Lunch: 18-inch Italian hero + Coke (~110g/2,140cal, ~5,500-7,500mg sodium). Dinner: homemade quesadilla (2 medium Costco tortillas, 3 BLSS chicken thighs, 2/3 cup shredded cheese, 2 tbsp oil) = ~106g/1,490cal. Final: 236g/3,900cal. High-activity high-intake day." },
     { "date": "2026-04-20", "weight": 224.9, "bodyFatPct": 24.1, "proteinGrams": 244, "calories": 2440, "notes": "AM weigh-in 224.9/24.1%. AM achilles 1-2/10 resolving with warmup (green per Silbernagel, 24h rule met). Breakfast: shake without granola, with yogurt (~86g/570cal). Lunch: turkey sandwich + mozzarella + 2 servings Old Thyme pretzels (~61g/810cal). Dinner: 2 slices golden wheat bread + 2 slices mozzarella + 2 BLSS chicken thighs (~70g/720cal). Extra: 1 additional BLSS chicken thigh (~25g/170cal) + 1 Its-It mini vanilla (~2g/170cal) = ~27g/340cal. Final: 244g/2,440cal. Lands at top of revised Mon anchor day target (2,300-2,500 per Option B). Restaurant meals this week: 0/3." },
-    { "date": "2026-04-21", "weight": 223.8, "bodyFatPct": 23.8, "notes": "AM weigh-in 223.8/23.8% - down 1.1 lb / 0.3 pt BF from Apr 20, continuing normalization from Apr 18 peak. AM achilles 1-2/10 pain and stiffness (consistent with Apr 19-20 baseline pattern, green per Silbernagel). Tue basketball PM today (game day, eat at maintenance ~2,800 per Option B)." }
+    { "date": "2026-04-21", "weight": 223.8, "bodyFatPct": 23.8, "proteinGrams": 86, "calories": 590, "notes": "AM weigh-in 223.8/23.8% - down 1.1 lb / 0.3 pt BF from Apr 20, continuing normalization from Apr 18 peak. AM achilles 1-2/10 pain and stiffness (consistent with Apr 19-20 baseline pattern, green per Silbernagel). Tue basketball PM today (game day, eat at maintenance ~2,800 per Option B). Breakfast: default shake without granola with yogurt (1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit, 5g creatine, 5g psyllium husk; ~86g/590cal)." }
   ],
   "modifiedWeeks": {
     "4": {

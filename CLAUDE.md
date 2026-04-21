@@ -84,6 +84,13 @@ Parse the user's message for:
 - Body weight / body fat if mentioned
 - Game performance notes if mentioned
 
+__Default shake recipes__ (see `athlete.defaultShakeRecipes` in data.json for full ingredient lists and macros): all shakes contain __5g creatine monohydrate + 5g psyllium husk powder__ by default. Three common variants:
+- __Full (with granola)__: ~96g protein / ~670 cal
+- __Without granola, with yogurt__: ~86g protein / ~590 cal
+- __Without granola or yogurt__: ~64g protein / ~460 cal
+
+When user says "had a shake" unspecified, read back the full recipe (~96g/670cal) for confirmation. When user specifies a modifier like "without granola," default to that variant. Creatine and psyllium counts are already in the per-shake calorie/macro totals above, so don't double-count them as separate supplements on shake days.
+
 __Proactively capture sleep and achilles pain.__ These two fields are prescribed by the science-review workflow (Section 5 recovery; Section 4 achilles pain-monitoring) but Menotti rarely reports them unprompted. If a user reports a training session or game without mentioning sleep or achilles status, __ask once before logging__: "Sleep last night? Any achilles pain during the session?" Do not block logging on the answer, but capture when provided. Data gaps on these two fields compromise the 12-week HSR adaptation check and the Knowles 2018 sleep-intensity auto-regulation.
 
 ### Step 2: Match "as prescribed" exercises

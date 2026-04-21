@@ -16,7 +16,8 @@ Menotti is a __regular Double Reds (Power Red) blood donor, 2-3 donations per ye
 | Fish oil | 1400mg total, 980mg EPA+DHA | Moderate for athletes | __Likely sub-therapeutic__; effective doses are 2-3g EPA+DHA |
 | Iron (65mg elemental) + vit C (125mg) | Daily | Strong for his donor profile | __Continue__; appropriate for Double Reds donor at 2-3x/year; annual ferritin check |
 | Magnesium glycinate | 240mg | Moderate for sleep; weak for muscle cramps | __Appropriate dose and form__; keep |
-| Creatine monohydrate | 5g | Strong | Keep |
+| Creatine monohydrate (in shake) | 5g | Strong | Keep |
+| Psyllium husk powder (in shake) | 5g | Strong for LDL, moderate for glycemic control and satiety | __Appropriate at 5g for baseline gut/satiety effects; could bump to 10g for full LDL effect__ |
 
 ## Key Findings
 
@@ -68,6 +69,21 @@ Dose and form both supported by evidence:
 - __Muscle cramp evidence (Weak)__: Cochrane and systematic reviews find no robust evidence magnesium prevents or treats exercise-associated muscle cramps. It may help if dietary magnesium is low, but not as a blanket anti-cramp intervention.
 
 __Practical recommendation:__ Keep. If timed near bed, glycine component may add modest sleep benefit. Not a hill to die on either way.
+
+### 5. Psyllium husk powder at 5g/day: evidence-supported at modest dose; could be bumped for full LDL effect
+
+Psyllium is soluble fiber (Plantago ovata). Strong evidence base across multiple domains:
+
+- __LDL cholesterol reduction (Strong)__: Jovanovski et al. 2018 systematic review and meta-analysis (Am J Clin Nutr, PMID 30239559) of 28 trials found daily 10g psyllium lowers LDL ~13 mg/dL in hypercholesterolemic adults. Effect is dose-responsive; 5-10% LDL reduction typical at 7-15g/day. [Harvard Health psyllium summary](https://www.health.harvard.edu/heart-health/psyllium-fiber-regularity-and-healthier-lipid-levels).
+- __FDA qualified health claim__: 7g of soluble fiber from psyllium per day (~10-12g psyllium husk) supports the cardiovascular-disease-risk-reduction claim.
+- __Glycemic control (Moderate)__: Slows gastric emptying and glucose absorption. Attenuates post-meal blood glucose response. Particularly useful around high-carb meals.
+- __Satiety (Moderate)__: Soluble fiber expansion in the gut reduces appetite and extends satiety. Mildly useful on deficit days.
+- __Gut regularity (Strong)__: Bulk-forming laxative effect, well-characterized.
+- __Safety (Strong)__: Well-tolerated 5-15g/day. Main side effects: bloating, gas, abdominal discomfort early in use. Must be taken with plenty of water to prevent GI obstruction.
+
+__Menotti's context__: 5g/day in his shake is a baseline dose. At this level he gets gut-regularity and mild satiety benefits but is probably under the threshold for meaningful LDL reduction. If a lipid panel shows borderline LDL, bumping to 10g/day (split across 2 shakes or one larger dose) would likely produce measurable cardiovascular benefit.
+
+__Practical recommendation__: Keep at 5g for now. At next annual physical, request a lipid panel alongside the ferritin check. If LDL is elevated, bump psyllium to 10-15g/day (split dosing) for 8-12 weeks and recheck.
 
 ### 4. One A Day Men's multivitamin: low-value, not harmful
 
@@ -186,6 +202,8 @@ __What to avoid:__
 
 ## References
 
+0. Jovanovski E, Yashpal S, Komishon A, et al. __Effect of psyllium (Plantago ovata) fiber on LDL cholesterol and alternative lipid targets.__ American Journal of Clinical Nutrition, 2018; 108(5): 922-932. PMID: 30239559. (Meta-analysis of 28 trials; 10g/day psyllium lowers LDL ~13 mg/dL.)
+0a. American Heart Association / Harvard Health. __Psyllium fiber: Regularity and healthier lipid levels.__ (Summary of FDA qualified health claim requiring 7g soluble fiber from psyllium for CV-risk-reduction claim.)
 1. Peeling P, Dawson B, Goodman C, Landers G, Trinder D. __Athletic induced iron deficiency: new insights into the role of inflammation, cytokines, and hormones.__ European Journal of Applied Physiology, 2008. (Background on exercise-induced iron status.)
 2. Zoller H, Vogel W. __Iron supplementation in athletes - first do no harm.__ Nutrition, 2004. PMID: 15212743. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15212743/). (Default guidance for non-donor athletes. Does not apply to frequent blood donors.)
 3. Cable RG, Glynn SA, Kiss JE, et al. __Iron deficiency in blood donors: the REDS-II Donor Iron Status Evaluation (RISE) study.__ Transfusion, 2012; 52(4): 702-711. PMID: 22023513. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3618489/). (47% of frequent male donors had iron deficiency without supplementation.)

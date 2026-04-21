@@ -14,24 +14,33 @@
       "annualIronLoss": "940-1,410mg"
     },
     "nutritionGoals": {
-      "primary": "Fat loss while maintaining strength gains and game performance",
-      "rationale": "Apr 20 body-comp overview showed +4.7 lbs fat / +1.9 lbs lean over 6 weeks. Current pattern ~3,000-3,300 cal/day averages landing near maintenance-to-slight-surplus. Goal is to introduce a modest weekly deficit without compromising training or sport.",
+      "primary": "Steady fat loss preserving lean mass, strength, and game performance",
+      "rationale": "Apr 20 body-comp overview showed +4.7 lbs fat / +1.9 lbs lean over 6 weeks. Initial 2-day/week deficit-at-BMR approach (set Apr 20 AM) was recalibrated later that day based on Helms 2014 and Aragon 2017 ISSN evidence: (1) rest-day target at BMR was more aggressive than needed, (2) intermittent restriction is not superior to daily small deficits per ISSN 2017, (3) weekly deficit was below the Helms 0.5%/wk floor anyway. Revised to moderate-deficit across 3 non-heavy-training days.",
       "setDate": "2026-04-20",
+      "revisedDate": "2026-04-20 (evening)",
       "firstEvaluation": "2026-04-24 (next science review)",
       "goals": [
         {
-          "name": "Deficit rest days",
-          "target": "2 days per week at 2,000-2,100 cal",
-          "anchorDays": ["Monday", "Saturday"],
-          "weeklyDeficit": "~1,000-1,400 cal = ~0.3-0.4 lb/week fat loss",
-          "rationale": "Mon is post-Sunday-game recovery (low-energy need). Sat is pre-game prep (moderate energy need). Neither is a heavy training or game day. Pairs with Hall 2022 NIH body-weight planner mathematics.",
-          "successMetric": "Weekly average calories across the 2 anchor days <=2,100"
+          "name": "Moderate-deficit days",
+          "target": "3 days per week at 2,300-2,500 cal",
+          "anchorDays": ["Monday", "Thursday", "Saturday"],
+          "weeklyDeficitEstimate": "~900-2,100 cal/week = ~0.3-0.6 lb/week fat loss (within Helms 2014 0.5-1%/week lean-preserving range)",
+          "rationale": "Mon = post-Sunday-game recovery (no training). Thu = upper body lifting only (no lower-body demand). Sat = pre-Sunday-game prep (no training). Wed (heavy TB DL) and game days (Tue, Sun) stay at maintenance to fuel performance. Daily deficit of 300-500 cal below TDEE preserves lean mass per Helms 2014.",
+          "evidence": "Helms et al. 2014, JISSN (PMID 24864135): 0.5-1% BW/week loss rate for lean-mass preservation in resistance-trained athletes. Aragon et al. 2017 ISSN position stand (PMID 28630601): intermittent restriction not superior to daily small-deficit approach.",
+          "successMetric": "Weekly average calories across Mon/Thu/Sat <=2,500"
         },
         {
           "name": "Restaurant meal cap",
           "target": "<=3 restaurant meals per week",
-          "rationale": "Hall 2019 ward study (Cell Metab) showed ultra-processed/restaurant food environments drive ~+500 cal/day spontaneous intake vs matched whole-food diets. Current pattern: 5-7 restaurant meals/week consistently drives 3,000+ cal days. Capping at 3 fixes the weekly caloric creep without needing daily macro tracking.",
+          "rationale": "Hall 2019 ward study (Cell Metab) showed ultra-processed/restaurant food environments drive ~+500 cal/day spontaneous intake vs matched whole-food diets. Current pattern: 5-7 restaurant meals/week consistently drives 3,000+ cal days. Capping at 3 fixes the weekly caloric creep without daily macro tracking.",
           "successMetric": "Restaurant meals per calendar week <=3"
+        }
+      ],
+      "supersededGoals": [
+        {
+          "name": "Deficit rest days (original Apr 20 AM)",
+          "target": "2 days per week at 2,000-2,100 cal",
+          "supersededReason": "Target was at BMR (~1,990 cal) which was more aggressive than needed. Math using rest-day TDEE (~2,400) showed actual deficit was only 300-400 cal per day = 600-800 cal/week, below the Helms 0.5%/week floor anyway. Revised to gentler 3-day approach."
         }
       ]
     },

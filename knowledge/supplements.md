@@ -70,6 +70,41 @@ Dose and form both supported by evidence:
 
 __Practical recommendation:__ Keep. If timed near bed, glycine component may add modest sleep benefit. Not a hill to die on either way.
 
+### 6. Creatine monohydrate at 5g/day: evidence-gold-standard, keep as-is
+
+Creatine is __the most-studied ergogenic supplement in sports nutrition__ and has the strongest evidence base of anything in Menotti's stack.
+
+__Primary source__: [Kreider et al. 2017 ISSN Position Stand](https://pubmed.ncbi.nlm.nih.gov/28615996/) (J Int Soc Sports Nutr 14:18). Covers safety, efficacy, and therapeutic applications.
+
+__Effectiveness (Strong)__:
+- __"The most effective ergogenic nutritional supplement currently available to athletes with the intent of increasing high-intensity exercise capacity and lean body mass during training"__ (Kreider 2017, direct quote).
+- Meta-analyses show ~8% strength improvement and ~14% high-intensity work capacity improvement vs placebo.
+- Mechanism: increases muscle phosphocreatine stores, supporting ATP regeneration during explosive/high-intensity efforts (basketball sprints, lifts, hockey bursts).
+- Improvements persist with continued use; no tolerance develops.
+
+__Safety (Strong)__:
+- Kreider 2017 explicitly states: __"Short and long-term supplementation (up to 30 g/day for 5 years) is safe and well-tolerated in healthy individuals."__
+- No effect on kidney function in healthy adults despite persistent internet folklore.
+- Myths refuted: no need to cycle off, no evidence of hair loss in most studies, no dehydration risk.
+
+__Dosing (Strong)__:
+- Standard maintenance: __3-5 g/day__ reaches muscle saturation in 3-4 weeks.
+- Loading phase optional: 20 g/day × 5-7 days → 5 g/day maintenance. Saturates faster but not necessary.
+- 5 g/day is the standard maintenance dose for an adult Menotti's size. No adjustment needed.
+
+__Older-adult benefits (Strong)__: Chilibeck et al. 2017 meta-analysis and subsequent work show creatine + resistance training in adults 55+ improves lean mass, strength, functional capacity (timed-up-go, sit-to-stand), and bone health beyond exercise alone. Menotti at 40 doesn't quite hit "older adult" cohort but the benefits are directionally supportive.
+
+__Emerging domains (Moderate-Emerging)__:
+- __Cognitive function under sleep deprivation__: Gordji-Nejad et al. 2024 (Sci Rep) showed single high-dose creatine improved cognition in sleep-deprived adults. Applies to poor-sleep game days.
+- __Tendon health__: mechanistic evidence that intracellular hydration and ATP availability may support collagen synthesis under load, but no human tendinopathy RCTs yet. Don't take credit for Achilles benefits, but it's a plausible minor tailwind alongside HSR.
+- __Bone mineral density__: growing evidence, especially in older adults.
+
+__Practical for Menotti__:
+- 5 g/day in shake is perfect dosing. No change warranted.
+- Take with carbs (your shake has milk + yogurt + PB Fit) mildly enhances uptake via insulin-mediated transport but is not required.
+- Expected water retention: 1-3 lbs primarily __intracellular__ (muscle cell hydration). This is adaptive, not "fat" - the extra cell water actually supports protein synthesis.
+- No cycling needed.
+
 ### 5. Psyllium husk powder at 5g/day: evidence-supported at modest dose; could be bumped for full LDL effect
 
 Psyllium is soluble fiber (Plantago ovata). Strong evidence base across multiple domains:
@@ -202,7 +237,9 @@ __What to avoid:__
 
 ## References
 
-0. Jovanovski E, Yashpal S, Komishon A, et al. __Effect of psyllium (Plantago ovata) fiber on LDL cholesterol and alternative lipid targets.__ American Journal of Clinical Nutrition, 2018; 108(5): 922-932. PMID: 30239559. (Meta-analysis of 28 trials; 10g/day psyllium lowers LDL ~13 mg/dL.)
+0. Kreider RB, Kalman DS, Antonio J, et al. __International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine.__ Journal of the International Society of Sports Nutrition, 2017; 14: 18. PMID: 28615996. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/). (Primary reference for creatine safety, efficacy, and dosing recommendations.)
+0b. Chilibeck PD, Kaviani M, Candow DG, Zello GA. __Effect of creatine supplementation during resistance training on lean tissue mass and muscular strength in older adults: a meta-analysis.__ Open Access Journal of Sports Medicine, 2017; 8: 213-226.
+0c. Jovanovski E, Yashpal S, Komishon A, et al. __Effect of psyllium (Plantago ovata) fiber on LDL cholesterol and alternative lipid targets.__ American Journal of Clinical Nutrition, 2018; 108(5): 922-932. PMID: 30239559. (Meta-analysis of 28 trials; 10g/day psyllium lowers LDL ~13 mg/dL.)
 0a. American Heart Association / Harvard Health. __Psyllium fiber: Regularity and healthier lipid levels.__ (Summary of FDA qualified health claim requiring 7g soluble fiber from psyllium for CV-risk-reduction claim.)
 1. Peeling P, Dawson B, Goodman C, Landers G, Trinder D. __Athletic induced iron deficiency: new insights into the role of inflammation, cytokines, and hormones.__ European Journal of Applied Physiology, 2008. (Background on exercise-induced iron status.)
 2. Zoller H, Vogel W. __Iron supplementation in athletes - first do no harm.__ Nutrition, 2004. PMID: 15212743. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15212743/). (Default guidance for non-donor athletes. Does not apply to frequent blood donors.)

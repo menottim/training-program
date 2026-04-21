@@ -13,6 +13,20 @@
       "ironLossPerDonation": "~470mg (vs 220-250mg for whole blood)",
       "annualIronLoss": "940-1,410mg"
     },
+    "clinicalWorkupAsks": {
+      "nextPhysicianVisit": "Request the following labs together to cover multiple coaching questions:",
+      "required": [
+        { "test": "Serum ferritin", "reason": "Monitor iron balance given Double Reds donation 2-3x/year + 65mg daily iron supplementation. Target 30-200 ng/mL. Below 30 = deficient despite supplement; above 200 = overloaded, reduce dose." },
+        { "test": "Hemoglobin + hematocrit + MCV + transferrin saturation", "reason": "Complete iron workup alongside ferritin. Detects anemia or overload context." }
+      ],
+      "recommended": [
+        { "test": "Fasting lipid panel", "reason": "Baseline given current 5g/day psyllium (under the 10-15g dose needed for measurable LDL effect). If LDL elevated, bump psyllium to 10g/day for 8-12 weeks and recheck. Also relevant for fish oil dose review (currently 980mg EPA+DHA, sub-therapeutic for lipid effects)." },
+        { "test": "25-hydroxy vitamin D", "reason": "One-time baseline. San Diego + outdoor play = likely sufficient, but a data point is cheap. Target 30-60 ng/mL." }
+      ],
+      "optional": [
+        { "test": "Total testosterone + free testosterone + SHBG", "reason": "Not clinically indicated per Endocrine Society 2018 guidelines (no reported symptoms). Useful as age-40 baseline data point for future comparisons, especially given slight body-comp trajectory drift over 6 weeks. Collection requirements: morning 7-11 AM, fasted, before exercise, not within 2-3 weeks of a Power Red donation (transient suppression). Reference ranges for 40s: Total T 264-916 ng/dL (avg ~500-600); Free T 50-210 pg/mL. Do not act on a single borderline-low number without symptoms - retest to confirm." }
+      ]
+    },
     "nutritionGoals": {
       "primary": "Steady fat loss preserving lean mass, strength, and game performance",
       "rationale": "Apr 20 body-comp overview showed +4.7 lbs fat / +1.9 lbs lean over 6 weeks. Initial 2-day/week deficit-at-BMR approach (set Apr 20 AM) was recalibrated later that day based on Helms 2014 and Aragon 2017 ISSN evidence: (1) rest-day target at BMR was more aggressive than needed, (2) intermittent restriction is not superior to daily small deficits per ISSN 2017, (3) weekly deficit was below the Helms 0.5%/wk floor anyway. Revised to moderate-deficit across 3 non-heavy-training days.",

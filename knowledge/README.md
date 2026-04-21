@@ -21,6 +21,7 @@ Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each
 | [recovery-sleep.md](recovery-sleep.md) | Sleep targets, recovery modality hierarchy, CWI tradeoffs, alcohol effects, overtraining red flags | 2026-04-18 |
 | [supplements.md](supplements.md) | Menotti's daily stack reviewed (multivitamin, fish oil, iron, magnesium, creatine); iron flag; fish oil dose review; collagen/vit D/caffeine alternatives | 2026-04-19 |
 | [hormones-testosterone.md](hormones-testosterone.md) | Testosterone panel interpretation (total vs free vs bioavailable), SHBG physiology, EMAS hypogonadism thresholds, estradiol in men, prolactin, causes of elevated SHBG, applied to Menotti's July 2025 panel | 2026-04-21 |
+| [pre-game-fueling.md](pre-game-fueling.md) | Shelf-stable pre-game snack stock guide: tiered by pre-exercise window (1-2 hr, 2-3 hr, 3+ hr), specific brands and nutrition data, stock lists for home/gym/office, decision tree | 2026-04-21 |
 
 ## When to consult
 

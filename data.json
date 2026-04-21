@@ -24,9 +24,13 @@
         { "test": "25-hydroxy vitamin D", "reason": "One-time baseline. San Diego + outdoor play = likely sufficient, but a data point is cheap. Target 30-60 ng/mL." }
       ],
       "optional": [
-        { "test": "Total testosterone + free testosterone + SHBG", "reason": "Not clinically indicated per Endocrine Society 2018 guidelines (no reported symptoms). Useful as age-40 baseline data point for future comparisons, especially given slight body-comp trajectory drift over 6 weeks. Collection requirements: morning 7-11 AM, fasted, before exercise, not within 2-3 weeks of a Power Red donation (transient suppression). Reference ranges for 40s: Total T 264-916 ng/dL (avg ~500-600); Free T 50-210 pg/mL. Do not act on a single borderline-low number without symptoms - retest to confirm." }
+        { "test": "Total testosterone + free testosterone + SHBG (re-test)", "reason": "Not urgent - Jan 2025 total T was 743 ng/dL (robust, above age-40 average of ~500-600). Reasonable to retest every 1-2 years for longitudinal tracking. Skip if this round of labs gets expensive; not a priority. If testing, add free T + SHBG for better bioavailable-fraction signal (2022 and 2025 were total T only). Collection: morning 7-11 AM, fasted, before exercise, not within 2-3 weeks of a Power Red donation." }
       ]
     },
+    "testosteroneHistory": [
+      { "date": "2022-05", "totalTestosterone": 521, "unit": "ng/dL", "collectionTime": "unknown", "notes": "Reference range 40s: 264-916 ng/dL. Within normal. Collection time unknown - if drawn afternoon, AM equivalent would have been higher since T is ~50% lower PM vs AM." },
+      { "date": "2025-01", "totalTestosterone": 743, "unit": "ng/dL", "collectionTime": "8am", "notes": "Optimal morning collection. Robust reading - well above age-40 average (~500-600 ng/dL), in upper-normal band. +222 ng/dL vs 2022 though 2022 timing unknown. No clinical concern. Free T and SHBG not drawn - would add useful signal next time." }
+    ],
     "nutritionGoals": {
       "primary": "Steady fat loss preserving lean mass, strength, and game performance",
       "rationale": "Apr 20 body-comp overview showed +4.7 lbs fat / +1.9 lbs lean over 6 weeks. Initial 2-day/week deficit-at-BMR approach (set Apr 20 AM) was recalibrated later that day based on Helms 2014 and Aragon 2017 ISSN evidence: (1) rest-day target at BMR was more aggressive than needed, (2) intermittent restriction is not superior to daily small deficits per ISSN 2017, (3) weekly deficit was below the Helms 0.5%/wk floor anyway. Revised to moderate-deficit across 3 non-heavy-training days.",

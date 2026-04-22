@@ -1561,8 +1561,11 @@
   Every 1 lb of fat lost is dead weight you no longer lift off the ground. A 10 lb fat loss (while maintaining muscle) makes you ~5% more powerful relative to bodyweight — measurable inches on your vertical with zero strength gains needed.
 </div>
 
-<!-- Body Composition Trend Chart -->
+<!-- Body Composition Trend Chart (weight + BF%) -->
 <div id="body-chart-mount"></div>
+
+<!-- Lean Mass + Fat Mass breakdown over time -->
+<div id="body-comp-breakdown-mount"></div>
 
 <!-- SUPPLEMENTS + LABS + CLINICAL WORKUP -->
 <h2 id="supplements-labs">&#128137; Supplements, Labs &amp; Workup</h2>
@@ -3674,6 +3677,103 @@
         renderAskList('Recommended (from July 2025 panel follow-up)', cw.recommendedFollowUpFromJuly2025Panel || []) +
         renderAskList('Optional', cw.optional || []);
     }
+  })();
+
+
+  // --- Lean Mass + Fat Mass Breakdown over time ---
+  (function renderBodyCompBreakdown() {
+    var mount = document.getElementById('body-comp-breakdown-mount');
+    if (!mount) return;
+
+    var sorted = bodyLog.filter(function(e) {
+      return e.weight != null && e.bodyFatPct != null;
+    }).sort(function(a, b) { return a.date < b.date ? -1 : 1; });
+
+    if (sorted.length < 2) {
+      mount.insertAdjacentHTML('beforeend',
+        '<div class="chart-container">' + svgEmptyState(600, 80, 'More body composition data needed (2+ entries with weight + BF%)') + '</div>');
+      return;
+    }
+
+    var W = 600, H = 220, pad = { top: 30, right: 55, bottom: 45, left: 55 };
+
+    var points = sorted.map(function(e) {
+      var fat = +(e.weight * e.bodyFatPct / 100).toFixed(1);
+      var lean = +(e.weight - fat).toFixed(1);
+      return { date: e.date, weight: e.weight, bfPct: e.bodyFatPct, fat: fat, lean: lean };
+    });
+
+    var leanValues = points.map(function(p) { return p.lean; });
+    var fatValues = points.map(function(p) { return p.fat; });
+
+    var leanMin = Math.min.apply(null, leanValues);
+    var leanMax = Math.max.apply(null, leanValues);
+    var fatMin = Math.min.apply(null, fatValues);
+    var fatMax = Math.max.apply(null, fatValues);
+
+    var leanTicks = niceRange(leanMin - 1, leanMax + 1, 4);
+    var fatTicks = niceRange(fatMin - 1, fatMax + 1, 4);
+
+    var xScale = scaleLinear(0, points.length - 1, pad.left, W - pad.right);
+    var yLean = scaleLinear(leanTicks[0], leanTicks[leanTicks.length - 1], H - pad.bottom, pad.top);
+    var yFat = scaleLinear(fatTicks[0], fatTicks[fatTicks.length - 1], H - pad.bottom, pad.top);
+
+    var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
+
+    parts.push('<text x="' + (W/2) + '" y="16" text-anchor="middle" font-size="12" font-weight="600" fill="#0f3460">Lean Mass + Fat Mass over time</text>');
+
+    leanTicks.forEach(function(t) {
+      var y = yLean(t);
+      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 9, fill: '#2e7d32' }));
+    });
+
+    fatTicks.forEach(function(t) {
+      var y = yFat(t);
+      parts.push(svgLabel(W - pad.right + 6, y, t, { anchor: 'start', size: 9, fill: '#e94560' }));
+    });
+
+    parts.push('<text x="10" y="' + (pad.top - 10) + '" font-size="9" fill="#2e7d32" font-weight="600">Lean (lb)</text>');
+    parts.push('<text x="' + (W - 45) + '" y="' + (pad.top - 10) + '" font-size="9" fill="#e94560" font-weight="600">Fat (lb)</text>');
+
+    var leanPts = points.map(function(p, i) { return [xScale(i), yLean(p.lean)]; });
+    var leanLabels = points.map(function(p) { return p.date + ': ' + p.lean + ' lb lean'; });
+    parts.push(svgLine(leanPts, '#2e7d32'));
+    parts.push(svgDots(leanPts, '#2e7d32', 4, leanLabels));
+
+    var fatPts = points.map(function(p, i) { return [xScale(i), yFat(p.fat)]; });
+    var fatLabels = points.map(function(p) { return p.date + ': ' + p.fat + ' lb fat'; });
+    parts.push(svgLine(fatPts, '#e94560'));
+    parts.push(svgDots(fatPts, '#e94560', 4, fatLabels));
+
+    points.forEach(function(p, i) {
+      var d = new Date(p.date + 'T00:00:00');
+      var label = (d.getMonth() + 1) + '/' + d.getDate();
+      parts.push(svgLabel(xScale(i), H - pad.bottom + 14, label, { size: 9 }));
+    });
+
+    parts.push('</svg>');
+
+    var first = points[0];
+    var last = points[points.length - 1];
+    var leanDelta = (last.lean - first.lean).toFixed(1);
+    var fatDelta = (last.fat - first.fat).toFixed(1);
+    var leanDeltaStr = (leanDelta >= 0 ? '+' : '') + leanDelta;
+    var fatDeltaStr = (fatDelta >= 0 ? '+' : '') + fatDelta;
+    var leanColor = leanDelta >= 0 ? 'var(--success)' : 'var(--warning)';
+    var fatColor = fatDelta <= 0 ? 'var(--success)' : 'var(--warning)';
+
+    var summaryHTML =
+      '<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.85rem;margin-top:0.5rem;">' +
+        '<div><strong>From ' + first.date + ' to ' + last.date + ' (' + points.length + ' readings):</strong></div>' +
+        '<div>Lean: ' + first.lean + ' &rarr; ' + last.lean + ' lb <span style="color:' + leanColor + ';font-weight:600;">(' + leanDeltaStr + ' lb)</span></div>' +
+        '<div>Fat: ' + first.fat + ' &rarr; ' + last.fat + ' lb <span style="color:' + fatColor + ';font-weight:600;">(' + fatDeltaStr + ' lb)</span></div>' +
+      '</div>';
+
+    mount.insertAdjacentHTML('beforeend',
+      '<div class="chart-container" style="margin-top:1rem;">' + parts.join('') + summaryHTML +
+        '<div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;">Calculated from weight &times; BF%. Only plots dates where both metrics are logged. BIA scale fat percentages have ~2-4% typical variance per knowledge/body-composition-measurement.md; trend direction matters more than any single reading.</div>' +
+      '</div>');
   })();
 
 })();

@@ -422,6 +422,14 @@
       "duration": "2 hr",
       "intensity": "medium",
       "notes": "Non-programmed activity: digging holes + weeding (standing and squatting). Real lower-body load from shoveling/hip-hinge + 2 hours of intermittent unloaded squats. Functionally closer to a loaded carry + low-intensity squat session than passive yardwork. Estimated 500-700 cal expenditure given lower-body involvement. Adds meaningful posterior-chain and quad fatigue on top of morning basketball eccentric load."
+    },
+    {
+      "date": "2026-04-21",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "high",
+      "notes": "Week 7 Day 3 Tue PM game. Shorter than typical 40-50 min session - reduced total sport load this week. Combined with single-game Sunday, total Week 7 sport minutes are about half a normal week. Good for Wed TB DL recovery."
     }
   ],
   "scienceReviews": [
@@ -459,7 +467,7 @@
     { "date": "2026-04-18", "weight": 225.8, "bodyFatPct": 24.4, "proteinGrams": 159, "calories": 2820, "notes": "AM weigh-in 225.8/24.4%. +4.0 lbs and +1.0 pt BF vs Apr 15 - acute spike from high-sodium week + glycogen repletion post-Apr 17 training + high-carb dinner. Not a real body-comp change. Breakfast: Nómade breakfast burrito (~700cal/32g estimate). Lunch: 2 boneless skinless chicken thighs (~340cal/50g), 1.5 russet potatoes with olive oil (~366cal/6.5g), 1/4 cup shredded cheese (~113cal/7g), 1 slice bacon (~43cal/3g) = ~860cal/67g. Dinner: half of homemade 5-cheese tortellini dish (Costco tortellini + 2 tbsp butter + 1/2 cup white wine + 1/2 cup parmesan + 3 slices bacon, half portion eaten) = ~1,260cal/60g. Final: 159g/2,820cal." },
     { "date": "2026-04-19", "proteinGrams": 236, "calories": 3900, "sleepHours": 8, "notes": "Sleep 8h. Pre-game Clif Builder Bar (~20g/270cal). Indoor basketball 50 min high intensity, achilles 1-2/10 AM / 0-1/10 during play (green per Silbernagel). 2hr medium-intensity yardwork (digging + squatting, real lower-body load). Lunch: 18-inch Italian hero + Coke (~110g/2,140cal, ~5,500-7,500mg sodium). Dinner: homemade quesadilla (2 medium Costco tortillas, 3 BLSS chicken thighs, 2/3 cup shredded cheese, 2 tbsp oil) = ~106g/1,490cal. Final: 236g/3,900cal. High-activity high-intake day." },
     { "date": "2026-04-20", "weight": 224.9, "bodyFatPct": 24.1, "proteinGrams": 244, "calories": 2440, "notes": "AM weigh-in 224.9/24.1%. AM achilles 1-2/10 resolving with warmup (green per Silbernagel, 24h rule met). Breakfast: shake without granola, with yogurt (~86g/570cal). Lunch: turkey sandwich + mozzarella + 2 servings Old Thyme pretzels (~61g/810cal). Dinner: 2 slices golden wheat bread + 2 slices mozzarella + 2 BLSS chicken thighs (~70g/720cal). Extra: 1 additional BLSS chicken thigh (~25g/170cal) + 1 Its-It mini vanilla (~2g/170cal) = ~27g/340cal. Final: 244g/2,440cal. Lands at top of revised Mon anchor day target (2,300-2,500 per Option B). Restaurant meals this week: 0/3." },
-    { "date": "2026-04-21", "weight": 223.8, "bodyFatPct": 23.8, "proteinGrams": 129, "calories": 1085, "notes": "AM weigh-in 223.8/23.8% - down 1.1 lb / 0.3 pt BF from Apr 20. AM achilles 1-2/10 pain and stiffness (consistent baseline, green per Silbernagel). Tue basketball PM 6pm today (game day, eat at maintenance ~2,800 per Option B). Breakfast: default shake without granola with yogurt (~86g/590cal). Lunch: 5.5oz BLSS chicken thigh (~265cal/39g) + 1 cup Ritika's Global Grains organic cilantro lime rice (~230cal/4g) = ~495cal/43g. Running: 129g/1,085cal. Pre-game lunch profile: carb-forward (45g carbs), moderate lean protein, low fat (~11g), low fiber (3g). Ideal 4-5 hour pre-game meal." }
+    { "date": "2026-04-21", "weight": 223.8, "bodyFatPct": 23.8, "proteinGrams": 170, "calories": 1925, "notes": "AM weigh-in 223.8/23.8%. AM achilles 1-2/10 (green per Silbernagel). Breakfast: default shake without granola with yogurt (~86g/590cal). Lunch: 5.5oz BLSS chicken thigh + 1 cup Ritika's cilantro lime rice (~43g/495cal). Pre-game: Clif Builder Bar (~20g/270cal). Post-game: 1.5 pints light beer (~195cal/1g) + 3 buffalo wings (~280cal/18g) + 10 french fries (~100cal/2g) = ~575cal/21g. Final: 170g/1,925cal." }
   ],
   "modifiedWeeks": {
     "4": {

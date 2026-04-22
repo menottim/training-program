@@ -186,6 +186,19 @@ After logging, review recent trends and surface observations:
 - Any program adjustments worth considering
 - __Progress against `athlete.nutritionGoals`__: on Mon, Thu, or Sat (moderate-deficit anchor days), check calorie tracking against the 2,300-2,500 target and flag if trending high. When a restaurant meal is logged, note how many restaurant meals have occurred in the calendar week and flag if approaching or exceeding 3. Do not be preachy about this - a factual one-liner is enough.
 
+## Keep the website in sync with real-time coaching
+
+__Core principle__: the live site at https://menottim.github.io/training-program/ must reflect current coaching adjustments, not stale defaults. Whenever a coaching conversation produces a session-level change (e.g., "TB DL 5x5 at 230 this Wed as a stall-breaker" or "skip the deload this week"), capture that change in `data.json` so the renderer picks it up.
+
+__How to capture__:
+1. For the current training week, use `modifiedWeeks[<week>]` with a __full 7-day schedule__ in the `schedule` array (not just the one day that differs). The renderer replaces the default week-grid with this schedule, so partial schedules leave blank days visible on the site.
+2. For session-level adjustments within a day (specific weight, rep scheme change, added/removed exercise), include the exercises array with current target weights.
+3. For nutrition-goal adjustments (e.g., moving an anchor day), update `athlete.nutritionGoals`.
+4. For supplement or clinical-workup changes, update `athlete.dailySupplements` / `athlete.clinicalWorkupAsks`.
+5. After updating data.json, commit and push. GitHub Pages will rebuild within ~2 minutes.
+
+__When to update__: during any coaching conversation that produces a change the user will execute on. Do not wait until the work is done to log it - capture the plan before execution so the site shows intent, then update notes after execution.
+
 ## Modified Weeks (`modifiedWeeks` in data.json)
 
 When a week has a non-standard schedule (travel, injury, etc.), add it to the `modifiedWeeks` object in data.json. The key is the week number as a string.

@@ -614,12 +614,60 @@
       ]
     },
     "7": {
-      "label": "Single-Game Sunday",
-      "reason": "Basketball only Sunday Apr 19 — no hockey this week. Reduces systemic load; standard lifting schedule otherwise.",
+      "label": "Single-Game Sunday + Stall-Breaker Wed",
+      "reason": "Single-game Sunday (basketball only, no hockey - logged). Wed TB DL is the 5x5 at 230 volume-before-intensity session to break the 5-week stall. Option B deficit anchors on Mon/Thu/Sat.",
       "schedule": [
         {
           "day": "Sun", "date": "2026-04-19", "type": "game",
-          "desc": "Basketball only (no hockey)"
+          "desc": "Basketball only, no hockey (logged: 50 min high intensity, achilles 0-1/10)"
+        },
+        {
+          "day": "Mon", "date": "2026-04-20", "type": "rest",
+          "desc": "Recovery + deficit anchor (Option B). No lifting. Target 2,300-2,500 cal. (Logged: 244g/2,440cal, in target)."
+        },
+        {
+          "day": "Tue", "date": "2026-04-21", "type": "game",
+          "desc": "Basketball PM (logged: 20 min high intensity, achilles 0/10 during, achilles 0-1/10 AM today). Maintenance ~2,800 cal."
+        },
+        {
+          "day": "Wed", "date": "2026-04-22", "type": "training",
+          "desc": "Lower Body (Heavy) - STALL-BREAKER SESSION",
+          "exercises": [
+            { "name": "Trap Bar Deadlift", "sets": "5x5", "weight": "230 lbs", "notes": "Volume-before-intensity (5th set added at same weight). Breaks 5-week stall per CLAUDE.md Section 1 progression rules. RPE target <=7 on all sets." },
+            { "name": "Back Squat", "sets": "3x5", "weight": "145 lbs", "notes": "+5 lbs if last 140 session felt RPE <=7" },
+            { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "progression per feel (20+ lb DBs)" },
+            { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "30+ lb DBs per progression" },
+            { "name": "Seated Calf Raise (HSR)", "sets": "3x per progression", "weight": "~150 lbs", "notes": "Progressive per Beyer 2015, current phase ~10-8RM" }
+          ]
+        },
+        {
+          "day": "Thu", "date": "2026-04-23", "type": "training",
+          "desc": "Upper Body + Core + Deficit Anchor (Option B)",
+          "exercises": [
+            { "name": "Bench Press", "sets": "4x5", "weight": "142.5 lbs", "notes": "+2.5 lbs microload from 140 per progression. Calorie target 2,300-2,500." },
+            { "name": "Lat Pulldown", "sets": "4x6", "weight": "142.5 lbs" },
+            { "name": "Bent Over Barbell Row", "sets": "4x6", "weight": "142.5 lbs" },
+            { "name": "DB Overhead Press", "sets": "3x8", "weight": "30 lbs (hold)" },
+            { "name": "Face Pull", "sets": "3x15", "weight": "cable" },
+            { "name": "Pallof Press", "sets": "3x10/side", "weight": "cable" },
+            { "name": "Cable Woodchop", "sets": "3x6/side", "weight": "cable" }
+          ]
+        },
+        {
+          "day": "Fri", "date": "2026-04-24", "type": "training",
+          "desc": "Lower Moderate + Movement Quality + Science Review due",
+          "exercises": [
+            { "name": "Goblet Squat", "sets": "3x10", "weight": "30 lbs" },
+            { "name": "Hip Thrust", "sets": "3x10", "weight": "bar + plates per feel" },
+            { "name": "Lateral Band Walk", "sets": "3x12/dir", "weight": "band" },
+            { "name": "Single-Leg Balance", "sets": "2x30s/leg" },
+            { "name": "Standing Calf Raise (HSR)", "sets": "3x per progression", "weight": "slow tempo" },
+            { "name": "Banded Ankle Dorsiflexion", "sets": "2x10/side" }
+          ]
+        },
+        {
+          "day": "Sat", "date": "2026-04-25", "type": "rest",
+          "desc": "Pre-game prep + deficit anchor (Option B). Light dynamic warmup, mobility, glute activation. Target 2,300-2,500 cal."
         }
       ]
     }

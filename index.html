@@ -1238,6 +1238,12 @@
   48+ hours between heavy training and games. Wednesday is furthest from all games. Friday is deliberately the lightest session (~36 hrs before Sunday AM).
 </div>
 
+<!-- Today's Coaching Snapshot (day type, goals, plan) -->
+<div id="today-coaching-mount"></div>
+
+<!-- Nutrition Goals Progress (this week vs Option B targets) -->
+<div id="nutrition-progress-mount"></div>
+
 <!-- Modified Week Plan (rendered from data.json when active) -->
 <div id="modified-week-mount"></div>
 
@@ -1557,6 +1563,13 @@
 
 <!-- Body Composition Trend Chart -->
 <div id="body-chart-mount"></div>
+
+<!-- SUPPLEMENTS + LABS + CLINICAL WORKUP -->
+<h2 id="supplements-labs">&#128137; Supplements, Labs &amp; Workup</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Detailed evidence-backed reviews live in the <a href="https://github.com/menottim/training-program/tree/main/knowledge" target="_blank"><code>knowledge/</code></a> directory. This panel surfaces the live state from <code>data.json</code>.</p>
+<div id="supplements-mount"></div>
+<div id="hormone-labs-mount"></div>
+<div id="clinical-workup-mount"></div>
 
 <!-- DELOAD -->
 <h2 id="deload">&#128260; Deload Protocol</h2>
@@ -3409,6 +3422,258 @@
           '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = 7h target</span>' +
         '</div>' +
       '</div>');
+  })();
+
+
+  // --- Today's Coaching Snapshot ---
+  (function todaysCoaching() {
+    var mount = document.getElementById('today-coaching-mount');
+    if (!mount) return;
+
+    var today = new Date();
+    var todayStr = today.toISOString().slice(0,10);
+    var dayOfWeek = today.getDay();
+    var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+    var goalsObj = (data.athlete && data.athlete.nutritionGoals) ? data.athlete.nutritionGoals : null;
+    var anchorDays = [];
+    if (goalsObj && goalsObj.goals) {
+      goalsObj.goals.forEach(function(g) {
+        if (g.anchorDays) anchorDays = anchorDays.concat(g.anchorDays);
+      });
+    }
+    var isAnchor = anchorDays.indexOf(dayNames[dayOfWeek]) >= 0;
+
+    var scheduleType, calorieTarget, planSummary;
+    if (dayOfWeek === 0) { scheduleType = 'Sport (Basketball AM' + (weekNum !== 7 ? ' + Hockey PM' : '') + ')'; calorieTarget = '~3,000 (game day maintenance)'; planSummary = 'Play games. Hydrate. No lifting.'; }
+    else if (dayOfWeek === 1) { scheduleType = 'Recovery + Deficit Anchor'; calorieTarget = '2,300-2,500 (deficit day)'; planSummary = 'Low-intensity cardio, foam roll, HSR optional. No lifting.'; }
+    else if (dayOfWeek === 2) { scheduleType = 'Sport (Basketball PM)'; calorieTarget = '~2,800 (game day maintenance)'; planSummary = 'Prep, play basketball evening.'; }
+    else if (dayOfWeek === 3) { scheduleType = 'Training: Lower Body (Heavy)'; calorieTarget = '~3,000 (training maintenance)'; planSummary = 'TB DL primary, Back Squat, BSS, SLRDL, HSR. Heaviest session.'; }
+    else if (dayOfWeek === 4) { scheduleType = 'Training: Upper Body + Deficit Anchor'; calorieTarget = '2,300-2,500 (deficit day)'; planSummary = 'BB Bench, Pulldown, Row, OHP, Face Pull, core.'; }
+    else if (dayOfWeek === 5) { scheduleType = 'Training: Lower Moderate + Mobility'; calorieTarget = '~2,700'; planSummary = 'Goblet squat, hip thrust, lateral band walk, HSR, mobility.'; }
+    else if (dayOfWeek === 6) { scheduleType = 'Pre-Game Prep + Deficit Anchor'; calorieTarget = '2,300-2,500 (deficit day)'; planSummary = 'Light dynamic warmup, ankle mobility, glute activation.'; }
+
+    var phaseTransitionStr = '';
+    if (weekNum < 9) {
+      var weeksToPhase2 = 9 - weekNum;
+      phaseTransitionStr = ' &middot; <span style="color:var(--accent2);">Phase 1&rarr;2 in ' + weeksToPhase2 + ' week' + (weeksToPhase2 > 1 ? 's' : '') + '</span>';
+    } else if (weekNum < 15) {
+      phaseTransitionStr = ' &middot; <span style="color:var(--accent2);">Phase 2</span>';
+    }
+
+    var thisWeekSport = 0, thisWeekTraining = 0;
+    activityLog.forEach(function(e) {
+      var ew = Math.max(1, Math.ceil((calendarDays(startDate, new Date(e.date + 'T00:00:00')) + 1) / 7));
+      if (ew !== weekNum) return;
+      if (e.type === 'game') thisWeekSport++;
+      if (e.type === 'training') thisWeekTraining++;
+    });
+
+    var recentAchilles = [];
+    activityLog.slice().reverse().forEach(function(e) {
+      if (e.achillesPain != null && recentAchilles.length < 3) {
+        recentAchilles.push({date: e.date, pain: e.achillesPain});
+      }
+    });
+    var achillesHTML = recentAchilles.length > 0
+      ? recentAchilles.reverse().map(function(a) { return a.pain + '/10'; }).join(' &rarr; ')
+      : 'no recent data';
+
+    var html =
+      '<div class="info-box" style="background:linear-gradient(135deg, rgba(76,175,80,0.08), rgba(33,150,243,0.08)); border-left-color:var(--accent2);">' +
+        '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">' +
+          '<strong>Today: ' + dayNames[dayOfWeek] + ' &middot; ' + todayStr + '</strong>' +
+          '<span style="font-size:0.8rem;color:var(--text-muted);">Week ' + weekNum + ' / Phase ' + phase + phaseTransitionStr + '</span>' +
+        '</div>' +
+        '<div style="margin-top:0.75rem;font-size:0.9rem;">' +
+          '<strong>Day type:</strong> ' + scheduleType + (isAnchor ? ' <span style="color:var(--warning);font-size:0.75rem;font-weight:bold;margin-left:0.25rem;">&#9679; DEFICIT ANCHOR</span>' : '') +
+        '</div>' +
+        '<div style="margin-top:0.25rem;font-size:0.9rem;">' +
+          '<strong>Calorie target:</strong> ' + calorieTarget +
+        '</div>' +
+        '<div style="margin-top:0.25rem;font-size:0.85rem;color:var(--text-muted);">' +
+          planSummary +
+        '</div>' +
+        '<div style="margin-top:0.5rem;font-size:0.8rem;color:var(--text-muted);display:flex;gap:1rem;flex-wrap:wrap;">' +
+          '<span>Sport this week: <strong>' + thisWeekSport + '</strong></span>' +
+          '<span>Training: <strong>' + thisWeekTraining + '</strong></span>' +
+          '<span>Recent achilles: <strong>' + achillesHTML + '</strong></span>' +
+        '</div>' +
+      '</div>';
+    mount.innerHTML = html;
+  })();
+
+  // --- Nutrition Goals Progress Tracker ---
+  (function nutritionProgress() {
+    var mount = document.getElementById('nutrition-progress-mount');
+    if (!mount) return;
+    var goalsObj = (data.athlete && data.athlete.nutritionGoals) ? data.athlete.nutritionGoals : null;
+    if (!goalsObj || !goalsObj.goals) return;
+
+    var today = new Date();
+    var dayOfWeek = today.getDay();
+    var sundayDate = new Date(today);
+    sundayDate.setDate(today.getDate() - dayOfWeek);
+    var weekDates = [];
+    for (var i = 0; i < 7; i++) {
+      var d = new Date(sundayDate);
+      d.setDate(sundayDate.getDate() + i);
+      weekDates.push(d.toISOString().slice(0,10));
+    }
+
+    var dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var anchorIdx = [1, 4, 6];
+
+    var bodyByDate = {};
+    bodyLog.forEach(function(b) { bodyByDate[b.date] = b; });
+
+    var anchorRowsHTML = anchorIdx.map(function(di) {
+      var dateStr = weekDates[di];
+      var dayName = dayNames[di];
+      var b = bodyByDate[dateStr];
+      var cal = (b && b.calories != null) ? b.calories : null;
+      var isFuture = new Date(dateStr + 'T23:59:59') > today;
+      var status, statusColor;
+      if (isFuture && !cal) { status = 'upcoming'; statusColor = 'var(--text-muted)'; }
+      else if (!cal) { status = 'no data'; statusColor = 'var(--warning)'; }
+      else if (cal >= 2300 && cal <= 2500) { status = 'on target'; statusColor = 'var(--success)'; }
+      else if (cal < 2300) { status = 'under target'; statusColor = 'var(--accent2)'; }
+      else { status = 'over target (+' + (cal - 2500) + ')'; statusColor = 'var(--warning)'; }
+      return '<tr>' +
+        '<td>' + dayName + ' ' + dateStr.slice(5) + '</td>' +
+        '<td>' + (cal != null ? cal + ' cal' : '-') + '</td>' +
+        '<td style="color:' + statusColor + ';font-weight:500;">' + status + '</td>' +
+      '</tr>';
+    }).join('');
+
+    var restaurantKeywords = /panda express|chick & hawk|chick and hawk|in-n-out|mcdonald|taco bell|chipotle|galley|crack taco|el pueblo|restaurant|nomade|n[oó]made|jojo|cardiff|1\.5 pints|buffalo wings|hero sandwich/i;
+    var restaurantMealsThisWeek = 0;
+    var restaurantDetails = [];
+    bodyLog.forEach(function(b) {
+      if (weekDates.indexOf(b.date) < 0) return;
+      if (b.notes && restaurantKeywords.test(b.notes)) {
+        restaurantMealsThisWeek++;
+        restaurantDetails.push(b.date.slice(5));
+      }
+    });
+
+    var anchorsHit = 0;
+    anchorIdx.forEach(function(di) {
+      var dateStr = weekDates[di];
+      var b = bodyByDate[dateStr];
+      if (b && b.calories != null && b.calories <= 2500) anchorsHit++;
+    });
+
+    var restaurantColor = restaurantMealsThisWeek <= 3 ? 'var(--success)' : 'var(--warning)';
+
+    mount.innerHTML =
+      '<h3 style="margin-top:1.5rem;">&#127869; Nutrition Goals (Option B)</h3>' +
+      '<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Week of ' + weekDates[0].slice(5) + ' &ndash; ' + weekDates[6].slice(5) + ' &middot; 3 deficit days at 2,300-2,500 + &le;3 restaurant meals.</p>' +
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:0.75rem;">' +
+        '<div class="info-box" style="margin:0;background:rgba(33,150,243,0.04);">' +
+          '<strong>Deficit-anchor compliance: ' + anchorsHit + ' / 3 hit</strong>' +
+          '<table style="margin-top:0.5rem;font-size:0.85rem;"><tbody>' + anchorRowsHTML + '</tbody></table>' +
+        '</div>' +
+        '<div class="info-box" style="margin:0;background:rgba(33,150,243,0.04);">' +
+          '<strong style="color:' + restaurantColor + ';">Restaurant meals: ' + restaurantMealsThisWeek + ' / 3</strong>' +
+          '<div style="font-size:0.85rem;margin-top:0.5rem;">' +
+            (restaurantDetails.length > 0 ? 'Dates: ' + restaurantDetails.join(', ') : 'None yet this week.') +
+          '</div>' +
+          '<div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;">Evidence: Hall 2019 Cell Metab; ISSN 2017.</div>' +
+        '</div>' +
+      '</div>';
+  })();
+
+  // --- Supplements, Hormone Labs & Clinical Workup ---
+  (function supplementsAndLabs() {
+    var athleteData = data.athlete || {};
+
+    var supsMount = document.getElementById('supplements-mount');
+    if (supsMount && athleteData.dailySupplements) {
+      var supsRows = athleteData.dailySupplements.map(function(s) {
+        return '<tr>' +
+          '<td><strong>' + esc(s.name) + '</strong></td>' +
+          '<td>' + esc(s.dose) + '</td>' +
+          '<td style="font-size:0.8rem;color:var(--text-muted);">' + esc(s.evidenceTier) + '</td>' +
+        '</tr>';
+      }).join('');
+      var recipesHTML = '';
+      if (athleteData.defaultShakeRecipes) {
+        recipesHTML = '<h4 style="margin-top:1rem;">Default shake variants (all include 5g creatine + 5g psyllium)</h4>' +
+          '<table style="font-size:0.85rem;"><thead><tr><th>Variant</th><th>Macros</th><th>Ingredients</th></tr></thead><tbody>';
+        Object.keys(athleteData.defaultShakeRecipes).forEach(function(k) {
+          var r = athleteData.defaultShakeRecipes[k];
+          recipesHTML += '<tr><td><strong>' + esc(k) + '</strong></td><td>' + esc(r.approxMacros) + '</td><td style="font-size:0.8rem;">' + esc(r.ingredients) + '</td></tr>';
+        });
+        recipesHTML += '</tbody></table>';
+      }
+      var bdHTML = '';
+      if (athleteData.bloodDonation) {
+        var bd = athleteData.bloodDonation;
+        bdHTML = '<div class="info-box" style="margin-top:1rem;"><strong>Blood donation context:</strong> ' +
+          esc(bd.type) + ', ' + esc(bd.frequency) + '. Iron loss per donation: ' + esc(bd.ironLossPerDonation) + ' (annual: ' + esc(bd.annualIronLoss) + '). This is why the iron supplement is clinically appropriate.</div>';
+      }
+      supsMount.innerHTML =
+        '<h3 style="margin-top:1rem;">Daily Supplement Stack</h3>' +
+        '<table style="font-size:0.9rem;"><thead><tr><th>Supplement</th><th>Dose</th><th>Evidence tier</th></tr></thead><tbody>' + supsRows + '</tbody></table>' +
+        bdHTML +
+        recipesHTML;
+    }
+
+    var hormMount = document.getElementById('hormone-labs-mount');
+    if (hormMount && athleteData.testosteroneHistory) {
+      var rowsHTML = athleteData.testosteroneHistory.map(function(h) {
+        var d = esc(h.date);
+        var time = h.collectionTime ? ' @ ' + esc(h.collectionTime) : '';
+        var t = h.totalTestosterone != null ? h.totalTestosterone + ' ng/dL' : '-';
+        var free = h.freeTestosterone != null ? h.freeTestosterone + ' pg/mL' : '-';
+        var shbg = h.shbg != null ? h.shbg + ' nmol/L' : '-';
+        var bio = h.bioavailableTestosterone != null ? h.bioavailableTestosterone + ' ng/dL' : '-';
+        var e2 = h.estradiol != null ? h.estradiol + ' pg/mL' : '-';
+        var prl = h.prolactin != null ? h.prolactin + ' ng/mL' : '-';
+        var flagCount = 0;
+        ['totalTestosteroneFlag','shbgFlag','freeTestosteroneFlag','bioavailableTestosteroneFlag','estradiolFlag'].forEach(function(k) {
+          if (h[k] && /elevated|low|borderline|above|below|floor/i.test(h[k])) flagCount++;
+        });
+        var flagDot = flagCount > 0 ? '<span style="color:var(--warning);"> &#9679;</span>' : '';
+        return '<tr>' +
+          '<td>' + d + time + flagDot + '</td>' +
+          '<td>' + t + '</td>' +
+          '<td>' + free + '</td>' +
+          '<td>' + shbg + '</td>' +
+          '<td>' + bio + '</td>' +
+          '<td>' + e2 + '</td>' +
+          '<td>' + prl + '</td>' +
+        '</tr>';
+      }).join('');
+      var latestHormone = athleteData.testosteroneHistory[athleteData.testosteroneHistory.length - 1];
+      var latestNotes = latestHormone && latestHormone.notes ? latestHormone.notes : '';
+      hormMount.innerHTML =
+        '<h3 style="margin-top:1.5rem;">Hormone Lab History</h3>' +
+        '<p style="font-size:0.85rem;color:var(--text-muted);">Detailed interpretation in <a href="https://github.com/menottim/training-program/blob/main/knowledge/hormones-testosterone.md" target="_blank">knowledge/hormones-testosterone.md</a>.</p>' +
+        '<div style="overflow-x:auto;"><table style="font-size:0.85rem;min-width:640px;"><thead><tr><th>Date</th><th>Total T</th><th>Free T</th><th>SHBG</th><th>Bioavail T</th><th>E2</th><th>Prolactin</th></tr></thead><tbody>' + rowsHTML + '</tbody></table></div>' +
+        (latestNotes ? '<div class="info-box warning" style="margin-top:0.75rem;"><strong>Latest panel interpretation:</strong><br>' + esc(latestNotes) + '</div>' : '');
+    }
+
+    var cwMount = document.getElementById('clinical-workup-mount');
+    if (cwMount && athleteData.clinicalWorkupAsks) {
+      var cw = athleteData.clinicalWorkupAsks;
+      function renderAskList(title, list) {
+        if (!list || list.length === 0) return '';
+        var rows = list.map(function(item) {
+          return '<tr><td><strong>' + esc(item.test) + '</strong></td><td style="font-size:0.8rem;">' + esc(item.reason) + '</td></tr>';
+        }).join('');
+        return '<h4 style="margin-top:0.75rem;">' + title + '</h4>' +
+          '<table style="font-size:0.85rem;"><tbody>' + rows + '</tbody></table>';
+      }
+      cwMount.innerHTML =
+        '<h3 style="margin-top:1.5rem;">Outstanding Clinical Workup Asks</h3>' +
+        '<p style="font-size:0.85rem;color:var(--text-muted);">' + esc(cw.nextPhysicianVisit || 'Labs to request at next physician visit') + '</p>' +
+        renderAskList('Required', cw.required || []) +
+        renderAskList('Recommended', cw.recommended || []) +
+        renderAskList('Recommended (from July 2025 panel follow-up)', cw.recommendedFollowUpFromJuly2025Panel || []) +
+        renderAskList('Optional', cw.optional || []);
+    }
   })();
 
 })();

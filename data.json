@@ -429,7 +429,8 @@
       "activity": "Basketball",
       "duration": "20 min",
       "intensity": "high",
-      "notes": "Week 7 Day 3 Tue PM game. Shorter than typical 40-50 min session - reduced total sport load this week. Combined with single-game Sunday, total Week 7 sport minutes are about half a normal week. Good for Wed TB DL recovery."
+      "achillesPain": 0,
+      "notes": "Week 7 Day 3 Tue PM game. Shorter than typical 40-50 min session - reduced total sport load this week. Combined with single-game Sunday, total Week 7 sport minutes are about half a normal week. Good for Wed TB DL recovery. Achilles 0/10 pain during/after - green, best reading of recent week."
     }
   ],
   "scienceReviews": [

@@ -436,14 +436,15 @@
       "date": "2026-04-22",
       "type": "training",
       "activity": "Lower Body (Wed Phase 1)",
+      "sleepHours": 6,
       "exercises": [
         { "name": "Trap Bar Deadlift", "sets": "5x5", "weight": "230 lbs" },
-        { "name": "Back Squat", "sets": "3x5", "weight": "145 lbs" },
+        { "name": "Back Squat", "sets": "3x5", "weight": "145 lbs", "notes": "RPE 7" },
         { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "20 lbs DBs" },
         { "name": "Single Leg RDL", "sets": "3x8/leg", "weight": "30 lbs DBs" },
         { "name": "Seated Calf Raise HSR", "sets": "3x6", "weight": "150 lbs" }
       ],
-      "notes": "Week 7 Wed Lower Body. STALL BREAKER HIT: TB DL 5x5 @ 230 completed — 5 full training weeks stuck at 4x5 @ 230 (travel + deload absorbed middle); added 5th set strategy from Week 6 science review delivered. Next session: microload to 232.5 or progress to 235. Back Squat 140→145 (+5 lbs, on pace). BSS 20 lb DBs and SLRDL 30 lb DBs both held steady at RPE 7+. HSR 150 lb at 3x6 tracks Beyer protocol Week 9-12 range (6RM phase). Pre-lift Clif Builder Bar (~20g/280cal). Light sport volume this week (Sun 50min + Tue 20min = ~70min total vs ~120min typical) helped Wed lower-body readiness. Achilles pain not reported — will ask."
+      "notes": "Week 7 Wed Lower Body. STALL BREAKER HIT: TB DL 5x5 @ 230 completed — 5 full training weeks stuck at 4x5 @ 230 (travel + deload absorbed middle); added 5th set strategy from Week 6 science review delivered. Back Squat 140→145 at RPE 7 (Phase 1 target), cues Back Squat +5 → 150 next Wed per double-progression. BSS 20 lb DBs and SLRDL 30 lb DBs held steady. HSR 150 lb at 3x6 tracks Beyer Week 9-12 range (6RM phase). Pre-lift Clif Builder Bar (~20g/280cal). Light sport volume this week (Sun 50min + Tue 20min = ~70min total vs ~120min typical) helped Wed lower-body readiness. Sleep last night ~6 hours with disturbance (below 7.5-9 target) - single night, not a reactive-deload trigger (Section 2 requires 3+ consecutive <6hr nights; one night at 6hr is borderline). Watch sleep pattern over Wed-Fri. Next Wed plan (per user): TB DL 4x5 @ 235 (microload from broken stall, conservative +5 lb pickup), Back Squat 3x5 @ 150."
     }
   ],
   "scienceReviews": [
@@ -681,6 +682,65 @@
         {
           "day": "Sat", "date": "2026-04-25", "type": "rest",
           "desc": "Pre-game prep + deficit anchor (Option B). Light dynamic warmup, mobility, glute activation. Target 2,300-2,500 cal."
+        }
+      ]
+    },
+    "8": {
+      "label": "Scheduled Deload SKIPPED — Continue Phase 1",
+      "reason": "Coleman 2024 RCT (PMID 38274324) shows prophylactic deloads blunt strength gains when fatigue signals are absent. Week 7 readout: TB DL stall broken, Back Squat +5 at RPE 7, achilles 0-1/10 all week (best readings), accessories steady. 3/4 skip-criteria green (lifts progressing, RPE on target, achilles stable); sleep 1/4 yellow due to single 6-hr disturbance night Apr 21→22. Decision: skip deload, continue Phase 1 progression. Phase 1→2 transition still Week 9 (May 3) per original plan. If sleep <6hr recurs for 3+ consecutive nights this week, reactive deload triggers per Section 2.",
+      "schedule": [
+        {
+          "day": "Sun", "date": "2026-04-26", "type": "game",
+          "desc": "Basketball AM (typical ~40-50 min high intensity). Hockey PM if scheduled."
+        },
+        {
+          "day": "Mon", "date": "2026-04-27", "type": "rest",
+          "desc": "Recovery + Option B deficit anchor. Target 2,300-2,500 cal."
+        },
+        {
+          "day": "Tue", "date": "2026-04-28", "type": "game",
+          "desc": "Basketball PM. Maintenance ~2,800 cal."
+        },
+        {
+          "day": "Wed", "date": "2026-04-29", "type": "training",
+          "desc": "Lower Body — TB DL progression + Back Squat +5",
+          "exercises": [
+            { "name": "Trap Bar Deadlift", "sets": "4x5", "weight": "235 lbs", "notes": "+5 lb microload from broken 230 stall. Conservative pickup after 5-week plateau (standard Section 1 rule is +10 but +5 reduces re-stall risk). RPE target ≤7." },
+            { "name": "Back Squat", "sets": "3x5", "weight": "150 lbs", "notes": "+5 lbs from RPE 7 session Apr 22 per double-progression rule." },
+            { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "20 lb DBs (or 22.5 if RPE ≤7)" },
+            { "name": "Single-Leg RDL", "sets": "3x8/leg", "weight": "30 lb DBs (or 32.5 if RPE ≤7)" },
+            { "name": "Seated Calf Raise (HSR)", "sets": "3x6", "weight": "150 lbs or 155", "notes": "Beyer 6RM phase. Hold or micro-progress if <RPE 8." }
+          ]
+        },
+        {
+          "day": "Thu", "date": "2026-04-30", "type": "training",
+          "desc": "Upper Body + Core + Option B deficit anchor",
+          "exercises": [
+            { "name": "Bench Press", "sets": "4x5", "weight": "145 lbs", "notes": "+2.5 lb microload from 142.5 if Thu Apr 23 lands on target." },
+            { "name": "Lat Pulldown", "sets": "4x6", "weight": "145 lbs" },
+            { "name": "Bent Over Barbell Row", "sets": "4x6", "weight": "145 lbs" },
+            { "name": "DB Bench Press", "sets": "3x8", "weight": "accessory, light" },
+            { "name": "DB Overhead Press", "sets": "3x8", "weight": "30 or 32.5 lbs" },
+            { "name": "Face Pull", "sets": "3x15" },
+            { "name": "Pallof Press", "sets": "3x10/side" },
+            { "name": "Cable Woodchop", "sets": "3x6/side" }
+          ]
+        },
+        {
+          "day": "Fri", "date": "2026-05-01", "type": "training",
+          "desc": "Lower Moderate + Movement Quality",
+          "exercises": [
+            { "name": "Goblet Squat", "sets": "3x10", "weight": "30-35 lbs" },
+            { "name": "Hip Thrust", "sets": "3x10" },
+            { "name": "Lateral Band Walk", "sets": "3x12/dir" },
+            { "name": "Single-Leg Balance", "sets": "2x30s/leg" },
+            { "name": "Standing Calf Raise (HSR)", "sets": "3x6" },
+            { "name": "Banded Ankle Dorsiflexion", "sets": "2x10/side" }
+          ]
+        },
+        {
+          "day": "Sat", "date": "2026-05-02", "type": "rest",
+          "desc": "Pre-game prep + Option B deficit anchor. Target 2,300-2,500 cal. Last day of Phase 1 — Phase 2 starts Sun May 3."
         }
       ]
     }

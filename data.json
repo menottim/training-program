@@ -431,6 +431,19 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Week 7 Day 3 Tue PM game. Shorter than typical 40-50 min session - reduced total sport load this week. Combined with single-game Sunday, total Week 7 sport minutes are about half a normal week. Good for Wed TB DL recovery. Achilles 0/10 pain during/after - green, best reading of recent week."
+    },
+    {
+      "date": "2026-04-22",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 1)",
+      "exercises": [
+        { "name": "Trap Bar Deadlift", "sets": "5x5", "weight": "230 lbs" },
+        { "name": "Back Squat", "sets": "3x5", "weight": "145 lbs" },
+        { "name": "Bulgarian Split Squat", "sets": "3x8/leg", "weight": "20 lbs DBs" },
+        { "name": "Single Leg RDL", "sets": "3x8/leg", "weight": "30 lbs DBs" },
+        { "name": "Seated Calf Raise HSR", "sets": "3x6", "weight": "150 lbs" }
+      ],
+      "notes": "Week 7 Wed Lower Body. STALL BREAKER HIT: TB DL 5x5 @ 230 completed — 5 full training weeks stuck at 4x5 @ 230 (travel + deload absorbed middle); added 5th set strategy from Week 6 science review delivered. Next session: microload to 232.5 or progress to 235. Back Squat 140→145 (+5 lbs, on pace). BSS 20 lb DBs and SLRDL 30 lb DBs both held steady at RPE 7+. HSR 150 lb at 3x6 tracks Beyer protocol Week 9-12 range (6RM phase). Pre-lift Clif Builder Bar (~20g/280cal). Light sport volume this week (Sun 50min + Tue 20min = ~70min total vs ~120min typical) helped Wed lower-body readiness. Achilles pain not reported — will ask."
     }
   ],
   "scienceReviews": [
@@ -469,7 +482,7 @@
     { "date": "2026-04-19", "proteinGrams": 236, "calories": 3900, "sleepHours": 8, "notes": "Sleep 8h. Pre-game Clif Builder Bar (~20g/270cal). Indoor basketball 50 min high intensity, achilles 1-2/10 AM / 0-1/10 during play (green per Silbernagel). 2hr medium-intensity yardwork (digging + squatting, real lower-body load). Lunch: 18-inch Italian hero + Coke (~110g/2,140cal, ~5,500-7,500mg sodium). Dinner: homemade quesadilla (2 medium Costco tortillas, 3 BLSS chicken thighs, 2/3 cup shredded cheese, 2 tbsp oil) = ~106g/1,490cal. Final: 236g/3,900cal. High-activity high-intake day." },
     { "date": "2026-04-20", "weight": 224.9, "bodyFatPct": 24.1, "proteinGrams": 244, "calories": 2440, "notes": "AM weigh-in 224.9/24.1%. AM achilles 1-2/10 resolving with warmup (green per Silbernagel, 24h rule met). Breakfast: shake without granola, with yogurt (~86g/570cal). Lunch: turkey sandwich + mozzarella + 2 servings Old Thyme pretzels (~61g/810cal). Dinner: 2 slices golden wheat bread + 2 slices mozzarella + 2 BLSS chicken thighs (~70g/720cal). Extra: 1 additional BLSS chicken thigh (~25g/170cal) + 1 Its-It mini vanilla (~2g/170cal) = ~27g/340cal. Final: 244g/2,440cal. Lands at top of revised Mon anchor day target (2,300-2,500 per Option B). Restaurant meals this week: 0/3." },
     { "date": "2026-04-21", "weight": 223.8, "bodyFatPct": 23.8, "proteinGrams": 230, "calories": 2795, "notes": "AM weigh-in 223.8/23.8%. AM achilles 1-2/10. Basketball 20 min high intensity, achilles 0/10 during/after (best reading of the week). Breakfast: shake without granola with yogurt (~86g/590cal). Lunch: 5.5oz BLSS chicken thigh + 1 cup Ritika's cilantro lime rice (~43g/495cal). Pre-game: Clif Builder Bar (~20g/270cal). Post-game bar: 1.5 pints light beer + 3 buffalo wings + 10 french fries (~21g/575cal). Dinner: turkey sandwich (2 slices golden wheat bread + 2 slices mozzarella + 7 slices deli turkey) + 1 serving Old Thyme pretzels + 1 Its-It mini vanilla (~60g/870cal). Final: 230g/2,795cal - hit game-day maintenance target 2,800 almost exactly. Restaurant count this week: 1/3." },
-    { "date": "2026-04-22", "weight": 221.6, "bodyFatPct": 23.3, "proteinGrams": 139, "calories": 1260, "notes": "AM weigh-in 221.6/23.3% - below pre-weekend baseline, full weekend water/glycogen cleared. AM achilles 0-1/10 (green baseline continues). Breakfast: shake without granola with yogurt (~86g/590cal). Lunch: turkey sandwich (2 slices golden wheat bread, 6 oz deli turkey, 2 slices mozzarella) + 1 serving Old Thyme pretzels = ~53g/670cal. Running: 139g/1,260cal. Wed Lower Body training day - TB DL 5x5 @ 230 stall-breaker, Back Squat 3x5 @ 145, BSS + SLRDL + HSR. Target ~3,000 cal (training day maintenance, not an Option B deficit anchor)." }
+    { "date": "2026-04-22", "weight": 221.6, "bodyFatPct": 23.3, "proteinGrams": 159, "calories": 1540, "notes": "AM weigh-in 221.6/23.3% - below pre-weekend baseline, full weekend water/glycogen cleared. AM achilles 0-1/10 (green baseline continues). Breakfast: shake without granola with yogurt (~86g/590cal). Lunch: turkey sandwich (2 slices golden wheat bread, 6 oz deli turkey, 2 slices mozzarella) + 1 serving Old Thyme pretzels = ~53g/670cal. Pre-lift: Clif Builder Bar (~20g/280cal). Training: TB DL 5x5 @ 230 STALL BROKEN, Back Squat 3x5 @ 145 (+5 lbs), BSS 20 lb DBs, SLRDL 30 lb DBs, HSR 150 lb 3x6. Running: 159g/1,540cal. Rest-of-day budget: ~1,460 cal / 1-61g more protein to land 3,000 cal training-day target with 160-220g protein. Suggested dinner: 1,400-1,600 cal high-quality protein + carbs (post-lift glycogen reload window)." }
   ],
   "modifiedWeeks": {
     "4": {

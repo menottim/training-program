@@ -686,14 +686,14 @@
         },
         {
           "day": "Fri", "date": "2026-04-24", "type": "training",
-          "desc": "Lower Moderate + Movement Quality + Science Review due",
+          "desc": "Lower Moderate + Movement Quality. Recovery-pattern session timed ~36h pre-Sunday basketball. HOLD weights today — push-week workload already delivered (Wed TB DL stall-breaker + Thu upper body +5 across BB bench/pulldown/row). Session purpose: close 3rd of 3 Beyer HSR sessions + maintain movement quality, not chase PRs.",
           "exercises": [
-            { "name": "Goblet Squat", "sets": "3x10", "weight": "30 lbs" },
-            { "name": "Hip Thrust", "sets": "3x10", "weight": "bar + plates per feel" },
+            { "name": "Goblet Squat", "sets": "3x10", "weight": "30 lbs", "notes": "HOLD at 30 today. Eligible for +5 to 35 per double progression (30x10 clean on Apr 10 Week 5), but push-week CNS load argues for banking one more clean session. Advance to 35 first Friday post-deload or early Phase 2." },
+            { "name": "Hip Thrust (machine)", "sets": "3x10", "weight": "45-50 lbs", "notes": "Match last session RPE 6-7. Glute activation focus, not max load." },
             { "name": "Lateral Band Walk", "sets": "3x12/dir", "weight": "band" },
-            { "name": "Single-Leg Balance", "sets": "2x30s/leg" },
-            { "name": "Standing Calf Raise (HSR)", "sets": "3x per progression", "weight": "slow tempo" },
-            { "name": "Banded Ankle Dorsiflexion", "sets": "2x10/side" }
+            { "name": "Single-Leg Balance", "sets": "2x30s/leg", "weight": "BW" },
+            { "name": "Standing Calf Raise (HSR)", "sets": "3x6", "weight": "RPE 7 at ~6RM load", "notes": "3rd of 3 Beyer HSR sessions this week (Wed seated @150 was #2). Standing shifts bias to gastroc (knee straight) vs seated soleus (bent knee). Tempo 3s concentric / 3s eccentric. Add DB or plate if single-leg BW is too easy. Pain-monitor per Silbernagel: 0-3/10 green (continue), 4-5/10 hold load (no increase), >5/10 stop and reduce 25% next session." },
+            { "name": "Banded Ankle Dorsiflexion", "sets": "2x10/side", "weight": "band" }
           ]
         },
         {

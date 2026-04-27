@@ -86,10 +86,10 @@ Parse the user's message for:
 
 __Default shake recipes__ (see `athlete.defaultShakeRecipes` in data.json for full ingredient lists and macros): all shakes contain __5g creatine monohydrate + 5g psyllium husk powder + 1 scoop Momentous Collagen Peptides (15g collagen + 50mg vit C, FORTIGEL formulation)__ by default. Three common variants:
 - __Full (with granola)__: ~111g protein / ~730 cal
-- __Without granola, with yogurt__: ~101g protein / ~650 cal
+- __Without granola, with yogurt__ ← __USER'S STANDARD GO-TO (Apr 27 confirmed)__: ~101g protein / ~650 cal
 - __Without granola or yogurt__: ~79g protein / ~520 cal
 
-When user says "had a shake" unspecified, read back the full recipe (~111g/730cal) for confirmation. When user specifies a modifier like "without granola," default to that variant. Creatine, psyllium, and collagen peptide counts are already in the per-shake calorie/macro totals above, so don't double-count them as separate supplements on shake days.
+When user says "had a shake" or "standard shake" unspecified, default to __Without granola, with yogurt__ variant (~101g/650cal). When user specifies a modifier like "with granola," upgrade to that variant. Creatine, psyllium, and collagen peptide counts are already in the per-shake calorie/macro totals above, so don't double-count them as separate supplements on shake days.
 
 __Collagen peptide timing note (Shaw 2017 / Praet 2019 protocol):__ The strongest evidence for collagen-driven tendon adaptation requires 30-60 min __pre-loading__ (before HSR or other connective-tissue loading sessions). When user takes the shake before Wed/Fri HSR sessions or the Tue bonus HSR session, this is optimal timing. When user takes it post-game or random AM, it still contributes to general recovery but doesn't have the same RCT support for tendon-specific outcomes. Suggest pre-loading timing when natural in conversation (e.g., before a Wed lift), don't lecture if user prefers different timing.
 

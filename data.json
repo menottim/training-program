@@ -725,11 +725,11 @@
     },
     "8": {
       "label": "Skip Deload + No-Tuesday-Game Bonus Session",
-      "reason": "Coleman 2024 RCT (PMID 38274324) skip-deload decision: 3/4 green criteria from Week 7 (TB DL stall broken, +5 lb upper triple-progression, achilles 0-1/10 all week); 2/4 yellow (HSR cadence 1x vs 3x Beyer protocol, sleep 2/4 nights compromised). Phase 1→2 transition Week 9 (May 3) per original plan. ADJUSTMENT: NO Tuesday game this week per user. Bonus opportunity — Tue Apr 28 becomes a HSR catch-up + posterior-chain accessory session. Bumps Week 8 HSR cadence to 3x (Tue standing + Wed seated + Fri standing) = exactly Beyer 3x/week target, addressing Week 7's HSR shortfall. Tue session is deliberately LOW CNS (no compound max-effort work) to keep Wed TB DL @ 235 + Back Squat 150 fresh.",
+      "reason": "Skip deload — Week 7 criteria green. NO Tuesday game per user → Tue becomes HSR catch-up + accessory (hits Beyer 3x/week target). Phase 1→2 transition Week 9 (May 3).",
       "schedule": [
         {
           "day": "Sun", "date": "2026-04-26", "type": "game",
-          "desc": "Basketball AM (logged: 40 min high intensity, achilles 0-1/10). Hockey PM TBD."
+          "desc": "Basketball AM (40 min high, achilles 0-1/10)."
         },
         {
           "day": "Mon", "date": "2026-04-27", "type": "rest",
@@ -737,7 +737,7 @@
         },
         {
           "day": "Tue", "date": "2026-04-28", "type": "training",
-          "desc": "BONUS SESSION (no game this week): HSR catch-up + posterior-chain accessory + glute med focus. Low CNS to preserve Wed TB DL/Back Squat freshness. Pre-session: 1 scoop Momentous Collagen Peptides 30-60 min before (Shaw 2017 PMID 27852613 / Praet 2019 PMID 30609761 protocol — first session to practice optimal pre-loading timing). Calorie target ~2,400-2,600.",
+          "desc": "Bonus HSR + posterior-chain session. Pre-load Momentous shake 30-60 min before lift. Target ~2,400-2,600 cal.",
           "exercises": [
             { "name": "Standing Calf Raise (HSR)", "sets": "3x6", "weight": "RPE 7 at ~6RM, tempo 3s/3s", "notes": "Gastroc-bias (knee straight). 1st of 3 HSR sessions this week (Tue standing + Wed seated + Fri standing = exactly Beyer 3x/week target, recovers from Week 7's 1x shortfall)." },
             { "name": "Hip Thrust (machine)", "sets": "3x10", "weight": "50 lbs", "notes": "Glute primary mover. Match RPE 6-7." },

@@ -480,6 +480,19 @@
       "achillesPain": 1,
       "sleepHours": 8,
       "notes": "Week 8 Day 1 - Sunday AM basketball, 40 min high intensity. Estimated 400-500 cal expenditure. Sleep night Apr 25→26 'good' (~8hr) - second consecutive recovery night. AM achilles 0-1/10, during/after game 0-1/10 (Silbernagel green continues). Pre-game fuel: Apr 25 dinner provided ~146g carbs (2 russets + ItsIt) for glycogen, plus AM shake post-game ~60g carbs. Post-game: shake without granola with yogurt + 1 scoop Momentous Collagen Peptides (15g + 50mg vit C, FORTIGEL formulation - exact Shaw 2017/Praet 2019 protocol match). Timing was post-game (post-loading) - weaker evidence than 30-60 min pre-loading; first practice of optimal pre-loading timing comes Tue Apr 28 bonus HSR session. No hockey PM this week."
+    },
+    {
+      "date": "2026-04-28",
+      "type": "training",
+      "activity": "Bonus HSR + Posterior Chain (Tue Phase 1)",
+      "exercises": [
+        { "name": "Standing Calf Raise (HSR)", "sets": "3x6", "weight": "RPE 7 ~6RM, tempo 3s/3s", "notes": "Gastroc-bias (knee straight). 1st of 3 HSR sessions Week 8 - hits Beyer 3x/week target when combined with Wed seated + Fri standing." },
+        { "name": "Hip Thrust (machine)", "sets": "3x10", "weight": "50 lbs" },
+        { "name": "Banded Lateral Walk", "sets": "3x12/dir", "weight": "band" },
+        { "name": "Face Pull", "sets": "3x15", "weight": "cable" },
+        { "name": "Pallof Press", "sets": "2x10/side", "weight": "cable" }
+      ],
+      "notes": "Week 8 Tue BONUS SESSION - first-ever Tuesday lift in the program (no Tuesday game this week created the opportunity). Recovers Week 7's HSR cadence shortfall by hitting Beyer 3x/week target (Tue standing + Wed seated + Fri standing). 5 of 6 planned exercises completed (Banded Ankle Dorsiflexion not reported - low impact, mobility-only). First practice of Shaw 2017 (PMID 27852613) / Praet 2019 (PMID 30609761) collagen pre-loading protocol via lunch shake timing (1 scoop Momentous Collagen 15g + 50mg vit C ~60-90 min pre-lift, within optimal 30-90 min window). Light CNS load achieved - no compound max-effort work, preserves Wed TB DL @ 235 progression attempt + Back Squat 150 freshness. Achilles during session not reported - confirm if any pain during HSR loading."
     }
   ],
   "scienceReviews": [

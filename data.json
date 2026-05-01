@@ -1042,6 +1042,40 @@
       "sleepHours": 8,
       "achillesPain": 0,
       "notes": "Week 8 Wed Lower Body. TB DL 235 breaks 5-week plateau \u2014 strongest result of Phase 1. Back Squat 150 clean. BSS: went heavier than prescribed (25 DBs vs 20) with fewer reps (5 vs 8) + lower back pain \u2014 cumulative lumbar fatigue from 4x5 DL + 3x5 Squat before it; not a BSS-specific load issue. SL RDL pulled to 25 lbs (vs 30 prescribed) \u2014 correct auto-regulation given lower back state. Seated Calf HSR 3x6@150 = Beyer 2nd of 3. Collagen pre-loaded ~30-60 min before via standalone scoop per Shaw 2017/Praet 2019."
+    },
+    {
+      "date": "2026-04-30",
+      "type": "training",
+      "activity": "Upper Body + Core (Thu Phase 1)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "4x5",
+          "weight": "145 lbs",
+          "notes": "Clean +2.5 lb microload from 142.5 per double-progression rule. Primary BB Bench progression toward 225x5 target. Maps to benchPress current lift."
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "3x10",
+          "weight": "135 lbs",
+          "notes": "DEVIATION: prescribed was 4x6@145. User did 3x10@135 \u2014 volume up, intensity down. Tonnage similar (4,050 vs 3,480 lb-reps) but stimulus shifts from strength to strength-endurance. Breaks main-lift double-progression cadence \u2014 next session: return to 4x6@145 to keep BB Row strength-tracked."
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x10",
+          "weight": "95 lbs",
+          "notes": "Substituted for prescribed DB Bench Press 3x8. Tricep-biased press accessory \u2014 useful for lockout strength on BB Bench. Different stimulus than DB but acceptable swap."
+        },
+        {
+          "name": "Overhead Press (45 lb plate)",
+          "sets": "3x10",
+          "weight": "45 lb plate",
+          "notes": "Substituted for prescribed DB OHP 3x8 @ 30-32.5. Plate front-raise/press hybrid \u2014 lighter loading than the 30-32.5 DB equivalent but valid shoulder stimulus."
+        }
+      ],
+      "sleepHours": 8,
+      "achillesPain": 0,
+      "notes": "Week 8 Thu Upper Body. BB Bench 4x5@145 = clean primary progression (target maps to benchPress 225x5). BB Row deviated to 3x10@135 (was 4x6@145) \u2014 re-prescribe original next Thu. Close Grip Bench (95) and 45 lb plate OHP swapped in for DB Bench/DB OHP. Lat Pulldown, Face Pull, Pallof Press, Cable Woodchop not reported \u2014 unclear if completed or skipped."
     }
   ],
   "scienceReviews": [

@@ -842,6 +842,14 @@
     },
     {
       "date": "2026-04-19",
+      "type": "recovery",
+      "activity": "Yardwork",
+      "duration": "2 hr",
+      "intensity": "medium",
+      "notes": "Non-programmed activity: digging holes + weeding (standing and squatting). Real lower-body load from shoveling/hip-hinge + 2 hours of intermittent unloaded squats. Functionally closer to a loaded carry + low-intensity squat session than passive yardwork. Estimated 500-700 cal expenditure given lower-body involvement. Adds meaningful posterior-chain and quad fatigue on top of morning basketball eccentric load."
+    },
+    {
+      "date": "2026-04-19",
       "type": "game",
       "activity": "Basketball",
       "duration": "50 min",
@@ -850,14 +858,6 @@
       "achillesPain": 1,
       "sleepHours": 8,
       "notes": "Week 7 Day 1 \u2014 single-game Sunday per modifiedWeeks.7 (no hockey this week). Indoor court (moderate sweat vs outdoor sun exposure). AM achilles stiffness 1-2/10 (within <15 min typical baseline per Silbernagel framework). During play after warmup 0-1/10. Sleep 8h, at upper end of target. All pain-monitoring signals green."
-    },
-    {
-      "date": "2026-04-19",
-      "type": "recovery",
-      "activity": "Yardwork",
-      "duration": "2 hr",
-      "intensity": "medium",
-      "notes": "Non-programmed activity: digging holes + weeding (standing and squatting). Real lower-body load from shoveling/hip-hinge + 2 hours of intermittent unloaded squats. Functionally closer to a loaded carry + low-intensity squat session than passive yardwork. Estimated 500-700 cal expenditure given lower-body involvement. Adds meaningful posterior-chain and quad fatigue on top of morning basketball eccentric load."
     },
     {
       "date": "2026-04-21",
@@ -1130,6 +1130,14 @@
       "activity": "Theragun therapy",
       "details": "Percussion gun on sore/tight areas.",
       "notes": "Mon rest day, between Sun basketball and Tue PM basketball. Section 5 hierarchy: percussion gun ranks #3 for recovery ROI (Dupuy 2018 meta-analysis, largest DOMS effect size)."
+    },
+    {
+      "date": "2026-05-05",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "30 min",
+      "intensity": "high",
+      "notes": "Week 9 Day 3 Tue PM game (single basketball this week \u2014 no hockey). 30 min high intensity. AM achilles 1/10 resolved with warmup (logged in bodyLog May 5). Sleep night May 4\u21925 8h good (logged in bodyLog May 5). Pre-game shake at AM was standard 101g/650cal default."
     }
   ],
   "scienceReviews": [

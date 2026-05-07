@@ -1138,6 +1138,37 @@
       "duration": "30 min",
       "intensity": "high",
       "notes": "Week 9 Day 3 Tue PM game (single basketball this week \u2014 no hockey). 30 min high intensity. AM achilles 1/10 resolved with warmup (logged in bodyLog May 5). Sleep night May 4\u21925 8h good (logged in bodyLog May 5). Pre-game shake at AM was standard 101g/650cal default."
+    },
+    {
+      "date": "2026-05-06",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 2)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "4x5",
+          "weight": "240 lbs",
+          "notes": "+5 lb microload from 235 (Apr 29). Second consecutive +5 after the 5-week 230 plateau broke. New program-best \u2014 TB DL has gained +10 lbs across 2 weeks (230\u2192235\u2192240)."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "4x5",
+          "weight": "155 lbs",
+          "notes": "+5 from 150 + Phase 2 volume jump (3x5 \u2192 4x5 = 20 reps total, up from 15). Clean execution of both progressions in one session \u2014 strongest Back Squat result of the program. Maps to backSquat current lift."
+        },
+        {
+          "name": "GHR / Ham Curl Machine",
+          "sets": "3x5",
+          "notes": "Replaces BSS as posterior accessory in Phase 2 Wed. Lumbar-friendly vs the Apr 29 stack issue."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6",
+          "weight": "BW",
+          "notes": "Phase 2 HSR shift: seated machine \u2192 single-leg BW per index.html. At ~220 lb BW, single-leg \u2248 ~110 lb effective load \u2014 already at/above Beyer 6RM zone without external load. BW only (no added DB) = appropriate Wk 1 calibration. 1st of 2 HSR sessions this week (Tue was a game so no Tue HSR; Fri standing HSR caps the week at 2/3 \u2014 accepted in Wk 9 plan)."
+        }
+      ],
+      "notes": "Week 9 Wed Phase 2 Day 1 LIFT \u2014 first Phase 2 session executed cleanly. Both compound progressions hit: TB DL 240 (new best, +10 lb in 2 weeks since plateau break) AND Back Squat 4x5 @ 155 (+5 lb AND volume bump from 3x5). Single-Leg Calf HSR at BW = appropriate first-week calibration. Sport load this week was light (Sun 24min + Tue 30min = 54min total) which freed capacity for both progressions to land in one session \u2014 pattern worth tracking. Achilles + sleep + RPE not reported."
     }
   ],
   "scienceReviews": [

@@ -1974,7 +1974,10 @@
       if (d.exercises && d.exercises.length > 0) {
         exHTML = '<ul class="exercise-list">' +
           d.exercises.map(function(ex) {
-            var detail = esc(ex.name) + ' ' + esc(ex.sets);
+            var nameHTML = exerciseLinks[ex.name]
+              ? '<a href="' + esc(exerciseLinks[ex.name]) + '" target="_blank">' + esc(ex.name) + '</a>'
+              : esc(ex.name);
+            var detail = nameHTML + ' ' + esc(ex.sets);
             if (ex.weight) detail += ' <span class="ex-weight">@ ' + esc(ex.weight) + '</span>';
             return '<li>' + detail + '</li>';
           }).join('') +
@@ -2056,8 +2059,11 @@
     var cur = currentLifts[l.key];
     var tgt = targets[l.key];
     var pct = Math.round((cur.weight / tgt.weight) * 100);
+    var labelHTML = exerciseLinks[l.label]
+      ? '<a href="' + esc(exerciseLinks[l.label]) + '" target="_blank">' + esc(l.label) + '</a>'
+      : esc(l.label);
     return '<div class="bar-row">' +
-      '<div class="bar-label">' + l.label + '</div>' +
+      '<div class="bar-label">' + labelHTML + '</div>' +
       '<div class="bar-track">' +
         '<div class="bar-fill" style="width:' + pct + '%;background:' + l.color + ';">' + cur.weight + ' \u00d7 ' + cur.reps + '</div>' +
         '<div class="bar-target" style="left:100%;"><div class="bar-target-label">' + tgt.weight + '</div></div>' +
@@ -2079,8 +2085,11 @@
     var curRatio = (cur.weight / bw).toFixed(2);
     var tgtRatio = (tgt.weight / bw).toFixed(2);
     var plus = l.key === 'trapBarDeadlift' ? '+' : '';
+    var liftHTML = exerciseLinks[l.name]
+      ? '<a href="' + esc(exerciseLinks[l.name]) + '" target="_blank">' + esc(l.name) + '</a>'
+      : esc(l.name);
     return '<div class="target-card">' +
-      '<div class="lift-name">' + l.name + '</div>' +
+      '<div class="lift-name">' + liftHTML + '</div>' +
       '<div class="current">' + cur.weight + ' \u00d7 ' + cur.reps + ' (' + curRatio + 'x BW)</div>' +
       '<div class="arrow">\u2193</div>' +
       '<div class="target">' + tgt.weight + plus + ' \u00d7 ' + tgt.reps + '</div>' +
@@ -2674,7 +2683,10 @@
       if (pts.length >= 1) {
         parts.push(svgLine(pts, cfg.color));
         parts.push(svgDots(pts, cfg.color, 4, labels));
-        legendItems.push('<span class="chart-legend-item"><span class="chart-legend-dot" style="background:' + cfg.color + '"></span> ' + name + '</span>');
+        var legendName = exerciseLinks[name]
+          ? '<a href="' + esc(exerciseLinks[name]) + '" target="_blank">' + esc(name) + '</a>'
+          : esc(name);
+        legendItems.push('<span class="chart-legend-item"><span class="chart-legend-dot" style="background:' + cfg.color + '"></span> ' + legendName + '</span>');
       }
     });
 
@@ -2791,7 +2803,9 @@
 
       html += '<div class="standard-row">' +
         '<div class="standard-header">' +
-          '<span class="standard-lift-name">' + std.label + '</span>' +
+          '<span class="standard-lift-name">' + (exerciseLinks[std.label]
+            ? '<a href="' + esc(exerciseLinks[std.label]) + '" target="_blank">' + esc(std.label) + '</a>'
+            : esc(std.label)) + '</span>' +
           '<span class="standard-stats">' +
             'Est. 1RM: <strong>' + oneRM + ' lbs</strong> (' + ratio.toFixed(2) + 'x BW) \u00b7 ' +
             '<span class="standard-level-label" style="background:' + levelColor + ';">' + levelText + '</span>' +

@@ -1191,13 +1191,13 @@
           "name": "DB Push Press",
           "sets": "3x10",
           "weight": "25 lb DBs",
-          "notes": "DEVIATION: prescribed was 3x6 @ 30 lb DBs (explosive leg drive into press). User did 3x10 @ 25 lb DBs - lighter weight, more reps. Stimulus shifted from power to strength-endurance. Tonnage: 750 lb-reps vs prescribed 540 = volume up but intent of power work missed. Next Thu: return to 3x6 @ 30 lb DBs to preserve Phase 2 power emphasis."
+          "notes": "SUBSTITUTION (availability): prescribed 3x6 @ 30 lb DBs unavailable in the rack at session time. Athlete dropped to 25 lb DBs and bumped reps to 3x10 to keep stimulus meaningful. Not a structural deviation \u2014 environmental constraint. Tonnage: 750 lb-reps vs prescribed 540, but stimulus shifted from power-emphasis (low-rep ballistic) toward strength-endurance. Re-attempt 30 lb DBs next Thu when rack is open."
         },
         {
           "name": "Bent Over Barbell Row (inverted grip)",
           "sets": "3x10",
           "weight": "135 lbs",
-          "notes": "SUBSTITUTION + DEVIATION: prescribed was Chest-Supported Row 3x8. User did Bent Over Row inverted grip 3x10 @ 135. Inverted (supinated/underhand) grip recruits more bicep + lower lat than chest-supported. Volume up (3x10 vs 3x8). NOTE: This continues a pattern from Apr 30 Thu where user also did BB Row 3x10 @ 135 vs prescribed 4x6 @ 145. The original plan was to return to strength-tracked row at 4x6 @ 145 - that did not happen. Either commit to the deviation as the new row prescription OR re-prescribe and stick to it. Worth a coaching note next session."
+          "notes": "PROGRAM CHANGE: athlete confirmed preference for BB Bent Over Row (inverted/supinated grip) over Chest-Supported Row. 2nd consecutive Thu deviation (Apr 30 first time) \u2192 committing to the swap. Bench-cadence strength tracking starts next week at 4x5; today logged at 3x10 @ 135 (~80% 1RM est). Inverted grip biases lower lat + biceps and matches user-preferred mechanic. index.html updated to reflect new prescription."
         },
         {
           "name": "Cable Pull-Through",
@@ -1472,6 +1472,11 @@
       "weight": 220.5,
       "bodyFatPct": 23.0,
       "notes": "AM weigh-in 220.5/23.0% \u2014 new program-best on BOTH dimensions. vs Apr 28 prior best (221.3/23.2%): -0.8 lb / -0.2 pt BF over 9 days. Apr 28\u2192May 7 spans the Phase 1\u21922 transition (Wk 8 Skip-Deload + Wk 9 Phase 2 Wk 1). Slow recomp continuing on Option B deficit-anchor protocol \u2014 modest deficits on Mon/Thu/Sat anchor days are delivering recomp without compromising lifts (TB DL broke 230 plateau Apr 29; sat-fat lever still pending validation past May 1)."
+    },
+    {
+      "date": "2026-05-08",
+      "achillesPainAM": 0,
+      "notes": "Morning report Fri May 8 (first plyo day in 8 weeks): achilles 0/10 \u2014 green. Tired legs (likely Wed Phase 2 Lower residual + Tue PM basketball + Thu lift = 3 lower-body load days in past 4). Hip pain from sleep position (not training-driven, mechanical). Pre-session call: warm up thoroughly + reassess hip after first 2-3 mobility sets before jumping. Plyo session is high-stakes (first in 8 wk) and hip pain + max-intent jumps is the wrong combo if hip stays cranky. See coaching notes Fri AM."
     }
   ],
   "modifiedWeeks": {
@@ -2203,12 +2208,13 @@
               "name": "DB Push Press",
               "sets": "3x6",
               "weight": "30 lb DBs",
-              "notes": "Replaces DB OHP \u2014 explosive leg drive into press."
+              "notes": "Replaces DB OHP \u2014 explosive leg drive into press. May 7 logged 25 lb (rack availability), bump back to 30 if open."
             },
             {
-              "name": "Chest-Supported Row",
-              "sets": "3x8",
-              "notes": "Corrects Apr 30 row deviation (3x10@135 vs prescribed 4x6) \u2014 back to a strength-tracked row stimulus."
+              "name": "Bent Over Row (inverted grip)",
+              "sets": "4x5",
+              "notes": "PROGRAM CHANGE (May 8): replaces Chest-Supported Row after 2 consecutive deviations (Apr 30, May 7). Supinated/underhand BB grip. Start 145 lb, progress per Section 1.",
+              "weight": "145 lbs"
             },
             {
               "name": "Cable Pull-Through (Explosive)",

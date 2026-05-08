@@ -1169,6 +1169,50 @@
         }
       ],
       "notes": "Week 9 Wed Phase 2 Day 1 LIFT \u2014 first Phase 2 session executed cleanly. Both compound progressions hit: TB DL 240 (new best, +10 lb in 2 weeks since plateau break) AND Back Squat 4x5 @ 155 (+5 lb AND volume bump from 3x5). Single-Leg Calf HSR done on standing machine \u2014 effective load ~287 lbs/leg (220 BW + 67 machine starting). Different muscle bias (gastroc vs soleus) than Phase 1 seated bilateral so not directly comparable, but in Beyer 6RM zone for the gastroc-bias variant. Sport load this week was light (Sun 24min + Tue 30min = 54min total) which freed capacity for both progressions to land in one session \u2014 pattern worth tracking. Achilles + sleep + RPE not reported."
+    },
+    {
+      "date": "2026-05-07",
+      "type": "training",
+      "activity": "Upper + Power (Thu Phase 2)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "4x5",
+          "weight": "150 lbs",
+          "notes": "Went +2.5 lb HEAVIER than prescribed 147.5. +5 lb from prior best 145 (Apr 30) at clean 4x5. Maps to benchPress current lift. Trajectory: 142.5 (Apr 23) -> 145 (Apr 30) -> 150 (May 7) = +7.5 lb across 2 wks."
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "4x5",
+          "weight": "130 lbs",
+          "notes": "Phase 2 reps 4x6 -> 4x5 per index.html. 130 lb load."
+        },
+        {
+          "name": "DB Push Press",
+          "sets": "3x10",
+          "weight": "25 lb DBs",
+          "notes": "DEVIATION: prescribed was 3x6 @ 30 lb DBs (explosive leg drive into press). User did 3x10 @ 25 lb DBs - lighter weight, more reps. Stimulus shifted from power to strength-endurance. Tonnage: 750 lb-reps vs prescribed 540 = volume up but intent of power work missed. Next Thu: return to 3x6 @ 30 lb DBs to preserve Phase 2 power emphasis."
+        },
+        {
+          "name": "Bent Over Barbell Row (inverted grip)",
+          "sets": "3x10",
+          "weight": "135 lbs",
+          "notes": "SUBSTITUTION + DEVIATION: prescribed was Chest-Supported Row 3x8. User did Bent Over Row inverted grip 3x10 @ 135. Inverted (supinated/underhand) grip recruits more bicep + lower lat than chest-supported. Volume up (3x10 vs 3x8). NOTE: This continues a pattern from Apr 30 Thu where user also did BB Row 3x10 @ 135 vs prescribed 4x6 @ 145. The original plan was to return to strength-tracked row at 4x6 @ 145 - that did not happen. Either commit to the deviation as the new row prescription OR re-prescribe and stick to it. Worth a coaching note next session."
+        },
+        {
+          "name": "Cable Pull-Through",
+          "sets": "3x5",
+          "weight": "as prescribed",
+          "notes": "Explosive concentric. As RXed."
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "3x5/side",
+          "weight": "as prescribed",
+          "notes": "Rotational power. As RXed."
+        }
+      ],
+      "notes": "Week 9 Thu Phase 2 Upper + Power - 4 of 6 exercises clean. Wins: BB Bench 4x5 @ 150 = best result of the program (+5 lb from prior best, +7.5 lb across 2 wks). Lat Pulldown 4x5 @ 130. Cable Pull-Through and Cable Woodchop as RXed. Deviations: DB Push Press went lighter+more-reps (3x10 @ 25 vs prescribed 3x6 @ 30), missing Phase 2 power emphasis. BB Row inverted grip 3x10 @ 135 substituted for Chest-Supported Row 3x8 - this is a repeat of the Apr 30 deviation that we said we would correct. Pattern is now structural: either re-prescribe Bent Over Row inverted as the row of record, or commit to the chest-supported variant. Achilles + sleep night-of not reported."
     }
   ],
   "scienceReviews": [

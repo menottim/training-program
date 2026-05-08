@@ -1469,7 +1469,7 @@
   <thead><tr><th>Activity</th><th>Duration</th><th>Purpose</th></tr></thead>
   <tbody>
     <tr><td class="exercise">Low-intensity cycling or swimming</td><td class="sets">15–20 min</td><td class="notes">30–40% peak HR, anti-inflammatory</td></tr>
-    <tr><td class="exercise">Foam rolling / massage gun</td><td class="sets">10 min</td><td class="notes">Quads, calves, IT band, glutes</td></tr>
+    <tr><td class="exercise"><a href="https://health.clevelandclinic.org/foam-rolling" target="_blank">Foam rolling</a> / massage gun</td><td class="sets">10 min</td><td class="notes">Quads, calves, IT band, glutes</td></tr>
     <tr><td class="exercise"><a href="https://health.clevelandclinic.org/90-90-stretch" target="_blank">Hip 90/90 mobility flow</a></td><td class="sets">5 min</td><td class="notes">Hip mobility maintenance</td></tr>
     <tr><td class="exercise">HSR calf raise protocol (<a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">seated</a> + <a href="https://musclewiki.com/exercise/barbell-calf-raises" target="_blank">standing</a>)</td><td class="sets">10 min</td><td class="notes">If achilles feels OK (&lt; 3/10 pain)</td></tr>
   </tbody>
@@ -1495,7 +1495,7 @@
     <tr><td class="exercise">Sleep extension &amp; consistency</td><td class="sets">Strong</td><td class="notes">Highest-ROI recovery intervention. Consistent bed/wake times &plusmn;30 min including weekends. Walsh 2021 IOC consensus.</td></tr>
     <tr><td class="exercise">Zone 2 active recovery walk/bike</td><td class="sets">Strong</td><td class="notes">20&ndash;30 min on off days. Clears fatigue without adding damage (Menzies 2010).</td></tr>
     <tr><td class="exercise">Massage / percussion gun</td><td class="sets">Strong</td><td class="notes">Largest DOMS effect size among common modalities (Dupuy 2018, Guo 2017).</td></tr>
-    <tr><td class="exercise">Foam rolling</td><td class="sets">Moderate</td><td class="notes">Small ROM and DOMS benefit (Wiewelhove 2019). Pre-session for warmup, post-session for ROM.</td></tr>
+    <tr><td class="exercise"><a href="https://health.clevelandclinic.org/foam-rolling" target="_blank">Foam rolling</a></td><td class="sets">Moderate</td><td class="notes">Small ROM and DOMS benefit (Wiewelhove 2019). Pre-session for warmup, post-session for ROM.</td></tr>
     <tr><td class="exercise">Sauna (post-training or rest day)</td><td class="sets">Moderate</td><td class="notes">2&ndash;3x/week, 15&ndash;20 min. Plasma volume and CV benefits (Scoon 2007).</td></tr>
     <tr><td class="exercise">Static stretching</td><td class="sets">ROM only</td><td class="notes">Does NOT prevent injury (Small 2008). Can reduce force 3&ndash;5% if &gt;60s pre-lifting. Fine for ROM goals, not for warmup.</td></tr>
   </tbody>
@@ -1652,6 +1652,7 @@
   }
 
   const { athlete, currentLifts: baseLifts, targets, activityLog, bodyLog } = data;
+  const exerciseLinks = data.exerciseLinks || {};
   const modifiedWeeks = data.modifiedWeeks || {};
 
   // HTML-escape helper — prevents XSS from data.json string interpolation
@@ -2320,7 +2321,10 @@
         if (showUpcoming) {
           cells += '<td class="upcoming-col">' + esc(upcomingWeights[name] || '\u2014') + '</td>';
         }
-        return '<tr><td>' + esc(name) + '</td>' + cells + '</tr>';
+        var nameCell = exerciseLinks[name]
+          ? '<a href="' + esc(exerciseLinks[name]) + '" target="_blank">' + esc(name) + '</a>'
+          : esc(name);
+        return '<tr><td>' + nameCell + '</td>' + cells + '</tr>';
       }).join('');
 
       // If upcoming but no history, show the prescribed exercises from the plan table
@@ -2340,8 +2344,8 @@
             var upcomingRows = [];
             for (var r = 0; r < planRows.length; r++) {
               var exCell = planRows[r].querySelector('td.exercise');
-              var exName = exCell ? exCell.textContent.trim() : '';
-              if (exName) upcomingRows.push('<tr><td>' + exName + '</td><td class="upcoming-col">\u2014</td></tr>');
+              var exHTML = exCell ? exCell.innerHTML.trim() : '';
+              if (exHTML) upcomingRows.push('<tr><td>' + exHTML + '</td><td class="upcoming-col">\u2014</td></tr>');
             }
             if (upcomingRows.length > 0) {
               headerCells = '<th>Exercise</th><th class="upcoming-col">Wk ' + upcomingWeek + ' \u2192</th>';

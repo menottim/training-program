@@ -1276,7 +1276,7 @@
 
 <div class="info-box">
   <strong>Phase 1 &rarr; Phase 2 transition checkpoint: Week 9 (May 3, 2026)</strong>
-  At the phase boundary, re-evaluate 12-month targets against actual 6-week progression (TB DL, Back Squat, BB Bench). Per Section 7 guidelines and knowledge/in-season-volume.md, don't revise targets prematurely &mdash; wait 2&ndash;3 weeks into Phase 2 for a valid in-season rate. Week 8 (Apr 26 &ndash; May 2) is the deload bridge to Phase 2; skip it if fatigue signals are absent per the <a href="#deload">reactive deload protocol</a>.
+  At the phase boundary, re-evaluate 12-month targets against actual 6-week progression (<a href="https://musclewiki.com/exercise/barbell-deadlift" target="_blank">TB DL</a>, <a href="https://musclewiki.com/exercise/barbell-squat" target="_blank">Back Squat</a>, <a href="https://musclewiki.com/exercise/barbell-bench-press" target="_blank">BB Bench</a>). Per Section 7 guidelines and knowledge/in-season-volume.md, don't revise targets prematurely &mdash; wait 2&ndash;3 weeks into Phase 2 for a valid in-season rate. Week 8 (Apr 26 &ndash; May 2) is the deload bridge to Phase 2; skip it if fatigue signals are absent per the <a href="#deload">reactive deload protocol</a>.
 </div>
 
 <div class="phase">
@@ -1360,7 +1360,7 @@
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bench-press" target="_blank">Barbell Bench Press</a></td><td class="sets">4 &times; 5</td><td class="notes"></td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/weighted-pull-ups" target="_blank">Weighted Pull-up</a></td><td class="sets">4 &times; 5</td><td class="notes"></td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-push-press" target="_blank">DB Push Press</a></td><td class="sets">3 &times; 6</td><td class="notes">Explosive leg drive into press</td></tr>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bent-over-row" target="_blank">Bent Over Row (inverted grip)</a></td><td class="sets">4 &times; 5</td><td class="notes">Replaces Chest-Supported Row per Apr 30 + May 7 deviation pattern. Supinated/underhand BB grip — biases lower lat + biceps. Strength-tracked cadence; start ~145 lb, progress per Section 1.</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bent-over-row" target="_blank">Bent Over Row (inverted grip)</a></td><td class="sets">4 &times; 5</td><td class="notes">Replaces <a href="https://musclewiki.com/exercise/dumbbell-laying-incline-row" target="_blank">Chest-Supported Row</a> per Apr 30 + May 7 deviation pattern. Supinated/underhand BB grip — biases lower lat + biceps. Strength-tracked cadence; start ~145 lb, progress per Section 1.</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-pull-through" target="_blank">Cable Pull-Through (Explosive)</a></td><td class="sets">3 &times; 5</td><td class="notes">Maximal intent, full hip extension</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-half-kneeling-low-to-high-wood-chopper" target="_blank">Cable Woodchop (Low-to-High)</a></td><td class="sets">3 &times; 5/side</td><td class="notes">Rotational power, hockey crossover benefit</td></tr>
       </tbody>
@@ -1653,6 +1653,34 @@
 
   const { athlete, currentLifts: baseLifts, targets, activityLog, bodyLog } = data;
   const exerciseLinks = data.exerciseLinks || {};
+
+  // Linkify free-form text: HTML-escape input, then wrap any exercise name
+  // present in exerciseLinks with an <a> tag. Word-boundary aware (won't
+  // replace inside other words). Longest-first so "DB Bench Press" wins
+  // over "Bench Press" when both could match.
+  const linkifyKeys = Object.keys(exerciseLinks).sort(function(a, b) { return b.length - a.length; });
+  const linkifyRegex = linkifyKeys.length
+    ? new RegExp('(' + linkifyKeys.map(function(k) { return k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }).join('|') + ')', 'g')
+    : null;
+  function linkifyText(text) {
+    if (!text) return '';
+    if (!linkifyRegex) return esc(text);
+    var parts = String(text).split(linkifyRegex);
+    var html = '';
+    for (var i = 0; i < parts.length; i++) {
+      var p = parts[i];
+      if (i % 2 === 1 && exerciseLinks[p]) {
+        var prev = (parts[i - 1] || '').slice(-1);
+        var next = (parts[i + 1] || '').charAt(0);
+        if (!/[A-Za-z0-9]/.test(prev) && !/[A-Za-z0-9]/.test(next)) {
+          html += '<a href="' + esc(exerciseLinks[p]) + '" target="_blank">' + esc(p) + '</a>';
+          continue;
+        }
+      }
+      html += esc(p);
+    }
+    return html;
+  }
   const modifiedWeeks = data.modifiedWeeks || {};
 
   // HTML-escape helper — prevents XSS from data.json string interpolation
@@ -1999,7 +2027,7 @@
         '<div class="md-name">' + esc(d.day) + '</div>' +
         '<div class="md-date">' + d.date.slice(5).replace('-', '/') + '</div>' +
         '<div class="md-type">' + esc(typeLabel) + '</div>' +
-        '<div class="md-desc">' + esc(d.desc) + '</div>' +
+        '<div class="md-desc">' + linkifyText(d.desc) + '</div>' +
         exHTML +
         nextUpHTML +
       '</div>';
@@ -2010,7 +2038,7 @@
       '<div class="modified-week">' +
         '<div class="modified-week-banner">' +
           '<h3>Week ' + weekNum + ': ' + esc(mw.label) + '</h3>' +
-          '<p>' + esc(mw.reason) + '</p>' +
+          '<p>' + linkifyText(mw.reason) + '</p>' +
         '</div>' +
         '<div class="modified-week-grid">' + daysHTML + '</div>' +
       '</div>';
@@ -2140,12 +2168,12 @@
         var details = esc(e.activity || '');
         if (e.duration) details += ' \u00b7 ' + esc(e.duration);
         if (e.intensity) details += ' \u00b7 ' + esc(e.intensity) + ' intensity';
-        if (e.details) details += (details ? ' \u00b7 ' : '') + esc(e.details);
+        if (e.details) details += (details ? ' \u00b7 ' : '') + linkifyText(e.details);
         return '<tr>' +
           '<td>' + fmtDate(e.date) + '</td>' +
           '<td><span class="tag ' + tagClass + '">' + esc(typeLabel) + '</span></td>' +
           '<td>' + details + '</td>' +
-          '<td>' + esc(e.notes || '') + '</td>' +
+          '<td>' + linkifyText(e.notes || '') + '</td>' +
         '</tr>';
       }).join('');
       var wn = Math.max(1, Math.ceil((calendarDays(startDate, ws) + 1) / 7));

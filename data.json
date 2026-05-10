@@ -1306,7 +1306,8 @@
           "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 Beyer protocol = 6RM zone — 3x6 with 3s/3s tempo at this load lands cleanly. 2nd HSR session of the week (Wed seated + Fri standing-single-leg = 2/3 Beyer cadence accepted in Wk 9 plan)."
         }
       ],
-      "notes": "Week 9 Fri Phase 2 Power + Plyometrics — FIRST PLYO SESSION IN 8 WEEKS. Delayed one day from planned Fri 5/8 → executed Sat 5/9. May 8 AM concerns (hip pain from sleep position, tired legs after 3 lower-body load days in 4) resolved overnight. All 6 exercises completed AS PRESCRIBED — no deviations. 30 ground contacts total (12 box + 9 TBJS + 9 broad jump) = matches plan; intentionally below Section 6 40-60 floor for Wk 1 ramp given bilateral achilles tendinopathy. TB Jump Squat at ~29% 1RM (vs ~30% target). Bulgarian Split Squat 3x6/leg @ 20 lb DBs as prescribed. Single-Leg Calf HSR at BW+67 in Beyer 6RM zone. First clean execution after the Phase 1→2 transition."
+      "achillesPain": 0,
+      "notes": "Week 9 Fri Phase 2 Power + Plyometrics — FIRST PLYO SESSION IN 8 WEEKS. Delayed one day from planned Fri 5/8 → executed Sat 5/9. May 8 AM concerns (hip pain from sleep position, tired legs after 3 lower-body load days in 4) resolved overnight. All 6 exercises completed AS PRESCRIBED — no deviations. 30 ground contacts total (12 box + 9 TBJS + 9 broad jump) = matches plan; intentionally below Section 6 40-60 floor for Wk 1 ramp given bilateral achilles tendinopathy. TB Jump Squat at ~29% 1RM (vs ~30% target). Bulgarian Split Squat 3x6/leg @ 20 lb DBs as prescribed. Single-Leg Calf HSR at BW+67 in Beyer 6RM zone. First clean execution after the Phase 1→2 transition. Achilles 0/10 during loading (Silbernagel green); sleep night-of May 8→9 reported good."
     },
     {
       "date": "2026-05-10",
@@ -1314,7 +1315,8 @@
       "activity": "Basketball",
       "duration": "40 min",
       "intensity": "high",
-      "notes": "Sun AM basketball. ~38 hours after the Fri-shifted plyo session (Sat 5/9 morning → Sun 5/10 morning). First gameday after first plyo block in 8 weeks — observation point for any cumulative achilles/lower-body fatigue from plyo + game in same 48h window."
+      "achillesPain": 0,
+      "notes": "Sun AM basketball (only Sun game — hockey PM not currently scheduled). ~38 hours after the Fri-shifted plyo session (Sat 5/9 morning → Sun 5/10 morning). First gameday after first plyo block in 8 weeks. Achilles 0/10 (green) — meets Section 4 criteria to continue Friday plyo (no >5/10 game-day signal). Sleep night-of May 9→10 reported good."
     }
   ],
   "scienceReviews": [
@@ -1579,6 +1581,16 @@
       "date": "2026-05-08",
       "achillesPainAM": 0,
       "notes": "Morning report Fri May 8 (first plyo day in 8 weeks): achilles 0/10 \u2014 green. Tired legs (likely Wed Phase 2 Lower residual + Tue PM basketball + Thu lift = 3 lower-body load days in past 4). Hip pain from sleep position (not training-driven, mechanical). Pre-session call: warm up thoroughly + reassess hip after first 2-3 mobility sets before jumping. Plyo session is high-stakes (first in 8 wk) and hip pain + max-intent jumps is the wrong combo if hip stays cranky. See coaching notes Fri AM."
+    },
+    {
+      "date": "2026-05-09",
+      "achillesPain": 0,
+      "notes": "Plyo session day (Sat, delayed from Fri). Sleep night-of May 8\u21929 good. Achilles 0/10 during loading and post-session \u2014 Silbernagel green for first plyo session in 8 weeks. Hip pain from prior morning resolved overnight. All 6 plyo + accessory exercises completed as prescribed."
+    },
+    {
+      "date": "2026-05-10",
+      "achillesPain": 0,
+      "notes": "Game day (Sun AM basketball, ~38h post-plyo). Sleep night-of May 9\u219210 good. Achilles 0/10 \u2014 green going into game and during. Critical signal: meets Section 4 criteria (achilles \u22645/10 on game day) to continue Fri plyo block. First plyo\u2192game 48h cluster passed without negative signal."
     }
   ],
   "modifiedWeeks": {

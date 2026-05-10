@@ -1265,6 +1265,56 @@
         }
       ],
       "notes": "Week 9 Thu Phase 2 Upper + Power - 4 of 6 exercises clean. Wins: BB Bench 4x5 @ 150 = best result of the program (+5 lb from prior best, +7.5 lb across 2 wks). Lat Pulldown 4x5 @ 130. Cable Pull-Through and Cable Woodchop as RXed. Deviations: DB Push Press went lighter+more-reps (3x10 @ 25 vs prescribed 3x6 @ 30), missing Phase 2 power emphasis. BB Row inverted grip 3x10 @ 135 substituted for Chest-Supported Row 3x8 - this is a repeat of the Apr 30 deviation that we said we would correct. Pattern is now structural: either re-prescribe Bent Over Row inverted as the row of record, or commit to the chest-supported variant. Achilles + sleep night-of not reported."
+    },
+    {
+      "date": "2026-05-09",
+      "type": "training",
+      "activity": "Power + Plyometrics (Fri Phase 2)",
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "3x4",
+          "weight": "24-inch box",
+          "notes": "Step DOWN from box every rep — never rebound. 12 contacts."
+        },
+        {
+          "name": "Trap Bar Jump Squat",
+          "sets": "3x3",
+          "weight": "70 lbs",
+          "notes": "~29% TB DL max (240). 9 contacts. As prescribed."
+        },
+        {
+          "name": "Broad Jump",
+          "sets": "3x3",
+          "notes": "9 contacts. As prescribed."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "sets": "3x6/leg",
+          "weight": "20 lb DBs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Banded Lateral Shuffle",
+          "sets": "3x8/dir",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 67 lbs/leg (~287 lbs effective)",
+          "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 Beyer protocol = 6RM zone — 3x6 with 3s/3s tempo at this load lands cleanly. 2nd HSR session of the week (Wed seated + Fri standing-single-leg = 2/3 Beyer cadence accepted in Wk 9 plan)."
+        }
+      ],
+      "notes": "Week 9 Fri Phase 2 Power + Plyometrics — FIRST PLYO SESSION IN 8 WEEKS. Delayed one day from planned Fri 5/8 → executed Sat 5/9. May 8 AM concerns (hip pain from sleep position, tired legs after 3 lower-body load days in 4) resolved overnight. All 6 exercises completed AS PRESCRIBED — no deviations. 30 ground contacts total (12 box + 9 TBJS + 9 broad jump) = matches plan; intentionally below Section 6 40-60 floor for Wk 1 ramp given bilateral achilles tendinopathy. TB Jump Squat at ~29% 1RM (vs ~30% target). Bulgarian Split Squat 3x6/leg @ 20 lb DBs as prescribed. Single-Leg Calf HSR at BW+67 in Beyer 6RM zone. First clean execution after the Phase 1→2 transition."
+    },
+    {
+      "date": "2026-05-10",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "40 min",
+      "intensity": "high",
+      "notes": "Sun AM basketball. ~38 hours after the Fri-shifted plyo session (Sat 5/9 morning → Sun 5/10 morning). First gameday after first plyo block in 8 weeks — observation point for any cumulative achilles/lower-body fatigue from plyo + game in same 48h window."
     }
   ],
   "scienceReviews": [
@@ -2283,48 +2333,52 @@
         {
           "day": "Fri",
           "date": "2026-05-08",
+          "type": "rest",
+          "status": "done",
+          "desc": "Plyo session moved to Sat 5/9 \u2014 May 8 AM concerns (hip pain from sleep position + tired legs after 3 lower-body load days in 4). Fri shifted to recovery/prep."
+        },
+        {
+          "day": "Sat",
+          "date": "2026-05-09",
           "type": "training",
-          "desc": "Phase 2 Power + Plyometrics \u2014 FIRST PLYO SESSION IN 8 WEEKS. 30 contacts (deliberately below Section 6 40-60 floor for Wk 1 with achilles history). Always step DOWN from box, never rebound \u2014 Section 4 / knowledge/achilles-tendinopathy-hsr.md.",
+          "status": "done",
+          "desc": "Phase 2 Power + Plyometrics (delayed from Fri) \u2014 FIRST PLYO SESSION IN 8 WEEKS. All 6 exercises completed AS PRESCRIBED. 30 contacts total (Section 6 floor was 40-60; Wk 1 ramp intentionally below floor for bilateral achilles tendinopathy). Hip pain resolved overnight.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
               "sets": "3x4",
-              "notes": "12 contacts. Step down every rep. Stop if achilles >3/10 during loading (Silbernagel pain-monitoring)."
+              "weight": "24-inch box",
+              "notes": "12 contacts. Step down every rep."
             },
             {
               "name": "Trap Bar Jump Squat",
               "sets": "3x3",
-              "weight": "~70 lbs (~30% TB DL max of 240)",
-              "notes": "9 contacts. Maximal intent, full reset between reps."
+              "weight": "70 lbs (~29% TB DL max of 240)",
+              "notes": "9 contacts. Done as prescribed."
             },
             {
               "name": "Broad Jump",
               "sets": "3x3",
-              "notes": "9 contacts. Full reset between reps, soft landing."
+              "notes": "9 contacts. Done as prescribed."
             },
             {
               "name": "Bulgarian Split Squat",
               "sets": "3x6/leg",
               "weight": "20 lb DBs",
-              "notes": "Moved from Wed per Phase 2 plan. Moderate load, upright torso cue (lumbar lesson from Apr 29)."
+              "notes": "Done as prescribed."
             },
             {
               "name": "Banded Lateral Shuffle",
               "sets": "3x8/dir",
-              "notes": "Agility + ankle stability."
+              "notes": "Done as prescribed."
             },
             {
-              "name": "Standing Calf Raise (HSR)",
-              "sets": "3x6",
-              "notes": "2nd of 2 HSR sessions this week \u2014 Beyer 6RM phase, 3s/3s tempo."
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 67 lbs/leg (~287 effective)",
+              "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 = Beyer 6RM phase. 2nd of 2 HSR sessions this week (Wed seated + Sat standing-single-leg)."
             }
           ]
-        },
-        {
-          "day": "Sat",
-          "date": "2026-05-09",
-          "type": "rest",
-          "desc": "Pre-game prep + Option B deficit anchor. Target 2,300-2,500 cal."
         }
       ]
     }

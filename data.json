@@ -1591,6 +1591,14 @@
       "date": "2026-05-10",
       "achillesPain": 0,
       "notes": "Game day (Sun AM basketball, ~38h post-plyo). Sleep night-of May 9\u219210 good. Achilles 0/10 \u2014 green going into game and during. Critical signal: meets Section 4 criteria (achilles \u22645/10 on game day) to continue Fri plyo block. First plyo\u2192game 48h cluster passed without negative signal."
+    },
+    {
+      "date": "2026-05-11",
+      "achillesPainAM": 1,
+      "proteinGrams": 12,
+      "calories": 210,
+      "sleepHours": 8,
+      "notes": "Sleep night May 10 to 11 good (~8h estimated). AM achilles 1/10, resolved (Silbernagel green baseline pattern, 20-day green streak from Apr 22). Breakfast: RXBAR Chocolate Sea Salt, 210 cal / 12g protein. Mon = moderate-deficit anchor day (target 2,300-2,500 cal). Running 12g/210cal at breakfast: ~8% of 160g protein floor and ~9% of cal target."
     }
   ],
   "modifiedWeeks": {

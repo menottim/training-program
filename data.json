@@ -1275,7 +1275,7 @@
           "name": "Box Jump (step down)",
           "sets": "3x4",
           "weight": "24-inch box",
-          "notes": "Step DOWN from box every rep — never rebound. 12 contacts."
+          "notes": "Step DOWN from box every rep \u2014 never rebound. 12 contacts."
         },
         {
           "name": "Trap Bar Jump Squat",
@@ -1303,11 +1303,11 @@
           "name": "Single-Leg Calf Raise (HSR)",
           "sets": "3x6/leg",
           "weight": "BW + 67 lbs/leg (~287 lbs effective)",
-          "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 Beyer protocol = 6RM zone — 3x6 with 3s/3s tempo at this load lands cleanly. 2nd HSR session of the week (Wed seated + Fri standing-single-leg = 2/3 Beyer cadence accepted in Wk 9 plan)."
+          "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 Beyer protocol = 6RM zone \u2014 3x6 with 3s/3s tempo at this load lands cleanly. 2nd HSR session of the week (Wed seated + Fri standing-single-leg = 2/3 Beyer cadence accepted in Wk 9 plan)."
         }
       ],
       "achillesPain": 0,
-      "notes": "Week 9 Fri Phase 2 Power + Plyometrics — FIRST PLYO SESSION IN 8 WEEKS. Delayed one day from planned Fri 5/8 → executed Sat 5/9. May 8 AM concerns (hip pain from sleep position, tired legs after 3 lower-body load days in 4) resolved overnight. All 6 exercises completed AS PRESCRIBED — no deviations. 30 ground contacts total (12 box + 9 TBJS + 9 broad jump) = matches plan; intentionally below Section 6 40-60 floor for Wk 1 ramp given bilateral achilles tendinopathy. TB Jump Squat at ~29% 1RM (vs ~30% target). Bulgarian Split Squat 3x6/leg @ 20 lb DBs as prescribed. Single-Leg Calf HSR at BW+67 in Beyer 6RM zone. First clean execution after the Phase 1→2 transition. Achilles 0/10 during loading (Silbernagel green); sleep night-of May 8→9 reported good."
+      "notes": "Week 9 Fri Phase 2 Power + Plyometrics \u2014 FIRST PLYO SESSION IN 8 WEEKS. Delayed one day from planned Fri 5/8 \u2192 executed Sat 5/9. May 8 AM concerns (hip pain from sleep position, tired legs after 3 lower-body load days in 4) resolved overnight. All 6 exercises completed AS PRESCRIBED \u2014 no deviations. 30 ground contacts total (12 box + 9 TBJS + 9 broad jump) = matches plan; intentionally below Section 6 40-60 floor for Wk 1 ramp given bilateral achilles tendinopathy. TB Jump Squat at ~29% 1RM (vs ~30% target). Bulgarian Split Squat 3x6/leg @ 20 lb DBs as prescribed. Single-Leg Calf HSR at BW+67 in Beyer 6RM zone. First clean execution after the Phase 1\u21922 transition. Achilles 0/10 during loading (Silbernagel green); sleep night-of May 8\u21929 reported good."
     },
     {
       "date": "2026-05-10",
@@ -1316,7 +1316,16 @@
       "duration": "40 min",
       "intensity": "high",
       "achillesPain": 0,
-      "notes": "Sun AM basketball (only Sun game — hockey PM not currently scheduled). ~38 hours after the Fri-shifted plyo session (Sat 5/9 morning → Sun 5/10 morning). First gameday after first plyo block in 8 weeks. Achilles 0/10 (green) — meets Section 4 criteria to continue Friday plyo (no >5/10 game-day signal). Sleep night-of May 9→10 reported good."
+      "notes": "Sun AM basketball (only Sun game \u2014 hockey PM not currently scheduled). ~38 hours after the Fri-shifted plyo session (Sat 5/9 morning \u2192 Sun 5/10 morning). First gameday after first plyo block in 8 weeks. Achilles 0/10 (green) \u2014 meets Section 4 criteria to continue Friday plyo (no >5/10 game-day signal). Sleep night-of May 9\u219210 reported good."
+    },
+    {
+      "date": "2026-05-12",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "Tue PM basketball Week 10. 20 min high intensity (shorter than typical 30-40 min Tue session). Achilles green during/after. 2nd game of Week 10 (Sun May 10 40min + Tue May 12 20min = 60 min total sport load this week). Sleep night-of not reported. Wk 10 Wed + Thu lifts subsequently missed due to work travel \u2014 May 15 (today) will run Phase 2 Fri Power + Plyometrics as RXed with +10 contact progression to 40, capped by 48h Sun-game window precluding heavy bilateral compounds."
     }
   ],
   "scienceReviews": [
@@ -2399,6 +2408,96 @@
               "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 = Beyer 6RM phase. 2nd of 2 HSR sessions this week (Wed seated + Sat standing-single-leg)."
             }
           ]
+        }
+      ]
+    },
+    "10": {
+      "label": "Phase 2 Wk 2 \u2014 Travel-disrupted, plyo-anchored",
+      "reason": "Work travel removed Wed May 13 Lower Body and Thu May 14 Upper + Power from the week. Sun May 17 basketball (~36-40h from Fri PM) precludes catching up heavy bilateral compounds today \u2014 Suchomel 2018 48h heavy-lift-to-game window. Friday Phase 2 Power + Plyometrics is the correct stimulus for this slot; progress plyo contacts 30 \u2192 40 to hit Section 6 / Ebben 2010 floor for a non-specialized athlete (achilles cleared by May 9\u219210 plyo\u2192game cluster at 0/10). HSR cadence drops to 1/3 Beyer for the week \u2014 single-week shortfall, not catastrophic for 12-week tendon adaptation. Wed + Thu lifts are gone, not deferred.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-05-10",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball AM \u2014 completed (40 min high, achilles 0/10). ~38h post-plyo session passed clean."
+        },
+        {
+          "day": "Mon",
+          "date": "2026-05-11",
+          "type": "rest",
+          "status": "done",
+          "desc": "Recovery + Option B deficit anchor (2,300-2,500 cal). Theragun if needed."
+        },
+        {
+          "day": "Tue",
+          "date": "2026-05-12",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball PM \u2014 completed (20 min high, achilles 0/10). Shorter than typical."
+        },
+        {
+          "day": "Wed",
+          "date": "2026-05-13",
+          "type": "rest",
+          "status": "missed",
+          "desc": "Phase 2 Lower Body MISSED \u2014 work travel. Not deferred; Sun May 17 game window precludes make-up Friday."
+        },
+        {
+          "day": "Thu",
+          "date": "2026-05-14",
+          "type": "rest",
+          "status": "missed",
+          "desc": "Phase 2 Upper + Power MISSED \u2014 work travel. BB Bench / Row progressions wait until Thu May 21."
+        },
+        {
+          "day": "Fri",
+          "date": "2026-05-15",
+          "type": "training",
+          "desc": "Phase 2 Power + Plyometrics \u2014 plyo Wk 2 progression. 40 contacts (Section 6 floor hit). No heavy bilateral compounds (Sun-game 48h window). Pre-load Momentous Collagen 30-60 min pre-session per Shaw 2017 / Praet 2019. Log AM achilles + last night sleep before warmup; auto-regulate per Silbernagel + Knowles 2018 if either is yellow. Log as '(Fri Phase 2)' for the renderer.",
+          "exercises": [
+            {
+              "name": "Box Jump (step down)",
+              "sets": "4x4",
+              "weight": "24-inch box",
+              "notes": "16 contacts (+4 vs May 9). Step DOWN every rep \u2014 never rebound (Section 6 achilles precaution)."
+            },
+            {
+              "name": "Trap Bar Jump Squat",
+              "sets": "3x4",
+              "weight": "70 lbs",
+              "notes": "12 contacts (+3 vs May 9). Hold load at ~29% TB DL max; rep bump validates the contact-count progression before load progression."
+            },
+            {
+              "name": "Broad Jump",
+              "sets": "4x3",
+              "weight": "BW",
+              "notes": "12 contacts (+3 vs May 9). Stick the landing every rep."
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "sets": "3x6/leg",
+              "weight": "20 lb DBs",
+              "notes": "Phase 2 Fri prescription \u2014 moderate load, upright torso, deliberate tempo. Held at last week's load."
+            },
+            {
+              "name": "Banded Lateral Shuffle",
+              "sets": "3x8/dir",
+              "notes": "As RXed."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 67 lb/leg (~287 effective)",
+              "notes": "Standing single-leg, gastroc-bias. Tempo 3s/3s. Beyer Wk 10 = 6RM zone. 1st (and only) HSR session of Week 10. Optional Sat home single-leg BW HSR 3x6/leg if you want to push toward 2/3 cadence."
+            }
+          ]
+        },
+        {
+          "day": "Sat",
+          "date": "2026-05-16",
+          "type": "rest",
+          "desc": "Recovery before Sun AM basketball. Optional single-leg BW HSR 3x6/leg at home if achilles/legs feel fresh \u2014 bumps Beyer cadence 1/3 \u2192 2/3 for the week. Skip if any signal of fatigue."
         }
       ]
     }

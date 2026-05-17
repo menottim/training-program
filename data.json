@@ -1326,6 +1326,60 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Tue PM basketball Week 10. 20 min high intensity (shorter than typical 30-40 min Tue session). Achilles green during/after. 2nd game of Week 10 (Sun May 10 40min + Tue May 12 20min = 60 min total sport load this week). Sleep night-of not reported. Wk 10 Wed + Thu lifts subsequently missed due to work travel \u2014 May 15 (today) will run Phase 2 Fri Power + Plyometrics as RXed with +10 contact progression to 40, capped by 48h Sun-game window precluding heavy bilateral compounds."
+    },
+    {
+      "date": "2026-05-15",
+      "type": "training",
+      "activity": "Power + Plyometrics (Fri Phase 2)",
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "4x4",
+          "weight": "24-inch box",
+          "notes": "Step DOWN every rep. 16 contacts. +1 set vs 5/9 (12)."
+        },
+        {
+          "name": "Trap Bar Jump Squat",
+          "sets": "4x3",
+          "weight": "70 lbs",
+          "notes": "~29% TB DL max (240). 12 contacts. +1 set vs 5/9 (9). As prescribed."
+        },
+        {
+          "name": "Broad Jump",
+          "sets": "4x3",
+          "notes": "12 contacts. +1 set vs 5/9 (9). Full reset between reps."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "sets": "3x6/leg",
+          "weight": "20 lb DBs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Banded Lateral Shuffle",
+          "sets": "3x8/dir",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 67 lbs/leg (~287 lbs effective)",
+          "notes": "Standing single-leg, gastroc-bias. Held at full load through plyo ramp (Magnusson & Kjaer 2019). Wk 11 = Beyer wk 9 cadence, 6RM zone with 3s/3s tempo."
+        }
+      ],
+      "achillesPain": 0,
+      "sleepHours": 7.5,
+      "notes": "Week 10 Fri Phase 2 Power + Plyometrics \u2014 2nd plyo session post-Phase 1\u21922 transition. Ramped contacts +10 vs 5/9 (30 \u2192 40) per 5/12 forecast: +1 set to each of the 3 plyometric exercises (Box Jump 4x4, TB Jump Squat 4x3, Broad Jump 4x3). Now at low end of Section 6 40-60 target. All 6 exercises completed as prescribed. Achilles 0/10 during loading (Silbernagel green). Sleep night-of May 14\u219215 normal. Compensatory standalone Fri session for Wk 10 after Wed + Thu lifts were missed to work travel \u2014 weekly lift volume was ~33% of normal (1 session vs 3) but plyo dose still ramped on schedule."
+    },
+    {
+      "date": "2026-05-17",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "40 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "sleepHours": 7.5,
+      "notes": "Sun AM basketball Week 11 day 1. ~40 hours after Fri 5/15 plyo (Fri eve \u2192 Sun AM). Good energy, achilles 0/10 during and after. 2nd plyo\u2192game 48h cluster passed clean (1st was Sat 5/9 \u2192 Sun 5/10). Meets Section 4 criteria to continue Fri plyo block. No PM hockey (Sunday AM-only schedule)."
     }
   ],
   "scienceReviews": [

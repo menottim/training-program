@@ -2685,13 +2685,13 @@
           "day": "Thu",
           "date": "2026-05-21",
           "type": "training",
-          "desc": "Phase 2 Upper + Power \u2014 as prescribed. BB Bench progression target: 4x5 @ 152.5 (+2.5 microload from 150 if 5/7 reps were clean). Bent Over Row inverted grip continues per 4/30 + 5/7 deviation pattern. Log as '(Thu Phase 2)'.",
+          "desc": "Phase 2 Upper + Power \u2014 as prescribed. BB Bench HOLD at 150 (2nd consecutive session at this weight per Section 1 double progression; no fractional plates available so +5 next Thu after 2 clean sessions, not microload). Bent Over Row inverted grip continues per 4/30 + 5/7 deviation pattern. Log as '(Thu Phase 2)'.",
           "exercises": [
             {
               "name": "Barbell Bench Press",
               "sets": "4x5",
-              "weight": "152.5 lbs",
-              "notes": "+2.5 microload from 150 (5/7). Track toward 225x5 target. RPE 7-8."
+              "weight": "150 lbs",
+              "notes": "HOLD at 150 \u2014 2nd session at this weight (first was 5/7, 14-day gap). Per Section 1 double progression: 2 consecutive clean sessions at same weight opens next +5. Clean rep quality today \u2192 155 next Thu. No fractional plates available so disciplined double progression is the path. RPE 7-8."
             },
             {
               "name": "Weighted Pull-up",

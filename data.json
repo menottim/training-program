@@ -1397,6 +1397,45 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Tue PM basketball Wk 11. 20 min high intensity (same duration as prior Tue 5/12). Achilles 0/10 during and after. ~26 hours after Mon 5/18 evening beach walk \u2014 game-day calves fresh. Sport-driven lower-body load this week: Sun 40 min + Tue 20 min = 60 min total, mirroring Wk 10 pattern. Sleep night-of normal."
+    },
+    {
+      "date": "2026-05-20",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 2)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "4x5",
+          "weight": "240 lbs",
+          "notes": "As prescribed. 2nd session at 240; 14-day layoff did not produce expected RPE bump \u2014 reps clean, no surprises. Opens 245 next Wed (Section 1 double progression)."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "4x5",
+          "weight": "155 lbs",
+          "notes": "As prescribed. 2nd consecutive clean session at 155. Opens 160 next Wed (Section 1 double progression)."
+        },
+        {
+          "name": "GHR / Ham Curl Machine",
+          "sets": "3x5",
+          "notes": "As prescribed. Posterior chain."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x6",
+          "weight": "150 lbs",
+          "notes": "NEW ADD this Wed (restored soleus-bias variant per Beyer 2015 both-variants requirement; Phase 2 prescription had dropped it vs Phase 1). Matched last seated load (4/29). 3s/3s tempo."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 67 lbs/leg (~287 lbs effective)",
+          "notes": "Standing single-leg, gastroc-bias. As prescribed. Beyer Wk 11 = 6RM zone."
+        }
+      ],
+      "achillesPain": 0,
+      "sleepHours": 7.5,
+      "notes": "Wk 11 Wed Phase 2 Lower \u2014 first heavy lift in 14 days (last lift session was Fri 5/15 plyo; last TB DL touch was 5/6). All exercises as prescribed. Forecast layoff RPE bump on TB DL did NOT materialize \u2014 reps felt clean, normal, no surprises. Positive signal: 14-day layoff did not cost neural pattern at 240 lb. Opens both TB DL 245 and Back Squat 160 for next Wed. Seated Calf Raise reintroduced to the Wed slot (restores Phase 1's gastroc + soleus both-variants pattern). Wk 11 HSR count now 2/3 (seated + standing single-leg today); Fri standing single-leg closes 3/3. Achilles 0/10 throughout. Sleep night-of 5/19\u21925/20 normal."
     }
   ],
   "scienceReviews": [
@@ -2607,7 +2646,8 @@
           "day": "Wed",
           "date": "2026-05-20",
           "type": "training",
-          "desc": "Phase 2 Lower \u2014 heavy TB DL touch after 14-day layoff (last touch 5/6). Hold loads; expect ~1 RPE bump from layoff on first set \u2014 pure neural pattern, not regression. NEW: Seated Calf Raise added back to Wed slot (Phase 1 had it; Phase 2 prescription dropped it). Restores Beyer 2015 both-variants requirement (gastroc + soleus) and brings Wk 11 HSR to 2/3 (seated + standing single-leg today). Pre-load Momentous Collagen 30-60 min pre-session per Shaw 2017 / Praet 2019. Log AM achilles + last night sleep before warmup. Log as '(Wed Phase 2)' for renderer.",
+          "status": "done",
+          "desc": "Phase 2 Lower \u2014 COMPLETED as RXed. TB DL 240x4x5, Back Squat 155x4x5, GHR 3x5, Seated Calf HSR 3x6 @ 150 (restored variant), Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. Forecast layoff RPE bump did NOT materialize \u2014 opens TB DL 245 and Back Squat 160 next Wed. Wk 11 HSR count: 2/3, Fri closes 3/3.",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",

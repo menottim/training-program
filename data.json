@@ -1380,6 +1380,23 @@
       "achillesPain": 0,
       "sleepHours": 7.5,
       "notes": "Sun AM basketball Week 11 day 1. ~40 hours after Fri 5/15 plyo (Fri eve \u2192 Sun AM). Good energy, achilles 0/10 during and after. 2nd plyo\u2192game 48h cluster passed clean (1st was Sat 5/9 \u2192 Sun 5/10). Meets Section 4 criteria to continue Fri plyo block. No PM hockey (Sunday AM-only schedule)."
+    },
+    {
+      "date": "2026-05-18",
+      "type": "recovery",
+      "activity": "Recovery day",
+      "details": "2-mile beach walk (evening). Zone 2 active recovery per Section 5 modality hierarchy (#2 below sleep extension).",
+      "achillesPain": 0,
+      "notes": "Mon Wk 11 recovery. 5/17 review prescribed a Mon HSR mini-session as new structural default \u2014 substituted with the beach walk instead, no HSR performed. Walk is good Zone 2 active recovery (Dupuy 2018 PMID 29755363, Moderate) but does not replace Beyer 2015 HSR protocol load (PMID 26018970, Strong); the calf-loading dose was zero. Wk 11 HSR count now 0/3 with Wed + Fri remaining. Achilles 0/10. Sleep normal."
+    },
+    {
+      "date": "2026-05-19",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "Tue PM basketball Wk 11. 20 min high intensity (same duration as prior Tue 5/12). Achilles 0/10 during and after. ~26 hours after Mon 5/18 evening beach walk \u2014 game-day calves fresh. Sport-driven lower-body load this week: Sun 40 min + Tue 20 min = 60 min total, mirroring Wk 10 pattern. Sleep night-of normal."
     }
   ],
   "scienceReviews": [

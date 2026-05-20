@@ -307,6 +307,7 @@ When performing a science review:
 
 - Has access to seated calf raise machine
 - GHR machine available (preferred over Nordic hamstring curl)
+- __No fractional plates available.__ Smallest barbell plate increment is +5 lb. This affects Section 1 progression-stall protocol: the "microloading — fractional plates or 2.5 lb increases" lever is not available. Default to standard +5 lb double-progression rule (2 clean sessions at same weight → next +5). When a lift stalls, skip the microload step and go directly to "add one set at current weight before increasing load" (volume before intensity) or the 10% reset.
 
 ---
 

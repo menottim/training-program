@@ -2577,6 +2577,163 @@
           "desc": "Recovery before Sun AM basketball. Optional single-leg BW HSR 3x6/leg at home if achilles/legs feel fresh \u2014 bumps Beyer cadence 1/3 \u2192 2/3 for the week. Skip if any signal of fatigue."
         }
       ]
+    },
+    "11": {
+      "label": "Phase 2 Wk 3 \u2014 Plyo block ramp + HSR compliance recovery",
+      "reason": "Mon 5/18 HSR mini-session (the structural default from 5/17 science review) was substituted with a 2-mile beach walk \u2014 Wk 11 HSR opens at 0/3. Wed adds Seated Calf Raise (soleus-bias) back to the Phase 2 Wed prescription: (a) restores Beyer 2015 both-variants requirement that Phase 2 Wed dropped vs Phase 1, (b) brings Wk 11 HSR to a recoverable 3/3 with Fri standing single-leg. Plyo block ramps to 50 contacts on Fri 5/22 \u2014 Wk 3 of the 4-week Markovic 2007 plyo window. TB DL 240 held for one more session (14-day layoff = expected RPE bump, recalibration not regression); Back Squat 155 held for the 2nd consecutive session, opening 160 next Wed per Section 1 double progression.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-05-17",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball AM \u2014 completed (40 min high, achilles 0/10, sleep 7.5h). 2nd plyo\u2192game 48h cluster passed clean."
+        },
+        {
+          "day": "Mon",
+          "date": "2026-05-18",
+          "type": "rest",
+          "status": "done",
+          "desc": "Recovery + Option B deficit anchor (2,300-2,500 cal). Completed 2-mile beach walk evening (Zone 2 active recovery per Dupuy 2018). Mon HSR mini-session (5/17 review's structural default) substituted, not performed \u2014 Wk 11 HSR opens at 0/3."
+        },
+        {
+          "day": "Tue",
+          "date": "2026-05-19",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball PM \u2014 completed (20 min high, achilles 0/10). Sport-driven lower-body load this week: Sun 40 + Tue 20 = 60 min."
+        },
+        {
+          "day": "Wed",
+          "date": "2026-05-20",
+          "type": "training",
+          "desc": "Phase 2 Lower \u2014 heavy TB DL touch after 14-day layoff (last touch 5/6). Hold loads; expect ~1 RPE bump from layoff on first set \u2014 pure neural pattern, not regression. NEW: Seated Calf Raise added back to Wed slot (Phase 1 had it; Phase 2 prescription dropped it). Restores Beyer 2015 both-variants requirement (gastroc + soleus) and brings Wk 11 HSR to 2/3 (seated + standing single-leg today). Pre-load Momentous Collagen 30-60 min pre-session per Shaw 2017 / Praet 2019. Log AM achilles + last night sleep before warmup. Log as '(Wed Phase 2)' for renderer.",
+          "exercises": [
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "4x5",
+              "weight": "240 lbs",
+              "notes": "Hold at 240 \u2014 2nd session at this weight. 14-day layoff means first set may feel +1 RPE vs 5/6; clean rep quality opens 245 next Wed (Section 1 double progression)."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "4x5",
+              "weight": "155 lbs",
+              "notes": "Hold at 155 \u2014 2nd consecutive session at this weight. If RPE 7-8 and clean across all 4 sets, next Wed = 160 (Section 1 double progression)."
+            },
+            {
+              "name": "GHR / Ham Curl Machine",
+              "sets": "3x5",
+              "weight": "BW or as RXed",
+              "notes": "Posterior chain. Eccentric focus; band-assist if needed."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x6",
+              "weight": "150 lbs",
+              "notes": "NEW ADD \u2014 restores soleus-bias variant. Match last seated load (4/29). 3s concentric / 3s eccentric. Bent-knee position biases soleus per Beyer 2015. Slot before single-leg standing (soleus warm-up first, gastroc heavy second)."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 67 lb/leg (~287 lb effective)",
+              "notes": "Standing single-leg, gastroc-bias. Tempo 3s/3s. Beyer Wk 11 = 6RM zone."
+            }
+          ]
+        },
+        {
+          "day": "Thu",
+          "date": "2026-05-21",
+          "type": "training",
+          "desc": "Phase 2 Upper + Power \u2014 as prescribed. BB Bench progression target: 4x5 @ 152.5 (+2.5 microload from 150 if 5/7 reps were clean). Bent Over Row inverted grip continues per 4/30 + 5/7 deviation pattern. Log as '(Thu Phase 2)'.",
+          "exercises": [
+            {
+              "name": "Barbell Bench Press",
+              "sets": "4x5",
+              "weight": "152.5 lbs",
+              "notes": "+2.5 microload from 150 (5/7). Track toward 225x5 target. RPE 7-8."
+            },
+            {
+              "name": "Weighted Pull-up",
+              "sets": "4x5",
+              "weight": "BW + as RXed",
+              "notes": "Phase 2 volume."
+            },
+            {
+              "name": "DB Push Press",
+              "sets": "3x6",
+              "weight": "30+ lb DBs",
+              "notes": "Explosive leg drive into press."
+            },
+            {
+              "name": "Bent Over Row (inverted grip)",
+              "sets": "4x5",
+              "weight": "~150 lbs",
+              "notes": "Supinated grip per 4/30 + 5/7 pattern. Progress per Section 1."
+            },
+            {
+              "name": "Cable Pull-Through (Explosive)",
+              "sets": "3x5",
+              "weight": "as RXed",
+              "notes": "Maximal intent, full hip extension."
+            },
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "3x5/side",
+              "notes": "Rotational power, hockey crossover."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-05-22",
+          "type": "training",
+          "desc": "Phase 2 Power + Plyo \u2014 Wk 3 of 4-week plyo block. Ramp contacts 40 \u2192 50 (+1 set on each of the 3 plyometrics: 5x4 box + 5x3 TBJS + 5x3 broad = 50). Now mid-range of Section 6 / Ebben 2010 40-60 target. Standing single-leg HSR closes Wk 11 at 3/3 Beyer cadence (seated Wed + standing-single-leg Wed + standing-single-leg Fri). Pre-load Momentous Collagen. Log as '(Fri Phase 2)'.",
+          "exercises": [
+            {
+              "name": "Box Jump (step down)",
+              "sets": "5x4",
+              "weight": "24-inch box",
+              "notes": "20 contacts (+4 vs 5/15). Step DOWN every rep \u2014 never rebound."
+            },
+            {
+              "name": "Trap Bar Jump Squat",
+              "sets": "5x3",
+              "weight": "70 lbs",
+              "notes": "15 contacts (+3 vs 5/15). Hold load at ~29% TB DL max; rep/set count progression before load progression."
+            },
+            {
+              "name": "Broad Jump",
+              "sets": "5x3",
+              "weight": "BW",
+              "notes": "15 contacts (+3 vs 5/15). Full reset between reps; stick the landing."
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "sets": "3x6/leg",
+              "weight": "20 lb DBs",
+              "notes": "Phase 2 Fri prescription \u2014 moderate load, upright torso."
+            },
+            {
+              "name": "Banded Lateral Shuffle",
+              "sets": "3x8/dir",
+              "notes": "As RXed."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 67 lb/leg (~287 lb effective)",
+              "notes": "Standing single-leg, gastroc-bias. Tempo 3s/3s. Closes Wk 11 HSR at 3/3 Beyer cadence."
+            }
+          ]
+        },
+        {
+          "day": "Sat",
+          "date": "2026-05-23",
+          "type": "rest",
+          "desc": "Recovery before Sun AM basketball. Option B deficit anchor (2,300-2,500 cal). Optional Theragun on calves."
+        }
+      ]
     }
   }
 }

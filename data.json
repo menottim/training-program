@@ -1436,6 +1436,51 @@
       "achillesPain": 0,
       "sleepHours": 7.5,
       "notes": "Wk 11 Wed Phase 2 Lower \u2014 first heavy lift in 14 days (last lift session was Fri 5/15 plyo; last TB DL touch was 5/6). All exercises as prescribed. Forecast layoff RPE bump on TB DL did NOT materialize \u2014 reps felt clean, normal, no surprises. Positive signal: 14-day layoff did not cost neural pattern at 240 lb. Opens both TB DL 245 and Back Squat 160 for next Wed. Seated Calf Raise reintroduced to the Wed slot (restores Phase 1's gastroc + soleus both-variants pattern). Wk 11 HSR count now 2/3 (seated + standing single-leg today); Fri standing single-leg closes 3/3. Achilles 0/10 throughout. Sleep night-of 5/19\u21925/20 normal."
+    },
+    {
+      "date": "2026-05-21",
+      "type": "training",
+      "activity": "Upper + Power (Thu Phase 2)",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "sets": "4x5",
+          "weight": "150 lbs",
+          "notes": "HELD at 150 \u2014 2nd consecutive session at this weight (after 5/7). All reps clean at RPE 7-8. Per Section 1 double progression, opens 155 next Thu. No fractional plates available so disciplined +5/cycle path."
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "1x5, 1x5, 1x5",
+          "weight": "135/140/145 lbs",
+          "notes": "SUBSTITUTED for Weighted Pull-up. Ramped working sets 135\u2192140\u2192145. Top set 145 = +10 lb vs prior top of 135 (5/6). 3 sets vs prescribed 4x5 (1 set short of prescription)."
+        },
+        {
+          "name": "DB Push Press",
+          "sets": "3x6",
+          "weight": "as prescribed",
+          "notes": "As prescribed. Explosive leg drive into press."
+        },
+        {
+          "name": "Bent Over Row (inverted grip)",
+          "sets": "4x5",
+          "weight": "~150 lbs",
+          "notes": "Supinated grip per 4/30 + 5/7 pattern. As prescribed. Clean reps at RPE 7-8."
+        },
+        {
+          "name": "Cable Pull-Through (Explosive)",
+          "sets": "3x5",
+          "weight": "as prescribed",
+          "notes": "Maximal intent, full hip extension."
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "3x5/side",
+          "notes": "Rotational power, hockey crossover."
+        }
+      ],
+      "achillesPain": 0,
+      "sleepHours": 7.5,
+      "notes": "Wk 11 Thu Phase 2 Upper + Power \u2014 completed as RXed except Weighted Pull-up substituted with Lat Pulldown (135/140/145 ramped, 3 sets vs prescribed 4x5). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu per Section 1 double progression. Lat Pulldown top set 145 = +10 lb vs prior 5/6 top (135) \u2014 back/lat strength is progressing. Achilles 0/10 throughout. Sleep night-of 5/20\u21925/21 normal. Pull-up vs Pulldown substitution is a recurring pattern (5/6 was also pulldown); worth considering whether to formalize this in the Phase 2 Thu prescription rather than treating it as a deviation each time."
     }
   ],
   "scienceReviews": [
@@ -2685,7 +2730,8 @@
           "day": "Thu",
           "date": "2026-05-21",
           "type": "training",
-          "desc": "Phase 2 Upper + Power \u2014 as prescribed. BB Bench HOLD at 150 (2nd consecutive session at this weight per Section 1 double progression; no fractional plates available so +5 next Thu after 2 clean sessions, not microload). Bent Over Row inverted grip continues per 4/30 + 5/7 deviation pattern. Log as '(Thu Phase 2)'.",
+          "status": "done",
+          "desc": "Phase 2 Upper + Power \u2014 COMPLETED as RXed except Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145 (3 sets vs 4 prescribed). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu. Achilles 0/10, sleep normal.",
           "exercises": [
             {
               "name": "Barbell Bench Press",

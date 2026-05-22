@@ -1450,9 +1450,9 @@
         },
         {
           "name": "Lat Pulldown",
-          "sets": "1x5, 1x5, 1x5",
-          "weight": "135/140/145 lbs",
-          "notes": "SUBSTITUTED for Weighted Pull-up. Ramped working sets 135\u2192140\u2192145. Top set 145 = +10 lb vs prior top of 135 (5/6). 3 sets vs prescribed 4x5 (1 set short of prescription)."
+          "sets": "1x5, 1x5, 2x5",
+          "weight": "135/140/145/145 lbs",
+          "notes": "SUBSTITUTED for Weighted Pull-up (formalized as Phase 2 Thu alternative after this session \u2014 2nd consecutive Thu using pulldown). Ramped 135\u2192140\u2192145, top set repeated at 145 for 4 sets total. Top set 145 = +10 lb vs prior 5/6 top of 135. Full prescribed 4x5 volume hit."
         },
         {
           "name": "DB Push Press",
@@ -1480,7 +1480,7 @@
       ],
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Wk 11 Thu Phase 2 Upper + Power \u2014 completed as RXed except Weighted Pull-up substituted with Lat Pulldown (135/140/145 ramped, 3 sets vs prescribed 4x5). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu per Section 1 double progression. Lat Pulldown top set 145 = +10 lb vs prior 5/6 top (135) \u2014 back/lat strength is progressing. Achilles 0/10 throughout. Sleep night-of 5/20\u21925/21 normal. Pull-up vs Pulldown substitution is a recurring pattern (5/6 was also pulldown); worth considering whether to formalize this in the Phase 2 Thu prescription rather than treating it as a deviation each time."
+      "notes": "Wk 11 Thu Phase 2 Upper + Power \u2014 completed as RXed. Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145/145 (4 sets, full prescribed volume). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu per Section 1 double progression. Lat Pulldown top set 145 = +10 lb vs prior 5/6 top (135) \u2014 back/lat strength is progressing. Achilles 0/10 throughout. Sleep night-of 5/20\u21925/21 normal. Pulldown substitution is now a confirmed 2-session pattern (5/6 + 5/21); index.html Phase 2 Thu updated to list Lat Pulldown as alternative to Weighted Pull-up (matches Phase 1 either-or pattern)."
     }
   ],
   "scienceReviews": [

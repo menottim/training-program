@@ -1481,6 +1481,60 @@
       "achillesPain": 0,
       "sleepHours": 7.5,
       "notes": "Wk 11 Thu Phase 2 Upper + Power \u2014 completed as RXed. Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145/145 (4 sets, full prescribed volume). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu per Section 1 double progression. Lat Pulldown top set 145 = +10 lb vs prior 5/6 top (135) \u2014 back/lat strength is progressing. Achilles 0/10 throughout. Sleep night-of 5/20\u21925/21 normal. Pulldown substitution is now a confirmed 2-session pattern (5/6 + 5/21); index.html Phase 2 Thu updated to list Lat Pulldown as alternative to Weighted Pull-up (matches Phase 1 either-or pattern)."
+    },
+    {
+      "date": "2026-05-22",
+      "type": "training",
+      "activity": "Power + Plyometrics (Fri Phase 2)",
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "5x4",
+          "weight": "24-inch box",
+          "notes": "20 contacts (+4 vs 5/15). Step DOWN every rep \u2014 never rebound. As prescribed."
+        },
+        {
+          "name": "Trap Bar Jump Squat",
+          "sets": "5x3",
+          "weight": "70 lbs",
+          "notes": "15 contacts (+3 vs 5/15). ~29% TB DL max. Held load; rep/set count progression before load progression. As prescribed."
+        },
+        {
+          "name": "Broad Jump",
+          "sets": "5x3",
+          "notes": "15 contacts (+3 vs 5/15). Full reset between reps; stick the landing. As prescribed."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "sets": "3x6/leg",
+          "weight": "20 lb DBs",
+          "notes": "Phase 2 Fri prescription. As prescribed."
+        },
+        {
+          "name": "Banded Lateral Shuffle",
+          "sets": "3x8/dir",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 67 lb/leg (~287 lbs effective)",
+          "notes": "Standing single-leg, gastroc-bias. 3s/3s tempo. Beyer Wk 11 = 6RM zone. CLOSES WK 11 HSR AT 3/3 BEYER CADENCE \u2014 first 3/3 week since Wk 8 (Apr 28-May 2)."
+        }
+      ],
+      "achillesPain": 0,
+      "sleepHours": 7.5,
+      "notes": "Wk 11 Fri Phase 2 Power + Plyo \u2014 completed as RXed. Plyo contact ramp executed: 40 (5/15) \u2192 50 (5/22), now mid-range of Section 6 / Ebben 2010 40-60 target. Wk 3 of 4-week Markovic 2007 plyo block; next Fri 5/29 ramps to 60 (top of range) to close the block. Wk 11 HSR closes at 3/3 Beyer cadence (Wed seated + Wed single-leg standing + Fri single-leg standing) \u2014 first 3/3 week since Wk 8 = direct result of the 5/17 science review structural fix (Seated Calf Raise restored to Wed slot). Achilles 0/10 throughout. Sleep night-of 5/21\u21925/22 normal."
+    },
+    {
+      "date": "2026-05-24",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "30 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "sleepHours": 7.5,
+      "notes": "Sun AM basketball Wk 11 day 7 / Wk 12 lead-in. 30 min high intensity. ~36-40 hours after Fri 5/22 plyo session. 3rd plyo\u2192game 48h cluster of the program (5/9\u21925/10, 5/15\u21925/17, 5/22\u21925/24) \u2014 all three clean at 0/10. Wk 11 closes: 4 training sessions completed (Wed lower, Thu upper, Fri plyo) + 2 games (Tue 20 min, Sun 30 min = 50 min sport load) + Mon 2-mile walk. Best-balanced week of Phase 2 to date. Achilles 0/10 during and after. Meets Section 4 criteria to continue Fri plyo block by wide margin."
     }
   ],
   "scienceReviews": [
@@ -2774,7 +2828,8 @@
           "day": "Fri",
           "date": "2026-05-22",
           "type": "training",
-          "desc": "Phase 2 Power + Plyo \u2014 Wk 3 of 4-week plyo block. Ramp contacts 40 \u2192 50 (+1 set on each of the 3 plyometrics: 5x4 box + 5x3 TBJS + 5x3 broad = 50). Now mid-range of Section 6 / Ebben 2010 40-60 target. Standing single-leg HSR closes Wk 11 at 3/3 Beyer cadence (seated Wed + standing-single-leg Wed + standing-single-leg Fri). Pre-load Momentous Collagen. Log as '(Fri Phase 2)'.",
+          "status": "done",
+          "desc": "Phase 2 Power + Plyo \u2014 COMPLETED as RXed. Box 5x4 + TBJS 5x3 @ 70 + Broad 5x3 = 50 contacts (mid-range of Section 6 target). BSS 3x6/leg @ 20 lb DBs, banded lateral shuffle 3x8/dir, Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. WK 11 HSR CLOSES AT 3/3 BEYER CADENCE \u2014 first 3/3 since Wk 8.",
           "exercises": [
             {
               "name": "Box Jump (step down)",

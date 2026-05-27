@@ -2919,6 +2919,136 @@
           "desc": "Recovery before Sun AM basketball. Option B deficit anchor (2,300-2,500 cal). Optional Theragun on calves."
         }
       ]
+    },
+    "12": {
+      "label": "Phase 2 Wk 4 — Plyo block close (60 contacts) + Bench/TB DL +5 cluster",
+      "reason": "Final week of the 4-week Markovic 2007 plyo block. Fri 5/29 plyo ramps to 60 contacts (top of Section 6 / Ebben 2010 40-60 range), then Wks 13-14 are 2-week maintenance per Phase 3 plan. Two +5 strength progressions opened by Wk 11 clean reps: TB DL 240 → 245 (Wed 5/27, executed clean) and BB Bench 150 → 155 (Thu 5/28). Back Squat 160 push deferred — Wed 5/27 had no rack available; substituted with Leg Press 3x10. Wk 12 HSR opens at 1/3 after Mon 5/25 rest + Wed Seated Calf miss (Seated was off the live site until today's index.html fix). Closing 3/3 requires Fri double-variant HSR — both seated AND standing single-leg.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-05-24",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball AM — completed (30 min high, achilles 0/10, sleep 7.5h). 3rd plyo→game 48h cluster of program, all clean."
+        },
+        {
+          "day": "Mon",
+          "date": "2026-05-25",
+          "type": "rest",
+          "status": "done",
+          "desc": "Rest day. Mon HSR mini-session not performed. Wk 12 opens at HSR 0/3 — same starting position as Wk 11."
+        },
+        {
+          "day": "Tue",
+          "date": "2026-05-26",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball PM — completed (20 min high, achilles 0/10). Wk 12 sport-driven load: Sun 30 + Tue 20 = 50 min."
+        },
+        {
+          "day": "Wed",
+          "date": "2026-05-27",
+          "type": "training",
+          "status": "done",
+          "desc": "Phase 2 Lower — TB DL 4x5 @ 245 (+5 progression, first compound +5 in 4 weeks, clean). Back Squat substituted with Leg Press 3x10 @ 90/180/270 — no rack available; Back Squat 160 push deferred. Ham Curl Machine 3x10 @ 50/60/70. Single-Leg Standing HSR 3x6/leg @ ~292 effective. Seated Calf Raise NOT performed (was missing from live index.html prescription — patched today). AM achilles 1/10 (still Silbernagel green zone, first nonzero in 16 days). Sleep 7h."
+        },
+        {
+          "day": "Thu",
+          "date": "2026-05-28",
+          "type": "training",
+          "desc": "Phase 2 Upper + Power. BB Bench progression: 4x5 @ 155 (+5 from 150, opened by 2 clean sessions on 5/7 and 5/21 per Section 1 double progression). Lat Pulldown or Weighted Pull-up (either-or per formalized Phase 2 Thu prescription); if pulldown, ramp top set to 150 (+5 vs prior 5/21 top of 145). Pre-load Momentous Collagen. Log as '(Thu Phase 2)'.",
+          "exercises": [
+            {
+              "name": "Barbell Bench Press",
+              "sets": "4x5",
+              "weight": "155 lbs",
+              "notes": "+5 progression from 150. First +5 on BB Bench in 4 weeks (last was 145→150 in Wk 9). RPE 7-8 target. Track toward 225x5."
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "1x5, 1x5, 2x5",
+              "weight": "140/145/150/150 lbs",
+              "notes": "Ramped 4 working sets, top set repeated. Top set 150 = +5 vs 5/21 (145). Alternative to Weighted Pull-up per formalized Phase 2 Thu prescription."
+            },
+            {
+              "name": "DB Push Press",
+              "sets": "3x6",
+              "notes": "Explosive leg drive into press. Progress per Section 1."
+            },
+            {
+              "name": "Bent Over Row (inverted grip)",
+              "sets": "4x5",
+              "weight": "~150 lbs",
+              "notes": "Supinated grip per 4/30 + 5/7 + 5/21 pattern."
+            },
+            {
+              "name": "Cable Pull-Through (Explosive)",
+              "sets": "3x5",
+              "notes": "Maximal intent, full hip extension."
+            },
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "3x5/side",
+              "notes": "Rotational power."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-05-29",
+          "type": "training",
+          "desc": "Phase 2 Power + Plyo — CLOSING SESSION of the 4-week Markovic 2007 plyo block. Final ramp 50 → 60 contacts (top of Section 6 / Ebben 2010 40-60 range). Split: 6x4 box + 6x3 TBJS + 6x3 broad = 60. After Fri, Wks 13-14 are 2-week plyo maintenance per Phase 3 plan. HSR: BOTH seated and standing single-leg variants this Fri (instead of standing-only) — closes Wk 12 at 3/3 by recovering the Wed Seated Calf miss. Pre-load Momentous Collagen. Log as '(Fri Phase 2)'.",
+          "exercises": [
+            {
+              "name": "Box Jump (step down)",
+              "sets": "6x4",
+              "weight": "24-inch box",
+              "notes": "24 contacts (+4 vs 5/22). Step DOWN every rep. Final plyo session of the block."
+            },
+            {
+              "name": "Trap Bar Jump Squat",
+              "sets": "6x3",
+              "weight": "70 lbs",
+              "notes": "18 contacts (+3 vs 5/22). Held load at ~29% TB DL max throughout block; volume-only progression."
+            },
+            {
+              "name": "Broad Jump",
+              "sets": "6x3",
+              "weight": "BW",
+              "notes": "18 contacts (+3 vs 5/22). Stick the landing every rep."
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "sets": "3x6/leg",
+              "weight": "20 lb DBs",
+              "notes": "Phase 2 Fri prescription — moderate load."
+            },
+            {
+              "name": "Banded Lateral Shuffle",
+              "sets": "3x8/dir",
+              "notes": "As RXed."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x6",
+              "weight": "150 lbs",
+              "notes": "ADDED this Fri (not normally on Fri) to recover the missed Wed Seated. Soleus-bias, 3s/3s tempo. Slot before standing single-leg."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 72 lb/leg (~292 lb effective)",
+              "notes": "Standing single-leg, gastroc-bias. 3s/3s tempo. Closes Wk 12 HSR at 3/3 (Wed single-leg + Fri seated + Fri single-leg)."
+            }
+          ]
+        },
+        {
+          "day": "Sat",
+          "date": "2026-05-30",
+          "type": "rest",
+          "desc": "Recovery before Sun AM basketball. Option B deficit anchor. End of Phase 2 plyo block — body consolidates over 48h before Sun game. Optional Theragun on calves if Fri's 60-contact session leaves residual tightness."
+        }
+      ]
     }
   }
 }

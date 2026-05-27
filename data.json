@@ -2769,28 +2769,32 @@
           "date": "2026-05-17",
           "type": "game",
           "status": "done",
-          "desc": "Basketball AM \u2014 completed (40 min high, achilles 0/10, sleep 7.5h). 2nd plyo\u2192game 48h cluster passed clean."
+          "desc": "Basketball AM \u2014 40 min high",
+          "longDesc": "Completed (40 min high, achilles 0/10, sleep 7.5h). 2nd plyo\u2192game 48h cluster passed clean."
         },
         {
           "day": "Mon",
           "date": "2026-05-18",
           "type": "rest",
           "status": "done",
-          "desc": "Recovery + Option B deficit anchor (2,300-2,500 cal). Completed 2-mile beach walk evening (Zone 2 active recovery per Dupuy 2018). Mon HSR mini-session (5/17 review's structural default) substituted, not performed \u2014 Wk 11 HSR opens at 0/3."
+          "desc": "Recovery + 2-mile beach walk",
+          "longDesc": "Recovery + Option B deficit anchor (2,300-2,500 cal). Completed 2-mile beach walk evening (Zone 2 active recovery per Dupuy 2018). Mon HSR mini-session (5/17 review's structural default) substituted, not performed \u2014 Wk 11 HSR opens at 0/3."
         },
         {
           "day": "Tue",
           "date": "2026-05-19",
           "type": "game",
           "status": "done",
-          "desc": "Basketball PM \u2014 completed (20 min high, achilles 0/10). Sport-driven lower-body load this week: Sun 40 + Tue 20 = 60 min."
+          "desc": "Basketball PM \u2014 20 min high",
+          "longDesc": "Completed (20 min high, achilles 0/10). Sport-driven lower-body load this week: Sun 40 + Tue 20 = 60 min."
         },
         {
           "day": "Wed",
           "date": "2026-05-20",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Lower \u2014 COMPLETED as RXed. TB DL 240x4x5, Back Squat 155x4x5, GHR 3x5, Seated Calf HSR 3x6 @ 150 (restored variant), Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. Forecast layoff RPE bump did NOT materialize \u2014 opens TB DL 245 and Back Squat 160 next Wed. Wk 11 HSR count: 2/3, Fri closes 3/3.",
+          "desc": "Phase 2 Lower \u2014 TB DL 240, Squat 155",
+          "longDesc": "Completed as RXed. TB DL 240x4x5, Back Squat 155x4x5, GHR 3x5, Seated Calf HSR 3x6 @ 150 (restored variant), Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. Forecast layoff RPE bump did NOT materialize \u2014 opens TB DL 245 and Back Squat 160 next Wed. Wk 11 HSR count: 2/3, Fri closes 3/3.",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
@@ -2829,7 +2833,8 @@
           "date": "2026-05-21",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Upper + Power \u2014 COMPLETED as RXed except Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145 (3 sets vs 4 prescribed). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu. Achilles 0/10, sleep normal.",
+          "desc": "Phase 2 Upper \u2014 Bench 150, Pulldown 145",
+          "longDesc": "Completed as RXed except Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145/145 (4 sets, full prescribed volume). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu. Achilles 0/10, sleep normal.",
           "exercises": [
             {
               "name": "Barbell Bench Press",
@@ -2873,7 +2878,8 @@
           "date": "2026-05-22",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Power + Plyo \u2014 COMPLETED as RXed. Box 5x4 + TBJS 5x3 @ 70 + Broad 5x3 = 50 contacts (mid-range of Section 6 target). BSS 3x6/leg @ 20 lb DBs, banded lateral shuffle 3x8/dir, Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. WK 11 HSR CLOSES AT 3/3 BEYER CADENCE \u2014 first 3/3 since Wk 8.",
+          "desc": "Phase 2 Plyo \u2014 50 contacts + HSR",
+          "longDesc": "Completed as RXed. Box 5x4 + TBJS 5x3 @ 70 + Broad 5x3 = 50 contacts (mid-range of Section 6 target). BSS 3x6/leg @ 20 lb DBs, banded lateral shuffle 3x8/dir, Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. WK 11 HSR CLOSES AT 3/3 BEYER CADENCE \u2014 first 3/3 since Wk 8.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
@@ -2916,7 +2922,8 @@
           "day": "Sat",
           "date": "2026-05-23",
           "type": "rest",
-          "desc": "Recovery before Sun AM basketball. Option B deficit anchor (2,300-2,500 cal). Optional Theragun on calves."
+          "desc": "Recovery + pre-game prep",
+          "longDesc": "Recovery before Sun AM basketball. Option B deficit anchor (2,300-2,500 cal). Optional Theragun on calves."
         }
       ]
     },
@@ -2929,34 +2936,39 @@
           "date": "2026-05-24",
           "type": "game",
           "status": "done",
-          "desc": "Basketball AM — completed (30 min high, achilles 0/10, sleep 7.5h). 3rd plyo→game 48h cluster of program, all clean."
+          "desc": "Basketball AM — 30 min high",
+          "longDesc": "Completed (30 min high, achilles 0/10, sleep 7.5h). 3rd plyo→game 48h cluster of program, all clean."
         },
         {
           "day": "Mon",
           "date": "2026-05-25",
           "type": "rest",
           "status": "done",
-          "desc": "Rest day. Mon HSR mini-session not performed. Wk 12 opens at HSR 0/3 — same starting position as Wk 11."
+          "desc": "Rest day",
+          "longDesc": "Mon HSR mini-session not performed. Wk 12 opens at HSR 0/3 — same starting position as Wk 11."
         },
         {
           "day": "Tue",
           "date": "2026-05-26",
           "type": "game",
           "status": "done",
-          "desc": "Basketball PM — completed (20 min high, achilles 0/10). Wk 12 sport-driven load: Sun 30 + Tue 20 = 50 min."
+          "desc": "Basketball PM — 20 min high",
+          "longDesc": "Completed (20 min high, achilles 0/10). Wk 12 sport-driven load: Sun 30 + Tue 20 = 50 min."
         },
         {
           "day": "Wed",
           "date": "2026-05-27",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Lower — TB DL 4x5 @ 245 (+5 progression, first compound +5 in 4 weeks, clean). Back Squat substituted with Leg Press 3x10 @ 90/180/270 — no rack available; Back Squat 160 push deferred. Ham Curl Machine 3x10 @ 50/60/70. Single-Leg Standing HSR 3x6/leg @ ~292 effective. Seated Calf Raise NOT performed (was missing from live index.html prescription — patched today). AM achilles 1/10 (still Silbernagel green zone, first nonzero in 16 days). Sleep 7h."
+          "desc": "Phase 2 Lower — TB DL 245",
+          "longDesc": "TB DL 4x5 @ 245 (+5 progression, first compound +5 in 4 weeks, clean). Back Squat substituted with Leg Press 3x10 @ 90/180/270 — no rack available; Back Squat 160 push deferred. Ham Curl Machine 3x10 @ 50/60/70. Single-Leg Standing HSR 3x6/leg @ ~292 effective. Seated Calf Raise NOT performed (was missing from live index.html prescription — patched today). AM achilles 1/10 (still Silbernagel green zone, first nonzero in 16 days). Sleep 7h."
         },
         {
           "day": "Thu",
           "date": "2026-05-28",
           "type": "training",
-          "desc": "Phase 2 Upper + Power. BB Bench progression: 4x5 @ 155 (+5 from 150, opened by 2 clean sessions on 5/7 and 5/21 per Section 1 double progression). Lat Pulldown or Weighted Pull-up (either-or per formalized Phase 2 Thu prescription); if pulldown, ramp top set to 150 (+5 vs prior 5/21 top of 145). Pre-load Momentous Collagen. Log as '(Thu Phase 2)'.",
+          "desc": "Phase 2 Upper + Power — Bench 155",
+          "longDesc": "BB Bench progression: 4x5 @ 155 (+5 from 150, opened by 2 clean sessions on 5/7 and 5/21 per Section 1 double progression). Lat Pulldown or Weighted Pull-up (either-or per formalized Phase 2 Thu prescription); if pulldown, ramp top set to 150 (+5 vs prior 5/21 top of 145). Pre-load Momentous Collagen. Log as '(Thu Phase 2)'.",
           "exercises": [
             {
               "name": "Barbell Bench Press",
@@ -2997,7 +3009,8 @@
           "day": "Fri",
           "date": "2026-05-29",
           "type": "training",
-          "desc": "Phase 2 Power + Plyo — CLOSING SESSION of the 4-week Markovic 2007 plyo block. Final ramp 50 → 60 contacts (top of Section 6 / Ebben 2010 40-60 range). Split: 6x4 box + 6x3 TBJS + 6x3 broad = 60. After Fri, Wks 13-14 are 2-week plyo maintenance per Phase 3 plan. HSR: BOTH seated and standing single-leg variants this Fri (instead of standing-only) — closes Wk 12 at 3/3 by recovering the Wed Seated Calf miss. Pre-load Momentous Collagen. Log as '(Fri Phase 2)'.",
+          "desc": "Phase 2 Plyo CLOSE — 60 contacts + double HSR",
+          "longDesc": "CLOSING SESSION of the 4-week Markovic 2007 plyo block. Final ramp 50 → 60 contacts (top of Section 6 / Ebben 2010 40-60 range). Split: 6x4 box + 6x3 TBJS + 6x3 broad = 60. After Fri, Wks 13-14 are 2-week plyo maintenance per Phase 3 plan. HSR: BOTH seated and standing single-leg variants this Fri (instead of standing-only) — closes Wk 12 at 3/3 by recovering the Wed Seated Calf miss. Pre-load Momentous Collagen. Log as '(Fri Phase 2)'.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
@@ -3046,7 +3059,8 @@
           "day": "Sat",
           "date": "2026-05-30",
           "type": "rest",
-          "desc": "Recovery before Sun AM basketball. Option B deficit anchor. End of Phase 2 plyo block — body consolidates over 48h before Sun game. Optional Theragun on calves if Fri's 60-contact session leaves residual tightness."
+          "desc": "Recovery + pre-game prep",
+          "longDesc": "Recovery before Sun AM basketball. Option B deficit anchor. End of Phase 2 plyo block — body consolidates over 48h before Sun game. Optional Theragun on calves if Fri's 60-contact session leaves residual tightness."
         }
       ]
     }

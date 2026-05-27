@@ -93,6 +93,95 @@
   }
   .today-summary strong { color: var(--accent2); }
 
+  /* Today Card — primary "what do I do today?" answer */
+  .today-card {
+    background: var(--bg);
+    border: 2px solid var(--accent2);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 0 0 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .today-card.is-rest { border-color: var(--text-muted); }
+  .today-card.is-game { border-color: var(--accent); }
+  .today-card.is-training { border-color: var(--accent2); }
+  .today-card.is-done { border-color: var(--success); }
+  .today-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .today-card-day {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .today-card-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .today-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent2);
+    margin-bottom: 0.75rem;
+  }
+  .today-card.is-game .today-card-title { color: var(--accent); }
+  .today-card.is-done .today-card-title { color: var(--success); }
+  .today-card-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem 0;
+  }
+  .today-card-checklist li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+  .today-card-checklist li:last-child { border-bottom: none; }
+  .today-card-checklist .ex-name { color: var(--text); font-weight: 500; flex: 1; min-width: 0; }
+  .today-card-checklist .ex-name a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--text-muted); }
+  .today-card-checklist .ex-sets { color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
+  .today-card-checklist .ex-weight { color: var(--accent2); font-weight: 600; font-size: 0.85rem; white-space: nowrap; }
+  .today-card-next {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .today-card-next strong { color: var(--text); }
+  .today-card-details {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  .today-card-details summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent2);
+    outline: none;
+    list-style: none;
+  }
+  .today-card-details summary::before { content: "▸ "; }
+  .today-card-details[open] summary::before { content: "▾ "; }
+  .today-card-details summary:hover { color: var(--accent); }
+  .today-card-details p { margin: 0.5rem 0 0 0; line-height: 1.5; }
+
+  @media (max-width: 640px) {
+    .today-card { padding: 1rem; border-radius: 8px; }
+    .today-card-day { font-size: 1.05rem; }
+    .today-card-checklist li { flex-wrap: wrap; gap: 0.25rem; }
+  }
+
   /* Compact activity log */
   .show-all-btn {
     background: none;
@@ -1191,6 +1280,9 @@
 <!-- ═══════════════════════════════════════════════ -->
 <div id="tab-week" class="tab-content active">
 
+<!-- TODAY CARD — primary "what do I do today?" answer -->
+<div id="today-card-mount"></div>
+
 <!-- WEEKLY OVERVIEW -->
 <h2 id="week">&#128197; Weekly Overview</h2>
 <div class="week-grid">
@@ -1238,14 +1330,14 @@
   48+ hours between heavy training and games. Wednesday is furthest from all games. Friday is deliberately the lightest session (~36 hrs before Sunday AM).
 </div>
 
-<!-- Today's Coaching Snapshot (day type, goals, plan) -->
+<!-- Modified Week Plan (rendered from data.json when active — replaces the static grid above) -->
+<div id="modified-week-mount"></div>
+
+<!-- Today's Stats Strip (compact: cal target, week counts, achilles trend) -->
 <div id="today-coaching-mount"></div>
 
 <!-- Nutrition Goals Progress (this week vs Option B targets) -->
 <div id="nutrition-progress-mount"></div>
-
-<!-- Modified Week Plan (rendered from data.json when active) -->
-<div id="modified-week-mount"></div>
 
 <!-- Dashboard Summary (moved from tracker section) -->
 <div id="dashboard-mount"></div>
@@ -1982,6 +2074,112 @@
 
   // Modified Week Plan
   // Note: innerHTML uses esc() for all data.json string interpolation.
+  // --- Today Card (primary "what do I do today?" answer) ---
+  // Note: follows the same innerHTML + esc() pattern as renderModifiedWeek / renderTodaySummary.
+  // All data.json strings flow through esc() before interpolation. linkifyText() handles
+  // controlled prose with URL detection. This is a personal single-user site with no external input.
+  (function renderTodayCard() {
+    var mount = document.getElementById('today-card-mount');
+    if (!mount) return;
+
+    var dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var fullDayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var todayName = dayNames[today.getDay()];
+    var fullTodayName = fullDayNames[today.getDay()];
+    var todayStr = today.getFullYear() + '-' +
+      String(today.getMonth() + 1).padStart(2, '0') + '-' +
+      String(today.getDate()).padStart(2, '0');
+
+    var mw = modifiedWeeks[String(weekNum)];
+    var todayDay = null;
+    if (mw && mw.schedule) {
+      for (var i = 0; i < mw.schedule.length; i++) {
+        if (mw.schedule[i].day === todayName) { todayDay = mw.schedule[i]; break; }
+      }
+    }
+
+    var typeClass = 'is-rest';
+    var sessionLabel = 'Rest';
+    var title = '';
+
+    if (todayDay) {
+      if (todayDay.type === 'training') { typeClass = 'is-training'; sessionLabel = 'Training'; }
+      else if (todayDay.type === 'game') { typeClass = 'is-game'; sessionLabel = 'Game'; }
+      else if (todayDay.type === 'rest') { typeClass = 'is-rest'; sessionLabel = 'Rest'; }
+      else if (todayDay.type === 'hotel') { typeClass = 'is-training'; sessionLabel = 'Hotel session'; }
+      else if (todayDay.type === 'gym-deload') { typeClass = 'is-training'; sessionLabel = 'Gym deload'; }
+      title = todayDay.desc || sessionLabel;
+      if (todayDay.status === 'done') typeClass += ' is-done';
+    } else {
+      var stdSchedule = { Sun: 'Basketball AM', Mon: 'Recovery day', Tue: 'Basketball PM',
+        Wed: 'Lower Body — Heavy', Thu: 'Upper Body + Power', Fri: 'Lower Moderate + Plyo', Sat: 'Pre-game prep' };
+      title = stdSchedule[todayName] || '';
+      if (todayName === 'Sun' || todayName === 'Tue') { typeClass = 'is-game'; sessionLabel = 'Game'; }
+      else if (todayName === 'Mon' || todayName === 'Sat') { typeClass = 'is-rest'; sessionLabel = 'Rest'; }
+      else { typeClass = 'is-training'; sessionLabel = 'Training'; }
+    }
+
+    var checklistHTML = '';
+    if (todayDay && todayDay.exercises && todayDay.exercises.length > 0) {
+      checklistHTML = '<ul class="today-card-checklist">' +
+        todayDay.exercises.map(function(ex) {
+          var nameHTML = exerciseLinks[ex.name]
+            ? '<a href="' + esc(exerciseLinks[ex.name]) + '" target="_blank">' + esc(ex.name) + '</a>'
+            : esc(ex.name);
+          var sets = ex.sets ? '<span class="ex-sets">' + esc(ex.sets) + '</span>' : '';
+          var weight = ex.weight ? '<span class="ex-weight">@ ' + esc(ex.weight) + '</span>' : '';
+          var meta = sets + (sets && weight ? ' ' : '') + weight;
+          return '<li>' +
+            '<span class="ex-name">' + nameHTML + '</span>' +
+            (meta ? '<span>' + meta + '</span>' : '') +
+          '</li>';
+        }).join('') +
+      '</ul>';
+    }
+
+    var longHTML = '';
+    if (todayDay && todayDay.longDesc) {
+      longHTML = '<details class="today-card-details">' +
+        '<summary>Coaching detail</summary>' +
+        '<p>' + linkifyText(todayDay.longDesc) + '</p>' +
+      '</details>';
+    }
+
+    var nextHTML = '';
+    if (mw && mw.schedule) {
+      var todayIdx = -1;
+      for (var ti = 0; ti < mw.schedule.length; ti++) {
+        if (mw.schedule[ti].day === todayName) { todayIdx = ti; break; }
+      }
+      var startIdx = todayIdx >= 0 ? todayIdx + 1 : 0;
+      for (var k = startIdx; k < mw.schedule.length; k++) {
+        var n = mw.schedule[k];
+        if (n.type !== 'rest' && n.status !== 'done') {
+          nextHTML = '<div class="today-card-next">Next: <strong>' + esc(n.day) + '</strong> — ' + esc(n.desc || '') + '</div>';
+          break;
+        }
+      }
+    }
+
+    var statusBadge = '';
+    if (todayDay && todayDay.status === 'done') {
+      statusBadge = ' <span style="color:var(--success);font-size:0.85rem;">✓ Done</span>';
+    }
+
+    var dateStr = todayStr.slice(5).replace('-', '/');
+    mount.innerHTML =
+      '<div class="today-card ' + typeClass + '">' +
+        '<div class="today-card-header">' +
+          '<div class="today-card-day">' + fullTodayName + ' · ' + dateStr + statusBadge + '</div>' +
+          '<div class="today-card-meta">Week ' + weekNum + ' · Phase ' + phase + ' · ' + esc(sessionLabel) + '</div>' +
+        '</div>' +
+        '<div class="today-card-title">' + linkifyText(title) + '</div>' +
+        checklistHTML +
+        nextHTML +
+        longHTML +
+      '</div>';
+  })();
+
   (function renderModifiedWeek() {
     var mw = modifiedWeeks[String(weekNum)];
     if (!mw) return;
@@ -3475,13 +3673,12 @@
   })();
 
 
-  // --- Today's Coaching Snapshot ---
-  (function todaysCoaching() {
+  // --- Today's Stats Strip (compact supplementary data: cal target, week counts, achilles) ---
+  // Day type / plan summary / exercise checklist now live in the Today Card above.
+  (function todaysStatsStrip() {
     var mount = document.getElementById('today-coaching-mount');
     if (!mount) return;
 
-    var today = new Date();
-    var todayStr = today.toISOString().slice(0,10);
     var dayOfWeek = today.getDay();
     var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
@@ -3494,22 +3691,14 @@
     }
     var isAnchor = anchorDays.indexOf(dayNames[dayOfWeek]) >= 0;
 
-    var scheduleType, calorieTarget, planSummary;
-    if (dayOfWeek === 0) { scheduleType = 'Sport (Basketball AM' + (weekNum !== 7 ? ' + Hockey PM' : '') + ')'; calorieTarget = '~3,000 (game day maintenance)'; planSummary = 'Play games. Hydrate. No lifting.'; }
-    else if (dayOfWeek === 1) { scheduleType = 'Recovery + Deficit Anchor'; calorieTarget = '2,300-2,500 (deficit day)'; planSummary = 'Low-intensity cardio, foam roll, HSR optional. No lifting.'; }
-    else if (dayOfWeek === 2) { scheduleType = 'Sport (Basketball PM)'; calorieTarget = '~2,800 (game day maintenance)'; planSummary = 'Prep, play basketball evening.'; }
-    else if (dayOfWeek === 3) { scheduleType = 'Training: Lower Body (Heavy)'; calorieTarget = '~3,000 (training maintenance)'; planSummary = 'TB DL primary, Back Squat, BSS, SLRDL, HSR. Heaviest session.'; }
-    else if (dayOfWeek === 4) { scheduleType = 'Training: Upper Body + Deficit Anchor'; calorieTarget = '2,300-2,500 (deficit day)'; planSummary = 'BB Bench, Pulldown, Row, OHP, Face Pull, core.'; }
-    else if (dayOfWeek === 5) { scheduleType = 'Training: Lower Moderate + Mobility'; calorieTarget = '~2,700'; planSummary = 'Goblet squat, hip thrust, lateral band walk, HSR, mobility.'; }
-    else if (dayOfWeek === 6) { scheduleType = 'Pre-Game Prep + Deficit Anchor'; calorieTarget = '2,300-2,500 (deficit day)'; planSummary = 'Light dynamic warmup, ankle mobility, glute activation.'; }
-
-    var phaseTransitionStr = '';
-    if (weekNum < 9) {
-      var weeksToPhase2 = 9 - weekNum;
-      phaseTransitionStr = ' &middot; <span style="color:var(--accent2);">Phase 1&rarr;2 in ' + weeksToPhase2 + ' week' + (weeksToPhase2 > 1 ? 's' : '') + '</span>';
-    } else if (weekNum < 15) {
-      phaseTransitionStr = ' &middot; <span style="color:var(--accent2);">Phase 2</span>';
-    }
+    var calorieTarget;
+    if (dayOfWeek === 0) calorieTarget = '~3,000 (game day)';
+    else if (dayOfWeek === 1) calorieTarget = '2,300-2,500 (deficit anchor)';
+    else if (dayOfWeek === 2) calorieTarget = '~2,800 (game day)';
+    else if (dayOfWeek === 3) calorieTarget = '~3,000 (training)';
+    else if (dayOfWeek === 4) calorieTarget = '2,300-2,500 (deficit anchor)';
+    else if (dayOfWeek === 5) calorieTarget = '~2,700';
+    else calorieTarget = '2,300-2,500 (deficit anchor)';
 
     var thisWeekSport = 0, thisWeekTraining = 0;
     activityLog.forEach(function(e) {
@@ -3526,31 +3715,17 @@
       }
     });
     var achillesHTML = recentAchilles.length > 0
-      ? recentAchilles.reverse().map(function(a) { return a.pain + '/10'; }).join(' &rarr; ')
+      ? recentAchilles.reverse().map(function(a) { return a.pain + '/10'; }).join(' → ')
       : 'no recent data';
 
-    var html =
-      '<div class="info-box" style="background:linear-gradient(135deg, rgba(76,175,80,0.08), rgba(33,150,243,0.08)); border-left-color:var(--accent2);">' +
-        '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">' +
-          '<strong>Today: ' + dayNames[dayOfWeek] + ' &middot; ' + todayStr + '</strong>' +
-          '<span style="font-size:0.8rem;color:var(--text-muted);">Week ' + weekNum + ' / Phase ' + phase + phaseTransitionStr + '</span>' +
-        '</div>' +
-        '<div style="margin-top:0.75rem;font-size:0.9rem;">' +
-          '<strong>Day type:</strong> ' + scheduleType + (isAnchor ? ' <span style="color:var(--warning);font-size:0.75rem;font-weight:bold;margin-left:0.25rem;">&#9679; DEFICIT ANCHOR</span>' : '') +
-        '</div>' +
-        '<div style="margin-top:0.25rem;font-size:0.9rem;">' +
-          '<strong>Calorie target:</strong> ' + calorieTarget +
-        '</div>' +
-        '<div style="margin-top:0.25rem;font-size:0.85rem;color:var(--text-muted);">' +
-          planSummary +
-        '</div>' +
-        '<div style="margin-top:0.5rem;font-size:0.8rem;color:var(--text-muted);display:flex;gap:1rem;flex-wrap:wrap;">' +
-          '<span>Sport this week: <strong>' + thisWeekSport + '</strong></span>' +
-          '<span>Training: <strong>' + thisWeekTraining + '</strong></span>' +
-          '<span>Recent achilles: <strong>' + achillesHTML + '</strong></span>' +
-        '</div>' +
+    var anchorBadge = isAnchor ? ' <span style="color:var(--warning);font-size:0.7rem;font-weight:bold;">● DEFICIT ANCHOR</span>' : '';
+
+    mount.innerHTML =
+      '<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.8rem;color:var(--text-muted);padding:0.5rem 0;margin-bottom:1rem;border-bottom:1px dashed var(--border);">' +
+        '<span><strong style="color:var(--text);">Cal:</strong> ' + calorieTarget + anchorBadge + '</span>' +
+        '<span><strong style="color:var(--text);">This week:</strong> ' + thisWeekTraining + ' lift · ' + thisWeekSport + ' game</span>' +
+        '<span><strong style="color:var(--text);">Recent achilles:</strong> ' + achillesHTML + '</span>' +
       '</div>';
-    mount.innerHTML = html;
   })();
 
   // --- Nutrition Goals Progress Tracker ---

@@ -82,6 +82,47 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
+  /* Collapsible Athlete Profile (header + body stats + priorities) */
+  .athlete-profile {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-alt);
+  }
+  .athlete-profile summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    outline: none;
+  }
+  .athlete-profile summary::-webkit-details-marker { display: none; }
+  .athlete-profile summary::marker { content: ""; }
+  .athlete-profile-sum {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .athlete-profile-sum strong { color: var(--accent2); font-weight: 700; }
+  .athlete-profile-sum .ap-sep { color: var(--border); }
+  .athlete-profile-toggle {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .athlete-profile-toggle::after { content: " ▾"; display: inline-block; transition: transform 0.2s; }
+  .athlete-profile[open] .athlete-profile-toggle::after { transform: rotate(180deg); }
+  .athlete-profile-body {
+    background: var(--bg);
+    padding: 0;
+  }
+
   /* Today summary bar */
   .today-summary {
     background: var(--bg-alt);
@@ -654,15 +695,34 @@
     .today-summary { font-size: 0.7rem; padding: 0.4rem 0.75rem; }
     .log-form-row { flex-direction: column; }
 
+    /* Mobile: horizontal scrolling 7-day strip instead of tall stack.
+       Today Card above already shows today's full exercise list, so the
+       Modified Week card on mobile just needs to convey week status. */
     .modified-week-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(7, 110px);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
     }
     .modified-day {
-      border-right: none;
-      border-bottom: 1px solid var(--border);
-      min-height: auto;
+      border-right: 1px solid var(--border);
+      border-bottom: none;
+      min-height: 90px;
+      scroll-snap-align: start;
     }
-    .modified-day:last-child { border-bottom: none; }
+    .modified-day:last-child { border-right: none; }
+    .modified-day .exercise-list,
+    .modified-day .md-next-up {
+      display: none;
+    }
+    .modified-day .md-desc {
+      font-size: 0.65rem;
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
 
     /* Weekly overview: scroll horizontally instead of squishing 7 columns */
     .week-grid {
@@ -1243,35 +1303,31 @@
   </div>
 </nav>
 
-<div id="top" class="header">
-  <h1>In-Season Training Program</h1>
-  <p class="subtitle">Multi-Sport Athlete &middot; Perpetual In-Season &middot; Age 40</p>
-  <div id="header-stats-mount" class="stats">
-    <!-- Rendered from data.json -->
-    <div class="stat">
-      <div class="stat-value">6'2" / 220</div>
-      <div class="stat-label">Height / Weight</div>
+<details class="athlete-profile">
+  <summary>
+    <span class="athlete-profile-sum" id="athlete-profile-sum-mount">
+      <strong>In-Season Training Program</strong>
+      <span class="ap-sep">|</span>
+      <span>Age 40 &middot; 6'2"</span>
+    </span>
+    <span class="athlete-profile-toggle">Profile</span>
+  </summary>
+  <div class="athlete-profile-body">
+    <div id="top" class="header">
+      <h1>In-Season Training Program</h1>
+      <p class="subtitle">Multi-Sport Athlete &middot; Perpetual In-Season &middot; Age 40</p>
+      <div id="header-stats-mount" class="stats">
+        <!-- Rendered from data.json -->
+      </div>
     </div>
-    <div class="stat">
-      <div class="stat-value">~20%</div>
-      <div class="stat-label">Body Fat</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">3 Games/wk</div>
-      <div class="stat-label">BB Tue + BB &amp; Hockey Sun</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">3 Sessions/wk</div>
-      <div class="stat-label">Training Days</div>
+
+    <div class="goals">
+      <div class="goal"><span class="priority">Priority 1</span> Injury Prevention</div>
+      <div class="goal"><span class="priority">Priority 2</span> Strength &amp; Power</div>
+      <div class="goal"><span class="priority">Priority 3</span> Vertical / Above the Rim</div>
     </div>
   </div>
-</div>
-
-<div class="goals">
-  <div class="goal"><span class="priority">Priority 1</span> Injury Prevention</div>
-  <div class="goal"><span class="priority">Priority 2</span> Strength &amp; Power</div>
-  <div class="goal"><span class="priority">Priority 3</span> Vertical / Above the Rim</div>
-</div>
+</details>
 
 <div id="today-summary" class="today-summary"></div>
 
@@ -2023,6 +2079,19 @@
 
   headerMount.insertAdjacentHTML('beforeend', statsHTML);
 
+  // Populate the collapsed Athlete Profile summary with current key stats
+  var apSumMount = document.getElementById('athlete-profile-sum-mount');
+  if (apSumMount) {
+    apSumMount.innerHTML =
+      '<strong>Profile</strong>' +
+      '<span class="ap-sep">|</span>' +
+      '<span>' + esc(athlete.height) + ' &middot; <strong>' + latestWeight + ' lbs</strong>' +
+      (curBFVal != null ? ' &middot; <strong>' + curBFDisplay + '</strong>' : '') +
+      ' &middot; BMI ' + curBMI + '</span>' +
+      '<span class="ap-sep">|</span>' +
+      '<span style="color:var(--text-muted);">→ ' + tgtWeight + ' lbs / ' + tgtBF + '%</span>';
+  }
+
   // Dashboard
   document.getElementById('dashboard-mount').innerHTML = [
     '<div class="dashboard">',
@@ -2397,12 +2466,15 @@
   }
   document.getElementById('activity-log-mount').innerHTML = logHTML;
 
-  // ─── Compact activity log: show last 2 weeks by default ───
+  // ─── Compact activity log: show just THIS WEEK by default ───
+  // Older weeks accessible via "Show all weeks" toggle. Keeps the
+  // bottom of the This Week tab from becoming an essay.
   (function compactLog() {
     var logMount = document.getElementById('activity-log-mount');
     var summaries = logMount.querySelectorAll('.week-summary');
-    if (summaries.length > 2) {
-      for (var i = 0; i < summaries.length - 2; i++) {
+    var DEFAULT_VISIBLE = 1;
+    if (summaries.length > DEFAULT_VISIBLE) {
+      for (var i = 0; i < summaries.length - DEFAULT_VISIBLE; i++) {
         summaries[i].style.display = 'none';
       }
       var btn = document.createElement('button');
@@ -2412,11 +2484,11 @@
         var showAll = btn.textContent.indexOf('Show all') === 0;
         summaries.forEach(function(s) { s.style.display = showAll ? '' : 'none'; });
         if (!showAll) {
-          for (var i = 0; i < summaries.length - 2; i++) {
+          for (var i = 0; i < summaries.length - DEFAULT_VISIBLE; i++) {
             summaries[i].style.display = 'none';
           }
         }
-        btn.textContent = showAll ? 'Show recent only' : 'Show all ' + summaries.length + ' weeks';
+        btn.textContent = showAll ? 'Show current week only' : 'Show all ' + summaries.length + ' weeks';
       });
       var h3 = logMount.querySelector('h3');
       if (h3) h3.after(btn);
@@ -2753,12 +2825,15 @@
   // ═══════════════════════════════════════════════
 
   (function renderBodyChart() {
-    var sorted = bodyLog.slice().sort(function(a, b) { return a.date < b.date ? -1 : 1; });
+    // Only chart bodyLog entries that have a weight reading (many entries are
+    // achilles-only or sleep-only and would propagate NaN through the math).
+    var sorted = bodyLog.slice().filter(function(e) { return e.weight != null; })
+      .sort(function(a, b) { return a.date < b.date ? -1 : 1; });
 
+    var mount = document.getElementById('body-chart-mount');
     if (sorted.length < 2) {
-      var mount = document.getElementById('body-chart-mount');
       mount.insertAdjacentHTML('beforeend',
-        '<div class="chart-container">' + svgEmptyState(600, 80, 'More body composition data needed (2+ entries)') + '</div>');
+        '<div class="chart-container">' + svgEmptyState(600, 80, 'More body composition data needed (2+ entries with weight)') + '</div>');
       return;
     }
 
@@ -2819,7 +2894,6 @@
 
     parts.push('</svg>');
 
-    var mount = document.getElementById('body-chart-mount');
     mount.insertAdjacentHTML('beforeend',
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
@@ -2833,9 +2907,11 @@
   // ═══════════════════════════════════════════════
 
   (function renderStrengthChart() {
+    // Note: maps "Bench Press" (barbell) to benchPress target, NOT "DB Bench Press"
+    // per CLAUDE.md — DB bench and barbell bench are different lifts.
     var keyLifts = {
       'Trap Bar Deadlift': { color: '#0f3460', target: targets.trapBarDeadlift.weight },
-      'DB Bench Press': { color: '#198754', target: targets.benchPress.weight },
+      'Bench Press': { color: '#198754', target: targets.benchPress.weight },
       'Back Squat': { color: '#e94560', target: targets.backSquat.weight }
     };
     var liftByWeek = {};

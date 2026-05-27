@@ -1545,6 +1545,40 @@
       "achillesPain": 0,
       "sleepHours": 7.5,
       "notes": "Tue PM basketball Wk 12 day 3. 20 min high intensity (matches recent Tue pattern: 5/12 and 5/19 both 20 min). Achilles 0/10. Mon 5/25 was rest (Mon HSR mini-session not performed \u2014 Wk 12 opens at HSR 0/3, same starting point as Wk 11). Sleep night-of 5/25\u21925/26 normal. Wk 12 sport-driven load: Sun 5/24 30 min + Tue 5/26 20 min = 50 min so far."
+    },
+    {
+      "date": "2026-05-27",
+      "type": "training",
+      "activity": "Lower Body (Wed Phase 2)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "4x5",
+          "weight": "245 lbs",
+          "notes": "+5 progression from 240 per Section 1 double progression (opened by 2 clean sessions at 240: 5/6 and 5/20). First +5 on TB DL since 5/6. As prescribed."
+        },
+        {
+          "name": "Leg Press",
+          "sets": "3x10",
+          "weight": "90/180/270 lbs",
+          "notes": "SUBSTITUTED for Back Squat \u2014 no squat rack available at gym. Ramped working sets. Different stimulus profile (fixed plane, no stabilization demand) \u2014 leg press loads do not map to backSquat target. Back Squat 160 push deferred."
+        },
+        {
+          "name": "Ham Curl Machine",
+          "sets": "3x10",
+          "weight": "50/60/70 lbs",
+          "notes": "Ham Curl Machine selected from prescribed GHR / Ham Curl alternatives. 3x10 vs prescribed 3x5 \u2014 hypertrophy-flavored rep scheme rather than strength-flavored, ramped load."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "~292 lbs effective (BW + 72 lb/leg)",
+          "notes": "Standing single-leg, gastroc-bias. +5 effective from 5/20 (287 \u2192 292). 3s/3s tempo. Beyer Wk 12 = 6RM zone."
+        }
+      ],
+      "achillesPain": 0,
+      "sleepHours": 7,
+      "notes": "Wk 12 Wed Phase 2 Lower. TB DL +5 progression to 245 hit cleanly \u2014 first compound +5 in 4 weeks. Back Squat substituted with Leg Press 3x10 ramped (no rack available); Back Squat 160 push deferred. Seated Calf Raise NOT performed \u2014 was missing from the live index.html Phase 2 Wed prescription (the 5/17 review structural fix was added to modifiedWeeks[\"11\"] and to the activityLog but never to the base prescription; correcting that now). Wk 12 HSR currently 1/3 (single-leg standing only) \u2014 Fri needs to bring 2 sessions or post-Fri make-up needed to hit 3/3. AM achilles 1/10 (first nonzero AM since 5/11) \u2014 still within Silbernagel green zone (0-3 acceptable per Section 4), no action triggered; will monitor. Sleep night-of 5/26\u21925/27: 7h (below typical 7.5-8 but in NSF adult range 7-9; not at Section 2 reactive-deload threshold of <6h)."
     }
   ],
   "scienceReviews": [

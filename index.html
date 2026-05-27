@@ -1465,27 +1465,6 @@
 <!-- Nutrition Goals Progress (this week vs Option B targets) -->
 <div id="nutrition-progress-mount"></div>
 
-<!-- Insights & history (collapsed by default to keep "what do I do today?" answers above) -->
-<details class="insights-section">
-  <summary>📊 <strong>Insights &amp; history</strong> <span class="insights-hint">trends, body comp, charts</span></summary>
-  <div class="insights-body">
-    <!-- Dashboard Summary -->
-    <div id="dashboard-mount"></div>
-
-    <!-- Strength Progress Bars -->
-    <div id="strength-mount"></div>
-
-    <!-- Body Composition History -->
-    <div id="body-log-mount"></div>
-
-    <!-- Achilles Pain Trend -->
-    <div id="achilles-chart-mount"></div>
-
-    <!-- Weekly Activity Volume Chart -->
-    <div id="volume-chart-mount"></div>
-  </div>
-</details>
-
 <!-- Activity Log (stays visible by default; already compacted to current week) -->
 <div id="activity-log-mount"></div>
 
@@ -1635,6 +1614,30 @@
 
 <!-- Strength Standards Gauges -->
 <div id="standards-mount"></div>
+
+<!-- Insights & history (moved from This Week tab — progress-tracking content lives with the Plan) -->
+<h2 id="insights" style="margin-top:2.5rem;">📊 Insights &amp; History</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">How you're tracking against the program. Dashboard, body composition, achilles trend, and weekly volume chart.</p>
+
+<details class="insights-section" open>
+  <summary><strong>Dashboard &amp; trends</strong> <span class="insights-hint">click to collapse</span></summary>
+  <div class="insights-body">
+    <!-- Dashboard Summary -->
+    <div id="dashboard-mount"></div>
+
+    <!-- Strength Progress Bars -->
+    <div id="strength-mount"></div>
+
+    <!-- Body Composition History -->
+    <div id="body-log-mount"></div>
+
+    <!-- Achilles Pain Trend -->
+    <div id="achilles-chart-mount"></div>
+
+    <!-- Weekly Activity Volume Chart -->
+    <div id="volume-chart-mount"></div>
+  </div>
+</details>
 
 </div><!-- /tab-plan -->
 
@@ -1959,6 +1962,7 @@
     var hashMap = {
       'tab-week': 'tab-week', 'tab-plan': 'tab-plan', 'tab-ref': 'tab-ref',
       'week': 'tab-week', 'phases': 'tab-plan', 'targets': 'tab-plan',
+      'insights': 'tab-plan',
       'achilles': 'tab-ref', 'recovery': 'tab-ref', 'nutrition': 'tab-ref',
       'deload': 'tab-ref', 'modify': 'tab-ref', 'tracker': 'tab-week', 'top': 'tab-week'
     };

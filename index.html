@@ -82,6 +82,76 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
+  /* Activity Log notes — clamped by default, click "more" to expand */
+  .log-notes-cell {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+  }
+  .log-notes-cell.expanded {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
+  .log-notes-toggle {
+    background: none;
+    border: none;
+    color: var(--accent2);
+    font-size: 0.7rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2px 0;
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-family: inherit;
+  }
+  .log-notes-toggle:hover { color: var(--accent); }
+  @media (max-width: 700px) {
+    .log-notes-cell { -webkit-line-clamp: 2; font-size: 0.72rem; }
+  }
+
+  /* Insights & history collapsible section (default-closed below Today Card area) */
+  .insights-section {
+    margin: 1.5rem 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .insights-section summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.85rem 1.25rem;
+    background: var(--bg-alt);
+    font-size: 0.95rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    outline: none;
+  }
+  .insights-section summary::-webkit-details-marker { display: none; }
+  .insights-section summary::marker { content: ""; }
+  .insights-section summary::after {
+    content: "▾";
+    margin-left: auto;
+    color: var(--text-muted);
+    transition: transform 0.2s;
+  }
+  .insights-section[open] summary::after { transform: rotate(180deg); }
+  .insights-section summary:hover { background: #eef0f3; }
+  .insights-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+  .insights-body {
+    padding: 1rem 1.25rem 1.5rem;
+  }
+
   /* Collapsible Athlete Profile (header + body stats + priorities) */
   .athlete-profile {
     border-bottom: 1px solid var(--border);
@@ -1395,22 +1465,28 @@
 <!-- Nutrition Goals Progress (this week vs Option B targets) -->
 <div id="nutrition-progress-mount"></div>
 
-<!-- Dashboard Summary (moved from tracker section) -->
-<div id="dashboard-mount"></div>
+<!-- Insights & history (collapsed by default to keep "what do I do today?" answers above) -->
+<details class="insights-section">
+  <summary>📊 <strong>Insights &amp; history</strong> <span class="insights-hint">trends, body comp, charts</span></summary>
+  <div class="insights-body">
+    <!-- Dashboard Summary -->
+    <div id="dashboard-mount"></div>
 
-<!-- Strength Progress Bars -->
-<div id="strength-mount"></div>
+    <!-- Strength Progress Bars -->
+    <div id="strength-mount"></div>
 
-<!-- Body Composition History -->
-<div id="body-log-mount"></div>
+    <!-- Body Composition History -->
+    <div id="body-log-mount"></div>
 
-<!-- Achilles Pain Trend -->
-<div id="achilles-chart-mount"></div>
+    <!-- Achilles Pain Trend -->
+    <div id="achilles-chart-mount"></div>
 
-<!-- Weekly Activity Volume Chart -->
-<div id="volume-chart-mount"></div>
+    <!-- Weekly Activity Volume Chart -->
+    <div id="volume-chart-mount"></div>
+  </div>
+</details>
 
-<!-- Activity Log -->
+<!-- Activity Log (stays visible by default; already compacted to current week) -->
 <div id="activity-log-mount"></div>
 
 </div><!-- /tab-week -->
@@ -2318,17 +2394,21 @@
     if (infoBox) infoBox.style.display = 'none';
   })();
 
-  // Body Composition History
+  // Body Composition History \u2014 default-collapse to last 7 entries
   if (bodyLog.length > 0) {
     var hasNutrition = bodyLog.some(function(e) { return e.sleepHours != null || e.proteinGrams != null || e.calories != null; });
-    var compRows = bodyLog.map(function(entry) {
+    var BODY_LOG_DEFAULT_ROWS = 7;
+    var totalBodyRows = bodyLog.length;
+    var hiddenCount = Math.max(0, totalBodyRows - BODY_LOG_DEFAULT_ROWS);
+    var compRows = bodyLog.map(function(entry, idx) {
       var bf = entry.bodyFatPct;
       var w = entry.weight;
       var fatMass = bf != null && w != null ? (w * bf / 100).toFixed(1) : '\u2014';
       var leanMass = bf != null && w != null ? (w - w * bf / 100).toFixed(1) : '\u2014';
       var bfCell = bf != null ? bf + '%' : '\u2014';
       var wCell = w != null ? w : '\u2014';
-      var row = '<tr><td>' + esc(entry.date) + '</td><td>' + wCell + '</td><td>' + bfCell + '</td><td>' + leanMass + '</td><td>' + fatMass + '</td>';
+      var hideClass = idx < hiddenCount ? ' class="body-log-old" style="display:none;"' : '';
+      var row = '<tr' + hideClass + '><td>' + esc(entry.date) + '</td><td>' + wCell + '</td><td>' + bfCell + '</td><td>' + leanMass + '</td><td>' + fatMass + '</td>';
       if (hasNutrition) {
         row += '<td>' + (entry.sleepHours != null ? entry.sleepHours + 'h' : '\u2014') + '</td>';
         row += '<td>' + (entry.proteinGrams != null ? entry.proteinGrams + 'g' : '\u2014') + '</td>';
@@ -2338,10 +2418,25 @@
     });
     var headers = '<th>Date</th><th>Weight</th><th>Body Fat %</th><th>Lean Mass</th><th>Fat Mass</th>';
     if (hasNutrition) headers += '<th>Sleep</th><th>Protein</th><th>Calories</th>';
+    var toggleBtn = hiddenCount > 0
+      ? '<button class="show-all-btn" id="body-log-toggle">Show all ' + totalBodyRows + ' entries</button>'
+      : '';
     document.getElementById('body-log-mount').innerHTML =
-      '<h3 style="margin-top:2rem;">Body Composition</h3>' +
+      '<h3 style="margin-top:2rem;">Body Composition' +
+        (hiddenCount > 0 ? ' <span style="font-size:0.7rem;font-weight:400;color:var(--text-muted);">(last ' + BODY_LOG_DEFAULT_ROWS + ' of ' + totalBodyRows + ')</span>' : '') +
+      '</h3>' +
+      toggleBtn +
       '<table class="log-table"><thead><tr>' + headers +
       '</tr></thead><tbody>' + compRows.join('') + '</tbody></table>';
+    var bodyToggle = document.getElementById('body-log-toggle');
+    if (bodyToggle) {
+      bodyToggle.addEventListener('click', function() {
+        var rows = document.querySelectorAll('.body-log-old');
+        var isHidden = rows.length > 0 && rows[0].style.display === 'none';
+        rows.forEach(function(r) { r.style.display = isHidden ? '' : 'none'; });
+        bodyToggle.textContent = isHidden ? 'Show last ' + BODY_LOG_DEFAULT_ROWS + ' only' : 'Show all ' + totalBodyRows + ' entries';
+      });
+    }
   }
 
   // Strength Progress Bars
@@ -2437,11 +2532,16 @@
         if (e.duration) details += ' \u00b7 ' + esc(e.duration);
         if (e.intensity) details += ' \u00b7 ' + esc(e.intensity) + ' intensity';
         if (e.details) details += (details ? ' \u00b7 ' : '') + linkifyText(e.details);
+        var notesText = e.notes || '';
+        var notesHTML = notesText
+          ? '<div class="log-notes-cell">' + linkifyText(notesText) + '</div>' +
+            (notesText.length > 140 ? '<button class="log-notes-toggle" type="button" aria-label="Expand notes">more</button>' : '')
+          : '';
         return '<tr>' +
           '<td>' + fmtDate(e.date) + '</td>' +
           '<td><span class="tag ' + tagClass + '">' + esc(typeLabel) + '</span></td>' +
           '<td>' + details + '</td>' +
-          '<td>' + linkifyText(e.notes || '') + '</td>' +
+          '<td class="log-notes-td">' + notesHTML + '</td>' +
         '</tr>';
       }).join('');
       var wn = Math.max(1, Math.ceil((calendarDays(startDate, ws) + 1) / 7));
@@ -2465,6 +2565,16 @@
     });
   }
   document.getElementById('activity-log-mount').innerHTML = logHTML;
+
+  // ─── Notes expand/collapse toggle ───
+  document.querySelectorAll('.log-notes-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var cell = btn.previousElementSibling;
+      if (!cell) return;
+      var expanded = cell.classList.toggle('expanded');
+      btn.textContent = expanded ? 'less' : 'more';
+    });
+  });
 
   // ─── Compact activity log: show just THIS WEEK by default ───
   // Older weeks accessible via "Show all weeks" toggle. Keeps the

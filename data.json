@@ -1623,6 +1623,55 @@
       "achillesPain": 0,
       "sleepHours": 7.5,
       "notes": "Wk 12 Thu Phase 2 Upper + Power. All as RXed except Bent Over Row substituted with Seated Cable Row (BB station busy). Bench 155 hit cleanly \u2014 first +5 in 4 weeks; opens 160 next Thu. Lat Pulldown top set 150 (+5 vs 5/21 top of 145). Achilles 0/10 throughout (green streak back to clean after 5/27 AM 1/10 dip). Sleep normal."
+    },
+    {
+      "date": "2026-05-29",
+      "type": "training",
+      "activity": "Power + Plyometrics (Fri Phase 2)",
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "6x4",
+          "weight": "24-inch box",
+          "notes": "24 contacts (+4 vs 5/22). Step down every rep. Final plyo session of the 4-week block."
+        },
+        {
+          "name": "Trap Bar Jump Squat",
+          "sets": "6x3",
+          "weight": "70 lbs",
+          "notes": "18 contacts (+3 vs 5/22). Load held at ~29% TB DL max across the whole block; volume-only progression per Section 6."
+        },
+        {
+          "name": "Broad Jump",
+          "sets": "6x3",
+          "weight": "BW",
+          "notes": "18 contacts (+3 vs 5/22). Session total = 60 contacts, top of the Ebben 2010 / Section 6 40-60 range. Block close target hit."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "sets": "3x6/leg",
+          "weight": "20 lb DBs",
+          "notes": "As prescribed, moderate load (Phase 2 Fri slot)."
+        },
+        {
+          "name": "Banded Lateral Shuffle",
+          "sets": "3x8/dir",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x6",
+          "weight": "150 lbs",
+          "notes": "Added this Fri (not normally a Fri exercise) to recover the missed Wed Seated. Soleus-bias, 3s/3s tempo."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 72 lb/leg (~292 lb effective)",
+          "notes": "Standing single-leg, gastroc-bias, 3s/3s tempo. Closes Wk 12 HSR at 3/3 (Wed single-leg + Fri seated + Fri single-leg) - first Beyer-compliant 3/3 week since Wk 8."
+        }
+      ],
+      "notes": "Wk 12 Fri Phase 2 Power + Plyo - all as RXed. CLOSING session of the 4-week Markovic 2007 plyo block: ramped 50 -> 60 contacts (24 box + 18 TBJS + 18 broad), top of the Ebben 2010 40-60 range. Double-variant HSR (seated + standing single-leg) recovers the Wed Seated miss and closes Wk 12 HSR at 3/3 - first Beyer-compliant week since Wk 8 and the answer to the HSR-compliance miss flagged in the Wk 11 review. Plyo block now complete; Wks 13-14 are 2-week plyo maintenance per the Phase 3 plan. Sleep and achilles not yet reported."
     }
   ],
   "scienceReviews": [

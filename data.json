@@ -1689,6 +1689,14 @@
       "duration": "22 min",
       "intensity": "high",
       "notes": "Sun PM hockey, 22 min high intensity. Second session of the Sunday double, hours after AM basketball - notable combined leg/skating load. No separate PM achilles reading; Sun AM was 1/10 (green). Sleep not reported. Sunday PM hockey resumed (prior standing pattern had been Sun AM basketball only)."
+    },
+    {
+      "date": "2026-06-01",
+      "type": "recovery",
+      "activity": "Rest day",
+      "details": "No session - fatigue-driven rest. Legs tired/sore (DOMS) from the Sun 5/31 double (AM basketball + PM hockey, both high). Monday HSR anchor deferred.",
+      "achillesPain": 1,
+      "notes": "AM achilles 1/10 (green, ~10+ wk streak holds). Deliberate autoregulation rest after a high-load Sunday double; Tue PM basketball is the next lower-body load. Sleep/protein not reported."
     }
   ],
   "scienceReviews": [

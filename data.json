@@ -3201,6 +3201,128 @@
           "longDesc": "Recovery before Sun AM basketball. Option B deficit anchor. End of Phase 2 plyo block — body consolidates over 48h before Sun game. Optional Theragun on calves if Fri's 60-contact session leaves residual tightness."
         }
       ]
+    },
+    "13": {
+      "label": "Phase 2 Wk 5: Plyo maintenance (1 of 2). Travel Wed/Thu, salvage Fri Lower + Sat Upper before the Sun 6/7 double",
+      "reason": "First of the 2-week plyo maintenance block (Wks 13-14) before Phase 3 (Wk 15, ~Jun 15). Travel Wed 6/3 + Thu 6/4 (no gym) eliminates the normal Wed Lower and Thu Upper. Fri 6/5 + Sat 6/6 are the only training days, then Sun 6/7 (Wk 14) is a basketball-AM + hockey-PM double. Approach: heavy Lower Fri (48h before the Sun double), Upper + Core Sat (keeps legs fresh), HSR both days = 2/3 Beyer 2015 (PMID 26018970, Strong), the realistic ceiling with two travel days and far better than 0/3. Plyo maintenance dose skipped this week (one missed maintenance session is negligible after the closed 4-wk block; Markovic 2007, Ebben 2010); resume Wk 14. Mon 6/1 fatigue rest after the Sun 5/31 double deferred the Mon HSR anchor to Wk 14. TB DL hold 245 (or +5 to 250 only if clean), no PR chase before a game-heavy stretch (Baker 2001 PMID 11710401, Moderate). Cash the deferred Back Squat 160 IF a rack is available. Protein still 0% logged, the binding gap for the Sun 6/7 review.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-05-31",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball AM 30 min high + Hockey PM 22 min high (double)",
+          "longDesc": "Both logged. AM achilles 1/10 (green, ~10+ wk streak). High combined leg/skating load, which set up the Mon fatigue rest."
+        },
+        {
+          "day": "Mon",
+          "date": "2026-06-01",
+          "type": "rest",
+          "status": "done",
+          "desc": "Rest day (fatigue-driven)",
+          "longDesc": "Legs tired/sore (DOMS) from the Sun double; AM achilles 1/10. Mon HSR anchor deferred to Wk 14."
+        },
+        {
+          "day": "Tue",
+          "date": "2026-06-02",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball PM, 20 min high",
+          "longDesc": "On rested legs after the Mon rest. Achilles/sleep/protein not reported."
+        },
+        {
+          "day": "Wed",
+          "date": "2026-06-03",
+          "type": "rest",
+          "status": "done",
+          "desc": "Travel, no training",
+          "longDesc": "No gym access. Normal Wed Lower displaced to Fri."
+        },
+        {
+          "day": "Thu",
+          "date": "2026-06-04",
+          "type": "rest",
+          "desc": "Travel, no training",
+          "longDesc": "No gym access. Normal Thu Upper displaced to Sat. Back to training Fri."
+        },
+        {
+          "day": "Fri",
+          "date": "2026-06-05",
+          "type": "training",
+          "desc": "Lower + HSR (the week's quality strength day, 48h before the Sun 6/7 double)",
+          "exercises": [
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "4x5",
+              "weight": "245 lbs",
+              "notes": "Hold 245 (clean 5/27); +5 to 250 only if every rep is crisp. No PR chase before the Sun double + Tue 6/9 game (Baker 2001, Moderate)."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "4x5",
+              "weight": "160 lbs",
+              "notes": "Cash the deferred 160 IF a rack is available (un-cashed since 5/27). Leg Press 3x10 as fallback if no rack."
+            },
+            {
+              "name": "Glute-Ham Raise / Ham Curl",
+              "sets": "3x8",
+              "notes": "Posterior-chain slot (Phase 2 pattern), moderate load."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x6",
+              "weight": "150 lbs",
+              "notes": "Soleus-bias, 3s/3s tempo. HSR session 1 of 2 this week."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 72 lb/leg",
+              "notes": "Standing, gastroc-bias, 3s/3s tempo."
+            }
+          ]
+        },
+        {
+          "day": "Sat",
+          "date": "2026-06-06",
+          "type": "training",
+          "desc": "Upper + Core + HSR (recovers missed Thu; legs stay fresh for Sun)",
+          "exercises": [
+            {
+              "name": "Barbell Bench Press",
+              "sets": "4x5",
+              "weight": "155 lbs",
+              "notes": "Continue from 5/28; +5 to 160 only if clean."
+            },
+            {
+              "name": "Weighted Pull-up",
+              "sets": "4x5",
+              "notes": "As prescribed / progress from last."
+            },
+            {
+              "name": "DB Push Press",
+              "sets": "3x6",
+              "notes": "Vertical press."
+            },
+            {
+              "name": "Chest-Supported Row",
+              "sets": "3x8",
+              "notes": "Horizontal pull, corrects toward the prescribed row."
+            },
+            {
+              "name": "Cable Woodchop",
+              "sets": "3x10/side",
+              "notes": "Core / anti-rotation."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 72 lb/leg",
+              "notes": "HSR session 2 of 2. Low-CNS, keeps legs fresh for the Sun 6/7 double."
+            }
+          ]
+        }
+      ]
     }
   }
 }

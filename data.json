@@ -1697,6 +1697,14 @@
       "details": "No session - fatigue-driven rest. Legs tired/sore (DOMS) from the Sun 5/31 double (AM basketball + PM hockey, both high). Monday HSR anchor deferred.",
       "achillesPain": 1,
       "notes": "AM achilles 1/10 (green, ~10+ wk streak holds). Deliberate autoregulation rest after a high-load Sunday double; Tue PM basketball is the next lower-body load. Sleep/protein not reported."
+    },
+    {
+      "date": "2026-06-02",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "high",
+      "notes": "Tue PM basketball, 20 min high intensity. On rested legs after the Mon 6/1 fatigue-driven rest. Achilles/sleep/protein not reported."
     }
   ],
   "scienceReviews": [

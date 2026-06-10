@@ -3340,7 +3340,8 @@
           "day": "Sat",
           "date": "2026-06-06",
           "type": "training",
-          "desc": "Upper + Core + HSR (recovers missed Thu; legs stay fresh for Sun)",
+          "status": "skipped",
+          "desc": "SKIPPED - Upper + Core + HSR not performed. Wk 13 closed with Fri Lower as the only lift: zero upper-body volume this week, and HSR landed at 1/3 (Fri only). Originally planned to recover the travel-displaced Thu Upper and bank HSR session 2.",
           "exercises": [
             {
               "name": "Barbell Bench Press",

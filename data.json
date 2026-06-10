@@ -1705,6 +1705,59 @@
       "duration": "20 min",
       "intensity": "high",
       "notes": "Tue PM basketball, 20 min high intensity. On rested legs after the Mon 6/1 fatigue-driven rest. Achilles/sleep/protein not reported."
+    },
+    {
+      "date": "2026-06-05",
+      "type": "training",
+      "activity": "Lower + HSR (Fri Phase 2)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "4x5",
+          "weight": "245 lbs",
+          "notes": "Held 245 (no +5 to 250) - deliberate no-PR-chase before the weekend games (Baker 2001 PMID 11710401, Moderate). 2nd session at 245 after the clean 5/27 progression."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "4x5",
+          "weight": "160 lbs",
+          "notes": "Cashed the deferred 160 (un-cashed since 5/27 when no rack was available) - rack available this session. Constraint lift back on progression; +5 earned."
+        },
+        {
+          "name": "Glute-Ham Raise / Ham Curl",
+          "sets": "3x8",
+          "notes": "Posterior-chain slot (Phase 2 pattern), moderate load. As RXed."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x6",
+          "weight": "150 lbs",
+          "notes": "Soleus-bias, 3s/3s tempo. HSR session 1 of 2 prescribed this week."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 72 lb/leg",
+          "notes": "Standing, gastroc-bias, 3s/3s tempo."
+        }
+      ],
+      "notes": "Wk 13 Fri Phase 2 Lower + HSR - the salvaged quality strength day after travel Wed/Thu, 48h before the weekend games. As RXed: TB DL held 245, Back Squat cashed at 160 (rack available, recovering the 5/27 equipment-deferred progression per the Wk 12 review action). Both prescribed HSR variants completed. Achilles and sleep not reported."
+    },
+    {
+      "date": "2026-06-07",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "high",
+      "notes": "Wk 14 Sun AM basketball, 20 min high intensity. Evening hockey dropped - the planned Sun double became a single game. Achilles and sleep not reported."
+    },
+    {
+      "date": "2026-06-09",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "15 min",
+      "intensity": "high",
+      "notes": "Wk 14 Tue PM basketball, 15 min high intensity. Achilles and sleep not reported."
     }
   ],
   "scienceReviews": [
@@ -3249,7 +3302,8 @@
           "day": "Fri",
           "date": "2026-06-05",
           "type": "training",
-          "desc": "Lower + HSR (the week's quality strength day, 48h before the Sun 6/7 double)",
+          "status": "done",
+          "desc": "Lower + HSR (the week's quality strength day, 48h before the Sun 6/7 double) - DONE as RXed: TB DL held 245, Back Squat cashed at 160 (rack available), both HSR variants.",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",

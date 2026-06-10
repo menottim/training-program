@@ -2591,7 +2591,7 @@
       }).join('');
       var wn = Math.max(1, Math.ceil((calendarDays(startDate, ws) + 1) / 7));
       var mwBanner = modifiedWeeks[String(wn)]
-        ? '<span class="mw-log-banner">\u26a0\ufe0f ' + esc(modifiedWeeks[String(wn)].label) + '</span>'
+        ? '<span class="mw-log-banner">\u26a0\ufe0f ' + esc(modifiedWeeks[String(wn)].title || modifiedWeeks[String(wn)].label) + '</span>'
         : '';
       logHTML += '<div class="week-summary">' +
         '<div class="week-summary-header">' +

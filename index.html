@@ -656,6 +656,45 @@
     margin: 0;
     line-height: 1.4;
   }
+  .modified-week-banner .mw-subtitle {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #bf360c;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .modified-week-banner .mw-why {
+    margin-top: 0.5rem;
+  }
+  .modified-week-banner .mw-why summary {
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #e65100;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    user-select: none;
+  }
+  .modified-week-banner .mw-why summary::-webkit-details-marker { display: none; }
+  .modified-week-banner .mw-why summary::before {
+    content: '\25b8';
+    display: inline-block;
+    font-size: 0.75rem;
+    transition: transform 0.15s ease;
+  }
+  .modified-week-banner .mw-why[open] summary::before {
+    transform: rotate(90deg);
+  }
+  .modified-week-banner .mw-why-body {
+    font-size: 0.8rem;
+    color: #bf360c;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ffcc80;
+  }
   .modified-week-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -2385,8 +2424,10 @@
     document.getElementById('modified-week-mount').innerHTML =
       '<div class="modified-week">' +
         '<div class="modified-week-banner">' +
-          '<h3>Week ' + weekNum + ': ' + esc(mw.label) + '</h3>' +
-          '<p>' + linkifyText(mw.reason) + '</p>' +
+          '<h3>Week ' + weekNum + (mw.title ? ' · ' + esc(mw.title) : ': ' + esc(mw.label)) + '</h3>' +
+          (mw.subtitle ? '<p class="mw-subtitle">' + linkifyText(mw.subtitle) + '</p>' : '') +
+          (mw.reason ? '<details class="mw-why"><summary>Why this week</summary>' +
+            '<div class="mw-why-body">' + linkifyText(mw.reason) + '</div></details>' : '') +
         '</div>' +
         '<div class="modified-week-grid">' + daysHTML + '</div>' +
       '</div>';

@@ -279,7 +279,7 @@
       "activity": "Basketball",
       "duration": "30 min",
       "intensity": "moderate",
-      "notes": "Whole-foot compression/squeezing pain (both feet). Likely sock fit issue \u2014 not structural. Try non-compression cushioned socks + check lacing."
+      "notes": "Whole-foot compression/squeezing pain (both feet). Likely sock fit issue — not structural. Try non-compression cushioned socks + check lacing."
     },
     {
       "date": "2026-03-08",
@@ -293,8 +293,8 @@
       "date": "2026-03-09",
       "type": "recovery",
       "activity": "Recovery day",
-      "details": "Bike 12 min, seated calf raise HSR 3\u00d710 (BW/25/50 lbs), 90/90 stretches, massage gun",
-      "notes": "Tired + lower back tightness AM. Light arch pain on bike when on balls of feet \u2014 resolved by moving to mid-foot pedal position. Calf raises felt good ramping up."
+      "details": "Bike 12 min, seated calf raise HSR 3×10 (BW/25/50 lbs), 90/90 stretches, massage gun",
+      "notes": "Tired + lower back tightness AM. Light arch pain on bike when on balls of feet — resolved by moving to mid-foot pedal position. Calf raises felt good ramping up."
     },
     {
       "date": "2026-03-10",
@@ -381,7 +381,7 @@
       "activity": "Surfing",
       "duration": "45 min",
       "intensity": "moderate",
-      "notes": "Replaced Friday routine. Good paddling volume \u2014 shoulders, arms, and core work. Cross-training session."
+      "notes": "Replaced Friday routine. Good paddling volume — shoulders, arms, and core work. Cross-training session."
     },
     {
       "date": "2026-03-15",
@@ -528,7 +528,7 @@
     {
       "date": "2026-03-31",
       "type": "training",
-      "activity": "Lower Body \u2014 Hotel Gym (Deload Week 4)",
+      "activity": "Lower Body — Hotel Gym (Deload Week 4)",
       "exercises": [
         {
           "name": "Bulgarian Split Squat",
@@ -557,7 +557,7 @@
     {
       "date": "2026-04-01",
       "type": "training",
-      "activity": "Upper Body + Core \u2014 Hotel Gym (Deload Week 4)",
+      "activity": "Upper Body + Core — Hotel Gym (Deload Week 4)",
       "exercises": [
         {
           "name": "DB Bench Press",
@@ -585,12 +585,12 @@
           "weight": "cable"
         }
       ],
-      "notes": "Swapped planned lower body for upper body. Had access to dumbbells and cable machine \u2014 significant upgrade over bodyweight plan. DB press at 50 lbs (down from 65 in Week 2 \u2014 appropriate deload range). Good core work with anti-rotation and rotational exercises."
+      "notes": "Swapped planned lower body for upper body. Had access to dumbbells and cable machine — significant upgrade over bodyweight plan. DB press at 50 lbs (down from 65 in Week 2 — appropriate deload range). Good core work with anti-rotation and rotational exercises."
     },
     {
       "date": "2026-04-04",
       "type": "training",
-      "activity": "Combined Deload \u2014 Full Body (Fri Deload Week 4)",
+      "activity": "Combined Deload — Full Body (Fri Deload Week 4)",
       "exercises": [
         {
           "name": "Trap Bar Deadlift",
@@ -623,7 +623,7 @@
           "weight": "140 lbs"
         }
       ],
-      "notes": "Gym deload session \u2014 first barbell work since Week 2 (Mar 20, two weeks ago). TB DL at 195 (~85% of 230). DB bench 55 (~85% of 65). HSR calf raises at full load per protocol. Executed as prescribed in modified week plan."
+      "notes": "Gym deload session — first barbell work since Week 2 (Mar 20, two weeks ago). TB DL at 195 (~85% of 230). DB bench 55 (~85% of 65). HSR calf raises at full load per protocol. Executed as prescribed in modified week plan."
     },
     {
       "date": "2026-04-05",
@@ -662,7 +662,7 @@
         }
       ],
       "proteinGrams": 156,
-      "notes": "Week 5 Day 1 \u2014 re-baseline session. TB DL back to 225 (Week 2 weight) after 20-day gap. Back squat unavailable, substituted slanted leg press sled (90\u2192180 lbs). HSR maintained at 140."
+      "notes": "Week 5 Day 1 — re-baseline session. TB DL back to 225 (Week 2 weight) after 20-day gap. Back squat unavailable, substituted slanted leg press sled (90→180 lbs). HSR maintained at 140."
     },
     {
       "date": "2026-04-07",
@@ -711,7 +711,7 @@
         }
       ],
       "proteinGrams": 146,
-      "notes": "Week 5 Day 2 \u2014 first barbell bench press session. BB bench at 135 as baseline. Lat pulldown matched at 135 (up from 115 in deload). Subbed bent over barbell row for chest-supported row. DB bench and OHP as prescribed. Full core circuit."
+      "notes": "Week 5 Day 2 — first barbell bench press session. BB bench at 135 as baseline. Lat pulldown matched at 135 (up from 115 in deload). Subbed bent over barbell row for chest-supported row. DB bench and OHP as prescribed. Full core circuit."
     },
     {
       "date": "2026-04-08",
@@ -746,7 +746,7 @@
         }
       ],
       "proteinGrams": 260,
-      "notes": "Week 5 Day 3 \u2014 pulled Thursday's Lower Body #2 forward to Wednesday. Back squat at 135 (matching Monday's working weight). All accessories as prescribed. Standing calf raise HSR for achilles protocol."
+      "notes": "Week 5 Day 3 — pulled Thursday's Lower Body #2 forward to Wednesday. Back squat at 135 (matching Monday's working weight). All accessories as prescribed. Standing calf raise HSR for achilles protocol."
     },
     {
       "date": "2026-04-10",
@@ -785,7 +785,7 @@
         }
       ],
       "proteinGrams": 144,
-      "notes": "Week 5 Day 4 \u2014 Friday lower moderate session. Goblet squat at 30 (top of prescribed range). Hip thrust at 45. HSR maintained. Full mobility circuit."
+      "notes": "Week 5 Day 4 — Friday lower moderate session. Goblet squat at 30 (top of prescribed range). Hip thrust at 45. HSR maintained. Full mobility circuit."
     },
     {
       "date": "2026-04-12",
@@ -793,7 +793,7 @@
       "activity": "Basketball",
       "duration": "30 min",
       "intensity": "high",
-      "notes": "Week 6 Day 1 \u2014 first game back after 2-week break (no games since Mar 29). Games resume on normal schedule."
+      "notes": "Week 6 Day 1 — first game back after 2-week break (no games since Mar 29). Games resume on normal schedule."
     },
     {
       "date": "2026-04-12",
@@ -801,7 +801,7 @@
       "activity": "Hockey",
       "duration": "35 min",
       "intensity": "high",
-      "notes": "Week 6 \u2014 PM session. Double game day complete (basketball AM + hockey PM)."
+      "notes": "Week 6 — PM session. Double game day complete (basketball AM + hockey PM)."
     },
     {
       "date": "2026-04-14",
@@ -809,7 +809,7 @@
       "activity": "Basketball",
       "duration": "15 min",
       "intensity": "high",
-      "notes": "Week 6 \u2014 Tuesday evening session. Shorter play time than usual."
+      "notes": "Week 6 — Tuesday evening session. Shorter play time than usual."
     },
     {
       "date": "2026-04-16",
@@ -846,7 +846,7 @@
         }
       ],
       "proteinGrams": 155,
-      "notes": "Week 6 Day 1 \u2014 Wed session done on Thursday. Progression on all lifts: TB DL 225\u2192230, squat 135\u2192140, BSS 15\u219220 DBs, SLRDL 25\u219230 DBs, HSR 140\u2192145. BSS and SLRDL approaching RPE 7+."
+      "notes": "Week 6 Day 1 — Wed session done on Thursday. Progression on all lifts: TB DL 225→230, squat 135→140, BSS 15→20 DBs, SLRDL 25→30 DBs, HSR 140→145. BSS and SLRDL approaching RPE 7+."
     },
     {
       "date": "2026-04-17",
@@ -890,7 +890,7 @@
           "weight": "cable"
         }
       ],
-      "notes": "Week 6 Day 2 \u2014 Thu upper body pushed to Fri. Closes out Week 6 upper volume (chest 4, back 8, shoulders 6, core 9). Progression across all primary lifts: BB bench 135\u2192140 (benchPress baseline updates), lat pulldown 135\u2192140, bent row 135\u2192140 with added set, DB OHP 25\u219230. Core circuit RX'd."
+      "notes": "Week 6 Day 2 — Thu upper body pushed to Fri. Closes out Week 6 upper volume (chest 4, back 8, shoulders 6, core 9). Progression across all primary lifts: BB bench 135→140 (benchPress baseline updates), lat pulldown 135→140, bent row 135→140 with added set, DB OHP 25→30. Core circuit RX'd."
     },
     {
       "date": "2026-04-19",
@@ -909,7 +909,7 @@
       "venue": "indoor",
       "achillesPain": 1,
       "sleepHours": 8,
-      "notes": "Week 7 Day 1 \u2014 single-game Sunday per modifiedWeeks.7 (no hockey this week). Indoor court (moderate sweat vs outdoor sun exposure). AM achilles stiffness 1-2/10 (within <15 min typical baseline per Silbernagel framework). During play after warmup 0-1/10. Sleep 8h, at upper end of target. All pain-monitoring signals green."
+      "notes": "Week 7 Day 1 — single-game Sunday per modifiedWeeks.7 (no hockey this week). Indoor court (moderate sweat vs outdoor sun exposure). AM achilles stiffness 1-2/10 (within <15 min typical baseline per Silbernagel framework). During play after warmup 0-1/10. Sleep 8h, at upper end of target. All pain-monitoring signals green."
     },
     {
       "date": "2026-04-21",
@@ -953,7 +953,7 @@
           "weight": "150 lbs"
         }
       ],
-      "notes": "Week 7 Wed Lower Body. STALL BREAKER HIT: TB DL 5x5 @ 230 completed \u2014 5 full training weeks stuck at 4x5 @ 230 (travel + deload absorbed middle); added 5th set strategy from Week 6 science review delivered. Back Squat 140\u2192145 at RPE 7 (Phase 1 target), cues Back Squat +5 \u2192 150 next Wed per double-progression. BSS 20 lb DBs and SLRDL 30 lb DBs held steady. HSR 150 lb at 3x6 tracks Beyer Week 9-12 range (6RM phase). Pre-lift Clif Builder Bar (~20g/280cal). Light sport volume this week (Sun 50min + Tue 20min = ~70min total vs ~120min typical) helped Wed lower-body readiness. Sleep last night ~6 hours with disturbance (below 7.5-9 target) - single night, not a reactive-deload trigger (Section 2 requires 3+ consecutive <6hr nights; one night at 6hr is borderline). Watch sleep pattern over Wed-Fri. Next Wed plan (per user): TB DL 4x5 @ 235 (microload from broken stall, conservative +5 lb pickup), Back Squat 3x5 @ 150."
+      "notes": "Week 7 Wed Lower Body. STALL BREAKER HIT: TB DL 5x5 @ 230 completed — 5 full training weeks stuck at 4x5 @ 230 (travel + deload absorbed middle); added 5th set strategy from Week 6 science review delivered. Back Squat 140→145 at RPE 7 (Phase 1 target), cues Back Squat +5 → 150 next Wed per double-progression. BSS 20 lb DBs and SLRDL 30 lb DBs held steady. HSR 150 lb at 3x6 tracks Beyer Week 9-12 range (6RM phase). Pre-lift Clif Builder Bar (~20g/280cal). Light sport volume this week (Sun 50min + Tue 20min = ~70min total vs ~120min typical) helped Wed lower-body readiness. Sleep last night ~6 hours with disturbance (below 7.5-9 target) - single night, not a reactive-deload trigger (Section 2 requires 3+ consecutive <6hr nights; one night at 6hr is borderline). Watch sleep pattern over Wed-Fri. Next Wed plan (per user): TB DL 4x5 @ 235 (microload from broken stall, conservative +5 lb pickup), Back Squat 3x5 @ 150."
     },
     {
       "date": "2026-04-23",
@@ -983,7 +983,7 @@
           "name": "DB Overhead Press",
           "sets": "3x8",
           "weight": "30 lbs",
-          "notes": "Held at 30s; consider +5 to 35s next week if top set RPE \u22647"
+          "notes": "Held at 30s; consider +5 to 35s next week if top set RPE ≤7"
         },
         {
           "name": "Face Pull",
@@ -1001,7 +1001,7 @@
           "weight": "cable"
         }
       ],
-      "notes": "Week 7 Thu Upper Body + Core. Clean triple-progression session on all BB compounds: Bench 140\u2192145 (resets benchPress derived target, +10 lbs from Apr 7 re-baseline of 135), Lat Pulldown 140\u2192145, Bent Over Row 140\u2192145. Identical sets/reps to Apr 17 Week 6 session with +5 across the board \u2014 textbook double progression. DB OHP 30 lb DBs held at 3x8 (third pressing movement of session, fatigue-appropriate to hold). Core circuit RX'd. Recovery context: 8hr sleep (recovered from Apr 21\u219222 6hr disturbance), AM achilles 0-1/10 and during-session achilles 0/10 (Silbernagel pain-monitoring green). Pre-lift fuel: everything bagel + butter breakfast (590cal/85g carbs), shake without granola lunch (86g protein/590cal). No Clif bar pre-lift today. Week 7 upper volume: chest 4, back 8 (lat pulldown + row), rear delt/shoulder 6 (OHP + face pull), core 6 (pallof + woodchop) \u2014 all within Schoenfeld 6-10 set in-season range. Week 7 push continues per plan to skip Week 8 deload if fatigue signals stay green (Coleman 2024 reactive-deload framework)."
+      "notes": "Week 7 Thu Upper Body + Core. Clean triple-progression session on all BB compounds: Bench 140→145 (resets benchPress derived target, +10 lbs from Apr 7 re-baseline of 135), Lat Pulldown 140→145, Bent Over Row 140→145. Identical sets/reps to Apr 17 Week 6 session with +5 across the board — textbook double progression. DB OHP 30 lb DBs held at 3x8 (third pressing movement of session, fatigue-appropriate to hold). Core circuit RX'd. Recovery context: 8hr sleep (recovered from Apr 21→22 6hr disturbance), AM achilles 0-1/10 and during-session achilles 0/10 (Silbernagel pain-monitoring green). Pre-lift fuel: everything bagel + butter breakfast (590cal/85g carbs), shake without granola lunch (86g protein/590cal). No Clif bar pre-lift today. Week 7 upper volume: chest 4, back 8 (lat pulldown + row), rear delt/shoulder 6 (OHP + face pull), core 6 (pallof + woodchop) — all within Schoenfeld 6-10 set in-season range. Week 7 push continues per plan to skip Week 8 deload if fatigue signals stay green (Coleman 2024 reactive-deload framework)."
     },
     {
       "date": "2026-04-24",
@@ -1009,7 +1009,7 @@
       "activity": "Yardwork",
       "duration": "2 hr",
       "intensity": "medium",
-      "notes": "Week 7 Fri lift SKIPPED in favor of 2 hours yardwork (per Apr 19 precedent: digging/weeding/standing and squatting = functional lower-body load, estimated 500-700 cal expenditure). Substitution is NOT equivalent to programmed Friday session: yardwork covers glute/quad/posterior chain via unloaded squat/hinge patterns but does NOT replicate the tendon-specific Beyer HSR loading. HSR cadence this week drops to 2x (Wed seated @150 only) vs Beyer 3x/week protocol. One week below target is not catastrophic for 12-week tendon adaptation timeline but is the piece that would benefit from make-up if feasible (Sat standing HSR is borderline ill-timed vs Sun basketball per Silbernagel; alternatively, accept 2x this week and resume 3x in Week 8). Goblet squat, hip thrust, lateral band walk, single-leg balance, and banded ankle dorsiflexion also missed \u2014 minor impact, these are maintenance work. Timing vs Sunday basketball: yardwork load plus no formal lift leaves ~36+ hrs pre-game, similar readiness profile to standard Fri lift."
+      "notes": "Week 7 Fri lift SKIPPED in favor of 2 hours yardwork (per Apr 19 precedent: digging/weeding/standing and squatting = functional lower-body load, estimated 500-700 cal expenditure). Substitution is NOT equivalent to programmed Friday session: yardwork covers glute/quad/posterior chain via unloaded squat/hinge patterns but does NOT replicate the tendon-specific Beyer HSR loading. HSR cadence this week drops to 2x (Wed seated @150 only) vs Beyer 3x/week protocol. One week below target is not catastrophic for 12-week tendon adaptation timeline but is the piece that would benefit from make-up if feasible (Sat standing HSR is borderline ill-timed vs Sun basketball per Silbernagel; alternatively, accept 2x this week and resume 3x in Week 8). Goblet squat, hip thrust, lateral band walk, single-leg balance, and banded ankle dorsiflexion also missed — minor impact, these are maintenance work. Timing vs Sunday basketball: yardwork load plus no formal lift leaves ~36+ hrs pre-game, similar readiness profile to standard Fri lift."
     },
     {
       "date": "2026-04-26",
@@ -1019,7 +1019,7 @@
       "intensity": "high",
       "achillesPain": 1,
       "sleepHours": 8,
-      "notes": "Week 8 Day 1 - Sunday AM basketball, 40 min high intensity. Estimated 400-500 cal expenditure. Sleep night Apr 25\u219226 'good' (~8hr) - second consecutive recovery night. AM achilles 0-1/10, during/after game 0-1/10 (Silbernagel green continues). Pre-game fuel: Apr 25 dinner provided ~146g carbs (2 russets + ItsIt) for glycogen, plus AM shake post-game ~60g carbs. Post-game: shake without granola with yogurt + 1 scoop Momentous Collagen Peptides (15g + 50mg vit C, FORTIGEL formulation - exact Shaw 2017/Praet 2019 protocol match). Timing was post-game (post-loading) - weaker evidence than 30-60 min pre-loading; first practice of optimal pre-loading timing comes Tue Apr 28 bonus HSR session. No hockey PM this week."
+      "notes": "Week 8 Day 1 - Sunday AM basketball, 40 min high intensity. Estimated 400-500 cal expenditure. Sleep night Apr 25→26 'good' (~8hr) - second consecutive recovery night. AM achilles 0-1/10, during/after game 0-1/10 (Silbernagel green continues). Pre-game fuel: Apr 25 dinner provided ~146g carbs (2 russets + ItsIt) for glycogen, plus AM shake post-game ~60g carbs. Post-game: shake without granola with yogurt + 1 scoop Momentous Collagen Peptides (15g + 50mg vit C, FORTIGEL formulation - exact Shaw 2017/Praet 2019 protocol match). Timing was post-game (post-loading) - weaker evidence than 30-60 min pre-loading; first practice of optimal pre-loading timing comes Tue Apr 28 bonus HSR session. No hockey PM this week."
     },
     {
       "date": "2026-04-28",
@@ -1064,7 +1064,7 @@
           "name": "Trap Bar Deadlift",
           "sets": "4x5",
           "weight": "235 lbs",
-          "notes": "First new weight in 5+ weeks \u2014 breaks 5-week 230 lb plateau. +5 lb microload per Section 1 stall protocol. Clean milestone."
+          "notes": "First new weight in 5+ weeks — breaks 5-week 230 lb plateau. +5 lb microload per Section 1 stall protocol. Clean milestone."
         },
         {
           "name": "Back Squat",
@@ -1076,13 +1076,13 @@
           "name": "Bulgarian Split Squat",
           "sets": "3x5/leg",
           "weight": "25 lb DBs",
-          "notes": "COACHING FLAG: Went heavier (25 vs prescribed 20 DBs) but fewer reps (5 vs prescribed 8) with lower back discomfort. Pattern: post-DL+Squat lumbar fatigue \u2192 forward lean under load \u2192 pain signal. Next session: return to 3x8@20 DBs, prioritize upright torso over load."
+          "notes": "COACHING FLAG: Went heavier (25 vs prescribed 20 DBs) but fewer reps (5 vs prescribed 8) with lower back discomfort. Pattern: post-DL+Squat lumbar fatigue → forward lean under load → pain signal. Next session: return to 3x8@20 DBs, prioritize upright torso over load."
         },
         {
           "name": "Single-Leg RDL",
           "sets": "3x8/leg",
           "weight": "25 lb DBs",
-          "notes": "Lighter than prescribed 30 DBs \u2014 appropriate pullback given lower back state from TB DL + Back Squat + BSS cumulative load. Smart call."
+          "notes": "Lighter than prescribed 30 DBs — appropriate pullback given lower back state from TB DL + Back Squat + BSS cumulative load. Smart call."
         },
         {
           "name": "Seated Calf Raise (HSR)",
@@ -1093,7 +1093,7 @@
       ],
       "sleepHours": 8,
       "achillesPain": 0,
-      "notes": "Week 8 Wed Lower Body. TB DL 235 breaks 5-week plateau \u2014 strongest result of Phase 1. Back Squat 150 clean. BSS: went heavier than prescribed (25 DBs vs 20) with fewer reps (5 vs 8) + lower back pain \u2014 cumulative lumbar fatigue from 4x5 DL + 3x5 Squat before it; not a BSS-specific load issue. SL RDL pulled to 25 lbs (vs 30 prescribed) \u2014 correct auto-regulation given lower back state. Seated Calf HSR 3x6@150 = Beyer 2nd of 3. Collagen pre-loaded ~30-60 min before via standalone scoop per Shaw 2017/Praet 2019."
+      "notes": "Week 8 Wed Lower Body. TB DL 235 breaks 5-week plateau — strongest result of Phase 1. Back Squat 150 clean. BSS: went heavier than prescribed (25 DBs vs 20) with fewer reps (5 vs 8) + lower back pain — cumulative lumbar fatigue from 4x5 DL + 3x5 Squat before it; not a BSS-specific load issue. SL RDL pulled to 25 lbs (vs 30 prescribed) — correct auto-regulation given lower back state. Seated Calf HSR 3x6@150 = Beyer 2nd of 3. Collagen pre-loaded ~30-60 min before via standalone scoop per Shaw 2017/Praet 2019."
     },
     {
       "date": "2026-04-30",
@@ -1110,24 +1110,24 @@
           "name": "Bent Over Barbell Row",
           "sets": "3x10",
           "weight": "135 lbs",
-          "notes": "DEVIATION: prescribed was 4x6@145. User did 3x10@135 \u2014 volume up, intensity down. Tonnage similar (4,050 vs 3,480 lb-reps) but stimulus shifts from strength to strength-endurance. Breaks main-lift double-progression cadence \u2014 next session: return to 4x6@145 to keep BB Row strength-tracked."
+          "notes": "DEVIATION: prescribed was 4x6@145. User did 3x10@135 — volume up, intensity down. Tonnage similar (4,050 vs 3,480 lb-reps) but stimulus shifts from strength to strength-endurance. Breaks main-lift double-progression cadence — next session: return to 4x6@145 to keep BB Row strength-tracked."
         },
         {
           "name": "Close Grip Bench Press",
           "sets": "3x10",
           "weight": "95 lbs",
-          "notes": "Substituted for prescribed DB Bench Press 3x8. Tricep-biased press accessory \u2014 useful for lockout strength on BB Bench. Different stimulus than DB but acceptable swap."
+          "notes": "Substituted for prescribed DB Bench Press 3x8. Tricep-biased press accessory — useful for lockout strength on BB Bench. Different stimulus than DB but acceptable swap."
         },
         {
           "name": "Overhead Press (45 lb plate)",
           "sets": "3x10",
           "weight": "45 lb plate",
-          "notes": "Substituted for prescribed DB OHP 3x8 @ 30-32.5. Plate front-raise/press hybrid \u2014 lighter loading than the 30-32.5 DB equivalent but valid shoulder stimulus."
+          "notes": "Substituted for prescribed DB OHP 3x8 @ 30-32.5. Plate front-raise/press hybrid — lighter loading than the 30-32.5 DB equivalent but valid shoulder stimulus."
         }
       ],
       "sleepHours": 8,
       "achillesPain": 0,
-      "notes": "Week 8 Thu Upper Body. BB Bench 4x5@145 = clean primary progression (target maps to benchPress 225x5). BB Row deviated to 3x10@135 (was 4x6@145) \u2014 re-prescribe original next Thu. Close Grip Bench (95) and 45 lb plate OHP swapped in for DB Bench/DB OHP. Lat Pulldown, Face Pull, Pallof Press, Cable Woodchop not reported \u2014 unclear if completed or skipped."
+      "notes": "Week 8 Thu Upper Body. BB Bench 4x5@145 = clean primary progression (target maps to benchPress 225x5). BB Row deviated to 3x10@135 (was 4x6@145) — re-prescribe original next Thu. Close Grip Bench (95) and 45 lb plate OHP swapped in for DB Bench/DB OHP. Lat Pulldown, Face Pull, Pallof Press, Cable Woodchop not reported — unclear if completed or skipped."
     },
     {
       "date": "2026-05-01",
@@ -1138,7 +1138,7 @@
           "name": "Goblet Squat",
           "sets": "2x10",
           "weight": "as prescribed",
-          "notes": "Partial deload: cut from 3x10 per Knowles 2018 (PMID 29422383) sub-6h sleep protocol \u2014 volume -25%, intensity held."
+          "notes": "Partial deload: cut from 3x10 per Knowles 2018 (PMID 29422383) sub-6h sleep protocol — volume -25%, intensity held."
         },
         {
           "name": "Hip Thrust",
@@ -1158,7 +1158,7 @@
         {
           "name": "Standing Calf Raise (HSR)",
           "sets": "3x6",
-          "notes": "Full HSR load held \u2014 Section 4 / Magnusson and Kjaer 2019 (PMC6395417): tendons don't benefit from reduced load. 3rd of 3 HSR sessions this week (Tue standing + Wed seated + Fri standing) \u2014 first Beyer-compliant 3x/week cadence in Phase 1."
+          "notes": "Full HSR load held — Section 4 / Magnusson and Kjaer 2019 (PMC6395417): tendons don't benefit from reduced load. 3rd of 3 HSR sessions this week (Tue standing + Wed seated + Fri standing) — first Beyer-compliant 3x/week cadence in Phase 1."
         },
         {
           "name": "Banded Ankle Dorsiflexion",
@@ -1166,7 +1166,7 @@
         }
       ],
       "sleepHours": 5.5,
-      "notes": "Phase 1 closeout \u2014 Week 8 Friday, executed as RXed (partial-deload version). Section 5 Knowles 2018 trigger: 5.5h sleep night Apr 30\u2192May 1 (single sub-6h night, not a 3-night reactive-deload trigger) \u2192 cut accessory volume ~25%, hold HSR at full load. End-of-Phase-1 lifts: TB DL 235x4x5 (broke 5-week 230 plateau Apr 29), Back Squat 150x3x5 (Phase 1 target), BB Bench 145x4x5. Phase 2 starts Sun May 3."
+      "notes": "Phase 1 closeout — Week 8 Friday, executed as RXed (partial-deload version). Section 5 Knowles 2018 trigger: 5.5h sleep night Apr 30→May 1 (single sub-6h night, not a 3-night reactive-deload trigger) → cut accessory volume ~25%, hold HSR at full load. End-of-Phase-1 lifts: TB DL 235x4x5 (broke 5-week 230 plateau Apr 29), Back Squat 150x3x5 (Phase 1 target), BB Bench 145x4x5. Phase 2 starts Sun May 3."
     },
     {
       "date": "2026-05-03",
@@ -1174,7 +1174,7 @@
       "activity": "Basketball",
       "duration": "24 min",
       "intensity": "high",
-      "notes": "Phase 2 Day 1. Shorter than typical (24 vs 40-50 min) \u2014 reduced sport load entering plyo introduction is favorable for achilles. No hockey PM this week. Achilles + sleep not reported."
+      "notes": "Phase 2 Day 1. Shorter than typical (24 vs 40-50 min) — reduced sport load entering plyo introduction is favorable for achilles. No hockey PM this week. Achilles + sleep not reported."
     },
     {
       "date": "2026-05-04",
@@ -1189,7 +1189,7 @@
       "activity": "Basketball",
       "duration": "30 min",
       "intensity": "high",
-      "notes": "Week 9 Day 3 Tue PM game (single basketball this week \u2014 no hockey). 30 min high intensity. AM achilles 1/10 resolved with warmup (logged in bodyLog May 5). Sleep night May 4\u21925 8h good (logged in bodyLog May 5). Pre-game shake at AM was standard 101g/650cal default."
+      "notes": "Week 9 Day 3 Tue PM game (single basketball this week — no hockey). 30 min high intensity. AM achilles 1/10 resolved with warmup (logged in bodyLog May 5). Sleep night May 4→5 8h good (logged in bodyLog May 5). Pre-game shake at AM was standard 101g/650cal default."
     },
     {
       "date": "2026-05-06",
@@ -1200,13 +1200,13 @@
           "name": "Trap Bar Deadlift",
           "sets": "4x5",
           "weight": "240 lbs",
-          "notes": "+5 lb microload from 235 (Apr 29). Second consecutive +5 after the 5-week 230 plateau broke. New program-best \u2014 TB DL has gained +10 lbs across 2 weeks (230\u2192235\u2192240)."
+          "notes": "+5 lb microload from 235 (Apr 29). Second consecutive +5 after the 5-week 230 plateau broke. New program-best — TB DL has gained +10 lbs across 2 weeks (230→235→240)."
         },
         {
           "name": "Back Squat",
           "sets": "4x5",
           "weight": "155 lbs",
-          "notes": "+5 from 150 + Phase 2 volume jump (3x5 \u2192 4x5 = 20 reps total, up from 15). Clean execution of both progressions in one session \u2014 strongest Back Squat result of the program. Maps to backSquat current lift."
+          "notes": "+5 from 150 + Phase 2 volume jump (3x5 → 4x5 = 20 reps total, up from 15). Clean execution of both progressions in one session — strongest Back Squat result of the program. Maps to backSquat current lift."
         },
         {
           "name": "GHR / Ham Curl Machine",
@@ -1217,10 +1217,10 @@
           "name": "Single-Leg Calf Raise (HSR)",
           "sets": "3x6",
           "weight": "~287 lbs effective (220 lb BW + 67 lb machine starting load), single-leg",
-          "notes": "Standing calf raise machine, single-leg \u2014 body weight loads through the working calf PLUS 67 lbs of machine starting resistance. Effective per-leg load \u2248 220 BW + 67 machine = ~287 lbs. Note: not directly comparable to Phase 1 seated bilateral (150 lbs total / 75 lbs/leg) \u2014 seated bilateral was soleus-bias (knee bent, BW does not load the calves), Phase 2 standing single-leg is gastroc-bias (knee straight, BW loads through the calf). Different muscle group emphasis per Beyer 2015 protocol calling for both variants. At week 9 of HSR programming the protocol calls for 6RM zone; 3x6 with 3s/3s tempo at this load lands cleanly in that zone. 1st of 2 HSR sessions this week (no Tue HSR \u2014 Tue was a game; Fri standing HSR caps the week at 2/3, accepted in Wk 9 plan)."
+          "notes": "Standing calf raise machine, single-leg — body weight loads through the working calf PLUS 67 lbs of machine starting resistance. Effective per-leg load ≈ 220 BW + 67 machine = ~287 lbs. Note: not directly comparable to Phase 1 seated bilateral (150 lbs total / 75 lbs/leg) — seated bilateral was soleus-bias (knee bent, BW does not load the calves), Phase 2 standing single-leg is gastroc-bias (knee straight, BW loads through the calf). Different muscle group emphasis per Beyer 2015 protocol calling for both variants. At week 9 of HSR programming the protocol calls for 6RM zone; 3x6 with 3s/3s tempo at this load lands cleanly in that zone. 1st of 2 HSR sessions this week (no Tue HSR — Tue was a game; Fri standing HSR caps the week at 2/3, accepted in Wk 9 plan)."
         }
       ],
-      "notes": "Week 9 Wed Phase 2 Day 1 LIFT \u2014 first Phase 2 session executed cleanly. Both compound progressions hit: TB DL 240 (new best, +10 lb in 2 weeks since plateau break) AND Back Squat 4x5 @ 155 (+5 lb AND volume bump from 3x5). Single-Leg Calf HSR done on standing machine \u2014 effective load ~287 lbs/leg (220 BW + 67 machine starting). Different muscle bias (gastroc vs soleus) than Phase 1 seated bilateral so not directly comparable, but in Beyer 6RM zone for the gastroc-bias variant. Sport load this week was light (Sun 24min + Tue 30min = 54min total) which freed capacity for both progressions to land in one session \u2014 pattern worth tracking. Achilles + sleep + RPE not reported."
+      "notes": "Week 9 Wed Phase 2 Day 1 LIFT — first Phase 2 session executed cleanly. Both compound progressions hit: TB DL 240 (new best, +10 lb in 2 weeks since plateau break) AND Back Squat 4x5 @ 155 (+5 lb AND volume bump from 3x5). Single-Leg Calf HSR done on standing machine — effective load ~287 lbs/leg (220 BW + 67 machine starting). Different muscle bias (gastroc vs soleus) than Phase 1 seated bilateral so not directly comparable, but in Beyer 6RM zone for the gastroc-bias variant. Sport load this week was light (Sun 24min + Tue 30min = 54min total) which freed capacity for both progressions to land in one session — pattern worth tracking. Achilles + sleep + RPE not reported."
     },
     {
       "date": "2026-05-07",
@@ -1243,13 +1243,13 @@
           "name": "DB Push Press",
           "sets": "3x10",
           "weight": "25 lb DBs",
-          "notes": "SUBSTITUTION (availability): prescribed 3x6 @ 30 lb DBs unavailable in the rack at session time. Athlete dropped to 25 lb DBs and bumped reps to 3x10 to keep stimulus meaningful. Not a structural deviation \u2014 environmental constraint. Tonnage: 750 lb-reps vs prescribed 540, but stimulus shifted from power-emphasis (low-rep ballistic) toward strength-endurance. Re-attempt 30 lb DBs next Thu when rack is open."
+          "notes": "SUBSTITUTION (availability): prescribed 3x6 @ 30 lb DBs unavailable in the rack at session time. Athlete dropped to 25 lb DBs and bumped reps to 3x10 to keep stimulus meaningful. Not a structural deviation — environmental constraint. Tonnage: 750 lb-reps vs prescribed 540, but stimulus shifted from power-emphasis (low-rep ballistic) toward strength-endurance. Re-attempt 30 lb DBs next Thu when rack is open."
         },
         {
           "name": "Bent Over Barbell Row (inverted grip)",
           "sets": "3x10",
           "weight": "135 lbs",
-          "notes": "PROGRAM CHANGE: athlete confirmed preference for BB Bent Over Row (inverted/supinated grip) over Chest-Supported Row. 2nd consecutive Thu deviation (Apr 30 first time) \u2192 committing to the swap. Bench-cadence strength tracking starts next week at 4x5; today logged at 3x10 @ 135 (~80% 1RM est). Inverted grip biases lower lat + biceps and matches user-preferred mechanic. index.html updated to reflect new prescription."
+          "notes": "PROGRAM CHANGE: athlete confirmed preference for BB Bent Over Row (inverted/supinated grip) over Chest-Supported Row. 2nd consecutive Thu deviation (Apr 30 first time) → committing to the swap. Bench-cadence strength tracking starts next week at 4x5; today logged at 3x10 @ 135 (~80% 1RM est). Inverted grip biases lower lat + biceps and matches user-preferred mechanic. index.html updated to reflect new prescription."
         },
         {
           "name": "Cable Pull-Through",
@@ -1275,7 +1275,7 @@
           "name": "Box Jump (step down)",
           "sets": "3x4",
           "weight": "24-inch box",
-          "notes": "Step DOWN from box every rep \u2014 never rebound. 12 contacts."
+          "notes": "Step DOWN from box every rep — never rebound. 12 contacts."
         },
         {
           "name": "Trap Bar Jump Squat",
@@ -1303,11 +1303,11 @@
           "name": "Single-Leg Calf Raise (HSR)",
           "sets": "3x6/leg",
           "weight": "BW + 67 lbs/leg (~287 lbs effective)",
-          "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 Beyer protocol = 6RM zone \u2014 3x6 with 3s/3s tempo at this load lands cleanly. 2nd HSR session of the week (Wed seated + Fri standing-single-leg = 2/3 Beyer cadence accepted in Wk 9 plan)."
+          "notes": "Standing single-leg variant on machine, gastroc-bias. Wk 9 Beyer protocol = 6RM zone — 3x6 with 3s/3s tempo at this load lands cleanly. 2nd HSR session of the week (Wed seated + Fri standing-single-leg = 2/3 Beyer cadence accepted in Wk 9 plan)."
         }
       ],
       "achillesPain": 0,
-      "notes": "Week 9 Fri Phase 2 Power + Plyometrics \u2014 FIRST PLYO SESSION IN 8 WEEKS. Delayed one day from planned Fri 5/8 \u2192 executed Sat 5/9. May 8 AM concerns (hip pain from sleep position, tired legs after 3 lower-body load days in 4) resolved overnight. All 6 exercises completed AS PRESCRIBED \u2014 no deviations. 30 ground contacts total (12 box + 9 TBJS + 9 broad jump) = matches plan; intentionally below Section 6 40-60 floor for Wk 1 ramp given bilateral achilles tendinopathy. TB Jump Squat at ~29% 1RM (vs ~30% target). Bulgarian Split Squat 3x6/leg @ 20 lb DBs as prescribed. Single-Leg Calf HSR at BW+67 in Beyer 6RM zone. First clean execution after the Phase 1\u21922 transition. Achilles 0/10 during loading (Silbernagel green); sleep night-of May 8\u21929 reported good."
+      "notes": "Week 9 Fri Phase 2 Power + Plyometrics — FIRST PLYO SESSION IN 8 WEEKS. Delayed one day from planned Fri 5/8 → executed Sat 5/9. May 8 AM concerns (hip pain from sleep position, tired legs after 3 lower-body load days in 4) resolved overnight. All 6 exercises completed AS PRESCRIBED — no deviations. 30 ground contacts total (12 box + 9 TBJS + 9 broad jump) = matches plan; intentionally below Section 6 40-60 floor for Wk 1 ramp given bilateral achilles tendinopathy. TB Jump Squat at ~29% 1RM (vs ~30% target). Bulgarian Split Squat 3x6/leg @ 20 lb DBs as prescribed. Single-Leg Calf HSR at BW+67 in Beyer 6RM zone. First clean execution after the Phase 1→2 transition. Achilles 0/10 during loading (Silbernagel green); sleep night-of May 8→9 reported good."
     },
     {
       "date": "2026-05-10",
@@ -1316,7 +1316,7 @@
       "duration": "40 min",
       "intensity": "high",
       "achillesPain": 0,
-      "notes": "Sun AM basketball (only Sun game \u2014 hockey PM not currently scheduled). ~38 hours after the Fri-shifted plyo session (Sat 5/9 morning \u2192 Sun 5/10 morning). First gameday after first plyo block in 8 weeks. Achilles 0/10 (green) \u2014 meets Section 4 criteria to continue Friday plyo (no >5/10 game-day signal). Sleep night-of May 9\u219210 reported good."
+      "notes": "Sun AM basketball (only Sun game — hockey PM not currently scheduled). ~38 hours after the Fri-shifted plyo session (Sat 5/9 morning → Sun 5/10 morning). First gameday after first plyo block in 8 weeks. Achilles 0/10 (green) — meets Section 4 criteria to continue Friday plyo (no >5/10 game-day signal). Sleep night-of May 9→10 reported good."
     },
     {
       "date": "2026-05-12",
@@ -1325,7 +1325,7 @@
       "duration": "20 min",
       "intensity": "high",
       "achillesPain": 0,
-      "notes": "Tue PM basketball Week 10. 20 min high intensity (shorter than typical 30-40 min Tue session). Achilles green during/after. 2nd game of Week 10 (Sun May 10 40min + Tue May 12 20min = 60 min total sport load this week). Sleep night-of not reported. Wk 10 Wed + Thu lifts subsequently missed due to work travel \u2014 May 15 (today) will run Phase 2 Fri Power + Plyometrics as RXed with +10 contact progression to 40, capped by 48h Sun-game window precluding heavy bilateral compounds."
+      "notes": "Tue PM basketball Week 10. 20 min high intensity (shorter than typical 30-40 min Tue session). Achilles green during/after. 2nd game of Week 10 (Sun May 10 40min + Tue May 12 20min = 60 min total sport load this week). Sleep night-of not reported. Wk 10 Wed + Thu lifts subsequently missed due to work travel — May 15 (today) will run Phase 2 Fri Power + Plyometrics as RXed with +10 contact progression to 40, capped by 48h Sun-game window precluding heavy bilateral compounds."
     },
     {
       "date": "2026-05-15",
@@ -1369,7 +1369,7 @@
       ],
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Week 10 Fri Phase 2 Power + Plyometrics \u2014 2nd plyo session post-Phase 1\u21922 transition. Ramped contacts +10 vs 5/9 (30 \u2192 40) per 5/12 forecast: +1 set to each of the 3 plyometric exercises (Box Jump 4x4, TB Jump Squat 4x3, Broad Jump 4x3). Now at low end of Section 6 40-60 target. All 6 exercises completed as prescribed. Achilles 0/10 during loading (Silbernagel green). Sleep night-of May 14\u219215 normal. Compensatory standalone Fri session for Wk 10 after Wed + Thu lifts were missed to work travel \u2014 weekly lift volume was ~33% of normal (1 session vs 3) but plyo dose still ramped on schedule."
+      "notes": "Week 10 Fri Phase 2 Power + Plyometrics — 2nd plyo session post-Phase 1→2 transition. Ramped contacts +10 vs 5/9 (30 → 40) per 5/12 forecast: +1 set to each of the 3 plyometric exercises (Box Jump 4x4, TB Jump Squat 4x3, Broad Jump 4x3). Now at low end of Section 6 40-60 target. All 6 exercises completed as prescribed. Achilles 0/10 during loading (Silbernagel green). Sleep night-of May 14→15 normal. Compensatory standalone Fri session for Wk 10 after Wed + Thu lifts were missed to work travel — weekly lift volume was ~33% of normal (1 session vs 3) but plyo dose still ramped on schedule."
     },
     {
       "date": "2026-05-17",
@@ -1379,7 +1379,7 @@
       "intensity": "high",
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Sun AM basketball Week 11 day 1. ~40 hours after Fri 5/15 plyo (Fri eve \u2192 Sun AM). Good energy, achilles 0/10 during and after. 2nd plyo\u2192game 48h cluster passed clean (1st was Sat 5/9 \u2192 Sun 5/10). Meets Section 4 criteria to continue Fri plyo block. No PM hockey (Sunday AM-only schedule)."
+      "notes": "Sun AM basketball Week 11 day 1. ~40 hours after Fri 5/15 plyo (Fri eve → Sun AM). Good energy, achilles 0/10 during and after. 2nd plyo→game 48h cluster passed clean (1st was Sat 5/9 → Sun 5/10). Meets Section 4 criteria to continue Fri plyo block. No PM hockey (Sunday AM-only schedule)."
     },
     {
       "date": "2026-05-18",
@@ -1387,7 +1387,7 @@
       "activity": "Recovery day",
       "details": "2-mile beach walk (evening). Zone 2 active recovery per Section 5 modality hierarchy (#2 below sleep extension).",
       "achillesPain": 0,
-      "notes": "Mon Wk 11 recovery. 5/17 review prescribed a Mon HSR mini-session as new structural default \u2014 substituted with the beach walk instead, no HSR performed. Walk is good Zone 2 active recovery (Dupuy 2018 PMID 29755363, Moderate) but does not replace Beyer 2015 HSR protocol load (PMID 26018970, Strong); the calf-loading dose was zero. Wk 11 HSR count now 0/3 with Wed + Fri remaining. Achilles 0/10. Sleep normal."
+      "notes": "Mon Wk 11 recovery. 5/17 review prescribed a Mon HSR mini-session as new structural default — substituted with the beach walk instead, no HSR performed. Walk is good Zone 2 active recovery (Dupuy 2018 PMID 29755363, Moderate) but does not replace Beyer 2015 HSR protocol load (PMID 26018970, Strong); the calf-loading dose was zero. Wk 11 HSR count now 0/3 with Wed + Fri remaining. Achilles 0/10. Sleep normal."
     },
     {
       "date": "2026-05-19",
@@ -1396,7 +1396,7 @@
       "duration": "20 min",
       "intensity": "high",
       "achillesPain": 0,
-      "notes": "Tue PM basketball Wk 11. 20 min high intensity (same duration as prior Tue 5/12). Achilles 0/10 during and after. ~26 hours after Mon 5/18 evening beach walk \u2014 game-day calves fresh. Sport-driven lower-body load this week: Sun 40 min + Tue 20 min = 60 min total, mirroring Wk 10 pattern. Sleep night-of normal."
+      "notes": "Tue PM basketball Wk 11. 20 min high intensity (same duration as prior Tue 5/12). Achilles 0/10 during and after. ~26 hours after Mon 5/18 evening beach walk — game-day calves fresh. Sport-driven lower-body load this week: Sun 40 min + Tue 20 min = 60 min total, mirroring Wk 10 pattern. Sleep night-of normal."
     },
     {
       "date": "2026-05-20",
@@ -1407,7 +1407,7 @@
           "name": "Trap Bar Deadlift",
           "sets": "4x5",
           "weight": "240 lbs",
-          "notes": "As prescribed. 2nd session at 240; 14-day layoff did not produce expected RPE bump \u2014 reps clean, no surprises. Opens 245 next Wed (Section 1 double progression)."
+          "notes": "As prescribed. 2nd session at 240; 14-day layoff did not produce expected RPE bump — reps clean, no surprises. Opens 245 next Wed (Section 1 double progression)."
         },
         {
           "name": "Back Squat",
@@ -1435,7 +1435,7 @@
       ],
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Wk 11 Wed Phase 2 Lower \u2014 first heavy lift in 14 days (last lift session was Fri 5/15 plyo; last TB DL touch was 5/6). All exercises as prescribed. Forecast layoff RPE bump on TB DL did NOT materialize \u2014 reps felt clean, normal, no surprises. Positive signal: 14-day layoff did not cost neural pattern at 240 lb. Opens both TB DL 245 and Back Squat 160 for next Wed. Seated Calf Raise reintroduced to the Wed slot (restores Phase 1's gastroc + soleus both-variants pattern). Wk 11 HSR count now 2/3 (seated + standing single-leg today); Fri standing single-leg closes 3/3. Achilles 0/10 throughout. Sleep night-of 5/19\u21925/20 normal."
+      "notes": "Wk 11 Wed Phase 2 Lower — first heavy lift in 14 days (last lift session was Fri 5/15 plyo; last TB DL touch was 5/6). All exercises as prescribed. Forecast layoff RPE bump on TB DL did NOT materialize — reps felt clean, normal, no surprises. Positive signal: 14-day layoff did not cost neural pattern at 240 lb. Opens both TB DL 245 and Back Squat 160 for next Wed. Seated Calf Raise reintroduced to the Wed slot (restores Phase 1's gastroc + soleus both-variants pattern). Wk 11 HSR count now 2/3 (seated + standing single-leg today); Fri standing single-leg closes 3/3. Achilles 0/10 throughout. Sleep night-of 5/19→5/20 normal."
     },
     {
       "date": "2026-05-21",
@@ -1446,13 +1446,13 @@
           "name": "Barbell Bench Press",
           "sets": "4x5",
           "weight": "150 lbs",
-          "notes": "HELD at 150 \u2014 2nd consecutive session at this weight (after 5/7). All reps clean at RPE 7-8. Per Section 1 double progression, opens 155 next Thu. No fractional plates available so disciplined +5/cycle path."
+          "notes": "HELD at 150 — 2nd consecutive session at this weight (after 5/7). All reps clean at RPE 7-8. Per Section 1 double progression, opens 155 next Thu. No fractional plates available so disciplined +5/cycle path."
         },
         {
           "name": "Lat Pulldown",
           "sets": "1x5, 1x5, 2x5",
           "weight": "135/140/145/145 lbs",
-          "notes": "SUBSTITUTED for Weighted Pull-up (formalized as Phase 2 Thu alternative after this session \u2014 2nd consecutive Thu using pulldown). Ramped 135\u2192140\u2192145, top set repeated at 145 for 4 sets total. Top set 145 = +10 lb vs prior 5/6 top of 135. Full prescribed 4x5 volume hit."
+          "notes": "SUBSTITUTED for Weighted Pull-up (formalized as Phase 2 Thu alternative after this session — 2nd consecutive Thu using pulldown). Ramped 135→140→145, top set repeated at 145 for 4 sets total. Top set 145 = +10 lb vs prior 5/6 top of 135. Full prescribed 4x5 volume hit."
         },
         {
           "name": "DB Push Press",
@@ -1480,7 +1480,7 @@
       ],
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Wk 11 Thu Phase 2 Upper + Power \u2014 completed as RXed. Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145/145 (4 sets, full prescribed volume). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu per Section 1 double progression. Lat Pulldown top set 145 = +10 lb vs prior 5/6 top (135) \u2014 back/lat strength is progressing. Achilles 0/10 throughout. Sleep night-of 5/20\u21925/21 normal. Pulldown substitution is now a confirmed 2-session pattern (5/6 + 5/21); index.html Phase 2 Thu updated to list Lat Pulldown as alternative to Weighted Pull-up (matches Phase 1 either-or pattern)."
+      "notes": "Wk 11 Thu Phase 2 Upper + Power — completed as RXed. Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145/145 (4 sets, full prescribed volume). Bench 150 held cleanly for 2nd consecutive session — opens 155 next Thu per Section 1 double progression. Lat Pulldown top set 145 = +10 lb vs prior 5/6 top (135) — back/lat strength is progressing. Achilles 0/10 throughout. Sleep night-of 5/20→5/21 normal. Pulldown substitution is now a confirmed 2-session pattern (5/6 + 5/21); index.html Phase 2 Thu updated to list Lat Pulldown as alternative to Weighted Pull-up (matches Phase 1 either-or pattern)."
     },
     {
       "date": "2026-05-22",
@@ -1491,7 +1491,7 @@
           "name": "Box Jump (step down)",
           "sets": "5x4",
           "weight": "24-inch box",
-          "notes": "20 contacts (+4 vs 5/15). Step DOWN every rep \u2014 never rebound. As prescribed."
+          "notes": "20 contacts (+4 vs 5/15). Step DOWN every rep — never rebound. As prescribed."
         },
         {
           "name": "Trap Bar Jump Squat",
@@ -1519,12 +1519,12 @@
           "name": "Single-Leg Calf Raise (HSR)",
           "sets": "3x6/leg",
           "weight": "BW + 67 lb/leg (~287 lbs effective)",
-          "notes": "Standing single-leg, gastroc-bias. 3s/3s tempo. Beyer Wk 11 = 6RM zone. CLOSES WK 11 HSR AT 3/3 BEYER CADENCE \u2014 first 3/3 week since Wk 8 (Apr 28-May 2)."
+          "notes": "Standing single-leg, gastroc-bias. 3s/3s tempo. Beyer Wk 11 = 6RM zone. CLOSES WK 11 HSR AT 3/3 BEYER CADENCE — first 3/3 week since Wk 8 (Apr 28-May 2)."
         }
       ],
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Wk 11 Fri Phase 2 Power + Plyo \u2014 completed as RXed. Plyo contact ramp executed: 40 (5/15) \u2192 50 (5/22), now mid-range of Section 6 / Ebben 2010 40-60 target. Wk 3 of 4-week Markovic 2007 plyo block; next Fri 5/29 ramps to 60 (top of range) to close the block. Wk 11 HSR closes at 3/3 Beyer cadence (Wed seated + Wed single-leg standing + Fri single-leg standing) \u2014 first 3/3 week since Wk 8 = direct result of the 5/17 science review structural fix (Seated Calf Raise restored to Wed slot). Achilles 0/10 throughout. Sleep night-of 5/21\u21925/22 normal."
+      "notes": "Wk 11 Fri Phase 2 Power + Plyo — completed as RXed. Plyo contact ramp executed: 40 (5/15) → 50 (5/22), now mid-range of Section 6 / Ebben 2010 40-60 target. Wk 3 of 4-week Markovic 2007 plyo block; next Fri 5/29 ramps to 60 (top of range) to close the block. Wk 11 HSR closes at 3/3 Beyer cadence (Wed seated + Wed single-leg standing + Fri single-leg standing) — first 3/3 week since Wk 8 = direct result of the 5/17 science review structural fix (Seated Calf Raise restored to Wed slot). Achilles 0/10 throughout. Sleep night-of 5/21→5/22 normal."
     },
     {
       "date": "2026-05-24",
@@ -1534,7 +1534,7 @@
       "intensity": "high",
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Sun AM basketball Wk 11 day 7 / Wk 12 lead-in. 30 min high intensity. ~36-40 hours after Fri 5/22 plyo session. 3rd plyo\u2192game 48h cluster of the program (5/9\u21925/10, 5/15\u21925/17, 5/22\u21925/24) \u2014 all three clean at 0/10. Wk 11 closes: 4 training sessions completed (Wed lower, Thu upper, Fri plyo) + 2 games (Tue 20 min, Sun 30 min = 50 min sport load) + Mon 2-mile walk. Best-balanced week of Phase 2 to date. Achilles 0/10 during and after. Meets Section 4 criteria to continue Fri plyo block by wide margin."
+      "notes": "Sun AM basketball Wk 11 day 7 / Wk 12 lead-in. 30 min high intensity. ~36-40 hours after Fri 5/22 plyo session. 3rd plyo→game 48h cluster of the program (5/9→5/10, 5/15→5/17, 5/22→5/24) — all three clean at 0/10. Wk 11 closes: 4 training sessions completed (Wed lower, Thu upper, Fri plyo) + 2 games (Tue 20 min, Sun 30 min = 50 min sport load) + Mon 2-mile walk. Best-balanced week of Phase 2 to date. Achilles 0/10 during and after. Meets Section 4 criteria to continue Fri plyo block by wide margin."
     },
     {
       "date": "2026-05-26",
@@ -1544,7 +1544,7 @@
       "intensity": "high",
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Tue PM basketball Wk 12 day 3. 20 min high intensity (matches recent Tue pattern: 5/12 and 5/19 both 20 min). Achilles 0/10. Mon 5/25 was rest (Mon HSR mini-session not performed \u2014 Wk 12 opens at HSR 0/3, same starting point as Wk 11). Sleep night-of 5/25\u21925/26 normal. Wk 12 sport-driven load: Sun 5/24 30 min + Tue 5/26 20 min = 50 min so far."
+      "notes": "Tue PM basketball Wk 12 day 3. 20 min high intensity (matches recent Tue pattern: 5/12 and 5/19 both 20 min). Achilles 0/10. Mon 5/25 was rest (Mon HSR mini-session not performed — Wk 12 opens at HSR 0/3, same starting point as Wk 11). Sleep night-of 5/25→5/26 normal. Wk 12 sport-driven load: Sun 5/24 30 min + Tue 5/26 20 min = 50 min so far."
     },
     {
       "date": "2026-05-27",
@@ -1561,24 +1561,24 @@
           "name": "Leg Press",
           "sets": "3x10",
           "weight": "90/180/270 lbs",
-          "notes": "SUBSTITUTED for Back Squat \u2014 no squat rack available at gym. Ramped working sets. Different stimulus profile (fixed plane, no stabilization demand) \u2014 leg press loads do not map to backSquat target. Back Squat 160 push deferred."
+          "notes": "SUBSTITUTED for Back Squat — no squat rack available at gym. Ramped working sets. Different stimulus profile (fixed plane, no stabilization demand) — leg press loads do not map to backSquat target. Back Squat 160 push deferred."
         },
         {
           "name": "Ham Curl Machine",
           "sets": "3x10",
           "weight": "50/60/70 lbs",
-          "notes": "Ham Curl Machine selected from prescribed GHR / Ham Curl alternatives. 3x10 vs prescribed 3x5 \u2014 hypertrophy-flavored rep scheme rather than strength-flavored, ramped load."
+          "notes": "Ham Curl Machine selected from prescribed GHR / Ham Curl alternatives. 3x10 vs prescribed 3x5 — hypertrophy-flavored rep scheme rather than strength-flavored, ramped load."
         },
         {
           "name": "Single-Leg Calf Raise (HSR)",
           "sets": "3x6/leg",
           "weight": "~292 lbs effective (BW + 72 lb/leg)",
-          "notes": "Standing single-leg, gastroc-bias. +5 effective from 5/20 (287 \u2192 292). 3s/3s tempo. Beyer Wk 12 = 6RM zone."
+          "notes": "Standing single-leg, gastroc-bias. +5 effective from 5/20 (287 → 292). 3s/3s tempo. Beyer Wk 12 = 6RM zone."
         }
       ],
       "achillesPain": 0,
       "sleepHours": 7,
-      "notes": "Wk 12 Wed Phase 2 Lower. TB DL +5 progression to 245 hit cleanly \u2014 first compound +5 in 4 weeks. Back Squat substituted with Leg Press 3x10 ramped (no rack available); Back Squat 160 push deferred. Seated Calf Raise NOT performed \u2014 was missing from the live index.html Phase 2 Wed prescription (the 5/17 review structural fix was added to modifiedWeeks[\"11\"] and to the activityLog but never to the base prescription; correcting that now). Wk 12 HSR currently 1/3 (single-leg standing only) \u2014 Fri needs to bring 2 sessions or post-Fri make-up needed to hit 3/3. AM achilles 1/10 (first nonzero AM since 5/11) \u2014 still within Silbernagel green zone (0-3 acceptable per Section 4), no action triggered; will monitor. Sleep night-of 5/26\u21925/27: 7h (below typical 7.5-8 but in NSF adult range 7-9; not at Section 2 reactive-deload threshold of <6h)."
+      "notes": "Wk 12 Wed Phase 2 Lower. TB DL +5 progression to 245 hit cleanly — first compound +5 in 4 weeks. Back Squat substituted with Leg Press 3x10 ramped (no rack available); Back Squat 160 push deferred. Seated Calf Raise NOT performed — was missing from the live index.html Phase 2 Wed prescription (the 5/17 review structural fix was added to modifiedWeeks[\"11\"] and to the activityLog but never to the base prescription; correcting that now). Wk 12 HSR currently 1/3 (single-leg standing only) — Fri needs to bring 2 sessions or post-Fri make-up needed to hit 3/3. AM achilles 1/10 (first nonzero AM since 5/11) — still within Silbernagel green zone (0-3 acceptable per Section 4), no action triggered; will monitor. Sleep night-of 5/26→5/27: 7h (below typical 7.5-8 but in NSF adult range 7-9; not at Section 2 reactive-deload threshold of <6h)."
     },
     {
       "date": "2026-05-28",
@@ -1589,13 +1589,13 @@
           "name": "Barbell Bench Press",
           "sets": "4x5",
           "weight": "155 lbs",
-          "notes": "+5 progression from 150 hit cleanly. RPE 7-8 across all 4 sets. First +5 on BB Bench in 4 weeks (last was 145\u2192150 on 5/7). Opens 160 next Thu per Section 1 double progression."
+          "notes": "+5 progression from 150 hit cleanly. RPE 7-8 across all 4 sets. First +5 on BB Bench in 4 weeks (last was 145→150 on 5/7). Opens 160 next Thu per Section 1 double progression."
         },
         {
           "name": "Lat Pulldown",
           "sets": "1x5, 1x5, 2x5",
           "weight": "140/145/150/150 lbs",
-          "notes": "As prescribed. Top set 150 = +5 vs 5/21 (145). 3-session back/lat trend: 135\u2192145\u2192150."
+          "notes": "As prescribed. Top set 150 = +5 vs 5/21 (145). 3-session back/lat trend: 135→145→150."
         },
         {
           "name": "DB Push Press",
@@ -1607,7 +1607,7 @@
           "name": "Seated Cable Row",
           "sets": "1x5, 1x5, 2x5",
           "weight": "85/130/145/145 lbs",
-          "notes": "SUBSTITUTED for Bent Over Row (BB row station busy \u2014 equipment-driven, treat as one-off not a pattern change). Pyramid ramp to top set 145 repeated. Different stimulus profile than BB row: supported torso reduces erector demand, isolates mid/upper back more. Loads not comparable to BB row history."
+          "notes": "SUBSTITUTED for Bent Over Row (BB row station busy — equipment-driven, treat as one-off not a pattern change). Pyramid ramp to top set 145 repeated. Different stimulus profile than BB row: supported torso reduces erector demand, isolates mid/upper back more. Loads not comparable to BB row history."
         },
         {
           "name": "Cable Pull-Through (Explosive)",
@@ -1622,7 +1622,7 @@
       ],
       "achillesPain": 0,
       "sleepHours": 7.5,
-      "notes": "Wk 12 Thu Phase 2 Upper + Power. All as RXed except Bent Over Row substituted with Seated Cable Row (BB station busy). Bench 155 hit cleanly \u2014 first +5 in 4 weeks; opens 160 next Thu. Lat Pulldown top set 150 (+5 vs 5/21 top of 145). Achilles 0/10 throughout (green streak back to clean after 5/27 AM 1/10 dip). Sleep normal."
+      "notes": "Wk 12 Thu Phase 2 Upper + Power. All as RXed except Bent Over Row substituted with Seated Cable Row (BB station busy). Bench 155 hit cleanly — first +5 in 4 weeks; opens 160 next Thu. Lat Pulldown top set 150 (+5 vs 5/21 top of 145). Achilles 0/10 throughout (green streak back to clean after 5/27 AM 1/10 dip). Sleep normal."
     },
     {
       "date": "2026-05-29",
@@ -1758,6 +1758,44 @@
       "duration": "15 min",
       "intensity": "high",
       "notes": "Wk 14 Tue PM basketball, 15 min high intensity. Achilles and sleep not reported."
+    },
+    {
+      "date": "2026-06-10",
+      "type": "training",
+      "activity": "Upper + Power (Thu Phase 2)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "4x5",
+          "weight": "155 lbs",
+          "notes": "Held 155 - 3rd session at 155 (also 5/21, 5/28). Toward 225x5 target."
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "4x5",
+          "weight": "85/100/115/130 lbs",
+          "notes": "Ramp to top set 130. Down from 150 top set on 5/28 (-20 lb) - flag if same machine/grip."
+        },
+        {
+          "name": "Bent Over Row (inverted grip)",
+          "sets": "3x8",
+          "weight": "135 lbs",
+          "notes": "Higher-rep/lighter vs prescribed 4x5 (~150 on 5/21). Hypertrophy-bias choice this session."
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "3x5/side",
+          "weight": "as prescribed",
+          "notes": "Rotational power."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x6",
+          "weight": "150 lbs",
+          "notes": "Soleus-bias, 3s/3s tempo. HSR session."
+        }
+      ],
+      "notes": "Wk 14 Upper + Power session run on Wed 6/10 (swapped onto the Wed slot this week; normally Thu). Tagged Thu Phase 2 to keep bench/pulldown/row progression in one progress table. Bench held 155 (3rd session). Lat pulldown top set 130, down from 150 on 5/28. Row 3x8 at 135 vs prescribed 4x5. Achilles and sleep not reported."
     }
   ],
   "scienceReviews": [
@@ -1776,20 +1814,20 @@
     {
       "date": "2026-04-26",
       "week": 8,
-      "findings": "STRENGTH: Cleanest 2-week progression block of Phase 1. Week 7 Wed: TB DL stall broken (5x5 @ 230 completed after 5-week plateau, volume-before-intensity strategy from Week 6 review delivered). Back Squat 140\u2192145 RPE 7 (Phase 1 target hit). Week 7 Thu: triple-progression on all BB compounds \u2014 Bench 140\u2192145, Lat Pulldown 140\u2192145, Bent Row 140\u2192145 (textbook double progression after 2 consecutive sessions at 140). DB OHP held at 30 lb DBs (third pressing of session, fatigue-appropriate). Net: 4 of 7 main lifts +5 in Week 7. ACHILLES: 7-day all-green streak \u2014 every reading 0-1/10 across training, games, yardwork, AND 2 yellow sleep nights. Tendon resilience under fatigue is the strongest possible signal that HSR protocol is working (Silbernagel framework). HSR CADENCE: Week 7 hit 1/3 sessions only (Wed seated @150 completed, Fri standing skipped for 2hr yardwork). Below Beyer 3x/week target \u2014 single-week shortfall, not catastrophic for 12-week adaptation timeline but the structural issue worth addressing. SLEEP: Week 7 mixed pattern \u2014 2 nights 6hr-with-disturbance (Apr 21\u219222, Apr 23\u219224), 2 recovery nights (Apr 22\u219223, Apr 24\u219225). 2/4 yellow, 2/4 green. Not a Section 2 reactive-deload trigger (requires 3+ consecutive <6hr) but trending. Week 8 entered with 2 consecutive recovery nights (Apr 24\u219225, Apr 25\u219226 both 'good'). NUTRITION: Apr 20-26 protein avg ~175g/day (above 160g floor); Apr 25 was lowest day at 116g (below floor by 44g \u2014 driver was egg-based dinner instead of chicken-based, single-decision miss). Calorie pattern Apr 20-25 raw avg 2,698 cal/day with Fri 3,417 spike from Texas Roadhouse (offset by yardwork ~600 cal). Net of activity: ~2,500-2,600 cal/day = at maintenance, not deficit. Saturated fat NEW concern: Thu burger (~30g) + Fri ribeye + apps (~50g) + Sat ribs/eggs/bacon (~38g) = ~120g sat fat across 3 days, well over AHA 22g/day ceiling. 4-week pattern matters for cardiovascular markers given longevity goal. BODY COMP: 221.6-222.4 lbs / 23.3-23.8% BF across the window, slow recomp continuing (Apr 8 vs Apr 23: 222.4/23.6% \u2192 222.0/23.4%). VOLUME: Week 7 lower body 14 sets (TB DL 5 + Squat 3 + BSS 3 + SLRDL 3), upper 14 sets (Bench 4 + Lat 4 + Row 4 + OHP 3 + face pull 3 \u2014 Bench at floor of 6-10 range). Calf HSR 3 sets only (Wed only) vs target 9-12 (3 sessions x 3 sets). NEW PROTOCOL: User adopted Momentous Collagen Peptides (15g + 50mg vit C, FORTIGEL formulation) as permanent shake default Apr 26 \u2014 exact match to Shaw 2017 (PMID 27852613) and Praet 2019 (PMID 30609761) achilles tendinopathy protocols. Initial timing post-game; better-leverage timing is 30-60 min PRE Wed/Fri HSR sessions. PHASE TRANSITION: 1 week from Phase 1\u21922 (Week 9 start May 3). All readiness criteria hit: strength progressing, tendon stable, sleep recoverable. Plyometric introduction can proceed as planned.",
-      "changes": "1) WEEK 8 SCHEDULE ADJUSTED: No Tuesday game per user. Tue Apr 28 becomes BONUS HSR-catch-up + posterior-chain accessory session (Standing Calf HSR 3x6, Hip Thrust 3x10@50, Banded Lateral Walk, Face Pull, Pallof, Banded Dorsiflexion). Bumps Week 8 HSR cadence to 3x (Tue + Wed + Fri) = exactly Beyer protocol target. Low CNS to preserve Wed TB DL @ 235 + Back Squat 150 freshness. 2) COLLAGEN TIMING SHIFT: Pre-load Momentous shake 30-60 min before Tue (first practice session), Wed, and Fri lifting per Shaw 2017. Tue session is the ideal first-time test of pre-loading routine. 3) SATURATED FAT TARGET: Lean dinner sources for at least 4 nights this week (chicken breast/thigh, fish, lean ground turkey) to bring weekly sat fat back to <22g/day avg. Specifically avoid red meat dinners until Fri at earliest. 4) NO DELOAD WEEK 8 DECISION RECONFIRMED: 3/4 green skip-criteria (lifts, RPE, achilles), 2/4 yellow (HSR cadence, sleep) \u2014 yellow flags addressed via Tue HSR catch-up + 2 recovery nights confirming sleep recovery. Reactive deload only if sleep <6hr for 3+ consecutive nights, lifts stall, OR achilles >3/10 during loading. 5) NEXT REVIEW: Sun May 3 (start of Phase 2) \u2014 re-evaluate 12-month targets (TB DL 385, Squat 315, Bench 225) based on actual 8-week progression rate and reassess body comp trajectory at Phase 1 close."
+      "findings": "STRENGTH: Cleanest 2-week progression block of Phase 1. Week 7 Wed: TB DL stall broken (5x5 @ 230 completed after 5-week plateau, volume-before-intensity strategy from Week 6 review delivered). Back Squat 140→145 RPE 7 (Phase 1 target hit). Week 7 Thu: triple-progression on all BB compounds — Bench 140→145, Lat Pulldown 140→145, Bent Row 140→145 (textbook double progression after 2 consecutive sessions at 140). DB OHP held at 30 lb DBs (third pressing of session, fatigue-appropriate). Net: 4 of 7 main lifts +5 in Week 7. ACHILLES: 7-day all-green streak — every reading 0-1/10 across training, games, yardwork, AND 2 yellow sleep nights. Tendon resilience under fatigue is the strongest possible signal that HSR protocol is working (Silbernagel framework). HSR CADENCE: Week 7 hit 1/3 sessions only (Wed seated @150 completed, Fri standing skipped for 2hr yardwork). Below Beyer 3x/week target — single-week shortfall, not catastrophic for 12-week adaptation timeline but the structural issue worth addressing. SLEEP: Week 7 mixed pattern — 2 nights 6hr-with-disturbance (Apr 21→22, Apr 23→24), 2 recovery nights (Apr 22→23, Apr 24→25). 2/4 yellow, 2/4 green. Not a Section 2 reactive-deload trigger (requires 3+ consecutive <6hr) but trending. Week 8 entered with 2 consecutive recovery nights (Apr 24→25, Apr 25→26 both 'good'). NUTRITION: Apr 20-26 protein avg ~175g/day (above 160g floor); Apr 25 was lowest day at 116g (below floor by 44g — driver was egg-based dinner instead of chicken-based, single-decision miss). Calorie pattern Apr 20-25 raw avg 2,698 cal/day with Fri 3,417 spike from Texas Roadhouse (offset by yardwork ~600 cal). Net of activity: ~2,500-2,600 cal/day = at maintenance, not deficit. Saturated fat NEW concern: Thu burger (~30g) + Fri ribeye + apps (~50g) + Sat ribs/eggs/bacon (~38g) = ~120g sat fat across 3 days, well over AHA 22g/day ceiling. 4-week pattern matters for cardiovascular markers given longevity goal. BODY COMP: 221.6-222.4 lbs / 23.3-23.8% BF across the window, slow recomp continuing (Apr 8 vs Apr 23: 222.4/23.6% → 222.0/23.4%). VOLUME: Week 7 lower body 14 sets (TB DL 5 + Squat 3 + BSS 3 + SLRDL 3), upper 14 sets (Bench 4 + Lat 4 + Row 4 + OHP 3 + face pull 3 — Bench at floor of 6-10 range). Calf HSR 3 sets only (Wed only) vs target 9-12 (3 sessions x 3 sets). NEW PROTOCOL: User adopted Momentous Collagen Peptides (15g + 50mg vit C, FORTIGEL formulation) as permanent shake default Apr 26 — exact match to Shaw 2017 (PMID 27852613) and Praet 2019 (PMID 30609761) achilles tendinopathy protocols. Initial timing post-game; better-leverage timing is 30-60 min PRE Wed/Fri HSR sessions. PHASE TRANSITION: 1 week from Phase 1→2 (Week 9 start May 3). All readiness criteria hit: strength progressing, tendon stable, sleep recoverable. Plyometric introduction can proceed as planned.",
+      "changes": "1) WEEK 8 SCHEDULE ADJUSTED: No Tuesday game per user. Tue Apr 28 becomes BONUS HSR-catch-up + posterior-chain accessory session (Standing Calf HSR 3x6, Hip Thrust 3x10@50, Banded Lateral Walk, Face Pull, Pallof, Banded Dorsiflexion). Bumps Week 8 HSR cadence to 3x (Tue + Wed + Fri) = exactly Beyer protocol target. Low CNS to preserve Wed TB DL @ 235 + Back Squat 150 freshness. 2) COLLAGEN TIMING SHIFT: Pre-load Momentous shake 30-60 min before Tue (first practice session), Wed, and Fri lifting per Shaw 2017. Tue session is the ideal first-time test of pre-loading routine. 3) SATURATED FAT TARGET: Lean dinner sources for at least 4 nights this week (chicken breast/thigh, fish, lean ground turkey) to bring weekly sat fat back to <22g/day avg. Specifically avoid red meat dinners until Fri at earliest. 4) NO DELOAD WEEK 8 DECISION RECONFIRMED: 3/4 green skip-criteria (lifts, RPE, achilles), 2/4 yellow (HSR cadence, sleep) — yellow flags addressed via Tue HSR catch-up + 2 recovery nights confirming sleep recovery. Reactive deload only if sleep <6hr for 3+ consecutive nights, lifts stall, OR achilles >3/10 during loading. 5) NEXT REVIEW: Sun May 3 (start of Phase 2) — re-evaluate 12-month targets (TB DL 385, Squat 315, Bench 225) based on actual 8-week progression rate and reassess body comp trajectory at Phase 1 close."
     },
     {
       "date": "2026-05-04",
       "week": 9,
-      "findings": "Phase 1 \u2192 Phase 2 transition checkpoint (Section 7).\n\nSTRENGTH (end of Phase 1): TB DL closes Phase 1 at 235x4x5 (+5 lb microload Apr 29 broke a 5-week 230 plateau \u2014 strongest single result of Phase 1). Back Squat 150x3x5, hit Phase 1 target. BB Bench 145x4x5. Vs 12-month targets: TB DL needs +150 / +64% to 385x5; Back Squat needs +165 / +110% to 315x5; Bench needs +80 / +55% to 225x5. Section 7 says wait 2-3 weeks into Phase 2 before revising \u2014 hold all targets, re-evaluate at Wk 11.\n\nHSR COMPLIANCE: Week 8 hit Beyer 3x/week target for the first time in Phase 1 (Tue standing + Wed seated + Fri standing). Wk 6: 2/3, Wk 7: 1/3. The structural fix was the bonus Tuesday session \u2014 pattern worth carrying into Phase 2 weeks where Tue isn't a game day.\n\nACHILLES: 13-day all-green streak Apr 22 \u2192 May 1 across training, games, yardwork, sleep-poor nights, and a TB DL plateau-breaker. Strongest signal of the program that the Beyer 2015 HSR protocol is delivering. Sun May 3 game: not reported.\n\nSLEEP: Apr 26 \u2192 Apr 30 hit 6 consecutive recovery nights (8h reported). Apr 30 \u2192 May 1 broke streak at 5.5h (single night, below the Section 2 reactive-deload trigger of 3+ consecutive). Friday plan correctly applied Knowles 2018 partial deload \u2014 volume -25%, intensity held, HSR full load.\n\nVOLUME (Wk 8): Lower body 17-19 hard sets across Tue + Wed + Fri (mid-range of Section 3 6-10 sets/muscle/wk after sport contribution). Upper ~13 sets (in range). Calves 9 sets across 3 HSR sessions = on Beyer target.\n\nBSS WK 8 WED FLAG: Apr 29 went 25 lb DBs x 5 reps (vs prescribed 20 DBs x 8) with lower-back discomfort \u2014 cumulative lumbar fatigue from TB DL + Back Squat + heavy unilateral. Resolves naturally at Phase 2: existing Phase 2 plan drops BSS from Wed and moves it to Fri at moderate load. No custom rule needed.\n\nBODY COMP: 221.3 lbs / 23.2% BF on Apr 28 \u2014 best reading of program (-1.1 lb / -0.4 pt BF over 20 days). Slow recomp continuing on Option B deficit-anchor protocol.\n\nSAT FAT (continuing concern, longevity lens): Apr 26 \u2192 May 1 ran 5/6 days at or over the AHA 22 g/day ceiling (Apr 26 ~36g, Apr 28 ~22.5g, Apr 29 ~31g, Apr 30 ~41g, May 1 ~20.5g+ pre-dinner). Driver: cheese-forward dinners (parmesan, pizza, pepperoni). Lever: replace cheese-dominant dinner protein with leaner sources (JustBare strips, BLSS chicken, lean ground turkey) on 4-5 of 7 days.\n\nPHASE 2 READINESS: All criteria met \u2014 strength progressing, achilles tolerant, HSR compliant, sport recovery good. Plyo introduction appropriate. Section 6 prescribes 40-60 contacts/session for non-specialized athletes; the existing Phase 2 Fri default lands at 30 contacts (Box Jump 3x4 + TB Jump Squat 3x3 + Broad Jump 3x3) \u2014 deliberately below floor for Wk 1 first plyo session in 8 weeks given bilateral achilles tendinopathy. Ramp +10 contacts/wk through Wk 11-12 to land at the 40-60 range.",
-      "changes": "modifiedWeeks[\"9\"] defined: full 7-day Phase 2 Wk 1 schedule. Sun May 3 basketball logged (24min high). Mon May 4 rest + Option B deficit anchor + lean-protein dinner protocol (sat-fat lever). Tue May 5 basketball PM (single game this week, no hockey). Wed May 6 Phase 2 Lower (TB DL 4x5 @ 240 +5 microload, Back Squat 4x5 @ 155 \u2014 Phase 2 volume jump from 3x5 to 4x5; GHR/Ham Curl 3x5 replaces BSS in posterior slot; Single-Leg Calf HSR 3x6 BW per Phase 2 plan). Thu May 7 Phase 2 Upper + Power (Bench 4x5 @ 147.5 +2.5 microload, Weighted Pull-up 4x5, DB Push Press 3x6, Chest-Supported Row 3x8 \u2014 corrects Apr 30 row deviation, Cable Pull-Through 3x5, Cable Woodchop 3x5/side). Fri May 8 Phase 2 Power+Plyo first plyo session (Box Jump 3x4 step-down, TB Jump Squat 3x3 ~70 lb, Broad Jump 3x3 = 30 contacts conservative intro; BSS 3x6/leg moderate, Banded Lateral Shuffle, Standing Calf HSR 3x6). Sat May 9 rest. Hold all 12-month strength targets per Section 7 (re-evaluate Wk 11). Continue Option B nutrition with sat-fat lever."
+      "findings": "Phase 1 → Phase 2 transition checkpoint (Section 7).\n\nSTRENGTH (end of Phase 1): TB DL closes Phase 1 at 235x4x5 (+5 lb microload Apr 29 broke a 5-week 230 plateau — strongest single result of Phase 1). Back Squat 150x3x5, hit Phase 1 target. BB Bench 145x4x5. Vs 12-month targets: TB DL needs +150 / +64% to 385x5; Back Squat needs +165 / +110% to 315x5; Bench needs +80 / +55% to 225x5. Section 7 says wait 2-3 weeks into Phase 2 before revising — hold all targets, re-evaluate at Wk 11.\n\nHSR COMPLIANCE: Week 8 hit Beyer 3x/week target for the first time in Phase 1 (Tue standing + Wed seated + Fri standing). Wk 6: 2/3, Wk 7: 1/3. The structural fix was the bonus Tuesday session — pattern worth carrying into Phase 2 weeks where Tue isn't a game day.\n\nACHILLES: 13-day all-green streak Apr 22 → May 1 across training, games, yardwork, sleep-poor nights, and a TB DL plateau-breaker. Strongest signal of the program that the Beyer 2015 HSR protocol is delivering. Sun May 3 game: not reported.\n\nSLEEP: Apr 26 → Apr 30 hit 6 consecutive recovery nights (8h reported). Apr 30 → May 1 broke streak at 5.5h (single night, below the Section 2 reactive-deload trigger of 3+ consecutive). Friday plan correctly applied Knowles 2018 partial deload — volume -25%, intensity held, HSR full load.\n\nVOLUME (Wk 8): Lower body 17-19 hard sets across Tue + Wed + Fri (mid-range of Section 3 6-10 sets/muscle/wk after sport contribution). Upper ~13 sets (in range). Calves 9 sets across 3 HSR sessions = on Beyer target.\n\nBSS WK 8 WED FLAG: Apr 29 went 25 lb DBs x 5 reps (vs prescribed 20 DBs x 8) with lower-back discomfort — cumulative lumbar fatigue from TB DL + Back Squat + heavy unilateral. Resolves naturally at Phase 2: existing Phase 2 plan drops BSS from Wed and moves it to Fri at moderate load. No custom rule needed.\n\nBODY COMP: 221.3 lbs / 23.2% BF on Apr 28 — best reading of program (-1.1 lb / -0.4 pt BF over 20 days). Slow recomp continuing on Option B deficit-anchor protocol.\n\nSAT FAT (continuing concern, longevity lens): Apr 26 → May 1 ran 5/6 days at or over the AHA 22 g/day ceiling (Apr 26 ~36g, Apr 28 ~22.5g, Apr 29 ~31g, Apr 30 ~41g, May 1 ~20.5g+ pre-dinner). Driver: cheese-forward dinners (parmesan, pizza, pepperoni). Lever: replace cheese-dominant dinner protein with leaner sources (JustBare strips, BLSS chicken, lean ground turkey) on 4-5 of 7 days.\n\nPHASE 2 READINESS: All criteria met — strength progressing, achilles tolerant, HSR compliant, sport recovery good. Plyo introduction appropriate. Section 6 prescribes 40-60 contacts/session for non-specialized athletes; the existing Phase 2 Fri default lands at 30 contacts (Box Jump 3x4 + TB Jump Squat 3x3 + Broad Jump 3x3) — deliberately below floor for Wk 1 first plyo session in 8 weeks given bilateral achilles tendinopathy. Ramp +10 contacts/wk through Wk 11-12 to land at the 40-60 range.",
+      "changes": "modifiedWeeks[\"9\"] defined: full 7-day Phase 2 Wk 1 schedule. Sun May 3 basketball logged (24min high). Mon May 4 rest + Option B deficit anchor + lean-protein dinner protocol (sat-fat lever). Tue May 5 basketball PM (single game this week, no hockey). Wed May 6 Phase 2 Lower (TB DL 4x5 @ 240 +5 microload, Back Squat 4x5 @ 155 — Phase 2 volume jump from 3x5 to 4x5; GHR/Ham Curl 3x5 replaces BSS in posterior slot; Single-Leg Calf HSR 3x6 BW per Phase 2 plan). Thu May 7 Phase 2 Upper + Power (Bench 4x5 @ 147.5 +2.5 microload, Weighted Pull-up 4x5, DB Push Press 3x6, Chest-Supported Row 3x8 — corrects Apr 30 row deviation, Cable Pull-Through 3x5, Cable Woodchop 3x5/side). Fri May 8 Phase 2 Power+Plyo first plyo session (Box Jump 3x4 step-down, TB Jump Squat 3x3 ~70 lb, Broad Jump 3x3 = 30 contacts conservative intro; BSS 3x6/leg moderate, Banded Lateral Shuffle, Standing Calf HSR 3x6). Sat May 9 rest. Hold all 12-month strength targets per Section 7 (re-evaluate Wk 11). Continue Option B nutrition with sat-fat lever."
     },
     {
       "date": "2026-05-17",
       "week": 11,
-      "findings": "Wk 11 / Wk 3 of Phase 2 review (13 days since last review on 2026-05-04 \u2014 overdue by 6 days vs weekly cadence target).\n\nSTRENGTH PROGRESSION (Section 7 checkpoint \u2014 Wk 11 was the planned re-evaluation point):\n- TB DL: 225 \u2192 240 lb over 8 wks = 1.88 lb/wk = 8.1 lb/month. Inside Section 7 expected range (5-15 lb/month for months 0-6, intermediate). 145 lb remaining to target. At current pace, 385x5 lands ~18 months out; 12-month timeline plausible only if Phase 2 RPE 7-8 work accelerates from Phase 1 RPE 6-7.\n- Back Squat: rebuilt from 45 lb pattern-work (Apr 8) to 155x4x5 (May 6). Real progression now ~5 lb/cycle. 160 lb to target. CLAUDE.md called 15-18 months more realistic than 12 for squat \u2014 current data supports that.\n- Bench Press: 135 \u2192 150 in 30 days = 3.5 lb/wk = 15.2 lb/month. Top of Section 7 range. 75 lb to target. Most realistic of the three; ~5-6 months at current pace.\n\nHSR COMPLIANCE (the biggest miss this review):\n- Wk 9: 2/3 sessions (Wed seated + Fri standing single-leg). Bonus Tue dropped vs Wk 8.\n- Wk 10: 1/3 sessions (Fri only \u2014 Wed/Thu missed to work travel).\n- Wk 11 to date: 0/3.\n- 3 consecutive weeks below Beyer 2015 (PMID 26018970, Strong) protocol target. Wk 8 success was the bonus Tue HSR session; that pattern wasn't carried into Phase 2. Outcomes are protective so far (see Achilles), but compliance is the lagging indicator; Magnusson and Kjaer 2019 (PMC6395417, Strong) on multi-month tendon adaptation cycles argues against extended compliance gaps.\n\nACHILLES (the strongest signal in the program):\n- 15-event green-zone (\u22643/10) streak back to 2026-03-17. Zero events in yellow (4-5) or red (>5) range across past 30 days.\n- Plyo introduction (5/9, 30 contacts) and ramp (5/15, 40 contacts) both completed at 0/10.\n- Two plyo\u2192game 48h clusters (Sat 5/9 \u2192 Sun 5/10; Fri 5/15 \u2192 Sun 5/17) both clean.\n- Meets Section 4 criteria to continue Fri plyo block by wide margin.\n\nPLYO BLOCK (Section 6):\n- On schedule per 5/04 review forecast. Wk 9: 30 contacts (ramp floor). Wk 10: 40 contacts (+10 ramp, hitting Section 6 floor). Wk 11 prescribed 50, Wk 12 prescribed 60 (top of 40-60 range). After Wk 12 close, 2-week maintenance Wks 13-14 per Phase 3 plan.\n- Markovic 2007 (Strong): ~4-8% VJ improvement from 6-12 weeks of plyo in trained athletes. The 4-week block targets the steeper portion of that curve.\n\nVOLUME (Wk 10 anomaly):\n- Wk 10 = 1 training session (Fri plyo) vs typical 3, due to work travel. Net: zero direct upper-body sets, zero non-plyo lower-body sets.\n- Functionally an unscheduled reactive 'deload.' Per Coleman 2024 (PMID 38274324, Moderate), unscheduled deloads without fatigue signals can cost strength gain \u2014 but Wk 10 was sport/work-driven not fatigue-driven, and adjacent outcomes (achilles, game performance) were intact. Treat as one-off, not a pattern.\n\nRECOVERY DATA GAP:\n- Sleep logged 4/14 nights (29%) since last review.\n- Protein logged 3/14 days (21%).\n- Body comp: 1 reading (5/7: 220.5 lb / 23.0% BF, essentially flat from 5/04 baseline of 221.3 / 23.2%).\n- Per CLAUDE.md: 'Data gaps on these two fields compromise the 12-week HSR adaptation check and the Knowles 2018 sleep-intensity auto-regulation.' Now a compounded gap across two consecutive reviews (Wk 6 review also flagged this).\n\nPHASE 2 STATUS:\n- Wk 11 = Wk 3 of Phase 2. RPE targets shifted from 6-7 (Phase 1) to 7-8 (Phase 2) \u2014 too early to tell if working-set RPE actually moved; the Wk 11 + Wk 13 sessions will be the read.\n- 4 weeks until Phase 3 entry (Wk 15, mid-June). Phase 2 plyo block runs Wks 9-12; maintenance Wks 13-14; Phase 3 begins 'power realization' work.",
-      "changes": "1) HSR COMPLIANCE FIX (highest-leverage adjustment this review): Adopt a default Mon-AM HSR-only mini-session (10-15 min: 3 sets seated + 3 sets standing single-leg, full Beyer protocol load and tempo). Travel-proof (no equipment dependency beyond a step + DBs), low-CNS-cost before Tue basketball, and protects Beyer 3x/wk compliance even when Wed/Thu fall out. Pattern modeled on the Wk 8 bonus-Tue success. References: Beyer 2015 (PMID 26018970, Strong); Magnusson and Kjaer 2019 (PMC6395417, Strong) on tendon load continuity.\n\n2) RECOVERY CAPTURE TRIGGER: Standardize a single morning log: sleep hours / AM achilles 0-10 / protein floor estimate (Y/N hit 40g by lunch). Target 80% capture (\u22655/7 days/week). The Silbernagel 24-hour rule and Knowles 2018 sleep-intensity auto-regulation both depend on consistent daily reads. References: Silbernagel 2007 (PMID 17307888, Strong); Knowles 2018 (PMID 29422383, Moderate); Walsh 2021 IOC consensus (PMID 33144349, Strong).\n\n3) HOLD 12-MONTH STRENGTH TARGETS THROUGH WK 14: Re-evaluate after Phase 2 plyo block closes (5/29) and 2-week maintenance Wks 13-14 complete. Current progression rates (TB DL 8.1 lb/mo, Bench 15.2 lb/mo) are inside Section 7 expected ranges; Back Squat will be the constraint and likely confirms the 15-18 month timeline CLAUDE.md flagged. Hold for now. References: Rhea 2003 dose-response meta-analysis (Moderate); Baker 2001 (PMID 11710401, Moderate) on in-season constraint.\n\nWK 11 FORECAST: Mon 5/18 HSR mini-session (the new default). Tue 5/19 basketball. Wed 5/20 Phase 2 Lower (first heavy TB DL touch in 14 days \u2014 hold 240 lb for one session, expect small RPE bump from layoff, push to 245 only after clean rep quality per Section 1 progression-stall protocol). Thu 5/21 Phase 2 Upper + Power. Fri 5/22 Phase 2 Power + Plyo at 50 contacts (5x4 / 5x3 / 5x3 or 4x4 / 4x4 / 4x4 \u2014 pick the cleaner split). Sat 5/23 rest. Sun 5/24 basketball. Next science review: Sun 5/24 (end of Wk 11), then weekly cadence."
+      "findings": "Wk 11 / Wk 3 of Phase 2 review (13 days since last review on 2026-05-04 — overdue by 6 days vs weekly cadence target).\n\nSTRENGTH PROGRESSION (Section 7 checkpoint — Wk 11 was the planned re-evaluation point):\n- TB DL: 225 → 240 lb over 8 wks = 1.88 lb/wk = 8.1 lb/month. Inside Section 7 expected range (5-15 lb/month for months 0-6, intermediate). 145 lb remaining to target. At current pace, 385x5 lands ~18 months out; 12-month timeline plausible only if Phase 2 RPE 7-8 work accelerates from Phase 1 RPE 6-7.\n- Back Squat: rebuilt from 45 lb pattern-work (Apr 8) to 155x4x5 (May 6). Real progression now ~5 lb/cycle. 160 lb to target. CLAUDE.md called 15-18 months more realistic than 12 for squat — current data supports that.\n- Bench Press: 135 → 150 in 30 days = 3.5 lb/wk = 15.2 lb/month. Top of Section 7 range. 75 lb to target. Most realistic of the three; ~5-6 months at current pace.\n\nHSR COMPLIANCE (the biggest miss this review):\n- Wk 9: 2/3 sessions (Wed seated + Fri standing single-leg). Bonus Tue dropped vs Wk 8.\n- Wk 10: 1/3 sessions (Fri only — Wed/Thu missed to work travel).\n- Wk 11 to date: 0/3.\n- 3 consecutive weeks below Beyer 2015 (PMID 26018970, Strong) protocol target. Wk 8 success was the bonus Tue HSR session; that pattern wasn't carried into Phase 2. Outcomes are protective so far (see Achilles), but compliance is the lagging indicator; Magnusson and Kjaer 2019 (PMC6395417, Strong) on multi-month tendon adaptation cycles argues against extended compliance gaps.\n\nACHILLES (the strongest signal in the program):\n- 15-event green-zone (≤3/10) streak back to 2026-03-17. Zero events in yellow (4-5) or red (>5) range across past 30 days.\n- Plyo introduction (5/9, 30 contacts) and ramp (5/15, 40 contacts) both completed at 0/10.\n- Two plyo→game 48h clusters (Sat 5/9 → Sun 5/10; Fri 5/15 → Sun 5/17) both clean.\n- Meets Section 4 criteria to continue Fri plyo block by wide margin.\n\nPLYO BLOCK (Section 6):\n- On schedule per 5/04 review forecast. Wk 9: 30 contacts (ramp floor). Wk 10: 40 contacts (+10 ramp, hitting Section 6 floor). Wk 11 prescribed 50, Wk 12 prescribed 60 (top of 40-60 range). After Wk 12 close, 2-week maintenance Wks 13-14 per Phase 3 plan.\n- Markovic 2007 (Strong): ~4-8% VJ improvement from 6-12 weeks of plyo in trained athletes. The 4-week block targets the steeper portion of that curve.\n\nVOLUME (Wk 10 anomaly):\n- Wk 10 = 1 training session (Fri plyo) vs typical 3, due to work travel. Net: zero direct upper-body sets, zero non-plyo lower-body sets.\n- Functionally an unscheduled reactive 'deload.' Per Coleman 2024 (PMID 38274324, Moderate), unscheduled deloads without fatigue signals can cost strength gain — but Wk 10 was sport/work-driven not fatigue-driven, and adjacent outcomes (achilles, game performance) were intact. Treat as one-off, not a pattern.\n\nRECOVERY DATA GAP:\n- Sleep logged 4/14 nights (29%) since last review.\n- Protein logged 3/14 days (21%).\n- Body comp: 1 reading (5/7: 220.5 lb / 23.0% BF, essentially flat from 5/04 baseline of 221.3 / 23.2%).\n- Per CLAUDE.md: 'Data gaps on these two fields compromise the 12-week HSR adaptation check and the Knowles 2018 sleep-intensity auto-regulation.' Now a compounded gap across two consecutive reviews (Wk 6 review also flagged this).\n\nPHASE 2 STATUS:\n- Wk 11 = Wk 3 of Phase 2. RPE targets shifted from 6-7 (Phase 1) to 7-8 (Phase 2) — too early to tell if working-set RPE actually moved; the Wk 11 + Wk 13 sessions will be the read.\n- 4 weeks until Phase 3 entry (Wk 15, mid-June). Phase 2 plyo block runs Wks 9-12; maintenance Wks 13-14; Phase 3 begins 'power realization' work.",
+      "changes": "1) HSR COMPLIANCE FIX (highest-leverage adjustment this review): Adopt a default Mon-AM HSR-only mini-session (10-15 min: 3 sets seated + 3 sets standing single-leg, full Beyer protocol load and tempo). Travel-proof (no equipment dependency beyond a step + DBs), low-CNS-cost before Tue basketball, and protects Beyer 3x/wk compliance even when Wed/Thu fall out. Pattern modeled on the Wk 8 bonus-Tue success. References: Beyer 2015 (PMID 26018970, Strong); Magnusson and Kjaer 2019 (PMC6395417, Strong) on tendon load continuity.\n\n2) RECOVERY CAPTURE TRIGGER: Standardize a single morning log: sleep hours / AM achilles 0-10 / protein floor estimate (Y/N hit 40g by lunch). Target 80% capture (≥5/7 days/week). The Silbernagel 24-hour rule and Knowles 2018 sleep-intensity auto-regulation both depend on consistent daily reads. References: Silbernagel 2007 (PMID 17307888, Strong); Knowles 2018 (PMID 29422383, Moderate); Walsh 2021 IOC consensus (PMID 33144349, Strong).\n\n3) HOLD 12-MONTH STRENGTH TARGETS THROUGH WK 14: Re-evaluate after Phase 2 plyo block closes (5/29) and 2-week maintenance Wks 13-14 complete. Current progression rates (TB DL 8.1 lb/mo, Bench 15.2 lb/mo) are inside Section 7 expected ranges; Back Squat will be the constraint and likely confirms the 15-18 month timeline CLAUDE.md flagged. Hold for now. References: Rhea 2003 dose-response meta-analysis (Moderate); Baker 2001 (PMID 11710401, Moderate) on in-season constraint.\n\nWK 11 FORECAST: Mon 5/18 HSR mini-session (the new default). Tue 5/19 basketball. Wed 5/20 Phase 2 Lower (first heavy TB DL touch in 14 days — hold 240 lb for one session, expect small RPE bump from layoff, push to 245 only after clean rep quality per Section 1 progression-stall protocol). Thu 5/21 Phase 2 Upper + Power. Fri 5/22 Phase 2 Power + Plyo at 50 contacts (5x4 / 5x3 / 5x3 or 4x4 / 4x4 / 4x4 — pick the cleaner split). Sat 5/23 rest. Sun 5/24 basketball. Next science review: Sun 5/24 (end of Wk 11), then weekly cadence."
     },
     {
       "date": "2026-05-30",
@@ -1850,19 +1888,19 @@
       "bodyFatPct": 23.4,
       "proteinGrams": 136,
       "calories": 2146,
-      "notes": "Breakfast: 4 eggs, 2 bacon, 1 slice sourdough (~34g/~486cal). Lunch: turkey sandwich (6 turkey, 3 mozz, 2 golden wheat bread) + 2 servings Kirkland potato chips (~58g/~930cal). Dinner: shrimp scampi \u2014 8 large shrimp, 1.5 cups cooked pasta, butter (~44g/~730cal)."
+      "notes": "Breakfast: 4 eggs, 2 bacon, 1 slice sourdough (~34g/~486cal). Lunch: turkey sandwich (6 turkey, 3 mozz, 2 golden wheat bread) + 2 servings Kirkland potato chips (~58g/~930cal). Dinner: shrimp scampi — 8 large shrimp, 1.5 cups cooked pasta, butter (~44g/~730cal)."
     },
     {
       "date": "2026-04-10",
       "proteinGrams": 170,
       "calories": 1940,
-      "notes": "Breakfast: shake without granola \u2014 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Lunch: turkey sandwich (6 turkey, 3 mozz, 2 golden wheat bread) + 2 servings Kirkland potato chips (~58g/~930cal). Dinner: 10pc McDonald's chicken nuggets (~26g/~440cal)."
+      "notes": "Breakfast: shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Lunch: turkey sandwich (6 turkey, 3 mozz, 2 golden wheat bread) + 2 servings Kirkland potato chips (~58g/~930cal). Dinner: 10pc McDonald's chicken nuggets (~26g/~440cal)."
     },
     {
       "date": "2026-04-11",
       "proteinGrams": 166,
       "calories": 2350,
-      "notes": "Lunch: bacon egg and cheese burrito, Juanita's Cardiff (~32g/~700cal). Dinner: fish and chips, The Galley at the Marina Chula Vista (~48g/~1100cal). Shake: default without granola \u2014 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~550cal)."
+      "notes": "Lunch: bacon egg and cheese burrito, Juanita's Cardiff (~32g/~700cal). Dinner: fish and chips, The Galley at the Marina Chula Vista (~48g/~1100cal). Shake: default without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~550cal)."
     },
     {
       "date": "2026-04-12",
@@ -1876,13 +1914,13 @@
       "bodyFatPct": 23.7,
       "proteinGrams": 140,
       "calories": 1740,
-      "notes": "Shake without granola \u2014 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Snack: Clif Builder Bar Oreo (~20g/~270cal). Dinner: cheese tortellini 1.5 servings + 1/3 lb ground beef + 1.5 servings Rao's marinara + 2 cookies (~34g/~900cal)."
+      "notes": "Shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Snack: Clif Builder Bar Oreo (~20g/~270cal). Dinner: cheese tortellini 1.5 servings + 1/3 lb ground beef + 1.5 servings Rao's marinara + 2 cookies (~34g/~900cal)."
     },
     {
       "date": "2026-04-14",
       "proteinGrams": 191,
       "calories": 3070,
-      "notes": "Breakfast: shake without granola \u2014 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Lunch: 2x Crack Tri-Tip Tacos, Crack Taco Shop (~35g/~650cal) + 1/2 chips and guac (~3g/~300cal) + Clif Builder Bar Oreo (~20g/~270cal). Dinner: 2 buffalo wings, 10 fries (~14g/~300cal) + 1 serving cheese tortellini, 1/4 lb ground beef, 1/2 cup Rao's marinara (~29g/~580cal) + 1 Coors Light (~1g/~102cal) + 1 large chocolate chip cookie (~3g/~300cal)."
+      "notes": "Breakfast: shake without granola — 1 cup whole milk, 1 cup nonfat Greek yogurt, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~86g/~570cal). Lunch: 2x Crack Tri-Tip Tacos, Crack Taco Shop (~35g/~650cal) + 1/2 chips and guac (~3g/~300cal) + Clif Builder Bar Oreo (~20g/~270cal). Dinner: 2 buffalo wings, 10 fries (~14g/~300cal) + 1 serving cheese tortellini, 1/4 lb ground beef, 1/2 cup Rao's marinara (~29g/~580cal) + 1 Coors Light (~1g/~102cal) + 1 large chocolate chip cookie (~3g/~300cal)."
     },
     {
       "date": "2026-04-15",
@@ -1890,13 +1928,13 @@
       "bodyFatPct": 23.4,
       "proteinGrams": 172,
       "calories": 2030,
-      "notes": "Breakfast: shake without granola or yogurt \u2014 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal). Dinner: shake without granola or yogurt (~64g/~440cal) + 3 fish tacos El Pueblo Cardiff (~38g/~750cal) + JoJo's Creamery jojo size ice cream (~6g/~400cal)."
+      "notes": "Breakfast: shake without granola or yogurt — 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal). Dinner: shake without granola or yogurt (~64g/~440cal) + 3 fish tacos El Pueblo Cardiff (~38g/~750cal) + JoJo's Creamery jojo size ice cream (~6g/~400cal)."
     },
     {
       "date": "2026-04-16",
       "proteinGrams": 155,
       "calories": 2670,
-      "notes": "Breakfast: shake without granola or yogurt \u2014 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal). Lunch: homemade quesadilla \u2014 2 medium Costco tortillas, 1 cup cheese, 2 slices bacon (~50g/~1130cal). Dinner: chicken sandwich Chick & Hawk Encinitas + 1/2 large fries + 1 mixed drink (~41g/~1100cal)."
+      "notes": "Breakfast: shake without granola or yogurt — 1 cup whole milk, 2 scoops ON Gold Standard, 2 tbsp PB Fit (~64g/~440cal). Lunch: homemade quesadilla — 2 medium Costco tortillas, 1 cup cheese, 2 slices bacon (~50g/~1130cal). Dinner: chicken sandwich Chick & Hawk Encinitas + 1/2 large fries + 1 mixed drink (~41g/~1100cal)."
     },
     {
       "date": "2026-04-17",
@@ -1910,7 +1948,7 @@
       "bodyFatPct": 24.4,
       "proteinGrams": 159,
       "calories": 2820,
-      "notes": "AM weigh-in 225.8/24.4%. +4.0 lbs and +1.0 pt BF vs Apr 15 - acute spike from high-sodium week + glycogen repletion post-Apr 17 training + high-carb dinner. Not a real body-comp change. Breakfast: N\u00f3made breakfast burrito (~700cal/32g estimate). Lunch: 2 boneless skinless chicken thighs (~340cal/50g), 1.5 russet potatoes with olive oil (~366cal/6.5g), 1/4 cup shredded cheese (~113cal/7g), 1 slice bacon (~43cal/3g) = ~860cal/67g. Dinner: half of homemade 5-cheese tortellini dish (Costco tortellini + 2 tbsp butter + 1/2 cup white wine + 1/2 cup parmesan + 3 slices bacon, half portion eaten) = ~1,260cal/60g. Final: 159g/2,820cal."
+      "notes": "AM weigh-in 225.8/24.4%. +4.0 lbs and +1.0 pt BF vs Apr 15 - acute spike from high-sodium week + glycogen repletion post-Apr 17 training + high-carb dinner. Not a real body-comp change. Breakfast: Nómade breakfast burrito (~700cal/32g estimate). Lunch: 2 boneless skinless chicken thighs (~340cal/50g), 1.5 russet potatoes with olive oil (~366cal/6.5g), 1/4 cup shredded cheese (~113cal/7g), 1 slice bacon (~43cal/3g) = ~860cal/67g. Dinner: half of homemade 5-cheese tortellini dish (Costco tortellini + 2 tbsp butter + 1/2 cup white wine + 1/2 cup parmesan + 3 slices bacon, half portion eaten) = ~1,260cal/60g. Final: 159g/2,820cal."
     },
     {
       "date": "2026-04-19",
@@ -1942,7 +1980,7 @@
       "proteinGrams": 208,
       "calories": 2670,
       "sleepHours": 6,
-      "notes": "AM weigh-in 221.6/23.3% - below pre-weekend baseline, full weekend water/glycogen cleared. AM achilles 0-1/10 (green baseline continues). Sleep night Apr 21\u219222: ~6hr with disturbance (below 7.5-9 target). Breakfast: shake without granola with yogurt (~86g/590cal). Lunch: turkey sandwich (2 slices golden wheat bread, 6 oz deli turkey, 2 slices mozzarella) + 1 serving Old Thyme pretzels = ~53g/670cal. Pre-lift: Clif Builder Bar (~20g/280cal). Training: TB DL 5x5 @ 230 STALL BROKEN, Back Squat 3x5 @ 145 (+5 lbs, RPE 7), BSS 20 lb DBs, SLRDL 30 lb DBs, HSR 150 lb 3x6. Dinner: 2/3 of Taylor Farms Asian Chopped Salad Kit Family Size (whole bag ~1,100cal/21g) + 2 BLSS chicken thighs (~340cal/50g) combined then 2/3 portion eaten = ~960cal/47g. Dessert: 1 Its-It mini vanilla (~170cal/2g). Final: 208g/2,670cal. Protein upper half of target (160-220g). Calories ~130-330 under training-day maintenance (2,800-3,000) - modest deficit, acceptable given fat-loss goal and hit protein floor. Restaurant count this week: 1/3."
+      "notes": "AM weigh-in 221.6/23.3% - below pre-weekend baseline, full weekend water/glycogen cleared. AM achilles 0-1/10 (green baseline continues). Sleep night Apr 21→22: ~6hr with disturbance (below 7.5-9 target). Breakfast: shake without granola with yogurt (~86g/590cal). Lunch: turkey sandwich (2 slices golden wheat bread, 6 oz deli turkey, 2 slices mozzarella) + 1 serving Old Thyme pretzels = ~53g/670cal. Pre-lift: Clif Builder Bar (~20g/280cal). Training: TB DL 5x5 @ 230 STALL BROKEN, Back Squat 3x5 @ 145 (+5 lbs, RPE 7), BSS 20 lb DBs, SLRDL 30 lb DBs, HSR 150 lb 3x6. Dinner: 2/3 of Taylor Farms Asian Chopped Salad Kit Family Size (whole bag ~1,100cal/21g) + 2 BLSS chicken thighs (~340cal/50g) combined then 2/3 portion eaten = ~960cal/47g. Dessert: 1 Its-It mini vanilla (~170cal/2g). Final: 208g/2,670cal. Protein upper half of target (160-220g). Calories ~130-330 under training-day maintenance (2,800-3,000) - modest deficit, acceptable given fat-loss goal and hit protein floor. Restaurant count this week: 1/3."
     },
     {
       "date": "2026-04-23",
@@ -1951,35 +1989,35 @@
       "proteinGrams": 182,
       "calories": 2733,
       "sleepHours": 8,
-      "notes": "AM weigh-in 222.0/23.4% (user confirmed 23.4%). +0.4 lb from Apr 22 - within daily hydration/glycogen noise after training day + bagel breakfast. Sleep night Apr 22\u219223: 8hr (recovered from Apr 21\u219222 6hr disturbance - single-night blip confirmed). AM achilles 0-1/10, during-session 0/10 (Silbernagel green). Breakfast: Everything Bagel 5.65oz + 0.75oz salted butter (~590cal/16g). Lunch: shake without granola with yogurt (~86g/590cal - includes 5g creatine + 5g psyllium). Training: Week 7 Thu Upper Body - BB bench 4x5@145, lat pulldown 4x6@145, BB row 4x6@145 (all +5 lbs vs Apr 17), DB OHP 3x8@30s held. No pre-lift Clif. Dinner: 8oz raw 90/10 grass-fed patty (~400cal/46g) + Hawaiian bun (~180cal/5g) + 1 slice bacon (~43cal/3g) + 2 slices mozzarella (~160cal/12g) + 2 russets oven-roasted w/ ~1.5 tbsp olive oil (~600cal/12g) + Its-It mini vanilla (~170cal/2g) = ~1,553cal/80g. Final: 182g/2,733cal. Thursday = Option B deficit anchor (target 2,300-2,500) but landed ~230 cal over, closer to training-day maintenance (~2,600-2,800). Protein squarely in target. Swing variable was oven-roasted potatoes w/ olive oil (~600cal vs planned ~250cal for air-fried bagged fries). 3-day rolling avg (Apr 21-23): 2,733 cal/day - at maintenance, not a cut. Restaurant count this week: 1/3."
+      "notes": "AM weigh-in 222.0/23.4% (user confirmed 23.4%). +0.4 lb from Apr 22 - within daily hydration/glycogen noise after training day + bagel breakfast. Sleep night Apr 22→23: 8hr (recovered from Apr 21→22 6hr disturbance - single-night blip confirmed). AM achilles 0-1/10, during-session 0/10 (Silbernagel green). Breakfast: Everything Bagel 5.65oz + 0.75oz salted butter (~590cal/16g). Lunch: shake without granola with yogurt (~86g/590cal - includes 5g creatine + 5g psyllium). Training: Week 7 Thu Upper Body - BB bench 4x5@145, lat pulldown 4x6@145, BB row 4x6@145 (all +5 lbs vs Apr 17), DB OHP 3x8@30s held. No pre-lift Clif. Dinner: 8oz raw 90/10 grass-fed patty (~400cal/46g) + Hawaiian bun (~180cal/5g) + 1 slice bacon (~43cal/3g) + 2 slices mozzarella (~160cal/12g) + 2 russets oven-roasted w/ ~1.5 tbsp olive oil (~600cal/12g) + Its-It mini vanilla (~170cal/2g) = ~1,553cal/80g. Final: 182g/2,733cal. Thursday = Option B deficit anchor (target 2,300-2,500) but landed ~230 cal over, closer to training-day maintenance (~2,600-2,800). Protein squarely in target. Swing variable was oven-roasted potatoes w/ olive oil (~600cal vs planned ~250cal for air-fried bagged fries). 3-day rolling avg (Apr 21-23): 2,733 cal/day - at maintenance, not a cut. Restaurant count this week: 1/3."
     },
     {
       "date": "2026-04-24",
       "proteinGrams": 246,
       "calories": 3417,
       "sleepHours": 6,
-      "notes": "Sleep night Apr 23\u219224: 6 solid hours + ~2 hrs tossing (poor quality, below 7.5-9 target). Week sleep pattern: Apr 21\u219222 6hr disturbance, Apr 22\u219223 8hr recovery, Apr 23\u219224 6 solid + restless = 2/3 nights compromised. AM achilles 0-1/10 (Silbernagel green - tendon resilient despite global fatigue). Breakfast: shake without granola with yogurt (~86g/590cal - includes 5g creatine + 5g psyllium). Lunch: 1/2 chicken banh mi + 1/2 small plain fries from Chick and Hawk (~595cal/23g - chili-glazed grilled chicken thigh, quick-brined daikon and carrot, cilantro, jalape\u00f1o, umami aioli, baguette; user confirmed plain not duck fat). Yardwork ~2hrs (see activityLog Apr 24 recovery entry) \u2014 per Apr 19 precedent functional load ~500-700 cal expenditure. Friday lift SKIPPED, HSR cadence this week drops to 2x (Wed seated @150 only, missed Fri standing HSR) \u2014 below Beyer 3x/week target for 1 week. Dinner @ Texas Roadhouse (revised against official Texas Roadhouse PDF nutrition guide, Last Updated 12/27/2024 - aggregator numbers I initially used had ~5% noise on rolls/shrimp/wings): 2/3 of 16oz sirloin (447cal/81g - PDF confirmed at full 670cal/122g), 1 steak fries side (360cal/5g - PDF confirmed), 1 mac & cheese side (380cal/17g - PDF confirmed), 1.5 rolls (~300cal/7.5g - PDF: 200cal/5g per roll), ~1/2 normal cinnamon butter (~75cal/1g estimated - butter not in PDF), default steak butter (~100cal/0g estimated - not in PDF), 1/4 boneless wings appetizer (assumed mild, 215cal/14.5g - PDF: mild 860cal/58g, hot 760cal/60g full app; aggregators had mild/hot inverted), 1/2 grilled shrimp appetizer (185cal/10g - PDF: 370cal/20g full app), 1 Its-It mini vanilla (~170cal/2g) = ~2,232cal/137g. Final: 246g/3,417cal. Raw cal ~815 over training-day ceiling (2,600); net after yardwork ~2,800 = at training-day maintenance, not deficit. Protein 242g, ~22g over 220g ceiling - anabolically redundant past ~180g but not harmful. Variance from projection (~2,855) was the appetizers + dessert (~535cal), not the entr\u00e9e which was on plan. Steak choice (lean sirloin) was disciplined; the 'extras' stacked. Restaurant count this week: 3/3 (Chick and Hawk lunch + Texas Roadhouse dinner) - weekly cap hit, Sat & Sun must be home-cooked. 5-day cal avg (Apr 20-24) raw: ~2,811; net after Fri yardwork: ~2,691 \u2014 at maintenance, not a deficit."
+      "notes": "Sleep night Apr 23→24: 6 solid hours + ~2 hrs tossing (poor quality, below 7.5-9 target). Week sleep pattern: Apr 21→22 6hr disturbance, Apr 22→23 8hr recovery, Apr 23→24 6 solid + restless = 2/3 nights compromised. AM achilles 0-1/10 (Silbernagel green - tendon resilient despite global fatigue). Breakfast: shake without granola with yogurt (~86g/590cal - includes 5g creatine + 5g psyllium). Lunch: 1/2 chicken banh mi + 1/2 small plain fries from Chick and Hawk (~595cal/23g - chili-glazed grilled chicken thigh, quick-brined daikon and carrot, cilantro, jalapeño, umami aioli, baguette; user confirmed plain not duck fat). Yardwork ~2hrs (see activityLog Apr 24 recovery entry) — per Apr 19 precedent functional load ~500-700 cal expenditure. Friday lift SKIPPED, HSR cadence this week drops to 2x (Wed seated @150 only, missed Fri standing HSR) — below Beyer 3x/week target for 1 week. Dinner @ Texas Roadhouse (revised against official Texas Roadhouse PDF nutrition guide, Last Updated 12/27/2024 - aggregator numbers I initially used had ~5% noise on rolls/shrimp/wings): 2/3 of 16oz sirloin (447cal/81g - PDF confirmed at full 670cal/122g), 1 steak fries side (360cal/5g - PDF confirmed), 1 mac & cheese side (380cal/17g - PDF confirmed), 1.5 rolls (~300cal/7.5g - PDF: 200cal/5g per roll), ~1/2 normal cinnamon butter (~75cal/1g estimated - butter not in PDF), default steak butter (~100cal/0g estimated - not in PDF), 1/4 boneless wings appetizer (assumed mild, 215cal/14.5g - PDF: mild 860cal/58g, hot 760cal/60g full app; aggregators had mild/hot inverted), 1/2 grilled shrimp appetizer (185cal/10g - PDF: 370cal/20g full app), 1 Its-It mini vanilla (~170cal/2g) = ~2,232cal/137g. Final: 246g/3,417cal. Raw cal ~815 over training-day ceiling (2,600); net after yardwork ~2,800 = at training-day maintenance, not deficit. Protein 242g, ~22g over 220g ceiling - anabolically redundant past ~180g but not harmful. Variance from projection (~2,855) was the appetizers + dessert (~535cal), not the entrée which was on plan. Steak choice (lean sirloin) was disciplined; the 'extras' stacked. Restaurant count this week: 3/3 (Chick and Hawk lunch + Texas Roadhouse dinner) - weekly cap hit, Sat & Sun must be home-cooked. 5-day cal avg (Apr 20-24) raw: ~2,811; net after Fri yardwork: ~2,691 — at maintenance, not a deficit."
     },
     {
       "date": "2026-04-25",
       "proteinGrams": 116,
       "calories": 2134,
       "sleepHours": 8,
-      "notes": "Sleep night Apr 24\u219225: 'good' (estimated 8hr). Week 7 sleep pattern 2/4 yellow, 2/4 green - mixed but recoverable. AM achilles 0/10 (Silbernagel green). Breakfast: 3 large eggs (216cal/18g) + 1 slice bacon (43cal/3g) + 1/2 Hawaiian hamburger roll (90cal/2.5g) = ~350cal/24g. Lunch: TR leftovers - 1/2 of half-slab Fall-off-the-Bone ribs (450cal/36g/12.5g sat fat per PDF) + 1/2 mac & cheese side (190cal/8.5g/5.5g sat fat per PDF) = ~640cal/44.5g/18g sat fat. Dinner: 4 large eggs (288cal/24g/6g sat fat) + 2 slices bacon (86cal/6g/2g sat fat) + 2 russets oven-baked w/ ~1.5 tbsp olive oil estimated (~600cal/15g/2g sat fat) + 1 Its-It mini vanilla (170cal/2g/4g sat fat) = ~1,144cal/47g/14g sat fat. Final: 116g/2,134cal. PROTEIN FLOOR MISS: 116g vs 160g target = -44g, the lowest protein day in 2 weeks. Driver: dinner went egg-based (24g) vs chicken-based (BLSS thighs would have been ~100g) - lost ~75g protein from that single decision. Calories under deficit-anchor target (2,300-2,500) by 166-366. Saturated fat ~38g - well over AHA daily ceiling 22g, capping a fat-forward week (~150g+ sat fat across Thu burger + Fri ribeye + Sat ribs+eggs+bacon). Carbs ~183g (russets carried glycogen load for Sunday game). Restaurant count 3/3 (cap hit Apr 24, leftovers don't re-count)."
+      "notes": "Sleep night Apr 24→25: 'good' (estimated 8hr). Week 7 sleep pattern 2/4 yellow, 2/4 green - mixed but recoverable. AM achilles 0/10 (Silbernagel green). Breakfast: 3 large eggs (216cal/18g) + 1 slice bacon (43cal/3g) + 1/2 Hawaiian hamburger roll (90cal/2.5g) = ~350cal/24g. Lunch: TR leftovers - 1/2 of half-slab Fall-off-the-Bone ribs (450cal/36g/12.5g sat fat per PDF) + 1/2 mac & cheese side (190cal/8.5g/5.5g sat fat per PDF) = ~640cal/44.5g/18g sat fat. Dinner: 4 large eggs (288cal/24g/6g sat fat) + 2 slices bacon (86cal/6g/2g sat fat) + 2 russets oven-baked w/ ~1.5 tbsp olive oil estimated (~600cal/15g/2g sat fat) + 1 Its-It mini vanilla (170cal/2g/4g sat fat) = ~1,144cal/47g/14g sat fat. Final: 116g/2,134cal. PROTEIN FLOOR MISS: 116g vs 160g target = -44g, the lowest protein day in 2 weeks. Driver: dinner went egg-based (24g) vs chicken-based (BLSS thighs would have been ~100g) - lost ~75g protein from that single decision. Calories under deficit-anchor target (2,300-2,500) by 166-366. Saturated fat ~38g - well over AHA daily ceiling 22g, capping a fat-forward week (~150g+ sat fat across Thu burger + Fri ribeye + Sat ribs+eggs+bacon). Carbs ~183g (russets carried glycogen load for Sunday game). Restaurant count 3/3 (cap hit Apr 24, leftovers don't re-count)."
     },
     {
       "date": "2026-04-26",
       "proteinGrams": 217,
       "calories": 3025,
       "sleepHours": 8,
-      "notes": "Sleep night Apr 25\u219226: 'good' (~8hr). Week 8 Day 1. Restaurant count: 0/3. AM achilles 0-1/10 (8-day all-green streak). Basketball AM 40 min high intensity, achilles 0-1/10 during/after. Breakfast: shake without granola w/ yogurt + 1 scoop Momentous Collagen Peptides (650cal/101g; new permanent default with collagen). Lunch: homemade quesadilla - 2 medium Costco tortillas (~320cal/8g/3g sat fat) + handful shredded cheese ~1/3-1/2 cup (~175cal/10g/10g sat fat) + 1/2 of 8oz raw 90/10 grass-fed patty (~200cal/23g/3g sat fat) + 3/4 russet potato (~170cal/4g/0 sat fat) + ~1.2 tbsp absorbed veg oil (~150cal/0g/2g sat fat) = ~1,015cal/45g/18g sat fat. Cheese dominant sat fat contributor. Dinner: 2/3 Taylor Farms Southwest Chopped Salad Kit Family Size per official 150cal/4g/12g fat per serving spec, ~6.8 servings full bag \u00d7 2/3 \u2248 4.5 servings (~680cal/18g/~11g sat fat - dressing+cheese+tortilla strips drive fat density) + 6 JustBare Lightly Breaded Chicken Breast Strips per official 170cal/17g/1g sat fat per 2-piece serving, 3 servings (510cal/51g/3g sat fat) = ~1,190cal/69g/~14g sat fat. JustBare strips genuinely lean for breaded chicken. Dessert: 1 Its-It mini vanilla (~170cal/2g/4g sat fat). Final: 217g/3,025cal/~36g sat fat. Protein dead-center of 160-220g target. Calories ~225 over 2,800 game-day ceiling raw; net after basketball expenditure (~400-500 cal) ~2,525-2,625 effective = at game-day maintenance. SAT FAT 36G NOW 14G OVER AHA 22G CEILING - Week 8 day 1 fully continues Week 7's fat-forward pattern. Mon Apr 27 anchor day = natural reset, lean dinner sources required to bring weekly avg back toward target."
+      "notes": "Sleep night Apr 25→26: 'good' (~8hr). Week 8 Day 1. Restaurant count: 0/3. AM achilles 0-1/10 (8-day all-green streak). Basketball AM 40 min high intensity, achilles 0-1/10 during/after. Breakfast: shake without granola w/ yogurt + 1 scoop Momentous Collagen Peptides (650cal/101g; new permanent default with collagen). Lunch: homemade quesadilla - 2 medium Costco tortillas (~320cal/8g/3g sat fat) + handful shredded cheese ~1/3-1/2 cup (~175cal/10g/10g sat fat) + 1/2 of 8oz raw 90/10 grass-fed patty (~200cal/23g/3g sat fat) + 3/4 russet potato (~170cal/4g/0 sat fat) + ~1.2 tbsp absorbed veg oil (~150cal/0g/2g sat fat) = ~1,015cal/45g/18g sat fat. Cheese dominant sat fat contributor. Dinner: 2/3 Taylor Farms Southwest Chopped Salad Kit Family Size per official 150cal/4g/12g fat per serving spec, ~6.8 servings full bag × 2/3 ≈ 4.5 servings (~680cal/18g/~11g sat fat - dressing+cheese+tortilla strips drive fat density) + 6 JustBare Lightly Breaded Chicken Breast Strips per official 170cal/17g/1g sat fat per 2-piece serving, 3 servings (510cal/51g/3g sat fat) = ~1,190cal/69g/~14g sat fat. JustBare strips genuinely lean for breaded chicken. Dessert: 1 Its-It mini vanilla (~170cal/2g/4g sat fat). Final: 217g/3,025cal/~36g sat fat. Protein dead-center of 160-220g target. Calories ~225 over 2,800 game-day ceiling raw; net after basketball expenditure (~400-500 cal) ~2,525-2,625 effective = at game-day maintenance. SAT FAT 36G NOW 14G OVER AHA 22G CEILING - Week 8 day 1 fully continues Week 7's fat-forward pattern. Mon Apr 27 anchor day = natural reset, lean dinner sources required to bring weekly avg back toward target."
     },
     {
       "date": "2026-04-27",
       "proteinGrams": 196,
       "calories": 2110,
       "sleepHours": 8,
-      "notes": "Week 8 Mon - rest + Option B deficit anchor. Sleep night Apr 26\u219227 'good' (~8hr) - 3rd consecutive recovery night. AM achilles 1-2/10 resolved with warmup (Silbernagel green - quick warmup resolution = expected baseline). 9-day all-green achilles streak. Breakfast: standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides) ~650cal/101g/~3g sat fat. Lunch: 1 Artesano Hawaiian bun + 8 slices deli turkey + 2 slices thin-sliced cheddar + 1 serving Old Thyme pretzels (3 pretzels) = ~520cal/35g/~5g sat fat (cheese was only meaningful sat fat contributor). Dinner: 2 BLSS chicken thighs (~340cal/50g/3g sat fat) + 1 russet potato baked w/ ~1 tbsp olive oil (~370cal/6g/2g sat fat) + 1/2 bag Ritika's Cilantro & Lime Rice 4.4oz per official 230cal/4g/0.5g sat fat per 124g cup (~230cal/4g/1g sat fat) = ~940cal/60g/~6g sat fat. Final: 196g/2,110cal/~14g sat fat. CLEANEST DAY IN 5 DAYS on every dimension. Calories ~190-390 under 2,300-2,500 anchor = modest deficit on a rest day = recomp-positive. Protein squarely in 160-220g sweet spot. SAT FAT 14G UNDER AHA 22G CEILING - first day under ceiling since Apr 22. Lean dinner protocol per science review #3 worked exactly as designed. Restaurant count: 0/3."
+      "notes": "Week 8 Mon - rest + Option B deficit anchor. Sleep night Apr 26→27 'good' (~8hr) - 3rd consecutive recovery night. AM achilles 1-2/10 resolved with warmup (Silbernagel green - quick warmup resolution = expected baseline). 9-day all-green achilles streak. Breakfast: standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides) ~650cal/101g/~3g sat fat. Lunch: 1 Artesano Hawaiian bun + 8 slices deli turkey + 2 slices thin-sliced cheddar + 1 serving Old Thyme pretzels (3 pretzels) = ~520cal/35g/~5g sat fat (cheese was only meaningful sat fat contributor). Dinner: 2 BLSS chicken thighs (~340cal/50g/3g sat fat) + 1 russet potato baked w/ ~1 tbsp olive oil (~370cal/6g/2g sat fat) + 1/2 bag Ritika's Cilantro & Lime Rice 4.4oz per official 230cal/4g/0.5g sat fat per 124g cup (~230cal/4g/1g sat fat) = ~940cal/60g/~6g sat fat. Final: 196g/2,110cal/~14g sat fat. CLEANEST DAY IN 5 DAYS on every dimension. Calories ~190-390 under 2,300-2,500 anchor = modest deficit on a rest day = recomp-positive. Protein squarely in 160-220g sweet spot. SAT FAT 14G UNDER AHA 22G CEILING - first day under ceiling since Apr 22. Lean dinner protocol per science review #3 worked exactly as designed. Restaurant count: 0/3."
     },
     {
       "date": "2026-04-28",
@@ -1988,62 +2026,62 @@
       "proteinGrams": 235,
       "calories": 2170,
       "sleepHours": 8,
-      "notes": "AM weigh-in 221.3/23.2% - best reading of program (-1.1 lb / -0.4 pt BF over 20 days). Sleep Apr 27\u219228 'good' (4th consecutive recovery night). AM achilles 0-1/10 (10-day green streak). Breakfast: Clif Builders bar Oreo (~270cal/20g/~4g sat fat). Lunch: 2 BLSS chicken thighs (~340cal/50g/3g sat fat) + standard with-yogurt shake (1 cup whole milk + 1 cup fat-free Greek yogurt + 2 scoops ON whey + 2 tbsp PB Fit + 1 scoop Momentous Collagen + 5g creatine + 5g psyllium ~650cal/101g/~7g sat fat) = ~990cal/151g/~10g sat fat. Bonus HSR session completed Tue afternoon (see activityLog Apr 28: Standing Calf HSR 3x6 RPE 7 6RM tempo 3s/3s, Hip Thrust 3x10@50, Lateral Walk 3x12, Face Pull 3x15, Pallof 2x10/side - first-ever Tue lift, hits Beyer 3x/week target). Lunch shake timing covered Shaw 2017 collagen pre-loading window. Dinner: 1 Goodles Cheddy Mac Cup per official 230cal/11g/1.5g sat fat (chickpea protein pasta - 1/7th sat fat vs typical mac) + 6 JustBare Lightly Breaded Chicken Strips per official 170cal/17g/1g sat fat per 2-piece serving x 3 servings = 510cal/51g/3g sat fat + 1 Its-It mini vanilla (~170cal/2g/~4g sat fat) = ~910cal/64g/~8.5g sat fat. Final: 235g/2,170cal/~22.5g sat fat. Calories ~230-430 under 2,400-2,600 training-day target = modest deficit. Protein 235g over 220g ceiling by 15g (anabolically saturated but useful post-bonus-HSR recovery). Sat fat ~22.5g essentially AT AHA daily ceiling - 2nd consecutive day at/under ceiling (Apr 27 was 14g) - week-long fat-forward pattern breaking. Restaurant count 0/3."
+      "notes": "AM weigh-in 221.3/23.2% - best reading of program (-1.1 lb / -0.4 pt BF over 20 days). Sleep Apr 27→28 'good' (4th consecutive recovery night). AM achilles 0-1/10 (10-day green streak). Breakfast: Clif Builders bar Oreo (~270cal/20g/~4g sat fat). Lunch: 2 BLSS chicken thighs (~340cal/50g/3g sat fat) + standard with-yogurt shake (1 cup whole milk + 1 cup fat-free Greek yogurt + 2 scoops ON whey + 2 tbsp PB Fit + 1 scoop Momentous Collagen + 5g creatine + 5g psyllium ~650cal/101g/~7g sat fat) = ~990cal/151g/~10g sat fat. Bonus HSR session completed Tue afternoon (see activityLog Apr 28: Standing Calf HSR 3x6 RPE 7 6RM tempo 3s/3s, Hip Thrust 3x10@50, Lateral Walk 3x12, Face Pull 3x15, Pallof 2x10/side - first-ever Tue lift, hits Beyer 3x/week target). Lunch shake timing covered Shaw 2017 collagen pre-loading window. Dinner: 1 Goodles Cheddy Mac Cup per official 230cal/11g/1.5g sat fat (chickpea protein pasta - 1/7th sat fat vs typical mac) + 6 JustBare Lightly Breaded Chicken Strips per official 170cal/17g/1g sat fat per 2-piece serving x 3 servings = 510cal/51g/3g sat fat + 1 Its-It mini vanilla (~170cal/2g/~4g sat fat) = ~910cal/64g/~8.5g sat fat. Final: 235g/2,170cal/~22.5g sat fat. Calories ~230-430 under 2,400-2,600 training-day target = modest deficit. Protein 235g over 220g ceiling by 15g (anabolically saturated but useful post-bonus-HSR recovery). Sat fat ~22.5g essentially AT AHA daily ceiling - 2nd consecutive day at/under ceiling (Apr 27 was 14g) - week-long fat-forward pattern breaking. Restaurant count 0/3."
     },
     {
       "date": "2026-04-29",
       "proteinGrams": 228,
       "calories": 2351,
       "sleepHours": 8,
-      "notes": "Sleep Apr 28\u219229 'good' (5th consecutive recovery night). AM achilles 0/10 - cleanest reading in 11-day green streak. Breakfast: standard shake (~650cal/101g/~7g sat fat). Lunch: 4 JustBare strips per official 170cal/17g/1g sat fat per 2-piece serving (~340cal/34g/2g sat fat) + 1 Artesano Hawaiian bun (~200cal/6g/1g sat fat) + 5 slices deli turkey (~70cal/13g/<1g sat fat) + 3 Old Thyme pretzels = 1 serving (~120cal/3g/0g sat fat) = ~730cal/56g/~3g sat fat. Lean lunch on sat fat reset trajectory. Running 157g/1,380cal/~10g sat fat. PROTEIN FLOOR essentially cleared at lunch (~3g shy of 160g). Today = Wed HEAVY LOWER BODY session: TB DL 4x5 @ 235 (+5 from broken stall), Back Squat 3x5 @ 150 (+5), BSS 3x8/leg @ 20+ DBs, SLRDL 3x8/leg @ 30+ DBs, Seated Calf HSR 3x6 @ 150-155. Lifting 3+ hours from breakfast - taking standalone Momentous Collagen scoop (60cal/15g) 30-60 min pre-lift for proper Shaw 2017 timing. Remaining cal budget for pre-lift snack + dinner: 1,020-1,220 cal. Dinner: 4 medium beef meatballs in veg oil (USDA 80/20 beef basis, ~1 oz cooked each, 324cal/24g/~6g sat fat) + 2 cups cooked spinach in olive oil (~1 tbsp, 201cal/11g/~2g sat fat) + 1/2 cup grated parmesan (FatSecret/USDA confirmed, 216cal/19g/~9g sat fat) + 1 Its-It mini vanilla (170cal/2g/~4g sat fat). DINNER: 911cal/56g/~21g sat fat \u2014 parmesan (9g) and Its-It (4g) dominant sat fat sources. FINAL DAY: 228g protein (157+15 collagen+56 dinner) / 2,351 cal / ~31g sat fat. Protein 8g above 220g ceiling (anabolically saturated but fine for heavy lower body day). Calories ~49 under 2,400 training-day floor \u2014 essentially on target. SAT FAT 31G = 9G OVER AHA 22G CEILING \u2014 dinner alone (21g) consumed entire day's budget; parmesan is the primary lever to pull for future sat fat management on this meal."
+      "notes": "Sleep Apr 28→29 'good' (5th consecutive recovery night). AM achilles 0/10 - cleanest reading in 11-day green streak. Breakfast: standard shake (~650cal/101g/~7g sat fat). Lunch: 4 JustBare strips per official 170cal/17g/1g sat fat per 2-piece serving (~340cal/34g/2g sat fat) + 1 Artesano Hawaiian bun (~200cal/6g/1g sat fat) + 5 slices deli turkey (~70cal/13g/<1g sat fat) + 3 Old Thyme pretzels = 1 serving (~120cal/3g/0g sat fat) = ~730cal/56g/~3g sat fat. Lean lunch on sat fat reset trajectory. Running 157g/1,380cal/~10g sat fat. PROTEIN FLOOR essentially cleared at lunch (~3g shy of 160g). Today = Wed HEAVY LOWER BODY session: TB DL 4x5 @ 235 (+5 from broken stall), Back Squat 3x5 @ 150 (+5), BSS 3x8/leg @ 20+ DBs, SLRDL 3x8/leg @ 30+ DBs, Seated Calf HSR 3x6 @ 150-155. Lifting 3+ hours from breakfast - taking standalone Momentous Collagen scoop (60cal/15g) 30-60 min pre-lift for proper Shaw 2017 timing. Remaining cal budget for pre-lift snack + dinner: 1,020-1,220 cal. Dinner: 4 medium beef meatballs in veg oil (USDA 80/20 beef basis, ~1 oz cooked each, 324cal/24g/~6g sat fat) + 2 cups cooked spinach in olive oil (~1 tbsp, 201cal/11g/~2g sat fat) + 1/2 cup grated parmesan (FatSecret/USDA confirmed, 216cal/19g/~9g sat fat) + 1 Its-It mini vanilla (170cal/2g/~4g sat fat). DINNER: 911cal/56g/~21g sat fat — parmesan (9g) and Its-It (4g) dominant sat fat sources. FINAL DAY: 228g protein (157+15 collagen+56 dinner) / 2,351 cal / ~31g sat fat. Protein 8g above 220g ceiling (anabolically saturated but fine for heavy lower body day). Calories ~49 under 2,400 training-day floor — essentially on target. SAT FAT 31G = 9G OVER AHA 22G CEILING — dinner alone (21g) consumed entire day's budget; parmesan is the primary lever to pull for future sat fat management on this meal."
     },
     {
       "date": "2026-04-30",
       "proteinGrams": 184,
       "calories": 2550,
-      "notes": "Breakfast: Clif Builders Bar Oreo (270cal/20g/~3.5g sat fat \u2014 consistent with Apr 28 log). Running 20g/270cal. Lunch: Lean Cuisine Protein Kick Ricotta Cheese & Spinach Ravioli 8oz (Target label confirmed: 220cal/9g/6g fat/2.5g sat fat). Running 29g/490cal/~6g sat fat. Lunch +standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides + 5g creatine + 5g psyllium = 650cal/101g/~7g sat fat). Shake doubled as Shaw 2017 collagen pre-load for the upper body session 30-60 min later. Running 130g/1,140cal/~13g sat fat post-lunch. Thu = Upper Body + Core training day, target 2,400-2,600 cal. Sleep Apr 29\u219230 'good' (~8hr) \u2014 6th consecutive recovery night. AM achilles 0/10 \u2014 12-day all-green streak. Dinner: WHOLE Rao's Made for Home Brick Oven Crust Uncured Pepperoni Pizza 18.3oz (Target label: 4 servings \u00d7 310cal/13g/6g sat fat per 1/4 = 1,240cal/52g/24g sat fat / 2,760mg sodium for entire pie). + Its-It mini vanilla (170cal/2g/~4g sat fat \u2014 reused from prior logs). FINAL DAY: 184g protein / 2,550 cal / ~41g sat fat. Calories 2,550 lands mid-range of 2,400-2,600 training-day target. Protein 184g = mid-range of 160-220g target. SAT FAT 41G = 19G OVER AHA 22G CEILING \u2014 pizza (24g) + Its-It (4g) drove most of it. 4th day in 5 over the AHA threshold (Apr 26 ~36g, Apr 28 ~22.5g, Apr 29 ~31g, Apr 30 ~41g; Apr 27 only clean day at 14g). Sodium ~2,760mg from pizza alone is also a high-end day.",
+      "notes": "Breakfast: Clif Builders Bar Oreo (270cal/20g/~3.5g sat fat — consistent with Apr 28 log). Running 20g/270cal. Lunch: Lean Cuisine Protein Kick Ricotta Cheese & Spinach Ravioli 8oz (Target label confirmed: 220cal/9g/6g fat/2.5g sat fat). Running 29g/490cal/~6g sat fat. Lunch +standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides + 5g creatine + 5g psyllium = 650cal/101g/~7g sat fat). Shake doubled as Shaw 2017 collagen pre-load for the upper body session 30-60 min later. Running 130g/1,140cal/~13g sat fat post-lunch. Thu = Upper Body + Core training day, target 2,400-2,600 cal. Sleep Apr 29→30 'good' (~8hr) — 6th consecutive recovery night. AM achilles 0/10 — 12-day all-green streak. Dinner: WHOLE Rao's Made for Home Brick Oven Crust Uncured Pepperoni Pizza 18.3oz (Target label: 4 servings × 310cal/13g/6g sat fat per 1/4 = 1,240cal/52g/24g sat fat / 2,760mg sodium for entire pie). + Its-It mini vanilla (170cal/2g/~4g sat fat — reused from prior logs). FINAL DAY: 184g protein / 2,550 cal / ~41g sat fat. Calories 2,550 lands mid-range of 2,400-2,600 training-day target. Protein 184g = mid-range of 160-220g target. SAT FAT 41G = 19G OVER AHA 22G CEILING — pizza (24g) + Its-It (4g) drove most of it. 4th day in 5 over the AHA threshold (Apr 26 ~36g, Apr 28 ~22.5g, Apr 29 ~31g, Apr 30 ~41g; Apr 27 only clean day at 14g). Sodium ~2,760mg from pizza alone is also a high-end day.",
       "sleepHours": 8
     },
     {
       "date": "2026-05-01",
       "proteinGrams": 76,
       "calories": 1401,
-      "notes": "Breakfast: Clif Builders Bar Oreo (270cal/20g/~3.5g sat fat \u2014 reused from prior logs). Running 20g/270cal. Fri = Phase 1 closeout: Lower Moderate + 3rd HSR session of week. Target 2,400-2,600 cal training day. Phase 2 starts Sun May 3. Sleep Apr 30\u2192May 1 'BAD' (~5.5hr est.) \u2014 BREAKS 6-night recovery streak. First sub-6h night since the program data improved, hits Section 5 / Knowles 2018 (PMID 29422383) <6hr volume-reduction trigger. AM achilles 0/10 \u2014 13-day all-green streak continues. Lunch: 1/4 frozen pizza (assumed Rao's pepperoni \u2014 same freezer brand as Apr 30; per 1/4 = 310cal/13g/6g sat fat) + sandwich [2 slices Sara Lee Golden Wheat bread (100cal/4g/~0.5g sat fat per slice = 200cal/8g/~1g sat fat) + 6oz deli turkey (USDA: ~191cal/23g/~1g sat fat) + 2 thin Tillamook sharp cheddar slices (50cal/3g/2.5g sat fat per slice = 100cal/6g/5g sat fat)] = sandwich 491cal/37g/7g sat fat. + 4 Old Thyme pretzels (1.33 servings, 160cal/4g/0g sat fat) + Its-It mini (170cal/2g/~4g sat fat). LUNCH: 1131cal/56g/~17g sat fat. Running 76g/1401cal/~20.5g sat fat. SAT FAT ALREADY ~20.5g BEFORE DINNER \u2014 at AHA 22g daily ceiling. Pizza slice (6g) + cheddar (5g) + Its-It (4g) + Clif Builders (3.5g) main contributors. Will be 5th day in 6 over AHA threshold if dinner adds any sat fat. If today's Friday session proceeds, apply partial deload: cut accessory sets ~25% (Goblet Squat 3x10\u21922x10, Hip Thrust 3x10\u21922x10, Lateral Band Walk 3x12\u21922x12), MAINTAIN intensity, KEEP HSR at full 3x6 load (Section 4: tendons don't benefit from reduced load the way muscles do).",
+      "notes": "Breakfast: Clif Builders Bar Oreo (270cal/20g/~3.5g sat fat — reused from prior logs). Running 20g/270cal. Fri = Phase 1 closeout: Lower Moderate + 3rd HSR session of week. Target 2,400-2,600 cal training day. Phase 2 starts Sun May 3. Sleep Apr 30→May 1 'BAD' (~5.5hr est.) — BREAKS 6-night recovery streak. First sub-6h night since the program data improved, hits Section 5 / Knowles 2018 (PMID 29422383) <6hr volume-reduction trigger. AM achilles 0/10 — 13-day all-green streak continues. Lunch: 1/4 frozen pizza (assumed Rao's pepperoni — same freezer brand as Apr 30; per 1/4 = 310cal/13g/6g sat fat) + sandwich [2 slices Sara Lee Golden Wheat bread (100cal/4g/~0.5g sat fat per slice = 200cal/8g/~1g sat fat) + 6oz deli turkey (USDA: ~191cal/23g/~1g sat fat) + 2 thin Tillamook sharp cheddar slices (50cal/3g/2.5g sat fat per slice = 100cal/6g/5g sat fat)] = sandwich 491cal/37g/7g sat fat. + 4 Old Thyme pretzels (1.33 servings, 160cal/4g/0g sat fat) + Its-It mini (170cal/2g/~4g sat fat). LUNCH: 1131cal/56g/~17g sat fat. Running 76g/1401cal/~20.5g sat fat. SAT FAT ALREADY ~20.5g BEFORE DINNER — at AHA 22g daily ceiling. Pizza slice (6g) + cheddar (5g) + Its-It (4g) + Clif Builders (3.5g) main contributors. Will be 5th day in 6 over AHA threshold if dinner adds any sat fat. If today's Friday session proceeds, apply partial deload: cut accessory sets ~25% (Goblet Squat 3x10→2x10, Hip Thrust 3x10→2x10, Lateral Band Walk 3x12→2x12), MAINTAIN intensity, KEEP HSR at full 3x6 load (Section 4: tendons don't benefit from reduced load the way muscles do).",
       "sleepHours": 5.5
     },
     {
       "date": "2026-05-04",
       "proteinGrams": 101,
       "calories": 650,
-      "notes": "Breakfast: standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides + 5g creatine + 5g psyllium) ~650cal/101g. Re-confirmed today as standing default \u2014 supersedes prior granola variant. Mon = rest + Option B deficit anchor, target 2,300-2,500 cal. Running 101g/650cal \u2014 ~63% of 160g protein floor and ~26% of cal target hit at breakfast."
+      "notes": "Breakfast: standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides + 5g creatine + 5g psyllium) ~650cal/101g. Re-confirmed today as standing default — supersedes prior granola variant. Mon = rest + Option B deficit anchor, target 2,300-2,500 cal. Running 101g/650cal — ~63% of 160g protein floor and ~26% of cal target hit at breakfast."
     },
     {
       "date": "2026-05-05",
       "proteinGrams": 101,
       "calories": 650,
       "sleepHours": 8,
-      "notes": "Sleep night May 4\u21925 \"good\" (~8h estimated). AM achilles 1/10 resolved with warmup (Silbernagel green \u2014 quick warmup resolution = expected baseline). Achilles green streak continues from Apr 22 baseline (now 14 days, May 1 was last logged 0/10 reading). Breakfast: standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides + 5g creatine + 5g psyllium) ~650cal/101g \u2014 confirmed default per re-confirmation 2026-05-04. Tue = basketball PM game day, target 2,400-2,600 cal. Running 101g/650cal \u2014 ~63% of 160g protein floor and ~25% of cal target hit at breakfast. Pre-game fueling later in the day will drive carb load (knowledge/pre-game-fueling.md)."
+      "notes": "Sleep night May 4→5 \"good\" (~8h estimated). AM achilles 1/10 resolved with warmup (Silbernagel green — quick warmup resolution = expected baseline). Achilles green streak continues from Apr 22 baseline (now 14 days, May 1 was last logged 0/10 reading). Breakfast: standard shake (without granola with yogurt + 1 scoop Momentous Collagen Peptides + 5g creatine + 5g psyllium) ~650cal/101g — confirmed default per re-confirmation 2026-05-04. Tue = basketball PM game day, target 2,400-2,600 cal. Running 101g/650cal — ~63% of 160g protein floor and ~25% of cal target hit at breakfast. Pre-game fueling later in the day will drive carb load (knowledge/pre-game-fueling.md)."
     },
     {
       "date": "2026-05-07",
       "weight": 220.5,
       "bodyFatPct": 23.0,
-      "notes": "AM weigh-in 220.5/23.0% \u2014 new program-best on BOTH dimensions. vs Apr 28 prior best (221.3/23.2%): -0.8 lb / -0.2 pt BF over 9 days. Apr 28\u2192May 7 spans the Phase 1\u21922 transition (Wk 8 Skip-Deload + Wk 9 Phase 2 Wk 1). Slow recomp continuing on Option B deficit-anchor protocol \u2014 modest deficits on Mon/Thu/Sat anchor days are delivering recomp without compromising lifts (TB DL broke 230 plateau Apr 29; sat-fat lever still pending validation past May 1)."
+      "notes": "AM weigh-in 220.5/23.0% — new program-best on BOTH dimensions. vs Apr 28 prior best (221.3/23.2%): -0.8 lb / -0.2 pt BF over 9 days. Apr 28→May 7 spans the Phase 1→2 transition (Wk 8 Skip-Deload + Wk 9 Phase 2 Wk 1). Slow recomp continuing on Option B deficit-anchor protocol — modest deficits on Mon/Thu/Sat anchor days are delivering recomp without compromising lifts (TB DL broke 230 plateau Apr 29; sat-fat lever still pending validation past May 1)."
     },
     {
       "date": "2026-05-08",
       "achillesPainAM": 0,
-      "notes": "Morning report Fri May 8 (first plyo day in 8 weeks): achilles 0/10 \u2014 green. Tired legs (likely Wed Phase 2 Lower residual + Tue PM basketball + Thu lift = 3 lower-body load days in past 4). Hip pain from sleep position (not training-driven, mechanical). Pre-session call: warm up thoroughly + reassess hip after first 2-3 mobility sets before jumping. Plyo session is high-stakes (first in 8 wk) and hip pain + max-intent jumps is the wrong combo if hip stays cranky. See coaching notes Fri AM."
+      "notes": "Morning report Fri May 8 (first plyo day in 8 weeks): achilles 0/10 — green. Tired legs (likely Wed Phase 2 Lower residual + Tue PM basketball + Thu lift = 3 lower-body load days in past 4). Hip pain from sleep position (not training-driven, mechanical). Pre-session call: warm up thoroughly + reassess hip after first 2-3 mobility sets before jumping. Plyo session is high-stakes (first in 8 wk) and hip pain + max-intent jumps is the wrong combo if hip stays cranky. See coaching notes Fri AM."
     },
     {
       "date": "2026-05-09",
       "achillesPain": 0,
-      "notes": "Plyo session day (Sat, delayed from Fri). Sleep night-of May 8\u21929 good. Achilles 0/10 during loading and post-session \u2014 Silbernagel green for first plyo session in 8 weeks. Hip pain from prior morning resolved overnight. All 6 plyo + accessory exercises completed as prescribed."
+      "notes": "Plyo session day (Sat, delayed from Fri). Sleep night-of May 8→9 good. Achilles 0/10 during loading and post-session — Silbernagel green for first plyo session in 8 weeks. Hip pain from prior morning resolved overnight. All 6 plyo + accessory exercises completed as prescribed."
     },
     {
       "date": "2026-05-10",
       "achillesPain": 0,
-      "notes": "Game day (Sun AM basketball, ~38h post-plyo). Sleep night-of May 9\u219210 good. Achilles 0/10 \u2014 green going into game and during. Critical signal: meets Section 4 criteria (achilles \u22645/10 on game day) to continue Fri plyo block. First plyo\u2192game 48h cluster passed without negative signal."
+      "notes": "Game day (Sun AM basketball, ~38h post-plyo). Sleep night-of May 9→10 good. Achilles 0/10 — green going into game and during. Critical signal: meets Section 4 criteria (achilles ≤5/10 on game day) to continue Fri plyo block. First plyo→game 48h cluster passed without negative signal."
     },
     {
       "date": "2026-05-11",
@@ -2062,7 +2100,7 @@
   "modifiedWeeks": {
     "4": {
       "label": "Deload + Travel",
-      "reason": "Travel Mon\u2013Thu, no gym access. Week 3 also missed (travel) \u2014 last lifting was Week 2 (Mar 20). This is a re-entry week.",
+      "reason": "Travel Mon–Thu, no gym access. Week 3 also missed (travel) — last lifting was Week 2 (Mar 20). This is a re-entry week.",
       "schedule": [
         {
           "day": "Sun",
@@ -2078,24 +2116,24 @@
           "exercises": [
             {
               "name": "BW Split Squat",
-              "sets": "3\u00d78/leg"
+              "sets": "3×8/leg"
             },
             {
               "name": "Single-Leg RDL (BW)",
-              "sets": "3\u00d78/leg"
+              "sets": "3×8/leg"
             },
             {
               "name": "Single-Leg Calf Raise (HSR tempo)",
-              "sets": "3\u00d76/leg",
+              "sets": "3×6/leg",
               "notes": "On a step, 3s up / 3s down"
             },
             {
               "name": "Single-Leg Balance",
-              "sets": "2\u00d730s/leg"
+              "sets": "2×30s/leg"
             },
             {
               "name": "Ankle Dorsiflexion Stretch",
-              "sets": "2\u00d710/side"
+              "sets": "2×10/side"
             }
           ]
         },
@@ -2107,27 +2145,27 @@
           "exercises": [
             {
               "name": "Push-ups",
-              "sets": "3\u00d712"
+              "sets": "3×12"
             },
             {
               "name": "Pike Push-ups",
-              "sets": "2\u00d78"
+              "sets": "2×8"
             },
             {
               "name": "Inverted Row (desk/table)",
-              "sets": "3\u00d78"
+              "sets": "3×8"
             },
             {
               "name": "Plank",
-              "sets": "3\u00d730s"
+              "sets": "3×30s"
             },
             {
               "name": "Dead Bug",
-              "sets": "3\u00d710/side"
+              "sets": "3×10/side"
             },
             {
               "name": "Bird Dog",
-              "sets": "2\u00d78/side"
+              "sets": "2×8/side"
             }
           ]
         },
@@ -2139,24 +2177,24 @@
           "exercises": [
             {
               "name": "BW Squat",
-              "sets": "3\u00d712"
+              "sets": "3×12"
             },
             {
               "name": "Glute Bridge",
-              "sets": "3\u00d712"
+              "sets": "3×12"
             },
             {
               "name": "Lateral Lunge",
-              "sets": "2\u00d710/side"
+              "sets": "2×10/side"
             },
             {
               "name": "Single-Leg Calf Raise (HSR tempo)",
-              "sets": "3\u00d76/leg",
+              "sets": "3×6/leg",
               "notes": "On a step, 3s up / 3s down"
             },
             {
               "name": "90/90 Hip Stretch",
-              "sets": "2\u00d730s/side"
+              "sets": "2×30s/side"
             }
           ]
         },
@@ -2168,19 +2206,19 @@
           "exercises": [
             {
               "name": "Push-ups",
-              "sets": "3\u00d715"
+              "sets": "3×15"
             },
             {
               "name": "Superman Hold",
-              "sets": "3\u00d720s"
+              "sets": "3×20s"
             },
             {
               "name": "Side Plank",
-              "sets": "2\u00d730s/side"
+              "sets": "2×30s/side"
             },
             {
               "name": "World's Greatest Stretch",
-              "sets": "2\u00d75/side"
+              "sets": "2×5/side"
             }
           ]
         },
@@ -2188,40 +2226,40 @@
           "day": "Fri",
           "date": "2026-04-03",
           "type": "gym-deload",
-          "desc": "Combined Deload \u2014 Full Body",
+          "desc": "Combined Deload — Full Body",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
-              "sets": "2\u00d75",
+              "sets": "2×5",
               "weight": "195 lbs",
               "notes": "~85% of 230"
             },
             {
               "name": "Bulgarian Split Squat",
-              "sets": "2\u00d78/leg",
+              "sets": "2×8/leg",
               "weight": "10 lb DBs"
             },
             {
               "name": "DB Bench Press",
-              "sets": "2\u00d76",
+              "sets": "2×6",
               "weight": "55 lbs",
               "notes": "~85% of 65"
             },
             {
               "name": "Lat Pulldown",
-              "sets": "2\u00d76",
+              "sets": "2×6",
               "weight": "115 lbs"
             },
             {
               "name": "DB Overhead Press",
-              "sets": "2\u00d78",
+              "sets": "2×8",
               "weight": "20 lbs"
             },
             {
               "name": "Seated Calf Raise (HSR)",
-              "sets": "3\u00d76",
+              "sets": "3×6",
               "weight": "140 lbs",
-              "notes": "Full load \u2014 no deload on HSR"
+              "notes": "Full load — no deload on HSR"
             }
           ]
         },
@@ -2247,38 +2285,38 @@
           "day": "Mon",
           "date": "2026-04-06",
           "type": "gym-deload",
-          "desc": "Lower Body Heavy \u2014 Re-baseline",
+          "desc": "Lower Body Heavy — Re-baseline",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
-              "sets": "4\u00d75",
+              "sets": "4×5",
               "weight": "225 lbs",
               "notes": "Re-baseline at Week 2 weight"
             },
             {
               "name": "Back Squat",
-              "sets": "3\u00d75",
+              "sets": "3×5",
               "weight": "135 lbs",
-              "notes": "NEW \u2014 pattern session"
+              "notes": "NEW — pattern session"
             },
             {
               "name": "Bulgarian Split Squat",
-              "sets": "3\u00d78/leg",
+              "sets": "3×8/leg",
               "weight": "10 lb DBs"
             },
             {
               "name": "Glute Ham Raise",
-              "sets": "3\u00d75",
+              "sets": "3×5",
               "weight": "BW"
             },
             {
               "name": "Single-Leg RDL",
-              "sets": "3\u00d78/leg",
+              "sets": "3×8/leg",
               "weight": "25 lb DBs"
             },
             {
               "name": "Seated Calf Raise (HSR)",
-              "sets": "3\u00d76",
+              "sets": "3×6",
               "weight": "140 lbs"
             }
           ],
@@ -2288,46 +2326,46 @@
           "day": "Tue",
           "date": "2026-04-07",
           "type": "gym-deload",
-          "desc": "Upper Body + Core \u2014 BB Bench Baseline",
+          "desc": "Upper Body + Core — BB Bench Baseline",
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4\u00d75",
+              "sets": "4×5",
               "weight": "135 lbs",
-              "notes": "NEW \u2014 barbell baseline established"
+              "notes": "NEW — barbell baseline established"
             },
             {
               "name": "Lat Pulldown",
-              "sets": "4\u00d76",
+              "sets": "4×6",
               "weight": "135 lbs"
             },
             {
               "name": "DB Bench Press",
-              "sets": "3\u00d78",
+              "sets": "3×8",
               "weight": "45 lbs",
-              "notes": "Accessory \u2014 lighter, stability"
+              "notes": "Accessory — lighter, stability"
             },
             {
               "name": "Bent Over Barbell Row",
-              "sets": "3\u00d78",
+              "sets": "3×8",
               "notes": "Subbed for chest-supported row"
             },
             {
               "name": "DB Overhead Press",
-              "sets": "3\u00d78",
+              "sets": "3×8",
               "weight": "25 lbs"
             },
             {
               "name": "Face Pull",
-              "sets": "3\u00d715"
+              "sets": "3×15"
             },
             {
               "name": "Pallof Press",
-              "sets": "3\u00d710/side"
+              "sets": "3×10/side"
             },
             {
               "name": "Cable Woodchop",
-              "sets": "3\u00d76/side"
+              "sets": "3×6/side"
             }
           ],
           "status": "done"
@@ -2336,32 +2374,32 @@
           "day": "Wed",
           "date": "2026-04-08",
           "type": "gym-deload",
-          "desc": "Lower Body #2 \u2014 Volume (moved from Thu)",
+          "desc": "Lower Body #2 — Volume (moved from Thu)",
           "exercises": [
             {
               "name": "Back Squat",
-              "sets": "3\u00d75",
+              "sets": "3×5",
               "weight": "135 lbs",
               "notes": "Matched Monday baseline"
             },
             {
               "name": "Bulgarian Split Squat",
-              "sets": "3\u00d78/leg",
+              "sets": "3×8/leg",
               "weight": "15 lb DBs"
             },
             {
               "name": "Glute Ham Raise",
-              "sets": "3\u00d75",
+              "sets": "3×5",
               "weight": "BW"
             },
             {
               "name": "Single-Leg RDL",
-              "sets": "3\u00d78/leg",
+              "sets": "3×8/leg",
               "weight": "25 lb DBs"
             },
             {
               "name": "Standing Calf Raise (HSR)",
-              "sets": "3\u00d76",
+              "sets": "3×6",
               "notes": "HSR tempo"
             }
           ],
@@ -2381,28 +2419,28 @@
           "exercises": [
             {
               "name": "Goblet Squat",
-              "sets": "3\u00d710",
-              "weight": "25\u201335 lbs"
+              "sets": "3×10",
+              "weight": "25–35 lbs"
             },
             {
               "name": "Hip Thrust",
-              "sets": "3\u00d710"
+              "sets": "3×10"
             },
             {
               "name": "Lateral Band Walk",
-              "sets": "3\u00d712/dir"
+              "sets": "3×12/dir"
             },
             {
               "name": "Single-Leg Balance",
-              "sets": "2\u00d730s/leg"
+              "sets": "2×30s/leg"
             },
             {
               "name": "Standing Calf Raise (HSR)",
-              "sets": "3\u00d76"
+              "sets": "3×6"
             },
             {
               "name": "Banded Ankle Dorsiflexion",
-              "sets": "2\u00d710/side"
+              "sets": "2×10/side"
             }
           ],
           "status": "done"
@@ -2521,7 +2559,7 @@
           "day": "Fri",
           "date": "2026-04-24",
           "type": "rest",
-          "desc": "Friday lift SKIPPED. Replaced with ~2 hrs yardwork (functional lower-body load, ~500-700 cal expenditure). HSR cadence drops to 2x this week (Wed seated @150 only) vs Beyer 3x/week protocol \u2014 below target for one week, acceptable but resume 3x next week. Goblet squat, hip thrust, and mobility circuit skipped. See activityLog Apr 24 for full substitution rationale."
+          "desc": "Friday lift SKIPPED. Replaced with ~2 hrs yardwork (functional lower-body load, ~500-700 cal expenditure). HSR cadence drops to 2x this week (Wed seated @150 only) vs Beyer 3x/week protocol — below target for one week, acceptable but resume 3x next week. Goblet squat, hip thrust, and mobility circuit skipped. See activityLog Apr 24 for full substitution rationale."
         },
         {
           "day": "Sat",
@@ -2533,7 +2571,7 @@
     },
     "8": {
       "label": "Skip Deload + No-Tuesday-Game Bonus Session",
-      "reason": "Skip deload \u2014 Week 7 criteria green. NO Tuesday game per user \u2192 Tue becomes HSR catch-up + accessory (hits Beyer 3x/week target). Phase 1\u21922 transition Week 9 (May 3).",
+      "reason": "Skip deload — Week 7 criteria green. NO Tuesday game per user → Tue becomes HSR catch-up + accessory (hits Beyer 3x/week target). Phase 1→2 transition Week 9 (May 3).",
       "schedule": [
         {
           "day": "Sun",
@@ -2595,13 +2633,13 @@
           "day": "Wed",
           "date": "2026-04-29",
           "type": "training",
-          "desc": "Lower Body \u2014 TB DL progression + Back Squat +5",
+          "desc": "Lower Body — TB DL progression + Back Squat +5",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
               "sets": "4x5",
               "weight": "235 lbs",
-              "notes": "+5 lb microload from broken 230 stall. Conservative pickup after 5-week plateau (standard Section 1 rule is +10 but +5 reduces re-stall risk). RPE target \u22647."
+              "notes": "+5 lb microload from broken 230 stall. Conservative pickup after 5-week plateau (standard Section 1 rule is +10 but +5 reduces re-stall risk). RPE target ≤7."
             },
             {
               "name": "Back Squat",
@@ -2612,12 +2650,12 @@
             {
               "name": "Bulgarian Split Squat",
               "sets": "3x8/leg",
-              "weight": "20 lb DBs (or 22.5 if RPE \u22647)"
+              "weight": "20 lb DBs (or 22.5 if RPE ≤7)"
             },
             {
               "name": "Single-Leg RDL",
               "sets": "3x8/leg",
-              "weight": "30 lb DBs (or 32.5 if RPE \u22647)"
+              "weight": "30 lb DBs (or 32.5 if RPE ≤7)"
             },
             {
               "name": "Seated Calf Raise (HSR)",
@@ -2710,37 +2748,37 @@
           "day": "Sat",
           "date": "2026-05-02",
           "type": "rest",
-          "desc": "Pre-game prep + Option B deficit anchor. Target 2,300-2,500 cal. Last day of Phase 1 \u2014 Phase 2 starts Sun May 3."
+          "desc": "Pre-game prep + Option B deficit anchor. Target 2,300-2,500 cal. Last day of Phase 1 — Phase 2 starts Sun May 3."
         }
       ]
     },
     "9": {
-      "label": "Phase 2 Wk 1 \u2014 Strength-Power kickoff",
-      "reason": "First Phase 2 week. Plyometric introduction Friday at conservative 30-contact volume (below Section 6 40-60 floor) \u2014 appropriate Wk 1 ramp for bilateral achilles tendinopathy after 8-week Phase 1. BSS naturally moves Wed\u2192Fri per existing Phase 2 plan, resolving the lumbar stack flagged Apr 29. Single basketball game (Tue PM) \u2014 no hockey. HSR continues Beyer 3x/week (Wed seated + Fri standing; Tue is a game day so no Tue HSR this week \u2014 2/3 week, accept single-week shortfall in service of the plyo intro).",
+      "label": "Phase 2 Wk 1 — Strength-Power kickoff",
+      "reason": "First Phase 2 week. Plyometric introduction Friday at conservative 30-contact volume (below Section 6 40-60 floor) — appropriate Wk 1 ramp for bilateral achilles tendinopathy after 8-week Phase 1. BSS naturally moves Wed→Fri per existing Phase 2 plan, resolving the lumbar stack flagged Apr 29. Single basketball game (Tue PM) — no hockey. HSR continues Beyer 3x/week (Wed seated + Fri standing; Tue is a game day so no Tue HSR this week — 2/3 week, accept single-week shortfall in service of the plyo intro).",
       "schedule": [
         {
           "day": "Sun",
           "date": "2026-05-03",
           "type": "game",
-          "desc": "Basketball AM \u2014 completed (24 min high). No hockey PM."
+          "desc": "Basketball AM — completed (24 min high). No hockey PM."
         },
         {
           "day": "Mon",
           "date": "2026-05-04",
           "type": "rest",
-          "desc": "Recovery + Option B deficit anchor. Target 2,300-2,500 cal. Apply lean-protein dinner protocol \u2014 replace cheese-forward dinners (parmesan, pizza, pepperoni) with JustBare strips / BLSS chicken / lean ground turkey on 4-5 of 7 days. Sat-fat lever from Wk 9 review."
+          "desc": "Recovery + Option B deficit anchor. Target 2,300-2,500 cal. Apply lean-protein dinner protocol — replace cheese-forward dinners (parmesan, pizza, pepperoni) with JustBare strips / BLSS chicken / lean ground turkey on 4-5 of 7 days. Sat-fat lever from Wk 9 review."
         },
         {
           "day": "Tue",
           "date": "2026-05-05",
           "type": "game",
-          "desc": "Basketball PM. Pre-game fueling per knowledge/pre-game-fueling.md. Tue PM \u2192 Wed PM \u2248 20-24h recovery \u2014 expect mild leg fatigue going into Wed lift; auto-regulate per Section 5 if warmups feel RPE 8+."
+          "desc": "Basketball PM. Pre-game fueling per knowledge/pre-game-fueling.md. Tue PM → Wed PM ≈ 20-24h recovery — expect mild leg fatigue going into Wed lift; auto-regulate per Section 5 if warmups feel RPE 8+."
         },
         {
           "day": "Wed",
           "date": "2026-05-06",
           "type": "training",
-          "desc": "Phase 2 Lower Body (Heavy). First Phase 2 lift \u2014 log activities as '(Wed Phase 2)' for the renderer.",
+          "desc": "Phase 2 Lower Body (Heavy). First Phase 2 lift — log activities as '(Wed Phase 2)' for the renderer.",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
@@ -2752,7 +2790,7 @@
               "name": "Back Squat",
               "sets": "4x5",
               "weight": "155 lbs",
-              "notes": "Phase 2 volume jump (3x5 \u2192 4x5) per index.html. +5 lb from 150 only if RPE \u22647 on warmup; otherwise hold 150 at 4x5 for the set bump."
+              "notes": "Phase 2 volume jump (3x5 → 4x5) per index.html. +5 lb from 150 only if RPE ≤7 on warmup; otherwise hold 150 at 4x5 for the set bump."
             },
             {
               "name": "GHR / Ham Curl Machine",
@@ -2763,7 +2801,7 @@
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6",
               "weight": "BW + 25-35 lb DB if BW x 6 is easy",
-              "notes": "Phase 2 HSR shift: seated machine \u2192 single-leg BW per index.html. At ~220 lb BW, single-leg \u2248 ~110 lb effective load before added weight \u2014 already at/above Beyer 6RM. Add DB only if BW x 6 lands RPE \u22647. 1st of 2 HSR sessions this week (no Tue HSR \u2014 Tue is a game)."
+              "notes": "Phase 2 HSR shift: seated machine → single-leg BW per index.html. At ~220 lb BW, single-leg ≈ ~110 lb effective load before added weight — already at/above Beyer 6RM. Add DB only if BW x 6 lands RPE ≤7. 1st of 2 HSR sessions this week (no Tue HSR — Tue is a game)."
             }
           ]
         },
@@ -2782,13 +2820,13 @@
             {
               "name": "Weighted Pull-up / Lat Pulldown",
               "sets": "4x5",
-              "notes": "Phase 2 reps drop 4x6 \u2192 4x5. Add weight when BW x 5 is easy."
+              "notes": "Phase 2 reps drop 4x6 → 4x5. Add weight when BW x 5 is easy."
             },
             {
               "name": "DB Push Press",
               "sets": "3x6",
               "weight": "30 lb DBs",
-              "notes": "Replaces DB OHP \u2014 explosive leg drive into press. May 7 logged 25 lb (rack availability), bump back to 30 if open."
+              "notes": "Replaces DB OHP — explosive leg drive into press. May 7 logged 25 lb (rack availability), bump back to 30 if open."
             },
             {
               "name": "Bent Over Row (inverted grip)",
@@ -2813,14 +2851,14 @@
           "date": "2026-05-08",
           "type": "rest",
           "status": "done",
-          "desc": "Plyo session moved to Sat 5/9 \u2014 May 8 AM concerns (hip pain from sleep position + tired legs after 3 lower-body load days in 4). Fri shifted to recovery/prep."
+          "desc": "Plyo session moved to Sat 5/9 — May 8 AM concerns (hip pain from sleep position + tired legs after 3 lower-body load days in 4). Fri shifted to recovery/prep."
         },
         {
           "day": "Sat",
           "date": "2026-05-09",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Power + Plyometrics (delayed from Fri) \u2014 FIRST PLYO SESSION IN 8 WEEKS. All 6 exercises completed AS PRESCRIBED. 30 contacts total (Section 6 floor was 40-60; Wk 1 ramp intentionally below floor for bilateral achilles tendinopathy). Hip pain resolved overnight.",
+          "desc": "Phase 2 Power + Plyometrics (delayed from Fri) — FIRST PLYO SESSION IN 8 WEEKS. All 6 exercises completed AS PRESCRIBED. 30 contacts total (Section 6 floor was 40-60; Wk 1 ramp intentionally below floor for bilateral achilles tendinopathy). Hip pain resolved overnight.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
@@ -2861,15 +2899,15 @@
       ]
     },
     "10": {
-      "label": "Phase 2 Wk 2 \u2014 Travel-disrupted, plyo-anchored",
-      "reason": "Work travel removed Wed May 13 Lower Body and Thu May 14 Upper + Power from the week. Sun May 17 basketball (~36-40h from Fri PM) precludes catching up heavy bilateral compounds today \u2014 Suchomel 2018 48h heavy-lift-to-game window. Friday Phase 2 Power + Plyometrics is the correct stimulus for this slot; progress plyo contacts 30 \u2192 40 to hit Section 6 / Ebben 2010 floor for a non-specialized athlete (achilles cleared by May 9\u219210 plyo\u2192game cluster at 0/10). HSR cadence drops to 1/3 Beyer for the week \u2014 single-week shortfall, not catastrophic for 12-week tendon adaptation. Wed + Thu lifts are gone, not deferred.",
+      "label": "Phase 2 Wk 2 — Travel-disrupted, plyo-anchored",
+      "reason": "Work travel removed Wed May 13 Lower Body and Thu May 14 Upper + Power from the week. Sun May 17 basketball (~36-40h from Fri PM) precludes catching up heavy bilateral compounds today — Suchomel 2018 48h heavy-lift-to-game window. Friday Phase 2 Power + Plyometrics is the correct stimulus for this slot; progress plyo contacts 30 → 40 to hit Section 6 / Ebben 2010 floor for a non-specialized athlete (achilles cleared by May 9→10 plyo→game cluster at 0/10). HSR cadence drops to 1/3 Beyer for the week — single-week shortfall, not catastrophic for 12-week tendon adaptation. Wed + Thu lifts are gone, not deferred.",
       "schedule": [
         {
           "day": "Sun",
           "date": "2026-05-10",
           "type": "game",
           "status": "done",
-          "desc": "Basketball AM \u2014 completed (40 min high, achilles 0/10). ~38h post-plyo session passed clean."
+          "desc": "Basketball AM — completed (40 min high, achilles 0/10). ~38h post-plyo session passed clean."
         },
         {
           "day": "Mon",
@@ -2883,33 +2921,33 @@
           "date": "2026-05-12",
           "type": "game",
           "status": "done",
-          "desc": "Basketball PM \u2014 completed (20 min high, achilles 0/10). Shorter than typical."
+          "desc": "Basketball PM — completed (20 min high, achilles 0/10). Shorter than typical."
         },
         {
           "day": "Wed",
           "date": "2026-05-13",
           "type": "rest",
           "status": "missed",
-          "desc": "Phase 2 Lower Body MISSED \u2014 work travel. Not deferred; Sun May 17 game window precludes make-up Friday."
+          "desc": "Phase 2 Lower Body MISSED — work travel. Not deferred; Sun May 17 game window precludes make-up Friday."
         },
         {
           "day": "Thu",
           "date": "2026-05-14",
           "type": "rest",
           "status": "missed",
-          "desc": "Phase 2 Upper + Power MISSED \u2014 work travel. BB Bench / Row progressions wait until Thu May 21."
+          "desc": "Phase 2 Upper + Power MISSED — work travel. BB Bench / Row progressions wait until Thu May 21."
         },
         {
           "day": "Fri",
           "date": "2026-05-15",
           "type": "training",
-          "desc": "Phase 2 Power + Plyometrics \u2014 plyo Wk 2 progression. 40 contacts (Section 6 floor hit). No heavy bilateral compounds (Sun-game 48h window). Pre-load Momentous Collagen 30-60 min pre-session per Shaw 2017 / Praet 2019. Log AM achilles + last night sleep before warmup; auto-regulate per Silbernagel + Knowles 2018 if either is yellow. Log as '(Fri Phase 2)' for the renderer.",
+          "desc": "Phase 2 Power + Plyometrics — plyo Wk 2 progression. 40 contacts (Section 6 floor hit). No heavy bilateral compounds (Sun-game 48h window). Pre-load Momentous Collagen 30-60 min pre-session per Shaw 2017 / Praet 2019. Log AM achilles + last night sleep before warmup; auto-regulate per Silbernagel + Knowles 2018 if either is yellow. Log as '(Fri Phase 2)' for the renderer.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
               "sets": "4x4",
               "weight": "24-inch box",
-              "notes": "16 contacts (+4 vs May 9). Step DOWN every rep \u2014 never rebound (Section 6 achilles precaution)."
+              "notes": "16 contacts (+4 vs May 9). Step DOWN every rep — never rebound (Section 6 achilles precaution)."
             },
             {
               "name": "Trap Bar Jump Squat",
@@ -2927,7 +2965,7 @@
               "name": "Bulgarian Split Squat",
               "sets": "3x6/leg",
               "weight": "20 lb DBs",
-              "notes": "Phase 2 Fri prescription \u2014 moderate load, upright torso, deliberate tempo. Held at last week's load."
+              "notes": "Phase 2 Fri prescription — moderate load, upright torso, deliberate tempo. Held at last week's load."
             },
             {
               "name": "Banded Lateral Shuffle",
@@ -2946,21 +2984,21 @@
           "day": "Sat",
           "date": "2026-05-16",
           "type": "rest",
-          "desc": "Recovery before Sun AM basketball. Optional single-leg BW HSR 3x6/leg at home if achilles/legs feel fresh \u2014 bumps Beyer cadence 1/3 \u2192 2/3 for the week. Skip if any signal of fatigue."
+          "desc": "Recovery before Sun AM basketball. Optional single-leg BW HSR 3x6/leg at home if achilles/legs feel fresh — bumps Beyer cadence 1/3 → 2/3 for the week. Skip if any signal of fatigue."
         }
       ]
     },
     "11": {
-      "label": "Phase 2 Wk 3 \u2014 Plyo block ramp + HSR compliance recovery",
-      "reason": "Mon 5/18 HSR mini-session (the structural default from 5/17 science review) was substituted with a 2-mile beach walk \u2014 Wk 11 HSR opens at 0/3. Wed adds Seated Calf Raise (soleus-bias) back to the Phase 2 Wed prescription: (a) restores Beyer 2015 both-variants requirement that Phase 2 Wed dropped vs Phase 1, (b) brings Wk 11 HSR to a recoverable 3/3 with Fri standing single-leg. Plyo block ramps to 50 contacts on Fri 5/22 \u2014 Wk 3 of the 4-week Markovic 2007 plyo window. TB DL 240 held for one more session (14-day layoff = expected RPE bump, recalibration not regression); Back Squat 155 held for the 2nd consecutive session, opening 160 next Wed per Section 1 double progression.",
+      "label": "Phase 2 Wk 3 — Plyo block ramp + HSR compliance recovery",
+      "reason": "Mon 5/18 HSR mini-session (the structural default from 5/17 science review) was substituted with a 2-mile beach walk — Wk 11 HSR opens at 0/3. Wed adds Seated Calf Raise (soleus-bias) back to the Phase 2 Wed prescription: (a) restores Beyer 2015 both-variants requirement that Phase 2 Wed dropped vs Phase 1, (b) brings Wk 11 HSR to a recoverable 3/3 with Fri standing single-leg. Plyo block ramps to 50 contacts on Fri 5/22 — Wk 3 of the 4-week Markovic 2007 plyo window. TB DL 240 held for one more session (14-day layoff = expected RPE bump, recalibration not regression); Back Squat 155 held for the 2nd consecutive session, opening 160 next Wed per Section 1 double progression.",
       "schedule": [
         {
           "day": "Sun",
           "date": "2026-05-17",
           "type": "game",
           "status": "done",
-          "desc": "Basketball AM \u2014 40 min high",
-          "longDesc": "Completed (40 min high, achilles 0/10, sleep 7.5h). 2nd plyo\u2192game 48h cluster passed clean."
+          "desc": "Basketball AM — 40 min high",
+          "longDesc": "Completed (40 min high, achilles 0/10, sleep 7.5h). 2nd plyo→game 48h cluster passed clean."
         },
         {
           "day": "Mon",
@@ -2968,14 +3006,14 @@
           "type": "rest",
           "status": "done",
           "desc": "Recovery + 2-mile beach walk",
-          "longDesc": "Recovery + Option B deficit anchor (2,300-2,500 cal). Completed 2-mile beach walk evening (Zone 2 active recovery per Dupuy 2018). Mon HSR mini-session (5/17 review's structural default) substituted, not performed \u2014 Wk 11 HSR opens at 0/3."
+          "longDesc": "Recovery + Option B deficit anchor (2,300-2,500 cal). Completed 2-mile beach walk evening (Zone 2 active recovery per Dupuy 2018). Mon HSR mini-session (5/17 review's structural default) substituted, not performed — Wk 11 HSR opens at 0/3."
         },
         {
           "day": "Tue",
           "date": "2026-05-19",
           "type": "game",
           "status": "done",
-          "desc": "Basketball PM \u2014 20 min high",
+          "desc": "Basketball PM — 20 min high",
           "longDesc": "Completed (20 min high, achilles 0/10). Sport-driven lower-body load this week: Sun 40 + Tue 20 = 60 min."
         },
         {
@@ -2983,20 +3021,20 @@
           "date": "2026-05-20",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Lower \u2014 TB DL 240, Squat 155",
-          "longDesc": "Completed as RXed. TB DL 240x4x5, Back Squat 155x4x5, GHR 3x5, Seated Calf HSR 3x6 @ 150 (restored variant), Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. Forecast layoff RPE bump did NOT materialize \u2014 opens TB DL 245 and Back Squat 160 next Wed. Wk 11 HSR count: 2/3, Fri closes 3/3.",
+          "desc": "Phase 2 Lower — TB DL 240, Squat 155",
+          "longDesc": "Completed as RXed. TB DL 240x4x5, Back Squat 155x4x5, GHR 3x5, Seated Calf HSR 3x6 @ 150 (restored variant), Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. Forecast layoff RPE bump did NOT materialize — opens TB DL 245 and Back Squat 160 next Wed. Wk 11 HSR count: 2/3, Fri closes 3/3.",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
               "sets": "4x5",
               "weight": "240 lbs",
-              "notes": "Hold at 240 \u2014 2nd session at this weight. 14-day layoff means first set may feel +1 RPE vs 5/6; clean rep quality opens 245 next Wed (Section 1 double progression)."
+              "notes": "Hold at 240 — 2nd session at this weight. 14-day layoff means first set may feel +1 RPE vs 5/6; clean rep quality opens 245 next Wed (Section 1 double progression)."
             },
             {
               "name": "Back Squat",
               "sets": "4x5",
               "weight": "155 lbs",
-              "notes": "Hold at 155 \u2014 2nd consecutive session at this weight. If RPE 7-8 and clean across all 4 sets, next Wed = 160 (Section 1 double progression)."
+              "notes": "Hold at 155 — 2nd consecutive session at this weight. If RPE 7-8 and clean across all 4 sets, next Wed = 160 (Section 1 double progression)."
             },
             {
               "name": "GHR / Ham Curl Machine",
@@ -3008,7 +3046,7 @@
               "name": "Seated Calf Raise (HSR)",
               "sets": "3x6",
               "weight": "150 lbs",
-              "notes": "NEW ADD \u2014 restores soleus-bias variant. Match last seated load (4/29). 3s concentric / 3s eccentric. Bent-knee position biases soleus per Beyer 2015. Slot before single-leg standing (soleus warm-up first, gastroc heavy second)."
+              "notes": "NEW ADD — restores soleus-bias variant. Match last seated load (4/29). 3s concentric / 3s eccentric. Bent-knee position biases soleus per Beyer 2015. Slot before single-leg standing (soleus warm-up first, gastroc heavy second)."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
@@ -3023,14 +3061,14 @@
           "date": "2026-05-21",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Upper \u2014 Bench 150, Pulldown 145",
-          "longDesc": "Completed as RXed except Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145/145 (4 sets, full prescribed volume). Bench 150 held cleanly for 2nd consecutive session \u2014 opens 155 next Thu. Achilles 0/10, sleep normal.",
+          "desc": "Phase 2 Upper — Bench 150, Pulldown 145",
+          "longDesc": "Completed as RXed except Weighted Pull-up substituted with Lat Pulldown ramped 135/140/145/145 (4 sets, full prescribed volume). Bench 150 held cleanly for 2nd consecutive session — opens 155 next Thu. Achilles 0/10, sleep normal.",
           "exercises": [
             {
               "name": "Barbell Bench Press",
               "sets": "4x5",
               "weight": "150 lbs",
-              "notes": "HOLD at 150 \u2014 2nd session at this weight (first was 5/7, 14-day gap). Per Section 1 double progression: 2 consecutive clean sessions at same weight opens next +5. Clean rep quality today \u2192 155 next Thu. No fractional plates available so disciplined double progression is the path. RPE 7-8."
+              "notes": "HOLD at 150 — 2nd session at this weight (first was 5/7, 14-day gap). Per Section 1 double progression: 2 consecutive clean sessions at same weight opens next +5. Clean rep quality today → 155 next Thu. No fractional plates available so disciplined double progression is the path. RPE 7-8."
             },
             {
               "name": "Weighted Pull-up",
@@ -3068,14 +3106,14 @@
           "date": "2026-05-22",
           "type": "training",
           "status": "done",
-          "desc": "Phase 2 Plyo \u2014 50 contacts + HSR",
-          "longDesc": "Completed as RXed. Box 5x4 + TBJS 5x3 @ 70 + Broad 5x3 = 50 contacts (mid-range of Section 6 target). BSS 3x6/leg @ 20 lb DBs, banded lateral shuffle 3x8/dir, Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. WK 11 HSR CLOSES AT 3/3 BEYER CADENCE \u2014 first 3/3 since Wk 8.",
+          "desc": "Phase 2 Plyo — 50 contacts + HSR",
+          "longDesc": "Completed as RXed. Box 5x4 + TBJS 5x3 @ 70 + Broad 5x3 = 50 contacts (mid-range of Section 6 target). BSS 3x6/leg @ 20 lb DBs, banded lateral shuffle 3x8/dir, Single-Leg Standing HSR 3x6 @ BW+67. Achilles 0/10, sleep normal. WK 11 HSR CLOSES AT 3/3 BEYER CADENCE — first 3/3 since Wk 8.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
               "sets": "5x4",
               "weight": "24-inch box",
-              "notes": "20 contacts (+4 vs 5/15). Step DOWN every rep \u2014 never rebound."
+              "notes": "20 contacts (+4 vs 5/15). Step DOWN every rep — never rebound."
             },
             {
               "name": "Trap Bar Jump Squat",
@@ -3093,7 +3131,7 @@
               "name": "Bulgarian Split Squat",
               "sets": "3x6/leg",
               "weight": "20 lb DBs",
-              "notes": "Phase 2 Fri prescription \u2014 moderate load, upright torso."
+              "notes": "Phase 2 Fri prescription — moderate load, upright torso."
             },
             {
               "name": "Banded Lateral Shuffle",

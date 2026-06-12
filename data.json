@@ -1796,6 +1796,37 @@
         }
       ],
       "notes": "Wk 14 Upper + Power session run on Wed 6/10 (swapped onto the Wed slot this week; normally Thu). Tagged Thu Phase 2 to keep bench/pulldown/row progression in one progress table. Bench held 155 (2nd session at 155, after 5/28). Lat pulldown top set 130, down from 150 on 5/28. Row 3x8 at 135 vs prescribed 4x5. Achilles and sleep not reported."
+    },
+    {
+      "date": "2026-06-11",
+      "type": "training",
+      "activity": "Lower (maintenance hold) + HSR (Wed Phase 2)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "4x5",
+          "weight": "245 lbs",
+          "notes": "Held 245 at RPE 6-7, no PR push. 3rd hold at 245 (5/27 progression, held 6/5, held 6/11). No increase instructed this session."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "4x5",
+          "weight": "160 lbs",
+          "notes": "Held 160 at RPE 6-7, no PR push. No increase instructed this session."
+        },
+        {
+          "name": "Glute-Ham Raise / Ham Curl",
+          "sets": "3x8",
+          "notes": "Posterior-chain slot, moderate load."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 72 lb/leg",
+          "notes": "Gastroc-bias, straight-knee, 3s/3s tempo. HSR session 2 of 3 this week."
+        }
+      ],
+      "notes": "Wk 14 Lower (maintenance hold) + HSR, run Thu 6/11 (calendar-swapped: Upper done Wed 6/10, Lower onto Thu). Tagged Wed Phase 2 so TB DL/Back Squat stay in the lower progress table. 245/160 held at RPE 6-7, no PR push - no weight increase was instructed, so maintenance was the correct call. HSR session 2 of 3. Achilles and sleep not reported. NOTE: a prior session appears to have drafted this entry but it was never committed/pushed - this is the persisted version."
     }
   ],
   "scienceReviews": [

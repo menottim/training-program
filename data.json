@@ -1827,6 +1827,32 @@
         }
       ],
       "notes": "Wk 14 Lower (maintenance hold) + HSR, run Thu 6/11 (calendar-swapped: Upper done Wed 6/10, Lower onto Thu). Tagged Wed Phase 2 so TB DL/Back Squat stay in the lower progress table. 245/160 held at RPE 6-7, no PR push - no weight increase was instructed, so maintenance was the correct call. HSR session 2 of 3. Achilles and sleep not reported. NOTE: a prior session appears to have drafted this entry but it was never committed/pushed - this is the persisted version."
+    },
+    {
+      "date": "2026-06-12",
+      "type": "training",
+      "activity": "Power + Plyometrics (Fri Phase 2)",
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "6x6",
+          "weight": "24 in box",
+          "notes": "36 ground contacts vs prescribed 3x4 (12 reps) - 3x the prescribed plyo volume on the deliberately low-volume Fri slot, ~36 hrs before Sun AM basketball. Step down per achilles protocol."
+        },
+        {
+          "name": "KB Deadlift Jump",
+          "sets": "4x3",
+          "weight": "2x50 lb KB (100 lb)",
+          "notes": "Substitution for prescribed Trap Bar Jump Squat 3x3 (~30% DL max). 100 lb external load is ~35% of est DL 1RM (~285), biasing speed-strength over max-height. One extra set vs prescribed 3x3."
+        },
+        {
+          "name": "Standing Calf Raise (HSR)",
+          "sets": "3x10",
+          "weight": "90 lbs",
+          "notes": "Bilateral, gastroc-bias. HSR component of the session. 10 reps sits mid-range of the 15RM-to-6RM progression. Maintain 3s/3s tempo."
+        }
+      ],
+      "notes": "Wk 14 Fri Power + Plyometrics, run on calendar Fri 6/12. Trimmed session: jumps, KB deadlift jumps, and standing calf HSR. Skipped prescribed Broad Jump, Bulgarian Split Squat, and Banded Lateral Shuffle. Box jump volume 6x6 is 3x the prescribed 3x4 on a pre-game low-volume day. Achilles and sleep not reported at log time."
     }
   ],
   "scienceReviews": [

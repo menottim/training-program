@@ -1852,7 +1852,8 @@
           "notes": "Bilateral, gastroc-bias. HSR component of the session. 10 reps sits mid-range of the 15RM-to-6RM progression. Maintain 3s/3s tempo."
         }
       ],
-      "notes": "Wk 14 Fri Power + Plyometrics, run on calendar Fri 6/12. Trimmed session: jumps, KB deadlift jumps, and standing calf HSR. Skipped prescribed Broad Jump, Bulgarian Split Squat, and Banded Lateral Shuffle. Box jump volume 6x6 is 3x the prescribed 3x4 on a pre-game low-volume day. Achilles and sleep not reported at log time."
+      "achillesPain": 0,
+      "notes": "Wk 14 Fri Power + Plyometrics, run on calendar Fri 6/12. Trimmed session: jumps, KB deadlift jumps, and standing calf HSR. Skipped prescribed Broad Jump, Bulgarian Split Squat, and Banded Lateral Shuffle. Box jump volume 6x6 is 3x the prescribed 3x4 on a pre-game low-volume day. Achilles reported green (0/10, asymptomatic) during and after the jumps - tendon tolerance clears the elevated jump volume for this session. Sleep not reported."
     }
   ],
   "scienceReviews": [

@@ -1868,7 +1868,8 @@
       "activity": "Basketball",
       "duration": "30 min",
       "intensity": "high",
-      "notes": "Sun AM basketball, 30 min high - first high-intensity session ~24h after the 6/13 Power Red donation, while plasma volume is still re-expanding (the largest acute aerobic hit is in the first ~48h). Intermittent court sport leans on anaerobic/skill more than a pure endurance test, so the practical impact is smaller than the ~10-15% VO2max drop seen on ergometer-to-exhaustion tests - but expect elevated HR/RPE and slower between-possession recovery, more so late. PM hockey (22-25 min high) planned same day = a double-game day on reduced red-cell mass; will log after it happens. Sleep last night and achilles during/after not yet reported (asked)."
+      "achillesPain": 0,
+      "notes": "Sun AM basketball, 30 min high - first high-intensity session ~24h after the 6/13 Power Red donation, while plasma volume is still re-expanding (the largest acute aerobic hit is in the first ~48h). Intermittent court sport leans on anaerobic/skill more than a pure endurance test, so the practical impact is smaller than the ~10-15% VO2max drop seen on ergometer-to-exhaustion tests. PERCEIVED EXERTION (athlete report): wind noticeably down vs usual, but legs felt oddly decent - a clean aerobic-not-muscular dissociation, exactly the expected Power Red signal (red-cell-mass deficit hits O2 delivery, not the anaerobic ATP-PCr power system). No lightheadedness and no HR-won't-settle, so no donation red flags. Achilles reported fine (asymptomatic, logged 0/10) during and after. Sleep reported fine (hours not specified). PM hockey (22-25 min high) planned same day = a double-game day on reduced red-cell mass; will log after it happens."
     }
   ],
   "scienceReviews": [

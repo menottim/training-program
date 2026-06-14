@@ -1854,6 +1854,21 @@
       ],
       "achillesPain": 0,
       "notes": "Wk 14 Fri Power + Plyometrics, run on calendar Fri 6/12. Trimmed session: jumps, KB deadlift jumps, and standing calf HSR. Skipped prescribed Broad Jump, Bulgarian Split Squat, and Banded Lateral Shuffle. Box jump volume 6x6 is 3x the prescribed 3x4 on a pre-game low-volume day. Achilles reported green (0/10, asymptomatic) during and after the jumps - tendon tolerance clears the elevated jump volume for this session. Sleep not reported."
+    },
+    {
+      "date": "2026-06-13",
+      "type": "recovery",
+      "activity": "Power Red (Double Red Cell) blood donation",
+      "details": "Apheresis donation, AM. Two units of packed red cells removed; plasma and platelets returned with saline. Logged as a physiological event for load context, not as a training or recovery session.",
+      "notes": "Power Red removes ~2 units of red cells (roughly double a whole-blood donation), lowering hemoglobin/hematocrit and oxygen-carrying capacity. The early hit has two clocks: a blood-volume loss that plasma re-expansion resolves in ~3 days, and a red-cell-mass deficit that takes weeks. Whole-blood RCTs show maximal power, VO2peak, and Hb mass still depressed up to 4 weeks post-donation, and iron speeds blood recovery but NOT performance recovery (Ziegler 2016, Sports Medicine - Open, PMC5118378; Calbet 2017, Transfusion, doi:10.1111/trf.14224). Because Power Red removes ~2x the red-cell mass, expect a longer return than the ~3-4 wk whole-blood window - the Red Cross 112-day Power Red deferral vs 56-day whole blood implies plan ~4-6+ weeks to baseline aerobic capacity. Iron loss is also ~2x. Evidence tier: Moderate (controlled performance data is whole-blood; the DRCA-specific timeline is extrapolated from those RCTs plus the regulatory deferral). Material because Phase 3 power-realization opens Wk 15 this week and 6/14 is a basketball-AM/hockey-PM double on a depleted system."
+    },
+    {
+      "date": "2026-06-14",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "30 min",
+      "intensity": "high",
+      "notes": "Sun AM basketball, 30 min high - first high-intensity session ~24h after the 6/13 Power Red donation, while plasma volume is still re-expanding (the largest acute aerobic hit is in the first ~48h). Intermittent court sport leans on anaerobic/skill more than a pure endurance test, so the practical impact is smaller than the ~10-15% VO2max drop seen on ergometer-to-exhaustion tests - but expect elevated HR/RPE and slower between-possession recovery, more so late. PM hockey (22-25 min high) planned same day = a double-game day on reduced red-cell mass; will log after it happens. Sleep last night and achilles during/after not yet reported (asked)."
     }
   ],
   "scienceReviews": [

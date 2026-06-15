@@ -1870,6 +1870,16 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Sun AM basketball, 30 min high - first high-intensity session ~24h after the 6/13 Power Red donation, while plasma volume is still re-expanding (the largest acute aerobic hit is in the first ~48h). Intermittent court sport leans on anaerobic/skill more than a pure endurance test, so the practical impact is smaller than the ~10-15% VO2max drop seen on ergometer-to-exhaustion tests. PERCEIVED EXERTION (athlete report): wind noticeably down vs usual, but legs felt oddly decent - a clean aerobic-not-muscular dissociation, exactly the expected Power Red signal (red-cell-mass deficit hits O2 delivery, not the anaerobic ATP-PCr power system). No lightheadedness and no HR-won't-settle, so no donation red flags. Achilles reported fine (asymptomatic, logged 0/10) during and after. Sleep reported fine (hours not specified). PM hockey (22-25 min high) planned same day = a double-game day on reduced red-cell mass; will log after it happens."
+    },
+    {
+      "date": "2026-06-14",
+      "type": "game",
+      "activity": "Hockey",
+      "duration": "23 min",
+      "intensity": "high",
+      "avgHR": 138,
+      "hrZones": "Z2 6 min / Z3 9 min / Z4 3 min / Z5 4 min",
+      "notes": "Sun PM hockey, 23 min, avg HR 138 (7 of 23 min in Z4-Z5). Second high-intensity session of a double-game day (AM basketball 30 min high), ~30h after the 6/13 Power Red donation. PERCEIVED EXERTION (athlete report): wind quite difficult and legs felt pretty bad - a sharp flip from the AM read ('wind down, legs oddly decent'). The AM-to-PM reversal is the expected cumulative cost of a double on reduced red-cell mass: impaired O2 delivery slows recovery between the two sessions, and hockey's sustained-skating shifts tax the aerobic system harder than intermittent basketball. No lightheadedness reported - fatigue, not a donation red flag. Achilles not reported for the PM session (AM was 0/10). Sleep/protein for 6/14 not reported. This double opens Wk 15 / Phase 3 on a deliberately depleted system - see knowledge/blood-donation-recovery.md and the 2026-06-15 transition review."
     }
   ],
   "scienceReviews": [
@@ -1908,6 +1918,12 @@
       "week": 12,
       "findings": "Wk 12 end-of-week / plyo-block-close review (13 days since the 2026-05-17 review; the 5/17 entry named today's checkpoint - re-evaluate Section 7 targets after the block closes 5/29). Window covered: 5/18 (Wk 11 back-half) through 5/29 (Wk 12 close).\n\nSTRENGTH (Section 7 re-evaluation - the purpose of this checkpoint):\n- TB DL: held 240 for a 2nd clean session 5/20 (a 14-day layoff did NOT produce the forecast RPE bump - pattern intact), then +5 to 245 on 5/27 (clean, first compound +5 in 4 weeks). Now 140 lb from the 385x5 target. Rate is still ~8 lb/month (Wk 11 review figure); the Phase 2 RPE 7-8 shift has not yet accelerated TB DL beyond its Phase 1 rate. At this pace 385x5 lands ~17-18 months out, NOT 12. Honest read: TB DL 385 is an 18-month target.\n- Bench: held 150 for a 2nd clean session 5/21, then +5 to 155 on 5/28 (clean, RPE 7-8). Now 70 lb from 225x5 at ~15 lb/month (Wk 11 figure) = ~4-5 months. On pace for the 12-month target and arguably ahead. Most reliable of the three.\n- Back Squat: held 155 (5/20, 2nd clean session, opened 160) but the 160 push was DEFERRED on 5/27 - no squat rack available, substituted Leg Press 3x10 (90/180/270). So an earned +5 is un-cashed and the constraint lift lost a progression to equipment, not to the athlete. 160 lb from 315x5; CLAUDE.md's 15-18 month call is confirmed by the data. Equipment availability is now a live risk for the squat specifically.\nSection 7 conclusion: Bench 225 holds at 12 months (tracking ahead); TB DL 385 and Squat 315 are honestly 18-month targets at observed rates. Recommend re-horizoning rather than carrying targets the data won't support (Rhea 2003 dose-response, Moderate; Baker 2001 PMID 11710401 in-season constraint; Lexell 1995 age recovery factor).\n\nHSR COMPLIANCE (Beyer 2015 PMID 26018970, Strong - the headline reversal):\n- Wk 11: 3/3 (Wed seated + Wed single-leg + Fri single-leg). First 3/3 since Wk 8.\n- Wk 12: 3/3 (Wed single-leg + Fri seated + Fri single-leg double-variant make-up).\n- TWO consecutive Beyer-compliant weeks, reversing the Wk 9-11 decline (2/3 -> 1/3 -> 0/3-at-last-review). The 5/17 structural fix (restore Seated Calf to Wed) is the direct driver.\n- CAVEAT: both weeks were recovered by reactive make-up, not the prescribed Mon-AM HSR mini-session. The Monday anchor (the 5/17 review's #1 fix) was NOT adopted either week (5/18 = beach walk instead, 5/25 = rest). Friday double-up works but is fragile - one forgotten Friday = a missed week. Durability still depends on the unrealized Monday anchor. Process note: the 5/17 Seated-Calf fix was added to modifiedWeeks and the activityLog but never to the base index.html prescription, which is why Seated was missed Wed 5/27 (patched 5/27). Fixes must land in the base prescription, not just the modified week.\n\nVOLUME (Section 3, 6-10 hard sets/muscle/wk + sport): Both weeks in range. Wk 11 lower ~14 sets + plyo + 2 games, upper ~15 sets, calves 9 (on Beyer target), core at floor. Wk 12 lower ~13 sets (Leg Press preserved quad volume when the rack was unavailable), upper ~15 sets, calves 9. No volume concern.\n\nACHILLES (Silbernagel 2007 PMID 17307888, Strong): Green zone (<=3/10) unbroken back to 3/17 - now ~10+ weeks. Only nonzero in-window was 5/27 AM 1/10 (resolved with warmup, still green, no action per Section 4). The tendon tolerated the FULL plyo ramp 30 -> 60 contacts without leaving green - strongest signal in the program that the Beyer HSR protocol is working. GAP: the 5/29 post-plyo achilles read (the single most informative point of the block - highest-load session of the week) is not yet reported.\n\nRECOVERY / NUTRITION (Section 5):\n- Sleep: IMPROVED this window - captured on 5/17, 5/20, 5/21, 5/22, 5/24, 5/26, 5/27, 5/28 (~70%, up from 29% at the Wk 11 review). No sub-6h nights; 5/27 was 7h (low-normal, NSF range, not a Section 2 trigger). The recovery-capture trigger is partially landing for sleep.\n- Protein: 0% captured. bodyLog has ZERO protein entries 5/18-5/30 (only a 5/28 weight/BF reading). Worse than the 21% at the Wk 11 review. This is the binding constraint: every nutrition and recomp conclusion below is un-diagnosable without intake data (Morton 2018 PMID 28698222 distribution; the daily protein-floor read is the missing field).\n- Body comp: 5/28 = 220.5 lb / 23.0% BF, IDENTICAL to 5/7. Flat at program-best for 3 weeks - holding, not regressing, but the slow-recomp has plateaued. Cannot diagnose the plateau (intake unlogged).\n\nPLYO BLOCK CLOSE (Section 6 / Markovic 2007, Strong; Ebben 2010): Full 4-week block complete - 30 (5/9) -> 40 (5/15) -> 50 (5/22) -> 60 (5/29), landing at the top of the 40-60 range, every session clean achilles. Markovic 2007 projects ~4-8% VJ gain over 6-12 wk; this 4-wk block targets the steep early portion. MEASUREMENT GAP: VJ is goal #3 and the plyo block is its primary driver, but there is NO pre/post vertical-jump test in the data - the block closed with no way to quantify whether it moved VJ. Wks 13-14 = 2-week plyo maintenance per the Phase 3 plan; Phase 3 (power realization) starts Wk 15 (~Jun 14).\n\nDELOAD: Wk 12 is a scheduled every-4th-week deload (4/8/12). Correctly SKIPPED (ran normally with 2 progressions landed) - skip-criteria all green (lifts progressing, RPE on target, achilles stable, no sub-6h sleep), consistent with Coleman 2024 PMID 38274324 (prophylactic deloads in non-fatigued lifters cost gains). Continues the Wk 8 skip pattern. Next scheduled deload Wk 16, by which point Phase 3 is underway.\n\nPHASE 2 -> 3 READINESS: Strong. Two +5 progressions (TB DL, Bench) landed at RPE 7-8 in Wk 12, so the Phase 2 intensity bump is tolerated and productive. Maintenance Wks 13-14 then Phase 3 is the right sequence (Section 6 diminishing returns after a 4-wk block).",
       "changes": "1) PROTEIN/INTAKE LOGGING IS THE #1 FIX (it gates every nutrition + recomp conclusion). 0% protein capture this window and body comp flat 3 weeks at program-best - the plateau is un-diagnosable without intake. Not more analysis; capture. Prioritize the single daily protein-floor read (hit 40g by lunch Y/N) above all other fields since that is the 0% gap. Target >=5/7 days. References: Morton 2018 (PMID 28698222, Strong); Schoenfeld and Aragon 2018.\n\n2) SECTION 7 TARGET RE-HORIZON (recommendation, pending athlete sign-off - not yet written to data.targets): hold Bench 225 at 12 months (tracking ahead, ~4-5 mo); re-horizon TB DL 385 and Squat 315 to ~18 months, which the observed rates (TB DL ~8 lb/mo, Squat the in-season constraint) actually support. Also: cash the un-cashed Back Squat 160 in Wk 13 IF a rack is available - the constraint lift should not keep losing earned progressions to equipment. References: Rhea 2003 (Moderate); Baker 2001 (PMID 11710401, Moderate); Lexell 1995.\n\n3) INSTALL THE MONDAY HSR ANCHOR DURING WKS 13-14 (durability fix): two 3/3 weeks is real, but both were fragile Friday catch-ups, not the prescribed Mon-AM mini-session. Wks 13-14 are plyo maintenance (lower lift volume) - the low-cost window to actually build the Monday HSR mini-session (3 sets seated + 3 sets standing single-leg, full Beyer load/tempo) into habit so compliance survives a dropped Wed/Fri. Also confirm the Seated Calf fix is now in the base index.html prescription, not just modified weeks. References: Beyer 2015 (PMID 26018970, Strong); Magnusson and Kjaer 2019 (PMC6395417, Strong) tendon load continuity.\n\nWORTH DOING (not a core adjustment): establish a vertical-jump baseline (jump-reach minus standing-reach, or a phone jump-test) before Wks 13-14 so the next plyo block can be evaluated against goal #3. The block that just closed has no VJ measurement (Markovic 2007, Strong).\n\nOPEN DATA ITEM: the 5/29 post-plyo achilles read and Thu/Fri-night sleep are still unreported - needed to close the block record (Silbernagel 24-hour rule).\n\nNEXT REVIEW: Sun 6/7 (end of Wk 13), weekly cadence."
+    },
+    {
+      "date": "2026-06-15",
+      "week": 15,
+      "findings": "Phase 2 close / Phase 2->3 transition review (Section 7). ~16 days since the 5/30 (Wk 12) review - overdue vs the weekly cadence target (the 6/7 review named in the Wk 12 entry did not happen; Wk 13 travel). Window: Wk 13 (6/1-6/7) through the Wk 15 / Phase 3 open (6/14).\n\nSTRENGTH (Section 7): TB DL 245 (progressed 5/27, held 6/5 and 6/11 - 3 sessions at 245, RPE 6-7 maintenance). Back Squat 160 - the equipment-deferred +5 from 5/27 was CASHED 6/5 (rack available) per the Wk 12 action, then held 6/11; the constraint lift is back on its own progression. Bench 155 (held 6/10, 2nd session at 155 after 5/28). All three held through the Wks 13-14 maintenance bridge as intended - no PR chase before a power phase (Baker 2001 PMID 11710401, Moderate). FLAG: Lat Pulldown top set 130 on 6/10 vs 150 on 5/28 (-20 lb) - likely a different machine/grip; monitor next upper session, accessory so not a concern yet.\n\nHSR COMPLIANCE (the durability fix landing): Wk 13 = 1/3 (only Fri 6/5; Wed/Thu travel, Sat upper skipped). Wk 14 = 3/3 via the bolt-on (Wed Upper seated + Thu Lower single-leg + Fri Plyo standing). The standalone Monday HSR anchor was formally DISCONTINUED after 3 straight misses (5/18, 5/25, 6/8) and replaced by bolting HSR onto the committed lift days - and it worked the first week tried (Beyer 2015 PMID 26018970, Strong; habit needs a reliable trigger). This is the structural fix the last three reviews kept requesting.\n\nACHILLES (the program's anchor signal): green zone (<=3/10) unbroken back to 3/17 - now ~13 weeks / ~90 days. 6/12 plyo 0/10, 6/14 AM basketball 0/10. Tolerated the full Phase 2 plyo ramp to 60 contacts and the maintenance bridge without leaving green. Tendon is NOT the limiter entering Phase 3 (Silbernagel 2007 PMID 17307888, Strong). GAP: 6/14 PM hockey achilles not reported.\n\nPLYO MAINTENANCE BRIDGE (Wks 13-14): Wk 13 no plyo (travel); Wk 14 Fri 6/12 ran 36 box-jump contacts + KB DL jumps (above the prescribed 30). Bridge complete; the Phase 2 plyo block (30->40->50->60) plus 2-week maintenance is done.\n\nVJ BASELINE (the #1 measurement failure): STILL not measured. Prescribed for Wed 6/10, but the logged session has bench/pulldown/row/woodchop/HSR and NO jump test. Goal #3 (vertical jump) has had ZERO baseline through the entire Phase 2 plyo block and now into the power phase whose primary purpose is VJ. This is the 3rd+ deferral and cannot keep slipping - Phase 3 is un-evaluable against goal #3 without it (Markovic 2007, Strong).\n\nRECOVERY / NUTRITION: Protein still 0% logged since 5/11 (~5 weeks) - the chronic binding constraint flagged at every recent review. BUT body comp moved: 6/12 = 219.5 lb / 22.7% BF, breaking the 220.5/23.0 plateau held across 5/7 and 5/28 (-1.0 lb / -0.3 pt over 15 days); 22.7% BF ties the program low (3/11 start). Slow recomp is working even though the intake data to diagnose it is absent. Sleep capture thin; 6/14 reported 'fine' (no hours).\n\nBLOOD DONATION OVERLAY (NEW - reshapes Phase 3): 6/13 AM Power Red (double red cell). 6/14 was a basketball-AM (30 min) + hockey-PM (23 min, avg HR 138, 7 min in Z4-5) double on the depleted system. Perceived exertion confirmed the physiology: AM legs 'oddly decent' / wind down; PM legs 'pretty bad' / wind hard - the cumulative cost of a double on reduced red-cell mass (impaired O2 delivery slows between-session recovery). No red flags. Aerobic capacity is down for ~4-6+ weeks (Power Red removes ~2x whole-blood red-cell mass; Meurrens 2016 PMID 27873242; Kiss 2015 REDS-III PMID 25668261; full sourcing in knowledge/blood-donation-recovery.md). Power (ATP-PCr) is the spared quality.\n\nPHASE 2->3 READINESS: Met. Strength held through maintenance, achilles bulletproof, HSR fix durable, body comp improving. Ready for power realization - but the donation overlay means open Phase 3 conservatively: power yes, conditioning and PR-chasing no, and lean toward honoring the Wk 16 scheduled deload (vs the Wk 8/12 skip pattern) given the added systemic recovery demand.",
+      "changes": "1) VJ BASELINE IS THE #1 PRIORITY FOR WK 15 (3rd+ deferral - it stops slipping now). Measure FIRST thing Wed 6/17, on the freshest legs (Mon rest, Tue game), before any lifting: jump-reach minus standing-reach vs a wall, best of 3. Power is the quality least affected by the Power Red, so a depleted-week baseline is acceptable (note the donation in the result). Goal #3 is otherwise un-evaluable (Markovic 2007, Strong). Written into modifiedWeeks[15] Wed.\n\n2) PHASE 3 SCHEDULE WRITTEN (modifiedWeeks[15], full 7 days). Power-realization intent calibrated to the donation: HOLD all loads (TB DL 245 / Squat 160 / Bench 155) and move them with max intent (velocity / compensatory acceleration); do NOT add weight Wk 15. Contrast/complex pairing for lower power (heavy submaximal lift + explosive jump for post-activation potentiation; Suchomel 2016; Markovic 2007). ~40-contact plyo maintained Fri (realization dose, down from the 60 Phase 2 peak; Ebben 2010). HSR bolted onto all 3 lift days (Wed/Thu/Fri = 3/3, the proven fix). Long rest (3-5 min) between power sets - protects quality and respects the donation's slowed aerobic recovery. NO conditioning/glycolytic finishers for ~4-6 weeks.\n\n3) POWER RED OVERLAY (next ~4-6 weeks). Auto-regulate by RPE - anything aerobic reads 1-2 points high, which is the donation not detraining. Lean into power (spared), minimize hard conditioning, keep playing games auto-regulated. Maintain the recovery levers: daily iron + vitamin C, protein floor, hydration for plasma re-expansion. LEAN TOWARD HONORING the Wk 16 scheduled deload this time (the Wk 8 and Wk 12 deloads were correctly skipped on all-green criteria, but the Power Red adds genuine systemic recovery demand the skip-criteria did not contemplate). References: knowledge/blood-donation-recovery.md (Meurrens 2016 PMID 27873242; Kiss 2015 PMID 25668261; Hill 2013; repeat-donor RCT PMID 32931412).\n\n4) STRENGTH TARGET RE-HORIZON - STILL PENDING YOUR SIGN-OFF (flagged at the Wk 12 review, not yet written to data.targets, so targets remain TB DL 385 / Squat 315 / Bench 225 at 12 months). Recommendation unchanged and now better-supported: hold Bench 225 at 12 months (on pace, ~4-5 months out), re-horizon TB DL 385 and Squat 315 to ~18 months (observed ~8 lb/mo on TB DL and the in-season squat constraint). Say the word and I will write the re-horizon into data.targets. References: Rhea 2003 (Moderate); Baker 2001 PMID 11710401; Lexell 1995.\n\n5) PROTEIN LOGGING - still the #1 data gap (0% since 5/11). One daily read: did protein hit ~40g by lunch (Y/N). Body comp is improving (plateau broke to a program-low 22.7% BF) but stays un-diagnosable without intake (Morton 2018 PMID 28698222).\n\nPROCESS / OPEN: the discontinued-Monday-anchor + HSR-bolt-on pattern and the Phase 3 prescription should also be reflected in the base index.html plan, not just modifiedWeeks (per the Wk 12 'fixes must land in the base prescription' note). Flagged for a follow-up index.html sync if wanted.\n\nNEXT REVIEW: Sun 6/21 (end of Wk 15 / first Phase 3 week), weekly cadence."
     }
   ],
   "bodyLog": [
@@ -3648,6 +3664,160 @@
           "type": "rest",
           "desc": "Rest / pre-game prep",
           "longDesc": "Absorb the Wed/Thu/Fri load before Sun. Phase 3 (power realization) opens Wk 15 starting Sun 6/14 - the next review defines the Phase 2->3 transition and the Phase 3 schedule."
+        }
+      ]
+    },
+    "15": {
+      "subtitle": "Phase 3 opens (power realization) on a Power-Red-depleted system: hold loads, move fast, finally get the VJ baseline, no PR chase.",
+      "label": "Phase 3 Wk 1 (power realization). VJ baseline finally measured (Wed, fresh, first) - goal #3 had zero data through all of Phase 2. Power intent = velocity and contrast/PAP at HELD loads (TB DL 245 / Squat 160 / Bench 155), not heavier; ~40-contact plyo maintained; HSR bolted onto all 3 lift days (Wed/Thu/Fri = 3/3, the proven Wk 14 fix). Calibrated to the 6/13 Power Red: aerobic capacity down ~4-6 wks, so power (spared) is the focus, conditioning and PRs are out, rest periods long. Wk 16 = scheduled deload - lean toward honoring it.",
+      "reason": "First Phase 3 week, opening on the system left depleted by the 6/13 Power Red and the 6/14 basketball-AM + hockey-PM double. Phase 2 closed ready (strength held through the maintenance bridge, achilles green ~13 wks, the HSR bolt-on fix hit 3/3 in Wk 14, body comp broke its plateau to 219.5/22.7%), so power realization is the right next block. But the donation reshapes HOW it opens. Power (ATP-PCr) is the quality least affected by reduced red-cell mass, while aerobic capacity and between-effort recovery are down for ~4-6+ weeks (Meurrens 2016 PMID 27873242; Kiss 2015 PMID 25668261; knowledge/blood-donation-recovery.md). So Wk 15: (1) VJ BASELINE goes first on Wed, on the freshest legs, before any lifting - it has been deferred 3+ times and Phase 3 is un-evaluable against goal #3 without it (Markovic 2007, Strong); a power baseline is valid even on a depleted week since power is spared. (2) HOLD all loads and express them fast (velocity / compensatory acceleration) rather than adding weight - no PR chase on a depleted system (Baker 2001 PMID 11710401, Moderate). (3) Lower power via contrast/complex - heavy submaximal lift paired with an explosive jump for post-activation potentiation (Suchomel 2016; Markovic 2007). (4) Plyo held at ~40 contacts Fri - a realization/maintenance dose, down from the 60-contact Phase 2 peak (Ebben 2010). (5) HSR bolted onto Wed/Thu/Fri (Beyer 2015 PMID 26018970, Strong) - the durability fix that worked. (6) Long rest (3-5 min) between power sets and NO conditioning finishers for ~4-6 weeks. Auto-regulate everything aerobic by RPE (reads 1-2 points high). STANDING GAPS: protein 0% logged since 5/11 (one daily read: 40g-by-lunch Y/N); strength-target re-horizon still pending athlete sign-off (targets unchanged at TB DL 385 / Squat 315 / Bench 225). Wk 16 is the next scheduled deload - lean toward honoring it given the donation's systemic recovery demand.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-06-14",
+          "type": "game",
+          "status": "done",
+          "desc": "Basketball AM 30 min high + Hockey PM 23 min high - double-game day, ~24-36h post-Power-Red",
+          "longDesc": "Phase 3 opens on a depleted system. AM basketball: wind down, legs oddly decent, achilles 0/10. PM hockey (avg HR 138, 7 of 23 min in Z4-Z5): wind hard, legs bad - the cumulative cost of a double on reduced red-cell mass. No red flags. See knowledge/blood-donation-recovery.md."
+        },
+        {
+          "day": "Mon",
+          "date": "2026-06-15",
+          "type": "rest",
+          "desc": "Rest - recover the double + donation. No Monday HSR (anchor discontinued).",
+          "longDesc": "Genuine rest after Sun's double on a Power-Red-depleted system. Recovery levers: daily iron + vitamin C, protein floor, hydration for plasma re-expansion (which finishes ~day 3). HSR now rides the lift days, not Monday - the standalone anchor was discontinued after 3 straight misses."
+        },
+        {
+          "day": "Tue",
+          "date": "2026-06-16",
+          "type": "game",
+          "desc": "Basketball PM (auto-regulate - wind still down from the donation)",
+          "longDesc": "Tue PM basketball as usual. Auto-regulate by feel: expect elevated RPE/HR, shorter bursts, full recovery between possessions. Power and skill are unaffected; conditioning is. A-priority game stays on."
+        },
+        {
+          "day": "Wed",
+          "date": "2026-06-17",
+          "type": "training",
+          "desc": "Phase 3 Wk 1: VJ BASELINE (first, fresh) + Upper power + HSR 1/3. Loads held - no PR chase on a depleted system.",
+          "exercises": [
+            {
+              "name": "Vertical Jump Test (baseline)",
+              "sets": "3 attempts",
+              "notes": "FIRST, before any lifting, on the freshest legs of the week (Mon rest, Tue game). Jump-reach minus standing-reach vs a wall; record the best of 3. Goal #3 has had NO baseline through the entire Phase 2 plyo block - this finally establishes it so Phase 3 power work can be evaluated (Markovic 2007, Strong). Power is the quality LEAST affected by the Power Red, so a depleted-week baseline is acceptable; note the donation alongside the number."
+            },
+            {
+              "name": "Bench Press",
+              "sets": "4x4",
+              "weight": "155 lbs",
+              "notes": "Phase 3 = move the bar with max intent (compensatory acceleration), not heavier. Hold 155, RPE ~7, leave 2-3 in reserve. No PR push Wk 15 (Power Red). Bench is the on-pace lift toward 225x5."
+            },
+            {
+              "name": "Weighted Pull-up",
+              "sets": "4x4",
+              "notes": "Explosive concentric, controlled eccentric. Hold last clean load."
+            },
+            {
+              "name": "DB Push Press",
+              "sets": "4x3",
+              "weight": "as prescribed",
+              "notes": "Vertical press with explosive leg drive - the upper-body power expression for Phase 3. 2-3 min rest between sets for full quality."
+            },
+            {
+              "name": "Chest-Supported Row",
+              "sets": "3x8",
+              "notes": "Horizontal pull volume, controlled. Re-establishes the row pattern after the 6/10 light-row deviation."
+            },
+            {
+              "name": "Cable Woodchop",
+              "sets": "3x10/side",
+              "notes": "Core / rotational power."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x6",
+              "weight": "150 lbs",
+              "notes": "HSR 1 of 3, bolted onto the lift day (the proven Wk 14 fix). Soleus-bias, 3s/3s tempo."
+            }
+          ],
+          "longDesc": "First Phase 3 session. The VJ baseline is non-negotiable and goes first, before any fatigue. Phase 3 intent is velocity and intent, not load - hold all weights and move them fast. HSR rides the session."
+        },
+        {
+          "day": "Thu",
+          "date": "2026-06-18",
+          "type": "training",
+          "desc": "Phase 3 Wk 1: Lower power (contrast pairing) + HSR 2/3. Submaximal speed-strength, extended rest.",
+          "exercises": [
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "4x3",
+              "weight": "245 lbs",
+              "notes": "Phase 3 contrast: heavy-ish but submaximal (RPE ~7), moved with max intent, paired with the box jump below for post-activation potentiation (Suchomel 2016; Markovic 2007). Hold 245 - no PR push (Power Red). 3-5 min rest."
+            },
+            {
+              "name": "Box Jump (step down)",
+              "sets": "4x3",
+              "weight": "24 in box",
+              "notes": "Contrast partner to the TB DL - perform 1-2 min after each heavy DL set (PAP). 12 contacts. Step down per achilles protocol. Max intent, full recovery between."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "3x3",
+              "weight": "160 lbs",
+              "notes": "Hold 160 (cashed 6/5), explosive concentric, RPE ~7. No PR push Wk 15."
+            },
+            {
+              "name": "Glute-Ham Raise / Ham Curl",
+              "sets": "3x8",
+              "notes": "Posterior-chain slot, moderate load."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 72 lb/leg",
+              "notes": "HSR 2 of 3, bolted on. Standing, gastroc-bias, 3s/3s tempo."
+            }
+          ],
+          "longDesc": "Lower power via contrast/complex (heavy submaximal lift + explosive jump for PAP). Loads held at maintenance given the donation; the adaptation target is rate of force development, not 1RM. Long rest (3-5 min) protects both quality and the aerobic-recovery deficit from the Power Red."
+        },
+        {
+          "day": "Fri",
+          "date": "2026-06-19",
+          "type": "training",
+          "desc": "Phase 3 Wk 1: Plyo + jump power (~40 contacts) + HSR 3/3. 48h before the weekend game.",
+          "exercises": [
+            {
+              "name": "Box Jump (step down)",
+              "sets": "4x4",
+              "weight": "24 in box",
+              "notes": "16 contacts. Step down. Max-height intent, full recovery between sets."
+            },
+            {
+              "name": "Trap Bar Jump Squat",
+              "sets": "4x3",
+              "weight": "70 lbs",
+              "notes": "12 contacts. ~29% TB DL - the speed-strength sweet spot for jump power (Markovic 2007). Move fast."
+            },
+            {
+              "name": "Broad Jump",
+              "sets": "4x3",
+              "weight": "BW",
+              "notes": "12 contacts. Stick every landing. Session total ~40 contacts - a realization/maintenance dose (Ebben 2010), down from the 60-contact Phase 2 peak; Phase 3 expresses power, it does not accumulate volume."
+            },
+            {
+              "name": "Standing Calf Raise (HSR)",
+              "sets": "3x6",
+              "weight": "150 lbs",
+              "notes": "HSR 3 of 3 - closes the week at Beyer 3/3 via the bolt-on. Gastroc-bias, 3s/3s tempo."
+            }
+          ],
+          "longDesc": "Jump-power day, ~40 contacts (realization dose, not the Phase 2 build), 48h before the Sun game - the proven plyo-to-game cluster, all clean to date. Achilles has tolerated everything through 60 contacts, so 40 is comfortable."
+        },
+        {
+          "day": "Sat",
+          "date": "2026-06-20",
+          "type": "rest",
+          "desc": "Rest - absorb the Phase 3 week, pre-game.",
+          "longDesc": "Absorb the Wed/Thu/Fri power load before the Sun game. Note: Wk 16 is the next scheduled deload - given the Power Red overlay, lean toward honoring it this time rather than repeating the Wk 8/12 skip pattern."
         }
       ]
     }

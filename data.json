@@ -1880,6 +1880,14 @@
       "avgHR": 138,
       "hrZones": "Z2 6 min / Z3 9 min / Z4 3 min / Z5 4 min",
       "notes": "Sun PM hockey, 23 min, avg HR 138 (7 of 23 min in Z4-Z5). Second high-intensity session of a double-game day (AM basketball 30 min high), ~30h after the 6/13 Power Red donation. PERCEIVED EXERTION (athlete report): wind quite difficult and legs felt pretty bad - a sharp flip from the AM read ('wind down, legs oddly decent'). The AM-to-PM reversal is the expected cumulative cost of a double on reduced red-cell mass: impaired O2 delivery slows recovery between the two sessions, and hockey's sustained-skating shifts tax the aerobic system harder than intermittent basketball. No lightheadedness reported - fatigue, not a donation red flag. Achilles not reported for the PM session (AM was 0/10). Sleep/protein for 6/14 not reported. This double opens Wk 15 / Phase 3 on a deliberately depleted system - see knowledge/blood-donation-recovery.md and the 2026-06-15 transition review."
+    },
+    {
+      "date": "2026-06-16",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "30 min",
+      "intensity": "high",
+      "notes": "Tue PM basketball, 30 min high - the Wk 15 prescribed Tuesday game, auto-regulated per the Phase 3 plan. ~72h after the 6/13 Power Red and the 6/14 basketball-AM/hockey-PM double, so aerobic capacity is still down (Power Red removes ~2x whole-blood red-cell mass, ~4-6 wk return - knowledge/blood-donation-recovery.md). Wind/legs perceived-exertion read not reported for this session. RECOVERY FLAG: sleep reported not great across the prior two nights (6/15 and 6/16, qualitative - hours not given), a fatigue signal that layers on top of the donation deficit (Knowles 2018 sleep-intensity auto-regulation, PMID 29422383, Moderate). Achilles not reported for the game itself; calves reported tight the next morning (Wed 6/17 AM) - gastroc-soleus complex, monitor before today's VJ baseline + HSR 1/3. No lightheadedness / donation red flags noted."
     }
   ],
   "scienceReviews": [

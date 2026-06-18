@@ -1888,6 +1888,44 @@
       "duration": "30 min",
       "intensity": "high",
       "notes": "Tue PM basketball, 30 min high - the Wk 15 prescribed Tuesday game, auto-regulated per the Phase 3 plan. ~72h after the 6/13 Power Red and the 6/14 basketball-AM/hockey-PM double, so aerobic capacity is still down (Power Red removes ~2x whole-blood red-cell mass, ~4-6 wk return - knowledge/blood-donation-recovery.md). Wind/legs perceived-exertion read not reported for this session. RECOVERY FLAG: sleep reported not great across the prior two nights (6/15 and 6/16, qualitative - hours not given), a fatigue signal that layers on top of the donation deficit (Knowles 2018 sleep-intensity auto-regulation, PMID 29422383, Moderate). Achilles not reported for the game itself; calves reported tight the next morning (Wed 6/17 AM) - gastroc-soleus complex, monitor before today's VJ baseline + HSR 1/3. No lightheadedness / donation red flags noted."
+    },
+    {
+      "date": "2026-06-18",
+      "type": "training",
+      "activity": "Upper + Power (Thu Phase 3)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "4x4",
+          "weight": "155 lbs",
+          "notes": "Held 155 per the velocity-hold decision - Phase 3 expresses force fast at a fixed load, no PR push on the Power-Red week. On pace toward 225x5."
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "4x5",
+          "weight": "140/145/150/155 lbs",
+          "notes": "Ramp to top set 155 - a new high (prior top 150 on 5/28; the 6/10 130 read was a likely different machine). Ran 4x5 vs the prescribed 4x4 hold (a bit more volume). Vertical-pull swap (pulldown for weighted pull-up) re-applied this session."
+        },
+        {
+          "name": "Bent Over Row (inverted grip)",
+          "sets": "4x5",
+          "weight": "155 lbs",
+          "notes": "Row-of-record (inverted grip) re-applied per the 6/17 swap. 155 for 4x5, up from the 6/10 deviation (135 at 3x8) and the May 8 start load (145). Heavier and lower-rep than the prescribed 3x8."
+        },
+        {
+          "name": "DB Push Press",
+          "sets": "3x6",
+          "weight": "35 lb DBs",
+          "notes": "Ran 3x6 moderate volume, not the prescribed explosive 4x3 - the upper-body power expression got diluted to a hypertrophy scheme (same pattern as Wk 9's 3x10). Load is up (35 vs prior 25-30). Next time: 4x3, max leg-drive intent, full rest between."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x10",
+          "weight": "155 lbs",
+          "notes": "HSR 1 of 3 banked via the bolt-on. 3x10 @ 155 sits at the endurance end; the Beyer stimulus wants heavy-slow nearer 6-8 reps, so a touch heavier for fewer reps next session. Soleus-bias, 3s/3s tempo."
+        }
+      ],
+      "notes": "Phase 3 Wk 15 upper-power session, run Thu 6/18 AM (the Wed 6/17 prescription shifted a day; Wed was effectively rest). Tagged Thu Phase 3 to keep bench/pulldown/row progression in one progress table, per the upper-day convention. VJ BASELINE SKIPPED AGAIN (athlete-confirmed) - the 4th+ deferral; goal #3 (vertical jump) remains un-baselined entering the power phase whose primary purpose is VJ (Markovic 2007, Strong). Plan to capture it Fri 6/19 before plyo while legs are relatively fresh. Cable Woodchop (core) not reported. Sleep and achilles not reported for this session despite the Wed-AM calf tightness flagged earlier - both still open. Bench held 155 per the velocity-hold decision; lat pulldown PR'd to a 155 top set; push press ran volume rather than power. Lower-power session planned same day PM = a Thu two-a-day on a Power-Red-depleted system after two prior poor nights."
     }
   ],
   "scienceReviews": [

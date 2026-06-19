@@ -3753,7 +3753,7 @@
     },
     "15": {
       "subtitle": "Phase 3 opens (power realization) on a Power-Red-depleted system: hold loads, move fast, finally get the VJ baseline, no PR chase.",
-      "label": "Phase 3 Wk 1 (power realization). VJ baseline finally measured (Wed, fresh, first) - goal #3 had zero data through all of Phase 2. Power intent = velocity and contrast/PAP at HELD loads (TB DL 245 / Squat 160 / Bench 155), not heavier; ~40-contact plyo maintained; HSR bolted onto all 3 lift days (Wed/Thu/Fri = 3/3, the proven Wk 14 fix). Calibrated to the 6/13 Power Red: aerobic capacity down ~4-6 wks, so power (spared) is the focus, conditioning and PRs are out, rest periods long. Wk 16 = scheduled deload - lean toward honoring it.",
+      "label": "Phase 3 Wk 1 (power realization). VJ baseline still deferred - the Wed upper-power session shifted to Thu AM and the VJ was skipped (4th+ deferral); targeting the Fri plyo warm-up, else the Wk 16 deload. Goal #3 still has zero data. Power intent = velocity and contrast/PAP at HELD loads (TB DL 245 / Squat 160 / Bench 155), not heavier; ~40-contact plyo maintained; HSR bolted onto all 3 lift days (Wed/Thu/Fri = 3/3, the proven Wk 14 fix). Calibrated to the 6/13 Power Red: aerobic capacity down ~4-6 wks, so power (spared) is the focus, conditioning and PRs are out, rest periods long. Wk 16 = scheduled deload - lean toward honoring it.",
       "reason": "First Phase 3 week, opening on the system left depleted by the 6/13 Power Red and the 6/14 basketball-AM + hockey-PM double. Phase 2 closed ready (strength held through the maintenance bridge, achilles green ~13 wks, the HSR bolt-on fix hit 3/3 in Wk 14, body comp broke its plateau to 219.5/22.7%), so power realization is the right next block. But the donation reshapes HOW it opens. Power (ATP-PCr) is the quality least affected by reduced red-cell mass, while aerobic capacity and between-effort recovery are down for ~4-6+ weeks (Meurrens 2016 PMID 27873242; Kiss 2015 PMID 25668261; knowledge/blood-donation-recovery.md). So Wk 15: (1) VJ BASELINE goes first on Wed, on the freshest legs, before any lifting - it has been deferred 3+ times and Phase 3 is un-evaluable against goal #3 without it (Markovic 2007, Strong); a power baseline is valid even on a depleted week since power is spared. (2) HOLD all loads and express them fast (velocity / compensatory acceleration) rather than adding weight - no PR chase on a depleted system (Baker 2001 PMID 11710401, Moderate). (3) Lower power via contrast/complex - heavy submaximal lift paired with an explosive jump for post-activation potentiation (Suchomel 2016; Markovic 2007). (4) Plyo held at ~40 contacts Fri - a realization/maintenance dose, down from the 60-contact Phase 2 peak (Ebben 2010). (5) HSR bolted onto Wed/Thu/Fri (Beyer 2015 PMID 26018970, Strong) - the durability fix that worked. (6) Long rest (3-5 min) between power sets and NO conditioning finishers for ~4-6 weeks. Auto-regulate everything aerobic by RPE (reads 1-2 points high). STANDING GAPS: protein 0% logged since 5/11 (one daily read: 40g-by-lunch Y/N); strength-target re-horizon still pending athlete sign-off (targets unchanged at TB DL 385 / Squat 315 / Bench 225). Wk 16 is the next scheduled deload - lean toward honoring it given the donation's systemic recovery demand.",
       "schedule": [
         {
@@ -3775,100 +3775,97 @@
           "day": "Tue",
           "date": "2026-06-16",
           "type": "game",
-          "desc": "Basketball PM (auto-regulate - wind still down from the donation)",
+          "status": "done",
+          "desc": "Basketball PM, done (auto-regulated). Sleep poor the prior 2 nights; calves tight the next morning.",
           "longDesc": "Tue PM basketball as usual. Auto-regulate by feel: expect elevated RPE/HR, shorter bursts, full recovery between possessions. Power and skill are unaffected; conditioning is. A-priority game stays on."
         },
         {
           "day": "Wed",
           "date": "2026-06-17",
-          "type": "training",
-          "desc": "Phase 3 Wk 1: VJ BASELINE (first, fresh) + Upper power + HSR 1/3. Loads held - no PR chase on a depleted system.",
-          "exercises": [
-            {
-              "name": "Vertical Jump Test (baseline)",
-              "sets": "3 attempts",
-              "notes": "FIRST, before any lifting, on the freshest legs of the week (Mon rest, Tue game). Jump-reach minus standing-reach vs a wall; record the best of 3. Goal #3 has had NO baseline through the entire Phase 2 plyo block - this finally establishes it so Phase 3 power work can be evaluated (Markovic 2007, Strong). Power is the quality LEAST affected by the Power Red, so a depleted-week baseline is acceptable; note the donation alongside the number."
-            },
-            {
-              "name": "Bench Press",
-              "sets": "4x4",
-              "weight": "155 lbs",
-              "notes": "Phase 3 = move the bar with max intent (compensatory acceleration), not heavier. Hold 155, RPE ~7, leave 2-3 in reserve. No PR push Wk 15 (Power Red). Bench is the on-pace lift toward 225x5."
-            },
-            {
-              "name": "Lat Pulldown",
-              "sets": "4x4",
-              "notes": "Athlete swap (6/17) for Weighted Pull-up - re-applies the formalized Phase 2 pulldown either-or (the combined 'Weighted Pull-up / Lat Pulldown' prescription). Same vertical-pull slot and Phase 3 intent: explosive concentric, controlled eccentric, RPE ~7. Hold last clean load - top sets ran 145-150 through Wks 11-13 (the 6/10 130 read was flagged as a likely different machine/grip, not a regression)."
-            },
-            {
-              "name": "DB Push Press",
-              "sets": "4x3",
-              "weight": "as prescribed",
-              "notes": "Vertical press with explosive leg drive - the upper-body power expression for Phase 3. 2-3 min rest between sets for full quality."
-            },
-            {
-              "name": "Bent Over Row (inverted grip)",
-              "sets": "3x8",
-              "notes": "Athlete swap (6/17) back to the committed row-of-record - supinated/inverted-grip BB bent-over row, formalized May 8 after the Apr 30 + May 7 deviations (start 145, progress per Section 1); the Phase 3 schedule had reverted to Chest-Supported. Biases lower lat + biceps, matches the preferred mechanic. SEQUENCING NOTE: unlike the chest-supported variant it is unsupported and hip-hinged, adding erector/lumbar demand ~24h before Thu's heavy TB DL 4x3 @ 245 + Back Squat 3x3 (cf. the Apr 29 cumulative-lumbar discomfort flag) - keep it controlled and submaximal (RPE ~7-8), don't grind."
-            },
-            {
-              "name": "Cable Woodchop",
-              "sets": "3x10/side",
-              "notes": "Core / rotational power."
-            },
-            {
-              "name": "Seated Calf Raise (HSR)",
-              "sets": "3x6",
-              "weight": "150 lbs",
-              "notes": "HSR 1 of 3, bolted onto the lift day (the proven Wk 14 fix). Soleus-bias, 3s/3s tempo."
-            }
-          ],
-          "longDesc": "First Phase 3 session. The VJ baseline is non-negotiable and goes first, before any fatigue. Phase 3 intent is velocity and intent, not load - hold all weights and move them fast. HSR rides the session."
+          "type": "rest",
+          "desc": "Rest (unplanned) - the prescribed Wed upper-power session shifted to Thu AM (logged 6/18). VJ baseline skipped.",
+          "longDesc": "Wednesday went unused: the Phase 3 upper-power session and the VJ baseline prescribed here both moved to Thursday (upper run Thu AM; VJ still skipped, the 4th+ deferral). Effectively an extra rest day on a Power-Red-depleted week - not harmful, but the fresh-legs VJ window was lost."
         },
         {
           "day": "Thu",
           "date": "2026-06-18",
           "type": "training",
-          "desc": "Phase 3 Wk 1: Lower power (contrast pairing) + HSR 2/3. Submaximal speed-strength, extended rest.",
+          "status": "done",
+          "desc": "Two-a-day, both done: Upper Power (AM) and Lower Power contrast/PAP (PM). HSR 1 and 2 of 3. VJ baseline still deferred.",
           "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "4x4",
+              "weight": "155 lbs",
+              "notes": "AM. Held 155 (velocity hold, no PR push)."
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "4x5",
+              "weight": "140/145/150/155 lbs",
+              "notes": "AM. Ramp to a 155 top set - a new high. Vertical-pull swap re-applied."
+            },
+            {
+              "name": "Bent Over Row (inverted grip)",
+              "sets": "4x5",
+              "weight": "155 lbs",
+              "notes": "AM. Row-of-record swap re-applied; 155 for 4x5."
+            },
+            {
+              "name": "DB Push Press",
+              "sets": "3x6",
+              "weight": "35 lb DBs",
+              "notes": "AM. Ran 3x6 volume rather than the prescribed explosive 4x3 power."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x10",
+              "weight": "155 lbs",
+              "notes": "AM. HSR 1 of 3. 3x10 sits at the endurance end; heavier/fewer next time."
+            },
             {
               "name": "Trap Bar Deadlift",
               "sets": "4x3",
               "weight": "245 lbs",
-              "notes": "Phase 3 contrast: heavy-ish but submaximal (RPE ~7), moved with max intent, paired with the box jump below for post-activation potentiation (Suchomel 2016; Markovic 2007). Hold 245 - no PR push (Power Red). 3-5 min rest."
+              "notes": "PM. Contrast/PAP with the box jumps. Held 245, no PR push."
             },
             {
               "name": "Box Jump (step down)",
               "sets": "4x3",
               "weight": "24 in box",
-              "notes": "Contrast partner to the TB DL - perform 1-2 min after each heavy DL set (PAP). 12 contacts. Step down per achilles protocol. Max intent, full recovery between."
+              "notes": "PM. 12 contacts, 1-2 min after each DL set (PAP). Step down."
             },
             {
               "name": "Back Squat",
               "sets": "3x3",
               "weight": "160 lbs",
-              "notes": "Hold 160 (cashed 6/5), explosive concentric, RPE ~7. No PR push Wk 15."
+              "notes": "PM. Held 160, explosive concentric, no PR push."
             },
             {
               "name": "Glute-Ham Raise / Ham Curl",
               "sets": "3x8",
-              "notes": "Posterior-chain slot, moderate load."
+              "notes": "PM. Posterior-chain slot."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg",
               "weight": "BW + 72 lb/leg",
-              "notes": "HSR 2 of 3, bolted on. Standing, gastroc-bias, 3s/3s tempo."
+              "notes": "PM. HSR 2 of 3."
             }
           ],
-          "longDesc": "Lower power via contrast/complex (heavy submaximal lift + explosive jump for PAP). Loads held at maintenance given the donation; the adaptation target is rate of force development, not 1RM. Long rest (3-5 min) protects both quality and the aerobic-recovery deficit from the Power Red."
+          "longDesc": "Schedule shifted: the Wed upper-power session and this lower-power session both ran Thursday as a two-a-day (upper AM, lower PM) on a Power-Red-depleted system after two poor nights. Upper: bench held 155, lat pulldown PR'd to a 155 top set, push press ran volume rather than the prescribed power triples. Lower: completed as prescribed (TB DL 245 / Squat 160 held, box-jump PAP pairing). HSR 1 and 2 of 3 banked; Fri plyo closes 3/3. VJ baseline skipped again."
         },
         {
           "day": "Fri",
           "date": "2026-06-19",
           "type": "training",
-          "desc": "Phase 3 Wk 1: Plyo + jump power (~40 contacts) + HSR 3/3. 48h before the weekend game.",
+          "desc": "Phase 3 Wk 1: VJ baseline (finally, in the warm-up), then plyo ~40 contacts and HSR 3/3. 48h before the weekend game. Trim contacts if calves or achilles flag.",
           "exercises": [
+            {
+              "name": "Vertical Jump Test (baseline)",
+              "sets": "3 attempts",
+              "notes": "Salvage the deferred baseline here: once fully warm (calves especially), 3 max attempts before the plyo work - the max box jumps double as a PAP primer. Legs are post-two-a-day, so this reads below a true fresh baseline; record the best of 3, annotate 'post-two-a-day, Power-Red week', and re-test clean in the Wk 16 deload. An imperfect number beats a 5th deferral (Markovic 2007, Strong)."
+            },
             {
               "name": "Box Jump (step down)",
               "sets": "4x4",

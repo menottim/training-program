@@ -1926,6 +1926,44 @@
         }
       ],
       "notes": "Phase 3 Wk 15 upper-power session, run Thu 6/18 AM (the Wed 6/17 prescription shifted a day; Wed was effectively rest). Tagged Thu Phase 3 to keep bench/pulldown/row progression in one progress table, per the upper-day convention. VJ BASELINE SKIPPED AGAIN (athlete-confirmed) - the 4th+ deferral; goal #3 (vertical jump) remains un-baselined entering the power phase whose primary purpose is VJ (Markovic 2007, Strong). Plan to capture it Fri 6/19 before plyo while legs are relatively fresh. Cable Woodchop (core) not reported. Sleep and achilles not reported for this session despite the Wed-AM calf tightness flagged earlier - both still open. Bench held 155 per the velocity-hold decision; lat pulldown PR'd to a 155 top set; push press ran volume rather than power. Lower-power session planned same day PM = a Thu two-a-day on a Power-Red-depleted system after two prior poor nights."
+    },
+    {
+      "date": "2026-06-18",
+      "type": "training",
+      "activity": "Lower Power (contrast) + HSR (Wed Phase 3)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "4x3",
+          "weight": "245 lbs",
+          "notes": "Contrast/PAP lift, paired with the box jumps for post-activation potentiation (Suchomel 2016; Markovic 2007). Held 245 at RPE ~7, moved with max intent, no PR push (Power Red week). 4th hold at 245 (progressed 5/27; held 6/5, 6/11, now 6/18)."
+        },
+        {
+          "name": "Box Jump (step down)",
+          "sets": "4x3",
+          "weight": "24 in box",
+          "notes": "12 contacts, performed 1-2 min after each heavy DL set for PAP. Step down per achilles protocol, max-height intent, full recovery between."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x3",
+          "weight": "160 lbs",
+          "notes": "Held 160 at RPE ~7, explosive concentric, no PR push (Power Red week)."
+        },
+        {
+          "name": "Glute-Ham Raise / Ham Curl",
+          "sets": "3x8",
+          "weight": "as prescribed",
+          "notes": "Posterior-chain slot, moderate load."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 72 lb/leg",
+          "notes": "HSR 2 of 3 via the bolt-on. Standing, gastroc-bias, 3s/3s tempo."
+        }
+      ],
+      "notes": "Phase 3 Wk 15 lower-power (contrast/PAP) session, done Thu 6/18 PM as the second half of a two-a-day (Upper + Power was the AM session). Completed as prescribed - all loads held at the Phase 3 velocity-hold targets (TB DL 245, Back Squat 160), no PR push (Power Red week). HSR 2 of 3 banked (Thu AM seated = 1/3; Fri plyo standing = 3/3 on track for Beyer 3/3). Tagged Wed Phase 3 per the lower-day convention to keep the lower progression in one progress table. Run on a Power-Red-depleted system after two poor nights and Wed-AM calf tightness; auto-regulated, completed as RXd with no red flags reported. OPEN: VJ baseline not reported for tonight (the recommended fresh-legs-before-lower window) - appears still skipped, the 4th+ deferral. Sleep and achilles not reported for either Thu session. NOTE: box jumps tonight + Fri plyo = jumps on back-to-back days plus tonight's heavy DL, on already-tight calves - watch the achilles Fri and trim plyo contacts if it speaks up (the ~13-week green streak is the program's anchor signal)."
     }
   ],
   "scienceReviews": [

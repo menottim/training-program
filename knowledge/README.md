@@ -23,6 +23,7 @@ Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each
 | [hormones-testosterone.md](hormones-testosterone.md) | Testosterone panel interpretation (total vs free vs bioavailable), SHBG physiology, EMAS hypogonadism thresholds, estradiol in men, prolactin, causes of elevated SHBG, applied to Menotti's July 2025 panel | 2026-04-21 |
 | [pre-game-fueling.md](pre-game-fueling.md) | Shelf-stable pre-game snack stock guide: tiered by pre-exercise window (1-2 hr, 2-3 hr, 3+ hr), specific brands and nutrition data, stock lists for home/gym/office, decision tree | 2026-04-21 |
 | [blood-donation-recovery.md](blood-donation-recovery.md) | Power Red / whole blood donation: acute VO2max hit, two-clock recovery (blood volume vs red-cell mass), DRCA extrapolation, iron's role for repeat donors, training modulation post-donation | 2026-06-14 |
+| [calf-strain-rehab.md](calf-strain-rehab.md) | Acute medial gastrocnemius strain ("tennis leg"): can't-miss differentials (Achilles rupture, DVT, compartment syndrome), PEACE & LOVE acute care, the NSAID/ibuprofen verdict, phased criteria-based rehab, return-to-sport criteria/timelines, recurrence risk, modifications for bilateral Achilles tendinopathy | 2026-06-23 |
 
 ## When to consult
 

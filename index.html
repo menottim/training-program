@@ -742,6 +742,10 @@
   .modified-day.type-rest .md-type { background: #e9ecef; color: var(--text-muted); }
   .modified-day.type-game { background: #fff3f3; }
   .modified-day.type-game .md-type { background: var(--accent); color: #fff; }
+  .modified-day.type-rehab { background: #fff8e1; }
+  .modified-day.type-rehab .md-type { background: var(--warning); color: #fff; }
+  .modified-day.type-rehab .exercise-list li::before { color: var(--warning); }
+  .modified-day.type-rehab .exercise-list .ex-weight { color: #e65100; font-weight: 600; }
   .modified-day .exercise-list {
     margin: 4px 0 0;
     padding: 0;
@@ -2373,7 +2377,7 @@
     if (!mw) return;
 
     var typeLabels = {
-      'game': 'Game', 'hotel': 'Hotel', 'gym-deload': 'Gym Deload', 'rest': 'Rest'
+      'game': 'Game', 'hotel': 'Hotel', 'gym-deload': 'Gym Deload', 'rest': 'Rest', 'rehab': 'Rehab'
     };
 
     var todayStr = today.getFullYear() + '-' +

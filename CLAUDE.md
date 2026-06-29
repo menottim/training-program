@@ -309,6 +309,12 @@ When performing a science review:
 - GHR machine available (preferred over Nordic hamstring curl)
 - __No fractional plates available.__ Smallest barbell plate increment is +5 lb. This affects Section 1 progression-stall protocol: the "microloading — fractional plates or 2.5 lb increases" lever is not available. Default to standard +5 lb double-progression rule (2 clean sessions at same weight → next +5). When a lift stalls, skip the microload step and go directly to "add one set at current weight before increasing load" (volume before intensity) or the 10% reset.
 
+## Exercise Prescription Conventions
+
+- __Always specify ROM (range of motion) in every exercise prescription.__ When writing exercises into `modifiedWeeks` plans (or otherwise prescribing movements), include a ROM cue, not just sets/reps/load. ROM is a programmed variable, not an afterthought — it changes which tissue is loaded and at what length.
+  - __Calf raises specifically:__ state floor-range vs heels-off-a-platform (deficit). For a healing gastroc strain or reactive achilles, keep standing/knee-straight raises to floor range (up to full plantarflexion, down to neutral) and earn the heel-drop deficit back only once stair descent is pain-free and full active ROM is symptomless. Seated/bent-knee raises are soleus-biased and gentler on the gastroc, so they tolerate range sooner, but the bottom still stays pain-free early.
+  - __Generally:__ note partial vs full ROM, any end-range to avoid, tempo where it matters (e.g., HSR 3s/3s), and the depth/stretch target. The renderer surfaces exercise `notes` on the today-card, so ROM cues belong in the `notes` field.
+
 ---
 
 ## Science-Based Programming Guidelines

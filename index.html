@@ -253,9 +253,10 @@
     padding: 0.4rem 0;
     border-bottom: 1px solid var(--border);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    gap: 1rem;
+    gap: 0.25rem 1rem;
     font-size: 0.9rem;
   }
   .today-card-checklist li:last-child { border-bottom: none; }
@@ -263,6 +264,7 @@
   .today-card-checklist .ex-name a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--text-muted); }
   .today-card-checklist .ex-sets { color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
   .today-card-checklist .ex-weight { color: var(--accent2); font-weight: 600; font-size: 0.85rem; white-space: nowrap; }
+  .today-card-checklist .ex-note { flex-basis: 100%; color: var(--text-muted); font-size: 0.82rem; line-height: 1.4; }
   .today-card-next {
     font-size: 0.8rem;
     color: var(--text-muted);
@@ -2322,9 +2324,11 @@
           var sets = ex.sets ? '<span class="ex-sets">' + esc(ex.sets) + '</span>' : '';
           var weight = ex.weight ? '<span class="ex-weight">@ ' + esc(ex.weight) + '</span>' : '';
           var meta = sets + (sets && weight ? ' ' : '') + weight;
+          var note = ex.notes ? '<div class="ex-note">' + esc(ex.notes) + '</div>' : '';
           return '<li>' +
             '<span class="ex-name">' + nameHTML + '</span>' +
             (meta ? '<span>' + meta + '</span>' : '') +
+            note +
           '</li>';
         }).join('') +
       '</ul>';

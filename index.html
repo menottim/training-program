@@ -2300,6 +2300,7 @@
       else if (todayDay.type === 'rest') { typeClass = 'is-rest'; sessionLabel = 'Rest'; }
       else if (todayDay.type === 'hotel') { typeClass = 'is-training'; sessionLabel = 'Hotel session'; }
       else if (todayDay.type === 'gym-deload') { typeClass = 'is-training'; sessionLabel = 'Gym deload'; }
+      else if (todayDay.type === 'rehab') { typeClass = 'is-training'; sessionLabel = 'Rehab'; }
       title = todayDay.desc || sessionLabel;
       if (todayDay.status === 'done') typeClass += ' is-done';
     } else {

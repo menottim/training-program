@@ -2002,6 +2002,25 @@
         { "name": "Seated Cable Row", "sets": "3x10", "weight": "130/135/140 lbs" }
       ],
       "notes": "Upper-body session kept the Phase 3 upper line alive while the lower block stays halted for the acute left medial gastroc strain (injured 6/21, day 4). Bench Press 4x4 at 160 lbs - first load above the 155 lb ceiling held since 5/28 (155 on 5/28, 6/10, and 6/18), a +5 lb top-end PR. DB Push Press held at 35 lb DBs (matching 6/18, up from 30 on 5/28). Seated Cable Row 3x10 ascending 130/135/140 - a higher-rep volume scheme vs the only prior cable-row entry (5/28, 5-rep sets topping 145). No calf/HSR work, correct for the rehab block. COACHING FLAG: 6/25 was prescribed as calf-rehab rest, and DB push press uses a leg dip-and-drive with loaded ankle plantarflexion that engages the gastroc - at day 4 of a Grade I-II medial gastroc strain that explosive plantarflexion drive is the one upper-day movement worth caution; strict overhead press (no leg drive) is the safer substitute until the calf clears isometrics. Sleep and calf pain during/after not yet reported - to be appended."
+    },
+    {
+      "date": "2026-07-01",
+      "type": "training",
+      "activity": "Upper Body (Wed Phase 3)",
+      "exercises": [
+        { "name": "Bench Press", "sets": "4x5", "weight": "160 lbs" },
+        { "name": "Strict Overhead Press", "sets": "3x6", "weight": "35 lb DBs" },
+        { "name": "Seated Cable Row", "sets": "3x8", "weight": "130 lbs" },
+        { "name": "Seated Calf Raise (HSR)", "sets": "3x10", "weight": "95 lbs" }
+      ],
+      "notes": "Calf-rehab-week upper day per the Wk 17 Wed plan - strict OH press subbed for DB push press to avoid loading ankle plantarflexion on the healing gastroc. Bench 4x5x160 - full prescribed reps at the 6/25 top-end weight (that session was 4x4x160), first clean session at this weight/rep target. Seated Calf Raise (HSR) 3x10x95 logged as the held rehab load for the week."
+    },
+    {
+      "date": "2026-07-03",
+      "type": "training",
+      "activity": "Calf rehab progression (Wk 17 summary, 6/26-7/3)",
+      "details": "Daily double-leg calf raises through the week per the Wk 17 rehab plan (Mon 6/29 first de-loaded HSR + isometrics, Tue 6/30 calf-sparing lower, Wed 7/1 HSR hold + upper, Fri 7/3 soleus + calf-sparing lower #2), progressing into single-leg calf raises entering Wk 18.",
+      "notes": "Athlete-reported end-of-week recall (exact per-day sets/reps/weights not captured): some pain during sessions but strength returning; stair descent pain improving versus the 6/29 review flag (previously sharp/unpredictable on specific steps). Exact per-day numeric pain scores (during / next-morning) were not logged, so the Silbernagel 24-hour return-to-baseline rule can't be precisely verified from this entry - trend is qualitatively positive."
     }
   ],
   "scienceReviews": [

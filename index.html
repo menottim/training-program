@@ -736,6 +736,28 @@
     margin-bottom: 4px;
     font-weight: 600;
   }
+  .modified-day .md-detail { margin-top: 4px; }
+  .modified-day .md-detail summary {
+    cursor: pointer;
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: var(--accent2);
+    list-style: none;
+    outline: none;
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  .modified-day .md-detail summary::-webkit-details-marker { display: none; }
+  .modified-day .md-detail summary::before { content: "\25b8 "; }
+  .modified-day .md-detail[open] summary::before { content: "\25be "; }
+  .modified-day .md-detail summary:hover { color: var(--accent); }
+  .modified-day .md-long {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+    margin-top: 4px;
+  }
   .modified-day.type-hotel { background: #fff8e1; }
   .modified-day.type-hotel .md-type { background: var(--warning); color: #fff; }
   .modified-day.type-gym-deload { background: #e8f5e9; }
@@ -807,36 +829,34 @@
   }
   @media (max-width: 700px) {
     .tab-btn { font-size: 0.7rem; padding: 0.6rem 0.8rem; }
-    .today-summary { font-size: 0.7rem; padding: 0.4rem 0.75rem; }
+    .today-summary { display: none; }  /* redundant with the Today Card on mobile */
     .log-form-row { flex-direction: column; }
 
-    /* Mobile: horizontal scrolling 7-day strip instead of tall stack.
-       Today Card above already shows today's full exercise list, so the
-       Modified Week card on mobile just needs to convey week status. */
+    /* Mobile: vertical day list - one day per row, glanceable headline,
+       tap a day to expand its exercises + coaching detail. */
     .modified-week-grid {
-      grid-template-columns: repeat(7, 110px);
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scroll-snap-type: x mandatory;
+      grid-template-columns: 1fr;
     }
     .modified-day {
-      border-right: 1px solid var(--border);
-      border-bottom: none;
-      min-height: 90px;
-      scroll-snap-align: start;
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      min-height: 0;
+      padding: 0.6rem 0.85rem;
     }
-    .modified-day:last-child { border-right: none; }
-    .modified-day .exercise-list,
-    .modified-day .md-next-up {
-      display: none;
+    .modified-day:last-child { border-bottom: none; }
+    .modified-day .md-head {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0 0.4rem;
     }
+    .modified-day .md-head .md-name,
+    .modified-day .md-head .md-date,
+    .modified-day .md-head .md-type { margin-bottom: 0; }
     .modified-day .md-desc {
-      font-size: 0.65rem;
-      line-height: 1.3;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      font-size: 0.82rem;
+      line-height: 1.35;
+      margin-top: 2px;
     }
 
     /* Weekly overview: scroll horizontally instead of squishing 7 columns */
@@ -2401,12 +2421,13 @@
             var nameHTML = exerciseLinks[ex.name]
               ? '<a href="' + esc(exerciseLinks[ex.name]) + '" target="_blank">' + esc(ex.name) + '</a>'
               : esc(ex.name);
-            var detail = nameHTML + ' ' + esc(ex.sets);
+            var detail = nameHTML + (ex.sets ? ' ' + esc(ex.sets) : '');
             if (ex.weight) detail += ' <span class="ex-weight">@ ' + esc(ex.weight) + '</span>';
             return '<li>' + detail + '</li>';
           }).join('') +
         '</ul>';
       }
+      var longHTML = d.longDesc ? '<div class="md-long">' + linkifyText(d.longDesc) + '</div>' : '';
       // On rest days, show "Next up" with the next non-rest day's description
       var nextUpHTML = '';
       if (d.type === 'rest') {
@@ -2418,14 +2439,21 @@
           }
         }
       }
+      // Collapse exercises + coaching detail behind a per-tile toggle so the
+      // grid stays glanceable; collapsed, a tile shows only day/type/headline.
+      var detailInner = exHTML + longHTML + nextUpHTML;
+      var detailHTML = detailInner
+        ? '<details class="md-detail"><summary>detail</summary>' + detailInner + '</details>'
+        : '';
       var typeLabel = d.status === 'done' ? '✓ Done' : (typeLabels[d.type] || d.type);
       return '<div class="modified-day ' + typeClass + todayClass + doneClass + '">' +
-        '<div class="md-name">' + esc(d.day) + '</div>' +
-        '<div class="md-date">' + d.date.slice(5).replace('-', '/') + '</div>' +
-        '<div class="md-type">' + esc(typeLabel) + '</div>' +
+        '<div class="md-head">' +
+          '<div class="md-name">' + esc(d.day) + '</div>' +
+          '<div class="md-date">' + d.date.slice(5).replace('-', '/') + '</div>' +
+          '<div class="md-type">' + esc(typeLabel) + '</div>' +
+        '</div>' +
         '<div class="md-desc">' + linkifyText(d.desc) + '</div>' +
-        exHTML +
-        nextUpHTML +
+        detailHTML +
       '</div>';
     }).join('');
 

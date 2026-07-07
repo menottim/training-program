@@ -192,6 +192,8 @@ After logging, review recent trends and surface observations:
 
 __Core principle__: the live site at https://menottim.github.io/training-program/ must reflect current coaching adjustments, not stale defaults. Whenever a coaching conversation produces a session-level change (e.g., "TB DL 5x5 at 230 this Wed as a stall-breaker" or "skip the deload this week"), capture that change in `data.json` so the renderer picks it up.
 
+__Keep tiles glanceable — `desc` is a short headline, not a paragraph.__ The renderer prints each day's `desc` verbatim as the headline in three places: the top summary bar, the Today Card title, and every week-grid tile. Keep `desc` to a short headline (roughly 8 words or fewer, no full sentences, no em-dashes, no "+"). Put all reasoning, cues, load rationale, ROM notes, and citations in `longDesc` — it renders behind a per-tile "detail" toggle and the Today Card's "Coaching detail" — and put specific sets/weights in the `exercises` array. Same at the week level: keep `subtitle` short and put the full rationale in `reason`. A long `desc` floods the schedule and makes it unreadable on a phone (this is a recurring failure mode).
+
 __How to capture__:
 1. For the current training week, use `modifiedWeeks[<week>]` with a __full 7-day schedule__ in the `schedule` array (not just the one day that differs). The renderer replaces the default week-grid with this schedule, so partial schedules leave blank days visible on the site.
 2. For session-level adjustments within a day (specific weight, rep scheme change, added/removed exercise), include the exercises array with current target weights.

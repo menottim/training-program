@@ -265,6 +265,13 @@
   .today-card-checklist .ex-sets { color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
   .today-card-checklist .ex-weight { color: var(--accent2); font-weight: 600; font-size: 0.85rem; white-space: nowrap; }
   .today-card-checklist .ex-note { flex-basis: 100%; color: var(--text-muted); font-size: 0.82rem; line-height: 1.4; }
+  /* History-aware weight display */
+  .wt-up { color: var(--success); font-weight: 700; }
+  .wt-down { color: var(--accent); font-weight: 700; }
+  .wt-hold { color: var(--text-muted); font-weight: 700; }
+  .wt-carried { color: var(--text-muted); font-style: italic; font-weight: 400; font-size: 0.85em; }
+  .ex-hist { color: var(--text-muted); font-size: 0.75rem; }
+  .today-card-checklist .ex-hist { flex-basis: 100%; margin-top: 1px; }
   .today-card-next {
     font-size: 0.8rem;
     color: var(--text-muted);
@@ -2006,6 +2013,58 @@
     });
   });
 
+  // ─── History-aware weight display (hybrid: coach target wins, else carry last) ───
+  // Canonical folding so plan exercise names match the log's fragmented names.
+  var exerciseCanon = {
+    'barbell bench press': 'bench press',
+    'cable lat pulldown': 'lat pulldown',
+    'hip thrust (machine)': 'hip thrust',
+    'seated calf raise hsr': 'seated calf raise (hsr)',
+    'leg extension': 'seated leg extension'
+  };
+  function canonEx(name) {
+    var k = (name || '').toLowerCase().trim();
+    return exerciseCanon[k] || k;
+  }
+  // Most-recent logged {weight, sets, date} per canonical exercise (last write wins = newest).
+  var lastLoggedMap = {};
+  activityLog.forEach(function(entry) {
+    if (!entry.exercises) return;
+    entry.exercises.forEach(function(ex) {
+      if (!ex.weight) return;
+      lastLoggedMap[canonEx(ex.name)] = { weight: ex.weight, sets: ex.sets, date: entry.date };
+    });
+  });
+  function lastLogged(name) { return lastLoggedMap[canonEx(name)] || null; }
+  // Single positive weight number (ignoring BW), else null — used only for the
+  // progression marker, so a compound string like "160 (+5 to 165)" or a ramp
+  // "140/145/150/155" yields null (no marker) rather than a misleading arrow.
+  function soleWeightNum(w) {
+    if (!w) return null;
+    var s = String(w).toLowerCase().replace(/\bbw\b|bodyweight/g, ' ');
+    var nums = (s.match(/\d+(?:\.\d+)?/g) || []).map(Number).filter(function(n) { return n > 0; });
+    return nums.length === 1 ? nums[0] : null;
+  }
+  function shortDate(d) { return d ? d.slice(5).replace('-', '/').replace(/^0/, '') : ''; }
+  // Resolve a plan exercise to {target, carried, marker, last} for display.
+  function exWeightInfo(ex) {
+    var last = lastLogged(ex.name);
+    var target = ex.weight || (last ? last.weight : null);
+    var carried = !ex.weight && !!last;
+    var marker = '';
+    if (last && ex.weight) {
+      var t = soleWeightNum(ex.weight), l = soleWeightNum(last.weight);
+      if (t != null && l != null) marker = t > l ? 'up' : (t < l ? 'down' : 'hold');
+    }
+    return { target: target, carried: carried, marker: marker, last: last };
+  }
+  function markerHTML(m) {
+    if (m === 'up') return ' <span class="wt-up" title="heavier than last">▲</span>';
+    if (m === 'down') return ' <span class="wt-down" title="lighter than last (de-load)">▼</span>';
+    if (m === 'hold') return ' <span class="wt-hold" title="same as last">=</span>';
+    return '';
+  }
+
   const startDate = new Date(athlete.startDate + 'T00:00:00');
   const today = new Date();
   today.setHours(0,0,0,0);
@@ -2341,14 +2400,19 @@
           var nameHTML = exerciseLinks[ex.name]
             ? '<a href="' + esc(exerciseLinks[ex.name]) + '" target="_blank">' + esc(ex.name) + '</a>'
             : esc(ex.name);
+          var info = exWeightInfo(ex);
           var sets = ex.sets ? '<span class="ex-sets">' + esc(ex.sets) + '</span>' : '';
-          var weight = ex.weight ? '<span class="ex-weight">@ ' + esc(ex.weight) + '</span>' : '';
+          var weight = info.target
+            ? '<span class="ex-weight">@ ' + esc(info.target) + (info.carried ? ' <span class="wt-carried">(carried)</span>' : '') + markerHTML(info.marker) + '</span>'
+            : '';
           var meta = sets + (sets && weight ? ' ' : '') + weight;
           var note = ex.notes ? '<div class="ex-note">' + esc(ex.notes) + '</div>' : '';
+          var hist = info.last ? '<div class="ex-hist">last ' + esc(info.last.weight) + (info.last.sets ? ' · ' + esc(info.last.sets) : '') + ' · ' + shortDate(info.last.date) + '</div>' : '';
           return '<li>' +
             '<span class="ex-name">' + nameHTML + '</span>' +
             (meta ? '<span>' + meta + '</span>' : '') +
             note +
+            hist +
           '</li>';
         }).join('') +
       '</ul>';
@@ -2421,8 +2485,10 @@
             var nameHTML = exerciseLinks[ex.name]
               ? '<a href="' + esc(exerciseLinks[ex.name]) + '" target="_blank">' + esc(ex.name) + '</a>'
               : esc(ex.name);
+            var info = exWeightInfo(ex);
             var detail = nameHTML + (ex.sets ? ' ' + esc(ex.sets) : '');
-            if (ex.weight) detail += ' <span class="ex-weight">@ ' + esc(ex.weight) + '</span>';
+            if (info.target) detail += ' <span class="ex-weight">@ ' + esc(info.target) + (info.carried ? ' (carried)' : '') + markerHTML(info.marker) + '</span>';
+            if (info.last) detail += ' <span class="ex-hist">· last ' + esc(info.last.weight) + ' ' + shortDate(info.last.date) + '</span>';
             return '<li>' + detail + '</li>';
           }).join('') +
         '</ul>';

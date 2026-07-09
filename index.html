@@ -2020,7 +2020,9 @@
     'cable lat pulldown': 'lat pulldown',
     'hip thrust (machine)': 'hip thrust',
     'seated calf raise hsr': 'seated calf raise (hsr)',
-    'leg extension': 'seated leg extension'
+    'leg extension': 'seated leg extension',
+    'bent over row (inverted grip)': 'bent over barbell row',
+    'bent over barbell row (inverted grip)': 'bent over barbell row'
   };
   function canonEx(name) {
     var k = (name || '').toLowerCase().trim();
@@ -3463,7 +3465,7 @@
 
     var exercisePresets = [
       { group: 'Lower Body', items: ['Trap Bar Deadlift', 'Back Squat', 'Bulgarian Split Squat', 'Goblet Squat', 'Glute Ham Raise', 'Single-Leg RDL', 'Hip Thrust', 'Hip Thrust (Machine)', 'Lateral Band Walk', 'Single-Leg Balance', 'Leg Curl Machine'] },
-      { group: 'Upper Body', items: ['Bench Press', 'DB Bench Press', 'DB Overhead Press', 'DB Push Press', 'Lat Pulldown', 'Weighted Pull-up', 'Pull-up (Assisted)', 'Bent Over Row (inverted grip)', 'Face Pull', 'Pallof Press', 'Cable Woodchop', 'Cable Pull-Through', 'Cable Lat Pulldown'] },
+      { group: 'Upper Body', items: ['Bench Press', 'DB Bench Press', 'Strict Overhead Press', 'DB Overhead Press', 'DB Push Press', 'Lat Pulldown', 'Weighted Pull-up', 'Pull-up (Assisted)', 'Bent Over Barbell Row', 'Bent Over Row (inverted grip)', 'Face Pull', 'Pallof Press', 'Cable Woodchop', 'Cable Pull-Through', 'Cable Lat Pulldown'] },
       { group: 'HSR / Calf', items: ['Seated Calf Raise (HSR)', 'Standing Calf Raise (HSR)', 'Single-Leg Calf Raise (HSR)'] },
       { group: 'Mobility', items: ['Banded Ankle Dorsiflexion'] }
     ];
@@ -3489,8 +3491,8 @@
       { name: 'Bench Press', sets: '4x5' },
       { name: 'Lat Pulldown', sets: '4x6' },
       { name: 'DB Bench Press', sets: '3x8' },
-      { name: 'Bent Over Row (inverted grip)', sets: '4x5' },
-      { name: 'DB Overhead Press', sets: '3x8' },
+      { name: 'Bent Over Barbell Row', sets: '4x5' },
+      { name: 'Strict Overhead Press', sets: '3x8' },
       { name: 'Face Pull', sets: '3x15' },
       { name: 'Pallof Press', sets: '3x10/side' },
       { name: 'Cable Woodchop', sets: '3x6/side' }

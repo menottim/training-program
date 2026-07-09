@@ -196,7 +196,7 @@ __Keep tiles glanceable — `desc` is a short headline, not a paragraph.__ The r
 
 __Every prescribed exercise shows a concrete target weight (history-aware renderer).__ The renderer resolves each exercise's displayed weight as a hybrid: if `weight` is set, that coach target is shown with a ▲/=/▼ marker versus the most recent logged weight; if `weight` is omitted, the site __carries forward__ the last logged weight for that exercise and tags it `(carried)`, and always shows a muted `last <weight> · <date>` reference. So the __default of hold__ (repeat last) is automatic — omit `weight` to hold, and set an explicit `weight` only to (a) progress per double progression, (b) de-load, or (c) override a carry-forward that would be wrong (e.g., a rehab lift whose last logged load pre-dates the injury — set the current gated-safe number so the pre-injury load can't carry forward). Put qualitative gates ("step up only after clean mornings") in `notes`, never as the whole `weight`. Derive every target from logged history plus the progression model in Section 1 (double progression, phase RPE, reactive deload, rehab gating). Never ship an exercise whose only weight is a vague word like "moderate."
 
-__Canonical exercise names (so history matches the plan).__ The renderer's `exerciseCanon` map folds these logged-name variants: `Barbell Bench Press`→`Bench Press`, `Cable Lat Pulldown`→`Lat Pulldown`, `Hip Thrust (Machine)`→`Hip Thrust`, `Seated Calf Raise HSR`→`Seated Calf Raise (HSR)`, `Leg Extension`→`Seated Leg Extension`. When logging a session, use the canonical spelling (the plan's exact name) so the history lookup and carry-forward keep working. Introducing a genuinely new variant means either reusing a canonical name or adding a fold to `exerciseCanon` in `index.html`.
+__Canonical exercise names (so history matches the plan).__ The renderer's `exerciseCanon` map folds these logged-name variants: `Barbell Bench Press`→`Bench Press`, `Cable Lat Pulldown`→`Lat Pulldown`, `Hip Thrust (Machine)`→`Hip Thrust`, `Seated Calf Raise HSR`→`Seated Calf Raise (HSR)`, `Leg Extension`→`Seated Leg Extension`, `Bent Over Row (inverted grip)`→`Bent Over Barbell Row`. When logging a session, use the canonical spelling (the plan's exact name) so the history lookup and carry-forward keep working. Introducing a genuinely new variant means either reusing a canonical name or adding a fold to `exerciseCanon` in `index.html`.
 
 __How to capture__:
 1. For the current training week, use `modifiedWeeks[<week>]` with a __full 7-day schedule__ in the `schedule` array (not just the one day that differs). The renderer replaces the default week-grid with this schedule, so partial schedules leave blank days visible on the site.
@@ -256,6 +256,12 @@ Thursday upper body every week:
 - **DB Bench Press 3×8** — accessory after BB bench, log as `"DB Bench Press"` (does NOT map to benchPress target)
 
 BB bench gets weekly frequency for efficient progression toward 225×5 target. DB bench adds chest volume + stability work at lighter load.
+
+## Upper-Day Pressing & Rowing Defaults (updated 2026-07-08)
+
+- __Overhead press = Barbell Strict Overhead Press__ (switched from DB overhead press on 7/8). STRICT — no leg dip/drive, which would load ankle plantarflexion and the healing calf. Log as `"Strict Overhead Press"`.
+- __Horizontal row = Bent Over Barbell Row__ (switched from Seated Cable Row on 7/8). Log as `"Bent Over Barbell Row"`.
+- These are the defaults for future upper days — author them into the plan's exercise slots (not DB OHP / cable row) so the history-aware carry-forward tracks them.
 
 ## Back Squat Introduction (Starting Week 5)
 

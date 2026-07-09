@@ -2173,7 +2173,8 @@
       }
     }
 
-    var parts = ['<strong>Week ' + weekNum + '</strong> Phase ' + phase + ': ' + esc(phaseNames[phase])];
+    var blockLabel = (mw && mw.blockLabel) ? mw.blockLabel : ('Phase ' + phase + ': ' + phaseNames[phase]);
+    var parts = ['<strong>Week ' + weekNum + '</strong> ' + esc(blockLabel)];
     parts.push('<strong>Today:</strong> ' + esc(todayDesc));
     if (nextUpDesc) parts.push('<strong>Next:</strong> ' + esc(nextUpDesc));
     parts.push('<strong>Protein:</strong> ' + proteinToday);
@@ -2452,7 +2453,7 @@
       '<div class="today-card ' + typeClass + '">' +
         '<div class="today-card-header">' +
           '<div class="today-card-day">' + fullTodayName + ' · ' + dateStr + statusBadge + '</div>' +
-          '<div class="today-card-meta">Week ' + weekNum + ' · Phase ' + phase + ' · ' + esc(sessionLabel) + '</div>' +
+          '<div class="today-card-meta">Week ' + weekNum + ' · ' + esc((mw && mw.blockLabel) ? mw.blockLabel : ('Phase ' + phase + ': ' + phaseNames[phase])) + ' · ' + esc(sessionLabel) + '</div>' +
         '</div>' +
         '<div class="today-card-title">' + linkifyText(title) + '</div>' +
         checklistHTML +
@@ -2610,7 +2611,7 @@
     '</div>';
   }).join('');
   document.getElementById('strength-mount').innerHTML =
-    '<h3>Strength Progress vs. 12-Month Targets</h3><div class="bar-chart">' + barRows + '</div>';
+    '<h3>Strength Progress vs. Targets</h3><div class="bar-chart">' + barRows + '</div>';
 
   // Strength Target Cards
   var liftMeta = [
@@ -2623,6 +2624,7 @@
     var tgt = targets[l.key];
     var curRatio = (cur.weight / bw).toFixed(2);
     var tgtRatio = (tgt.weight / bw).toFixed(2);
+    var horizon = tgt.horizonMonths || 12;
     var plus = l.key === 'trapBarDeadlift' ? '+' : '';
     var liftHTML = exerciseLinks[l.name]
       ? '<a href="' + esc(exerciseLinks[l.name]) + '" target="_blank">' + esc(l.name) + '</a>'
@@ -2632,7 +2634,7 @@
       '<div class="current">' + cur.weight + ' \u00d7 ' + cur.reps + ' (' + curRatio + 'x BW)</div>' +
       '<div class="arrow">\u2193</div>' +
       '<div class="target">' + tgt.weight + plus + ' \u00d7 ' + tgt.reps + '</div>' +
-      '<div class="ratio">12-month target \u00b7 ' + tgtRatio + 'x BW</div>' +
+      '<div class="ratio">' + horizon + '-month target \u00b7 ' + tgtRatio + 'x BW</div>' +
     '</div>';
   }).join('');
   document.getElementById('targets-mount').innerHTML =

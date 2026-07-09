@@ -221,15 +221,18 @@
   "targets": {
     "trapBarDeadlift": {
       "weight": 385,
-      "reps": 5
+      "reps": 5,
+      "horizonMonths": 18
     },
     "backSquat": {
       "weight": 315,
-      "reps": 5
+      "reps": 5,
+      "horizonMonths": 18
     },
     "benchPress": {
       "weight": 225,
-      "reps": 5
+      "reps": 5,
+      "horizonMonths": 12
     }
   },
   "exerciseLinks": {
@@ -4037,6 +4040,7 @@
     },
     "18": {
       "title": "Calf: Phase 2 strength and monitored return to games",
+      "blockLabel": "Calf rehab",
       "subtitle": "Confirm-and-protect: measure single-leg capacity, keep loading the calf, watch the morning-after read after games. Barbell lower stays frozen until the capacity gate clears.",
       "reason": "Wk 18 pivots from linear rehab to CONFIRM-AND-PROTECT after the athlete returned to hockey off-plan on Sun 7/5 (day 14) and tolerated it - light morning-after soreness that subsided within the 24-hour window (Silbernagel 2007 PMID 17307888), a pass that beats the 6/29 lingering pattern. That clears the gate the prior review waited on, so cautious continued play is defensible and games are the A-priority (no longer withheld). BUT the return jumped ahead of the objective RTS gates, which remain UNTESTED: single-leg calf-raise capacity >=30 reps and inter-limb asymmetry <=10%, plus loaded strength toward >=1.0x BW knee-extended and >=1.5x BW knee-flexed soleus (Green 2022 PMID 35032233; Hebert-Losier 2017 PMID 28886865). A capacity/strength deficit can persist while pain is gone, and that deficit is the recurrence substrate - recurrence is frequent, 'without warning,' and highest in his band (age 40 + prior calf injury; Green 2017 PMID 28259848; Green 2020 PMID 33030961). So this week does three things at once: (1) MEASURE - get the single-leg capacity/asymmetry number early, fresh (the one hard datum still missing); (2) LOAD - keep building calf strength, gastroc (knee-straight) + soleus (bent-knee) HSR rebuilding toward but not past the pre-injury loads, because loading out the deficit is the active protection against recurrence, more than rest is; (3) MONITOR - log pain-during and pain-next-morning after every game/hard session; light-and-subsiding = keep going, lingering-or-climbing = pull back to loaded rehab that week. De-risk each game: thorough calf warm-up, ease into maximal push-off, stop on any sharp calf pain. Lower-body BARBELL lifts (TB DL, squat) stay FROZEN until the capacity gate clears and mornings stay clean. Pain rule throughout: <=5/10 during and next-morning, settle in 24h, no week-to-week increase; bias conservative given the bilateral Achilles-tendinopathy context. Full evidence: knowledge/calf-strain-rehab.md.",
       "schedule": [
@@ -4051,6 +4055,7 @@
     },
     "19": {
       "title": "Confirm-and-protect (cont.): re-test capacity, keep loading calf, cautious games",
+      "blockLabel": "Calf rehab",
       "subtitle": "Provisional week: only Sun 7/12 hockey PM is fixed. Rehab and lift days are set at the Sun 7/12 review.",
       "reason": "Week 19 is intentionally lean. Per the plan's week-by-week, data-gated design (see the Wk 18 Sat note), next week's rehab loading and any barbell-lower reintroduction are set only AFTER (a) the single-leg calf-raise capacity is re-tested at standardized full ROM + set cadence to confirm inter-limb asymmetry <=10% - Mon 7/6's 30/30 met the rep count but came at reduced force/height on the injured left, so the quality gate is unconfirmed - and (b) the morning-after reads across Wk 18 stay light and subsiding within 24h (Silbernagel 2007 PMID 17307888). The one thing fixed now is the athlete's committed game: Sun 7/12 hockey PM, with no Sunday-AM basketball. Barbell lower lifts (TB DL, squat) remain FROZEN until the capacity gate cleanly clears. RTS criteria unchanged (Green 2022 PMID 35032233; norms Hebert-Losier 2017 PMID 28886865).",
       "schedule": [

@@ -502,6 +502,8 @@ References: Markovic (2007) "Does plyometric training improve vertical jump heig
 | Back Squat | 185×5 | 315×5 | +130 lbs (+70%) | Aggressive. Squat is harder to progress in-season due to leg fatigue from games. May need 15–18 months. |
 | Bench Press | 155×5 | 225×5 | +70 lbs (+45%) | Most realistic of the three. Upper body is less affected by game load. ~1.5 lbs/week average. |
 
+**Target horizons (re-horizon signed off 2026-07-09).** The flat 12-month framing above is superseded per lift: __Bench 225×5 stays at 12 months__ (most realistic; upper body least game-affected), while __Trap Bar DL 385×5 and Back Squat 315×5 move to ~18 months__, reflecting the in-season lower-body slowdown (~30–40%, Baker 2001) and the squat assessment in the table. Horizons live in `data.targets[<lift>].horizonMonths` (12 / 18 / 18) and the site renders each lift's own horizon on its target card and in the progress bars. The lower-body layoff from the calf strain makes the 18-month lower framing more realistic still; revisit once barbell lower lifts resume.
+
 **Rate-of-progression reality check (for a 40-year-old returning lifter):**
 - First 3–6 months: fastest gains (neural adaptation + muscle memory if previously trained). Expect 5–15 lbs/month on compounds.
 - Months 6–12: progression slows to 2–5 lbs/month on compounds.

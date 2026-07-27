@@ -2,7 +2,9 @@
 
 ## Overview
 
-This is a personal training program tracker for a 40-year-old male athlete (6'2", ~220 lbs) with bilateral achilles tendinopathy. Goals in priority order: injury prevention > strength/power > vertical jump. He plays basketball (Tue PM, Sun AM) and hockey (Sun PM), works M-F 9-5.
+This is a personal training program tracker for a 40-year-old male athlete (6'2", ~220 lbs) with bilateral achilles tendinopathy. Goals in priority order: injury prevention > strength/power > vertical jump. Works M-F 9-5.
+
+__The game slate varies by season - confirm it, do not assume it.__ The standard in-season slate is basketball Tue PM and Sun AM plus hockey Sun PM, and much of this file (session spacing in Section 5, the in-season volume ceiling in Section 3) was written against that three-game week. It is not always true. As of Jul 2026: basketball is in its off-season so there are no Tue PM games, Sun AM basketball is self-gated pending calf clearance, and hockey Sun PM is the only fixed game - a one-game week, which materially loosens the in-season volume constraint. Current state lives in `data.modifiedWeeks`; when the slate is unclear, ask rather than inheriting the three-game assumption.
 
 Live site: https://menottim.github.io/training-program/
 
@@ -198,6 +200,8 @@ __Every prescribed exercise shows a concrete target weight (history-aware render
 
 __Canonical exercise names (so history matches the plan).__ The renderer's `exerciseCanon` map folds these logged-name variants: `Barbell Bench Press`→`Bench Press`, `Cable Lat Pulldown`→`Lat Pulldown`, `Hip Thrust (Machine)`→`Hip Thrust`, `Seated Calf Raise HSR`→`Seated Calf Raise (HSR)`, `Leg Extension`→`Seated Leg Extension`, `Bent Over Row (inverted grip)`→`Bent Over Barbell Row`. When logging a session, use the canonical spelling (the plan's exact name) so the history lookup and carry-forward keep working. Introducing a genuinely new variant means either reusing a canonical name or adding a fold to `exerciseCanon` in `index.html`.
 
+__A missing week entry is not a blank - it is the pre-injury default.__ When `modifiedWeeks` has no entry for the current week, the renderer falls back to a hardcoded standard week in `index.html` (`Wed: Lower Body — Heavy`, `Fri: Lower Moderate + Plyo`, `Sun: Basketball AM + Hockey PM`, `Tue: Basketball PM`). It cannot tell "no plan authored yet" from "the default plan applies," so an un-authored week silently re-asserts the standard pre-injury programming. This bit during the Jun-Jul 2026 calf block: `modifiedWeeks` stopped at Week 19, so for roughly two weeks the live site prescribed Friday plyometrics and unmodified heavy lower to an athlete six weeks off a gastroc strain with barbell lower frozen. Treat an un-authored current week as a bug, not a gap. Author `modifiedWeeks[<week>]` for every week that deviates from the standard slate, and re-check the current week whenever a block changes or the week rolls over.
+
 __How to capture__:
 1. For the current training week, use `modifiedWeeks[<week>]` with a __full 7-day schedule__ in the `schedule` array (not just the one day that differs). The renderer replaces the default week-grid with this schedule, so partial schedules leave blank days visible on the site.
 2. For session-level adjustments within a day (specific weight, rep scheme change, added/removed exercise), include the exercises array with current target weights.
@@ -355,7 +359,15 @@ When all prescribed reps are completed with good form across 2 consecutive sessi
 3. Third: add one set at the current weight before increasing load (volume before intensity)
 4. Last resort: reset 10% and build back up over 2–3 weeks
 
-References: Schoenfeld et al. (2017) "Dose-response relationship between weekly resistance training volume and increases in muscle mass"; NSCA Essentials of Strength Training (4th ed.) Ch. 18 Program Design.
+**Returning from a layoff (travel gap or injury):** see `knowledge/detraining-and-return.md` for the evidence review and the full restart-load bands. Key points:
+
+- __A layoff is not a stall.__ A stall is a ceiling at a load you currently own; a layoff is decay at a load you no longer own. Do not reuse the 10% stall reset above as the layoff rule.
+- __Strength outlives size__, so bias restart loads small (Mujika and Padilla 2000 PMID 10999420; Psilander et al. 2019 PMID 30991013 found strength still ~60% elevated after 20 weeks of detraining while muscle size had returned to baseline). Bands: 5-10% under the last clean set for 2-4 weeks off, 10-15% for 4-8 weeks, 15-20% for longer gaps or any injury layoff affecting the loaded tissue.
+- __Reference the last CLEAN working set__ (full prescribed reps at target RPE), not the last logged session, which may have been a reduced power or contrast day.
+- __Do not stack a deload onto the far side of a layoff__ - the layoff already deloaded you.
+- __On travel, maintain intensity and cut volume__ rather than substituting easy bodyweight work; that is what preserves adaptations (Mujika and Padilla 2000 Part II).
+
+References: Schoenfeld et al. (2017) "Dose-response relationship between weekly resistance training volume and increases in muscle mass"; NSCA Essentials of Strength Training (4th ed.) Ch. 18 Program Design; Bosquet et al. 2013 (PMID 23347054) for training-cessation effect sizes.
 
 ### 2. Deload Protocol
 
@@ -446,11 +458,11 @@ See `knowledge/recovery-sleep.md` and `knowledge/protein-distribution.md` for fu
 - __Sleep need is individual__, not a fixed 8 hours. 7-9 hours is the NSF adult range (Hirshkowitz et al. 2015 PMID 29073412); Walsh et al. 2021 IOC consensus (PMID 33144349) argues explicitly against one-size-fits-all athlete prescriptions.
 - __Chronic post-lifting cold water immersion blunts hypertrophy__ (Roberts et al. 2015 PMID 26174323). Use CWI for game recovery when next performance is within 48h, not routinely after lifting.
 
-**Session spacing (current schedule is evidence-aligned):**
+**Session spacing (written against the standard three-game slate - see the slate note in the Overview before applying):**
 - 48+ hours between heavy lifting and games (Suchomel et al. 2018)
 - Wednesday heavy → Sunday game = 3.5 days (optimal)
-- Wednesday heavy → Tuesday game = 6 days (optimal)
-- Friday is deliberately the lightest lifting session, ~36 hours before Sunday AM basketball.
+- Wednesday heavy → following Tuesday game = 6 days (optimal). This only applies when a Tue PM basketball game is actually on the slate - basketball is in its off-season as of Jul 2026, so there is no Tuesday game to space away from.
+- Friday is deliberately the lightest lifting session, ~36 hours before Sunday AM basketball and ~48 hours before Sunday PM hockey. With Sun AM basketball off the slate, Friday has marginally more room, but keep it the lightest day while a Sunday game of any kind stands.
 
 **Auto-regulation signals — when to reduce that session's intensity/volume:**
 - Warm-up sets feel RPE 2+ higher than expected → drop one working set per exercise.

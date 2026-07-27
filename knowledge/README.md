@@ -24,6 +24,7 @@ Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each
 | [pre-game-fueling.md](pre-game-fueling.md) | Shelf-stable pre-game snack stock guide: tiered by pre-exercise window (1-2 hr, 2-3 hr, 3+ hr), specific brands and nutrition data, stock lists for home/gym/office, decision tree | 2026-04-21 |
 | [blood-donation-recovery.md](blood-donation-recovery.md) | Power Red / whole blood donation: acute VO2max hit, two-clock recovery (blood volume vs red-cell mass), DRCA extrapolation, iron's role for repeat donors, training modulation post-donation | 2026-06-14 |
 | [calf-strain-rehab.md](calf-strain-rehab.md) | Acute medial gastrocnemius strain ("tennis leg"): can't-miss differentials (Achilles rupture, DVT, compartment syndrome), PEACE & LOVE acute care, the NSAID/ibuprofen verdict, phased criteria-based rehab, return-to-sport criteria/timelines, recurrence risk, modifications for bilateral Achilles tendinopathy | 2026-06-23 |
+| [detraining-and-return.md](detraining-and-return.md) | Returning from a travel gap or injury layoff: strength-vs-size decay clocks, why strength outlives muscle, muscle memory (strong in rodents, negative in the one human test), restart-load bands, ramping caution and the ACWR critique | 2026-07-27 |
 
 ## When to consult
 

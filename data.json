@@ -24,7 +24,28 @@
           { "test": "Acute compartment syndrome - clinical (emergency)", "reason": "If pain is out of proportion to exam with a tense/firm compartment and pain on passive stretch, seek emergency care - these are early signs; pulselessness/pallor are late (Pechar & Lyons 2016, DOI 10.1016/j.nurpra.2015.10.013)." }
         ],
         "imaging": "Ultrasound (first-line) or MRI to confirm location, grade, and aponeurotic/intramuscular-tendon involvement, which predicts a longer return to sport (Green 2020 PMID 33030961; Meek 2022 DOI 10.2106/JBJS.RVW.21.00183).",
-        "reference": "Full evidence + phased rehab in knowledge/calf-strain-rehab.md."
+        "reference": "Full evidence + phased rehab in knowledge/calf-strain-rehab.md.",
+        "ptHomeProgram": {
+          "prescribedOn": "2026-07-28",
+          "source": "Physical therapist, first visit for the left calf strain. The PT knows the full lifting program, including trap bar deadlifts, the 135 lb seated calf raise, and the BW+25 single-leg calf raise, so this prescription was written on top of that rather than in ignorance of it.",
+          "daily": [
+            { "name": "Isometric Standing Calf Hold (bilateral)", "sets": "6x30s", "weight": "bodyweight" },
+            { "name": "Isometric Standing Calf Hold (single-leg)", "sets": "3x30s/leg", "weight": "bodyweight" },
+            { "name": "Seated Calf Raise", "sets": "3x15", "weight": "load not specified by the PT" },
+            { "name": "Step-Back Off Small Box (chest lean forward)", "sets": "3x8/leg", "weight": "bodyweight" }
+          ],
+          "twoToThreeTimesWeekly": [
+            { "name": "Squat", "sets": "already in the program", "weight": "per the program's own progression" },
+            { "name": "Single-Leg RDL (dumbbell)", "sets": "3x8/leg", "weight": "load not specified by the PT" }
+          ],
+          "reconciliationWithTheProgram": "The PT's prescription is now the calf and single-leg rehab line, and the program stops writing a parallel one so the two do not stack. Three consequences. FIRST, the program's 3x/week seated calf HSR at 135 (3x8, run as 3x10 on 7/28) retires in favor of the PT's daily 3x15. Daily calf loading is a legitimate evidence-supported pattern, closer to Alfredson's 180-heel-drops-daily model than to Beyer's 3x/week HSR, and the two produced equivalent 12- and 52-week outcomes (Beyer 2015; Strong), so this is a different protocol rather than a worse one. But daily 3x15 at 135 would be a large jump in weekly calf volume, and the PT did not specify a load, so start the daily dose meaningfully lighter (90 is a defensible anchor, being the ramp weight already tolerated on 7/28) and let the next-morning read govern progression. ASK THE PT FOR AN INTENDED LOAD. SECOND, the loaded single-leg calf raise at BW+25 is NOT in the PT's program even though they know about it. It is kept at once weekly rather than dropped, because at roughly 1.11x bodyweight it is the only thing in either program that addresses the >=1.0x BW knee-extended strength benchmark gating return to sport (Green 2022 PMID 35032233), and a bodyweight hold does not reach that strain. Flag it for the PT and defer if they want it out. THIRD, daily step-backs off a box with a forward chest lean are controlled stair-descent loading, which supersedes the program's own more conservative note that there should be no heel drop below neutral until stair descent is pain-free. That gate was the program's, the PT's judgment is more current, and theirs governs. The single-leg RDL also replaces the Glute-Ham Raise / Ham Curl line for hamstring volume: hip-dominant, single-leg, calf-sparing, and it exposes left versus right.",
+          "openQuestions": [
+            "What grade is the strain, and did anything get measured?",
+            "What load do they intend for the daily seated calf raise 3x15 and the single-leg RDL 3x8?",
+            "Do they want the BW+25 loaded single-leg calf raise to continue?",
+            "Do they agree with the hop and capacity criteria (~20 symptom-free single-leg hops, >=30 calf raises at <=10% asymmetry) as the gate for running, plyos, and a return to basketball, or do they have their own return-to-sport criteria? If they have their own, theirs govern."
+          ]
+        }
       },
       "nextPhysicianVisit": "Request the following labs together to cover multiple coaching questions:",
       "required": [
@@ -2447,7 +2468,7 @@
       "title": "Barbell lower restart, criteria-gated",
       "blockLabel": "Lower rebuild",
       "subtitle": "Barbell lower restarted Tuesday at the reduced load and went clean. Both gate tests now land Thursday: the hop criteria that gate running, plyos, and Sunday basketball, then the standardized calf-capacity re-test as the session finisher.",
-      "reason": "Week 21 carries the first barbell-lower session since 6/18 - 39 days without TB DL or back squat, and day 36 post-strain. Three facts reshaped the block: basketball is in its off-season so the Tuesday game is gone; Sunday AM basketball stays self-gated until the calf clears; and Weeks 19-20 were travel with little or no training logged. Only one game is on the calendar (hockey Sun 8/2 PM), so the in-season lower-body volume constraint in Section 3 - written for a three-game week - largely lifts. This is the best lower-body rebuild window the program has had. RESTART LOADS are cut ~15% (TB DL 245 to 205, squat 160 to 135). Training cessation lowers every component of muscular strength with a dose-response on cessation duration: maximal force SMD -0.46, submaximal strength -0.62, maximal power -0.20 across 103 studies, with smaller losses in recreational athletes than in inactive people (Bosquet et al. 2013, Scand J Med Sci Sports, PMID 23347054, DOI 10.1111/sms.12047; Moderate). The meta-analysis reports standardized effect sizes, not percentage loss by cessation duration, so the 15% figure is a judgment call from the effect direction, not a number the paper supplies. Two clean sessions earn +10 on lower compounds per the standard double-progression rule. BARBELL LOWER IS NOT THE CALF RISK HERE - plyos, jumps, sprinting, and sport change-of-direction are. TB DL is hip-dominant, and the squat's bottom position has the knee flexed, which slackens the biarticular gastroc: the opposite of the injury mechanism, sudden knee extension with the ankle dorsiflexed (Dixon 2009 PMID 19468870). So barbell lower comes back now while jumps and plyos stay frozen behind the Phase 3 hop gate. Rebuilding strength is itself the protection - a residual capacity deficit is the recurrence substrate, and age 40 plus a prior calf injury is the highest-risk band (Green 2017 PMID 28259848; Green 2022 PMID 35032233). TWO GATE TESTS THIS WEEK, because 'until the calf is 100%' is currently undefined and therefore has no exit. Mon: standardized single-leg calf-raise capacity, both legs, full height and set cadence - the 7/6 result of 30/30 met the rep count but came at lower height and force on the injured left, so the asymmetry half was never confirmed. Thu: roughly 20 symptom-free single-leg hops per leg plus hop asymmetry, the Phase 3 criterion that gates running, step-down plyometrics, and a return to basketball (Green 2022; norms Hebert-Losier 2017 PMID 28886865). Thursday's placement also yields a Friday-morning read that informs the Sunday hockey decision. PAIN RULE throughout: up to 5/10 during loading and next morning, must settle to baseline within 24 h, must not climb week to week (Silbernagel 2007 PMID 17307888; biasing conservative given the bilateral Achilles tendinopathy). No static end-range calf stretching - the 7/6 curb stretch produced a sharp pain shot, and end-range dorsiflexion stretch stays contraindicated. UPDATE 7/29: the week ran a day behind. Monday was rest, so the lower restart moved to Tuesday PM, preceded by a morning PT session for the calf that was treatment only, with no testing and no change to what is cleared. TB DL landed a clean 4x5x205, which is the expected result rather than a surprise: strength decays far more slowly than muscle size, so the first sessions back usually go better than they feel like they will (Psilander et al. 2019, J Appl Physiol 126:1636-45, PMID 30991013, where 20 weeks of detraining returned CSA to baseline while strength stayed roughly 60% elevated; Moderate). Note that the same trial found a previously trained leg did NOT retrain faster than an untrained one, so this is strength retention, not muscle memory. One clean session is banked and a second earns +10 to 215. Do not stack a deload on the far side of the layoff, because the layoff already was one. The calf was silent through the session and read 1-2/10 diffuse on Wednesday morning, well inside the pain rule. THE CAPACITY TEST WAS SKIPPED, the second attempt running that produced no usable number after the unstandardized 7/6 read, so 'when is the calf cleared' still has no defined answer. It moves to Thursday rather than slipping another week, placed after the hop test and as the session finisher, because a to-fatigue test run first would corrupt the hop read. The pre-fatigue cuts one way only: clearing 30 reps per side at 10% or less asymmetry after roughly 20 hops is conservative and settles the gate, while a near-miss is ambiguous and earns a clean re-test on a rested calf. Wednesday's HSR sets come off the board to keep the calf quiet for those tests, and calf loading still happens three times this week (Tue HSR, Thu gate tests, Fri HSR), preserving the Beyer 2015 3x/week frequency. FURTHER UPDATE 7/29: the full Tuesday session came out in pieces and was larger and more divergent than first reported. Back squat was pulled forward from Friday (45/95/135 ramp then 135 held, so two working sets at the restart load and not a clean 4x5), meaning both barbell lower lifts restarted in the same session after a 40-day layoff. Isometric standing calf holds were added (6x30s bilateral plus 3x30s per leg single-leg, 4.5 min of total hold time), seated calf raises ran 3x10 at 90/135/135 rather than 3x8 at 135, and BOTH the loaded single-leg calf raise and the hamstring work were skipped. IMPORTANT CORRECTION to the first read of this session: the isometric holds were PT-PRESCRIBED, part of a home program from the morning visit, not freelanced, so the calf additions are clinician-directed and the PT has in fact given rehab-progression guidance. Isometrics are the Phase 1 modality in the consensus progression (Green 2022 PMID 35032233), and collagen signaling tracks strain magnitude rather than contraction type (Kjaer 2009; Magnusson and Kjaer 2019). The single-leg holds also do expose left versus right qualitatively, so an earlier note claiming the session produced no left-right information at all was too strong. What a bodyweight hold cannot do is reach the >=1.0x BW knee-extended strain of BW+25 loaded work or produce a countable rep number, so neither gate criterion is satisfied by it. Do not lean on isometric analgesia either: Rio's findings are patellar-specific and Achilles replication is mixed (Rio 2015 PMID 25979840; Weak for the Achilles generalization). OPEN ITEM: the full home-program contents are not recorded, and the program's HSR dosing needs to sit alongside the PT's prescription rather than stack on top of it unexamined. Friday absorbs the consequences: it becomes squat session 2 aiming for a clean 4x5x135 rather than a restart, and it picks up the skipped single-leg calf raise and hamstring work. The 1-2/10 morning read remains a good tolerance signal for a session that size, with the honest caveat that with this many simultaneous deviations a bad read could not have been pinned on any single one of them.",
+      "reason": "Week 21 carries the first barbell-lower session since 6/18 - 39 days without TB DL or back squat, and day 36 post-strain. Three facts reshaped the block: basketball is in its off-season so the Tuesday game is gone; Sunday AM basketball stays self-gated until the calf clears; and Weeks 19-20 were travel with little or no training logged. Only one game is on the calendar (hockey Sun 8/2 PM), so the in-season lower-body volume constraint in Section 3 - written for a three-game week - largely lifts. This is the best lower-body rebuild window the program has had. RESTART LOADS are cut ~15% (TB DL 245 to 205, squat 160 to 135). Training cessation lowers every component of muscular strength with a dose-response on cessation duration: maximal force SMD -0.46, submaximal strength -0.62, maximal power -0.20 across 103 studies, with smaller losses in recreational athletes than in inactive people (Bosquet et al. 2013, Scand J Med Sci Sports, PMID 23347054, DOI 10.1111/sms.12047; Moderate). The meta-analysis reports standardized effect sizes, not percentage loss by cessation duration, so the 15% figure is a judgment call from the effect direction, not a number the paper supplies. Two clean sessions earn +10 on lower compounds per the standard double-progression rule. BARBELL LOWER IS NOT THE CALF RISK HERE - plyos, jumps, sprinting, and sport change-of-direction are. TB DL is hip-dominant, and the squat's bottom position has the knee flexed, which slackens the biarticular gastroc: the opposite of the injury mechanism, sudden knee extension with the ankle dorsiflexed (Dixon 2009 PMID 19468870). So barbell lower comes back now while jumps and plyos stay frozen behind the Phase 3 hop gate. Rebuilding strength is itself the protection - a residual capacity deficit is the recurrence substrate, and age 40 plus a prior calf injury is the highest-risk band (Green 2017 PMID 28259848; Green 2022 PMID 35032233). TWO GATE TESTS THIS WEEK, because 'until the calf is 100%' is currently undefined and therefore has no exit. Mon: standardized single-leg calf-raise capacity, both legs, full height and set cadence - the 7/6 result of 30/30 met the rep count but came at lower height and force on the injured left, so the asymmetry half was never confirmed. Thu: roughly 20 symptom-free single-leg hops per leg plus hop asymmetry, the Phase 3 criterion that gates running, step-down plyometrics, and a return to basketball (Green 2022; norms Hebert-Losier 2017 PMID 28886865). Thursday's placement also yields a Friday-morning read that informs the Sunday hockey decision. PAIN RULE throughout: up to 5/10 during loading and next morning, must settle to baseline within 24 h, must not climb week to week (Silbernagel 2007 PMID 17307888; biasing conservative given the bilateral Achilles tendinopathy). No static end-range calf stretching - the 7/6 curb stretch produced a sharp pain shot, and end-range dorsiflexion stretch stays contraindicated. UPDATE 7/29: the week ran a day behind. Monday was rest, so the lower restart moved to Tuesday PM, preceded by a morning PT session for the calf that was treatment only, with no testing and no change to what is cleared. TB DL landed a clean 4x5x205, which is the expected result rather than a surprise: strength decays far more slowly than muscle size, so the first sessions back usually go better than they feel like they will (Psilander et al. 2019, J Appl Physiol 126:1636-45, PMID 30991013, where 20 weeks of detraining returned CSA to baseline while strength stayed roughly 60% elevated; Moderate). Note that the same trial found a previously trained leg did NOT retrain faster than an untrained one, so this is strength retention, not muscle memory. One clean session is banked and a second earns +10 to 215. Do not stack a deload on the far side of the layoff, because the layoff already was one. The calf was silent through the session and read 1-2/10 diffuse on Wednesday morning, well inside the pain rule. THE CAPACITY TEST WAS SKIPPED, the second attempt running that produced no usable number after the unstandardized 7/6 read, so 'when is the calf cleared' still has no defined answer. It moves to Thursday rather than slipping another week, placed after the hop test and as the session finisher, because a to-fatigue test run first would corrupt the hop read. The pre-fatigue cuts one way only: clearing 30 reps per side at 10% or less asymmetry after roughly 20 hops is conservative and settles the gate, while a near-miss is ambiguous and earns a clean re-test on a rested calf. Wednesday's HSR sets come off the board to keep the calf quiet for those tests, and calf loading still happens three times this week (Tue HSR, Thu gate tests, Fri HSR), preserving the Beyer 2015 3x/week frequency. FURTHER UPDATE 7/29: the full Tuesday session came out in pieces and was larger and more divergent than first reported. Back squat was pulled forward from Friday (45/95/135 ramp then 135 held, so two working sets at the restart load and not a clean 4x5), meaning both barbell lower lifts restarted in the same session after a 40-day layoff. Isometric standing calf holds were added (6x30s bilateral plus 3x30s per leg single-leg, 4.5 min of total hold time), seated calf raises ran 3x10 at 90/135/135 rather than 3x8 at 135, and BOTH the loaded single-leg calf raise and the hamstring work were skipped. IMPORTANT CORRECTION to the first read of this session: the isometric holds were PT-PRESCRIBED, part of a home program from the morning visit, not freelanced, so the calf additions are clinician-directed and the PT has in fact given rehab-progression guidance. Isometrics are the Phase 1 modality in the consensus progression (Green 2022 PMID 35032233), and collagen signaling tracks strain magnitude rather than contraction type (Kjaer 2009; Magnusson and Kjaer 2019). The single-leg holds also do expose left versus right qualitatively, so an earlier note claiming the session produced no left-right information at all was too strong. What a bodyweight hold cannot do is reach the >=1.0x BW knee-extended strain of BW+25 loaded work or produce a countable rep number, so neither gate criterion is satisfied by it. Do not lean on isometric analgesia either: Rio's findings are patellar-specific and Achilles replication is mixed (Rio 2015 PMID 25979840; Weak for the Achilles generalization). THE PT'S FULL HOME PROGRAM IS NOW RECORDED at athlete.clinicalWorkupAsks.acuteCalfInjuryJun2026.ptHomeProgram, and it restructures the rest of the block. Daily: both isometric hold blocks, seated calf raise 3x15, and step-backs off a small box with a forward chest lean. Two to three times weekly: squats, which the PT already knew about, and single-leg dumbbell RDL 3x8 per leg. The PT knows the full lifting program including the 135 lb seated calf raise and the BW+25 single-leg raise, so this was written on top of it rather than in ignorance of it. Three consequences follow. The program's 3x/week seated calf HSR at 135 RETIRES in favor of the PT's daily 3x15, started at 90 rather than 135 because daily 15-rep sets at 135 would be a large volume jump and the PT specified no load; daily calf loading is a legitimate pattern, closer to Alfredson's daily model than to Beyer's 3x/week HSR, and the two produced equivalent 12- and 52-week outcomes (Beyer 2015; Strong). The single-leg RDL replaces both the Glute-Ham Raise and the Bulgarian split squat. And the daily step-backs are controlled stair-descent loading, which supersedes the program's own earlier gate of no heel drop below neutral until stair descent is pain-free: that restriction was the program's, the PT's judgment is more current, and theirs governs. WEDNESDAY'S CALF REST DAY IS THEREFORE CANCELLED, since with a daily prescription there is no rest day left to give. Thursday is the one exception, where the day's seated raises and step-backs come off because the capacity test to fatigue plus roughly 20 hops per leg already exceeds that dose, and that substitution is a coaching judgment rather than the PT's instruction. Friday absorbs the rest of the consequences: it becomes squat session 2 aiming for a clean 4x5x135 rather than a restart, and it picks up the skipped single-leg calf raise and hamstring work. The 1-2/10 morning read remains a good tolerance signal for a session that size, with the honest caveat that with this many simultaneous deviations a bad read could not have been pinned on any single one of them.",
       "schedule": [
         {
           "day": "Sun",
@@ -2560,8 +2581,8 @@
           "day": "Wed",
           "date": "2026-07-29",
           "type": "training",
-          "desc": "Upper day, calf gets a rest",
-          "longDesc": "The upper line was preserved through the whole injury and is the one thing still progressing. Bench is the priority: 7/8 was 160/160/165/165, so a clean 4x5x165 has not happened yet - land it and a second clean session earns 170. Chest volume sits at 4 sets from barbell bench alone, below the 6-10 set range, so DB bench returns as accessory volume. The seated calf HSR sets come off today. The calf read 1-2/10 diffuse this morning after Tuesday's lower session, and Thursday carries both gate tests, which need the freshest calf this week can give them. Weekly calf frequency is unchanged at three sessions (Tue HSR, Thu gate tests, Fri HSR). Keep the overhead press strict, since a leg dip would load plantarflexion on the healing gastroc.",
+          "desc": "Upper, plus the daily PT block",
+          "longDesc": "Bench is the priority: 7/8 was 160/160/165/165, so a clean 4x5x165 has not happened yet. Land it and a second clean session earns 170. Chest volume sits at 4 sets from barbell bench alone, below the 6-10 set range, so DB bench returns as accessory volume. Keep the overhead press strict, since a leg dip would load plantarflexion on the healing gastroc. REVERSAL FROM THIS MORNING'S PLAN: today was written as a calf rest day to keep Thursday's gate tests clean, but the PT prescribed a DAILY calf block on 7/28, so there is no rest day to give. The program's own 3x/week seated calf HSR at 135 retires in favor of the PT's daily 3x15 at a lighter load rather than stacking on top of it. See athlete.clinicalWorkupAsks.acuteCalfInjuryJun2026.ptHomeProgram for the full prescription and the reconciliation. The 1-2/10 diffuse read this morning still governs: daily loading makes the 24-hour pain rule a daily decision rather than a weekly one (Silbernagel 2007 PMID 17307888).",
           "exercises": [
             {
               "name": "Bench Press",
@@ -2597,6 +2618,30 @@
               "name": "Cable Woodchop (Low-to-High)",
               "sets": "3x5/side",
               "notes": "Direct core work, last logged 6/10. Core sits below the 4-6 set weekly floor. ROM: rotate from the hips, not the lumbar spine."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Knee extended, so gastroc-biased."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare steadiness and tolerance left against right and say if they differ, since that is the only left-right read available on non-test days."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "90 lbs",
+              "notes": "PT daily block, replacing the program's 3x/week 3x8 at 135. The PT did not specify a load; 90 is the anchor because it was already tolerated as 7/28's ramp set, and daily 15-rep sets at 135 would be a large volume jump. Progress only on clean morning reads, and ask the PT what load they intend. ROM: knee bent, full plantarflexion, pain-free bottom, no forced stretch."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block, new to the program. This is controlled stair-descent loading, and the PT prescribing it supersedes the program's earlier gate of no heel drop below neutral until stair descent is pain-free. Slow and controlled, chest forward, small box. Not a plyometric and not a drop: no rebound, no speed."
             }
           ]
         },
@@ -2604,8 +2649,8 @@
           "day": "Thu",
           "date": "2026-07-30",
           "type": "training",
-          "desc": "Both calf gate tests",
-          "longDesc": "The week's decision point, and it runs only if this morning's calf read is at or below Wednesday's 1-2/10. Test 1, hops: roughly 20 symptom-free single-leg hops per leg is the Phase 3 criterion that gates running, step-down plyometrics, and a return to Sunday AM basketball (Green 2022 PMID 35032233). Test 2, capacity: the standardized single-leg calf-raise count that 7/6 attempted without standardizing and 7/27 skipped entirely. Order is fixed. Hops fresh, then the low-level movement work, then the capacity test as the finisher, because a to-fatigue test run first would corrupt the hop read. Record left and right separately on both, since asymmetry is the half of the gate that has never been measured. Stop on any sharp calf pain rather than pushing through, and log where it appeared. Placed Thursday so Friday morning gives a read before Sunday's hockey.",
+          "desc": "Gate tests, before anything else",
+          "longDesc": "The week's decision point, and it runs only if this morning's calf read is at or below Wednesday's 1-2/10. Test 1, hops: roughly 20 symptom-free single-leg hops per leg is the Phase 3 criterion that gates running, step-down plyometrics, and a return to Sunday AM basketball (Green 2022 PMID 35032233). Test 2, capacity: the standardized single-leg calf-raise count that 7/6 attempted without standardizing and 7/27 skipped entirely. Order is fixed. Hops first, then the low-level movement work, then the capacity test as the finisher, because a to-fatigue test run first would corrupt the hop read. Record left and right separately on both, since a measured asymmetry number is the half of the gate that has never been produced. Stop on any sharp calf pain rather than pushing through, and log where it appeared. TWO NOTES ON TIMING. First, the PT's daily calf block means the calf is never truly fresh for these tests any more, so run them before that day's block, accept the number as a floor, and treat clearing the gate as conclusive while a near-miss stays ambiguous. Second, MY CALL, NOT THE PT'S: the day's seated calf 3x15 and step-backs come off Thursday, because a to-fatigue capacity test plus roughly 20 hops per leg already exceeds that dose. The isometric holds stay. Mention this substitution to the PT rather than assuming they would agree.",
           "exercises": [
             {
               "name": "Single-leg hop test (gate)",
@@ -2627,7 +2672,29 @@
               "name": "Single-leg calf-raise to fatigue (capacity test)",
               "sets": "to fatigue, both legs",
               "weight": "bodyweight",
-              "notes": "SESSION FINISHER, after the hops. Standardize what 7/6 did not: full height every rep, roughly 2 s per rep cadence, knee straight, stop when height drops or form breaks. Record reps left and right. Gate is 30 or more reps with 10% or less asymmetry (Green 2022; norms Hebert-Losier 2017 PMID 28886865). Coming after roughly 20 hops per leg this is mildly pre-fatigued, which only biases the number DOWN: clearing the gate here settles it, while a near-miss is ambiguous and earns a clean re-test on a rested calf. ROM: floor range, full plantarflexion at the top, no heel drop below neutral."
+              "notes": "SESSION FINISHER, after the hops. Standardize what 7/6 did not: full height every rep, roughly 2 s per rep cadence, knee straight, stop when height drops or form breaks. Record reps left and right. Gate is 30 or more reps with 10% or less asymmetry (Green 2022; norms Hebert-Losier 2017 PMID 28886865). Coming after roughly 20 hops per leg, and with the PT's daily block running, this is pre-fatigued, which only biases the number DOWN: clearing the gate here settles it, while a near-miss is ambiguous."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Run AFTER both tests, not before."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Run after both tests."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "not today",
+              "notes": "Held back today only, because the capacity test to fatigue already covers this dose and more. My judgment call rather than the PT's, so mention it to them."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "not today",
+              "notes": "Held back today only, because roughly 20 single-leg hops per leg is a larger exposure than 3x8 controlled step-backs. My judgment call rather than the PT's."
             }
           ]
         },
@@ -2635,8 +2702,8 @@
           "day": "Fri",
           "date": "2026-07-31",
           "type": "training",
-          "desc": "Squat again, plus the skipped work",
-          "longDesc": "Squat session 2, not the restart, since Tuesday already brought it back. Tuesday ramped 45/95/135 and held 135 for two sets, so the job here is a clean 4x5 with all four sets at 135, which is what earns +10 to 145. Same load, more of it. Roughly 48 h ahead of Sunday PM hockey, so this stays the lightest lifting day: RPE 6, no plyos, no jumps. HSR session 3 of 3, and it picks up the two things Tuesday skipped: the single-leg calf raise, which carries the loaded-strength benchmark and the left-right comparison, and direct hamstring work. Expect the calf to be sore from Thursday's capacity test, which does not change the squat, since the squat bottom has the knee flexed and slackens the biarticular gastroc. If Thursday's tests produced sharp pain rather than ordinary fatigue soreness, drop the calf work here and say so before Sunday.",
+          "desc": "Squat clean attempt, PT single-leg work",
+          "longDesc": "Squat session 2, not the restart, since Tuesday already brought it back. Tuesday ramped 45/95/135 and held 135 for two sets, so the job here is a clean 4x5 with all four sets at 135, which is what earns +10 to 145. Same load, more of it. The PT wants squats 2-3x weekly and this makes two. Roughly 48 h ahead of Sunday PM hockey, so this stays the lightest lifting day: RPE 6, no plyos, no jumps. The single-leg RDL enters here as the PT's 2-3x weekly item, replacing the Glute-Ham Raise and Bulgarian split squat: hip-dominant, single-leg, calf-sparing, and it exposes left versus right. The BW+25 loaded single-leg calf raise runs once weekly on this day, since it is the only thing in either program that reaches the >=1.0x BW knee-extended benchmark and the PT did not include it. Expect the calf to be sore from Thursday's tests, which does not change the squat, since the squat bottom has the knee flexed and slackens the biarticular gastroc. If Thursday produced sharp pain rather than ordinary fatigue soreness, drop the loaded calf work here and say so before Sunday.",
           "exercises": [
             {
               "name": "Back Squat",
@@ -2645,27 +2712,40 @@
               "notes": "Repeat of Tuesday's load, ~15% under the 6/11 4x5x160. Tuesday got two working sets at 135 inside a 45/95/135/135 ramp, so this is the clean-session attempt: all four sets at 135, RPE 6. A clean 4x5x135 earns +10 to 145. ROM: heels flat, stop short of any depth that pulls the calf. The squat bottom has the knee flexed, which slackens the biarticular gastroc - the opposite of the injury mechanism of knee extension with the ankle dorsiflexed (Dixon 2009 PMID 19468870) - so it is far less provocative than a straight-knee heel drop, but earn full depth back rather than forcing it."
             },
             {
-              "name": "Bulgarian Split Squat",
+              "name": "Single-Leg RDL (dumbbell)",
               "sets": "3x8/leg",
               "weight": "20 lb DBs",
-              "notes": "Single-leg quad and glute volume at low spinal load; also exposes any left-right difference. ROM: front shin near vertical, controlled to depth, no bounce out of the bottom."
+              "notes": "PT-prescribed, 2-3x weekly. Replaces both the Glute-Ham Raise and the Bulgarian split squat: it covers the hamstring and glute volume, is hip-dominant and calf-sparing, and exposes left-right difference. The PT did not specify a load; 20 lb DBs is a conservative entry given no prior log for this movement. Adjust at the session and log what you actually use. ROM: hinge from the hip, flat back, controlled, stop where the hamstring runs out rather than reaching for the floor."
             },
             {
-              "name": "Seated Calf Raise (HSR)",
-              "sets": "3x10",
-              "weight": "135 lbs",
-              "notes": "HSR session 3 of 3. Matched to what Tuesday actually did, 3x10 at 135, rather than the 3x8 originally written. Hold 135: the step to 145 still waits on a clean morning-after read, and Wednesday's was 1-2/10 rather than clean. ROM: knee bent, full plantarflexion, pain-free bottom."
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Slow and controlled, chest forward, small box, no rebound."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "90 lbs",
+              "notes": "PT daily block at the daily dose, which has replaced the program's 3x/week 3x8 at 135. Progress off clean morning reads only, and ask the PT what load they intend. ROM: knee bent, full plantarflexion, pain-free bottom."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg",
               "weight": "BW + 25 lb/leg",
-              "notes": "Skipped Tuesday, so this is the week's only loaded single-leg calf exposure outside Thursday's tests. Log left and right separately, honestly: at roughly 1.11x bodyweight it nominally clears the 1.0x BW knee-extended benchmark (Green 2022), but that only counts if both sides do it. ROM: floor range only, no heel drop below neutral."
-            },
-            {
-              "name": "Glute-Ham Raise / Ham Curl",
-              "sets": "3x8",
-              "notes": "Skipped Tuesday, so this is the week's first direct knee-flexion hamstring volume. Proximal chain, calf-sparing. ROM: full, controlled, no snapping at end range."
+              "notes": "PROGRAM ITEM, NOT THE PT'S, kept at once weekly on this day. It is the only thing in either program that reaches the >=1.0x BW knee-extended benchmark gating return to sport: BW+25 is roughly 1.11x bodyweight, where a bodyweight hold is not (Green 2022 PMID 35032233). The PT knows about it and did not include it, so flag it and defer if they want it out. Log left and right separately and honestly, because the benchmark only counts if both sides reach it. ROM: floor range only, though the daily step-backs now supersede the old no-heel-drop-below-neutral restriction."
             }
           ]
         },
@@ -2673,8 +2753,34 @@
           "day": "Sat",
           "date": "2026-08-01",
           "type": "rest",
-          "desc": "Rest, pre-hockey prep",
-          "longDesc": "Rest ahead of Sunday PM hockey. Sunday plan: thorough calf warm-up with raises and graded push-off before the game, ease into maximal push-off rather than going cold, no static end-range stretching, and stop on any sharp calf pain. That warm-up and stop rule is cheap insurance - recurrence in this band often arrives without warning (Green 2017 PMID 28259848)."
+          "desc": "No lifting, PT block still daily",
+          "longDesc": "No lifting ahead of Sunday PM hockey, but the PT's block is daily so it still runs: isometric holds, seated calf raises, step-backs. Nothing else. Sunday plan: thorough calf warm-up with raises and graded push-off before the game, ease into maximal push-off rather than going cold, no static end-range stretching, and stop on any sharp calf pain. That warm-up and stop rule is cheap insurance, since recurrence in this band often arrives without warning (Green 2017 PMID 28259848).",
+          "exercises": [
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "90 lbs",
+              "notes": "PT daily block. Day before a game, so keep it at the daily dose and do not chase load."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Controlled, no rebound. Day before a game, so this is the dose, not more."
+            }
+          ]
         }
       ]
     },

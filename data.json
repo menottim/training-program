@@ -15,7 +15,7 @@
     },
     "clinicalWorkupAsks": {
       "acuteCalfInjuryJun2026": {
-        "priority": "Self-screen on 6/23 was reassuring (see selfScreenJun23), so urgency is lowered. A professional (physio/sports-med) assessment is still recommended for grading and rehab progression, but is no longer time-critical. Re-escalate urgently if DVT signs develop (swollen, warm, red, or one-sided calf) or pain becomes disproportionate. Coaching note, not a diagnosis.",
+        "priority": "Self-screen on 6/23 was reassuring (see selfScreenJun23), so urgency is lowered. PARTIALLY ADDRESSED 7/28: first professional contact on record, a PT session for the calf, but it was treatment only. No grading, no capacity or strength testing, and no change to what is cleared, so the ask for grading and rehab-progression guidance is still open and the program's own criteria-based gates remain the only objective definition of cleared. Not time-critical. Re-escalate urgently if DVT signs develop (swollen, warm, red, or one-sided calf) or pain becomes disproportionate. Coaching note, not a diagnosis.",
         "presentation": "Sun 6/21 AM basketball: minor right-calf pull played through, then acute severe left-calf pain ('shot with a lacrosse ball'), difficulty bearing weight since. Classic acute medial gastrocnemius strain ('tennis leg'), at least Grade II given the can't-weight-bear onset.",
         "selfScreenJun23": "Later 6/23: no swelling or bruising, calf symmetric, and the Thompson/Simmonds calf-squeeze test normal and symmetric (foot plantarflexes both sides). Complete Achilles rupture now much less likely (Boyd 2015 PMID 26622031); DVT lower probability given no swelling/asymmetry (Wells 1997 PMID 9428249). Working dx: acute medial gastrocnemius strain, likely Grade I-II.",
         "ruleOut": [
@@ -2069,6 +2069,29 @@
       ],
       "achillesPain": 0,
       "notes": "Wed Wk 18 upper + calf. UPPER (intact line, progressing well): Bench 160/160/165/165 - hit 165x5 on the last two sets, the double-progression step up from the first clean 4x5x160 on 7/1; next aim a clean 4x5x165, then 170. OHP moved to barbell (from DBs), 95x5 top then 75x8 back-offs. Bent-over barbell row substituted for the planned seated cable row (75/95/105). Lat pulldown 95/145/145. CALF LOADING RAN AHEAD OF THE GATE: the confirm-and-protect plan held seated calf at 95 lb with step-ups gated on clean mornings, and the 7/7 AM read still had mild calf soreness + hamstring tenderness - yet seated calf ramped to 135 (+40, approaching the pre-injury 150) and single-leg went BW+25. Not a red flag by itself (135 < pre-injury load, no acute event reported), but it jumped the objective gate the whole block is built on, so the 7/9 AM morning-after read is now the decisive governor (Silbernagel 2007 PMID 17307888, 24-h rule): light and subsiding = the load was tolerated and we can build; lingering or climbing = drop back to the held 95. No calf or achilles pain during the session (0/10). MORNING-AFTER (7/9 AM): calf BETTER than the prior morning, so the jump to seated 135 / single-leg BW+25 was tolerated and actually beat baseline - passes the Silbernagel 24h rule (PMID 17307888) and is a positive tolerance signal that the calf absorbed a meaningful load bump with no next-day flare. Process note: it still jumped the confirm-and-protect gate (mornings weren't confirmed clean beforehand), but the outcome validates continuing to build. OHP was strict (no leg drive), sparing ankle plantarflexion. Sleep (night of 7/7) not reported."
+    },
+    {
+      "date": "2026-07-28",
+      "type": "recovery",
+      "activity": "Calf physical therapy (AM)",
+      "details": "PT session for the left calf. Treatment only: no capacity or strength testing, and no change to clearance for hops, running, plyos, or sport.",
+      "sleepHours": 8,
+      "notes": "First professional contact for the calf on record, 37 days after the 6/21 strain. It was treatment rather than assessment, so it does NOT satisfy the clinicalWorkupAsks item opened 6/23, which asks for grading and rehab-progression guidance. No test numbers, no restrictions, and no change to clearance came out of it, so the program's own criteria-based gates (Green 2022 PMID 35032233) remain the only objective definition of cleared. Worth asking the PT directly for a grade and for their view on the hop and capacity criteria at the next visit. Sleep reported as a 7.5-9 h range rather than a measured figure; logged as 8 h."
+    },
+    {
+      "date": "2026-07-28",
+      "type": "training",
+      "activity": "Lower restart (Mon Phase 3)",
+      "exercises": [
+        { "name": "Trap Bar Deadlift", "sets": "4x5", "weight": "205 lbs", "notes": "clean at the restart load; first barbell lower since 6/18, 40 days off; ~15% under the 6/11 4x5x245" },
+        { "name": "Seated Calf Raise (HSR)", "sets": "3x8", "weight": "135 lbs", "notes": "as prescribed, holding the 7/8 load" },
+        { "name": "Single-Leg Calf Raise (HSR)", "sets": "3x6/leg", "weight": "BW + 25 lb/leg", "notes": "as prescribed; left and right not recorded separately" },
+        { "name": "Glute-Ham Raise / Ham Curl", "sets": "3x8", "notes": "proximal chain, calf-sparing; the plan set no load and none was recorded, so nothing carries forward" },
+        { "name": "Single-leg calf-raise capacity test", "sets": "not performed", "notes": "skipped; moved to Thu 7/30 as the session finisher" }
+      ],
+      "achillesPain": 0,
+      "sleepHours": 8,
+      "notes": "Prescribed for Mon 7/27, ran Tue 7/28 PM after the morning calf PT (Monday was rest). Grouped under Mon Phase 3 because Week 21 moves the lower session to Monday, so future lower work lands in the same progress table. TB DL 4x5x205 CLEAN, the first barbell lower session in 40 days. That is the expected outcome rather than a surprise: strength decays much more slowly than muscle size, so the first sessions back typically go better than they feel like they will (Psilander 2019 PMID 30991013, where CSA returned to baseline after 20 weeks off while strength stayed roughly 60% elevated; Moderate). The same trial found no faster retraining in a previously trained limb, so this is strength retention, not muscle memory. One clean session banked; a second clean 4x5x205 earns +10 to 215, and no deload gets stacked on the far side of a layoff. Calf silent during the session (0/10). MORNING-AFTER READ (7/29 AM): 1-2/10 diffuse soreness, well inside the pain rule of up to 5/10 during loading and the next morning, settling to baseline within 24 h and not climbing week to week (Silbernagel 2007 PMID 17307888). CAPACITY TEST SKIPPED, the second attempt running to produce no usable number after the unstandardized 7/6 30/30, so the clearance gate is still undefined; it moves to Thu 7/30 after the hop test. Sleep reported as a 7.5-9 h range for Mon and Tue nights, logged as 8 h. No protein or calorie data reported; bodyLog has had no intake entry since 5/11."
     }
   ],
   "scienceReviews": [
@@ -2404,14 +2427,24 @@
       "weight": 219.5,
       "bodyFatPct": 22.7,
       "notes": "AM weigh-in 219.5/22.7%. Breaks the 220.5/23.0 plateau held across 5/7 and 5/28 (-1.0 lb / -0.3 pt BF over 15 days). BF 22.7% ties the program low last seen 3/11 (218.3/22.7, program start); weight is the lowest since that 3/11 reading. Slow recomp continuing on the Option B deficit-anchor protocol while strength lifts held (TB DL 245, Squat 160 on 6/11)."
+    },
+    {
+      "date": "2026-07-28",
+      "sleepHours": 8,
+      "notes": "Sleep night Jul 27 to 28 reported as a 7.5-9 h range, logged as 8 h (estimate, not measured). On target per the 7.5-9 h individualized range (Walsh 2021 IOC consensus), so no Knowles 2018 intensity auto-regulation trigger. Calf PT in the AM and the lower restart in the PM. No intake data reported."
+    },
+    {
+      "date": "2026-07-29",
+      "sleepHours": 8,
+      "notes": "Sleep night Jul 28 to 29 reported as a 7.5-9 h range, logged as 8 h (estimate, not measured). MORNING CALF READ: 1-2/10 diffuse soreness after Tuesday's lower restart, inside the Silbernagel pain rule (PMID 17307888). Recorded in notes rather than achillesPainAM on purpose, since this is the healing gastroc rather than the Achilles tendon, and mixing the two would corrupt the Achilles trend. Achilles itself not reported."
     }
   ],
   "modifiedWeeks": {
     "21": {
       "title": "Barbell lower restart, criteria-gated",
       "blockLabel": "Lower rebuild",
-      "subtitle": "Barbell lower comes back at a reduced load. Two gate tests this week: a standardized calf-capacity re-test and the hop criteria that gate running, plyos, and Sunday basketball.",
-      "reason": "Week 21 carries the first barbell-lower session since 6/18 - 39 days without TB DL or back squat, and day 36 post-strain. Three facts reshaped the block: basketball is in its off-season so the Tuesday game is gone; Sunday AM basketball stays self-gated until the calf clears; and Weeks 19-20 were travel with little or no training logged. Only one game is on the calendar (hockey Sun 8/2 PM), so the in-season lower-body volume constraint in Section 3 - written for a three-game week - largely lifts. This is the best lower-body rebuild window the program has had. RESTART LOADS are cut ~15% (TB DL 245 to 205, squat 160 to 135). Training cessation lowers every component of muscular strength with a dose-response on cessation duration: maximal force SMD -0.46, submaximal strength -0.62, maximal power -0.20 across 103 studies, with smaller losses in recreational athletes than in inactive people (Bosquet et al. 2013, Scand J Med Sci Sports, PMID 23347054, DOI 10.1111/sms.12047; Moderate). The meta-analysis reports standardized effect sizes, not percentage loss by cessation duration, so the 15% figure is a judgment call from the effect direction, not a number the paper supplies. Two clean sessions earn +10 on lower compounds per the standard double-progression rule. BARBELL LOWER IS NOT THE CALF RISK HERE - plyos, jumps, sprinting, and sport change-of-direction are. TB DL is hip-dominant, and the squat's bottom position has the knee flexed, which slackens the biarticular gastroc: the opposite of the injury mechanism, sudden knee extension with the ankle dorsiflexed (Dixon 2009 PMID 19468870). So barbell lower comes back now while jumps and plyos stay frozen behind the Phase 3 hop gate. Rebuilding strength is itself the protection - a residual capacity deficit is the recurrence substrate, and age 40 plus a prior calf injury is the highest-risk band (Green 2017 PMID 28259848; Green 2022 PMID 35032233). TWO GATE TESTS THIS WEEK, because 'until the calf is 100%' is currently undefined and therefore has no exit. Mon: standardized single-leg calf-raise capacity, both legs, full height and set cadence - the 7/6 result of 30/30 met the rep count but came at lower height and force on the injured left, so the asymmetry half was never confirmed. Thu: roughly 20 symptom-free single-leg hops per leg plus hop asymmetry, the Phase 3 criterion that gates running, step-down plyometrics, and a return to basketball (Green 2022; norms Hebert-Losier 2017 PMID 28886865). Thursday's placement also yields a Friday-morning read that informs the Sunday hockey decision. PAIN RULE throughout: up to 5/10 during loading and next morning, must settle to baseline within 24 h, must not climb week to week (Silbernagel 2007 PMID 17307888; biasing conservative given the bilateral Achilles tendinopathy). No static end-range calf stretching - the 7/6 curb stretch produced a sharp pain shot, and end-range dorsiflexion stretch stays contraindicated.",
+      "subtitle": "Barbell lower restarted Tuesday at the reduced load and went clean. Both gate tests now land Thursday: the hop criteria that gate running, plyos, and Sunday basketball, then the standardized calf-capacity re-test as the session finisher.",
+      "reason": "Week 21 carries the first barbell-lower session since 6/18 - 39 days without TB DL or back squat, and day 36 post-strain. Three facts reshaped the block: basketball is in its off-season so the Tuesday game is gone; Sunday AM basketball stays self-gated until the calf clears; and Weeks 19-20 were travel with little or no training logged. Only one game is on the calendar (hockey Sun 8/2 PM), so the in-season lower-body volume constraint in Section 3 - written for a three-game week - largely lifts. This is the best lower-body rebuild window the program has had. RESTART LOADS are cut ~15% (TB DL 245 to 205, squat 160 to 135). Training cessation lowers every component of muscular strength with a dose-response on cessation duration: maximal force SMD -0.46, submaximal strength -0.62, maximal power -0.20 across 103 studies, with smaller losses in recreational athletes than in inactive people (Bosquet et al. 2013, Scand J Med Sci Sports, PMID 23347054, DOI 10.1111/sms.12047; Moderate). The meta-analysis reports standardized effect sizes, not percentage loss by cessation duration, so the 15% figure is a judgment call from the effect direction, not a number the paper supplies. Two clean sessions earn +10 on lower compounds per the standard double-progression rule. BARBELL LOWER IS NOT THE CALF RISK HERE - plyos, jumps, sprinting, and sport change-of-direction are. TB DL is hip-dominant, and the squat's bottom position has the knee flexed, which slackens the biarticular gastroc: the opposite of the injury mechanism, sudden knee extension with the ankle dorsiflexed (Dixon 2009 PMID 19468870). So barbell lower comes back now while jumps and plyos stay frozen behind the Phase 3 hop gate. Rebuilding strength is itself the protection - a residual capacity deficit is the recurrence substrate, and age 40 plus a prior calf injury is the highest-risk band (Green 2017 PMID 28259848; Green 2022 PMID 35032233). TWO GATE TESTS THIS WEEK, because 'until the calf is 100%' is currently undefined and therefore has no exit. Mon: standardized single-leg calf-raise capacity, both legs, full height and set cadence - the 7/6 result of 30/30 met the rep count but came at lower height and force on the injured left, so the asymmetry half was never confirmed. Thu: roughly 20 symptom-free single-leg hops per leg plus hop asymmetry, the Phase 3 criterion that gates running, step-down plyometrics, and a return to basketball (Green 2022; norms Hebert-Losier 2017 PMID 28886865). Thursday's placement also yields a Friday-morning read that informs the Sunday hockey decision. PAIN RULE throughout: up to 5/10 during loading and next morning, must settle to baseline within 24 h, must not climb week to week (Silbernagel 2007 PMID 17307888; biasing conservative given the bilateral Achilles tendinopathy). No static end-range calf stretching - the 7/6 curb stretch produced a sharp pain shot, and end-range dorsiflexion stretch stays contraindicated. UPDATE 7/29: the week ran a day behind. Monday was rest, so the lower restart moved to Tuesday PM, preceded by a morning PT session for the calf that was treatment only, with no testing and no change to what is cleared. TB DL landed a clean 4x5x205, which is the expected result rather than a surprise: strength decays far more slowly than muscle size, so the first sessions back usually go better than they feel like they will (Psilander et al. 2019, J Appl Physiol 126:1636-45, PMID 30991013, where 20 weeks of detraining returned CSA to baseline while strength stayed roughly 60% elevated; Moderate). Note that the same trial found a previously trained leg did NOT retrain faster than an untrained one, so this is strength retention, not muscle memory. One clean session is banked and a second earns +10 to 215. Do not stack a deload on the far side of the layoff, because the layoff already was one. The calf was silent through the session and read 1-2/10 diffuse on Wednesday morning, well inside the pain rule. THE CAPACITY TEST WAS SKIPPED, the second attempt running that produced no usable number after the unstandardized 7/6 read, so 'when is the calf cleared' still has no defined answer. It moves to Thursday rather than slipping another week, placed after the hop test and as the session finisher, because a to-fatigue test run first would corrupt the hop read. The pre-fatigue cuts one way only: clearing 30 reps per side at 10% or less asymmetry after roughly 20 hops is conservative and settles the gate, while a near-miss is ambiguous and earns a clean re-test on a rested calf. Wednesday's HSR sets come off the board to keep the calf quiet for those tests, and calf loading still happens three times this week (Tue HSR, Thu gate tests, Fri HSR), preserving the Beyer 2015 3x/week frequency.",
       "schedule": [
         {
           "day": "Sun",
@@ -2425,8 +2458,9 @@
           "day": "Mon",
           "date": "2026-07-27",
           "type": "training",
-          "desc": "Lower restart and calf capacity test",
-          "longDesc": "First TB DL since 6/18. Run the capacity test FIRST while fresh - a to-fatigue test after deadlifts measures fatigue, not capacity. Then TB DL at the reduced restart load, then the calf work. Record reps per side on the test, and log tomorrow morning's read.",
+          "status": "skipped",
+          "desc": "Rest, lower restart moved to Tue",
+          "longDesc": "Rest day taken. The prescribed lower restart moved to Tuesday PM and the capacity test did not run at all. Left on the board as the record of what was prescribed. Original plan: run the capacity test FIRST while fresh, since a to-fatigue test after deadlifts measures fatigue rather than capacity, then TB DL at the reduced restart load, then the calf work.",
           "exercises": [
             {
               "name": "Single-leg calf-raise to fatigue (capacity test)",
@@ -2462,16 +2496,52 @@
         {
           "day": "Tue",
           "date": "2026-07-28",
-          "type": "rest",
-          "desc": "Rest or easy Zone 2 bike",
-          "longDesc": "No basketball - the league is in its off-season, so the usual Tuesday game is gone. 20-30 min easy bike if you want blood flow. Nothing that loads explosive push-off."
+          "type": "training",
+          "status": "done",
+          "desc": "Calf PT, then the lower restart",
+          "longDesc": "Physical therapy for the calf in the morning: treatment only, no testing and no change to what is cleared, so the program's own criteria still govern the return. Lower restart in the afternoon, the first barbell lower session since 6/18 and 40 days without TB DL or back squat. TB DL 4x5x205 landed clean at the reduced restart load, one clean session toward the +10 step to 215. The capacity test did not run, so it moves to Thursday. Calf silent through the session, and Wednesday morning read 1-2/10 diffuse, inside the Silbernagel pain rule.",
+          "exercises": [
+            {
+              "name": "Calf PT session (AM)",
+              "sets": "1 session",
+              "notes": "Treatment only. No capacity or strength testing, and no change to clearance for hops, running, plyos, or sport."
+            },
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "4x5",
+              "weight": "205 lbs",
+              "notes": "Clean at the restart load, ~15% under the 6/11 4x5x245, after 40 days off. One clean session banked; a second clean 4x5x205 earns +10 to 215."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x8",
+              "weight": "135 lbs",
+              "notes": "As prescribed, holding the 7/8 load. HSR session 1 of 3 this week."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 25 lb/leg",
+              "notes": "As prescribed. Left and right were not recorded separately, so the asymmetry question stays open until Thursday."
+            },
+            {
+              "name": "Glute-Ham Raise / Ham Curl",
+              "sets": "3x8",
+              "notes": "As prescribed. Proximal chain, calf-sparing."
+            },
+            {
+              "name": "Single-leg calf-raise capacity test",
+              "sets": "not performed",
+              "notes": "SKIPPED. Second attempt running without a usable number after the unstandardized 7/6 read. Moved to Thu 7/30 as the session finisher."
+            }
+          ]
         },
         {
           "day": "Wed",
           "date": "2026-07-29",
           "type": "training",
-          "desc": "Upper and calf",
-          "longDesc": "The upper line was preserved through the whole injury and is the one thing still progressing. Bench is the priority: 7/8 was 160/160/165/165, so a clean 4x5x165 has not happened yet - land it and a second clean session earns 170. Chest volume sits at 4 sets from barbell bench alone, below the 6-10 set range, so DB bench returns as accessory volume.",
+          "desc": "Upper day, calf gets a rest",
+          "longDesc": "The upper line was preserved through the whole injury and is the one thing still progressing. Bench is the priority: 7/8 was 160/160/165/165, so a clean 4x5x165 has not happened yet - land it and a second clean session earns 170. Chest volume sits at 4 sets from barbell bench alone, below the 6-10 set range, so DB bench returns as accessory volume. The seated calf HSR sets come off today. The calf read 1-2/10 diffuse this morning after Tuesday's lower session, and Thursday carries both gate tests, which need the freshest calf this week can give them. Weekly calf frequency is unchanged at three sessions (Tue HSR, Thu gate tests, Fri HSR). Keep the overhead press strict, since a leg dip would load plantarflexion on the healing gastroc.",
           "exercises": [
             {
               "name": "Bench Press",
@@ -2507,12 +2577,6 @@
               "name": "Cable Woodchop (Low-to-High)",
               "sets": "3x5/side",
               "notes": "Direct core work, last logged 6/10. Core sits below the 4-6 set weekly floor. ROM: rotate from the hips, not the lumbar spine."
-            },
-            {
-              "name": "Seated Calf Raise (HSR)",
-              "sets": "3x8",
-              "weight": "135 lbs",
-              "notes": "HSR session 2 of 3 this week. Hold 135 unless Monday's morning-after read was clean, in which case 145. ROM: knee bent, full plantarflexion, pain-free bottom."
             }
           ]
         },
@@ -2520,14 +2584,14 @@
           "day": "Thu",
           "date": "2026-07-30",
           "type": "training",
-          "desc": "Hop gate test, light session",
-          "longDesc": "The week's other gate. Roughly 20 symptom-free single-leg hops per leg is the Phase 3 criterion that gates running, step-down plyometrics, and a return to Sunday AM basketball (Green 2022 PMID 35032233). Keep it small and submaximal first, build height only while it stays silent, and stop on any sharp calf pain. Placed Thursday on purpose so Friday morning gives a read before Sunday's hockey.",
+          "desc": "Both calf gate tests",
+          "longDesc": "The week's decision point, and it runs only if this morning's calf read is at or below Wednesday's 1-2/10. Test 1, hops: roughly 20 symptom-free single-leg hops per leg is the Phase 3 criterion that gates running, step-down plyometrics, and a return to Sunday AM basketball (Green 2022 PMID 35032233). Test 2, capacity: the standardized single-leg calf-raise count that 7/6 attempted without standardizing and 7/27 skipped entirely. Order is fixed. Hops fresh, then the low-level movement work, then the capacity test as the finisher, because a to-fatigue test run first would corrupt the hop read. Record left and right separately on both, since asymmetry is the half of the gate that has never been measured. Stop on any sharp calf pain rather than pushing through, and log where it appeared. Placed Thursday so Friday morning gives a read before Sunday's hockey.",
           "exercises": [
             {
               "name": "Single-leg hop test (gate)",
               "sets": "up to 20 hops/leg",
               "weight": "bodyweight",
-              "notes": "Start with small submaximal hops in place, build height only while symptom-free. Record hops completed per leg, any symptom and where it appeared, and the height difference between sides. Targets: roughly 20 symptom-free hops and 10% or less hop asymmetry. Do NOT push through sharp pain - stop and log it. ROM: land midfoot with a soft knee, no forced heel contact."
+              "notes": "Run FIRST, fresh. Start with small submaximal hops in place, build height only while symptom-free. Record hops completed per leg, any symptom and where it appeared, and the height difference between sides. Targets: roughly 20 symptom-free hops and 10% or less hop asymmetry. Do NOT push through sharp pain - stop and log it. ROM: land midfoot with a soft knee, no forced heel contact."
             },
             {
               "name": "Banded Lateral Shuffle",
@@ -2538,6 +2602,12 @@
               "name": "Single-Leg Balance",
               "sets": "3x30s/leg",
               "notes": "Ankle stability, unloaded. Barefoot is fine. Compare steadiness left versus right."
+            },
+            {
+              "name": "Single-leg calf-raise to fatigue (capacity test)",
+              "sets": "to fatigue, both legs",
+              "weight": "bodyweight",
+              "notes": "SESSION FINISHER, after the hops. Standardize what 7/6 did not: full height every rep, roughly 2 s per rep cadence, knee straight, stop when height drops or form breaks. Record reps left and right. Gate is 30 or more reps with 10% or less asymmetry (Green 2022; norms Hebert-Losier 2017 PMID 28886865). Coming after roughly 20 hops per leg this is mildly pre-fatigued, which only biases the number DOWN: clearing the gate here settles it, while a near-miss is ambiguous and earns a clean re-test on a rested calf. ROM: floor range, full plantarflexion at the top, no heel drop below neutral."
             }
           ]
         },
@@ -2546,7 +2616,7 @@
           "date": "2026-07-31",
           "type": "training",
           "desc": "Squat restart and calf",
-          "longDesc": "First back squat since 6/18, and roughly 48 h ahead of Sunday PM hockey, so this stays the lightest lifting day: RPE 6, no plyos, no jumps. HSR session 3 of 3.",
+          "longDesc": "First back squat since 6/18, and roughly 48 h ahead of Sunday PM hockey, so this stays the lightest lifting day: RPE 6, no plyos, no jumps. HSR session 3 of 3. Expect the calf to be sore from Thursday's capacity test, which does not change the squat, since the squat bottom has the knee flexed and slackens the biarticular gastroc. If Thursday's tests produced sharp pain rather than ordinary fatigue soreness, drop the calf work here and say so before Sunday.",
           "exercises": [
             {
               "name": "Back Squat",

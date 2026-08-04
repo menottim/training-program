@@ -2157,6 +2157,39 @@
       "duration": "PM, duration not reported",
       "intensity": "not reported",
       "notes": "Sun PM hockey, the week\u0027s only game, and the first game since 7/5. Unlike 7/5 this one was not off-plan: it was the scheduled fixed game on a one-game slate, played 14 days after barbell lower restarted and 2 days after the first loaded single-leg calf work and the first step-back eccentrics. WHY IT MATTERS FOR THE GATE: hockey push-off and change of direction are the strain\u0027s own mechanism (sudden knee extension with ankle dorsiflexion at push-off, Dixon 2009 PMID 19468870), so a full game tolerated on top of Friday\u0027s novel eccentric load is a meaningful tolerance datum. The Sunday morning read going in was under 3/10 and the Monday morning read coming out was also under 3/10, which is the two-consecutive-clean-reads criterion the gate tests were waiting on. A game does not substitute for the objective criteria (Green 2022 PMID 35032233) any more than 7/5 did, but it does mean the tests run Monday on a tissue that has demonstrably handled sport load. CAVEAT FOR THE TESTS: they run roughly 14 h after a game, so the absolute rep count on the capacity test will under-read true capacity. The ASYMMETRY number is the more robust half, and if anything game fatigue biases it toward showing MORE asymmetry, so a pass at 10% or less the morning after hockey is a conservative pass. DATA GAPS: duration, intensity, and how the calf felt during and immediately after the game were not reported, and neither was Sunday night sleep. Duration and intensity in particular carry the in-season volume read for the week (Impellizzeri 2019 PMID 30614348)."
+    },
+    {
+      "date": "2026-08-03",
+      "type": "training",
+      "activity": "Gate tests and lower (Mon Phase 3)",
+      "exercises": [
+        {
+          "name": "Single-leg hop test (gate)",
+          "sets": "20 hops/leg",
+          "weight": "bodyweight",
+          "notes": "PASS. 20 hops each leg as prescribed, symptom-free both sides. Inter-leg hop height difference was not recorded, so the hop criterion is met on symptoms and rep count but not on a measured height number."
+        },
+        {
+          "name": "Single-leg calf-raise to fatigue (capacity test)",
+          "sets": "30 left / 30 right",
+          "weight": "bodyweight",
+          "notes": "PASS. 30 and 30, which is 0 percent inter-limb asymmetry against a 10 percent ceiling. Both legs stopped at the 30-rep criterion rather than at true failure, so 30 is a floor on capacity, not a measured ceiling."
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "4x5",
+          "weight": "205 lbs",
+          "notes": "Clean. Second consecutive clean 4x5 at 205 after 7/28, so double progression opens 215 on the next lower day."
+        },
+        {
+          "name": "Single-Leg RDL (dumbbell)",
+          "sets": "3x8/leg",
+          "weight": "20 lb DBs",
+          "notes": "PT item, second of the week after 7/31 at the same load. Confirmed as 20 lb dumbbells."
+        }
+      ],
+      "achillesPain": 0,
+      "notes": "BOTH GATE TESTS PASSED, first attempt after four postponements (7/6 unstandardized, 7/27 skipped, 7/28 skipped, 7/30 postponed on a 3-5/10 DOMS read). Day 43 post-strain, inside the week 5-9 Phase 3 anchor in knowledge/calf-strain-rehab.md, so this is on the conservative schedule rather than ahead of it. HOPS: 20 per leg, symptom-free both sides. That is the criterion gating running and step-down plyometrics (Green 2022 PMID 35032233, Phase 3). CAPACITY: 30 left and 30 right, clearing the 30-rep / 10-percent-asymmetry threshold (Green 2022; norms referenced to Hebert-Losier 2017 PMID 28886865) at 0 percent asymmetry. The asymmetry half of the gate had never once been produced before today. HONEST CAVEAT ON THE 0 PERCENT: both legs stopped at exactly 30, which is the criterion value, not a to-failure value. The test was specified to fatigue, so 30/30 most likely reflects stopping at the target rather than both legs failing on the identical rep. Both criteria are met either way and 30 is now a floor, but a true-failure read would have said more about which leg is actually weaker. Run it to failure next time. WHAT THIS OPENS: graded running and step-down box jumps, both entering this week (Thu and Fri). Two of Phase 3's four exit criteria are now objectively met. WHAT IT DOES NOT OPEN: full return to sport. Green 2022's Phase 4 list requires ALL of VAS 0/10, calf raise 30 reps at 10 percent asymmetry or less (met), loaded strength benchmarks at 10 percent asymmetry or less, hop and jump asymmetry 10 percent or less, and a completed symptom-free sport-specific plyo and change-of-direction exposure. The loaded strength benchmarks are the outstanding gap: 1.0x BW knee-extended and 1.5x BW knee-flexed, against a current single-leg calf raise at BW plus 25 lb per leg and a seated calf raise the PT has at BODYWEIGHT. At roughly 220 lb the soleus benchmark is about 330 lb, which bodyweight seated raises will not build toward. That is a question for the PT rather than a unilateral override of a PT item. Sunday AM basketball therefore holds one more week and opens 8/16 if Thursday's run and Friday's jumps stay clean. LIFTING: TB DL 4x5x205 clean for the second consecutive session (7/28, 8/3), so 215 Thursday, plus 10 lb per the compound-lower double-progression rule. Single-leg RDL 3x8/leg at 20 lb DBs, the second of the PT's 2-3x weekly doses. RECURRENCE FRAMING: passing a gate is not discharge. Age and prior calf injury are the two strongest recurrence risk factors (Green 2017 PMID 28259848), recurrence in this band arrives without warning, and 13-21 percent recur within two years (Green 2025 PMID 40919406). Calf-raise capacity becomes a permanent maintenance item, not a milestone that gets retired. NOT REPORTED: sleep for Sun or Mon night, and whether the PT isometric block ran after the tests. The isometrics are left out of the exercise list rather than assumed, since they were not confirmed."
     }
   ],
   "scienceReviews": [
@@ -2514,6 +2547,10 @@
     {
       "date": "2026-08-03",
       "notes": "MORNING READ: calf under 3/10, roughly 14 h after Sunday PM hockey. SECOND consecutive clean read, so the gate criterion is met and both postponed tests run this morning fresh, before the PT block and before any lifting. This read is the most informative of the block: it follows a full hockey game stacked on top of Friday\u0027s first loaded single-leg calf raises at BW+25/leg and first step-back eccentrics, which is the heaviest combined calf exposure since the 6/21 strain. Clean the morning after that combination is a stronger tolerance signal than either the game or the session alone. Sleep not reported for Sun night. No intake data; bodyLog has had no protein or calorie entry since 5/11, now 84 days."
+    },
+    {
+      "date": "2026-08-04",
+      "notes": "MORNING READ: calf calm, roughly 24 h after both gate tests. THIS IS THE READ THAT VALIDATES MONDAY: 20 hops per leg plus a to-30 capacity test on both legs was the largest neuromuscular calf demand since the 6/21 strain, and the next morning is back at baseline. That satisfies the 24-hour rule directly (Silbernagel 2007 PMID 17307888), so the tests measured capacity without costing anything. Trajectory across two weeks: 1-2/10 Tue 7/28, 1-2/10 Wed 7/29, 3-5/10 Thu 7/30 (the DOMS peak), clean Fri 7/31, under 3/10 Sun 8/2, under 3/10 Mon 8/3, calm today. No week-to-week climb. Recorded in notes rather than achillesPainAM because this is the healing gastroc, not the Achilles tendon. Sleep not reported for Sun or Mon night. No intake data; bodyLog has had no protein or calorie entry since 5/11, now 85 days."
     }
   ],
   "modifiedWeeks": {
@@ -2844,8 +2881,8 @@
     "22": {
       "title": "Gate tests, finally",
       "blockLabel": "Lower rebuild",
-      "subtitle": "Gate is open on two clean morning reads. Both tests run Monday, fresh, before anything else. The back half of the week stays provisional until they are read.",
-      "reason": "This week exists to answer one question the program has failed to answer four times: is the calf actually cleared? The capacity test was attempted unstandardized on 7/6, skipped on 7/27, skipped again on 7/28, and postponed on 7/30 for a 3-5/10 DOMS read. It runs Monday, fresh, before that day's PT block and before any lifting, and it was GATED on two consecutive morning reads under 3/10. THAT GATE IS NOW MET: Sun 8/2 AM and Mon 8/3 AM both came in under 3/10, so the tests run. The two criteria: roughly 20 symptom-free single-leg hops per leg, which gates running, step-down plyometrics, and a return to Sunday AM basketball, and 30 or more single-leg calf raises with 10% or less inter-limb asymmetry (Green 2022 PMID 35032233; norms Hebert-Losier 2017 PMID 28886865). Hops first, capacity test as the finisher, both recorded left and right separately, because a measured asymmetry number is the half of the gate that has never once been produced. WHY THE BACK HALF IS THIN: the sessions from Wednesday on depend on what Monday says, and writing detailed prescriptions against unknown test results is how stale plans get shipped. Standing items regardless: the PT's daily block continues (isometric holds, bodyweight seated calf raise, and step-backs, which finally started 7/31), squats and single-leg RDL run 2-3x weekly per the PT at 135 and 20 lb DBs, and the upper line keeps progressing with bench holding at 165 until a clean 4x5 lands. Two volume holes carried in from Week 21 need filling this week: back sat at 5 sets and core at ZERO direct sets against a 4-6 set floor, because Thursday 7/30 was skipped entirely and took the lat pulldown and woodchops with it. That is two straight weeks under the core floor. PAIN RULE unchanged: up to 5/10 during loading and the next morning, settling to baseline within 24 h, and not climbing week to week (Silbernagel 2007 PMID 17307888). The 7/30 climb to 3-5/10 RESOLVED as predicted: it was the 48 h peak of a single-session DOMS curve from Tuesday PM, not an escalating trend, and Friday read clean enough to start both gated items. Friday then stacked the first step-back eccentrics and the first loaded single-leg calf raises at BW+25/leg, hockey followed on Sunday, and Monday still read under 3/10. That is the heaviest combined calf exposure since the 6/21 strain, absorbed cleanly, which is why the week can now progress rather than stay defensive.",
+      "subtitle": "Both gate tests passed Monday, on the first attempt after four slips. Running returns Thursday and box jumps Friday if the morning reads hold. Sunday AM basketball stays held one more week.",
+      "reason": "THE WEEK'S QUESTION IS ANSWERED. Monday 8/3 ran both gate tests fresh, before the PT block and before lifting, and both passed: 20 symptom-free single-leg hops per leg, and 30 single-leg calf raises on each leg at 0 percent inter-limb asymmetry against a 10 percent ceiling (Green 2022 PMID 35032233; norms Hebert-Losier 2017 PMID 28886865). Tuesday morning then read calm, roughly 24 h after the largest neuromuscular calf demand since the 6/21 strain, which satisfies the 24-hour rule (Silbernagel 2007 PMID 17307888). Day 43 post-strain, inside the week 5-9 Phase 3 anchor, so on schedule rather than ahead of it. ONE HONEST CAVEAT: both legs stopped at exactly 30, the criterion value, on a test specified to fatigue, so the 0 percent asymmetry probably reflects stopping at the target rather than both legs failing on the same rep. Both criteria are met either way and 30 is a floor, but run it to true failure next time so the weaker leg is actually identified. WHAT THE BACK HALF NOW DOES: Thursday takes the first graded run since the strain, run FIRST while fresh, plus TB DL stepping to 215 on two clean 4x5 sessions at 205. Friday takes the first step-down box jumps since 6/18, GATED on a Friday morning read under 3/10 rather than simply scheduled, which is the same gating that worked on 7/31. Two novel items on consecutive days is the aggressive part of this week; the gate is what keeps it honest. SUNDAY AM BASKETBALL HOLDS ONE MORE WEEK. The two tested criteria are met, but Green 2022's return-to-sport list also requires the loaded strength benchmarks and a completed symptom-free plyo and change-of-direction exposure, and that exposure is exactly what Thursday and Friday are. Clean through both opens basketball on 8/16. OUTSTANDING GAP WORTH RAISING WITH THE PT: the Phase 4 loaded-strength benchmarks are 1.0x BW knee-extended and 1.5x BW knee-flexed. At roughly 220 lb the soleus number is about 330 lb, and the PT's seated calf raise is currently BODYWEIGHT for 3x15, which will not build toward it. Not overriding a PT item, but it needs a plan. VOLUME HOLES FROM WEEK 21 GET FIXED WEDNESDAY: back sat at 5 sets and core at ZERO direct sets for two straight weeks because 7/30 was skipped. Wednesday brings back the lat pulldown, the woodchop, and the Pallof press, which puts back at 8 sets and core at 6, clearing the 4-6 core floor. PAIN RULE unchanged: up to 5/10 during loading and the next morning, settling to baseline within 24 h, and not climbing week to week (Silbernagel 2007). RECURRENCE FRAMING: passing a gate is not discharge. Age and prior calf injury are the two strongest recurrence risk factors (Green 2017 PMID 28259848) and recurrence in this band arrives without warning, so calf-raise capacity is now a permanent maintenance item.",
       "schedule": [
         {
           "day": "Sun",
@@ -2858,8 +2895,8 @@
           "day": "Mon",
           "date": "2026-08-03",
           "type": "training",
-          "desc": "Both gate tests, then lower",
-          "longDesc": "GATE IS OPEN. Sun 8/2 AM and Mon 8/3 AM both read under 3/10, which is the two-consecutive-clean-reads criterion, so both tests run today after four slips. Tests FIRST, fresh, before the PT block and before any lifting, because a to-fatigue test after loading measures fatigue rather than capacity. Hops before the capacity test, since a to-fatigue test run first would corrupt the hop read. Record left and right separately on both, because a measured asymmetry number is the half of the gate that has never once been produced. READ THE RESULT WITH ONE CAVEAT: these run roughly 14 h after Sunday PM hockey, so the absolute rep count under-reads true capacity. Asymmetry is the more robust half, and game fatigue biases it toward showing MORE asymmetry, so a pass at 10% or less this morning is a conservative pass. A marginal FAIL, meaning close to 30 reps or just over 10% asymmetry, should be re-tested on a non-game-adjacent morning rather than treated as settled. Then the lower session: TB DL holds 205 as the second clean session rather than stepping to 215, which corrects an error in the earlier version of this plan.",
+          "desc": "Both gate tests passed, then lower",
+          "longDesc": "PASSED, BOTH TESTS, on the first attempt after four slips. Hops: 20 per leg, symptom-free both sides, which is the criterion that gates running and step-down plyometrics. Capacity: 30 left and 30 right, clearing the 30-rep threshold at 0 percent inter-limb asymmetry against a 10 percent ceiling (Green 2022 PMID 35032233). Caveat worth keeping: both legs stopped at exactly 30 on a test specified to fatigue, so that 0 percent is more likely a stop-at-target than a true failure read. TB DL 4x5x205 clean, the second consecutive clean session at 205, which opens 215. Single-leg RDL 3x8/leg at 20 lb DBs. Seated calf raise and step-backs were held by design on a test day. Whether the isometric block ran after the tests was not reported.",
           "exercises": [
             {
               "name": "Single-leg hop test (gate)",
@@ -2914,7 +2951,7 @@
           "date": "2026-08-04",
           "type": "recovery",
           "desc": "PT block only",
-          "longDesc": "No basketball, since the league is in its off-season. PT daily block and nothing else, which also gives a clean morning-after read on whatever Monday's tests produced. Easy bike for 20-30 min if you want blood flow, nothing that loads explosive push-off.",
+          "longDesc": "No basketball, since the league is in its off-season. PT daily block and nothing else, which also gave a clean morning-after read on Monday's tests: calm, roughly 24 h after the largest neuromuscular calf demand since the strain. That is the 24-hour rule satisfied (Silbernagel 2007 PMID 17307888) and it is what clears Thursday's run to go. Easy bike for 20-30 min if you want blood flow, nothing that loads explosive push-off.",
           "exercises": [
             {
               "name": "Isometric Standing Calf Hold (bilateral)",
@@ -2946,29 +2983,217 @@
           "day": "Wed",
           "date": "2026-08-05",
           "type": "training",
-          "desc": "Upper, bench holds at 165",
-          "longDesc": "Upper day plus the PT block. Bench holds 165 until a clean 4x5 lands: 7/29 took four sets at 165 for 3, 5, 3, 3, so one set of five out of four attempts. Get all four and 170 opens. Bring back what 7/29 dropped, meaning the lat pulldown and the woodchop, and work the seated overhead press back up from the empty bar. Provisional beyond that pending Monday's test results."
+          "desc": "Upper, bench 165, core and back return",
+          "longDesc": "Upper day plus the PT block, and the session that fixes two weeks of volume holes. BENCH HOLDS 165: 7/29 took four sets at 165 for 3, 5, 3, 3, so one clean set of five out of four attempts. Get all four and 170 opens. BACK AND CORE ARE THE POINT: 7/30 was skipped entirely and took the lat pulldown and the woodchop with it, leaving back at 5 sets and core at ZERO direct sets for a second straight week against a 4-6 set floor. Bringing back the pulldown puts back at 8 sets, and the woodchop plus Pallof press puts core at 6. Overhead press works back up off the empty bar it defaulted to on 7/29: 45 lb is far below what a seated press should allow off a 95x5 standing base, so 65 is a rebuild step, not a progression. Row steps to 105 for the same reason, since 95 sits 40 lb under the last clean pre-layoff set. Nothing here loads plantarflexion: the press stays seated on purpose so there is no leg drive.",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "4x5",
+              "weight": "165 lbs",
+              "notes": "HOLD 165 until a clean 4x5 lands. 7/29 gave 3, 5, 3, 3. Full ROM, bar to the chest, no bounce, no heel drive off the floor. A clean four sets opens 170."
+            },
+            {
+              "name": "Close Grip Bench Press",
+              "sets": "4x5",
+              "weight": "95 lbs",
+              "notes": "Hold 95, one clean session banked (7/29). Keeps pressing at 8 working sets, inside the 6-10 chest range. Elbows tucked, full ROM to the lower chest. A second clean session opens 100."
+            },
+            {
+              "name": "Bent Over Barbell Row",
+              "sets": "5x5",
+              "weight": "105 lbs",
+              "notes": "Rebuild step off 7/29's clean 5x5x95, not a double-progression step: 95 is 40 lb under the last clean pre-layoff set (3x10x135 on 4/30). Torso near 45 degrees, pull to the lower ribs, full stretch at the bottom, no jerk from the hips."
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "3x8",
+              "weight": "145 lbs",
+              "notes": "THIS IS THE SET 7/30 DROPPED. Carries 7/8's 145. Full ROM, bar to the upper chest, controlled 2 s eccentric to a full stretch overhead. Takes back volume from 5 sets to 8."
+            },
+            {
+              "name": "Seated Strict Overhead Press",
+              "sets": "4x5",
+              "weight": "65 lbs",
+              "notes": "Rebuild step off the empty 45 lb bar used on 7/29, which was far too light against a 95x5 standing base. Stays SEATED so there is zero leg drive and zero plantarflexion load on the calf. Full ROM, bar from chin height to lockout overhead. Clean 4x5 opens 75."
+            },
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "3x10/side",
+              "weight": "30 lbs",
+              "notes": "Core, and the first direct core work in two weeks. Load has never been recorded in the log, so 30 lb is a starting estimate: RECORD THE PIN so it carries forward. Rotate through the trunk with the hips, full range hip to overhead, arms stay long."
+            },
+            {
+              "name": "Pallof Press",
+              "sets": "3x10/side",
+              "weight": "30 lbs",
+              "notes": "Second core movement, which brings direct core to 6 sets and clears the 4-6 set floor in one session. Anti-rotation: ribs down, resist the pull, full extension out and back. Record the pin weight."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Rise to full plantarflexion, hold, controlled lower to neutral and no further."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right and note any difference in hold height."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted. Floor range: full plantarflexion up, back to neutral, no bottom-end stretch. Load here is the open question for the PT, since the Phase 4 soleus benchmark is roughly 1.5x BW."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block, live since 7/31. Controlled eccentric, chest leaning forward, no rebound out of the bottom."
+            }
+          ]
         },
         {
           "day": "Thu",
           "date": "2026-08-06",
           "type": "training",
-          "desc": "Lower, shaped by the tests",
-          "longDesc": "PROVISIONAL. If Monday's gates cleared, this is where graded running and step-down plyometrics start entering, in small doses and criteria-gated (Green 2022 Phase 3). If they did not, it stays a straight lower session with squats and the PT block while capacity keeps building. Written properly once Monday's numbers exist."
+          "desc": "First run since the strain, then lower",
+          "longDesc": "THE RUN IS THE SESSION. First running since the 6/21 strain, 46 days, unlocked by Monday's 20 symptom-free hops per leg (Green 2022 PMID 35032233, Phase 3 gates running on the hop test). RUN FIRST, before any lifting, because it is the novel stimulus and a fatigued first run measures fatigue rather than tolerance. THE DOSE IS A COACHING CALL, NOT A PROTOCOL: Green 2022 names graded return to running as a phase without prescribing a dose, so the interval structure is a conservative extrapolation and should be labelled as such. Flat, level ground, easy conversational pace, no hills, no sprints, no cutting. A running mechanism predicted longer return-to-play in the AFL cohort (Green 2020 PMID 33030961), which is the reason to start this small rather than jog for 20 minutes because the gate opened. THEN THE BARBELL WORK: TB DL steps to 215 on two clean 4x5 sessions at 205 (7/28 and 8/3), which is the compound-lower double progression working normally for the first time since the restart. Squat holds 135 as the PT's 2-3x weekly item, first squat of the week. FRIDAY MORNING'S READ IS THE DATUM: it decides whether Friday's box jumps go, under the 24-hour rule (Silbernagel 2007 PMID 17307888).",
+          "exercises": [
+            {
+              "name": "Graded Return-to-Run (walk-jog intervals)",
+              "sets": "6 rounds of 1 min jog / 1 min walk",
+              "weight": "bodyweight",
+              "notes": "RUN FIRST, before any lifting. Roughly 6 min of jogging total, flat and level, easy conversational pace. Mid-foot landing, do NOT run up on the toes, which is where plantarflexion load peaks. No hills, no sprints, no change of direction. Stop on any sharp calf pain or a limp and record where it appeared. Dose is a coaching call, not an evidence-specified protocol."
+            },
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "4x5",
+              "weight": "215 lbs",
+              "notes": "EARNED STEP. 205 went clean twice (7/28, 8/3), so plus 10 lb per the compound-lower rule. Full ROM from the floor, hips back, neutral spine, stand tall without hyperextending, and do not rise onto the toes at the top."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "4x5",
+              "weight": "135 lbs",
+              "notes": "PT item, 2-3x weekly, first squat of the week. Hold 135. Depth to at least parallel while it stays pain-free, heels flat throughout, no heel rise at the bottom."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Rise to full plantarflexion, hold, controlled lower to neutral and no further."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right and note any difference in hold height."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted. Floor range: full plantarflexion up, back to neutral, no bottom-end stretch. Load here is the open question for the PT, since the Phase 4 soleus benchmark is roughly 1.5x BW."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block, live since 7/31. Controlled eccentric, chest leaning forward, no rebound out of the bottom."
+            }
+          ]
         },
         {
           "day": "Fri",
           "date": "2026-08-07",
           "type": "training",
-          "desc": "Light day, PT block",
-          "longDesc": "PROVISIONAL. Lightest lifting day of the week plus the PT block, and the shape depends on whether Sunday 8/9 carries a game. Confirm the slate rather than assuming: basketball is in its off-season, and Sunday AM basketball stays self-gated until the hop criteria clear."
+          "desc": "Light day, box jumps if reads hold",
+          "longDesc": "Lightest lifting day of the week, roughly 48 h before Sunday PM hockey, which stays the only fixed game since basketball is in its off-season. THE BOX JUMPS ARE GATED, NOT SCHEDULED: they go only if this morning's calf read is under 3/10 and Thursday's run produced no next-morning escalation. That is the same gating that worked on 7/31 for the step-backs and the first loaded single-leg calf raises. If the read is up, drop the jumps and run the rest as written, because the run is the more important of the two reintroductions and gets protected. STEP DOWN OFF THE BOX EVERY REP, never rebound: rebounding adds eccentric Achilles load for almost no additional power benefit and is contraindicated with bilateral Achilles tendinopathy. Box drops to 18 in from the 24 in used pre-strain on 6/18, and 12 ground contacts sits far under the 40-60 range for a non-specialized athlete (Ebben 2010) because this is a first exposure 47 days out. No barbell pressing or pulling today. SUNDAY AM BASKETBALL: hold one more week. Monday's two criteria are met, but Green 2022's return-to-sport list also requires the loaded strength benchmarks and a completed symptom-free plyo and change-of-direction exposure, and that exposure is Thursday and Friday. Clean through both opens basketball on 8/16.",
+          "exercises": [
+            {
+              "name": "Box Jump (step down)",
+              "sets": "4x3",
+              "weight": "18 in box",
+              "notes": "GATED on a Friday morning read under 3/10 and no escalation off Thursday's run. Jump up, STEP DOWN every rep, never rebound. Land soft with knees tracking over the toes, absorbing through hips and knees rather than snapping the ankle. 12 contacts total, first exposure since 6/18, box down from 24 in to 18 in."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 25 lb/leg",
+              "notes": "Hold BW plus 25. 7/31 was the first loaded session since the strain and went clean; a second clean session opens BW plus 35. FLOOR RANGE ONLY, no heel drop off a step, full plantarflexion up and back to neutral. 3 s up, 3 s down."
+            },
+            {
+              "name": "Single-Leg RDL (dumbbell)",
+              "sets": "3x8/leg",
+              "weight": "20 lb DBs",
+              "notes": "PT item, third dose of the week after 7/31 and 8/3, both at 20s. Hinge to a hamstring stretch, back flat, standing knee soft, no rounding at the bottom. Also the week's only hamstring work."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "4x5",
+              "weight": "135 lbs",
+              "notes": "PT item, second squat of the week, which lands inside the PT's 2-3x weekly range. Hold 135. Heels flat, no heel rise at depth."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Rise to full plantarflexion, hold, controlled lower to neutral and no further."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right and note any difference in hold height."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted. Floor range: full plantarflexion up, back to neutral, no bottom-end stretch. Load here is the open question for the PT, since the Phase 4 soleus benchmark is roughly 1.5x BW."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block, live since 7/31. Controlled eccentric, chest leaning forward, no rebound out of the bottom."
+            }
+          ]
         },
         {
           "day": "Sat",
           "date": "2026-08-08",
           "type": "rest",
           "desc": "No lifting, PT block daily",
-          "longDesc": "No lifting. The PT block still runs, because it is prescribed daily."
+          "longDesc": "No lifting. The PT block still runs, because it is prescribed daily. Second morning-after read on Thursday's run and first on Friday's jumps, which together decide whether Sunday AM basketball opens on 8/16.",
+          "exercises": [
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Rise to full plantarflexion, hold, controlled lower to neutral and no further."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right and note any difference in hold height."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted. Floor range: full plantarflexion up, back to neutral, no bottom-end stretch. Load here is the open question for the PT, since the Phase 4 soleus benchmark is roughly 1.5x BW."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block, live since 7/31. Controlled eccentric, chest leaning forward, no rebound out of the bottom."
+            }
+          ]
         }
       ]
     },

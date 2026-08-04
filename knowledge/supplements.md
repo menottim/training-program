@@ -101,7 +101,7 @@ __Emerging domains (Moderate-Emerging)__:
 
 __Practical for Menotti__:
 - 5 g/day in shake is perfect dosing. No change warranted.
-- Take with carbs (your shake has milk + yogurt + PB Fit) mildly enhances uptake via insulin-mediated transport but is not required.
+- Take with carbs (your shake has milk + yogurt + PB Fit) mildly increases uptake via insulin-mediated transport but is not required.
 - Expected water retention: 1-3 lbs primarily __intracellular__ (muscle cell hydration). This is adaptive, not "fat" - the extra cell water actually supports protein synthesis.
 - No cycling needed.
 

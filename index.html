@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Training Program — In-Season Multi-Sport Athlete</title>
+<title>Training Program: In-Season Multi-Sport Athlete</title>
 <style>
   :root {
     --primary: #1a1a2e;
@@ -82,7 +82,7 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
-  /* Activity Log notes — clamped by default, click "more" to expand */
+  /* Activity Log notes, clamped by default, click "more" to expand */
   .log-notes-cell {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -204,7 +204,7 @@
   }
   .today-summary strong { color: var(--accent2); }
 
-  /* Today Card — primary "what do I do today?" answer */
+  /* Today Card, primary "what do I do today?" answer */
   .today-card {
     background: var(--bg);
     border: 2px solid var(--accent2);
@@ -1478,11 +1478,11 @@
 <!-- ═══════════════════════════════════════════════ -->
 <div id="tab-week" class="tab-content active">
 
-<!-- TODAY CARD — primary "what do I do today?" answer -->
+<!-- TODAY CARD, primary "what do I do today?" answer -->
 <div id="today-card-mount"></div>
 
 <!-- WEEKLY OVERVIEW -->
-<h2 id="week">&#128197; Weekly Overview</h2>
+<h2 id="week">Weekly Overview</h2>
 <div class="week-grid">
   <div class="day-card game">
     <div class="day-name">Sun</div>
@@ -1528,7 +1528,7 @@
   48+ hours between heavy training and games. Wednesday is furthest from all games. Friday is deliberately the lightest session (~36 hrs before Sunday AM).
 </div>
 
-<!-- Modified Week Plan (rendered from data.json when active — replaces the static grid above) -->
+<!-- Modified Week Plan (rendered from data.json when active, replaces the static grid above) -->
 <div id="modified-week-mount"></div>
 
 <!-- Today's Stats Strip (compact: cal target, week counts, achilles trend) -->
@@ -1557,17 +1557,17 @@
 <div class="phase">
   <div class="phase-header">
     Phase 1: Foundation
-    <span class="weeks">Weeks 1–8</span>
+    <span class="weeks">Weeks 1-8</span>
   </div>
   <div class="phase-body">
-    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Rebuild your strength base. No plyometrics yet — tendons and connective tissue need preparation first. Focus on progressive overload with controlled tempos. Extended to 8 weeks (from 6) to compensate for travel gaps in Weeks 3–4.</p>
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Rebuild your strength base. No plyometrics yet: tendons and connective tissue need preparation first. Focus on progressive overload with controlled tempos. Extended to 8 weeks (from 6) to compensate for travel gaps in Weeks 3-4.</p>
 
-    <h3>Wednesday — Lower Body Strength (Heavy)</h3>
+    <h3>Wednesday: Lower Body Strength (Heavy)</h3>
     <table>
       <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
       <tbody>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-deadlift" target="_blank">Trap Bar Deadlift</a></td><td class="sets">4 &times; 5</td><td class="notes">Start at 225 lbs, add 5 lbs/week</td></tr>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-squat" target="_blank">Back Squat</a></td><td class="sets">3 &times; 5</td><td class="notes">Added Wk 5. Start conservative (135–155), build to Phase 2 volume (4&times;5)</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-squat" target="_blank">Back Squat</a></td><td class="sets">3 &times; 5</td><td class="notes">Added Wk 5. Start conservative (135-155), build to Phase 2 volume (4&times;5)</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-bulgarian-split-squat" target="_blank">Bulgarian Split Squat</a></td><td class="sets">3 &times; 8/leg</td><td class="notes">DB in each hand, progress load weekly</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/nordic-hamstring-curl" target="_blank">Nordic Hamstring Curl</a> / <a href="https://musclewiki.com/exercise/glute-ham-raise" target="_blank">GHR</a> / <a href="https://musclewiki.com/exercise/seated-leg-curl" target="_blank">Ham Curl Machine</a></td><td class="sets">3 &times; 5</td><td class="notes">Eccentric focus, band assist if needed</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-single-leg-stiff-leg-deadlift" target="_blank">Single-Leg RDL</a></td><td class="sets">3 &times; 8/leg</td><td class="notes">DB, 3 sec eccentric</td></tr>
@@ -1576,14 +1576,14 @@
     </table>
     <div id="progress-phase1-wed"></div>
 
-    <h3>Thursday — Upper Body + Core + Power Intro</h3>
+    <h3>Thursday: Upper Body + Core + Power Intro</h3>
     <table>
       <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
       <tbody>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bench-press" target="_blank">Barbell Bench Press</a></td><td class="sets">4 &times; 5</td><td class="notes">Primary press every week. Track toward 225&times;5 target.</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/weighted-pull-ups" target="_blank">Weighted Pull-up</a> / <a href="https://musclewiki.com/exercise/machine-pulldown" target="_blank">Lat Pulldown</a></td><td class="sets">4 &times; 6</td><td class="notes">Add weight when BW &times; 6 is easy</td></tr>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-bench-press" target="_blank">DB Bench Press</a></td><td class="sets">3 &times; 8</td><td class="notes">Accessory — lighter, stability focus</td></tr>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-laying-incline-row" target="_blank">Chest-Supported Row</a></td><td class="sets">3 &times; 8</td><td class="notes">Back volume — pulls balanced with presses</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-bench-press" target="_blank">DB Bench Press</a></td><td class="sets">3 &times; 8</td><td class="notes">Accessory: lighter, stability focus</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-laying-incline-row" target="_blank">Chest-Supported Row</a></td><td class="sets">3 &times; 8</td><td class="notes">Back volume: pulls balanced with presses</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-overhead-press" target="_blank">DB Overhead Press</a></td><td class="sets">3 &times; 8</td><td class="notes">Standing, engages core</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-bar-face-pull" target="_blank">Face Pulls</a></td><td class="sets">3 &times; 15</td><td class="notes">Shoulder health / prehab</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-pallof-press" target="_blank">Pallof Press</a></td><td class="sets">3 &times; 10/side</td><td class="notes">Anti-rotation core stability</td></tr>
@@ -1592,7 +1592,7 @@
     </table>
     <div id="progress-phase1-thu"></div>
 
-    <h3>Friday — Lower Moderate + Movement Quality</h3>
+    <h3>Friday: Lower Moderate + Movement Quality</h3>
     <table>
       <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
       <tbody>
@@ -1611,16 +1611,16 @@
 <div class="phase">
   <div class="phase-header">
     Phase 2: Strength-Power
-    <span class="weeks">Weeks 9–14</span>
+    <span class="weeks">Weeks 9-14</span>
   </div>
   <div class="phase-body">
     <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Introduce low-volume plyometrics. Continue building strength. Plyometric benefits taper after ~4 weeks, so we cycle them in blocks.</p>
 
-    <h3>Wednesday — Lower Body Strength (Heavy)</h3>
+    <h3>Wednesday: Lower Body Strength (Heavy)</h3>
     <table>
       <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-deadlift" target="_blank">Trap Bar Deadlift</a></td><td class="sets">4 &times; 3–5</td><td class="notes">Work toward 315+</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-deadlift" target="_blank">Trap Bar Deadlift</a></td><td class="sets">4 &times; 3-5</td><td class="notes">Work toward 315+</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-squat" target="_blank">Back Squat</a> or <a href="https://musclewiki.com/exercise/barbell-front-squat-bodybuilding" target="_blank">Front Squat</a></td><td class="sets">4 &times; 5</td><td class="notes">Rebuild squat pattern</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/nordic-hamstring-curl" target="_blank">Nordic Hamstring Curl</a> / <a href="https://musclewiki.com/exercise/glute-ham-raise" target="_blank">GHR</a> / <a href="https://musclewiki.com/exercise/seated-leg-curl" target="_blank">Ham Curl Machine</a></td><td class="sets">3 &times; 5</td><td class="notes">Unassisted by now</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">Seated Calf Raise (HSR)</a></td><td class="sets">3 &times; 6</td><td class="notes">Soleus-bias variant (bent-knee). Restored to Wed slot per 5/17 science review &mdash; Beyer 2015 requires both gastroc + soleus variants. 3s concentric / 3s eccentric. Slot BEFORE single-leg standing (soleus warm-up first, gastroc heavy second).</td></tr>
@@ -1629,25 +1629,25 @@
     </table>
     <div id="progress-phase2-wed"></div>
 
-    <h3>Thursday — Upper + Power</h3>
+    <h3>Thursday: Upper + Power</h3>
     <table>
       <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
       <tbody>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bench-press" target="_blank">Barbell Bench Press</a></td><td class="sets">4 &times; 5</td><td class="notes"></td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/weighted-pull-ups" target="_blank">Weighted Pull-up</a> / <a href="https://musclewiki.com/exercise/machine-pulldown" target="_blank">Lat Pulldown</a></td><td class="sets">4 &times; 5</td><td class="notes">Either-or per session (matches Phase 1 pattern). Lat Pulldown ramp-to-top-set pattern confirmed 5/6 + 5/21. Pull-up: add weight when BW &times; 6 is easy. Pulldown: ramp 4 working sets to top set, progress top set +5 lb/cycle per Section 1.</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-push-press" target="_blank">DB Push Press</a></td><td class="sets">3 &times; 6</td><td class="notes">Explosive leg drive into press</td></tr>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bent-over-row" target="_blank">Bent Over Row (inverted grip)</a></td><td class="sets">4 &times; 5</td><td class="notes">Replaces <a href="https://musclewiki.com/exercise/dumbbell-laying-incline-row" target="_blank">Chest-Supported Row</a> per Apr 30 + May 7 deviation pattern. Supinated/underhand BB grip — biases lower lat + biceps. Strength-tracked cadence; start ~145 lb, progress per Section 1.</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-bent-over-row" target="_blank">Bent Over Row (inverted grip)</a></td><td class="sets">4 &times; 5</td><td class="notes">Replaces <a href="https://musclewiki.com/exercise/dumbbell-laying-incline-row" target="_blank">Chest-Supported Row</a> per Apr 30 + May 7 deviation pattern. Supinated/underhand BB grip. Biases lower lat + biceps. Strength-tracked cadence; start ~145 lb, progress per Section 1.</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-pull-through" target="_blank">Cable Pull-Through (Explosive)</a></td><td class="sets">3 &times; 5</td><td class="notes">Maximal intent, full hip extension</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cable-half-kneeling-low-to-high-wood-chopper" target="_blank">Cable Woodchop (Low-to-High)</a></td><td class="sets">3 &times; 5/side</td><td class="notes">Rotational power, hockey crossover benefit</td></tr>
       </tbody>
     </table>
     <div id="progress-phase2-thu"></div>
 
-    <h3>Friday — Power + Plyometrics (Low Volume)</h3>
+    <h3>Friday: Power + Plyometrics (Low Volume)</h3>
     <table>
       <thead><tr><th>Exercise</th><th>Sets &times; Reps</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/box-jump" target="_blank">Box Jump</a> (step down)</td><td class="sets">3 &times; 4</td><td class="notes">Always step down — protect achilles</td></tr>
+        <tr><td class="exercise"><a href="https://musclewiki.com/exercise/box-jump" target="_blank">Box Jump</a> (step down)</td><td class="sets">3 &times; 4</td><td class="notes">Always step down to protect achilles</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/barbell-deadlift" target="_blank">Trap Bar Jump Squat</a></td><td class="sets">3 &times; 3</td><td class="notes">~30% DL max, max height</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/cardio-long-jump" target="_blank">Broad Jump</a></td><td class="sets">3 &times; 3</td><td class="notes">Full reset between reps</td></tr>
         <tr><td class="exercise"><a href="https://musclewiki.com/exercise/dumbbell-bulgarian-split-squat" target="_blank">Bulgarian Split Squat</a></td><td class="sets">3 &times; 6/leg</td><td class="notes">Moderate load</td></tr>
@@ -1670,7 +1670,7 @@
 </div>
 
 <!-- STRENGTH TARGETS -->
-<h2 id="targets">&#127919; Strength Targets</h2>
+<h2 id="targets">Strength Targets</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Your fastest path to jumping higher is getting stronger. Plyometrics on a weak base produce minimal returns.</p>
 
 <!-- Strength Target Cards (rendered from data.json) -->
@@ -1678,7 +1678,7 @@
 
 <div class="info-box success">
   <strong>The Key Metric for Vertical Jump</strong>
-  Research shows a trap bar deadlift of 2.0–2.5x bodyweight is the benchmark for elite jumping. At your current strength levels, every pound added to the bar translates directly to inches on your vertical.
+  Research shows a trap bar deadlift of 2.0-2.5x bodyweight is the benchmark for elite jumping. At your current strength levels, every pound added to the bar translates directly to inches on your vertical.
 </div>
 
 <!-- Strength Progression Chart -->
@@ -1687,8 +1687,8 @@
 <!-- Strength Standards Gauges -->
 <div id="standards-mount"></div>
 
-<!-- Insights & history (moved from This Week tab — progress-tracking content lives with the Plan) -->
-<h2 id="insights" style="margin-top:2.5rem;">📊 Insights &amp; History</h2>
+<!-- Insights & history (moved from This Week tab, progress-tracking content lives with the Plan) -->
+<h2 id="insights" style="margin-top:2.5rem;">Insights &amp; History</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">How you're tracking against the program. Dashboard, body composition, achilles trend, and weekly volume chart.</p>
 
 <details class="insights-section" open>
@@ -1719,7 +1719,7 @@
 <div id="tab-ref" class="tab-content">
 
 <!-- ACHILLES PROTOCOL -->
-<h2 id="achilles">&#129520; Achilles Tendinopathy Protocol</h2>
+<h2 id="achilles">Achilles Tendinopathy Protocol</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Bilateral management. Heavy Slow Resistance (HSR) produces outcomes equivalent to eccentric-only loading with higher compliance (Beyer et al. 2015, <em>Am J Sports Med</em>). 3&times;/week, integrated into training days.</p>
 
 <div class="achilles-protocol">
@@ -1762,20 +1762,20 @@
 </div>
 
 <!-- RECOVERY -->
-<h2 id="recovery">&#128164; Recovery Days</h2>
+<h2 id="recovery">Recovery Days</h2>
 
-<h3>Monday — Post-Double Game Day</h3>
+<h3>Monday: Post-Double Game Day</h3>
 <table>
   <thead><tr><th>Activity</th><th>Duration</th><th>Purpose</th></tr></thead>
   <tbody>
-    <tr><td class="exercise">Low-intensity cycling or swimming</td><td class="sets">15–20 min</td><td class="notes">30–40% peak HR, anti-inflammatory</td></tr>
+    <tr><td class="exercise">Low-intensity cycling or swimming</td><td class="sets">15-20 min</td><td class="notes">30-40% peak HR, anti-inflammatory</td></tr>
     <tr><td class="exercise"><a href="https://health.clevelandclinic.org/foam-rolling" target="_blank">Foam rolling</a> / massage gun</td><td class="sets">10 min</td><td class="notes">Quads, calves, IT band, glutes</td></tr>
     <tr><td class="exercise"><a href="https://health.clevelandclinic.org/90-90-stretch" target="_blank">Hip 90/90 mobility flow</a></td><td class="sets">5 min</td><td class="notes">Hip mobility maintenance</td></tr>
     <tr><td class="exercise">HSR calf raise protocol (<a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">seated</a> + <a href="https://musclewiki.com/exercise/barbell-calf-raises" target="_blank">standing</a>)</td><td class="sets">10 min</td><td class="notes">If achilles feels OK (&lt; 3/10 pain)</td></tr>
   </tbody>
 </table>
 
-<h3>Saturday — Pre-Game Prep</h3>
+<h3>Saturday: Pre-Game Prep</h3>
 <table>
   <thead><tr><th>Activity</th><th>Duration</th><th>Purpose</th></tr></thead>
   <tbody>
@@ -1807,18 +1807,18 @@
 </div>
 
 <!-- NUTRITION -->
-<h2 id="nutrition">&#127860; Body Composition &amp; Nutrition</h2>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Target: ~15% BF (~205–210 lbs) over 6–9 months via gradual recomposition. No aggressive cuts — protect game performance and recovery.</p>
+<h2 id="nutrition">Body Composition &amp; Nutrition</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Target: ~15% BF (~205-210 lbs) over 6-9 months via gradual recomposition. No aggressive cuts; protect game performance and recovery.</p>
 
 <div class="nutrition-grid">
-  <div class="nutrition-item"><span class="label">Training Day Calories</span><span class="value">2,400–2,600</span></div>
-  <div class="nutrition-item"><span class="label">Rest Day Calories</span><span class="value">2,100–2,300</span></div>
-  <div class="nutrition-item"><span class="label">Protein (daily)</span><span class="value">160–220g (1.6–2.2 g/kg)</span></div>
-  <div class="nutrition-item"><span class="label">Sodium (sport/training day)</span><span class="value">3,500–5,000 mg</span></div>
-  <div class="nutrition-item"><span class="label">Sodium (rest day)</span><span class="value">2,500–3,500 mg</span></div>
+  <div class="nutrition-item"><span class="label">Training Day Calories</span><span class="value">2,400-2,600</span></div>
+  <div class="nutrition-item"><span class="label">Rest Day Calories</span><span class="value">2,100-2,300</span></div>
+  <div class="nutrition-item"><span class="label">Protein (daily)</span><span class="value">160-220g (1.6-2.2 g/kg)</span></div>
+  <div class="nutrition-item"><span class="label">Sodium (sport/training day)</span><span class="value">3,500-5,000 mg</span></div>
+  <div class="nutrition-item"><span class="label">Sodium (rest day)</span><span class="value">2,500-3,500 mg</span></div>
   <div class="nutrition-item"><span class="label">Hydration (daily)</span><span class="value">3L+ (more game days)</span></div>
   <div class="nutrition-item"><span class="label">Creatine</span><span class="value">5g/day, every day</span></div>
-  <div class="nutrition-item"><span class="label">Sleep</span><span class="value">7.5–9 hrs, individualized</span></div>
+  <div class="nutrition-item"><span class="label">Sleep</span><span class="value">7.5-9 hrs, individualized</span></div>
 </div>
 
 <div class="info-box">
@@ -1828,7 +1828,7 @@
 
 <div class="info-box">
   <strong>Sodium is athlete-calibrated, not general-population</strong>
-  The AHA 2,300 mg/day ceiling is for sedentary-to-moderately-active adults. Athletes lose 750–2,000 mg sodium per 60–90 min sport session (Baker 2017, <em>Sports Med</em>). Mente 2016 PURE cohort (Lancet, n=376,628) shows U-shaped cardiovascular risk with lowest risk at 3–5 g/day. For a non-hypertensive athlete: rest day 2,500–3,500 mg, sport day 3,500–5,000 mg, chronic ceiling ~5,500–6,000 mg. Single-meal loads &gt;2,000 mg will produce next-morning scale spikes via plasma-volume expansion; these resolve in 24–72 hours. Full evidence: <code>knowledge/sodium-hydration.md</code>.
+  The AHA 2,300 mg/day ceiling is for sedentary-to-moderately-active adults. Athletes lose 750-2,000 mg sodium per 60-90 min sport session (Baker 2017, <em>Sports Med</em>). Mente 2016 PURE cohort (Lancet, n=376,628) shows U-shaped cardiovascular risk with lowest risk at 3-5 g/day. For a non-hypertensive athlete: rest day 2,500-3,500 mg, sport day 3,500-5,000 mg, chronic ceiling ~5,500-6,000 mg. Single-meal loads &gt;2,000 mg will produce next-morning scale spikes via plasma-volume expansion; these resolve in 24-72 hours. Full evidence: <code>knowledge/sodium-hydration.md</code>.
 </div>
 
 <div class="info-box">
@@ -1837,28 +1837,28 @@
 </div>
 
 <div class="info-box">
-  <strong>The "anabolic window" is 4–6 hours, not 30 minutes</strong>
+  <strong>The "anabolic window" is 4-6 hours, not 30 minutes</strong>
   Aragon &amp; Schoenfeld 2013 (<em>J Int Soc Sports Nutr</em>) showed the post-workout protein window is wider than gym culture suggests. Total daily protein and distribution matter far more than narrow post-session timing. A protein-containing meal within a few hours post-training is fully sufficient.
 </div>
 
 <div class="info-box warning">
   <strong>Alcohol cost</strong>
-  Parr 2014 (<em>PLoS ONE</em>) showed post-exercise alcohol suppresses myofibrillar protein synthesis ~24% even with co-ingested protein. Dose is monotonic, and even 3–4 drinks disrupt REM sleep in the second half of the night. Cap at 1–2 drinks on training days, not within 3 hours of bed.
+  Parr 2014 (<em>PLoS ONE</em>) showed post-exercise alcohol suppresses myofibrillar protein synthesis ~24% even with co-ingested protein. Dose is monotonic, and even 3-4 drinks disrupt REM sleep in the second half of the night. Cap at 1-2 drinks on training days, not within 3 hours of bed.
 </div>
 
 <div class="info-box success">
   <strong>Active nutrition goals (set Apr 20, 2026; revised same day)</strong>
   Based on 6-week body-comp overview showing +4.7 lb fat / +1.9 lb lean. Target: steady fat loss preserving lean mass per Helms 2014 JISSN and Aragon 2017 ISSN position stand evidence.
   <ul style="margin-top:0.5rem;">
-    <li><strong>3 moderate-deficit days/week at 2,300–2,500 cal</strong>: Mon (post-Sunday-game), Thu (upper body lifting only), Sat (pre-Sunday-game). Daily deficit ~300–500 cal below TDEE. Weekly deficit ~900–2,100 cal = ~0.3–0.6 lb/week fat loss. In Helms 2014 0.5–1%/week lean-preserving range.</li>
-    <li><strong>Restaurant meal cap: ≤3 per week</strong>: Hall 2019 ward study showed ultra-processed food environments drive ~+500 cal/day spontaneous intake. Current pattern of 5–7/week drives the creep.</li>
+    <li><strong>3 moderate-deficit days/week at 2,300-2,500 cal</strong>: Mon (post-Sunday-game), Thu (upper body lifting only), Sat (pre-Sunday-game). Daily deficit ~300-500 cal below TDEE. Weekly deficit ~900-2,100 cal = ~0.3-0.6 lb/week fat loss. In Helms 2014 0.5-1%/week lean-preserving range.</li>
+    <li><strong>Restaurant meal cap: ≤3 per week</strong>: Hall 2019 ward study showed ultra-processed food environments drive ~+500 cal/day spontaneous intake. Current pattern of 5-7/week drives the creep.</li>
   </ul>
-  <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">Heavy training (Wed TB DL) and game days (Tue, Sun) stay at maintenance ~2,800–3,000 cal to fuel performance. Aragon 2017 ISSN found intermittent restriction is not superior to daily small-deficit approach, so the 3-day pattern is adherence-oriented, not evidence-mandated over a daily tiny deficit. First evaluation: next science review ~Apr 24. Details in <code>data.json athlete.nutritionGoals</code>.</p>
+  <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">Heavy training (Wed TB DL) and game days (Tue, Sun) stay at maintenance ~2,800-3,000 cal to fuel performance. Aragon 2017 ISSN found intermittent restriction is not superior to daily small-deficit approach, so the 3-day pattern is adherence-oriented, not evidence-mandated over a daily tiny deficit. First evaluation: next science review ~Apr 24. Details in <code>data.json athlete.nutritionGoals</code>.</p>
 </div>
 
 <div class="info-box success">
   <strong>Why Recomp Matters for Your Vertical</strong>
-  Every 1 lb of fat lost is dead weight you no longer lift off the ground. A 10 lb fat loss (while maintaining muscle) makes you ~5% more powerful relative to bodyweight — measurable inches on your vertical with zero strength gains needed.
+  Every 1 lb of fat lost is dead weight you no longer lift off the ground. A 10 lb fat loss (while maintaining muscle) makes you ~5% more powerful relative to bodyweight, measurable inches on your vertical with zero strength gains needed.
 </div>
 
 <!-- Body Composition Trend Chart (weight + BF%) -->
@@ -1868,14 +1868,14 @@
 <div id="body-comp-breakdown-mount"></div>
 
 <!-- SUPPLEMENTS + LABS + CLINICAL WORKUP -->
-<h2 id="supplements-labs">&#128137; Supplements, Labs &amp; Workup</h2>
+<h2 id="supplements-labs">Supplements, Labs &amp; Workup</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Detailed evidence-backed reviews live in the <a href="https://github.com/menottim/training-program/tree/main/knowledge" target="_blank"><code>knowledge/</code></a> directory. This panel surfaces the live state from <code>data.json</code>.</p>
 <div id="supplements-mount"></div>
 <div id="hormone-labs-mount"></div>
 <div id="clinical-workup-mount"></div>
 
 <!-- DELOAD -->
-<h2 id="deload">&#128260; Deload Protocol</h2>
+<h2 id="deload">Deload Protocol</h2>
 <div class="deload-box">
   <h4>Reactive default (not strict calendar)</h4>
   <p style="font-size:0.85rem;margin-bottom:0.5rem;">Scheduled every 4th week as a safety net (Weeks 4, 8, 12...), but <strong>skip the scheduled deload when fatigue signals are absent</strong>. Coleman et al. 2024 (PeerJ) RCT showed prophylactic 1-week deloads in non-fatigued lifters reduced strength gains without hypertrophy benefit. Use the triggers below instead.</p>
@@ -1919,13 +1919,13 @@
   </div>
   <div class="signal-row">
     <div class="signal-trigger">Feeling great and fully recovered</div>
-    <div class="signal-action">Don't add volume — add load to existing sets</div>
+    <div class="signal-action">Don't add volume; add load to existing sets</div>
   </div>
 </div>
 
 <div class="info-box warning">
   <strong>Golden Rule for Masters Athletes</strong>
-  Recovery capacity is your limiting factor, not training capacity. Melatonin drops and cortisol rises with age. When in doubt, do less and sleep more. You can always add — you can't un-injure.
+  Recovery capacity is your limiting factor, not training capacity. Melatonin drops and cortisol rises with age. When in doubt, do less and sleep more. You can always add, you can't un-injure.
 </div>
 
 </div><!-- /tab-ref -->
@@ -1983,19 +1983,19 @@
   }
   const modifiedWeeks = data.modifiedWeeks || {};
 
-  // HTML-escape helper — prevents XSS from data.json string interpolation
+  // HTML-escape helper, prevents XSS from data.json string interpolation
   function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
-  // Derive currentLifts from activityLog — find the most recent logged weight
+  // Derive currentLifts from activityLog, find the most recent logged weight
   // for each main lift so we never need to manually update currentLifts in data.json
   var liftNameMap = {
     'Trap Bar Deadlift': 'trapBarDeadlift',
     'Back Squat': 'backSquat',
     'Bench Press': 'benchPress'
-    // Note: DB Bench Press intentionally excluded — different lift than barbell bench target
+    // Note: DB Bench Press intentionally excluded, different lift than barbell bench target
   };
   var currentLifts = JSON.parse(JSON.stringify(baseLifts)); // clone defaults
-  // Walk activity log in order — last match wins (most recent)
+  // Walk activity log in order, last match wins (most recent)
   activityLog.forEach(function(entry) {
     if (entry.type !== 'training' || !entry.exercises) return;
     entry.exercises.forEach(function(ex) {
@@ -2038,7 +2038,7 @@
     });
   });
   function lastLogged(name) { return lastLoggedMap[canonEx(name)] || null; }
-  // Single positive weight number (ignoring BW), else null — used only for the
+  // Single positive weight number (ignoring BW), else null, used only for the
   // progression marker, so a compound string like "160 (+5 to 165)" or a ramp
   // "140/145/150/155" yields null (no marker) rather than a misleading arrow.
   function soleWeightNum(w) {
@@ -2229,7 +2229,7 @@
   var calorieVals = nutritionDates.map(function(d) { return nutritionByDate[d].calories; }).filter(function(v) { return v != null; });
   const calorieAvg = calorieVals.length > 0 ? Math.round(calorieVals.reduce(function(s,v) { return s+v; }, 0) / calorieVals.length) : null;
 
-  // Note: innerHTML is used throughout — all data.json strings are passed through
+  // Note: innerHTML is used throughout, all data.json strings are passed through
   // esc() to prevent XSS from any untrusted content.
 
   // BMI calculation: weight (lbs) / height (in)^2 × 703
@@ -2259,7 +2259,7 @@
   var tgtLean = (tgtWeight * (1 - tgtBF / 100)).toFixed(0);
   var tgtFat = (tgtWeight * tgtBF / 100).toFixed(0);
 
-  // Header stats — current vs target
+  // Header stats, current vs target
   document.getElementById('header-stats-mount').insertAdjacentHTML('beforeend', '');
   var headerMount = document.getElementById('header-stats-mount');
   headerMount.textContent = ''; // clear static fallback
@@ -2389,7 +2389,7 @@
       if (todayDay.status === 'done') typeClass += ' is-done';
     } else {
       var stdSchedule = { Sun: 'Basketball AM', Mon: 'Recovery day', Tue: 'Basketball PM',
-        Wed: 'Lower Body — Heavy', Thu: 'Upper Body + Power', Fri: 'Lower Moderate + Plyo', Sat: 'Pre-game prep' };
+        Wed: 'Lower Body (Heavy)', Thu: 'Upper Body + Power', Fri: 'Lower Moderate + Plyo', Sat: 'Pre-game prep' };
       title = stdSchedule[todayName] || '';
       if (todayName === 'Sun' || todayName === 'Tue') { typeClass = 'is-game'; sessionLabel = 'Game'; }
       else if (todayName === 'Mon' || todayName === 'Sat') { typeClass = 'is-rest'; sessionLabel = 'Rest'; }
@@ -2439,7 +2439,7 @@
       for (var k = startIdx; k < mw.schedule.length; k++) {
         var n = mw.schedule[k];
         if (n.type !== 'rest' && n.status !== 'done') {
-          nextHTML = '<div class="today-card-next">Next: <strong>' + esc(n.day) + '</strong> — ' + esc(n.desc || '') + '</div>';
+          nextHTML = '<div class="today-card-next">Next: <strong>' + esc(n.day) + '</strong>, ' + esc(n.desc || '') + '</div>';
           break;
         }
       }
@@ -2757,7 +2757,7 @@
     }
   })();
 
-  // Progress Log rendering — pivot activityLog into exercise × week tables
+  // Progress Log rendering, pivot activityLog into exercise × week tables
   var dayAbbrevMap = { Wed: 'wed', Thu: 'thu', Fri: 'fri' };
   var phasePattern = /\((\w+)\s+Phase\s+(\d+)\)/;
 
@@ -2855,7 +2855,7 @@
             upcomingWeights[name] = (parseInt(dbMatch[1], 10) + 5) + ' lb DBs';
             return;
           }
-          // "BW minus X lbs" format (e.g., assisted pull-ups) — reduce assistance by 5
+          // "BW minus X lbs" format (e.g., assisted pull-ups), reduce assistance by 5
           var assistMatch = lower.match(/^bw\s*minus\s*(\d+)\s*lbs?$/);
           if (assistMatch) {
             var newAssist = parseInt(assistMatch[1], 10) - 5;
@@ -3170,7 +3170,7 @@
 
   (function renderStrengthChart() {
     // Note: maps "Bench Press" (barbell) to benchPress target, NOT "DB Bench Press"
-    // per CLAUDE.md — DB bench and barbell bench are different lifts.
+    // per CLAUDE.md, DB bench and barbell bench are different lifts.
     var keyLifts = {
       'Trap Bar Deadlift': { color: '#0f3460', target: targets.trapBarDeadlift.weight },
       'Bench Press': { color: '#198754', target: targets.benchPress.weight },
@@ -3447,7 +3447,7 @@
       '</div>');
   })();
 
-  // ─── Self-Service Logging Form (disabled — using CLI instead) ───
+  // ─── Self-Service Logging Form (disabled, using CLI instead) ───
   /*
   (function logForm() {
     var REPO = 'menottim/training-program';
@@ -3562,7 +3562,7 @@
         setup.className = 'log-form token-setup';
         setup.innerHTML = '<h3>Log Activity</h3>' +
           '<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">One-time setup: enter a GitHub Personal Access Token to enable logging. ' +
-          'Create one at <a href="https://github.com/settings/tokens?type=beta" target="_blank">github.com/settings/tokens</a> — scope: <strong>Contents read/write</strong> for <strong>menottim/training-program</strong>.</p>' +
+          'Create one at <a href="https://github.com/settings/tokens?type=beta" target="_blank">github.com/settings/tokens</a>, scope: <strong>Contents read/write</strong> for <strong>menottim/training-program</strong>.</p>' +
           '<input type="password" id="token-input" placeholder="github_pat_...">' +
           '<button class="token-btn" onclick="window._saveToken()">Save Token</button>' +
           '<div id="token-status"></div>';
@@ -4130,7 +4130,7 @@
     var restaurantColor = restaurantMealsThisWeek <= 3 ? 'var(--success)' : 'var(--warning)';
 
     mount.innerHTML =
-      '<h3 style="margin-top:1.5rem;">&#127869; Nutrition Goals (Option B)</h3>' +
+      '<h3 style="margin-top:1.5rem;">Nutrition Goals (Option B)</h3>' +
       '<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Week of ' + weekDates[0].slice(5) + ' &ndash; ' + weekDates[6].slice(5) + ' &middot; 3 deficit days at 2,300-2,500 + &le;3 restaurant meals.</p>' +
       '<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:0.75rem;">' +
         '<div class="info-box" style="margin:0;background:rgba(33,150,243,0.04);">' +

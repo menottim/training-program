@@ -1,4 +1,4 @@
-# Training Program — LLM Instructions
+# Training Program: LLM Instructions
 
 ## Overview
 
@@ -60,9 +60,9 @@ When reviewing reports, logs, or new data:
 
 ## Architecture
 
-- **data.json** — All mutable data: athlete stats, baseline lifts, targets, `activityLog[]`, `bodyLog[]`
-- **index.html** — Static training plan + inline JS renderer that fetches data.json
-- **Everything renders dynamically** from data.json — dashboard cards, charts, progress logs, activity log table
+- __data.json__ holds all mutable data: athlete stats, baseline lifts, targets, `activityLog[]`, `bodyLog[]`
+- __index.html__: Static training plan + inline JS renderer that fetches data.json
+- __Everything renders dynamically__ from data.json: dashboard cards, charts, progress logs, activity log table
 
 ## Git Identity
 
@@ -103,7 +103,7 @@ If the user says "the rest as prescribed," look up the prescribed exercises for 
 
 ### Step 3: Append to activityLog in data.json
 
-Append a new entry to the `activityLog[]` array. Also check and update `bodyLog[]` if protein or body stats are reported — protein is tracked in bodyLog independently of activity entries, so a day with no workout can still have a protein log.
+Append a new entry to the `activityLog[]` array. Also check and update `bodyLog[]` if protein or body stats are reported. Protein is tracked in bodyLog independently of activity entries, so a day with no workout can still have a protein log.
 
 #### Activity name format (CRITICAL for progress log rendering)
 
@@ -194,13 +194,13 @@ After logging, review recent trends and surface observations:
 
 __Core principle__: the live site at https://menottim.github.io/training-program/ must reflect current coaching adjustments, not stale defaults. Whenever a coaching conversation produces a session-level change (e.g., "TB DL 5x5 at 230 this Wed as a stall-breaker" or "skip the deload this week"), capture that change in `data.json` so the renderer picks it up.
 
-__Keep tiles glanceable — `desc` is a short headline, not a paragraph.__ The renderer prints each day's `desc` verbatim as the headline in three places: the top summary bar, the Today Card title, and every week-grid tile. Keep `desc` to a short headline (roughly 8 words or fewer, no full sentences, no em-dashes, no "+"). Put all reasoning, cues, load rationale, ROM notes, and citations in `longDesc` — it renders behind a per-tile "detail" toggle and the Today Card's "Coaching detail" — and put specific sets/weights in the `exercises` array. Same at the week level: keep `subtitle` short and put the full rationale in `reason`. A long `desc` floods the schedule and makes it unreadable on a phone (this is a recurring failure mode).
+__Keep tiles glanceable: `desc` is a short headline, not a paragraph.__ The renderer prints each day's `desc` verbatim as the headline in three places: the top summary bar, the Today Card title, and every week-grid tile. Keep `desc` to a short headline (roughly 8 words or fewer, no full sentences, no em-dashes, no "+"). Put all reasoning, cues, load rationale, ROM notes, and citations in `longDesc`, which renders behind a per-tile "detail" toggle and the Today Card's "Coaching detail". Specific sets and weights go in the `exercises` array. Same at the week level: keep `subtitle` short and put the full rationale in `reason`. A long `desc` floods the schedule and makes it unreadable on a phone (this is a recurring failure mode).
 
-__Every prescribed exercise shows a concrete target weight (history-aware renderer).__ The renderer resolves each exercise's displayed weight as a hybrid: if `weight` is set, that coach target is shown with a ▲/=/▼ marker versus the most recent logged weight; if `weight` is omitted, the site __carries forward__ the last logged weight for that exercise and tags it `(carried)`, and always shows a muted `last <weight> · <date>` reference. So the __default of hold__ (repeat last) is automatic — omit `weight` to hold, and set an explicit `weight` only to (a) progress per double progression, (b) de-load, or (c) override a carry-forward that would be wrong (e.g., a rehab lift whose last logged load pre-dates the injury — set the current gated-safe number so the pre-injury load can't carry forward). Put qualitative gates ("step up only after clean mornings") in `notes`, never as the whole `weight`. Derive every target from logged history plus the progression model in Section 1 (double progression, phase RPE, reactive deload, rehab gating). Never ship an exercise whose only weight is a vague word like "moderate."
+__Every prescribed exercise shows a concrete target weight (history-aware renderer).__ The renderer resolves each exercise's displayed weight as a hybrid: if `weight` is set, that coach target is shown with a ▲/=/▼ marker versus the most recent logged weight; if `weight` is omitted, the site __carries forward__ the last logged weight for that exercise and tags it `(carried)`, and always shows a muted `last <weight> · <date>` reference. So the __default of hold__ (repeat last) is automatic: omit `weight` to hold, and set an explicit `weight` only to (a) progress per double progression, (b) de-load, or (c) override a carry-forward that would be wrong (e.g., a rehab lift whose last logged load pre-dates the injury, where you set the current gated-safe number so the pre-injury load can't carry forward). Put qualitative gates ("step up only after clean mornings") in `notes`, never as the whole `weight`. Derive every target from logged history plus the progression model in Section 1 (double progression, phase RPE, reactive deload, rehab gating). Never ship an exercise whose only weight is a vague word like "moderate."
 
 __Canonical exercise names (so history matches the plan).__ The renderer's `exerciseCanon` map folds these logged-name variants: `Barbell Bench Press`→`Bench Press`, `Cable Lat Pulldown`→`Lat Pulldown`, `Hip Thrust (Machine)`→`Hip Thrust`, `Seated Calf Raise HSR`→`Seated Calf Raise (HSR)`, `Leg Extension`→`Seated Leg Extension`, `Bent Over Row (inverted grip)`→`Bent Over Barbell Row`. When logging a session, use the canonical spelling (the plan's exact name) so the history lookup and carry-forward keep working. Introducing a genuinely new variant means either reusing a canonical name or adding a fold to `exerciseCanon` in `index.html`.
 
-__A missing week entry is not a blank - it is the pre-injury default.__ When `modifiedWeeks` has no entry for the current week, the renderer falls back to a hardcoded standard week in `index.html` (`Wed: Lower Body — Heavy`, `Fri: Lower Moderate + Plyo`, `Sun: Basketball AM + Hockey PM`, `Tue: Basketball PM`). It cannot tell "no plan authored yet" from "the default plan applies," so an un-authored week silently re-asserts the standard pre-injury programming. This bit during the Jun-Jul 2026 calf block: `modifiedWeeks` stopped at Week 19, so for roughly two weeks the live site prescribed Friday plyometrics and unmodified heavy lower to an athlete six weeks off a gastroc strain with barbell lower frozen. Treat an un-authored current week as a bug, not a gap. Author `modifiedWeeks[<week>]` for every week that deviates from the standard slate, and re-check the current week whenever a block changes or the week rolls over.
+__A missing week entry is not a blank - it is the pre-injury default.__ When `modifiedWeeks` has no entry for the current week, the renderer falls back to a hardcoded standard week in `index.html` (`Wed: Lower Body (Heavy)`, `Fri: Lower Moderate + Plyo`, `Sun: Basketball AM + Hockey PM`, `Tue: Basketball PM`). It cannot tell "no plan authored yet" from "the default plan applies," so an un-authored week silently re-asserts the standard pre-injury programming. This bit during the Jun-Jul 2026 calf block: `modifiedWeeks` stopped at Week 19, so for roughly two weeks the live site prescribed Friday plyometrics and unmodified heavy lower to an athlete six weeks off a gastroc strain with barbell lower frozen. Treat an un-authored current week as a bug, not a gap. Author `modifiedWeeks[<week>]` for every week that deviates from the standard slate, and re-check the current week whenever a block changes or the week rolls over.
 
 __How to capture__:
 1. For the current training week, use `modifiedWeeks[<week>]` with a __full 7-day schedule__ in the `schedule` array (not just the one day that differs). The renderer replaces the default week-grid with this schedule, so partial schedules leave blank days visible on the site.
@@ -234,17 +234,17 @@ When a week has a non-standard schedule (travel, injury, etc.), add it to the `m
 }
 ```
 
-**Types:** `game`, `hotel`, `gym-deload`, `rest`
+__Types:__ `game`, `hotel`, `gym-deload`, `rest`
 
 The renderer shows a modified-week card below the weekly overview when the current week has an entry. The activity log also shows an amber banner for modified weeks.
 
-**Logging hotel/gym-deload sessions to activityLog:** When the athlete completes a hotel or gym-deload session, log it to `activityLog` with `"type": "training"` (not "hotel") so it counts in the session tally and renders normally. The `modifiedWeeks` data is the plan; `activityLog` is what actually happened.
+__Logging hotel/gym-deload sessions to activityLog:__ When the athlete completes a hotel or gym-deload session, log it to `activityLog` with `"type": "training"` (not "hotel") so it counts in the session tally and renders normally. The `modifiedWeeks` data is the plan; `activityLog` is what actually happened.
 
 ## Things NOT to Do
 
-- **Do NOT manually update `currentLifts`** in data.json — the renderer derives current lifts automatically from activityLog by scanning for the latest logged weight of each main lift
-- **Do NOT edit index.html** for activity logging — only data.json needs to change
-- **Do NOT map DB Bench Press to the benchPress current lift** — DB bench and barbell bench are different lifts with different weight ranges
+- __Do NOT manually update `currentLifts`__ in data.json. The renderer derives current lifts automatically from activityLog by scanning for the latest logged weight of each main lift
+- __Do NOT edit index.html__ for activity logging; only data.json needs to change
+- __Do NOT map DB Bench Press to the benchPress current lift__: DB bench and barbell bench are different lifts with different weight ranges
 
 ## Lift Name Mapping (for derived currentLifts)
 
@@ -256,44 +256,44 @@ The renderer scans `activityLog` exercises and maps these exact names:
 ## Bench Press Programming (Starting Week 5)
 
 Thursday upper body every week:
-- **Barbell Bench Press 4×5** — primary press, log as `"Bench Press"` (maps to benchPress target)
-- **DB Bench Press 3×8** — accessory after BB bench, log as `"DB Bench Press"` (does NOT map to benchPress target)
+- __Barbell Bench Press 4×5__: primary press, log as `"Bench Press"` (maps to benchPress target)
+- __DB Bench Press 3×8__: accessory after BB bench, log as `"DB Bench Press"` (does NOT map to benchPress target)
 
 BB bench gets weekly frequency for efficient progression toward 225×5 target. DB bench adds chest volume + stability work at lighter load.
 
 ## Upper-Day Pressing & Rowing Defaults (updated 2026-07-08)
 
-- __Overhead press = Barbell Strict Overhead Press__ (switched from DB overhead press on 7/8). STRICT — no leg dip/drive, which would load ankle plantarflexion and the healing calf. Log as `"Strict Overhead Press"`.
+- __Overhead press = Barbell Strict Overhead Press__ (switched from DB overhead press on 7/8). STRICT: no leg dip or drive, which would load ankle plantarflexion and the healing calf. Log as `"Strict Overhead Press"`.
 - __Horizontal row = Bent Over Barbell Row__ (switched from Seated Cable Row on 7/8). Log as `"Bent Over Barbell Row"`.
-- These are the defaults for future upper days — author them into the plan's exercise slots (not DB OHP / cable row) so the history-aware carry-forward tracks them.
+- These are the defaults for future upper days. Author them into the plan's exercise slots (not DB OHP / cable row) so the history-aware carry-forward tracks them.
 
 ## Back Squat Introduction (Starting Week 5)
 
 Back Squat was added to Phase 1 Wednesday as a second compound after TB DL:
-- Phase 1 (Wks 5–6): 3×5 — pattern building, conservative load
-- Phase 2 (Wks 7+): 4×5 — full volume as originally planned
+- Phase 1 (Wks 5-6): 3×5, pattern building, conservative load
+- Phase 2 (Wks 7+): 4×5, full volume as originally planned
 
-Log as `"Back Squat"` — this maps to the backSquat target (315×5).
+Log as `"Back Squat"`, which maps to the backSquat target (315×5).
 
 ## Known Gaps
 
-- **Week 3 (Mar 22–28):** No training or games — away traveling. No entries to log.
-- **Week 4 (Mar 29–Apr 5):** Modified deload + travel week. Hotel bodyweight sessions Mon–Thu, gym Friday, rest Sat–Sun. No games Tue or Sun. Schedule defined in `data.modifiedWeeks["4"]` and rendered dynamically on the site.
-- **Week 5 (Apr 5–11):** No games (basketball and hockey both off). 4-session push week — Mon/Tue/Thu/Fri. Re-baseline compounds after 20-day gap. Introducing Back Squat and Barbell Bench. Schedule in `data.modifiedWeeks["5"]`. Games resume Sun Apr 12.
+- __Week 3 (Mar 22-28):__ No training or games, away traveling. No entries to log.
+- __Week 4 (Mar 29-Apr 5):__ Modified deload + travel week. Hotel bodyweight sessions Mon-Thu, gym Friday, rest Sat-Sun. No games Tue or Sun. Schedule defined in `data.modifiedWeeks["4"]` and rendered dynamically on the site.
+- __Week 5 (Apr 5-11):__ No games (basketball and hockey both off). 4-session push week, Mon/Tue/Thu/Fri. Re-baseline compounds after 20-day gap. Introducing Back Squat and Barbell Bench. Schedule in `data.modifiedWeeks["5"]`. Games resume Sun Apr 12.
 
 ## Schedule
 
-- **Week 1 start date: March 8, 2026** (Sunday)
-- Weeks run Sunday–Saturday
-- Phase 1: Foundation — Weeks 1–8 (Mar 8 – May 2). Extended from 6→8 weeks to compensate for Weeks 3–4 travel gap.
-- Phase 2: Strength-Power — Weeks 9–14 (May 3 – Jun 13). Introduces plyometrics + RPE 7-8.
-- Phase 3: Power Realization — Weeks 15+ (Jun 14 onward)
-- **Deload weeks: every 4th week** (Weeks 4, 8, 12, ...). Week 8 is both deload and Phase 1→2 transition.
+- __Week 1 start date: March 8, 2026__ (Sunday)
+- Weeks run Sunday-Saturday
+- Phase 1: Foundation, Weeks 1-8 (Mar 8 to May 2). Extended from 6→8 weeks to compensate for Weeks 3-4 travel gap.
+- Phase 2: Strength-Power, Weeks 9-14 (May 3 to Jun 13). Introduces plyometrics + RPE 7-8.
+- Phase 3: Power Realization, Weeks 15+ (Jun 14 onward)
+- __Deload weeks: every 4th week__ (Weeks 4, 8, 12, ...). Week 8 is both deload and Phase 1→2 transition.
 - To calculate current week: `ceil((days since March 8 + 1) / 7)`
 
 ## Science Review Cadence
 
-**Check the program against the science-based guidelines at least once per week.**
+__Check the program against the science-based guidelines at least once per week.__
 
 When a new conversation starts:
 1. Calculate current week from start date
@@ -323,11 +323,11 @@ When performing a science review:
 
 - Has access to seated calf raise machine
 - GHR machine available (preferred over Nordic hamstring curl)
-- __No fractional plates available.__ Smallest barbell plate increment is +5 lb. This affects Section 1 progression-stall protocol: the "microloading — fractional plates or 2.5 lb increases" lever is not available. Default to standard +5 lb double-progression rule (2 clean sessions at same weight → next +5). When a lift stalls, skip the microload step and go directly to "add one set at current weight before increasing load" (volume before intensity) or the 10% reset.
+- __No fractional plates available.__ Smallest barbell plate increment is +5 lb. This affects Section 1 progression-stall protocol: the "microloading, fractional plates or 2.5 lb increases" lever is not available. Default to standard +5 lb double-progression rule (2 clean sessions at same weight → next +5). When a lift stalls, skip the microload step and go directly to "add one set at current weight before increasing load" (volume before intensity) or the 10% reset.
 
 ## Exercise Prescription Conventions
 
-- __Always specify ROM (range of motion) in every exercise prescription.__ When writing exercises into `modifiedWeeks` plans (or otherwise prescribing movements), include a ROM cue, not just sets/reps/load. ROM is a programmed variable, not an afterthought — it changes which tissue is loaded and at what length.
+- __Always specify ROM (range of motion) in every exercise prescription.__ When writing exercises into `modifiedWeeks` plans (or otherwise prescribing movements), include a ROM cue, not just sets/reps/load. ROM is a programmed variable, not an afterthought. It changes which tissue is loaded and at what length.
   - __Calf raises specifically:__ state floor-range vs heels-off-a-platform (deficit). For a healing gastroc strain or reactive achilles, keep standing/knee-straight raises to floor range (up to full plantarflexion, down to neutral) and earn the heel-drop deficit back only once stair descent is pain-free and full active ROM is symptomless. Seated/bent-knee raises are soleus-biased and gentler on the gastroc, so they tolerate range sooner, but the bottom still stays pain-free early.
   - __Generally:__ note partial vs full ROM, any end-range to avoid, tempo where it matters (e.g., HSR 3s/3s), and the depth/stretch target. The renderer surfaces exercise `notes` on the today-card, so ROM cues belong in the `notes` field.
 
@@ -339,27 +339,27 @@ Use these evidence-based decision frameworks when recommending load changes, fla
 
 ### 1. Loading & Progression Rules
 
-**Primary progression model: Double progression (reps → load)**
-When all prescribed reps are completed with good form across 2 consecutive sessions at the same weight, increase load. This is the most reliable progression method for intermediate lifters training 2–3x/week (Schoenfeld 2017, NSCA guidelines).
+__Primary progression model: Double progression (reps → load)__
+When all prescribed reps are completed with good form across 2 consecutive sessions at the same weight, increase load. This is the most reliable progression method for intermediate lifters training 2-3x/week (Schoenfeld 2017, NSCA guidelines).
 
-- **Compound lower body** (trap bar DL, squat): increase 10 lbs per cycle
-- **Compound upper body** (bench, rows): increase 5 lbs per cycle
-- **Dumbbell accessories** (DB press, OH press, RDLs): increase 5 lbs per cycle
-- **Machine/cable exercises**: increase by one plate increment when top of rep range is hit for all sets
-- **Bodyweight exercises** (GHR, pull-ups): add reps first, then add external load in 5–10 lb increments
+- __Compound lower body__ (trap bar DL, squat): increase 10 lbs per cycle
+- __Compound upper body__ (bench, rows): increase 5 lbs per cycle
+- __Dumbbell accessories__ (DB press, OH press, RDLs): increase 5 lbs per cycle
+- __Machine/cable exercises__: increase by one plate increment when top of rep range is hit for all sets
+- __Bodyweight exercises__ (GHR, pull-ups): add reps first, then add external load in 5-10 lb increments
 
-**RPE targets by phase:**
-- Phase 1 (Foundation): RPE 6–7 on compounds — building movement quality, not grinding. Leave 3–4 reps in reserve.
-- Phase 2 (Strength-Power): RPE 7–8 on compounds — working sets should feel challenging but controlled. 2–3 reps in reserve.
-- Phase 3 (Power Realization): RPE 7–9 on primary lifts, RPE 6–7 on accessories — peak performance window, manage fatigue carefully.
+__RPE targets by phase:__
+- Phase 1 (Foundation): RPE 6-7 on compounds, building movement quality, not grinding. Leave 3-4 reps in reserve.
+- Phase 2 (Strength-Power): RPE 7-8 on compounds, working sets should feel challenging but controlled. 2-3 reps in reserve.
+- Phase 3 (Power Realization): RPE 7-9 on primary lifts, RPE 6-7 on accessories, peak performance window, manage fatigue carefully.
 
-**When progression stalls (same weight for 3+ sessions):**
+__When progression stalls (same weight for 3+ sessions):__
 1. First: check recovery factors (sleep, nutrition, game load that week)
-2. Second: try microloading — fractional plates or 2.5 lb increases if available
+2. Second: try microloading, fractional plates or 2.5 lb increases if available
 3. Third: add one set at the current weight before increasing load (volume before intensity)
-4. Last resort: reset 10% and build back up over 2–3 weeks
+4. Last resort: reset 10% and build back up over 2-3 weeks
 
-**Returning from a layoff (travel gap or injury):** see `knowledge/detraining-and-return.md` for the evidence review and the full restart-load bands. Key points:
+__Returning from a layoff (travel gap or injury):__ see `knowledge/detraining-and-return.md` for the evidence review and the full restart-load bands. Key points:
 
 - __A layoff is not a stall.__ A stall is a ceiling at a load you currently own; a layoff is decay at a load you no longer own. Do not reuse the 10% stall reset above as the layoff rule.
 - __Strength outlives size__, so bias restart loads small (Mujika and Padilla 2000 PMID 10999420; Psilander et al. 2019 PMID 30991013 found strength still ~60% elevated after 20 weeks of detraining while muscle size had returned to baseline). Bands: 5-10% under the last clean set for 2-4 weeks off, 10-15% for 4-8 weeks, 15-20% for longer gaps or any injury layoff affecting the loaded tissue.
@@ -373,9 +373,9 @@ References: Schoenfeld et al. (2017) "Dose-response relationship between weekly 
 
 See `knowledge/in-season-volume.md` for the primary evidence review. Key update vs prior practice: Coleman et al. 2024 (PeerJ, PMID 38274324) RCT of 39 resistance-trained lifters found that a __prophylactic 1-week deload in non-fatigued lifters reduced strength gains__ without compensating hypertrophy or endurance benefit. Scheduled calendar deloads are not evidence-supported; reactive deloads based on measurable fatigue are.
 
-**Frequency:** Currently programmed every 4th week (Weeks 4, 8, 12, ...) because Menotti has an in-season athlete with 3 weekly games, achilles tendinopathy, and is 40 years old — a conservative default. This is a reasonable safety net but should be __skipped when fatigue signals are absent__. If the week before a scheduled deload the athlete is hitting target RPEs, progressing lifts, sleeping well, and achilles is stable, skip the deload and continue the program. Hold the scheduled deload as a contingency, not a command.
+__Frequency:__ Currently programmed every 4th week (Weeks 4, 8, 12, ...) because Menotti has an in-season athlete with 3 weekly games, achilles tendinopathy, and is 40 years old, a conservative default. This is a reasonable safety net but should be __skipped when fatigue signals are absent__. If the week before a scheduled deload the athlete is hitting target RPEs, progressing lifts, sleeping well, and achilles is stable, skip the deload and continue the program. Hold the scheduled deload as a contingency, not a command.
 
-**Reactive-deload triggers (any 2+ warrant a 4-7 day volume cut):**
+__Reactive-deload triggers (any 2+ warrant a 4-7 day volume cut):__
 - RPE on working sets is 1-2 points higher than previous week at the same weight
 - Performance drops >5% at matched RPE
 - Achilles morning stiffness lasting >30 min (up from typical <15 min)
@@ -384,12 +384,12 @@ See `knowledge/in-season-volume.md` for the primary evidence review. Key update 
 - Resting HR elevated >5 bpm above personal norm for 3+ days
 - Persistent morning mood disturbance (Meeusen et al. 2013 overtraining criteria)
 
-**How to deload when triggered:**
-- __Reduce volume 40-50%__ — cut total sets roughly in half. This is the primary fatigue driver (Pritchard et al. 2015).
-- __Maintain intensity at 85-95% of current working weights__ — preserves neuromuscular adaptations. Dropping weight too far causes detraining without additional recovery benefit.
+__How to deload when triggered:__
+- __Reduce volume 40-50%__: cut total sets roughly in half. This is the primary fatigue driver (Pritchard et al. 2015).
+- __Maintain intensity at 85-95% of current working weights__: preserves neuromuscular adaptations. Dropping weight too far causes detraining without additional recovery benefit.
 - __Practical implementation:__ keep the same exercises and weights, cut sets from e.g. 4x5 → 2x5 and 3x8 → 2x8.
-- __Keep games on normal schedule__ — deload applies to lifting, not sport.
-- __HSR protocol stays at full load during deload__ — tendons have longer adaptation cycles and do not benefit from reduced load the way muscles do (Magnusson and Kjaer 2019).
+- __Keep games on normal schedule__: deload applies to lifting, not sport.
+- __HSR protocol stays at full load during deload__: tendons have longer adaptation cycles and do not benefit from reduced load the way muscles do (Magnusson and Kjaer 2019).
 - __Friday session during deload__ can be replaced entirely with mobility/recovery work if fatigue is high.
 
 Pre-competition tapers (distinct from reactive deloads) are a different tool: ~14 days, volume cut 41-60% with intensity maintained, produces small performance gains (Bosquet et al. 2007). Not applicable to an in-season recreational athlete without a named competition.
@@ -403,7 +403,7 @@ See `knowledge/in-season-volume.md` for the full evidence review. Key nuance vs 
 - The __10+ sets per muscle per week__ figure commonly cited from Schoenfeld 2017 was only a statistical trend (P=0.074), not a validated threshold. Volume dose-response is continuous, not stepped. For an in-season athlete, 6-10 hard sets per muscle per week captures most of the hypertrophy and strength benefit with tolerable fatigue cost.
 - __Game-load to lifting-set equivalence is not established in the literature.__ Basketball research quantifies external load (jumps, Player Load, accelerations) and internal load (sRPE, HR), but no published work converts "1 basketball game = X sets of squats." Treat the sport-contributes-to-lower-body-load framing qualitatively, not quantitatively.
 
-**Weekly set targets (in-season athlete, per muscle group):**
+__Weekly set targets (in-season athlete, per muscle group):__
 - __Quads/glutes/hamstrings:__ 6-10 hard sets/week from lifting. Games add substantial lower-body load, but the exact equivalence is not quantifiable. Total effective volume is higher than the log alone shows.
 - __Chest/back/shoulders:__ 6-10 hard sets/week. Less interference from sport.
 - __Core:__ 4-6 direct sets/week. Games provide substantial indirect core work.
@@ -411,42 +411,42 @@ See `knowledge/in-season-volume.md` for the full evidence review. Key nuance vs 
 
 Hypertrophy research suggests 10-20 sets/muscle/week (Schoenfeld 2017), but in-season athletes should target the lower end and count sport exposure qualitatively. Goal is maintenance and modest strength gain, not maximizing volume. For a lifter at 135-lb bench starting weight, in-season __gain__ rather than maintenance is realistic (Baker 2001 showed younger/weaker cohort gained bench 1RM across 29-week season).
 
-**Counting game load (qualitative, not quantitative):**
+__Counting game load (qualitative, not quantitative):__
 - Basketball session ≈ moderate lower-body training stimulus.
 - Hockey session ≈ moderate-to-high lower-body and core stimulus.
 - A 3-game week means significant lower-body fatigue is already accumulating before Wednesday's training session.
-- If game load increases (extra games, tournaments), reduce lifting volume that week — drop Friday session first, then reduce Wednesday sets.
+- If game load increases (extra games, tournaments), reduce lifting volume that week: drop Friday session first, then reduce Wednesday sets.
 
 References: Impellizzeri et al. 2004 internal vs external load; Impellizzeri et al. 2019 15-years-on update (PMID 30614348); Schoenfeld et al. 2017 dose-response (PMID 27433992); Schoenfeld et al. 2016 frequency meta-analysis (PMID 27102172); Androulakis-Korakakis et al. 2020 minimum effective dose (PMID 31797219); Baker 2001 (PMID 11710401); Suchomel et al. 2018 (PMID 29372481). Full set in `knowledge/in-season-volume.md`.
 
-### 4. Achilles Tendinopathy — Evidence-Based Load Management
+### 4. Achilles Tendinopathy: Evidence-Based Load Management
 
 See `knowledge/achilles-tendinopathy-hsr.md` for the full evidence review. Key corrections vs prior phrasing in this file:
 
 - __Beyer 2015 HSR is a progressive 12-week protocol__, not a constant 3x6 at 6RM. Load progresses: 15RM (wk 1), 12RM (wk 2-3), 10RM (wk 4-5), 8RM (wk 6-8), 6RM (wk 9-12). 3 sets, 3x/week, 6-second tempo (3s concentric, 3s eccentric). Using 6RM from week 1 is off-protocol and likely underloads for the first 8 weeks and overloads during the initial adaptation window.
-- __"Heavy" in HSR must actually be heavy__ (Morrison and Cook 2022, PMC9124646). Many published protocols drop below 70% 1RM by later reps due to slow tempo. If every set feels easy, the load is not heavy enough — add weight or use cluster-set variants.
+- __"Heavy" in HSR must actually be heavy__ (Morrison and Cook 2022, PMC9124646). Many published protocols drop below 70% 1RM by later reps due to slow tempo. If every set feels easy, the load is not heavy enough: add weight or use cluster-set variants.
 - __Pain-monitoring numeric thresholds (0-3/4-5/>5)__ are consensus refinements from secondary literature (Martin et al. 2018 JOSPT clinical practice guidelines; Silbernagel et al. 2020), not verbatim in Silbernagel 2007 primary paper. The 24-hour return-to-baseline rule and the continue-sport-with-pain-monitoring framework are directly from Silbernagel 2007.
 
-**HSR dosing (corrected, follow this when programming):**
+__HSR dosing (corrected, follow this when programming):__
 - 3x/week, 3 sets per session, 6-second tempo (3s concentric, 3s eccentric).
 - Load progression over 12 weeks: 15RM → 12RM → 10RM → 8RM → 6RM.
 - Include both straight-knee (gastroc bias) and bent-knee (soleus bias) variants.
-- HSR stays at full load during lifting deloads — tendons have months-long adaptation cycles and do not benefit from reduced load the way muscles do (Magnusson and Kjaer 2019).
+- HSR stays at full load during lifting deloads. Tendons have months-long adaptation cycles and do not benefit from reduced load the way muscles do (Magnusson and Kjaer 2019).
 
-**Pain-monitoring decision tree** (consensus thresholds, applied from Silbernagel 2007 principles):
+__Pain-monitoring decision tree__ (consensus thresholds, applied from Silbernagel 2007 principles):
 - __0-3/10 during loading:__ acceptable, continue protocol. Pain at this level during loaded tendon exercises is expected and does not indicate harm.
 - __4-5/10 during loading:__ maintain current load, do not increase. If persists at this level for 2+ weeks, reduce HSR load 15-20%.
 - __>5/10 during loading:__ stop the exercise. Reduce load 25% next session. If >5/10 persists after reduction, flag for possible clinical review.
 - __Game-day achilles pain >5/10:__ drop Friday plyometrics for 2 weeks, temporarily increase HSR frequency to 4x/week.
 - __Morning stiffness >30 minutes:__ regression signal. Consider reduced sport minutes, reactive deload, or clinical review if it persists 2+ weeks.
-- __24-hour rule:__ pain should return to pre-exercise baseline within 24 hours. If elevated the day after, load was too high — reduce 10-15% next session.
+- __24-hour rule:__ pain should return to pre-exercise baseline within 24 hours. If elevated the day after, load was too high: reduce 10-15% next session.
 
-**Adjuncts** (see `knowledge/achilles-tendinopathy-hsr.md` for full evidence):
+__Adjuncts__ (see `knowledge/achilles-tendinopathy-hsr.md` for full evidence):
 - __Worth trialing (Emerging):__ gelatin 15g or specific collagen peptides ~10-15g + ~50 mg vitamin C, 30-60 min pre-loading (Shaw 2017 PMID 27852613; Praet 2019 PMID 30609761). ESWT as escalation if HSR plateaus at 12 weeks, combined with continued loading (Paantjens 2022).
 - __Not recommended:__ PRP injection (de Vos 2010 JAMA RCT showed no benefit over saline; PMID 20068208). GTN patches (weak/mixed evidence, headache side effect in ~20%).
 - __Uncertain:__ isometric holds for pre-activity analgesia. Strong evidence in patellar tendinopathy (Rio 2015, 2017); Achilles replication has been mixed.
 
-**Tendon adaptation timeline:** tendons adapt slowly. Symptom improvement often precedes structural change on imaging by months. Expect the protocol to run 12+ weeks minimum; full remission at 3-6 months. Do not abandon if 4-6 weeks in and progress is slow (Kjaer et al. 2009 PMID 19706001; Magnusson and Kjaer 2019 PMC6395417).
+__Tendon adaptation timeline:__ tendons adapt slowly. Symptom improvement often precedes structural change on imaging by months. Expect the protocol to run 12+ weeks minimum; full remission at 3-6 months. Do not abandon if 4-6 weeks in and progress is slow (Kjaer et al. 2009 PMID 19706001; Magnusson and Kjaer 2019 PMC6395417).
 
 References: Beyer et al. 2015 (PMID 26018970); Silbernagel et al. 2007 (PMID 17307888); Silbernagel et al. 2020 (PMC7249277); Morrison and Cook 2022 (PMC9124646); Kjaer et al. 2009; Magnusson and Kjaer 2019. Full set in `knowledge/achilles-tendinopathy-hsr.md`.
 
@@ -458,28 +458,28 @@ See `knowledge/recovery-sleep.md` and `knowledge/protein-distribution.md` for fu
 - __Sleep need is individual__, not a fixed 8 hours. 7-9 hours is the NSF adult range (Hirshkowitz et al. 2015 PMID 29073412); Walsh et al. 2021 IOC consensus (PMID 33144349) argues explicitly against one-size-fits-all athlete prescriptions.
 - __Chronic post-lifting cold water immersion blunts hypertrophy__ (Roberts et al. 2015 PMID 26174323). Use CWI for game recovery when next performance is within 48h, not routinely after lifting.
 
-**Session spacing (written against the standard three-game slate - see the slate note in the Overview before applying):**
+__Session spacing (written against the standard three-game slate - see the slate note in the Overview before applying):__
 - 48+ hours between heavy lifting and games (Suchomel et al. 2018)
 - Wednesday heavy → Sunday game = 3.5 days (optimal)
 - Wednesday heavy → following Tuesday game = 6 days (optimal). This only applies when a Tue PM basketball game is actually on the slate - basketball is in its off-season as of Jul 2026, so there is no Tuesday game to space away from.
 - Friday is deliberately the lightest lifting session, ~36 hours before Sunday AM basketball and ~48 hours before Sunday PM hockey. With Sun AM basketball off the slate, Friday has marginally more room, but keep it the lightest day while a Sunday game of any kind stands.
 
-**Auto-regulation signals — when to reduce that session's intensity/volume:**
+__Auto-regulation signals (when to reduce that session's intensity or volume):__
 - Warm-up sets feel RPE 2+ higher than expected → drop one working set per exercise.
 - Achilles morning stiffness persists past warm-up → skip plyometric/explosive components.
-- Slept <6 hours → reduce volume 25%, maintain intensity (partial deload). Knowles et al. 2018 (PMID 29422383) shows sleep debt hits compound lifts more than isolation — if sleep-poor, consider swapping squat/deadlift for isolation work.
+- Slept <6 hours → reduce volume 25%, maintain intensity (partial deload). Knowles et al. 2018 (PMID 29422383) shows sleep debt hits compound lifts more than isolation, if sleep-poor, consider swapping squat/deadlift for isolation work.
 - 3+ high-intensity games in the past 5 days → drop Friday session entirely or replace with recovery.
 
-**Sleep:**
+__Sleep:__
 - Target 7.5-9 hours in bed, consistent bed/wake times ±30 min including weekends (Walsh 2021 IOC consensus; Mah 2011 sleep extension showed measurable basketball performance gains with ~10h in bed, PMID 21731144).
 - Sleep <6 hours for 3+ nights is a reactive-deload trigger.
 
-**Nutrition timing:**
+__Nutrition timing:__
 - Protein: 1.6-2.2 g/kg/day (~160-220 g at 220 lbs), distributed across 4 meals at ~0.4 g/kg each (Morton et al. 2018 PMID 28698222; Schoenfeld and Aragon 2018). Details in `knowledge/protein-distribution.md`.
 - Carbs: higher on game days (Sun, Tue) and training days (Wed, Thu, Fri); lower on rest days (Mon, Sat).
 - Post-game/training: protein + carbs within 2-3 hours supports glycogen replenishment. The 30-minute window is not evidence-based; the 4-6 hour window is.
 
-**Recovery modality ROI hierarchy** (see `knowledge/recovery-sleep.md` for Dupuy 2018 meta-analysis):
+__Recovery modality ROI hierarchy__ (see `knowledge/recovery-sleep.md` for Dupuy 2018 meta-analysis):
 1. Sleep extension and consistency (free, highest evidence).
 2. Zone 2 active recovery walk/bike 20-30 min on off days.
 3. Massage or percussion gun on sore areas (largest DOMS effect size).
@@ -491,20 +491,20 @@ References: Mah et al. 2011 (PMID 21731144); Walsh et al. 2021 IOC consensus (PM
 
 ### 6. Plyometric Introduction (Phase 2+)
 
-**Rationale:** Plyometrics produce the most sport-transferable power gains for vertical jump, with diminishing returns after ~4 weeks of consistent training (Markovic 2007). The program introduces them in Phase 2 after a 6-week strength base.
+__Rationale:__ Plyometrics produce the most sport-transferable power gains for vertical jump, with diminishing returns after ~4 weeks of consistent training (Markovic 2007). The program introduces them in Phase 2 after a 6-week strength base.
 
-**Dosing for in-season athletes:**
-- **Frequency:** 1–2x/week max. Friday is the designated plyo day.
-- **Volume:** 40–60 ground contacts per session for a non-specialized athlete. Start at the low end (Ebben et al. 2010).
-- **Intensity progression:** Box jumps (step down, never rebound) → depth drops → depth jumps. Only advance when landing mechanics are consistent.
-- **Always step down from box jumps** — rebounding adds eccentric achilles load with minimal additional power benefit, and is contraindicated with achilles tendinopathy.
+__Dosing for in-season athletes:__
+- __Frequency:__ 1-2x/week max. Friday is the designated plyo day.
+- __Volume:__ 40-60 ground contacts per session for a non-specialized athlete. Start at the low end (Ebben et al. 2010).
+- __Intensity progression:__ Box jumps (step down, never rebound) → depth drops → depth jumps. Only advance when landing mechanics are consistent.
+- __Always step down from box jumps__: rebounding adds eccentric achilles load with minimal additional power benefit, and is contraindicated with achilles tendinopathy.
 
-**Vertical jump–specific evidence:**
-- Plyometric training produces ~4–8% vertical jump improvement over 6–12 weeks in trained athletes (Markovic 2007 meta-analysis).
-- Combined strength + plyometric training is superior to either alone ("complex training" — Ebben 2002). The program is structured this way: heavy strength Wed/Thu + plyo Fri.
+__Vertical jump-specific evidence:__
+- Plyometric training produces ~4-8% vertical jump improvement over 6-12 weeks in trained athletes (Markovic 2007 meta-analysis).
+- Combined strength + plyometric training is superior to either alone ("complex training", Ebben 2002). The program is structured this way: heavy strength Wed/Thu + plyo Fri.
 - For a 220 lb athlete, relative strength (strength-to-bodyweight ratio) is the primary limiter of vertical jump. Reducing body fat while maintaining muscle will improve jump height even without plyometrics.
 
-**When to pull back on plyos:**
+__When to pull back on plyos:__
 - Achilles pain >3/10 during plyometric exercises → stop, substitute with concentric-only power work (e.g., sled push, kettlebell swings)
 - If game load increases that week → drop plyos first (highest achilles risk, lowest priority relative to strength work)
 
@@ -512,23 +512,23 @@ References: Markovic (2007) "Does plyometric training improve vertical jump heig
 
 ### 7. Strength Standards & Target Validation
 
-**12-month targets in context:**
+__12-month targets in context:__
 
 | Lift | Current | Target | Required Gain | Assessment |
 |------|---------|--------|---------------|------------|
 | Trap Bar DL | 230×5 | 385×5 | +155 lbs (+67%) | Ambitious but achievable if progression is consistent. TB DL is more forgiving than conventional DL. ~3 lbs/week average increase needed. |
-| Back Squat | 185×5 | 315×5 | +130 lbs (+70%) | Aggressive. Squat is harder to progress in-season due to leg fatigue from games. May need 15–18 months. |
+| Back Squat | 185×5 | 315×5 | +130 lbs (+70%) | Aggressive. Squat is harder to progress in-season due to leg fatigue from games. May need 15-18 months. |
 | Bench Press | 155×5 | 225×5 | +70 lbs (+45%) | Most realistic of the three. Upper body is less affected by game load. ~1.5 lbs/week average. |
 
-**Target horizons (re-horizon signed off 2026-07-09).** The flat 12-month framing above is superseded per lift: __Bench 225×5 stays at 12 months__ (most realistic; upper body least game-affected), while __Trap Bar DL 385×5 and Back Squat 315×5 move to ~18 months__, reflecting the in-season lower-body slowdown (~30–40%, Baker 2001) and the squat assessment in the table. Horizons live in `data.targets[<lift>].horizonMonths` (12 / 18 / 18) and the site renders each lift's own horizon on its target card and in the progress bars. The lower-body layoff from the calf strain makes the 18-month lower framing more realistic still; revisit once barbell lower lifts resume.
+__Target horizons (re-horizon signed off 2026-07-09).__ The flat 12-month framing above is superseded per lift: __Bench 225×5 stays at 12 months__ (most realistic; upper body least game-affected), while __Trap Bar DL 385×5 and Back Squat 315×5 move to ~18 months__, reflecting the in-season lower-body slowdown (~30-40%, Baker 2001) and the squat assessment in the table. Horizons live in `data.targets[<lift>].horizonMonths` (12 / 18 / 18) and the site renders each lift's own horizon on its target card and in the progress bars. The lower-body layoff from the calf strain makes the 18-month lower framing more realistic still; revisit once barbell lower lifts resume.
 
-**Rate-of-progression reality check (for a 40-year-old returning lifter):**
-- First 3–6 months: fastest gains (neural adaptation + muscle memory if previously trained). Expect 5–15 lbs/month on compounds.
-- Months 6–12: progression slows to 2–5 lbs/month on compounds.
-- Age factor: recovery capacity is ~10–15% lower than a 25-year-old at equivalent training levels (Lexell 1995). This is already accounted for by the 3-day lifting schedule and conservative volume.
-- In-season factor: expect ~30–40% slower progression on lower body lifts during active game seasons compared to off-season training blocks (Baker 2001).
+__Rate-of-progression reality check (for a 40-year-old returning lifter):__
+- First 3-6 months: fastest gains (neural adaptation + muscle memory if previously trained). Expect 5-15 lbs/month on compounds.
+- Months 6-12: progression slows to 2-5 lbs/month on compounds.
+- Age factor: recovery capacity is ~10-15% lower than a 25-year-old at equivalent training levels (Lexell 1995). This is already accounted for by the 3-day lifting schedule and conservative volume.
+- In-season factor: expect ~30-40% slower progression on lower body lifts during active game seasons compared to off-season training blocks (Baker 2001).
 
-**When to revisit targets:**
+__When to revisit targets:__
 - At the Phase 1 → Phase 2 transition (Week 7): re-evaluate whether the 12-month targets need adjustment based on actual 6-week progression rate.
 - At any point where a lift stalls for 3+ weeks despite proper deloading and recovery.
 

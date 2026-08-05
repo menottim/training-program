@@ -2557,7 +2557,7 @@
     },
     {
       "date": "2026-08-04",
-      "notes": "Morning read: calf calm, roughly 24 h after both gate tests. This is the read that validates Monday. 20 hops per leg plus a to-30 capacity test on both legs was the largest neuromuscular calf demand since the 6/21 strain, and the next morning is back at baseline. That satisfies the 24-hour rule directly (Silbernagel 2007 PMID 17307888), so the tests measured capacity without costing anything. Trajectory across two weeks: 1-2/10 Tue 7/28, 1-2/10 Wed 7/29, 3-5/10 Thu 7/30 at the DOMS peak, clean Fri 7/31, under 3/10 Sun 8/2, under 3/10 Mon 8/3, calm today. No week-to-week climb. Recorded in notes rather than achillesPainAM because this is the healing gastroc, not the Achilles tendon. Sleep not reported for Sun or Mon night. No intake data; bodyLog has had no protein or calorie entry since 5/11, now 85 days."
+      "notes": "Morning read: calf calm, roughly 24 h after both gate tests. This is the read that validates Monday. 20 hops per leg plus a to-30 capacity test on both legs was the largest neuromuscular calf demand since the 6/21 strain, and the next morning is back at baseline. That satisfies the 24-hour rule directly (Silbernagel 2007 PMID 17307888), so the tests measured capacity without costing anything. Trajectory across two weeks: 1-2/10 Tue 7/28, 1-2/10 Wed 7/29, 3-5/10 Thu 7/30 at the DOMS peak, clean Fri 7/31, under 3/10 Sun 8/2, under 3/10 Mon 8/3, calm today. No week-to-week climb. Recorded in notes rather than achillesPainAM because this is the healing gastroc, not the Achilles tendon. Nothing was performed on 8/4: the day was taken as full rest and the PT block, which is prescribed daily, was missed. Sleep not reported for Sun or Mon night. No intake data; bodyLog has had no protein or calorie entry since 5/11, now 85 days."
     }
   ],
   "modifiedWeeks": {
@@ -2957,8 +2957,8 @@
           "day": "Tue",
           "date": "2026-08-04",
           "type": "recovery",
-          "desc": "PT block only",
-          "longDesc": "No basketball, since the league is in its off-season. PT daily block and nothing else, which also gave a clean morning-after read on Monday's tests: calm, roughly 24 h after the largest neuromuscular calf demand since the strain. That is the 24-hour rule satisfied (Silbernagel 2007 PMID 17307888) and it is what clears Thursday's run to go. Easy bike for 20-30 min if you want blood flow, nothing that loads explosive push-off.",
+          "desc": "PT block missed, full rest day",
+          "longDesc": "Taken as a complete rest day. Nothing performed, including the PT block, which is prescribed daily. One day off the bodyweight block after Monday's two to-fatigue tests is defensible and probably useful, so this is a note rather than a problem; the pattern is what would matter, not the day. It does mean the Week 22 review's read of calf loading at 6-7x/week is already one session light for this week, on top of that review's finding that the loading is entirely unloaded. The morning read still came in calm, roughly 24 h after the largest neuromuscular calf demand since the strain, which satisfies the 24-hour rule (Silbernagel 2007 PMID 17307888) and is what clears Thursday's run to go. Original plan was the PT block plus an optional easy bike.",
           "exercises": [
             {
               "name": "Isometric Standing Calf Hold (bilateral)",
@@ -2984,14 +2984,15 @@
               "weight": "bodyweight",
               "notes": "PT daily block, started as of 7/31 after being gated since 7/28, so this is no longer conditional. Held Monday only because of the tests. Controlled, chest lean forward, no rebound, and no rushing the volume up: this is still a novel eccentric on a healing gastroc, and the next morning read is the readout."
             }
-          ]
+          ],
+          "status": "missed"
         },
         {
           "day": "Wed",
           "date": "2026-08-05",
           "type": "training",
           "desc": "Upper, bench 165, core and back return",
-          "longDesc": "Upper day plus the PT block, and the session that fixes two weeks of volume holes. Bench holds 165: 7/29 took four sets at 165 for 3, 5, 3, 3, so one clean set of five out of four attempts. Get all four and 170 opens. Back and core are the real point here. 7/30 was skipped entirely and took the lat pulldown and the woodchop with it, leaving back at 5 sets and core at zero direct sets for a second straight week against a 4-6 set floor. Bringing back the pulldown puts back at 8 sets, and the woodchop plus Pallof press puts core at 6. Overhead press works back up off the empty bar it defaulted to on 7/29, since 45 lb is far below what a seated press should allow off a 95x5 standing base, so 65 is a rebuild step rather than a progression. The row steps to 105 for the same reason: 95 sits 40 lb under the last clean pre-layoff set. The press stays seated on purpose so there is no leg drive and no plantarflexion load. One addition out of the Week 22 science review: the loaded seated calf raise comes back at 135, replacing today's bodyweight version. Calf loading has gone daily but entirely at bodyweight, so frequency has been masking an intensity failure, and the Phase 4 soleus benchmark of roughly 1.5x BW cannot be built on 3x15 unweighted. 135 is not a new load; 7/28 tolerated it. Confirm with the PT.",
+          "longDesc": "Upper day plus the PT block, and the session that fixes two weeks of volume holes. The PT block resumes here after Tuesday was taken as a full rest day, so run all four items rather than treating them as optional add-ons at the end. Bench holds 165: 7/29 took four sets at 165 for 3, 5, 3, 3, so one clean set of five out of four attempts. Get all four and 170 opens. Back and core are the real point here. 7/30 was skipped entirely and took the lat pulldown and the woodchop with it, leaving back at 5 sets and core at zero direct sets for a second straight week against a 4-6 set floor. Bringing back the pulldown puts back at 8 sets, and the woodchop plus Pallof press puts core at 6. Overhead press works back up off the empty bar it defaulted to on 7/29, since 45 lb is far below what a seated press should allow off a 95x5 standing base, so 65 is a rebuild step rather than a progression. The row steps to 105 for the same reason: 95 sits 40 lb under the last clean pre-layoff set. The press stays seated on purpose so there is no leg drive and no plantarflexion load. One addition out of the Week 22 science review: the loaded seated calf raise comes back at 135, replacing today's bodyweight version. Calf loading has gone daily but entirely at bodyweight, so frequency has been masking an intensity failure, and the Phase 4 soleus benchmark of roughly 1.5x BW cannot be built on 3x15 unweighted. 135 is not a new load; 7/28 tolerated it. Confirm with the PT.",
           "exercises": [
             {
               "name": "Bench Press",

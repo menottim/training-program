@@ -2191,6 +2191,58 @@
       ],
       "achillesPain": 0,
       "notes": "Both gate tests passed on the first attempt, after four postponements: 7/6 was unstandardized, 7/27 and 7/28 were skipped, and 7/30 was postponed on a 3-5/10 DOMS read. Day 43 post-strain, inside the week 5-9 Phase 3 anchor in knowledge/calf-strain-rehab.md, so on the conservative schedule rather than ahead of it. Hops: 20 per leg, symptom-free both sides, which is the criterion gating running and step-down plyometrics (Green 2022 PMID 35032233, Phase 3). Capacity: 30 left and 30 right, clearing the 30-rep and 10-percent-asymmetry threshold (Green 2022; norms referenced to Hebert-Losier 2017 PMID 28886865) at 0 percent asymmetry. The asymmetry half of the gate had never once been produced before today. The caveat on that 0 percent: both legs stopped at exactly 30, which is the criterion value, not a to-failure value. The test was specified to fatigue, so 30/30 most likely reflects stopping at the target rather than both legs failing on the identical rep. Both criteria are met either way and 30 is now a floor, but a true-failure read would have said more about which leg is actually weaker. Run it to failure next time. What this opens: graded running and step-down box jumps, both entering this week on Thursday and Friday. Two of Phase 3's four exit criteria are now objectively met. What it does not open is full return to sport. Green 2022's Phase 4 list requires all of VAS 0/10, calf raise 30 reps at 10 percent asymmetry or less (met), loaded strength benchmarks at 10 percent asymmetry or less, hop and jump asymmetry 10 percent or less, and a completed symptom-free sport-specific plyo and change-of-direction exposure. The loaded strength benchmarks are the outstanding gap: 1.0x BW knee-extended and 1.5x BW knee-flexed, against a current single-leg calf raise at BW plus 25 lb per leg and a seated calf raise the PT has at bodyweight. At roughly 220 lb the soleus benchmark is about 330 lb, which bodyweight seated raises will not build toward. That is a question for the PT rather than a unilateral override of a PT item. Sunday AM basketball therefore holds one more week and opens 8/16 if Thursday's run and Friday's jumps stay clean. Lifting: TB DL 4x5x205 clean for the second consecutive session (7/28, 8/3), so 215 Thursday, plus 10 lb per the compound-lower double-progression rule. Single-leg RDL 3x8/leg at 20 lb DBs, the second of the PT's 2-3x weekly doses. Passing a gate is not discharge. Age and prior calf injury are the two strongest recurrence risk factors (Green 2017 PMID 28259848), recurrence in this band arrives without warning, and 13-21 percent recur within two years (Green 2025 PMID 40919406), so calf-raise capacity becomes a permanent maintenance item rather than a milestone that gets retired. Not reported: sleep for Sun or Mon night, and whether the PT isometric block ran after the tests. The isometrics are left out of the exercise list rather than assumed, since they were not confirmed."
+    },
+    {
+      "date": "2026-08-06",
+      "type": "training",
+      "activity": "Upper, shifted from Wednesday (Wed Phase 3)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "4x5",
+          "weight": "165 lbs",
+          "notes": "CLEAN 4x5 at 165, the first time the full prescription has landed. 7/8 got there as 160/160/165/165 and 7/29 broke down to 3, 5, 3, 3 at 165. Two attempts, then a clean sweep. Double progression opens 170 on the next upper day."
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "4x5",
+          "weight": "130/130/130/145 lbs",
+          "notes": "Prescribed 3x8 at 145. Ran as a ramp to one set at the target load instead: 20 reps against the prescribed 24, and only the fourth set at 145. 7/8 held 145 for 8 twice, so on load-by-reps this is a step back rather than the hold the week intended."
+        },
+        {
+          "name": "Strict Overhead Press (dumbbell)",
+          "sets": "1x10, 2x5",
+          "weight": "25/35/35 lb DBs",
+          "notes": "Substituted dumbbells for the prescribed seated strict barbell 4x5 at 65. The 35s repeat 7/1's 3x6 at the same dumbbells, so shoulders held at maintenance rather than taking the rebuild step the week authored. Two hard sets, which leaves the shoulder count below Section 3's floor for a third consecutive week."
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "1x10, 1x8, 1x5",
+          "weight": "135 lbs",
+          "notes": "Inverted (supinated) grip. Prescribed 5x5 at 105 as a conservative rebuild off 7/29's clean 5x5x95. Went to 135 instead, 30 lb over prescription, but 135 is not new territory: it matches the last clean pre-layoff set of 3x10 at 135 on 4/30 and sits 20 lb under 6/18's 4x5 at 155. So the load is a recovered baseline, not a jump past one. The 10, 8, 5 rep decay says the third set was at or near failure, and total reps came in at 23 against the prescribed 25."
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "not performed",
+          "notes": "Prescribed 4x5 at 95. Lost in the shift off Wednesday, which leaves chest at 4 hard sets for the week against Section 3's 6-10 floor."
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "not performed",
+          "notes": "Prescribed 3x10/side at 30. Lost in the shift. Direct core stays at zero sets for a third consecutive week against a 4-6 set floor."
+        },
+        {
+          "name": "Pallof Press",
+          "sets": "not performed",
+          "notes": "Prescribed 3x10/side at 30. Lost in the shift, same as the woodchop."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "not performed",
+          "notes": "Prescribed 3x10 at 135. This was change 1 from the 8/4 science review, the dose that was supposed to take genuinely loaded calf work from 1x to 2x per week. Lost in the shift, so unless it is rescheduled the week runs one loaded calf session again."
+        }
+      ],
+      "notes": "Wednesday 8/5 was skipped outright and the upper session ran Thursday morning instead, which puts two sessions on 8/6 with the prescribed run and lower work still to come in the evening. Logged under the Wed Phase 3 tag so it groups with the Wednesday upper progression rather than with Thursday's lower work, following the 6/18 precedent for a shifted session. THE RESULT THAT MATTERS: bench 4x5 at 165 clean. That number had been outstanding across two attempts and it was the specific thing the week was holding load for, so 170 is now earned. Against the rest of the prescription the session ran roughly 60 percent: four of eight prescribed items done, and three of those four deviated. Volume audit for the upper day, against Section 3's 6-10 hard sets per muscle group: chest 4 (below, close-grip dropped), back 7 (clears the floor, and the first week back-work has cleared it since the 7/30 skip), shoulders 2 hard sets at maintenance load (below), core 0 (below, third straight week). The two deviations that cut in opposite directions are worth naming plainly. Row went 30 lb ABOVE prescription and that is defensible, because 135 recovers the 4/30 baseline rather than exceeding it, though the rep decay says it was taken to the edge. Pulldown went BELOW prescription in effective load and reps, which is the same lift the 7/30 skip already cost the program once. Not reported: sleep for Wednesday night, and whether the daily PT calf block ran this morning. The PT block is left out of the exercise list rather than assumed."
     }
   ],
   "scienceReviews": [
@@ -2995,8 +3047,8 @@
           "day": "Wed",
           "date": "2026-08-05",
           "type": "training",
-          "desc": "Upper, bench 165, core and back return",
-          "longDesc": "Upper day plus the PT block, and the session that fixes two weeks of volume holes. The PT block resumes here after Tuesday was taken as a full rest day, so run all four items rather than treating them as optional add-ons at the end. Bench holds 165: 7/29 took four sets at 165 for 3, 5, 3, 3, so one clean set of five out of four attempts. Get all four and 170 opens. Back and core are the real point here. 7/30 was skipped entirely and took the lat pulldown and the woodchop with it, leaving back at 5 sets and core at zero direct sets for a second straight week against a 4-6 set floor. Bringing back the pulldown puts back at 8 sets, and the woodchop plus Pallof press puts core at 6. Overhead press works back up off the empty bar it defaulted to on 7/29, since 45 lb is far below what a seated press should allow off a 95x5 standing base, so 65 is a rebuild step rather than a progression. The row steps to 105 for the same reason: 95 sits 40 lb under the last clean pre-layoff set. The press stays seated on purpose so there is no leg drive and no plantarflexion load. One addition out of the Week 22 science review: the loaded seated calf raise comes back at 135, replacing today's bodyweight version. Calf loading has gone daily but entirely at bodyweight, so frequency has been masking an intensity failure, and the Phase 4 soleus benchmark of roughly 1.5x BW cannot be built on 3x15 unweighted. 135 is not a new load; 7/28 tolerated it. Confirm with the PT.",
+          "desc": "Skipped, ran Thursday morning instead",
+          "longDesc": "SKIPPED. This session was not performed on Wednesday; it ran Thursday 8/6 in the morning, which put two sessions on Thursday. What actually got done: bench 4x5 at 165 clean, lat pulldown 4x5 at 130/130/130/145, dumbbell overhead press at 25x10 then 35x5 twice, and bent over row at 135 for 10, 8 and 5. Dropped in the shift: close-grip bench, both core movements, and the loaded seated calf raise. See the 8/6 activity log for the full read. The original prescription is preserved below. Upper day plus the PT block, and the session that fixes two weeks of volume holes. The PT block resumes here after Tuesday was taken as a full rest day, so run all four items rather than treating them as optional add-ons at the end. Bench holds 165: 7/29 took four sets at 165 for 3, 5, 3, 3, so one clean set of five out of four attempts. Get all four and 170 opens. Back and core are the real point here. 7/30 was skipped entirely and took the lat pulldown and the woodchop with it, leaving back at 5 sets and core at zero direct sets for a second straight week against a 4-6 set floor. Bringing back the pulldown puts back at 8 sets, and the woodchop plus Pallof press puts core at 6. Overhead press works back up off the empty bar it defaulted to on 7/29, since 45 lb is far below what a seated press should allow off a 95x5 standing base, so 65 is a rebuild step rather than a progression. The row steps to 105 for the same reason: 95 sits 40 lb under the last clean pre-layoff set. The press stays seated on purpose so there is no leg drive and no plantarflexion load. One addition out of the Week 22 science review: the loaded seated calf raise comes back at 135, replacing today's bodyweight version. Calf loading has gone daily but entirely at bodyweight, so frequency has been masking an intensity failure, and the Phase 4 soleus benchmark of roughly 1.5x BW cannot be built on 3x15 unweighted. 135 is not a new load; 7/28 tolerated it. Confirm with the PT.",
           "exercises": [
             {
               "name": "Bench Press",
@@ -3070,8 +3122,8 @@
           "day": "Thu",
           "date": "2026-08-06",
           "type": "training",
-          "desc": "First run since the strain, then lower",
-          "longDesc": "The run is the session. First running since the 6/21 strain, 46 days, unlocked by Monday's 20 symptom-free hops per leg (Green 2022 PMID 35032233 gates running on the hop test). Run first, before any lifting, because it is the novel stimulus and a fatigued first run measures fatigue rather than tolerance. The dose is a coaching call, not a protocol: Green 2022 names graded return to running as a phase without prescribing a dose, so the interval structure below is a conservative extrapolation and should be read as one. Flat, level ground, easy conversational pace, no hills, no sprints, no cutting. A running mechanism predicted longer return-to-play in the AFL cohort (Green 2020 PMID 33030961), which is the reason to start this small rather than jog for 20 minutes because the gate opened. Then the barbell work: TB DL steps to 215 off two clean 4x5 sessions at 205 (7/28 and 8/3), the compound-lower double progression working normally for the first time since the restart. Squat holds 135 as the PT's 2-3x weekly item, first squat of the week. Friday morning's read is the datum that matters, since it decides whether Friday's box jumps go, under the 24-hour rule (Silbernagel 2007 PMID 17307888).",
+          "desc": "Upper ran AM, run and lower PM",
+          "longDesc": "DOUBLE SESSION. Wednesday's upper day was skipped and ran this morning instead, so the run and lower work below move to the evening. That changes one prescription: TB DL holds 205 rather than stepping to 215, for attribution rather than fatigue. Friday's box jumps are gated on a Friday morning read under 3/10 with no escalation off today's run (Silbernagel 2007 PMID 17307888). With an AM upper session, a first run in 46 days and a new deadlift load all landing on the same day, a bad Friday read would have three candidate causes and the gate becomes uninterpretable. 205 has gone clean twice and costs nothing to repeat, so holding it leaves the run as the only novel variable. The 215 step moves to Monday, where it is still earned. The run is the session. First running since the 6/21 strain, 46 days, unlocked by Monday's 20 symptom-free hops per leg (Green 2022 PMID 35032233 gates running on the hop test). Run first, before the barbell work, because it is the novel stimulus and a fatigued first run measures fatigue rather than tolerance. This morning's upper session does not compromise that: bench and rows leave the calf untouched, and the systemic cost of seven upper sets is small against a 6-minute jog. The dose is a coaching call, not a protocol: Green 2022 names graded return to running as a phase without prescribing a dose, so the interval structure below is a conservative extrapolation and should be read as one. Flat, level ground, easy conversational pace, no hills, no sprints, no cutting. A running mechanism predicted longer return-to-play in the AFL cohort (Green 2020 PMID 33030961), which is the reason to start this small rather than jog for 20 minutes because the gate opened. Then the barbell work: TB DL steps to 215 off two clean 4x5 sessions at 205 (7/28 and 8/3), the compound-lower double progression working normally for the first time since the restart. Squat holds 135 as the PT's 2-3x weekly item, first squat of the week. Friday morning's read is the datum that matters, since it decides whether Friday's box jumps go, under the 24-hour rule (Silbernagel 2007 PMID 17307888).",
           "exercises": [
             {
               "name": "Graded Return-to-Run (walk-jog intervals)",
@@ -3082,8 +3134,8 @@
             {
               "name": "Trap Bar Deadlift",
               "sets": "4x5",
-              "weight": "215 lbs",
-              "notes": "Earned step. 205 went clean twice (7/28, 8/3), so plus 10 lb per the compound-lower rule. Full ROM from the floor, hips back, neutral spine, stand tall without hyperextending, and do not rise onto the toes at the top."
+              "weight": "205 lbs",
+              "notes": "HOLD 205, do not take the 215 step tonight. The step is earned (205 clean on 7/28 and 8/3) but it moves to Monday. Reason is attribution, not fatigue: today already stacks an AM upper session and the first run in 46 days, and Friday's box-jump gate reads Friday morning against today's run. Adding a third new variable makes a bad read unreadable. Full ROM from the floor, hips back, neutral spine, stand tall without hyperextending, and do not rise onto the toes at the top."
             },
             {
               "name": "Back Squat",
@@ -3178,9 +3230,27 @@
           "day": "Sat",
           "date": "2026-08-08",
           "type": "rest",
-          "desc": "No lifting, PT block daily",
-          "longDesc": "No lifting. The PT block still runs, because it is prescribed daily. Second morning-after read on Thursday's run and first on Friday's jumps, which together decide whether Sunday AM basketball opens on 8/16.",
+          "desc": "PT block, plus the two items Wednesday lost",
+          "longDesc": "No barbell lifting, but this day now picks up the two things the skipped Wednesday cost, because both are cheap here and neither competes with Friday's jumps. First, the core work: woodchop and Pallof press were dropped in the shift and direct core is at zero sets for a third straight week against a 4-6 set floor. Core loads nothing in the lower leg, so a rest day is the right slot. Second, the loaded seated calf raise at 135, which was change 1 out of the 8/4 science review and the dose meant to take genuinely loaded calf work from 1x to 2x per week. Without it the week runs one loaded calf session again, which is the exact intensity failure the review named. 135 is not a new load: 7/28 tolerated 3x10 at 90/135/135. Placing it the day before Sunday hockey mirrors 7/31's loaded single-leg raises 48 h before the 8/2 game, which produced a clean Monday read. Gate it on the Saturday morning read being under 3/10 and drop it if Friday's jumps left anything behind. The PT block still runs, because it is prescribed daily. Second morning-after read on Thursday's run and first on Friday's jumps, which together decide whether Sunday AM basketball opens on 8/16.",
           "exercises": [
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "3x10/side",
+              "weight": "30 lbs",
+              "notes": "Deferred from the skipped Wednesday. Brings direct core off zero for the first time in three weeks. Rotate through the trunk, not the arms, and keep the hips driving the movement."
+            },
+            {
+              "name": "Pallof Press",
+              "sets": "3x10/side",
+              "weight": "30 lbs",
+              "notes": "Deferred from the skipped Wednesday. Second core movement, which puts direct core at 6 sets and clears the 4-6 set floor. Anti-rotation, so resist the pull rather than moving through it."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x10",
+              "weight": "135 lbs",
+              "notes": "Deferred from the skipped Wednesday, and it REPLACES today's bodyweight PT seated raise rather than adding to it. Gated on a Saturday morning read under 3/10 and nothing lingering from Friday's jumps. Not a new load, 7/28 ran 3x10 at 90/135/135. Tempo 3 s up, 3 s down, floor range, full plantarflexion to neutral, no bottom-end stretch."
+            },
             {
               "name": "Isometric Standing Calf Hold (bilateral)",
               "sets": "6x30s",
@@ -3192,12 +3262,6 @@
               "sets": "3x30s/leg",
               "weight": "bodyweight",
               "notes": "PT daily block. Compare left against right and note any difference in hold height."
-            },
-            {
-              "name": "Seated Calf Raise",
-              "sets": "3x15",
-              "weight": "bodyweight",
-              "notes": "PT daily block, unweighted. Floor range: full plantarflexion up, back to neutral, no bottom-end stretch. Load here is the open question for the PT, since the Phase 4 soleus benchmark is roughly 1.5x BW."
             },
             {
               "name": "Step-Back Off Small Box (chest lean forward)",

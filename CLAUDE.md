@@ -6,6 +6,10 @@ This is a personal training program tracker for a 40-year-old male athlete (6'2"
 
 __The game slate varies by season - confirm it, do not assume it.__ The standard in-season slate is basketball Tue PM and Sun AM plus hockey Sun PM, and much of this file (session spacing in Section 5, the in-season volume ceiling in Section 3) was written against that three-game week. It is not always true. As of Jul 2026: basketball is in its off-season so there are no Tue PM games, Sun AM basketball is self-gated pending calf clearance, and hockey Sun PM is the only fixed game - a one-game week, which materially loosens the in-season volume constraint. Current state lives in `data.modifiedWeeks`; when the slate is unclear, ask rather than inheriting the three-game assumption.
 
+__Build weeks for TWO gym days, not three__ (set at the Wk 23 review, 2026-08-10). Weeks 18-23 delivered 1, 0, 0, 3, 2 and 0 lift days against roughly three planned each, an average of one. Authoring three sessions a week produced volume audits that failed every week for a reason the plan itself created. Everything load-bearing now has to fit in two: barbell lower plus plyometrics on one day, upper plus core plus loaded gastroc work on the other. A third session is a bonus, never the baseline. Two known costs, stated rather than hidden: shoulders sit below Section 3's 6-10 set floor on a two-day week, and squat frequency drops to 1x.
+
+__There is no PT involved as of 2026-08-10.__ The relationship ended, so anything this repo describes as a "PT item" or "PT daily block" in weeks 21-22 is historical. Calf loading, including the seated calf raise the PT had at bodyweight, is now a coaching call. Do not defer load decisions to a clinician who is not in the picture, and do not carry forward the daily bodyweight block: it was replaced with Beyer-compliant 3x/week loaded HSR at the Wk 23 review. Re-escalate to a clinician if symptoms change materially or DVT signs appear (see `athlete.clinicalWorkupAsks`).
+
 Live site: https://menottim.github.io/training-program/
 
 ## Persona & Coaching Style
@@ -45,7 +49,7 @@ Additional rules that apply throughout:
 
 When reviewing reports, logs, or new data:
 
-- Check protein and calorie intake against body-composition goals and game-day demands.
+- Check lifting compliance first: sessions completed against sessions planned. As of the Wk 23 review (2026-08-10) this is the program's binding constraint, not physiology, and a volume audit against a plan that did not run tells you almost nothing.
 - Check weekly volume per muscle group against Schoenfeld 2017 minimums plus the in-season adjustments in Section 3.
 - Check achilles pain data against Silbernagel's pain-monitoring model.
 - Check progression rates against the reality-check numbers in Section 7.
@@ -95,7 +99,9 @@ When user says "had a shake" or "standard shake" unspecified, default to __Witho
 
 __Collagen peptide timing note (Shaw 2017 / Praet 2019 protocol):__ The strongest evidence for collagen-driven tendon adaptation requires 30-60 min __pre-loading__ (before HSR or other connective-tissue loading sessions). When user takes the shake before Wed/Fri HSR sessions or the Tue bonus HSR session, this is optimal timing. When user takes it post-game or random AM, it still contributes to general recovery but doesn't have the same RCT support for tendon-specific outcomes. Suggest pre-loading timing when natural in conversation (e.g., before a Wed lift), don't lecture if user prefers different timing.
 
-__Proactively capture sleep and achilles pain.__ These two fields are prescribed by the science-review workflow (Section 5 recovery; Section 4 achilles pain-monitoring) but Menotti rarely reports them unprompted. If a user reports a training session or game without mentioning sleep or achilles status, __ask once before logging__: "Sleep last night? Any achilles pain during the session?" Do not block logging on the answer, but capture when provided. Data gaps on these two fields compromise the 12-week HSR adaptation check and the Knowles 2018 sleep-intensity auto-regulation.
+__Proactively capture the achilles and calf read. Do NOT ask about sleep.__ If a user reports a training session or game without mentioning achilles or calf status, __ask once before logging__: "Any achilles or calf pain during the session?" Do not block logging on the answer, but capture when provided. This is the one capture ask that has worked: the morning calf read went from absent to seven consecutive days once it was the only field being requested.
+
+The __sleep ask was withdrawn at the Wk 23 review (2026-08-10)__ after two nights logged in five weeks. Do not reinstate it, do not ask for it session-by-session, and do not caveat every fatigue call with the missing data. The consequence is accepted and recorded: two of Section 2's seven reactive-deload triggers (the sleep-decline trigger and the Knowles 2018 sleep-intensity auto-regulation, PMID 29422383) are permanently unavailable, so fatigue is judged on RPE drift, load progression and morning reads. If sleep is volunteered, log it; never solicit it.
 
 ### Step 2: Match "as prescribed" exercises
 
@@ -184,11 +190,11 @@ Commit with a descriptive message summarizing the key lifts/weights. Push to mai
 
 After logging, review recent trends and surface observations:
 - Progression compared to previous weeks (weight increases, rep improvements)
-- Progress toward strength targets (Trap Bar DL 385x5, Squat 315x5, Bench 225x5)
-- Achilles pain trends
+- Progress toward strength targets (Trap Bar DL 385x5 by 3/2028, Squat 315x5 by 3/2028, Bench 225x5 by 9/2027 - horizons re-set at the Wk 23 review, see Section 7)
+- Achilles and calf pain trends
 - Whether a deload week is coming up
 - Any program adjustments worth considering
-- __Progress against `athlete.nutritionGoals`__: on Mon, Thu, or Sat (moderate-deficit anchor days), check calorie tracking against the 2,300-2,500 target and flag if trending high. When a restaurant meal is logged, note how many restaurant meals have occurred in the calendar week and flag if approaching or exceeding 3. Do not be preachy about this - a factual one-liner is enough.
+- __Do NOT report on nutrition.__ Both nutrition goals were retired at the Wk 23 review (2026-08-10) after 91 days with no logged intake. Do not assert calorie or protein targets, do not count restaurant meals, and do not flag the absence of intake data as a gap. If the user volunteers food or protein, log it to `bodyLog` without commentary. Body composition (`bodyLog` weight and body-fat readings) is the only remaining lens on the recomposition goal and stays in scope.
 
 ## Keep the website in sync with real-time coaching
 
@@ -261,9 +267,9 @@ Thursday upper body every week:
 
 BB bench gets weekly frequency for efficient progression toward 225×5 target. DB bench adds chest volume + stability work at lighter load.
 
-## Upper-Day Pressing & Rowing Defaults (updated 2026-07-08)
+## Upper-Day Pressing & Rowing Defaults (updated 2026-08-10)
 
-- __Overhead press = Barbell Strict Overhead Press__ (switched from DB overhead press on 7/8). STRICT: no leg dip or drive, which would load ankle plantarflexion and the healing calf. Log as `"Strict Overhead Press"`.
+- __Overhead press = barbell or dumbbell, athlete's choice.__ Updated at the Wk 23 review after the seated barbell version was prescribed twice and substituted with dumbbells twice. Both satisfy the reason the seated barbell was picked on 7/8, which is STRICT pressing with no leg dip or drive that would load ankle plantarflexion and the healing calf. Do not treat a dumbbell session as a deviation and do not re-prescribe the barbell as a correction. Log barbell as `"Strict Overhead Press"` and dumbbell as `"Strict Overhead Press (dumbbell)"`, keeping them as separate names so the history-aware carry-forward does not mix a 65 lb bar with 35 lb dumbbells.
 - __Horizontal row = Bent Over Barbell Row__ (switched from Seated Cable Row on 7/8). Log as `"Bent Over Barbell Row"`.
 - These are the defaults for future upper days. Author them into the plan's exercise slots (not DB OHP / cable row) so the history-aware carry-forward tracks them.
 
@@ -301,14 +307,15 @@ When a new conversation starts:
 3. If the last review was >7 days ago, proactively suggest: _"It's been [N] days since the last science-based program review. Want to do a check against the research guidelines?"_
 
 When performing a science review:
-- Audit HSR compliance (target: 3×/week, every week)
+- __Audit lifting compliance first__: sessions completed against sessions planned, week by week. Everything below is uninterpretable without it.
+- Audit HSR compliance, and count only __genuinely loaded__ sessions (target: 3×/week). Bodyweight calf work is frequency, not HSR, and counting it hid an intensity failure for three consecutive reviews.
 - Check volume per muscle group against Schoenfeld 2017 minimums (6-10 sets)
 - Review progression rates against expected ranges (Section 7 guidelines)
 - Check body composition trajectory
-- Review sleep/protein averages if tracking data exists
-- Check achilles pain monitoring decision tree
+- Check achilles and calf pain monitoring decision tree
 - Assess phase transition readiness
 - Append findings to `data.scienceReviews[]`
+- __Do not review nutrition or sleep.__ Both were retired at the Wk 23 review. Reporting on them, or on their absence, is noise.
 
 ```json
 {
@@ -520,7 +527,9 @@ __12-month targets in context:__
 | Back Squat | 185×5 | 315×5 | +130 lbs (+70%) | Aggressive. Squat is harder to progress in-season due to leg fatigue from games. May need 15-18 months. |
 | Bench Press | 155×5 | 225×5 | +70 lbs (+45%) | Most realistic of the three. Upper body is less affected by game load. ~1.5 lbs/week average. |
 
-__Target horizons (re-horizon signed off 2026-07-09).__ The flat 12-month framing above is superseded per lift: __Bench 225×5 stays at 12 months__ (most realistic; upper body least game-affected), while __Trap Bar DL 385×5 and Back Squat 315×5 move to ~18 months__, reflecting the in-season lower-body slowdown (~30-40%, Baker 2001) and the squat assessment in the table. Horizons live in `data.targets[<lift>].horizonMonths` (12 / 18 / 18) and the site renders each lift's own horizon on its target card and in the progress bars. The lower-body layoff from the calf strain makes the 18-month lower framing more realistic still; revisit once barbell lower lifts resume.
+__Target horizons (re-horizoned 2026-08-10 at the Wk 23 review; supersedes the 2026-07-09 pass).__ Numbers unchanged, calendar moved: __Trap Bar DL 385×5 and Back Squat 315×5 at 24 months__ (due 3/8/2028), __Bench 225×5 at 18 months__ (due 9/8/2027). Horizons live in `data.targets[<lift>].horizonMonths` (24 / 24 / 18) with a `horizonNote` on each lift recording the arithmetic, and the site renders each lift's own horizon on its target card and progress bars.
+
+The reason the calendar moved rather than the numbers: the shortfall is lost training time, not a bad rate. Roughly 10 of the program's first 23 weeks were absorbed by two travel gaps and a six-week calf layoff that took 40 days of barbell lower with it. Observed bench progression is 4-5 lb/month, squarely inside this section's own months 6-12 band. On the old horizons bench needed 8.7 lb/month and both lower lifts needed 14; on the new ones bench needs about 4.7, which the data supports, and TB DL about 9, which is still ambitious and conditional on lifting compliance improving. __Squat is the least likely of the three__ - treat 315 as direction and reclaiming the 160 pre-injury peak as the real near-term milestone.
 
 __Rate-of-progression reality check (for a 40-year-old returning lifter):__
 - First 3-6 months: fastest gains (neural adaptation + muscle memory if previously trained). Expect 5-15 lbs/month on compounds.

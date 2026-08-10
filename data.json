@@ -2286,6 +2286,23 @@
         }
       ],
       "notes": "Second session of the day, following the upper work that shifted off the skipped Wednesday. Barbell lower went exactly as adjusted: 205 held rather than 215, which keeps today's morning read attributable. WHAT WENT WELL: the loaded soleus dose finally landed. Seated calf raise 3x10 at 135 is the first genuinely loaded seated calf work since the strain, and it closes change 1 from the 8/4 review, the finding that calf frequency at 6-7x/week had been masking an intensity failure because the entire PT block runs at bodyweight (Beyer 2015 PMID 26018970; Morrison and Cook 2022 PMC9124646). WHAT DID NOT HAPPEN: the run, confirmed on ask. That was the session. The hop test opened the running gate on 8/3 and the first exposure it authorizes has now slipped past its scheduled week, which is the fifth slip in the same pattern the gate tests themselves took four attempts to break. It moves to Monday 8/10 rather than onto Friday, because Friday already carries box jumps as its own first-in-47-days exposure and running plus first plyometrics on one day makes a Saturday escalation unattributable. The standing single-leg raises were bodyweight, also confirmed on ask, so the honest accounting of the week's loaded calf work is ONE session, not two: Thursday's seated 135 for the soleus. The gastroc's loaded dose is still outstanding. That matters for how Friday reads, because the 8/4 review's Finding 1 was precisely that bodyweight frequency was being counted as HSR compliance. Volume: quads 3 sets (leg press only, against the 6-10 floor, with Friday's squat the last chance to clear it), posterior chain 4 sets, calf 6 sets across two movements but only 3 of them loaded. Not reported: sleep for Wednesday night, and whether the PT isometric holds and step-backs ran. Both left out of the exercise list rather than assumed."
+    },
+    {
+      "date": "2026-08-08",
+      "type": "recovery",
+      "activity": "Housework (couch frame build)",
+      "duration": "2 hr",
+      "intensity": "medium",
+      "notes": "Non-programmed activity, logged per the 4/19 and 4/24 yardwork precedent. Two hours of building couch frames: intermittent standing, squatting, kneeling, lifting and carrying, so real but unstructured lower-body and grip load rather than passive rest. WHAT IT REPLACED: this was the day carrying the deferred core work (woodchop and Pallof press) and the single-leg calf raise at BW plus 25, moved off Friday so the box jumps could own that day's read. None of it ran, and neither did the PT block. WHY IT MATTERS BEYOND ONE MISSED DAY: the same substitution logic from 4/24 applies, which is that unstructured lower-body work covers squat and hinge patterns but does not replicate tendon-specific HSR loading (Beyer 2015 PMID 26018970). Week 22 therefore closes with ONE loaded calf session, Thursday's seated raise at 3x10x135, against the 3x/week target, and with direct core still at zero for a third consecutive week. It also puts unstructured lower-body load roughly 24 h before Sunday hockey, which is the same window the 7/31 loaded session occupied before the 8/2 game and was tolerated."
+    },
+    {
+      "date": "2026-08-09",
+      "type": "game",
+      "activity": "Hockey",
+      "duration": "Full game",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "THE MOST INFORMATIVE DATUM OF THE WHOLE CALF BLOCK. A full game at high intensity with regular shifts, and nothing at all in the calf or Achilles during play or immediately after. The Monday morning read that followed was calf 1/10 and Achilles 1/10. Hockey push-off and change of direction are the strain's own mechanism, sudden knee extension with ankle dorsiflexion at push-off (Dixon 2009 PMID 19468870), so a symptom-free full game at high intensity is a direct test of the injured tissue under its own injury mechanism, and it passed. That is a stronger tolerance signal than 8/2's game, which was tolerated but had neither the intensity nor the symptom detail recorded. WHAT IT DOES NOT DO: substitute for Green 2022's Phase 4 criteria (PMID 35032233). Skating loads explosive push-off and cutting but involves no jump landing, so it does not cover the eccentric-absorption demand that box jumps test and that basketball actually imposes. The loaded strength benchmarks remain untouched as well. So this is strong evidence the tissue handles sport load, not evidence the checklist is complete. CONTEXT THAT CUTS THE OTHER WAY: it came at the end of a week that logged one lift day out of three planned, no run, no box jumps, and a Friday of complete rest, so the game landed on a well-rested athlete rather than on accumulated training load. Day 49 post-strain. Sunday morning pre-game read not reported. Sleep not reported."
     }
   ],
   "scienceReviews": [
@@ -2661,10 +2678,309 @@
     {
       "date": "2026-08-10",
       "achillesPainAM": 1,
-      "notes": "Morning read: calf 1/10 and Achilles 1/10. WHAT THIS READ CAN AND CANNOT SAY: it lands four days after the last confirmed session (Thursday 8/6's double day) with 8/7, 8/8 and 8/9 all unlogged, and Sunday 8/9 was a scheduled hockey PM. So it is not a next-morning read on anything known, and it cannot be attributed to a specific load until those three days are reported. If the Friday box jumps and Sunday hockey both happened, a 1/10 Monday is a strong tolerance signal; if the weekend was rest, it is closer to a floor, the same caveat the 8/5 read carried. The Achilles at 1/10 is the first non-zero Achilles reading of the entire calf block, which had logged 0/10 throughout, and it is recorded in achillesPainAM rather than in notes precisely because it IS the tendon this time rather than the healing gastroc. 1/10 sits far inside the acceptable band of Silbernagel's pain-monitoring model (PMID 17307888), which tolerates up to 5/10 during activity provided it settles within 24 h, so it is a watch item rather than an action item. The plausible driver is the first genuinely loaded soleus work since the strain on 8/6, but with the intervening days unlogged that is a hypothesis, not an attribution. Morning reads reported: 7/31, 8/2, 8/3, 8/4, 8/5 and 8/10, with gaps on 8/6 through 8/9. Sleep not reported since 7/29. No intake data; bodyLog has had no protein or calorie entry since 5/11, now 91 days."
+      "notes": "Morning read: calf 1/10 and Achilles 1/10, roughly 14 h after a full high-intensity hockey game that was symptom-free start to finish. THIS IS THE BEST TOLERANCE DATUM THE BLOCK HAS PRODUCED. The 8/2 game was tolerated but had neither intensity nor in-game symptoms recorded; this one has both, and hockey push-off is the strain's own mechanism (Dixon 2009 PMID 19468870). Nothing during the game, 1/10 the next morning, which is the pattern Silbernagel's model calls acceptable rather than concerning (PMID 17307888), since it tolerates up to 5/10 during activity provided it settles within 24 h. The Tuesday read is what confirms it settled. The Achilles at 1/10 is the first non-zero Achilles reading of the entire calf block, which had logged 0/10 throughout, and it is recorded in achillesPainAM rather than in notes precisely because it IS the tendon this time rather than the healing gastroc. Most likely driver is the game itself rather than 8/6's loaded soleus work, which sits three days back with a full rest day in between. Worth watching, not worth acting on. ONE CAVEAT ON HOW MUCH THE GAME PROVES: it landed on a well-rested athlete. Week 22 delivered one lift day of three planned, no run, no box jumps and a Friday of complete rest, so this was sport load without accumulated training load underneath it. Morning reads reported: 7/31, 8/2, 8/3, 8/4, 8/5 and 8/10, with gaps on 8/6 through 8/9. Sleep not reported since 7/29. No intake data; bodyLog has had no protein or calorie entry since 5/11, now 91 days."
     }
   ],
   "modifiedWeeks": {
+    "23": {
+      "title": "Travel Mon to Wed: run on the road, barbell Thu and Fri",
+      "blockLabel": "Lower rebuild",
+      "subtitle": "Work trip Mon through Wed with no reliable gym. The run needs no gym and has slipped twice, so it goes on the road. Box jumps Thursday decide Sunday basketball.",
+      "reason": "Week 22 passed both gate tests on 8/3 and then delivered neither exposure they unlocked. The run was skipped on Thursday, Friday was a complete rest day so the box jumps never happened, Saturday went to two hours of couch-building, and the week closed with one lift day out of three planned, one loaded calf session against a 3x/week target, and direct core at zero for a third consecutive week. The tissue is not the problem. Sunday's hockey was a full game at high intensity, symptom-free start to finish, with a 1/10 read the next morning, and hockey push-off is the strain's own injury mechanism (Dixon 2009 PMID 19468870). Fifty days out, with 20 symptom-free hops per leg, 30 single-leg raises at 0 percent asymmetry (Green 2022 PMID 35032233; norms Hebert-Losier 2017 PMID 28886865) and a high-intensity game behind it, the conservatism that made sense in July is now costing more than it protects. THE CONSTRAINT THIS WEEK IS THE CALENDAR, NOT THE CALF. Travel Monday through Wednesday with unreliable gym access leaves two lifting days, Thursday and Friday. The design follows from that. FIRST, the run goes on the road, because it is the single most travel-proof item in the program: shoes and flat ground, no equipment. It has now slipped twice while waiting for a gym day it never needed. SECOND, the PT block also travels, since it is entirely bodyweight and needs a chair and a step at most, and it is prescribed daily. THIRD, the two gym days carry everything that actually needs equipment, in priority order: box jumps Thursday because they are the last outstanding Phase 4 exposure before the 8/16 basketball decision, TB DL at the 215 step earned on 7/28 and 8/3 and deferred twice since, bench at 170 off the clean 4x5x165 on 8/6, the loaded calf work the week keeps losing, and the core work now three weeks absent. On restart loads after a short gap: the layoff bands in knowledge/detraining-and-return.md put anything under two weeks at 'resume at the last clean load' with normal double progression, so a three-day travel gap does not warrant backing off, and the guidance for travel weeks is to cut volume markedly while holding intensity rather than substitute easy bodyweight volume (Mujika and Padilla 2000 Part II PMID 10999420; chronic load as the protective variable, Gabbett 2016 PMID 26758673). WHAT THIS WEEK DECIDES: Sunday 8/16 basketball. Green 2022's Phase 4 list needs a completed symptom-free plyo and change-of-direction exposure, and box jumps are it. Clean jumps Thursday plus a clean Friday and Saturday read opens basketball. Another slip and it holds again, which would be the third consecutive week of holding on an exposure that takes five minutes. Also due Saturday: the Week 23 science review, and a body-composition reading now 59 days overdue and asked for in three consecutive reviews.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-08-09",
+          "type": "game",
+          "desc": "Hockey PM, full game, symptom free",
+          "longDesc": "DONE. A full game at high intensity with regular shifts and nothing at all in the calf or Achilles during play or after. The Monday morning read came back calf 1/10 and Achilles 1/10, which is the acceptable pattern under Silbernagel's model (PMID 17307888) rather than a warning, since it tolerates up to 5/10 during activity provided it settles within 24 h. Best tolerance datum of the block, because hockey push-off is the strain's own mechanism. It does not close the Phase 4 checklist: skating has no jump landing, so the eccentric-absorption demand that box jumps test and basketball imposes is still untested.",
+          "exercises": [
+            {
+              "name": "Hockey",
+              "sets": "full game",
+              "weight": "high intensity",
+              "notes": "Symptom-free throughout. No AM basketball, still held."
+            }
+          ]
+        },
+        {
+          "day": "Mon",
+          "date": "2026-08-10",
+          "type": "hotel",
+          "desc": "The run, finally. No gym needed",
+          "longDesc": "THE RUN GOES TODAY. It has slipped twice, both times waiting on a gym day it does not need, and it is the most travel-proof thing in the program: shoes and flat ground. First running since the 6/21 strain, 50 days, unlocked by the 8/3 hop test (Green 2022 PMID 35032233 gates running on hops). Do it before anything else. The dose below is a coaching call rather than a protocol, since Green 2022 names graded return to running as a phase without prescribing a dose, so treat it as a conservative extrapolation. Flat and level, easy conversational pace, no hills, no sprints, no cutting. A running mechanism predicted longer return-to-play in the AFL cohort (Green 2020 PMID 33030961), which is the argument for starting small rather than jogging 20 minutes because the gate opened. Then the PT block, which travels fine: the isometric holds need nothing, the seated raise needs a chair, and the step-backs need a stair or a curb. Log tomorrow's morning read. That read is what governs whether Wednesday's run progresses.",
+          "exercises": [
+            {
+              "name": "Graded Return-to-Run (walk-jog intervals)",
+              "sets": "6 rounds of 1 min jog / 1 min walk",
+              "weight": "bodyweight",
+              "notes": "Roughly 6 min of jogging total. Mid-foot landing, do not run up on the toes, which is where plantarflexion load peaks. Stop on any sharp calf pain or a limp and record where it appeared. Dose is a coaching call, not an evidence-specified protocol."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block, travels with no equipment. Rise to full plantarflexion, hold, controlled lower to neutral and no further."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right and note any difference in hold height."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted, needs only a chair. Floor range: full plantarflexion up, back to neutral, no bottom-end stretch."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. A hotel stair or a curb works as the box. Controlled eccentric, chest leaning forward, no rebound out of the bottom."
+            }
+          ]
+        },
+        {
+          "day": "Tue",
+          "date": "2026-08-11",
+          "type": "hotel",
+          "desc": "PT block only, no running",
+          "longDesc": "No running today. A day between the first two runs is the point, because the morning read after run one is the data that sets run two, and back-to-back first runs would make an escalation unattributable. PT block only, all of it bodyweight and all of it portable. Log the morning read before deciding anything about Wednesday.",
+          "exercises": [
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Rise to full plantarflexion, hold, controlled lower to neutral and no further."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted, chair is enough."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Stair or curb. Controlled eccentric, no rebound."
+            }
+          ]
+        },
+        {
+          "day": "Wed",
+          "date": "2026-08-12",
+          "type": "hotel",
+          "desc": "Second run if the reads held",
+          "longDesc": "Run two, gated on Monday's and Tuesday's morning reads staying at 2/10 or under with nothing climbing. If either read is up, drop the run and take the PT block alone, because the next-morning rule is the whole point of running this graded rather than jumping straight to a normal jog (Silbernagel 2007 PMID 17307888). If the reads held, add two rounds rather than lengthening the jog intervals, which keeps the impact exposure rising while the continuous-load exposure stays where the tissue has already tolerated it. Same surface rules as Monday: flat, level, easy pace, no cutting.",
+          "exercises": [
+            {
+              "name": "Graded Return-to-Run (walk-jog intervals)",
+              "sets": "8 rounds of 1 min jog / 1 min walk",
+              "weight": "bodyweight",
+              "notes": "GATED on Mon and Tue morning reads at 2/10 or under. Roughly 8 min of jogging, a two-round step off Monday. Adding rounds rather than lengthening intervals on purpose. Mid-foot landing, no toe running, no hills or cutting. Dose is a coaching call, not a protocol."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Stair or curb."
+            }
+          ]
+        },
+        {
+          "day": "Thu",
+          "date": "2026-08-13",
+          "type": "training",
+          "desc": "Box jumps first, then barbell lower",
+          "longDesc": "Back in the gym, and this is the day that decides Sunday. BOX JUMPS GO FIRST, while fresh, because they are the last outstanding item on Green 2022's Phase 4 list (PMID 35032233) and five minutes of them is what stands between here and basketball on 8/16. They have now been scheduled and missed once. Step down off the box every rep and never rebound, since rebounding adds eccentric Achilles load for almost no power benefit and is contraindicated with bilateral Achilles tendinopathy. Box at 18 in against the 24 in used pre-strain on 6/18, and 12 ground contacts sits far under the 40-60 range for a non-specialized athlete (Ebben 2010), because this is still a first exposure. Then the barbell work. TB DL takes the 215 step it earned on 7/28 and 8/3 and has now been deferred twice; a three-day travel gap is inside the under-two-weeks band in knowledge/detraining-and-return.md, which resumes at the last clean load rather than backing off. Squat returns as the PT's item, which got zero sessions last week when leg press was substituted for it. Loaded seated calf raise repeats 8/6's 135. Gate the jumps on the Thursday morning read being under 3/10; nothing else here is gated.",
+          "exercises": [
+            {
+              "name": "Box Jump (step down)",
+              "sets": "4x3",
+              "weight": "18 in box",
+              "notes": "FIRST, before any lifting, while fresh. Gated on the morning read under 3/10. Jump up, step down, never rebound. This is the last Phase 4 exposure outstanding and it decides Sunday basketball."
+            },
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "4x5",
+              "weight": "215 lbs",
+              "notes": "The step earned on 7/28 and 8/3 and deferred twice since. Full ROM from the floor, hips back, neutral spine, stand tall without hyperextending, and do not rise onto the toes at the top."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "4x5",
+              "weight": "135 lbs",
+              "notes": "PT item, and the first squat since 7/31 because leg press replaced it on 8/6. Hold 135. Depth to at least parallel while it stays pain-free, heels flat throughout, no heel rise at the bottom."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x10",
+              "weight": "135 lbs",
+              "notes": "Repeats 8/6, which was the only loaded calf session of the whole of week 22. Replaces today's bodyweight PT seated raise rather than adding to it. Tempo 3 s up, 3 s down, floor range, full plantarflexion to neutral, no bottom-end stretch."
+            },
+            {
+              "name": "Single-Leg RDL (dumbbell)",
+              "sets": "3x8/leg",
+              "weight": "20 lb DBs",
+              "notes": "PT item, first dose of the week. Hinge to a hamstring stretch, flat back, control the return."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Controlled eccentric, chest leaning forward, no rebound."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-08-14",
+          "type": "training",
+          "desc": "Upper at bench 170, core returns",
+          "longDesc": "Upper day, and the one that clears three standing volume holes. Bench takes 170 off the clean 4x5 at 165 on 8/6, which was the first time that prescription landed in three attempts. Row holds 135, the load taken unprescribed on 8/6 for 10, 8 and 5; four sets of five is the same load in cleaner chunks, and a clean 4x5 opens 145. Pulldown returns to 3x8 at 145, the prescription 8/6 ran light against and 7/30 skipped entirely. Overhead press switches to dumbbells rather than fighting it: the seated barbell version has been prescribed twice and substituted twice, and DBs achieve the same thing the seated barbell was chosen for, which is no leg drive and no plantarflexion load, so 4x6 at the 35s is a real step off 8/6's 3x5 and 7/1's 3x6. Shoulders still land at 4 sets against Section 3's 6-10 floor, which is a known and accepted gap on a two-gym-day week. Core finally runs, ending a stretch at zero direct sets since 7/23. Then the loaded single-leg calf work, which covers the gastroc after Thursday's soleus dose and puts the week at two loaded calf sessions.",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "4x5",
+              "weight": "170 lbs",
+              "notes": "Earned step. 165 went clean 4x5 on 8/6 after breaking down on 7/29. Full ROM, bar to the chest, no bounce."
+            },
+            {
+              "name": "Close Grip Bench Press",
+              "sets": "4x5",
+              "weight": "95 lbs",
+              "notes": "Holds 95. Dropped on 8/6 in the shift off Wednesday, which left chest at 4 hard sets. Brings pressing back to 8 working sets."
+            },
+            {
+              "name": "Bent Over Barbell Row",
+              "sets": "4x5",
+              "weight": "135 lbs",
+              "notes": "Holds the 135 taken unprescribed on 8/6, where 10, 8, 5 showed the third set at the edge. Same load in cleaner chunks. A clean 4x5 opens 145. Inverted grip is fine, it is what 8/6 and 6/18 both used."
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "3x8",
+              "weight": "145 lbs",
+              "notes": "Back to the real prescription. 8/6 ran 130/130/130/145 for fives against this, and 7/30 skipped it. 7/8 held 145 for 8 twice, so this is a hold, not a step. Full ROM, bar to the upper chest, control the eccentric."
+            },
+            {
+              "name": "Strict Overhead Press (dumbbell)",
+              "sets": "4x6",
+              "weight": "35 lb DBs",
+              "notes": "Dumbbells by choice now rather than by substitution, since they deliver what the seated barbell version was chosen for: no leg drive, no plantarflexion. 4x6 steps off 8/6's 3x5 and 7/1's 3x6. Strict, no knee dip."
+            },
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "3x10/side",
+              "weight": "30 lbs",
+              "notes": "Core, and the first direct core work since 7/23. Rotate through the trunk, not the arms, hips driving."
+            },
+            {
+              "name": "Pallof Press",
+              "sets": "3x10/side",
+              "weight": "30 lbs",
+              "notes": "Second core movement, which puts direct core at 6 sets and clears the 4-6 set floor. Anti-rotation: resist the pull rather than moving through it."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 25 lb/leg",
+              "notes": "Covers the gastroc after Thursday's soleus dose, and puts the week at two loaded calf sessions against Beyer's 3x/week (PMID 26018970), which is the ceiling a two-gym-day week allows. Hold BW plus 25; 7/31 went clean and a second clean session opens BW plus 35. Floor range only, no heel drop off a step. 3 s up, 3 s down."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Controlled eccentric, no rebound."
+            }
+          ]
+        },
+        {
+          "day": "Sat",
+          "date": "2026-08-15",
+          "type": "rest",
+          "desc": "Rest, science review, body comp",
+          "longDesc": "No lifting, PT block only. Two non-training items are due. The Week 23 science review runs today per the 8/4 review's schedule, and the Sunday basketball decision comes out of it: clean box jumps Thursday plus clean Friday and Saturday reads opens 8/16, anything else holds it a third week. Second, take a body-composition reading. The last one was 6/12 at 219.5 lb and 22.7 percent, which is 64 days, the longest gap of the program, and it spans an injury layoff, travel and three months of untracked intake, which is exactly the combination where recomposition quietly reverses. Three consecutive reviews have asked for this.",
+          "exercises": [
+            {
+              "name": "Isometric Standing Calf Hold (bilateral)",
+              "sets": "6x30s",
+              "weight": "bodyweight",
+              "notes": "PT daily block."
+            },
+            {
+              "name": "Isometric Standing Calf Hold (single-leg)",
+              "sets": "3x30s/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Compare left against right."
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": "3x15",
+              "weight": "bodyweight",
+              "notes": "PT daily block, unweighted."
+            },
+            {
+              "name": "Step-Back Off Small Box (chest lean forward)",
+              "sets": "3x8/leg",
+              "weight": "bodyweight",
+              "notes": "PT daily block. Controlled eccentric, no rebound."
+            }
+          ]
+        }
+      ]
+    },
     "21": {
       "title": "Barbell lower restart, criteria-gated",
       "blockLabel": "Lower rebuild",
@@ -3221,8 +3537,8 @@
           "day": "Fri",
           "date": "2026-08-07",
           "type": "training",
-          "desc": "Box jumps day, outcome not reported",
-          "longDesc": "OUTCOME NOT REPORTED. Nothing was logged for this day and no morning read was taken, so whether the box jumps went is unknown. They were the week's only first-in-47-days exposure, since Thursday's run did not happen, which makes this the most consequential unlogged day of the block: the jumps are one of the two Green 2022 Phase 4 items still outstanding, and without a Friday read and a Saturday read the exposure cannot be scored even if it happened. TWO CHANGES OFF THURSDAY. First, the single-leg calf HSR is cut and moves to Saturday. The original reason was consecutive loaded days on the gastroc, and that turned out to be wrong: Thursday's standing raises were bodyweight, so the gastroc has had no loaded work at all. The cut stands on the second reason, which is attribution. Box jumps are today's gated novel stimulus and adding a loaded calf session underneath them means a Saturday escalation has two candidate causes. Saturday is a rest day with no jumps, it keeps the week at two loaded calf sessions rather than one, and it does not repeat Thursday's soleus dose because this is gastroc work. Second, the squat matters more than it did when this was written: Thursday's prescribed back squat was replaced with leg press, so the PT's 2-3x weekly squat item has zero sessions this week and today is the last slot before Saturday. Run it. Lightest lifting day of the week, roughly 48 h before Sunday PM hockey, which stays the only fixed game since basketball is in its off-season. That is the same gating that worked on 7/31 for the step-backs and the first loaded single-leg calf raises. If the read is up, drop the jumps and run the rest as written, because the run is the more important of the two reintroductions and gets protected. Step down off the box every rep and never rebound, since rebounding adds eccentric Achilles load for almost no additional power benefit and is contraindicated with bilateral Achilles tendinopathy. The box drops to 18 in from the 24 in used pre-strain on 6/18, and 12 ground contacts sits far under the 40-60 range for a non-specialized athlete (Ebben 2010), because this is a first exposure 47 days out. No barbell pressing or pulling today. On Sunday AM basketball: hold one more week. Monday's two criteria are met, but Green 2022's return-to-sport list also wants the loaded strength benchmarks and a completed symptom-free plyo and change-of-direction exposure, and that exposure is Thursday and Friday. Clean through both opens basketball on 8/16.",
+          "desc": "Nothing done, full rest",
+          "longDesc": "NOTHING DONE. No session, no box jumps, no PT block. With Thursday's run also missed, week 22 ends having delivered neither of the two exposures the gate tests unlocked on 8/3, which is the week's real result: the criteria passed, the program that was supposed to act on them did not run. Both are Green 2022 Phase 4 prerequisites and both now carry into week 23, where they sit against a Mon-to-Wed work trip. TWO CHANGES OFF THURSDAY. First, the single-leg calf HSR is cut and moves to Saturday. The original reason was consecutive loaded days on the gastroc, and that turned out to be wrong: Thursday's standing raises were bodyweight, so the gastroc has had no loaded work at all. The cut stands on the second reason, which is attribution. Box jumps are today's gated novel stimulus and adding a loaded calf session underneath them means a Saturday escalation has two candidate causes. Saturday is a rest day with no jumps, it keeps the week at two loaded calf sessions rather than one, and it does not repeat Thursday's soleus dose because this is gastroc work. Second, the squat matters more than it did when this was written: Thursday's prescribed back squat was replaced with leg press, so the PT's 2-3x weekly squat item has zero sessions this week and today is the last slot before Saturday. Run it. Lightest lifting day of the week, roughly 48 h before Sunday PM hockey, which stays the only fixed game since basketball is in its off-season. That is the same gating that worked on 7/31 for the step-backs and the first loaded single-leg calf raises. If the read is up, drop the jumps and run the rest as written, because the run is the more important of the two reintroductions and gets protected. Step down off the box every rep and never rebound, since rebounding adds eccentric Achilles load for almost no additional power benefit and is contraindicated with bilateral Achilles tendinopathy. The box drops to 18 in from the 24 in used pre-strain on 6/18, and 12 ground contacts sits far under the 40-60 range for a non-specialized athlete (Ebben 2010), because this is a first exposure 47 days out. No barbell pressing or pulling today. On Sunday AM basketball: hold one more week. Monday's two criteria are met, but Green 2022's return-to-sport list also wants the loaded strength benchmarks and a completed symptom-free plyo and change-of-direction exposure, and that exposure is Thursday and Friday. Clean through both opens basketball on 8/16.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
@@ -3277,8 +3593,8 @@
           "day": "Sat",
           "date": "2026-08-08",
           "type": "rest",
-          "desc": "Core, loaded single-leg calf, PT block",
-          "longDesc": "No barbell lifting, but two things land here. First, the core work the skipped Wednesday cost: woodchop and Pallof press were dropped in the shift and direct core is at zero sets for a third straight week against a 4-6 set floor. Core loads nothing in the lower leg, so a rest day is the right slot. Second, the loaded single-leg calf raise moved off Friday so the box jumps had the day to themselves for attribution. It belongs here rather than Monday because the week otherwise ends with one loaded calf session, which is the exact intensity failure Finding 1 of the 8/4 review named. Thursday's seated 135 covered the soleus; this covers the gastroc, which has had no loaded work at all this week. The deferred seated calf raise at 135 is NOT on this list, because it already ran Thursday. Gate the single-leg work on the morning read: it goes at 2/10 or under with nothing lingering off Friday's jumps, and it drops otherwise, in which case the week runs one loaded session and that cost gets recorded rather than papered over. Placing it 24 h before Sunday hockey is tighter than 7/31's 48 h, which is the reason for the gate. The PT block still runs, because it is prescribed daily. Second morning-after read on Thursday's run and first on Friday's jumps, which together decide whether Sunday AM basketball opens on 8/16.",
+          "desc": "Housework two hours, nothing prescribed ran",
+          "longDesc": "NOT DONE AS WRITTEN. The day went to two hours of building couch frames: real but unstructured lower-body load, logged as a recovery activity per the 4/19 yardwork precedent. None of the prescription below ran, and neither did the PT block. That closes week 22 with one loaded calf session against a 3x/week target and direct core at zero for a third straight week. Original prescription follows. No barbell lifting, but two things land here. First, the core work the skipped Wednesday cost: woodchop and Pallof press were dropped in the shift and direct core is at zero sets for a third straight week against a 4-6 set floor. Core loads nothing in the lower leg, so a rest day is the right slot. Second, the loaded single-leg calf raise moved off Friday so the box jumps had the day to themselves for attribution. It belongs here rather than Monday because the week otherwise ends with one loaded calf session, which is the exact intensity failure Finding 1 of the 8/4 review named. Thursday's seated 135 covered the soleus; this covers the gastroc, which has had no loaded work at all this week. The deferred seated calf raise at 135 is NOT on this list, because it already ran Thursday. Gate the single-leg work on the morning read: it goes at 2/10 or under with nothing lingering off Friday's jumps, and it drops otherwise, in which case the week runs one loaded session and that cost gets recorded rather than papered over. Placing it 24 h before Sunday hockey is tighter than 7/31's 48 h, which is the reason for the gate. The PT block still runs, because it is prescribed daily. Second morning-after read on Thursday's run and first on Friday's jumps, which together decide whether Sunday AM basketball opens on 8/16.",
           "exercises": [
             {
               "name": "Cable Woodchop (Low-to-High)",

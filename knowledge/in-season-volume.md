@@ -2,87 +2,101 @@
 
 ## Scope
 
-Covers weekly set targets for strength training during active sport seasons, game-day proximity rules, RPE/RIR auto-regulation, minimum effective dose research, deload decisions (scheduled vs reactive), and taper principles. Calibrated for a 40-year-old male playing basketball 2x/week (Tue PM, Sun AM) and hockey 1x/week (Sun PM), lifting 3x/week (Wed/Thu/Fri), with bilateral Achilles tendinopathy and 12-month target lifts of TB DL 230→385, Back Squat 135→315, Bench Press 135→225. Does not cover off-season hypertrophy blocks or peaking for powerlifting meets.
+This file covers six topics: weekly set targets for strength training during an active sport season, game-day proximity rules, RPE and RIR auto-regulation, minimum effective dose research, deload decisions, and taper principles. The deload section compares a scheduled deload against a reactive deload.
+
+The file is calibrated for a 40-year-old male athlete. He plays basketball twice per week, on Tuesday PM and Sunday AM. He plays hockey once per week, on Sunday PM. He lifts three times per week, on Wednesday, Thursday and Friday. He has bilateral Achilles tendinopathy. His 12-month target lifts are: trap bar deadlift from 230 to 385, back squat from 135 to 315, and bench press from 135 to 225.
+
+This file does not cover off-season hypertrophy blocks. It does not cover peaking for a powerlifting meet.
 
 ## Key Findings
 
 | Claim | Evidence tier | Primary source |
 |---|---|---|
-| Weekly resistance training volume and hypertrophy show a graded dose-response; each additional set adds ~0.37% gain. The commonly cited "10+ sets per muscle per week" showed only a statistical trend (P=0.074), not a significant threshold. | Strong (meta-analysis) | Schoenfeld, Ogborn, Krieger 2017, J Sports Sci |
-| Training a muscle 2x/week produces superior hypertrophy to 1x/week when weekly volume is matched. 3x/week vs 2x/week cannot be conclusively distinguished. | Strong (meta-analysis) | Schoenfeld, Ogborn, Krieger 2016, Sports Med |
-| The minimum effective dose for strength gain in resistance-trained men is 1 hard set of 6-12 reps at 70-85% 1RM, 2-3x/week, taken to high effort. Produces meaningful 1RM gains over 8-12 weeks. | Strong (meta-analysis) | Androulakis-Korakakis, Fisher, Steele 2020, Sports Med |
-| Training load decomposes into external load (sets, reps, distance, jumps) and internal load (sRPE, HR, psychophysiological response). Only internal load drives adaptation. | Strong (framework + validation) | Impellizzeri et al. 2004, 2019 |
-| In-season concurrent strength training maintains or even gains strength in recreational and professional team-sport athletes. Weaker/younger athletes can make meaningful in-season gains. | Moderate (longitudinal field study) | Baker 2001, J Strength Cond Res |
-| Strength underpins power and rate-of-force development. In-season programming must include loads ≥75% 1RM to maintain strength-power qualities. | Moderate (narrative review, Sports Medicine) | Suchomel, Nimphius, Bellon, Stone 2018 |
-| RIR-based RPE (0-10 scale, RPE 10 = 0 RIR, RPE 8 = 2 RIR) is valid and reliable for auto-regulating load; correlates strongly with bar velocity. | Moderate (validation + applied review) | Zourdos et al. 2016; Helms et al. 2016 |
-| Taper before competition (volume reduced 41-60% over ~2 weeks, intensity maintained) produces small but real ~3-4% performance gains. 2-4 days of training cessation can improve maximal strength. | Strong (meta-analysis + narrative reviews) | Bosquet et al. 2007; Pritchard et al. 2015 |
-| A prophylactic 1-week deload mid-program in non-fatigued lifters __reduced__ strength gains without any hypertrophy benefit. Deload reactively based on measurable fatigue, not by calendar rule. | Moderate (RCT, n=39) | Coleman et al. 2024, PeerJ |
-| Daily undulating periodization is not superior to linear periodization for hypertrophy; a small edge exists for strength in trained lifters only. | Strong (multiple meta-analyses) | Grgic et al. 2017, PeerJ; Harries et al. 2015 |
-| Game load cannot be mapped to a specific "equivalent sets" count for lifting. No published conversion exists; basketball game = ~30-54 jumps and 168-242 intense actions (Ben Abdelkrim 2007). | Weak (no equivalence data exists, only descriptive measures) | Fox et al. 2018; Ben Abdelkrim et al. 2007 |
+| Weekly resistance training volume and hypertrophy show a graded dose-response. Each additional set adds approximately 0.37% more gain. The commonly cited threshold of 10 or more sets per muscle per week was a statistical trend only (P=0.074). It was not a significant threshold. | Strong (meta-analysis) | Schoenfeld, Ogborn, Krieger 2017, J Sports Sci |
+| Training a muscle twice per week gives more hypertrophy than once per week, at a matched weekly volume. The data cannot separate three times per week from twice per week. | Strong (meta-analysis) | Schoenfeld, Ogborn, Krieger 2016, Sports Med |
+| The minimum effective dose for a strength gain in resistance-trained men is one hard set of 6 to 12 reps at 70 to 85% of 1RM, 2 to 3 times per week, at high effort. This produces real 1RM gains over 8 to 12 weeks. | Strong (meta-analysis) | Androulakis-Korakakis, Fisher, Steele 2020, Sports Med |
+| Training load has two parts. External load counts sets, reps, distance and jumps. Internal load measures sRPE, heart rate and the psychophysiological response. Only internal load drives adaptation. | Strong (framework and validation) | Impellizzeri et al. 2004, 2019 |
+| In-season strength training holds strength, and can increase it, in recreational and professional team-sport athletes. A weaker or younger athlete can make real in-season gains. | Moderate (longitudinal field study) | Baker 2001, J Strength Cond Res |
+| Strength supports power and rate of force development. In-season programming must include loads at or above 75% of 1RM to hold the strength-power qualities. | Moderate (narrative review, Sports Medicine) | Suchomel, Nimphius, Bellon, Stone 2018 |
+| RIR-based RPE is valid and reliable for load auto-regulation. The scale runs from 0 to 10. RPE 10 equals 0 RIR. RPE 8 equals 2 RIR. It correlates strongly with bar velocity. | Moderate (validation and applied review) | Zourdos et al. 2016; Helms et al. 2016 |
+| A taper before competition produces small but real performance gains of approximately 3 to 4%. The taper cuts volume by 41 to 60% over approximately 2 weeks and holds the intensity. A stop of 2 to 4 days can also increase maximal strength. | Strong (meta-analysis and narrative reviews) | Bosquet et al. 2007; Pritchard et al. 2015 |
+| A planned 1-week deload in the middle of a program __reduced__ strength gains in lifters who were not fatigued. It gave no hypertrophy benefit. Deload in reaction to measurable fatigue. Do not deload on a calendar rule. | Moderate (RCT, n=39) | Coleman et al. 2024, PeerJ |
+| Daily undulating periodization does not beat linear periodization for hypertrophy. It has a small advantage for strength, and only in trained lifters. | Strong (several meta-analyses) | Grgic et al. 2017, PeerJ; Harries et al. 2015 |
+| No published work converts game load into an equivalent number of lifting sets. Descriptive measures exist: one basketball game holds approximately 30 to 54 jumps and 168 to 242 intense actions (Ben Abdelkrim 2007). | Weak (no equivalence data exists, only descriptive measures) | Fox et al. 2018; Ben Abdelkrim et al. 2007 |
 
 ## Mechanism (what the controlled data actually shows)
 
 ### Volume dose-response is graded, not threshold-based
 
-Schoenfeld, Ogborn, and Krieger (2017, J Sports Sci 35(11):1073-82) meta-analyzed 15 studies comparing low (<5 sets/muscle/week), medium (5-9), and high (10+) weekly volume for hypertrophy. Their meta-regression found each added set contributed ~0.37% additional muscle gain. The "10+ sets" category showed only a statistical trend toward superiority (P=0.074), not a validated threshold. The practical implication: volume matters, but it is continuous, not stepped. An in-season athlete training at 6-8 sets per major muscle per week is capturing most of the hypertrophy benefit; pushing to 12-16 sets adds diminishing returns that may not be recoverable alongside sport.
+Schoenfeld, Ogborn, and Krieger (2017, J Sports Sci 35(11):1073-82) meta-analyzed 15 studies on volume and hypertrophy. They compared three weekly volumes per muscle: low, below 5 sets; medium, 5 to 9 sets; and high, 10 or more sets. Their meta-regression found that each added set gave approximately 0.37% more muscle gain. The high-volume category showed a statistical trend toward superiority (P=0.074). It did not show a validated threshold.
 
-Schoenfeld et al. (2016, Sports Med 46(11):1689-97) separately meta-analyzed frequency and showed 2x/week per muscle beat 1x/week when volume was equated. 3x/week vs 2x/week showed no significant difference. For in-season programming, 2x/week frequency per major pattern is sufficient and generally better tolerated than 3x/week alongside sport load.
+The practical result is this. Volume matters, and its effect is continuous, not stepped. An in-season athlete who trains 6 to 8 sets per major muscle per week captures most of the hypertrophy benefit. An increase to 12 to 16 sets gives progressively less return, and the athlete may not recover from it while he also plays sport.
 
-### Minimum effective dose is low, but it must be hard
+Schoenfeld et al. (2016, Sports Med 46(11):1689-97) meta-analyzed frequency separately. Two sessions per week per muscle beat one session per week at a matched volume. Three sessions per week showed no significant advantage over two. For in-season programming, two sessions per week for each major pattern is sufficient. An athlete also tolerates two sessions better than three alongside his sport load.
 
-Androulakis-Korakakis, Fisher, and Steele (2020, Sports Med 50(4):751-65) meta-analyzed minimum-effective-dose studies in resistance-trained men and found that __1 hard set of 6-12 reps at 70-85% 1RM, 2-3x/week__, produced meaningful strength gains (squat +17.5 kg, bench +8.3 kg) over 8-12 weeks when taken to genuine high effort. This is not a prescription for "never do more than one set" but a floor: below this, measurable detraining begins.
+### The minimum effective dose is low, but each set must be hard
 
-The key qualifier is effort. Sets taken far from failure do not capture the minimum-effective-dose benefit. This dovetails with Schoenfeld's effort-equated meta-analyses showing that low-volume training at high effort produces similar strength gains to higher-volume training at moderate effort, with lower fatigue cost.
+Androulakis-Korakakis, Fisher, and Steele (2020, Sports Med 50(4):751-65) meta-analyzed the minimum-effective-dose studies in resistance-trained men. __One hard set of 6 to 12 reps at 70 to 85% of 1RM, 2 to 3 times per week__, produced real strength gains over 8 to 12 weeks. The squat gained 17.5 kg and the bench press gained 8.3 kg. The athletes took each set to genuine high effort.
 
-### The interference effect is real but manageable at moderate intensities
+This is not an instruction to do one set only. It is a floor. Below this dose, measurable detraining starts.
 
-The classical concurrent-training interference effect (Hickson 1980) suggests endurance training impairs strength adaptation. Modern meta-analyses (Wilson et al. 2012; Schumann et al. 2022) show the effect is smaller than initially feared and depends on volume, intensity, and sequencing. For team-sport athletes, the limiting factor is cumulative fatigue rather than molecular interference: sport provides the endurance stimulus, and lifting provides the strength stimulus, and both share the same finite recovery budget.
+Effort is the necessary condition. A set taken far from failure does not deliver the minimum-effective-dose benefit. Schoenfeld's effort-equated meta-analyses agree. Low-volume training at high effort produces strength gains similar to higher-volume training at moderate effort, and it costs less fatigue.
 
-Baker (2001, J Strength Cond Res 15(2):172-7) followed 29 rugby league players across a 29-week in-season and found strength and power were maintained in experienced pros and __gained__ in younger/weaker players who had headroom. Suchomel et al. (2018, Sports Med 48(4):765-85) argue that strength is foundational for power, and in-season programming must keep working weights ≥75% 1RM to preserve these qualities. Low-intensity "pump" work alone is insufficient to maintain strength during a competitive season.
+### The interference effect is real, but it is manageable at moderate intensities
 
-### Tapering works; prophylactic deloading often does not
+Hickson 1980 described the classical concurrent-training interference effect. It states that endurance training reduces strength adaptation. Modern meta-analyses give a smaller effect than that (Wilson et al. 2012; Schumann et al. 2022). The size of the effect depends on volume, intensity and sequencing.
 
-Bosquet et al. (2007, MSSE 39(8):1358-65) meta-analyzed 27 taper studies and found that ~2-week tapers with 41-60% volume reduction (intensity and frequency preserved) produced small-to-moderate performance improvements (~3-4%). The mechanism is supercompensation: accumulated training fatigue dissipates faster than fitness decays, so a brief volume cut with maintained intensity unmasks fitness already built.
+For a team-sport athlete, cumulative fatigue is the limit, not molecular interference. Sport gives the endurance stimulus. Lifting gives the strength stimulus. Both draw on the same limited recovery budget.
 
-The counter-evidence is Coleman et al. (2024, PeerJ 12:e16777), who randomized 39 resistance-trained lifters to either continuous training or a scheduled 1-week deload mid-program. The deload group __lost__ strength gains relative to controls, with no compensating hypertrophy or endurance benefit. The interpretation: prophylactic deloads imposed on non-fatigued lifters cost strength. Deloads are warranted when fatigue is measurable (performance decrement, elevated RHR or reduced HRV, poor sleep, mood disturbance per Meeusen et al. 2013 overtraining criteria), not on a fixed 4-week calendar.
+Baker (2001, J Strength Cond Res 15(2):172-7) followed 29 rugby league players through a 29-week season. The experienced professionals held their strength and power. The younger and weaker players, who had room to improve, __gained__ strength and power. Suchomel et al. (2018, Sports Med 48(4):765-85) argue that strength is the foundation of power. In-season programming must keep the working weights at or above 75% of 1RM to hold those qualities. Low-intensity high-rep work alone cannot hold strength through a competitive season.
 
-### RPE is a better in-season tool than %1RM
+### Tapering works. A planned deload often does not
 
-Zourdos et al. (2016, J Strength Cond Res 30(1):267-75) validated the RIR-based RPE scale (0-10 where RPE 10 = 0 reps in reserve, RPE 8 = 2 RIR) against bar velocity, finding correlations up to r = -0.88. Helms et al. (2016, Strength Cond J 38(4):42-49) reviewed its application for auto-regulation. The advantage over %1RM in-season: actual 1RM can swing ±10-18% day to day based on sleep, game-related fatigue, and stress. Using RPE targets means the athlete is always training at the intended relative effort regardless of that day's actual max capacity.
+Bosquet et al. (2007, MSSE 39(8):1358-65) meta-analyzed 27 taper studies. A taper of approximately 2 weeks improved performance by approximately 3 to 4%. That taper cut volume by 41 to 60% and held both intensity and frequency. The mechanism is supercompensation. Accumulated training fatigue disappears faster than fitness decays, so a short volume cut with the intensity held reveals fitness the athlete already built.
+
+Coleman et al. (2024, PeerJ 12:e16777) provide the counter-evidence. They randomized 39 resistance-trained lifters into two groups. One group trained continuously. The other took a scheduled 1-week deload in the middle of the program. The deload group __lost__ strength gains against the control group. It gained no compensating benefit in muscle size or endurance.
+
+The conclusion is direct. A planned deload costs strength when the lifter is not fatigued. Use a deload when the fatigue is measurable. The measurable signs are a performance decrement, an elevated resting heart rate, a reduced HRV, poor sleep, and mood disturbance per the Meeusen et al. 2013 overtraining criteria. Do not use a fixed 4-week calendar.
+
+### RPE is a better in-season tool than percent of 1RM
+
+Zourdos et al. (2016, J Strength Cond Res 30(1):267-75) validated the RIR-based RPE scale against bar velocity. The scale runs 0 to 10. RPE 10 equals 0 reps in reserve. RPE 8 equals 2 reps in reserve. The correlations reached r = -0.88. Helms et al. (2016, Strength Cond J 38(4):42-49) reviewed how to apply the scale for auto-regulation.
+
+RPE beats percent of 1RM in season for one reason. A true 1RM changes by 10 to 18% from day to day, because of sleep, game fatigue and stress. An RPE target keeps the athlete at the intended relative effort, whatever his maximum capacity is that day.
 
 ## Practical Application
 
-1. __Weekly set targets by muscle group__ (in-season, balancing sport load):
-   - __Lower-body compound patterns__ (squat/hinge): 6-10 hard sets/week across Wed/Thu/Fri combined.
-   - __Upper push__: 8-12 sets/week (BB bench primary + DB bench accessory + OHP).
-   - __Upper pull__: 8-12 sets/week (lat pulldown + rows).
-   - __Calves (Achilles HSR)__: 3-4 sets, 3x/week of heavy slow resistance per Beyer protocol.
-   - __Core__: 4-6 direct sets/week (sport provides much indirect core work).
+1. __Weekly set targets by muscle group, in season, with the sport load balanced:__
+   - __Lower body compound patterns__, meaning the squat and the hinge: 6 to 10 hard sets per week, across Wednesday, Thursday and Friday together.
+   - __Upper body push__: 8 to 12 sets per week. This covers the barbell bench press as the primary lift, the dumbbell bench press as an accessory, and the overhead press.
+   - __Upper body pull__: 8 to 12 sets per week. This covers the lat pulldown and the rows.
+   - __Calves, as Achilles HSR__: 3 to 4 sets, 3 times per week, using heavy slow resistance per the Beyer protocol.
+   - __Core__: 4 to 6 direct sets per week. Sport gives a large amount of indirect core work.
    
-   These are minimum-effective-dose-plus targets that respect Androulakis-Korakakis and exploit Schoenfeld's graded dose-response.
+   These targets sit above the minimum effective dose. They respect Androulakis-Korakakis and they use Schoenfeld's graded dose-response.
 
-2. __Friday session cut-rule__ (Sunday double-header context). If by Friday cumulative week sRPE is elevated or lower-body DOMS is present, cut Friday to 2 main lifts at top-set only, RPE ≤7, no accessory work. Baker's rugby data supports minimal-volume in-season maintenance when fatigue is present.
+2. __The Friday cut-rule, for a Sunday double-header.__ Check two signals on Friday: the cumulative sRPE for the week, and lower body DOMS. If either is elevated, cut Friday to 2 main lifts. Do the top set only, at RPE 7 or below, with no accessory work. Baker's rugby data supports minimal in-season volume when fatigue is present.
 
-3. __Load progression: double progression, then load jumps.__ Main lifts use 3 sets of 5-8 or 4 sets of 5. Once all sets hit the top of the range at ≤2 RIR, add load: +5 lb for bench and upper compounds, +10 lb for squat and trap-bar DL. Dumbbell accessories: +5 lb/DB. This matches ACSM progression models (Ratamess et al. 2009, MSSE 41(3):687-708) and avoids premature jumps that blow up RIR targets.
+3. __Progress the load by double progression, then by load jumps.__ Prescribe the main lifts as 3 sets of 5 to 8 reps, or as 4 sets of 5 reps. Add load after all sets reach the top of the rep range at 2 RIR or less. Add 5 lb on the bench press and the other upper body compounds. Add 10 lb on the squat and the trap bar deadlift. Add 5 lb per dumbbell on the dumbbell accessories. This matches the ACSM progression models (Ratamess et al. 2009, MSSE 41(3):687-708). It also avoids an early jump that breaks the RIR target.
 
 4. __RPE targets by phase:__
-   - __Phase 1 Foundation (current)__: main lifts at RPE 7-8 (2-3 RIR), accessories at RPE 8.
-   - __Phase 2 Strength-Power (Weeks 9+)__: main lifts at RPE 8 (2 RIR), plyos at RPE 6-7.
-   - __Day after a game__: never exceed RPE 7 on any lift.
-   - __Poor-sleep day (Knowles 2018)__: keep volume, drop intensity 10-15% on compounds. Compound lifts are more sleep-sensitive than isolation work.
+   - __Phase 1, Foundation__: main lifts at RPE 7 to 8, which is 2 to 3 RIR. Accessories at RPE 8.
+   - __Phase 2, Strength-Power, from Week 9__: main lifts at RPE 8, which is 2 RIR. Plyometrics at RPE 6 to 7.
+   - __The day after a game__: never go above RPE 7 on any lift.
+   - __After poor sleep (Knowles 2018)__: hold the volume and reduce the intensity by 10 to 15% on the compound lifts. Sleep affects compound lifts more than isolation work.
 
-5. __48-hour game-proximity buffer.__ Avoid heavy lower-body lifting within 48h of Sunday's double-header. Wed/Thu/Fri schedule already satisfies this. Friday lower-body stays at RPE ≤7 and skips high-impact plyometrics. Bosquet taper literature supports 2-4 day pre-competition cessation for maximal neuromuscular output.
+5. __Keep a 48-hour buffer before a game.__ Do not do heavy lower body lifting inside 48 hours of the Sunday double-header. The Wednesday, Thursday and Friday schedule already meets this rule. Keep Friday lower body work at RPE 7 or below, and remove the high-impact plyometrics. The Bosquet taper literature supports a 2 to 4 day stop before competition for maximum neuromuscular output.
 
-6. __Reactive deload, not scheduled.__ Do not deload every 4th week reflexively. Trigger a 4-7 day volume cut (50% volume, intensity maintained) when two or more of the following appear: lifting performance drops >5% at matched RPE; resting HR elevated >5-7 bpm for 3+ days; sleep quality declines for 3+ consecutive nights; sport performance dips noticeably; mood or motivation disturbance per Meeusen criteria. Coleman 2024 explicitly found calendar-imposed deloads cost strength without compensating benefit.
+6. __Deload in reaction to fatigue. Do not deload on the calendar.__ Do not deload every 4th week by reflex. Cut the volume by 50% for 4 to 7 days, and hold the intensity, when two or more of these appear: lifting performance drops more than 5% at a matched RPE; resting heart rate is 5 to 7 bpm above normal for 3 or more days; sleep quality declines for 3 or more consecutive nights; sport performance clearly declines; or mood or motivation is disturbed, per the Meeusen criteria. Coleman 2024 found directly that a calendar deload costs strength and gives no compensating benefit.
 
-7. __Achilles-aware exercise selection.__ Trap-bar deadlift is Achilles-friendly (neutral ankle, no deep dorsiflexion under load, no jumping/landing). Heavy slow resistance calf raises (both straight-knee and bent-knee) 3x/week serve as both rehab and strength work per Beyer 2015. Substitute sled push or kettlebell swing for plyometrics during Achilles flares. Monitor VAS during and 24h post-session.
+7. __Select exercises that protect the Achilles.__ The trap bar deadlift is Achilles-friendly, because the ankle stays neutral, the ankle does not go into deep dorsiflexion under load, and there is no jumping or landing. Heavy slow resistance calf raises serve as both rehab and strength work, per Beyer 2015. Use both the straight-knee and the bent-knee variant, 3 times per week. During an Achilles flare, replace the plyometrics with a sled push or a kettlebell swing. Record the VAS pain score during the session and 24 hours after it.
 
 ## Unresolved or Bleeding-Edge Questions
 
-- __Game-load to lifting-set equivalence is not established.__ Basketball research quantifies external load (Player Load, jumps, accelerations) and internal load (sRPE, HR), but no published work maps these to resistance-training set equivalents. The closest approximation is sRPE-duration integrals, which are individual calibration problems, not portable formulas.
-- __Velocity-based training for recreational athletes.__ Linear position transducers (GymAware, Vitruve, Enode) enable daily load adjustment via load-velocity profiling. Evidence favors VBT over %1RM for strength in trained lifters, but setup cost and noise in home-gym settings remain barriers. Data specifically in 40+ athletes is thin.
-- __HRV-guided training for team-sport athletes.__ Plews et al. 2013/2014 support 7-day rolling HRV trends as an auto-regulation signal in endurance athletes, but thresholds for when to reduce vs maintain training load in a concurrent-training context are not well validated. Use as a binary push/back-off heuristic rather than a load prescription.
-- __Optimal sequencing of sport and lifting within a day.__ If both occur on the same day (e.g., Tuesday basketball PM + lifting AM), which order minimizes interference is not settled. Current evidence leans toward lifting first when strength is the priority, but individual recovery windows dominate the decision.
+- __No one has established an equivalence between game load and lifting sets.__ Basketball research measures external load, such as Player Load, jumps and accelerations. It also measures internal load, such as sRPE and heart rate. No published work maps either one to a number of resistance-training sets. The closest approach uses sRPE-duration integrals. Those need individual calibration. They are not portable formulas.
+- __Velocity-based training for a recreational athlete.__ A linear position transducer, such as a GymAware, a Vitruve or an Enode, allows daily load adjustment through load-velocity profiling. The evidence prefers velocity-based training to percent of 1RM for strength in trained lifters. Two barriers remain: the setup cost, and the measurement noise in a home gym. There is very little data in athletes above age 40.
+- __HRV-guided training for a team-sport athlete.__ Plews et al. 2013 and 2014 support a 7-day rolling HRV trend as an auto-regulation signal in endurance athletes. No one has validated the thresholds for when to reduce or hold the training load during concurrent training. Use HRV as a two-way signal to push or to back off. Do not use it to prescribe a load.
+- __The best order for sport and lifting inside one day.__ Both can fall on the same day, such as basketball on Tuesday PM with lifting that morning. No one has settled which order causes less interference. The current evidence prefers lifting first when strength is the priority. Individual recovery windows control the decision more than the order does.
 
 ## References
 
@@ -105,8 +119,8 @@ Zourdos et al. (2016, J Strength Cond Res 30(1):267-75) validated the RIR-based 
 
 ## Corrections Log
 
-- __2026-04-18:__ File initialized. Corrections to prior claims in `../CLAUDE.md`:
-  - __"Every 4th week deload":__ CLAUDE.md Section 2 prescribes a scheduled 4-week deload cycle. Coleman et al. 2024 (PeerJ, n=39 RCT) showed a prophylactic 1-week deload in non-fatigued lifters __reduced__ strength gains. Shift framing to reactive deload based on fatigue markers (performance decrement >5%, elevated RHR, sleep disruption, mood disturbance per Meeusen 2013). The calendar deload is conservative and likely costs strength when imposed on well-recovered weeks.
-  - __"10+ sets per muscle per week for hypertrophy":__ Schoenfeld 2017 showed only a non-significant trend (P=0.074) for the 10+ category. The actual finding is a continuous dose-response. For an in-season athlete, 6-10 hard sets/muscle/week captures most of the benefit.
-  - __"Basketball session = moderate lower body training stimulus; hockey session = moderate-to-high":__ No published equivalence data support converting sport sessions to lifting-set equivalents. The descriptive framing is fine; do not pretend the equivalence is quantitative.
-  - __In-season gain potential__: CLAUDE.md Section 7 reality check treats in-season progression as ~30-40% slower than off-season (Baker 2001). This is accurate for strong athletes. For a lifter at 135 lb bench starting weight, in-season strength __gain__ rather than maintenance is realistic per Baker's younger/weaker-player cohort.
+- __2026-04-18:__ This file was created. It corrects four claims in `../CLAUDE.md`:
+  - __The deload every 4th week.__ CLAUDE.md Section 2 prescribes a scheduled 4-week deload cycle. Coleman et al. 2024 (PeerJ, RCT, n=39) showed that a planned 1-week deload in lifters who were not fatigued __reduced__ their strength gains. Change the rule to a reactive deload, triggered by fatigue markers. Those markers are a performance decrement above 5%, an elevated resting heart rate, disrupted sleep, and mood disturbance per Meeusen 2013. A calendar deload is conservative, and it probably costs strength in a week where the athlete has recovered well.
+  - __The claim of 10 or more sets per muscle per week for hypertrophy.__ Schoenfeld 2017 found a non-significant trend for that category (P=0.074). The real finding is a continuous dose-response. For an in-season athlete, 6 to 10 hard sets per muscle per week captures most of the benefit.
+  - __The claim that a basketball session equals a moderate lower body stimulus, and a hockey session a moderate to high one.__ No published data supports a conversion from a sport session to a number of lifting sets. The descriptive wording is acceptable. Do not present the equivalence as a number.
+  - __In-season gain potential.__ The reality check in CLAUDE.md Section 7 treats in-season progression as approximately 30 to 40% slower than off-season progression (Baker 2001). That is correct for a strong athlete. This athlete started at a 135 lb bench press, so an in-season strength __gain__ is realistic, not only maintenance. Baker's younger and weaker cohort supports this.

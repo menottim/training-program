@@ -1,13 +1,13 @@
 # Knowledge Base
 
-Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each file is built from actual peer-reviewed papers verified via PubMed, journal sites, or authoritative reviews. The purpose of this directory is to ensure the coaching voice cites real, retrievable research rather than paraphrased or hallucinated sources.
+This directory holds the primary-source evidence for the recommendations in `CLAUDE.md`. Each file uses real peer-reviewed papers. PubMed, journal sites or authoritative reviews verified every one of them. The directory has one purpose: the coaching voice must cite real, retrievable research. It must not cite a paraphrase or an invented source.
 
 ## Principles
 
-- __Every claim cites a retrievable paper.__ Include PubMed ID, DOI, or full journal citation.
-- __Evidence tiers are explicit.__ Strong / Moderate / Emerging. Tiers follow the rubric in `../CLAUDE.md` (Persona & Coaching Style → Evidence Standards).
-- __Corrections are part of the record.__ When subsequent research overturns or nuances a claim, amend the file and note the change inline rather than deleting the prior position.
-- __Calibrated for the athlete.__ Findings are interpreted for a 40-year-old in-season recreational athlete with bilateral achilles tendinopathy. Do not import recommendations from cohorts with materially different profiles (young untrained, elite elderly, clinical populations) without flagging the extrapolation.
+- __Every claim cites a retrievable paper.__ Include the PubMed ID, the DOI, or the full journal citation.
+- __State the evidence tier.__ Use Strong, Moderate or Emerging. `../CLAUDE.md` holds the definitions, under Persona and Coaching Style, in the Evidence Standards subsection.
+- __Corrections are part of the record.__ Later research can overturn a claim or add nuance to it. Amend the file and record the change in it. Do not delete the earlier position.
+- __Calibrate every finding for this athlete.__ He is a 40-year-old in-season recreational athlete with bilateral achilles tendinopathy. Some cohorts differ materially from him: young untrained subjects, elite elderly subjects, and clinical populations. You can use a recommendation from such a cohort, but you must state that you extrapolated it.
 
 ## Topic index
 
@@ -29,15 +29,15 @@ Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each
 
 ## When to consult
 
-- __Before making a novel recommendation__ in a topic area covered here, read the relevant file first to avoid drifting from verified evidence.
-- __When a user claim conflicts__ with what is in a knowledge file, the knowledge file is the default source of truth. Update the file if new evidence supersedes it.
-- __When a new topic arises repeatedly in conversations__, create a new file and add it to the index above.
+- __Read the relevant file before you make a new recommendation__ in a topic this directory covers. This keeps the advice aligned with the verified evidence.
+- __If a user claim disagrees with a knowledge file, the knowledge file wins.__ It is the default source of truth. Update the file only if new evidence replaces it.
+- __If a new topic comes up more than once in conversation, write a new file for it.__ Then add it to the index above.
 
 ## Contribution pattern
 
-1. Pick the topic.
-2. Run targeted web searches for primary papers (PubMed, Google Scholar, journal sites). Use at least 3 independent sources per major claim.
-3. Draft the file using the standard structure (Scope, Key Findings table, Mechanism, Practical Application, Unresolved Questions, References).
-4. Include PubMed IDs and DOIs for every cited study.
-5. Note any claims from `CLAUDE.md` or prior coaching that the new evidence corrects or nuances.
-6. Commit with a descriptive message and update the README index.
+1. Choose the topic.
+2. Search the web for the primary papers. Use PubMed, Google Scholar and journal sites. Use at least 3 independent sources for each major claim.
+3. Write the file with the standard structure. That structure is: Scope, Key Findings table, Mechanism, Practical Application, Unresolved Questions, and References.
+4. Include the PubMed ID and the DOI for every cited study.
+5. Record any claim in `CLAUDE.md`, or in earlier coaching, that the new evidence corrects or qualifies.
+6. Commit with a clear message. Then update the index in this README.

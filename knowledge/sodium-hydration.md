@@ -2,94 +2,110 @@
 
 ## Scope
 
-Covers the physiological basis for day-to-day scale variance driven by dietary sodium, glycogen, and hydration state. Applies to interpreting acute weigh-in spikes (e.g., +4 lbs in 3 days) and to deciding whether hydration strategy can meaningfully alter sodium load. Does not cover chronic salt sensitivity for hypertension management (see primary-care resources).
+This file covers the physiology behind day-to-day scale variance. Three factors drive that variance: dietary sodium, glycogen, and hydration state.
+
+Use it for two decisions. First, how to interpret an acute weigh-in spike, such as 4 lb in 3 days. Second, whether a change in hydration strategy can meaningfully change the sodium load.
+
+This file does not cover chronic salt sensitivity in the management of hypertension. Use primary-care resources for that.
 
 ## Key Findings
 
 | Claim | Evidence tier | Primary source |
 |---|---|---|
-| A single gram of excess sodium does not reliably produce ~4 g of retained water. The relationship is non-linear and includes osmotically inactive storage. | Moderate (was previously coached as Strong) | Heer et al. 2000, AJP-Renal |
-| Glycogen is stored with water at a ratio of at least 1:3, and up to 1:17 when hydration is fully restored after exercise. | Strong | Fernández-Elías et al. 2015, Eur J Appl Physiol |
-| Drinking excess water does not preferentially flush sodium; urine Na concentration tracks osmoregulation, and extreme overconsumption risks exercise-associated hyponatremia (EAH). | Strong | Almond et al. 2005, NEJM |
-| Increasing potassium intake lowers blood pressure in hypertensive adults (mechanism includes natriuresis), but the effect on short-term sodium excretion timing is not clearly quantified in RCTs. | Strong for BP effect; Moderate for use as acute natriuretic strategy | Aburto et al. 2013, BMJ |
-| Kidney-mediated sodium homeostasis normalizes over roughly 24-72 hours after an acute load, driven by aldosterone suppression and pressure natriuresis. | Strong | Titze et al. 2014, Curr Opin Nephrol Hypertens; Rakova et al. 2013, Cell Metab |
+| One gram of excess sodium does not reliably retain approximately 4 g of water. The relationship is non-linear, and some sodium goes into osmotically inactive storage. | Moderate (earlier coaching treated this as Strong) | Heer et al. 2000, AJP-Renal |
+| Glycogen is stored with water at a ratio of at least 1:3. The ratio reaches 1:17 when hydration is fully restored after exercise. | Strong | Fernández-Elías et al. 2015, Eur J Appl Physiol |
+| Drinking excess water does not flush sodium preferentially. Urine sodium concentration follows osmoregulation. Extreme overconsumption risks exercise-associated hyponatremia. | Strong | Almond et al. 2005, NEJM |
+| A higher potassium intake lowers blood pressure in a hypertensive adult, and the mechanism includes natriuresis. No RCT clearly quantifies its effect on the timing of short-term sodium excretion. | Strong for the blood pressure effect; Moderate for use as an acute natriuretic strategy | Aburto et al. 2013, BMJ |
+| The kidney restores sodium balance over approximately 24 to 72 hours after an acute load. Aldosterone suppression and pressure natriuresis drive that process. | Strong | Titze et al. 2014, Curr Opin Nephrol Hypertens; Rakova et al. 2013, Cell Metab |
 
 ## Mechanism (what the controlled data actually shows)
 
-### Sodium storage is more complex than the folk "1:4" rule
+### Sodium storage is more complex than the folk 1:4 rule
 
-The widely repeated "1 g sodium = 4 g water" heuristic derives from simplified osmotic calculations and is inconsistent with controlled metabolic-ward data. Heer et al. (2000) infused four levels of NaCl (50, 200, 400, 550 meq/day) into 32 healthy men and observed that high sodium intake produced a rise in plasma volume but __did not reliably expand extracellular volume or body mass in proportion__. Rakova et al. (2013) and Titze et al. (2014) have since established that sodium can be stored in skin, cartilage, and muscle bound to glycosaminoglycans (GAGs) without proportional water retention. This is "osmotically inactive" sodium storage.
+The common heuristic that 1 g of sodium holds 4 g of water comes from a simplified osmotic calculation. Controlled metabolic-ward data does not support it.
 
-Practical implication: excess dietary sodium does raise plasma volume and can drive acute scale-weight shifts of 1-3 lbs, but predicting the magnitude from grams of sodium is not accurate. The spike can be smaller than the heuristic predicts (osmotically inactive storage buffers it) or larger when combined with other water-shifting factors.
+Heer et al. (2000) infused four levels of NaCl into 32 healthy men, at 50, 200, 400 and 550 meq per day. A high sodium intake raised plasma volume. It __did not reliably expand extracellular volume or body mass in proportion__.
 
-### Glycogen is a much larger and more predictable driver of acute scale shifts
+Rakova et al. (2013) and Titze et al. (2014) have since established that the body can store sodium in skin, cartilage and muscle, bound to glycosaminoglycans, without retaining water in proportion. This is osmotically inactive sodium storage.
 
-Fernández-Elías et al. (2015) directly measured muscle biopsy glycogen and total muscle water after prolonged heat exercise. With partial fluid replacement (400 mL), the glycogen-to-water ratio recovered at 1:3. With full fluid deficit replacement (~3170 mL), the ratio reached 1:17, meaning additional water beyond the glycogen-bound fraction was stored in the muscle.
+The practical result follows. Excess dietary sodium does raise plasma volume, and it can shift the scale acutely by 1 to 3 lb. You cannot predict the size of that shift from the grams of sodium. The spike can be smaller than the heuristic predicts, because osmotically inactive storage absorbs some of it. It can also be larger, when other water-shifting factors act at the same time.
 
-For an athlete with depleted glycogen (e.g., post-training + carb-rich dinner the next day), refilling muscle glycogen stores of roughly 400-500 g (typical for a 220-lb athlete at full capacity) can add 1.2-1.5 lbs of bound water at baseline, and meaningfully more if hydration is generously replaced. This is the single largest acute non-fat driver of scale weight in a well-fed athlete.
+### Glycogen is a larger and more predictable driver of an acute scale shift
 
-### Kidney sodium excretion runs on a 24-72 hour timeline
+Fernández-Elías et al. (2015) measured muscle glycogen and total muscle water directly by biopsy, after prolonged exercise in the heat. With partial fluid replacement of 400 mL, the glycogen-to-water ratio recovered at 1:3. With full replacement of the fluid deficit, at approximately 3,170 mL, the ratio reached 1:17. The muscle stored additional water beyond the glycogen-bound fraction.
 
-Acute high-sodium meals do not produce immediate natriuresis. Aldosterone suppression, pressure natriuresis, and atrial natriuretic peptide signaling coordinate over hours to days to restore sodium balance. Rakova et al. (2013) showed in a metabolic-ward isolation study that sodium excretion follows weekly and monthly rhythms rather than strictly daily cycles, complicating day-to-day prediction.
+Consider an athlete with depleted glycogen, for example after training, who then eats a carbohydrate-rich dinner the next day. Refilling approximately 400 to 500 g of muscle glycogen, which is typical capacity for a 220 lb athlete, adds 1.2 to 1.5 lb of bound water at baseline. It adds meaningfully more if he replaces the fluid generously.
 
-Practical implication: do not expect a high-sodium meal to "clear" within hours. Scale effects persist 24-72 hours.
+This is the largest acute non-fat driver of scale weight in a well-fed athlete.
 
-### Water intake does not accelerate sodium loss
+### Kidney sodium excretion runs on a 24 to 72 hour timeline
 
-Adequate hydration is a prerequisite for normal kidney function. Dehydration triggers aldosterone-mediated sodium retention, so being well-hydrated prevents _extra_ retention. But consuming water beyond normal needs does not produce preferential sodium excretion; urine Na concentration is regulated to maintain serum Na within 135-145 mmol/L.
+An acute high-sodium meal does not produce immediate natriuresis. Three mechanisms coordinate over hours to days to restore sodium balance: aldosterone suppression, pressure natriuresis, and atrial natriuretic peptide signaling.
 
-The extreme case is exercise-associated hyponatremia. Almond et al. (2005) measured blood samples from 488 Boston Marathon finishers and found 13% had serum Na ≤135 mmol/L and 0.6% had critical hyponatremia (≤120 mmol/L). The strongest independent predictor was __weight gain during the race__ (odds ratio 4.2), i.e., drinking more fluid than was lost. This confirms that excess water intake shifts balance in the opposite direction (water dilutes serum sodium, not the other way around).
+Rakova et al. (2013) ran a metabolic-ward isolation study. Sodium excretion followed weekly and monthly rhythms, not a strict daily cycle. That makes day-to-day prediction harder.
 
-### Potassium is an effective adjunct, but its timing for acute natriuresis is less well characterized
+The practical result: do not expect a high-sodium meal to clear inside a few hours. The scale effect lasts 24 to 72 hours.
 
-Aburto et al. (2013) meta-analyzed 22 RCTs and found increased potassium intake reduces systolic BP by 3.49 mmHg (95% CI 1.82-5.15) and DBP by 1.96 mmHg in hypertensive adults. The mechanism includes promoting natriuresis via effects on distal-tubule Na/K exchange and aldosterone suppression. The BP effect emerges over weeks.
+### Water intake does not speed up sodium loss
 
-For acute (hours-to-days) sodium clearance after a single high-sodium meal, the direct evidence is thinner. Mechanistically, a potassium-rich meal should accelerate sodium excretion, and population-level data support a dose-responsive effect on sodium output. For practical coaching purposes, treat high-potassium foods (potatoes, bananas, leafy greens, Greek yogurt, salmon) as a mild positive adjunct rather than a targeted natriuretic intervention.
+Adequate hydration is necessary for normal kidney function. Dehydration triggers aldosterone-mediated sodium retention, so good hydration prevents _extra_ retention.
+
+Water beyond normal need does not produce preferential sodium excretion. The body regulates urine sodium concentration to hold serum sodium between 135 and 145 mmol/L.
+
+The extreme case is exercise-associated hyponatremia. Almond et al. (2005) took blood samples from 488 Boston Marathon finishers. 13% had serum sodium at or below 135 mmol/L, and 0.6% had critical hyponatremia at or below 120 mmol/L. The strongest independent predictor was __weight gain during the race__, with an odds ratio of 4.2. Those runners drank more fluid than they lost. This confirms that excess water shifts the balance in the opposite direction: water dilutes serum sodium.
+
+### Potassium is a useful adjunct, but its timing for acute natriuresis is less clear
+
+Aburto et al. (2013) meta-analyzed 22 RCTs. A higher potassium intake reduced systolic blood pressure by 3.49 mmHg (95% CI 1.82 to 5.15) and diastolic blood pressure by 1.96 mmHg, in hypertensive adults. The mechanism includes promoting natriuresis, through effects on distal-tubule sodium and potassium exchange, and through aldosterone suppression. The blood pressure effect appears over weeks.
+
+For acute sodium clearance over hours to days, after one high-sodium meal, the direct evidence is thinner. Mechanistically, a potassium-rich meal should speed up sodium excretion, and population-level data supports a dose-responsive effect on sodium output.
+
+For coaching, treat high-potassium foods as a mild positive adjunct. Those foods include potatoes, bananas, leafy greens, Greek yogurt and salmon. Do not treat them as a targeted natriuretic intervention.
 
 ## Athlete-Calibrated Daily Sodium Targets
 
-The AHA 2021 general-population target of <2,300 mg/day is designed for sedentary-to-moderately-active adults for cardiovascular-disease prevention. __It is not the right target for a trained athlete with regular sweat losses.__ Using it as a ceiling for an athlete risks chronic low-grade sodium deficiency during training blocks and misreads normal athletic sodium intake as "excessive."
+The AHA 2021 general-population target is below 2,300 mg per day. It is designed for sedentary to moderately active adults, to prevent cardiovascular disease. __It is the wrong target for a trained athlete who sweats regularly.__ Used as a ceiling for an athlete, it risks chronic low-grade sodium deficiency during a training block, and it misreads a normal athletic sodium intake as excessive.
 
-For a __non-hypertensive recreational athlete__ playing 2-3 hours of sport per week plus 3-4 lifting sessions, the evidence supports:
+This athlete is not hypertensive. He plays 2 to 3 hours of sport per week, plus 3 to 4 lifting sessions. The evidence supports these targets:
 
 | Context | Target range | Source |
 |---|---|---|
-| Rest days (no sport, no training) | 2,500-3,500 mg | AHA general ceiling + baseline activity |
-| Sport or heavy training days | 3,500-5,000 mg | AHA ceiling + sweat-loss replacement per Baker 2017 |
-| Upper chronic limit to respect | 5,500-6,000 mg/day sustained | Mente 2016 PURE cohort U-shape, cardiovascular risk |
-| Lower floor (avoid sustained intake below) | ~2,500 mg/day | Mente 2016 found higher CV risk below 3 g/day in non-hypertensive adults |
+| Rest days, with no sport and no training | 2,500 to 3,500 mg | The AHA general ceiling, plus baseline activity |
+| Sport days or heavy training days | 3,500 to 5,000 mg | The AHA ceiling, plus sweat-loss replacement per Baker 2017 |
+| Chronic upper limit to respect | 5,500 to 6,000 mg per day, sustained | The Mente 2016 PURE cohort U-shape, for cardiovascular risk |
+| Lower floor, which sustained intake must not go below | Approximately 2,500 mg per day | Mente 2016 found higher cardiovascular risk below 3 g per day in non-hypertensive adults |
 
-Rationale:
+The reasoning:
 
-- __Baker 2017__ (Sports Med, PMID 28332116): athletes lose 500-2,000 mg sodium per liter of sweat, with individual variation. A 60-90 min basketball game in moderate conditions produces 1-1.5 L of sweat, so sodium loss per session is 750-2,000 mg.
-- __ACSM position stand on fluid replacement__ (PMID 17277604): during exercise >1 hour, replace with 500-700 mg sodium per liter of rehydration fluid. No blanket daily total.
-- __Mente et al. 2016 PURE__ (Lancet, PMID 27216139): U-shaped cardiovascular risk across 376,628 people. Lowest risk at 3-5 g sodium/day. Risk increased _both_ above ~5 g and below ~3 g. For non-hypertensive adults, very low sodium was associated with higher CVD risk, not lower. (Note: findings are controversial; some researchers argue the U-shape is a statistical artifact. Treat the upper bound as better-supported than the lower bound.)
+- __Baker 2017__ (Sports Med, PMID 28332116). An athlete loses 500 to 2,000 mg of sodium per liter of sweat, and individuals vary. A basketball game of 60 to 90 minutes in moderate conditions produces 1 to 1.5 L of sweat. Sodium loss per session is therefore 750 to 2,000 mg.
+- __The ACSM position stand on fluid replacement__ (PMID 17277604). During exercise longer than 1 hour, replace 500 to 700 mg of sodium per liter of rehydration fluid. The stand gives no blanket daily total.
+- __Mente et al. 2016 PURE__ (Lancet, PMID 27216139). This cohort of 376,628 people showed a U-shaped cardiovascular risk. The lowest risk was at 3 to 5 g of sodium per day. Risk increased above approximately 5 g, and it also increased below approximately 3 g. In non-hypertensive adults, a very low sodium intake was associated with higher cardiovascular risk, not lower. Note that these findings are controversial. Some researchers argue the U-shape is a statistical artifact. The upper bound has better support than the lower bound.
 
-__Individual calibration note.__ Sweat sodium concentration varies widely (heavy vs light salty sweaters). Signs of being a heavy salty sweater: visible white sodium crystals on skin or clothing after exercise, frequent muscle cramps during sport, persistent afternoon fatigue on training days despite adequate hydration. Heavy salty sweaters may need the upper end of the ranges above or commercial sweat testing.
+__A note on individual calibration.__ Sweat sodium concentration varies widely between a heavy salty sweater and a light one. Three signs indicate a heavy salty sweater: visible white sodium crystals on the skin or the clothing after exercise; frequent muscle cramps during sport; and persistent afternoon fatigue on a training day, despite adequate hydration. A heavy salty sweater may need the upper end of the ranges above, or commercial sweat testing.
 
-__Distribution matters as much as total.__ 4,500 mg spread across three moderate-sodium meals is different from 4,500 mg concentrated in one restaurant meal. Acute single-meal sodium loads of 2,000+ mg produce visible same-day or next-day scale spikes via plasma volume expansion; the same total spread across three meals does not. If body-comp reads matter, prefer moderate distribution.
+__Distribution matters as much as the total.__ 4,500 mg spread across three moderate-sodium meals is not the same as 4,500 mg concentrated in one restaurant meal. A single-meal sodium load of 2,000 mg or more produces a visible scale spike the same day or the next day, through plasma volume expansion. The same total spread across three meals does not. If the body-composition reads matter, prefer a moderate distribution.
 
 ## Practical Application
 
-1. __Daily scale variance of ±3-5 lbs is normal__ for a 220-lb adult athlete. A single outlier reading should not drive programming changes. Use 7-day trailing averages.
+1. __A daily scale variance of 3 to 5 lb in either direction is normal__ for a 220 lb adult athlete. Do not change the program because of one outlier reading. Use a 7-day trailing average.
 
-2. __Expect 24-72 hour persistence__ after a high-sodium meal pattern. The scale normalizes on its own as long as sodium intake returns to baseline.
+2. __Expect a high-sodium meal pattern to last 24 to 72 hours on the scale.__ The scale returns to normal on its own, as long as sodium intake returns to baseline.
 
-3. __Hydrate normally, not excessively.__ ~3 L/day from food and drink on rest days; increase by ~1 L on sport or heavy-training days to replace sweat losses. More than this provides no sodium-clearance benefit and in extreme cases risks hyponatremia.
+3. __Hydrate normally. Do not hydrate excessively.__ Take approximately 3 L per day from food and drink on a rest day. Add approximately 1 L on a sport day or a heavy training day, to replace sweat losses. More than that gives no sodium-clearance benefit, and in an extreme case it risks hyponatremia.
 
-4. __Potassium-rich foods accelerate normalization modestly.__ Potatoes (~850 mg/medium), bananas (~420 mg), spinach (~840 mg/cooked cup), Greek yogurt (~230 mg/cup), salmon (~450 mg/filet). Target 3,400 mg/day baseline (Aburto 2013).
+4. __Potassium-rich foods speed up the return to normal modestly.__ Examples: a medium potato at approximately 850 mg, a banana at approximately 420 mg, a cooked cup of spinach at approximately 840 mg, a cup of Greek yogurt at approximately 230 mg, and a salmon fillet at approximately 450 mg. Target 3,400 mg per day as a baseline (Aburto 2013).
 
-5. __Sweat contributes meaningful sodium loss during games.__ A 60-90 min basketball session produces ~750-2,000 mg sodium loss for most athletes (Baker 2017). Plain water is fine for sessions <1 hour; consider electrolyte-containing drinks for longer sessions or hot conditions.
+5. __Sweat causes a meaningful sodium loss during a game.__ A basketball session of 60 to 90 minutes costs most athletes approximately 750 to 2,000 mg of sodium (Baker 2017). Plain water is sufficient for a session under 1 hour. Consider an electrolyte drink for a longer session, or in hot conditions.
 
-6. __Glycogen-driven weight spikes after training days are expected and desired.__ Do not interpret them as fat gain. A post-training carb-rich meal adding 1-2 lbs of scale weight the next morning is evidence that muscle glycogen is refilling, which is what supports game performance.
+6. __A glycogen-driven weight spike after a training day is expected, and it is desirable.__ Do not read it as fat gain. A carbohydrate-rich meal after training that adds 1 to 2 lb of scale weight the next morning is evidence that muscle glycogen is refilling. That is what supports game performance.
 
-7. __Coaching language calibration.__ Do not describe 4,000-5,000 mg sodium on a sport day as "2x target" or "very high." It is within normal athletic range. Do flag single-meal sodium loads >2,000 mg as likely to produce an acute scale spike. Chronic intake >5,500 mg/day warrants a downward adjustment toward the 3-5 g/day optimal zone per Mente 2016.
+7. __Calibrate the coaching language.__ Do not describe 4,000 to 5,000 mg of sodium on a sport day as double the target, or as very high. It is inside the normal athletic range. Do report a single-meal sodium load above 2,000 mg, because it will probably produce an acute scale spike. A chronic intake above 5,500 mg per day justifies a reduction toward the optimal zone of 3 to 5 g per day, per Mente 2016.
 
 ## Unresolved or Bleeding-Edge Questions
 
-- __Osmotically inactive sodium storage capacity in trained vs sedentary subjects.__ Most data comes from healthy controls on metabolic wards; athlete-specific storage capacity is less characterized.
-- __Optimal potassium timing for acute natriuresis.__ Mechanistically plausible that a high-K meal accelerates Na excretion within hours, but RCTs testing this within a meal-response window are limited.
-- __Sodium sensitivity variance at the individual level.__ Mente et al. 2016 (PURE study, Lancet) found a U-shaped association between sodium intake and cardiovascular events, complicating blanket reduction advice. Individual response to sodium manipulation varies and is difficult to predict without repeated personal experimentation.
+- __The capacity for osmotically inactive sodium storage in a trained subject against a sedentary one.__ Most of the data comes from healthy controls on a metabolic ward. Athlete-specific storage capacity is less well characterized.
+- __The optimal potassium timing for acute natriuresis.__ It is mechanistically plausible that a high-potassium meal speeds up sodium excretion inside a few hours. Few RCTs test this inside a meal-response window.
+- __How much sodium sensitivity varies between individuals.__ Mente et al. 2016 (the PURE study, Lancet) found a U-shaped association between sodium intake and cardiovascular events, which complicates blanket advice to reduce sodium. Individual response to a change in sodium varies, and you cannot predict it without repeated personal testing.
 
 ## References
 
@@ -99,12 +115,12 @@ __Distribution matters as much as total.__ 4,500 mg spread across three moderate
 4. Aburto NJ, Hanson S, Gutierrez H, Hooper L, Elliott P, Cappuccio FP. __Effect of increased potassium intake on cardiovascular risk factors and disease: systematic review and meta-analyses.__ BMJ, 2013; 346:f1378. DOI: 10.1136/bmj.f1378.
 5. Rakova N, Jüttner K, Dahlmann A, et al. __Long-term space flight simulation reveals infradian rhythmicity in human Na+ balance.__ Cell Metabolism, 2013; 17(1): 125-131. (Key evidence for osmotically inactive sodium storage and multi-day excretion rhythms.)
 6. Titze J, Dahlmann A, Lerchl K, et al. __Spooky sodium balance.__ Current Opinion in Nephrology and Hypertension, 2014. (Review of non-osmotic sodium storage.)
-7. Mente A, O'Donnell M, Rangarajan S, et al. __Associations of urinary sodium excretion with cardiovascular events in individuals with and without hypertension.__ The Lancet, 2016; 388(10043): 465-475. PMID: 27216139. (PURE study on the U-shaped Na-CVD relationship. Note: findings controversial; some researchers argue the U-shape is a statistical artifact. The upper bound is better-supported than the lower bound.)
+7. Mente A, O'Donnell M, Rangarajan S, et al. __Associations of urinary sodium excretion with cardiovascular events in individuals with and without hypertension.__ The Lancet, 2016; 388(10043): 465-475. PMID: 27216139. (The PURE study on the U-shaped sodium and cardiovascular-disease relationship. Note: the findings are controversial. Some researchers argue the U-shape is a statistical artifact. The upper bound has better support than the lower bound.)
 8. Baker LB. __Sweating rate and sweat sodium concentration in athletes: a review of methodology and intra/interindividual variability.__ Sports Medicine, 2017; 47(Suppl 1): 111-128. PMID: 28332116. [PubMed](https://pubmed.ncbi.nlm.nih.gov/28332116/).
 9. Sawka MN, Burke LM, Eichner ER, Maughan RJ, Montain SJ, Stachenfeld NS. __American College of Sports Medicine position stand. Exercise and fluid replacement.__ Medicine and Science in Sports and Exercise, 2007; 39(2): 377-390. PMID: 17277604. [PubMed](https://pubmed.ncbi.nlm.nih.gov/17277604/).
-10. American Heart Association. __How much sodium should I eat per day?__ 2021 dietary guidelines. General-population ceiling of 2,300 mg/day (ideal 1,500 mg) for cardiovascular-disease prevention. (Not calibrated for athletic populations.)
+10. American Heart Association. __How much sodium should I eat per day?__ 2021 dietary guidelines. The general-population ceiling is 2,300 mg per day, with an ideal of 1,500 mg, to prevent cardiovascular disease. (It is not calibrated for an athletic population.)
 
 ## Corrections Log
 
-- __2026-04-18:__ Prior coaching asserted "1 g excess sodium retains 4 g water." Per Heer 2000 and Rakova 2013, this is an oversimplification: sodium can be stored osmotically inactively in skin/cartilage/muscle GAGs, and plasma volume rises without proportional body mass increase. The heuristic is still directionally useful but should not be treated as a precise calculation.
-- __2026-04-19:__ Prior coaching used the AHA general-population 2,300 mg/day ceiling as "the target" for Menotti, and flagged 4,000-5,000 mg training-day intake as "2x target / very high." This was miscalibrated for an athlete with regular sweat losses (750-2,000 mg per sport session per Baker 2017). Athlete-calibrated targets are 2,500-3,500 mg on rest days and 3,500-5,000 mg on sport/training days, with a chronic upper limit of 5,500-6,000 mg/day per Mente 2016 PURE U-shape. Rest of knowledge base rephrased: a single-meal sodium load of 2,000+ mg is still worth flagging for acute scale effects, but chronic multi-day intake in the 3-5 g range is normal and healthy for this profile.
+- __2026-04-18:__ Earlier coaching stated that 1 g of excess sodium retains 4 g of water. Heer 2000 and Rakova 2013 show that this is an oversimplification. The body can store sodium osmotically inactively, bound to glycosaminoglycans in skin, cartilage and muscle. Plasma volume rises without a proportional increase in body mass. The heuristic still points in the right direction. Do not use it as a precise calculation.
+- __2026-04-19:__ Earlier coaching used the AHA general-population ceiling of 2,300 mg per day as Menotti's target. It also described a training-day intake of 4,000 to 5,000 mg as double the target, and as very high. That was miscalibrated for an athlete with regular sweat losses of 750 to 2,000 mg per sport session (Baker 2017). The athlete-calibrated targets are 2,500 to 3,500 mg on a rest day, and 3,500 to 5,000 mg on a sport or training day. The chronic upper limit is 5,500 to 6,000 mg per day, per the Mente 2016 PURE U-shape. The rest of the knowledge base is rephrased accordingly. A single-meal sodium load of 2,000 mg or more is still worth reporting, for its acute scale effect. A chronic multi-day intake of 3 to 5 g is normal and healthy for this athlete.

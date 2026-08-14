@@ -2,157 +2,178 @@
 
 ## Scope
 
-Covers interpretation of male hormone panels for a 40-year-old recreational athlete: total vs free vs bioavailable testosterone, role of SHBG and albumin, age-related trends, causes of elevated SHBG, estradiol physiology, prolactin thresholds, and clinical-decision criteria for hypogonadism diagnosis. Directly applies to Menotti's July 2025 Quest panel (Total T 811 / SHBG 83 / Free T 49.4 / Bioavailable T 110.3 / Estradiol 40 / Prolactin 6.9) which shows __isolated SHBG elevation with free T at the floor of normal range__. Does not cover testosterone replacement therapy (TRT), fertility workup, or HPA-axis testing; those require endocrinology referral.
+This file covers how to interpret a male hormone panel for a 40-year-old recreational athlete. It has seven subjects: total against free against bioavailable testosterone; the role of SHBG and albumin; the age-related trends; the causes of elevated SHBG; estradiol physiology; prolactin thresholds; and the clinical criteria for a hypogonadism diagnosis.
+
+It applies directly to Menotti's July 2025 Quest panel. That panel gave Total T 811, SHBG 83, Free T 49.4, Bioavailable T 110.3, Estradiol 40 and Prolactin 6.9. The panel shows __an isolated SHBG elevation, with free T at the floor of the normal range__.
+
+This file does not cover testosterone replacement therapy, a fertility workup, or HPA-axis testing. Those need a referral to an endocrinologist.
 
 ## Key Findings
 
 | Claim | Evidence tier | Primary source |
 |---|---|---|
-| Hypogonadism diagnosis requires __both__ consistently low morning total T __and__ symptoms; confirm with a repeat morning fasting total T measurement. | Strong | Bhasin et al. 2018, JCEM, PMID 29562364 |
-| When total T is near the lower limit or SHBG is altered, clinicians should obtain __free T__ via equilibrium dialysis or accurate calculation. | Strong | Bhasin et al. 2018 |
-| Harmonized reference range for healthy nonobese men ages 19-39: 2.5th-97.5th percentile = __264-916 ng/dL__ (median 531). | Strong | Travison et al. 2017, JCEM, PMID 28324103 |
-| Testosterone has a diurnal rhythm: peak in early morning, 20-50% decline by evening. Morning sampling (7-10 AM) is standard. | Strong | Bhasin 2018 |
-| Total T declines and SHBG rises with age in men; longitudinal SHBG increase ~2.3-2.5%/year in men >60. | Strong | Harman et al. 2001, PMID 11158037; Liu et al. 2007, PMID 17595245 |
-| EMAS threshold for late-onset hypogonadism: total T <11 nmol/L (~320 ng/dL) __AND__ free T <220 pmol/L (~64 pg/mL) __AND__ ≥3 sexual symptoms. | Strong | Wu et al. 2010, NEJM, PMID 20554979 |
-| Vermeulen 1999 calculated free T (from total T, SHBG, albumin) is the accepted clinical standard; correlates r~0.99 with equilibrium dialysis. | Strong | Vermeulen et al. 1999, JCEM, PMID 10523012 |
-| Direct (analog) free T immunoassays are unreliable. Endocrine Society endorses calculation or equilibrium dialysis only. | Strong | Rosner et al. 2007, PMID 17090633 |
-| Hyperthyroidism elevates SHBG (induced hepatic synthesis). Liver disease, aging, caloric restriction, low-carb diets, and enzyme-inducing anticonvulsants (phenytoin, carbamazepine) also elevate SHBG. | Strong | Isojärvi et al. 1995, PMID 7607115; Selva et al. 2007, J Clin Invest, PMID 17992261 |
-| Obesity and insulin resistance __lower__ SHBG via monosaccharide-induced hepatic lipogenesis downregulating HNF-4α. | Strong | Selva et al. 2007 |
-| Chronic endurance training ("exercise-hypogonadal male condition") is associated with lower basal testosterone and higher SHBG. | Moderate | Hackney 2005, PMID 16268050; Hackney 2020 review |
-| 1 week of sleep restriction to 5 hours/night reduces daytime testosterone by 10-15% in young men. | Moderate | Leproult & Van Cauter 2011, JAMA, PMID 21632481 |
-| Testosterone regulates lean mass and strength; estradiol (from aromatization) regulates fat accumulation and contributes to sexual function in men. Both matter. E2 <20 pg/mL is associated with accelerated bone loss. | Strong | Finkelstein et al. 2013, NEJM, PMID 24024838 |
-| Typical adult-male estradiol reference: ~10-40 pg/mL. Elevated E2 with normal T in a lean athlete is usually physiologic aromatization, not pathologic. | Moderate | Finkelstein 2013; Khosla bone-E2 review |
-| Prolactin normal adult male: typically <15-20 ng/mL. >150-200 ng/mL suggests prolactinoma. Modest elevations (20-100) have broad differential. | Strong | Melmed et al. Endocrine Society prolactin guideline |
-| Low-carbohydrate/ketogenic diets can raise SHBG and may suppress free T in the short term. | Emerging | Whittaker & Harris 2022, J Hum Nutr Diet, PMID 35254136 |
-| Vitamin D supplementation may raise total T in deficient men with low-normal T; effect in replete men is unclear. | Emerging | Pilz et al. 2011, Horm Metab Res, PMID 21154195 |
+| A hypogonadism diagnosis needs __both__ a consistently low morning total T __and__ symptoms. Confirm it with a repeat morning fasting total T measurement. | Strong | Bhasin et al. 2018, JCEM, PMID 29562364 |
+| If total T is near the lower limit, or if SHBG is out of range, the clinician must obtain __free T__. Use equilibrium dialysis, or an accurate calculation. | Strong | Bhasin et al. 2018 |
+| The harmonized reference range for a healthy non-obese man aged 19 to 39 is __264 to 916 ng/dL__, at the 2.5th and 97.5th percentiles. The median is 531. | Strong | Travison et al. 2017, JCEM, PMID 28324103 |
+| Testosterone follows a daily rhythm. It peaks in the early morning and falls 20 to 50% by the evening. Standard sampling is between 7 and 10 AM. | Strong | Bhasin 2018 |
+| In men, total T falls with age and SHBG rises. In men over 60, SHBG rises by approximately 2.3 to 2.5% per year. | Strong | Harman et al. 2001, PMID 11158037; Liu et al. 2007, PMID 17595245 |
+| The EMAS threshold for late-onset hypogonadism has three parts, and all must be present: total T below 11 nmol/L, which is approximately 320 ng/dL; __AND__ free T below 220 pmol/L, which is approximately 64 pg/mL; __AND__ 3 or more sexual symptoms. | Strong | Wu et al. 2010, NEJM, PMID 20554979 |
+| The Vermeulen 1999 calculation for free T, from total T, SHBG and albumin, is the accepted clinical standard. It correlates with equilibrium dialysis at approximately r = 0.99. | Strong | Vermeulen et al. 1999, JCEM, PMID 10523012 |
+| A direct analog free T immunoassay is unreliable. The Endocrine Society endorses only a calculation or equilibrium dialysis. | Strong | Rosner et al. 2007, PMID 17090633 |
+| Hyperthyroidism raises SHBG, because thyroid hormone induces hepatic synthesis. Five other factors also raise SHBG: liver disease, aging, caloric restriction, a low-carbohydrate diet, and enzyme-inducing anticonvulsants such as phenytoin and carbamazepine. | Strong | Isojärvi et al. 1995, PMID 7607115; Selva et al. 2007, J Clin Invest, PMID 17992261 |
+| Obesity and insulin resistance __lower__ SHBG. Monosaccharide-induced hepatic lipogenesis downregulates HNF-4-alpha, which reduces SHBG. | Strong | Selva et al. 2007 |
+| Chronic endurance training is associated with lower basal testosterone and higher SHBG. This is called the exercise-hypogonadal male condition. | Moderate | Hackney 2005, PMID 16268050; Hackney 2020 review |
+| One week of sleep restricted to 5 hours per night reduces daytime testosterone by 10 to 15% in young men. | Moderate | Leproult and Van Cauter 2011, JAMA, PMID 21632481 |
+| Testosterone regulates lean mass and strength. Estradiol, produced by aromatization, regulates fat accumulation and contributes to sexual function in men. Both matter. An estradiol below 20 pg/mL is associated with accelerated bone loss. | Strong | Finkelstein et al. 2013, NEJM, PMID 24024838 |
+| The typical adult-male estradiol reference range is approximately 10 to 40 pg/mL. In a lean athlete with a normal total T, an elevated estradiol is usually physiologic aromatization. It is not usually pathologic. | Moderate | Finkelstein 2013; Khosla bone and estradiol review |
+| Normal prolactin in an adult male is typically below 15 to 20 ng/mL. A value above 150 to 200 ng/mL suggests a prolactinoma. A modest elevation, from 20 to 100, has a broad differential. | Strong | Melmed et al., Endocrine Society prolactin guideline |
+| A low-carbohydrate or ketogenic diet can raise SHBG, and it may suppress free T in the short term. | Emerging | Whittaker and Harris 2022, J Hum Nutr Diet, PMID 35254136 |
+| Vitamin D supplementation may raise total T in a deficient man who has a low-normal T. Its effect in a replete man is unclear. | Emerging | Pilz et al. 2011, Horm Metab Res, PMID 21154195 |
 
 ## Mechanism
 
-### Total vs free vs bioavailable testosterone
+### Total, free and bioavailable testosterone
 
 Circulating testosterone exists in three compartments:
 
-- __SHBG-bound__ (~60-70%): tightly bound, hormonally inactive at conventional timescales
-- __Albumin-bound__ (~30-40%): loosely bound, dissociates readily at the tissue level
-- __Free__ (~1-3%): unbound, immediately bioactive
+- __SHBG-bound__, at approximately 60 to 70%. This fraction is tightly bound and hormonally inactive over conventional timescales.
+- __Albumin-bound__, at approximately 30 to 40%. This fraction is loosely bound and dissociates readily at the tissue.
+- __Free__, at approximately 1 to 3%. This fraction is unbound and immediately bioactive.
 
-__Bioavailable testosterone__ = free + albumin-bound (the fraction that can reach target tissues). SHBG-bound T is generally considered a storage pool.
+__Bioavailable testosterone__ is the free fraction plus the albumin-bound fraction. That is the part which can reach a target tissue. Treat the SHBG-bound testosterone as a storage pool.
 
-When SHBG is elevated, the equilibrium shifts: total T can appear normal because SHBG-bound pools fill up, while free and bioavailable T fall. This is the specific pattern behind the "isolated high SHBG with low-normal free T" presentation. Total T by itself is an incomplete picture when SHBG is out of range.
+When SHBG rises, the equilibrium changes. Total T can look normal, because the SHBG-bound pool fills up. Free T and bioavailable T both fall. That mechanism produces the pattern of an isolated high SHBG with a low-normal free T. Total T on its own is an incomplete picture whenever SHBG is out of range.
 
 ### Calculation methods
 
-[Vermeulen et al. 1999](https://pubmed.ncbi.nlm.nih.gov/10523012/) derived the standard free/bioavailable T calculation from total T, SHBG, and albumin using the law of mass action with published association constants. It correlates r~0.99 with equilibrium dialysis and is the accepted clinical calculation method.
+[Vermeulen et al. 1999](https://pubmed.ncbi.nlm.nih.gov/10523012/) derived the standard calculation for free and bioavailable T, from total T, SHBG and albumin. They used the law of mass action with published association constants. The calculation correlates with equilibrium dialysis at approximately r = 0.99, and it is the accepted clinical method.
 
-Direct "analog" free T immunoassays are [discouraged by the Endocrine Society (Rosner et al. 2007)](https://pubmed.ncbi.nlm.nih.gov/17090633/) because they are SHBG-dependent and imprecise. The older Free Androgen Index (T/SHBG × 100) is unreliable in men and largely abandoned. Quest reports free and bioavailable T derived from this calculation method using the total T, SHBG, and albumin values from the same panel; they are trustworthy.
+The Endocrine Society [discourages the direct analog free T immunoassay (Rosner et al. 2007)](https://pubmed.ncbi.nlm.nih.gov/17090633/), because it depends on SHBG and it is imprecise. The older Free Androgen Index, which is total T divided by SHBG and then multiplied by 100, is unreliable in men, and clinicians have largely abandoned it.
 
-### EMAS thresholds for hypogonadism
+Quest derives its free T and bioavailable T from the Vermeulen calculation, using the total T, SHBG and albumin from the same panel. Those values are trustworthy.
 
-[Wu et al. 2010 (NEJM, European Male Aging Study)](https://pubmed.ncbi.nlm.nih.gov/20554979/) studied 3,369 European men aged 40-79 and defined __late-onset hypogonadism__ as the combination of __three sexual symptoms__ (poor morning erection, low libido, erectile dysfunction) PLUS __total T <11 nmol/L (~320 ng/dL) AND free T <220 pmol/L (~64 pg/mL)__. Below these thresholds, symptom prevalence increased materially. Above them, the symptom-T association is weak.
+### The EMAS thresholds for hypogonadism
 
-This is the most widely cited evidence-based symptomatic-biochemical cutoff in the field. Free T above ~64 pg/mL in the absence of symptoms is unlikely to be clinically meaningful; free T below that plus three symptoms is the working definition of symptomatic late-onset hypogonadism.
+[Wu et al. 2010, the European Male Aging Study in NEJM](https://pubmed.ncbi.nlm.nih.gov/20554979/), studied 3,369 European men aged 40 to 79. They defined __late-onset hypogonadism__ as a combination of three things:
 
-### Age-related SHBG rise
+1. __Three sexual symptoms__: a poor morning erection, low libido, and erectile dysfunction.
+2. __Total T below 11 nmol/L__, which is approximately 320 ng/dL.
+3. __Free T below 220 pmol/L__, which is approximately 64 pg/mL.
 
-SHBG increases with age in men independent of body composition. [Liu et al. 2007](https://pubmed.ncbi.nlm.nih.gov/17595245/) found longitudinal increases of ~2.3-2.5%/year in men over 60. [Harman et al. 2001 Baltimore Longitudinal Study of Aging](https://pubmed.ncbi.nlm.nih.gov/11158037/) showed total T declining and the free T index (T/SHBG) falling faster than total T, with hypogonadal free T rising to ~20% of men over 60, 30% over 70, and 50% over 80.
+Below these thresholds, symptom prevalence increased materially. Above them, the association between symptoms and testosterone is weak.
 
-Mechanism: increased hepatic SHBG gene expression via HNF-4α regulation in the setting of reduced hepatic lipogenesis and insulin signaling with age ([Selva et al. 2007, J Clin Invest](https://pubmed.ncbi.nlm.nih.gov/17992261/)).
+This is the most widely cited evidence-based cutoff in the field, and it combines a symptom criterion with a biochemical one. A free T above approximately 64 pg/mL, with no symptoms, is unlikely to be clinically meaningful. A free T below that, plus three symptoms, is the working definition of symptomatic late-onset hypogonadism.
+
+### The age-related rise in SHBG
+
+SHBG rises with age in men, independent of body composition. [Liu et al. 2007](https://pubmed.ncbi.nlm.nih.gov/17595245/) found longitudinal increases of approximately 2.3 to 2.5% per year in men over 60.
+
+[Harman et al. 2001, the Baltimore Longitudinal Study of Aging](https://pubmed.ncbi.nlm.nih.gov/11158037/), showed total T falling, and the free T index falling faster than total T. The proportion of men with a hypogonadal free T rose to approximately 20% over age 60, 30% over 70, and 50% over 80.
+
+The mechanism is increased hepatic SHBG gene expression, through HNF-4-alpha regulation. It occurs alongside reduced hepatic lipogenesis and reduced insulin signaling with age ([Selva et al. 2007, J Clin Invest](https://pubmed.ncbi.nlm.nih.gov/17992261/)).
 
 ### Causes of elevated SHBG
 
-__Established drivers__:
-- Hyperthyroidism (thyroid hormone strongly induces hepatic SHBG synthesis)
-- Chronic liver disease / cirrhosis (disrupted hepatic regulation)
-- Advancing age
-- Caloric restriction and leanness (paradox: SHBG rises as body composition improves)
-- Hypogonadism itself
-- Growth hormone deficiency
-- Chronic endurance training ([Hackney 2005 "exercise-hypogonadal male condition"](https://pubmed.ncbi.nlm.nih.gov/16268050/))
-- Enzyme-inducing anticonvulsants (phenytoin, carbamazepine, phenobarbital - [Isojärvi 1995](https://pubmed.ncbi.nlm.nih.gov/7607115/))
-- Estrogen exposure (rare in men)
-- HIV, anorexia nervosa
-- Certain SHBG genetic polymorphisms
+__Established drivers:__
 
-__Drivers of low SHBG__ (for contrast): obesity, insulin resistance, type 2 diabetes, NAFLD, hypothyroidism, glucocorticoids, androgen use, high-carbohydrate refeeding.
+- Hyperthyroidism. Thyroid hormone strongly induces hepatic SHBG synthesis.
+- Chronic liver disease or cirrhosis, which disrupts hepatic regulation.
+- Advancing age.
+- Caloric restriction and leanness. This is a paradox: SHBG rises as body composition improves.
+- Hypogonadism itself.
+- Growth hormone deficiency.
+- Chronic endurance training ([Hackney 2005, the exercise-hypogonadal male condition](https://pubmed.ncbi.nlm.nih.gov/16268050/)).
+- Enzyme-inducing anticonvulsants: phenytoin, carbamazepine and phenobarbital ([Isojärvi 1995](https://pubmed.ncbi.nlm.nih.gov/7607115/)).
+- Estrogen exposure, which is rare in men.
+- HIV, and anorexia nervosa.
+- Certain SHBG genetic polymorphisms.
+
+__Drivers of low SHBG, for contrast:__ obesity, insulin resistance, type 2 diabetes, non-alcoholic fatty liver disease, hypothyroidism, glucocorticoids, androgen use, and high-carbohydrate refeeding.
 
 ### Estradiol in men
 
-In men, E2 is produced mostly by peripheral aromatization of testosterone in adipose tissue, bone, brain, and testis. Typical reference range: ~10-40 pg/mL (assay-dependent). [Finkelstein et al. 2013 NEJM](https://pubmed.ncbi.nlm.nih.gov/24024838/) definitively showed that __estradiol, not just testosterone, mediates fat mass regulation and sexual function__ in men. Estradiol is the dominant gonadal steroid regulating male bone turnover; E2 <20 pg/mL is associated with accelerated bone loss.
+In a man, most estradiol comes from peripheral aromatization of testosterone. That occurs in adipose tissue, bone, brain and testis. The typical reference range is approximately 10 to 40 pg/mL, and it depends on the assay.
 
-__Elevated E2 with normal T in a lean athlete is usually not clinically concerning__ absent gynecomastia or symptoms. In obesity, increased aromatase activity in adipose tissue raises E2 while lowering T - a pathologic pattern. Lean men with robust T and high-normal E2 are in a physiologic pattern, not a pathologic one.
+[Finkelstein et al. 2013 in NEJM](https://pubmed.ncbi.nlm.nih.gov/24024838/) showed definitively that __estradiol, not testosterone alone, controls fat mass regulation and sexual function__ in men. Estradiol is also the dominant gonadal steroid that regulates bone turnover in men. An estradiol below 20 pg/mL is associated with accelerated bone loss.
+
+__An elevated estradiol with a normal total T, in a lean athlete, is usually not a clinical concern__, if there is no gynecomastia and there are no symptoms. In obesity the pattern differs and is pathologic: increased aromatase activity in adipose tissue raises estradiol and lowers testosterone. A lean man with a strong total T and a high-normal estradiol is in a physiologic pattern.
 
 ### Prolactin in men
 
-Normal adult male prolactin is typically <15-20 ng/mL. Mild elevations (20-100 ng/mL) have a broad differential: medications (antipsychotics, metoclopramide, opioids, SSRIs), stress / venipuncture effect, hypothyroidism, macroprolactin, chronic kidney disease, chest wall stimulation.
+Normal prolactin in an adult male is typically below 15 to 20 ng/mL.
 
-Prolactin >150-200 ng/mL strongly suggests a prolactinoma. Because prolactinomas in men are usually found as macroadenomas, prolactin levels at diagnosis are often much higher. Pituitary pathology can also produce secondary hypogonadism, so prolactin belongs in any workup of low-normal testosterone.
+A mild elevation, from 20 to 100 ng/mL, has a broad differential: medications such as antipsychotics, metoclopramide, opioids and SSRIs; stress or the effect of the venipuncture itself; hypothyroidism; macroprolactin; chronic kidney disease; and chest wall stimulation.
+
+A prolactin above 150 to 200 ng/mL strongly suggests a prolactinoma. In men, clinicians usually find a prolactinoma as a macroadenoma, so the prolactin level at diagnosis is often much higher than that.
+
+Pituitary pathology can also cause secondary hypogonadism. Prolactin therefore belongs in any workup of a low-normal testosterone.
 
 ## Menotti's Panel Interpreted
 
 | Marker | Result | Reference | Status |
 |---|---|---|---|
-| Total T | 811 ng/dL | 250-1,100 | Upper-normal; above age-40 average (~500-600) |
-| SHBG | __83 nmol/L__ | 10-50 | __Elevated 66% above upper limit__ |
-| Free T | __49.4 pg/mL__ | 46-224 | Low-normal, 3.4 above deficiency floor |
-| Bioavailable T | __110.3 ng/dL__ | 110-575 | Low-normal, 0.3 above floor |
-| Estradiol | 40 pg/mL | ≤39 | Borderline high (1 pt over) |
-| Prolactin | 6.9 ng/mL | 2-18 | Normal |
-| Albumin | 4.9 g/dL | 3.6-5.1 | Normal, upper end |
+| Total T | 811 ng/dL | 250 to 1,100 | Upper-normal. Above the age-40 average of approximately 500 to 600. |
+| SHBG | __83 nmol/L__ | 10 to 50 | __Elevated. It is 66% above the upper limit.__ |
+| Free T | __49.4 pg/mL__ | 46 to 224 | Low-normal. It is 3.4 above the deficiency floor. |
+| Bioavailable T | __110.3 ng/dL__ | 110 to 575 | Low-normal. It is 0.3 above the floor. |
+| Estradiol | 40 pg/mL | 39 or below | Borderline high. It is 1 point over. |
+| Prolactin | 6.9 ng/mL | 2 to 18 | Normal. |
+| Albumin | 4.9 g/dL | 3.6 to 5.1 | Normal, at the upper end. |
 
 ### What this means clinically
 
-__Does NOT meet Endocrine Society hypogonadism criteria.__ Bhasin 2018 requires both consistently low total T __and__ symptoms. Menotti's total T (811) is well above any diagnostic threshold, and symptoms have not been reported.
+__The panel does NOT meet the Endocrine Society criteria for hypogonadism.__ Bhasin 2018 requires both a consistently low total T __and__ symptoms. Menotti's total T of 811 is well above any diagnostic threshold, and he has not reported symptoms.
 
-__Does NOT meet EMAS late-onset hypogonadism criteria either.__ EMAS requires total T <320 AND free T <64 AND ≥3 sexual symptoms. Menotti has free T (49.4) below the EMAS free T cutoff of ~64 but his total T is far above the total T cutoff of ~320. Only one of the two biochemical criteria is met, and symptoms are absent.
+__The panel does NOT meet the EMAS criteria for late-onset hypogonadism either.__ EMAS requires a total T below 320, AND a free T below 64, AND 3 or more sexual symptoms. Menotti's free T of 49.4 is below the EMAS free T cutoff of approximately 64. His total T is far above the total T cutoff of approximately 320. Only one of the two biochemical criteria is met, and the symptoms are absent.
 
-__Does show a real pattern worth understanding.__ The isolated-high-SHBG profile is not random: it has identifiable drivers (thyroid, liver, aging, caloric restriction, endurance volume, medications). Working these up is appropriate before writing the finding off.
+__The panel does show a real pattern worth understanding.__ An isolated high SHBG is not random. It has identifiable drivers: thyroid, liver, aging, caloric restriction, endurance volume and medications. Work those up before you dismiss the finding.
 
-__Estradiol 40 pg/mL__: 1 pg over upper reference. In a lean 40yo man with robust total T and normal physiologic aromatization, this is __expected, not concerning__. No aromatase inhibitor indicated; Finkelstein 2013 shows that suppressing estradiol unhelpfully compromises bone density and sexual function.
+__Estradiol at 40 pg/mL__ is 1 pg above the upper reference. In a lean 40-year-old man with a strong total T and normal physiologic aromatization, this is __expected, not concerning__. Do not use an aromatase inhibitor. Finkelstein 2013 shows that suppressing estradiol unnecessarily damages bone density and sexual function.
 
-__Prolactin 6.9 ng/mL__: reassuring. Rules out pituitary driver.
+__Prolactin at 6.9 ng/mL__ is reassuring. It rules out a pituitary driver.
 
 ## Practical Application
 
-1. __No TRT indicated__ per current guidelines. Bhasin 2018 explicitly requires consistently low total T and symptoms; Menotti meets neither.
+1. __No TRT is indicated__ under the current guidelines. Bhasin 2018 requires a consistently low total T and symptoms. Menotti meets neither condition.
 
-2. __Work up the elevated SHBG at the next physician visit__:
-   - __TSH + free T4__: hyperthyroidism is the most common silent driver of isolated high SHBG. High priority.
-   - __AST + ALT + bilirubin__: liver makes SHBG; abnormal liver function would explain the elevation.
-   - __Fasting glucose + HbA1c__ (or fasting insulin): paradoxically, high SHBG can reflect good insulin sensitivity. Worth documenting.
-   - __Review medications__: confirm nothing in the stack is enzyme-inducing (anticonvulsants, some hormones).
+2. __Work up the elevated SHBG at the next physician visit.__ Request these tests:
+   - __TSH and free T4.__ Hyperthyroidism is the most common silent driver of an isolated high SHBG. Give this the highest priority.
+   - __AST, ALT and bilirubin.__ The liver produces SHBG, so abnormal liver function would explain the elevation.
+   - __Fasting glucose and HbA1c__, or fasting insulin. A high SHBG can paradoxically reflect good insulin sensitivity. Document it.
+   - __A medication review.__ Confirm that nothing in his stack is enzyme-inducing, such as an anticonvulsant or certain hormones.
 
-3. __Confirm with a repeat panel in 3-6 months__, same collection protocol (7-10 AM, fasted, pre-exercise, not within 2-3 weeks of a Power Red donation). Ideally the repeat panel includes Total T + SHBG + Free T + Estradiol + Prolactin so the full picture is captured longitudinally.
+3. __Confirm the result with a repeat panel in 3 to 6 months__, under the same collection protocol. That protocol is 7 to 10 AM, fasted, before exercise, and not inside 2 to 3 weeks of a Power Red donation. The repeat panel must include Total T, SHBG, Free T, Estradiol and Prolactin, so the picture stays comparable over time.
 
-4. __Assess symptoms honestly__. EMAS sexual triad: poor morning erection, low libido, erectile dysfunction. Also: unexplained fatigue, mood changes, poor recovery despite adequate training, difficulty building muscle despite appropriate training and protein. If any of these are subtly present, the low-normal free T becomes more clinically meaningful.
+4. __Assess the symptoms honestly.__ The EMAS sexual triad is a poor morning erection, low libido, and erectile dysfunction. Also check for unexplained fatigue, mood changes, poor recovery despite adequate training, and difficulty building muscle despite appropriate training and protein. If any of these are subtly present, the low-normal free T becomes more clinically meaningful.
 
-5. __Lifestyle levers likely relevant to Menotti's presentation__:
-   - __Training volume and pattern__: if endurance volume is high (hockey cardio, basketball minutes), adequate deload weeks and strength-work emphasis may help normalize SHBG ([Hackney 2005](https://pubmed.ncbi.nlm.nih.gov/16268050/)). His current 3x/week lifting + 3x/week sport is moderate, not extreme.
-   - __Adequate energy availability__: chronic relative caloric deficit elevates SHBG. The formalized moderate-deficit goals (Mon/Thu/Sat at 2,300-2,500 cal, Option B) are intentionally gentle for this reason.
-   - __Sleep ≥7 hours__: [Leproult 2011](https://pubmed.ncbi.nlm.nih.gov/21632481/) showed 5h nights drop daytime T 10-15% in a week. Current logged 7.5-9h target is well-calibrated.
-   - __Adequate dietary carbohydrate__: ketogenic/very-low-carb diets elevate SHBG ([Whittaker 2022](https://pubmed.ncbi.nlm.nih.gov/35254136/)). Current pattern is mixed/moderate carb, not keto, so this isn't a driver.
-   - __Vitamin D and zinc status__: replete vs deficient matters. Confirm with next lab draw.
-   - __Alcohol__: moderate use; Parr 2014 acute post-exercise data is captured in `knowledge/recovery-sleep.md`.
+5. __Lifestyle levers likely relevant to this presentation:__
+   - __Training volume and pattern.__ If the endurance volume is high, from hockey conditioning and basketball minutes, then adequate deload weeks plus an emphasis on strength work may help normalize SHBG ([Hackney 2005](https://pubmed.ncbi.nlm.nih.gov/16268050/)). His current load is 3 lifting sessions and 3 sport sessions per week, which is moderate, not extreme.
+   - __Adequate energy availability.__ A chronic relative caloric deficit raises SHBG. The formalized moderate-deficit goals, at 2,300 to 2,500 calories on Monday, Thursday and Saturday under Option B, are deliberately gentle for this reason.
+   - __Sleep of 7 hours or more.__ [Leproult 2011](https://pubmed.ncbi.nlm.nih.gov/21632481/) showed that 5-hour nights drop daytime testosterone by 10 to 15% inside a week. The current logged target of 7.5 to 9 hours is well calibrated.
+   - __Adequate dietary carbohydrate.__ A ketogenic or very-low-carbohydrate diet raises SHBG ([Whittaker 2022](https://pubmed.ncbi.nlm.nih.gov/35254136/)). His current pattern is mixed and moderate in carbohydrate, not ketogenic, so this is not a driver.
+   - __Vitamin D and zinc status.__ Whether he is replete or deficient matters. Confirm both at the next lab draw.
+   - __Alcohol.__ His use is moderate. `knowledge/recovery-sleep.md` holds the acute post-exercise data from Parr 2014.
 
-6. __Retest protocol__: morning 7-10 AM, fasted, before training/exercise, not within 2-3 weeks of a Power Red donation (transient suppression). Full panel with Free T + SHBG + Estradiol + Prolactin so the comparison is apples-to-apples.
+6. __The retest protocol.__ Draw between 7 and 10 AM, fasted, before training or exercise, and not inside 2 to 3 weeks of a Power Red donation, which causes a temporary suppression. Order the full panel, with Free T, SHBG, Estradiol and Prolactin, so the comparison is direct.
 
-7. __When to escalate to endocrinology referral__:
-   - If repeat testing confirms persistent low free T AND any EMAS symptoms appear
-   - If TSH / free T4 is abnormal (thyroid workup)
-   - If liver enzymes are abnormal
-   - If total T falls below ~350 ng/dL on repeat
-   - If prolactin rises above 20 ng/mL
-   - If gonadotropins (LH/FSH) drawn as second-tier testing are low (secondary hypogonadism) or very high (primary testicular failure)
+7. __When to refer to endocrinology.__ Refer if any of these occur:
+   - A repeat test confirms a persistently low free T AND any EMAS symptom appears.
+   - TSH or free T4 is abnormal, which needs a thyroid workup.
+   - The liver enzymes are abnormal.
+   - Total T falls below approximately 350 ng/dL on the repeat test.
+   - Prolactin rises above 20 ng/mL.
+   - Second-tier testing of the gonadotropins, LH and FSH, returns low values, which indicate secondary hypogonadism, or very high values, which indicate primary testicular failure.
 
-Otherwise, retest at 3-6 months to establish a trend before any intervention.
+   Otherwise, retest at 3 to 6 months to establish a trend before any intervention.
 
-8. __Do not chase estradiol down with aromatase inhibitors__. Finkelstein 2013 definitively showed this harms bone density and sexual function. E2 40 pg/mL is physiologic in a lean man with robust T; no pharmacologic target.
+8. __Do not reduce estradiol with an aromatase inhibitor.__ Finkelstein 2013 showed definitively that this harms bone density and sexual function. An estradiol of 40 pg/mL is physiologic in a lean man with a strong total T. There is no pharmacologic target here.
 
 ## Unresolved or Bleeding-Edge Questions
 
-- __No proven pharmacologic intervention for isolated high SHBG__ outside of treating the underlying cause (e.g., hyperthyroidism). The "normal total T, low-normal free T, high SHBG, asymptomatic middle-aged athlete" pattern has no specific treatment guideline.
-- __Clinical significance of low-normal free T with normal total T in asymptomatic men is contested.__ EMAS cutoffs were derived in symptomatic older men; extrapolation to 40-year-old asymptomatic athletes is uncertain.
-- __Lifestyle-modifiable SHBG responses are individual.__ Quantitative effects of training periodization, carbohydrate intake, and body composition shifts on SHBG vary. N-of-1 self-experiments with retesting are the pragmatic approach.
-- __Emerging assays__: Standardized equilibrium dialysis reference ranges for free T are newer (Jasuja et al. 2023, Andrology) and may refine EMAS thresholds derived from older assays. LC-MS/MS adoption is uneven across labs, complicating longitudinal comparison.
+- __No proven drug treats an isolated high SHBG__, apart from treating the underlying cause, such as hyperthyroidism. There is no specific treatment guideline for the pattern of a normal total T, a low-normal free T, a high SHBG, and an asymptomatic middle-aged athlete.
+- __The clinical significance of a low-normal free T with a normal total T, in an asymptomatic man, is contested.__ Researchers derived the EMAS cutoffs in symptomatic older men. Extrapolation to an asymptomatic 40-year-old athlete is uncertain.
+- __SHBG responses to lifestyle change are individual.__ The quantitative effects of training periodization, of carbohydrate intake, and of a change in body composition all vary. The pragmatic approach is an n-of-1 self-experiment with a retest.
+- __New assays may change the thresholds.__ Standardized equilibrium dialysis reference ranges for free T are newer (Jasuja et al. 2023, Andrology). They may refine the EMAS thresholds, which came from older assays. Laboratories adopt LC-MS/MS unevenly, which complicates a longitudinal comparison.
 
 ## References
 
@@ -174,4 +195,4 @@ Otherwise, retest at 3-6 months to establish a trend before any intervention.
 
 ## Corrections Log
 
-- __2026-04-21:__ File initialized in response to Menotti's July 2025 Quest hormone panel (Total T 811, SHBG 83 [elevated], Free T 49.4 [at floor], Bioavailable T 110.3 [at floor], E2 40 [borderline], Prolactin 6.9 [normal]). Correction to earlier coaching: prior characterization of his T status as "robust" based on total T alone was incomplete. __The actual picture is isolated elevated SHBG with free/bioavailable T at the bottom of normal range.__ Does not meet Endocrine Society or EMAS hypogonadism criteria absent symptoms, but warrants workup to identify the SHBG driver (thyroid, liver, metabolic). Apologized for the incomplete framing; added follow-up lab recommendations to `athlete.clinicalWorkupAsks.recommendedFollowUpFromJuly2025Panel` in data.json.
+- __2026-04-21:__ This file was created after Menotti's July 2025 Quest hormone panel. That panel gave Total T 811, SHBG 83 which is elevated, Free T 49.4 which sits at the floor, Bioavailable T 110.3 which also sits at the floor, Estradiol 40 which is borderline, and Prolactin 6.9 which is normal. It corrects earlier coaching. That coaching described his testosterone status as robust, based on total T alone, and that description was incomplete. __The actual picture is an isolated elevated SHBG, with free and bioavailable T at the bottom of the normal range.__ Without symptoms, the panel does not meet either the Endocrine Society or the EMAS criteria for hypogonadism. It does justify a workup to identify the SHBG driver, across thyroid, liver and metabolic causes. The follow-up lab recommendations were added to `athlete.clinicalWorkupAsks.recommendedFollowUpFromJuly2025Panel` in data.json.

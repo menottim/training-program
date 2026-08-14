@@ -764,7 +764,10 @@
     color: var(--text-muted);
     line-height: 1.45;
     margin-top: 4px;
+    /* longDesc carries real paragraph breaks so it can follow the one-topic-per-paragraph rule */
+    white-space: pre-line;
   }
+  .today-card-details p { white-space: pre-line; }
   .modified-day.type-hotel { background: #fff8e1; }
   .modified-day.type-hotel .md-type { background: var(--warning); color: #fff; }
   .modified-day.type-gym-deload { background: #e8f5e9; }

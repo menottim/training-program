@@ -8,6 +8,8 @@ __The game slate varies by season - confirm it, do not assume it.__ The standard
 
 __Build weeks for TWO gym days, not three__ (set at the Wk 23 review, 2026-08-10). Weeks 18-23 delivered 1, 0, 0, 3, 2 and 0 lift days against roughly three planned each, an average of one. Authoring three sessions a week produced volume audits that failed every week for a reason the plan itself created. Everything load-bearing now has to fit in two: barbell lower plus plyometrics on one day, upper plus core plus loaded gastroc work on the other. A third session is a bonus, never the baseline. Two known costs, stated rather than hidden: shoulders sit below Section 3's 6-10 set floor on a two-day week, and squat frequency drops to 1x.
 
+__The effort model changed 2026-08-14: cap the sets, hold the load, calibrate with one reps-plus set per session.__ Weekly working sets came down from 42 to 34, compounds run at 2-3 RIR rather than up to RPE 9, one lift per session ends on a "5+" set, and true failure is confined to cables, core and the calf HSR. The reasoning and the citations are in Section 1 (Effort model) and `knowledge/proximity-to-failure.md`. The short form: strength is largely indifferent to how close a set gets to failure, volume's returns diminish fastest for strength, and the reps-plus set exists to catch RIR drift rather than to add stimulus.
+
 __There is no PT involved as of 2026-08-10.__ The relationship ended, so anything this repo describes as a "PT item" or "PT daily block" in weeks 21-22 is historical. Calf loading, including the seated calf raise the PT had at bodyweight, is now a coaching call. Do not defer load decisions to a clinician who is not in the picture, and do not carry forward the daily bodyweight block: it was replaced with Beyer-compliant 3x/week loaded HSR at the Wk 23 review. Re-escalate to a clinician if symptoms change materially or DVT signs appear (see `athlete.clinicalWorkupAsks`).
 
 Live site: https://menottim.github.io/training-program/
@@ -28,7 +30,7 @@ Additional rules that apply throughout:
 
 - __Cite what you recommend.__ Every load change, volume adjustment, nutrition tweak, or recovery intervention needs a named source: author, year, journal, and ideally PubMed ID or DOI.
 - __Label the evidence tier__ (Strong / Moderate / Emerging) per the definitions below.
-- __The baseline references__ in this document and in `knowledge/` (Schoenfeld, Beyer, Silbernagel, Magnusson, Suchomel, Morton, Vitale, Rhea, Markovic, Impellizzeri, Lexell, Baker, Pritchard, Hausswirth and Mujika, Aragon and Schoenfeld, Ebben, Heer, Fernández-Elías, Almond, Aburto, Antonio, Areta, Mamerow, Moore, Jäger, Rakova, Titze) are verified; pull in additional peer-reviewed work as needed following the same verification process.
+- __The baseline references__ in this document and in `knowledge/` (Schoenfeld, Beyer, Silbernagel, Magnusson, Suchomel, Morton, Vitale, Rhea, Markovic, Impellizzeri, Lexell, Baker, Pritchard, Hausswirth and Mujika, Aragon and Schoenfeld, Ebben, Heer, Fernández-Elías, Almond, Aburto, Antonio, Areta, Mamerow, Moore, Jäger, Rakova, Titze, Robinson, Pelland, Refalo, Grgic, Halperin, Pareja-Blanco, Fragala) are verified; pull in additional peer-reviewed work as needed following the same verification process.
 - __Correct prior claims when new evidence surfaces.__ Add a Corrections Log entry to the affected `knowledge/` file rather than silently revising. The record of what was believed when matters.
 - __Tier the evidence explicitly.__ Label recommendations with one of:
   - __Strong__: multiple RCTs or meta-analyses, plus textbook consensus (NSCA, ACSM, Cochrane).
@@ -358,13 +360,37 @@ When all prescribed reps are completed with good form across 2 consecutive sessi
 __RPE targets by phase:__
 - Phase 1 (Foundation): RPE 6-7 on compounds, building movement quality, not grinding. Leave 3-4 reps in reserve.
 - Phase 2 (Strength-Power): RPE 7-8 on compounds, working sets should feel challenging but controlled. 2-3 reps in reserve.
-- Phase 3 (Power Realization): RPE 7-9 on primary lifts, RPE 6-7 on accessories, peak performance window, manage fatigue carefully.
+- Phase 3 (Power Realization): RPE 7-8 (2-3 RIR) on primary lifts, RPE 6-7 on accessories, peak performance window, manage fatigue carefully. __The old RPE 9 ceiling was removed 2026-08-14__: it is not supported for strength outcomes and it carries a measurable 24-hour cost. See the effort model below.
+
+__Effort model: load stays high, proximity to failure stays moderate (set 2026-08-14).__ Full evidence review in `knowledge/proximity-to-failure.md`. These are two different variables and the program treats them differently:
+
+- __Compound barbell lifts run at 2-3 RIR as the standing prescription.__ Strength gains are similar across a wide range of repetitions in reserve, with every best-fit model showing a null slope for RIR, while only hypertrophy improves as sets approach failure (Robinson et al. 2024, Sports Med, PMID 38970765). Failure versus non-failure showed no strength difference (ES -0.09), and in studies that did not equate volume, non-failure actually favored strength (ES -0.32, CI excluding zero) (Grgic et al. 2022, PMID 33497853). There is no strength argument for grinding trap bar deadlifts or squats to failure.
+- __Weekly sets are capped rather than maximized.__ Volume raises both strength and size, but the diminishing returns are considerably more pronounced for strength, and frequency (which the two-day calendar has already capped) is the variable that would help more (Pelland et al. 2026, Sports Med, PMID 41343037). See Section 3 for the two-day-week set targets.
+- __One reps-plus set per session, on one lift, on the day farther from the game.__ The final set of that lift runs as "5+": hit the prescribed five, then continue until a rep visibly slows or form changes. Hard cap at 10. This is a set to the last clean rep, not to mechanical failure. Its job is calibration, not stimulus: lifters underpredict reps to failure by about one rep on average (Halperin et al. 2022, PMID 34542869), so RIR-prescribed loads drift easy and a two-day week has no second session that week to correct a bad guess.
+- __Never two reps-plus sets on the same day__, and never on both main lifts of a lower-body day. Failure on set one produces enough repetition loss to make the later sets worse (Refalo et al. 2024, PMID 38393985).
+- __Game proximity governs placement.__ Lifting velocity is still down about 3% at 24 h after failure or 1-RIR work and recovered by 48 h (Refalo et al. 2023, Sports Med Open, PMID 36752989). With games on Sunday, lower-body reps-plus work belongs on the earlier lifting day. An upper-body reps-plus set on the later day is fine because it does not tax the legs.
+- __Isolation, cable and machine work goes to genuine failure.__ Woodchops, Pallof presses, pulldowns and leg extensions carry little systemic fatigue and no barbell-under-load risk. This is where hard effort is cheap, and two sets to failure replace three at 2 RIR.
+- __Power work never approaches failure.__ Box jumps and any plyometric or jump exposure stay far from failure by definition. The NSCA position statement on older adults is explicit that reps for power development should not reach concentric failure (Fragala et al. 2019, PMID 31343601), and stopping squat sets at 20% velocity loss rather than 40% produced a 9.5% countermovement jump gain versus 3.5% at equal 1RM gain (Pareja-Blanco et al. 2017, PMID 27038416). Set termination on the squat is a vertical-jump variable, not only a fatigue variable.
+- __Calf HSR is the exception and runs at a true rep max.__ Beyer's protocol prescribes XRM loads, so a prescribed 6RM means the sixth rep is the last one available at full tempo. If every rep feels easy the load is wrong (Morrison and Cook 2022, PMC9124646). Add load, never reps.
+
+__Progression off a reps-plus set__ (replaces double progression on whichever lift carries the calibration set that session):
+
+| Reps achieved on the 5+ set | Next prescription |
+|---|---|
+| Under 5 | Hold the load and check recovery; the load is above the prescription |
+| 5-6 | Hold the load |
+| 7-8 | +5 lbs upper, +10 lbs lower |
+| 9-10 | The load was too light: +10 lbs upper, +20 lbs lower |
+
+Treat any estimated 1RM derived from the rep count as a trend line across weeks, not a true max. Rep-max prediction degrades above roughly 10 reps, which is the other reason for the 10-rep cap.
 
 __When progression stalls (same weight for 3+ sessions):__
 1. First: check recovery factors (sleep, nutrition, game load that week)
 2. Second: try microloading, fractional plates or 2.5 lb increases if available
 3. Third: add one set at the current weight before increasing load (volume before intensity)
 4. Last resort: reset 10% and build back up over 2-3 weeks
+
+__On lifts carrying the reps-plus set, read the stall off the rep count first.__ If the 5+ set produces the same rep total for three sessions at the same load, that is the stall, and the ladder above applies. If the rep total is climbing (5, then 6, then 7) the lift is progressing even though the prescribed load has not moved, and adding a set is the wrong response.
 
 __Returning from a layoff (travel gap or injury):__ see `knowledge/detraining-and-return.md` for the evidence review and the full restart-load bands. Key points:
 
@@ -415,6 +441,21 @@ __Weekly set targets (in-season athlete, per muscle group):__
 - __Chest/back/shoulders:__ 6-10 hard sets/week. Less interference from sport.
 - __Core:__ 4-6 direct sets/week. Games provide substantial indirect core work.
 - __Calves (Achilles HSR):__ 3-4 sets/session, 3x/week, progressive loading per Section 4.
+
+__Two-gym-day set targets (set 2026-08-14, supersedes the per-muscle numbers above when the week has two lifting days).__ On two days a week, strength is volume-capped by the calendar and adding sets pays progressively less: Pelland et al. 2026 (PMID 41343037) found volume's diminishing returns considerably more pronounced for strength than for hypertrophy, and frequency, the variable that helps strength more, is already fixed at what the calendar allows. So cap the sets and spend the freed capacity on load and on the tendon work. Target roughly __4-6 hard sets per week per main pattern__:
+
+| Pattern | Sets/week | Notes |
+|---|---|---|
+| Hinge (TB DL + SL RDL) | 5 | 3 TB DL + 2 single-leg RDL |
+| Squat | 3 | 1x/week frequency is the accepted cost of a two-day week |
+| Horizontal push (bench + close grip) | 6 | One of these carries the reps-plus set |
+| Vertical push (DB OHP) | 3 | Below the 6-10 floor above, accepted |
+| Horizontal pull (row) | 3 | |
+| Vertical pull (pulldown) | 2 | Both sets to failure; cable work is cheap |
+| Core (woodchop + Pallof) | 6 | Last set of each to failure |
+| Loaded calf HSR | 6 | 3 seated soleus + 3 standing gastroc, true rep max |
+
+That totals 34 working sets a week, down from the 42 the three-day structure carried. Two costs are stated rather than hidden: shoulders and vertical pull sit below the 6-10 set floor above, and squat frequency stays at 1x. The trade is deliberate, and the effort model in Section 1 is what makes the lower count defensible.
 
 Hypertrophy research suggests 10-20 sets/muscle/week (Schoenfeld 2017), but in-season athletes should target the lower end and count sport exposure qualitatively. Goal is maintenance and modest strength gain, not maximizing volume. For a lifter at 135-lb bench starting weight, in-season __gain__ rather than maintenance is realistic (Baker 2001 showed younger/weaker cohort gained bench 1RM across 29-week season).
 
@@ -510,6 +551,8 @@ __Vertical jump-specific evidence:__
 - Plyometric training produces ~4-8% vertical jump improvement over 6-12 weeks in trained athletes (Markovic 2007 meta-analysis).
 - Combined strength + plyometric training is superior to either alone ("complex training", Ebben 2002). The program is structured this way: heavy strength Wed/Thu + plyo Fri.
 - For a 220 lb athlete, relative strength (strength-to-bodyweight ratio) is the primary limiter of vertical jump. Reducing body fat while maintaining muscle will improve jump height even without plyometrics.
+
+__Barbell set termination is also a jump variable.__ Pareja-Blanco et al. 2017 (PMID 27038416) trained two groups on the squat at identical loads and stopped sets at either 20% or 40% velocity loss, where 40% means most sets end at or near failure. Squat 1RM gains were the same, but countermovement jump improved 9.5% in the 20% group versus 3.5% in the 40% group, with 40% fewer total reps, and the 20% group preserved myosin heavy chain IIx percentage while the 40% group lost it. Grinding the squat costs jump height at no strength benefit. Keep squats at 2-3 RIR per the Section 1 effort model, and never place a reps-plus set on a day where jump quality matters.
 
 __When to pull back on plyos:__
 - Achilles pain >3/10 during plyometric exercises → stop, substitute with concentric-only power work (e.g., sled push, kettlebell swings)

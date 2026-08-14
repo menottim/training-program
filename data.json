@@ -2915,56 +2915,56 @@
           "day": "Fri",
           "date": "2026-08-14",
           "type": "training",
-          "desc": "Upper at bench 170, core returns",
-          "longDesc": "Upper day, and the one that clears three standing volume holes. Bench takes 170 off the clean 4x5 at 165 on 8/6, which was the first time that prescription landed in three attempts. Row holds 135, the load taken unprescribed on 8/6 for 10, 8 and 5; four sets of five is the same load in cleaner chunks, and a clean 4x5 opens 145. Pulldown returns to 3x8 at 145, the prescription 8/6 ran light against and 7/30 skipped entirely. Overhead press switches to dumbbells rather than fighting it: the seated barbell version has been prescribed twice and substituted twice, and DBs achieve the same thing the seated barbell was chosen for, which is no leg drive and no plantarflexion load, so 4x6 at the 35s is a real step off 8/6's 3x5 and 7/1's 3x6. Shoulders still land at 4 sets against Section 3's 6-10 floor, which is a known and accepted gap on a two-gym-day week. Core finally runs, ending a stretch at zero direct sets since 7/23. Then the loaded single-leg calf work, which covers the gastroc after Thursday's soleus dose and puts the week at two loaded calf sessions.",
+          "desc": "Upper at bench 170, first 5+ set",
+          "longDesc": "REVISED 8/14. This is the first session under the new effort model, which cuts total weekly sets from 42 to 34 and puts one calibration set per session in place of a fourth straight set. See knowledge/proximity-to-failure.md for the full evidence review. The short version: strength gains are similar across a wide range of repetitions in reserve, while only hypertrophy improves as sets approach failure (Robinson 2024 PMID 38970765), and volume's diminishing returns are considerably more pronounced for strength than for size (Pelland 2026 PMID 41343037). So the fourth set of a strength lift buys very little, and grinding sets to failure buys nothing the goals here care about. What DOES need fixing is that RIR targets drift easy: lifters underpredict reps to failure by about one rep on average (Halperin 2022 PMID 34542869), and on a two-day week there is no second session to correct a bad load guess. One reps-plus set per session catches that drift and turns the next load decision into arithmetic. THIS SESSION: bench takes 170 off the clean 4x5 at 165 on 8/6, and set 3 runs as 5+, meaning five reps then keep going until a rep visibly slows or form changes, hard cap at 10. Everything else drops to three sets at 2-3 RIR. The 5+ set sits on an upper-body lift specifically because failure work still costs about 3 percent of lifting velocity at 24 h and is recovered by 48 h (Refalo 2023 PMID 36752989), and Sunday's game is roughly 40 h out, so the legs stay clean. Cables and core go to genuine failure because they are cheap. Pulldown drops to two sets for the same reason: taken to failure, two sets do what three did at 2 RIR. Shoulders land at 3 sets, below Section 3's floor, which is the accepted cost of a two-gym-day week. Then the loaded single-leg calf work, which now runs at a true 6RM rather than a comfortable six, since Beyer's protocol is a rep-max prescription and the block's central failure was calf work that never felt heavy (Morrison and Cook 2022 PMC9124646).",
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4x5",
+              "sets": "3x5, set 3 = 5+",
               "weight": "170 lbs",
-              "notes": "Earned step. 165 went clean 4x5 on 8/6 after breaking down on 7/29. Full ROM, bar to the chest, no bounce."
+              "notes": "THE CALIBRATION SET OF THE WEEK. Sets 1 and 2 are straight fives at 2-3 RIR. Set 3 is 5+: hit five, then keep going until a rep visibly slows or the bar path changes, hard cap at 10 reps. This is not a set to failure, it is a set to the last clean rep. Full ROM, bar to the chest, no bounce. LOAD RULE OFF THE RESULT: 5-6 reps hold 170 next week, 7-8 reps go to 175, 9 or more means 170 was too light and jump to 180, under 5 reps hold and re-check recovery."
             },
             {
               "name": "Close Grip Bench Press",
-              "sets": "4x5",
+              "sets": "3x5",
               "weight": "95 lbs",
-              "notes": "Holds 95. Dropped on 8/6 in the shift off Wednesday, which left chest at 4 hard sets. Brings pressing back to 8 working sets."
+              "notes": "Holds 95 at 2-3 RIR. Three sets rather than four, since the bench 5+ set already covers the hard-effort end of pressing."
             },
             {
               "name": "Bent Over Barbell Row",
-              "sets": "4x5",
+              "sets": "3x5",
               "weight": "135 lbs",
-              "notes": "Holds the 135 taken unprescribed on 8/6, where 10, 8, 5 showed the third set at the edge. Same load in cleaner chunks. A clean 4x5 opens 145. Inverted grip is fine, it is what 8/6 and 6/18 both used."
+              "notes": "Holds the 135 taken unprescribed on 8/6, where 10, 8 and 5 showed the third set at the edge. Three clean sets of five at 2-3 RIR opens 145. Inverted grip is fine, it is what 8/6 and 6/18 both used."
             },
             {
               "name": "Lat Pulldown",
-              "sets": "3x8",
+              "sets": "2x8",
               "weight": "145 lbs",
-              "notes": "Back to the real prescription. 8/6 ran 130/130/130/145 for fives against this, and 7/30 skipped it. 7/8 held 145 for 8 twice, so this is a hold, not a step. Full ROM, bar to the upper chest, control the eccentric."
+              "notes": "Two sets, both taken to genuine failure. Machine and cable work carries no systemic fatigue cost and no barbell risk, so this is where hard effort is cheap. 7/8 held 145 for 8 twice at submaximal effort, so failure at 145 should exceed 8 reps; log the actual reps."
             },
             {
               "name": "Strict Overhead Press (dumbbell)",
-              "sets": "4x6",
+              "sets": "3x6",
               "weight": "35 lb DBs",
-              "notes": "Dumbbells by choice now rather than by substitution, since they deliver what the seated barbell version was chosen for: no leg drive, no plantarflexion. 4x6 steps off 8/6's 3x5 and 7/1's 3x6. Strict, no knee dip."
+              "notes": "Dumbbells by choice now rather than by substitution, since they deliver what the seated barbell version was chosen for: no leg drive, no plantarflexion. Three sets at 2-3 RIR. Strict, no knee dip."
             },
             {
               "name": "Cable Woodchop (Low-to-High)",
               "sets": "3x10/side",
               "weight": "30 lbs",
-              "notes": "Core, and the first direct core work since 7/23. Rotate through the trunk, not the arms, hips driving."
+              "notes": "Core, and the first direct core work since 7/23. Take the last set to failure, extra reps are free here. Rotate through the trunk, not the arms, hips driving."
             },
             {
               "name": "Pallof Press",
               "sets": "3x10/side",
               "weight": "30 lbs",
-              "notes": "Second core movement, which puts direct core at 6 sets and clears the 4-6 set floor. Anti-rotation: resist the pull rather than moving through it."
+              "notes": "Second core movement, which puts direct core at 6 sets and clears the 4-6 set floor. Last set to failure. Anti-rotation: resist the pull rather than moving through it."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg",
               "weight": "BW + 25 lb/leg",
-              "notes": "Covers the gastroc after Thursday's soleus dose, and puts the week at two loaded calf sessions against Beyer's 3x/week (PMID 26018970), which is the ceiling a two-gym-day week allows. Hold BW plus 25; 7/31 went clean and a second clean session opens BW plus 35. Floor range only, no heel drop off a step. 3 s up, 3 s down."
+              "notes": "Run this as a TRUE 6RM. THE ONE PLACE NEAR-FAILURE IS THE PROTOCOL. Beyer prescribes HSR by repetition maximum, so a 6RM means the sixth rep is the last one available at full tempo (PMID 26018970), and Morrison and Cook 2022 (PMC9124646) are explicit that if every rep feels easy the tendon is not getting the signal. If BW plus 25 gives an easy six, that load is wrong; go to BW plus 35 rather than adding reps. Floor range only, no heel drop off a step. 3 s up, 3 s down."
             },
             {
               "name": "Isometric Standing Calf Hold (bilateral)",

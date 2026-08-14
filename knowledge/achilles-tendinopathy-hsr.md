@@ -2,85 +2,102 @@
 
 ## Scope
 
-Covers evidence-based loading protocols (Heavy Slow Resistance, eccentric heel drops, isometrics), pain monitoring during rehab, return-to-sport criteria, adaptation timelines, and adjunct interventions (collagen + vitamin C, ESWT, PRP, GTN patches). Calibrated for a 40-year-old recreational athlete with bilateral midportion Achilles tendinopathy who plays basketball and hockey and wants to continue training through rehab. Does not cover complete tendon rupture, insertional tendinopathy in isolation (evidence is weaker there, different considerations), or clinical ultrasound interpretation.
+This file covers five topics. First, the evidence-based loading protocols: Heavy Slow Resistance, eccentric heel drops, and isometrics. Second, pain monitoring during rehab. Third, return-to-sport criteria. Fourth, adaptation timelines. Fifth, the adjunct interventions: collagen with vitamin C, ESWT, PRP, and GTN patches.
+
+The file is calibrated for a 40-year-old recreational athlete with bilateral midportion Achilles tendinopathy. He plays basketball and hockey, and he wants to continue training through the rehab.
+
+This file does not cover a complete tendon rupture. It does not cover insertional tendinopathy on its own, where the evidence is weaker and the considerations differ. It does not cover clinical ultrasound interpretation.
 
 ## Key Findings
 
 | Claim | Evidence tier | Primary source |
 |---|---|---|
-| HSR and eccentric training produce equivalent clinical outcomes at 12 and 52 weeks for midportion Achilles tendinopathy. HSR has higher patient satisfaction and compliance (92% vs 78%). | Strong (RCT) | Beyer et al. 2015, Am J Sports Med |
-| Beyer HSR protocol is a progressive 12-week program: 15RM (wk 1), 12RM (wk 2-3), 10RM (wk 4-5), 8RM (wk 6-8), 6RM (wk 9-12), 3 sets, 3x/week, 6-second tempo (3s concentric, 3s eccentric). It is __not__ a constant 6RM protocol throughout. | Strong | Beyer et al. 2015 |
-| Continuing sport participation during rehab, governed by a pain-monitoring model, does not worsen outcomes versus active rest. | Strong (RCT) | Silbernagel et al. 2007, Am J Sports Med |
-| Tendon structural and mechanical adaptation lags symptom improvement by months. Expect 12+ weeks minimum; full remission often 3-6 months. | Strong (physiology review) | Kjaer et al. 2009; Magnusson and Kjaer 2019 |
-| Eccentric-only loading is not clearly superior to HSR or combined loading protocols. Clinical outcomes track neuromuscular performance improvement, not a specific contraction type. | Strong (systematic review) | Malliaras et al. 2013, Sports Medicine |
-| Isometric holds (~70% MVIC x 45s x 5) produce immediate analgesia in patellar tendinopathy lasting up to 45 min post-exercise. Generalization to Achilles is not robustly established. | Moderate for patellar; Weak for Achilles generalization | Rio et al. 2015, Br J Sports Med; Rio et al. 2017 |
-| Many published HSR protocols underload relative to true heavy training because slow tempo drops working weight below 70% 1RM by later reps. | Moderate (expert commentary) | Morrison and Cook 2022, Sports Medicine |
-| Vitamin-C-enriched gelatin (15g + ~50mg vit C) 30-60 min pre-loading doubled serum PINP (collagen synthesis marker) in a mechanistic lab study. | Emerging (mechanistic, no clinical endpoint yet) | Shaw et al. 2017, Am J Clin Nutr |
-| Specific collagen peptides (5g TENDOFORTE) + calf strengthening improved VISA-A faster than exercise alone in Achilles tendinopathy over 6 months, using __daily dosing__ (not specifically pre-exercise). | Emerging (small pilot, n=20) | Praet et al. 2019, Nutrients |
-| Daily 15g hydrolyzed collagen peptides over 12+ weeks drives measurable Achilles tendon adaptation alongside resistance training. | Moderate | Jerger et al. 2022, Scand J Med Sci Sports; Aussieker et al. 2024 systematic review |
-| PRP injection provides __no benefit__ over saline when added to eccentric loading for chronic Achilles tendinopathy. | Strong (RCT + meta-analyses) | de Vos et al. 2010, JAMA |
-| Extracorporeal shockwave therapy (ESWT) has moderate evidence of benefit for midportion Achilles tendinopathy when combined with loading. Ineffective for insertional. | Moderate (systematic review) | Paantjens et al. 2022, Sports Med Open |
-| Topical glyceryl trinitrate (GTN) patches: early positive data (Paoloni 2004) not replicated; recent meta-analyses show small or non-significant effect plus meaningful headache side effect. | Weak/Mixed | Paoloni et al. 2004; Challoumas et al. 2019 |
+| HSR and eccentric training give equivalent clinical outcomes at 12 weeks and at 52 weeks for midportion Achilles tendinopathy. HSR gives higher patient satisfaction and higher compliance, at 92% against 78%. | Strong (RCT) | Beyer et al. 2015, Am J Sports Med |
+| The Beyer HSR protocol runs for 12 weeks and progresses the load: 15RM in week 1; 12RM in weeks 2 and 3; 10RM in weeks 4 and 5; 8RM in weeks 6 to 8; and 6RM in weeks 9 to 12. It uses 3 sets, 3 times per week, at a 6-second tempo of 3 seconds concentric and 3 seconds eccentric. It is __not__ a constant 6RM protocol. | Strong | Beyer et al. 2015 |
+| Continued sport during rehab does not worsen the outcome, compared with active rest, when a pain-monitoring model controls the participation. | Strong (RCT) | Silbernagel et al. 2007, Am J Sports Med |
+| Tendon structural and mechanical adaptation follows symptom improvement by months. Expect 12 weeks as a minimum. Full remission often needs 3 to 6 months. | Strong (physiology review) | Kjaer et al. 2009; Magnusson and Kjaer 2019 |
+| Eccentric-only loading is not clearly better than HSR or than a combined loading protocol. Clinical outcomes follow the improvement in neuromuscular performance. They do not follow a specific contraction type. | Strong (systematic review) | Malliaras et al. 2013, Sports Medicine |
+| Isometric holds give immediate pain relief in patellar tendinopathy, and the relief lasts up to 45 minutes after the exercise. The protocol is approximately 70% MVIC, 5 holds of 45 seconds. No one has firmly established the same effect in the Achilles. | Moderate for patellar; Weak for the transfer to Achilles | Rio et al. 2015, Br J Sports Med; Rio et al. 2017 |
+| Many published HSR protocols underload the tendon, against true heavy training. The slow tempo drops the working weight below 70% of 1RM by the later reps. | Moderate (expert commentary) | Morrison and Cook 2022, Sports Medicine |
+| Gelatin with added vitamin C doubled serum PINP, a collagen synthesis marker, in a mechanistic laboratory study. The dose was 15 g gelatin plus approximately 50 mg vitamin C, taken 30 to 60 minutes before loading. | Emerging (mechanistic, with no clinical endpoint yet) | Shaw et al. 2017, Am J Clin Nutr |
+| Specific collagen peptides plus calf strengthening improved VISA-A faster than exercise alone in Achilles tendinopathy, over 6 months. The dose was 5 g TENDOFORTE, taken __daily__ rather than before exercise. | Emerging (small pilot, n=20) | Praet et al. 2019, Nutrients |
+| A daily dose of 15 g hydrolyzed collagen peptides over 12 weeks or more produces measurable Achilles tendon adaptation, alongside resistance training. | Moderate | Jerger et al. 2022, Scand J Med Sci Sports; Aussieker et al. 2024 systematic review |
+| A PRP injection gives __no benefit__ over saline, when either one is added to eccentric loading for chronic Achilles tendinopathy. | Strong (RCT and meta-analyses) | de Vos et al. 2010, JAMA |
+| Extracorporeal shockwave therapy has moderate evidence of benefit for midportion Achilles tendinopathy, when it is combined with loading. It is not effective for insertional tendinopathy. | Moderate (systematic review) | Paantjens et al. 2022, Sports Med Open |
+| Topical glyceryl trinitrate patches had early positive data (Paoloni 2004). No one replicated it. Recent meta-analyses show a small or non-significant effect, plus a meaningful rate of headaches. | Weak and mixed | Paoloni et al. 2004; Challoumas et al. 2019 |
 
 ## Mechanism (what the controlled data actually shows)
 
-### Tendinopathy is a failed-healing response, not classic inflammation
+### Tendinopathy is a failed-healing response. It is not classic inflammation
 
-Cook and Purdam's continuum model describes Achilles tendinopathy as a failed adaptation: a tendon whose extracellular matrix becomes disorganized with increased proteoglycans and water, fragmented type I collagen, and areas of thickening and neovascularization. The historical term "tendinitis" is a misnomer because classical inflammatory markers are largely absent. Clinically, it presents as localized morning stiffness, pain with loading, focal tenderness 2-6 cm proximal to the calcaneal insertion (midportion) or at the insertion itself (insertional), and often a palpable or ultrasound-visible fusiform thickening.
+The Cook and Purdam continuum model describes Achilles tendinopathy as a failed adaptation. The extracellular matrix of the tendon becomes disorganized. Proteoglycans and water increase. Type I collagen fragments. Areas of the tendon thicken, and new blood vessels grow into it.
 
-### Mechanotransduction drives remodeling, and it takes months
+The historical term "tendinitis" is incorrect, because the classical inflammatory markers are largely absent.
 
-Tenocytes sense mechanical strain (not just force) and respond by upregulating IGF-1, TGF-β, IL-6, and procollagen expression. Kjaer, Magnusson and colleagues (Kjaer et al. 2009, Scand J Med Sci Sports 19(4):500-10; Magnusson and Kjaer 2019, J Physiol 597(5):1283-98) established that the collagen-synthesis response is driven by strain magnitude rather than contraction type: concentric, eccentric, and isometric contractions produce broadly similar signaling provided strain is sufficient.
+The clinical presentation has four features. There is localized morning stiffness. There is pain under load. There is focal tenderness, either 2 to 6 cm above the calcaneal insertion in the midportion type, or at the insertion itself in the insertional type. There is often a fusiform thickening, which you can feel or see on ultrasound.
 
-The adaptation timeline matters. Contractile tissue may change within weeks, but gross tendon mechanical and morphological changes take months of sustained loading. This is why 12-week rehab trials consistently show symptom improvement before any clear structural change on imaging, and why rehab programs should run __12 weeks minimum__ with full resolution often at 3-6 months. Do not judge a protocol effective or not at 4-6 weeks.
+### Mechanotransduction drives the remodeling, and it takes months
 
-### Why HSR works as well as eccentrics with less volume
+Tenocytes sense mechanical strain, not force alone. They respond by increasing the expression of IGF-1, TGF-beta, IL-6 and procollagen. Kjaer, Magnusson and colleagues established that strain magnitude drives the collagen-synthesis response, not the contraction type (Kjaer et al. 2009, Scand J Med Sci Sports 19(4):500-10; Magnusson and Kjaer 2019, J Physiol 597(5):1283-98). Concentric, eccentric and isometric contractions produce broadly similar signaling, if the strain is sufficient.
 
-Beyer et al. (2015, Am J Sports Med 43(7):1704-11) randomized 58 patients with chronic midportion Achilles tendinopathy to either Alfredson-style eccentric training (180 daily heel drops, 7 days/week) or heavy slow resistance (3 sets, 3x/week, progressive 15RM to 6RM over 12 weeks, 6-second tempo). Both produced equivalent improvements in VISA-A, visual analog pain scale, tendon swelling, and neovascularization at 12 and 52 weeks. HSR had __92% session-compliance vs 78% for eccentrics__, and tended toward higher 12-week patient satisfaction.
+The adaptation timeline matters. Contractile tissue can change inside a few weeks. Gross tendon mechanics and morphology need months of sustained loading. This is why 12-week rehab trials consistently show symptom improvement before any clear structural change on imaging. It is also why a rehab program must run for __at least 12 weeks__, with full resolution often at 3 to 6 months. Do not judge a protocol at 4 to 6 weeks.
 
-The mechanistic interpretation: HSR delivers sustained high-strain, slow-tempo loading with concentric + eccentric + near-isometric phases under load, which is physiologically sufficient to drive tenocyte mechanotransduction at substantially less weekly volume. Malliaras et al. (2013, Sports Med 43(4):267-86) systematically reviewed 32 studies and concluded that eccentric-only loading is not obviously superior to combined or HSR protocols; the mechanism most consistently associated with good outcomes is improved neuromuscular performance rather than a specific contraction type.
+### Why HSR works as well as eccentrics, at less volume
 
-Important nuance from Morrison and Cook (2022, Sports Med 52(6):1219-22): many "HSR" protocols as described in the literature may underload because the 3-second eccentric phase drops working weight below 70% 1RM by later reps. If all reps feel easy, the protocol is probably underloaded and tenocyte adaptation signaling is suboptimal. True heavy is required.
+Beyer et al. (2015, Am J Sports Med 43(7):1704-11) randomized 58 patients with chronic midportion Achilles tendinopathy into two groups. One group did Alfredson-style eccentric training, which is 180 heel drops per day, 7 days per week. The other group did heavy slow resistance, which is 3 sets, 3 times per week, at a 6-second tempo, progressing from 15RM to 6RM over 12 weeks.
+
+Both groups improved equally on four measures at 12 weeks and at 52 weeks: VISA-A, the visual analog pain scale, tendon swelling, and neovascularization. HSR had __92% session compliance against 78% for the eccentric group__. HSR also trended toward higher patient satisfaction at 12 weeks.
+
+The mechanistic explanation is this. HSR delivers sustained high strain at a slow tempo. Each rep loads the tendon through a concentric phase, an eccentric phase, and a near-isometric phase. That is physiologically sufficient to drive tenocyte mechanotransduction, at much less weekly volume. Malliaras et al. (2013, Sports Med 43(4):267-86) reviewed 32 studies and concluded that eccentric-only loading is not clearly better than a combined protocol or an HSR protocol. The factor most consistently linked to a good outcome is improved neuromuscular performance, not a specific contraction type.
+
+Morrison and Cook (2022, Sports Med 52(6):1219-22) add an important caveat. Many published HSR protocols may underload the tendon, because the 3-second eccentric phase drops the working weight below 70% of 1RM by the later reps. If all reps feel easy, the protocol is probably underloaded, and the tenocyte signal is below optimal. The load must be genuinely heavy.
 
 ### Pain during loading is not damage
 
-Silbernagel et al. (2007, Am J Sports Med 35(6):897-906) randomized 38 patients with Achilles tendinopathy to continued sport participation governed by a pain-monitoring model versus relative rest. Continued participation produced equivalent outcomes. The pain-monitoring principles:
+Silbernagel et al. (2007, Am J Sports Med 35(6):897-906) randomized 38 patients with Achilles tendinopathy into two groups. One group continued sport under a pain-monitoring model. The other group took relative rest. The outcomes were equivalent. The pain-monitoring principles are:
 
-- __Pain during loading up to about 5/10__ is acceptable if it returns to baseline by the next morning.
-- __Morning stiffness__ should not progressively increase week over week.
-- __24-hour return-to-baseline__: pain elevated the day after exercise implies load was too high. Reduce 10-15% next session.
+- __Pain during loading up to approximately 5 out of 10 is acceptable__, if it returns to baseline by the next morning.
+- __Morning stiffness must not increase__ from week to week.
+- __Pain must return to baseline inside 24 hours.__ Pain that is still elevated the next day means the load was too high. Reduce it by 10 to 15% in the next session.
 
-The specific numeric thresholds (0-3 safe, 4-5 caution, >5 stop) commonly cited in clinical practice are operationalized in secondary literature (Martin et al. 2018 JOSPT Clinical Practice Guidelines; Silbernagel et al. 2020 current clinical concepts) rather than verbatim in Silbernagel 2007. Treat the exact cutoffs as consensus refinement of the 2007 principles. The 24-hour rule and the "continue sport with pain monitoring" framework are Silbernagel's primary contribution.
+Clinical practice commonly cites three numeric bands: 0 to 3 is safe, 4 to 5 is caution, and above 5 means stop. Secondary literature defined those bands (Martin et al. 2018 JOSPT Clinical Practice Guidelines; Silbernagel et al. 2020 current clinical concepts). Silbernagel 2007 does not state them. Treat the exact cutoffs as a consensus refinement of the 2007 principles. Silbernagel's primary contribution is the 24-hour rule, plus the framework that continues sport under pain monitoring.
 
-Rio et al. (2015, Br J Sports Med 49(19):1277-83) demonstrated central nervous system changes in chronic tendinopathy including reduced cortical inhibition, which helps explain two things: first, pain can persist even after tendon structure improves; second, isometric contractions may produce immediate analgesia via central mechanisms. Note that Rio's isometric analgesia data is patellar-specific and Achilles replication has been mixed.
+Rio et al. (2015, Br J Sports Med 49(19):1277-83) showed central nervous system changes in chronic tendinopathy, including reduced cortical inhibition. This explains two observations. First, pain can continue after the tendon structure improves. Second, an isometric contraction may give immediate pain relief through a central mechanism. Note that Rio's analgesia data is specific to the patellar tendon. Replication in the Achilles has been mixed.
 
 ## Practical Application
 
-1. __Adopt HSR as the primary loading intervention.__ 3 sessions/week, 3 sets per session, 6-second tempo (3s concentric, 3s eccentric). Load progression over 12 weeks: 15RM (wk 1), 12RM (wk 2-3), 10RM (wk 4-5), 8RM (wk 6-8), 6RM (wk 9-12). Use both straight-knee (gastroc bias) and bent-knee (soleus bias) calf raise variants. If every rep feels easy, the load is not heavy enough per Morrison and Cook 2022.
+1. __Use HSR as the primary loading intervention.__ Prescribe 3 sessions per week, 3 sets per session, at a 6-second tempo of 3 seconds concentric and 3 seconds eccentric. Progress the load over 12 weeks: 15RM in week 1; 12RM in weeks 2 and 3; 10RM in weeks 4 and 5; 8RM in weeks 6 to 8; and 6RM in weeks 9 to 12. Use both calf raise variants. The straight-knee raise loads the gastrocnemius more, and the bent-knee raise loads the soleus more. If every rep feels easy, the load is too light, per Morrison and Cook 2022.
 
-2. __Continue sport using the Silbernagel pain-monitoring model.__ Pain during loading up to ~5/10 is acceptable. Pain must return to baseline within 24 hours. Morning stiffness must not progressively worsen across weeks. Bilateral presentation in a 40-year-old athlete is common and does not disqualify continued sport participation - it does flag the need for consistent HSR compliance.
+2. __Continue sport under the Silbernagel pain-monitoring model.__ Pain during loading up to approximately 5 out of 10 is acceptable. The pain must return to baseline inside 24 hours. Morning stiffness must not get worse across the weeks. A bilateral presentation is common in a 40-year-old athlete. It does not stop him from continuing sport. It does mean he must comply with the HSR consistently.
 
-3. __Plan for 12+ weeks minimum.__ Magnusson and Kjaer data consistently show tendon structural adaptation lags symptom resolution by months. Expect the program to run 3-6 months to full remission. Do not abandon the protocol at 4-6 weeks if progress is slow; symptom improvement often precedes imaging change.
+3. __Plan for at least 12 weeks.__ The Magnusson and Kjaer data consistently show that tendon structural adaptation follows symptom resolution by months. Expect the program to run 3 to 6 months to full remission. Do not stop the protocol at 4 to 6 weeks because progress looks slow. Symptoms usually improve before the imaging changes.
 
-4. __Consider isometric holds pre-activity as an experiment.__ 5 x 45s at ~70% MVIC (heavy seated calf raise hold) before a game or training session. Evidence is strongest for patellar tendinopathy (Rio 2015, Rio 2017); Achilles-specific replication is mixed. Cheap and safe to trial, but do not assume reliable analgesic effect.
+4. __Try isometric holds before activity as an experiment.__ Prescribe 5 holds of 45 seconds at approximately 70% MVIC, using a heavy seated calf raise hold, before a game or a training session. The evidence is strongest for patellar tendinopathy (Rio 2015; Rio 2017). Replication in the Achilles is mixed. The trial is cheap and safe. Do not assume a reliable analgesic effect.
 
-5. __Adjuncts worth trialing (Emerging evidence, low cost, low risk):__
-   - __Collagen peptides or gelatin + vitamin C.__ 15g gelatin or 10-15g hydrolyzed collagen peptides (5g if using GELITA TENDOFORTE/FORTIGEL) + ~50mg vit C. __Timing__: Shaw 2017 mechanism study used 30-60 min pre-loading, but Praet 2019 and Jerger 2022 clinical trials used daily dosing (not specifically pre-exercise) and achieved clinical outcomes. Both approaches are defensible; adherence > timing for a slow-adapting tissue. Daily morning or bedtime dosing is recommended for consistency. Product guide and timing detail: `knowledge/supplements.md`.
-   - __ESWT__ if HSR plateaus at 12 weeks for midportion presentations (not insertional). Paantjens 2022 supports benefit when combined with continued loading.
+5. __Adjuncts worth a trial. The evidence tier is Emerging, and the cost and risk are both low:__
+   - __Collagen peptides, or gelatin, with vitamin C.__ Give 15 g gelatin, or 10 to 15 g hydrolyzed collagen peptides. Use 5 g if the product is GELITA TENDOFORTE or FORTIGEL. Add approximately 50 mg vitamin C. __On timing:__ the Shaw 2017 mechanism study used a dose 30 to 60 minutes before loading. The Praet 2019 and Jerger 2022 clinical trials used a daily dose, not a pre-exercise dose, and they still produced clinical outcomes. Both approaches are defensible. For a slow-adapting tissue, adherence matters more than timing. Take the dose daily, in the morning or at bedtime, for consistency. `knowledge/supplements.md` holds the product guide and the timing detail.
+   - __ESWT__, if HSR reaches a plateau at 12 weeks. Use it for a midportion presentation, not for an insertional one. Paantjens 2022 supports the benefit when the athlete continues to load the tendon.
 
 6. __Adjuncts to avoid:__
-   - __PRP injection.__ de Vos 2010 JAMA RCT and multiple meta-analyses show no benefit over saline when added to eccentric loading. Expensive, not supported.
-   - __GTN patches.__ Early enthusiasm not replicated; small or non-significant effect in recent meta-analyses, with headache in ~20% of users.
+   - __A PRP injection.__ The de Vos 2010 JAMA RCT and several later meta-analyses show no benefit over saline, when either is added to eccentric loading. It is expensive and unsupported.
+   - __GTN patches.__ No one replicated the early positive results. Recent meta-analyses show a small or non-significant effect, and approximately 20% of users get headaches.
 
-7. __Red flags requiring clinical referral:__ sudden sharp pain with audible pop (rule out rupture); palpable gap in tendon; positive Thompson test; pain that worsens at rest or at night without loading (suggests non-tendinopathic pathology); failure to improve VISA-A by 3 months of adherent HSR; recent (within 6 months) fluoroquinolone antibiotic exposure (increases rupture risk); systemic symptoms or bilateral presentation in a younger patient suggesting seronegative arthropathy.
+7. __Red flags. Refer the athlete to a clinician for any of these:__
+   - Sudden sharp pain with an audible pop. Rule out a rupture.
+   - A gap in the tendon that you can feel.
+   - A positive Thompson test.
+   - Pain that gets worse at rest or at night, with no loading. This suggests a different pathology.
+   - No improvement in VISA-A after 3 months of consistent HSR.
+   - Fluoroquinolone antibiotic use inside the last 6 months. This increases the rupture risk.
+   - Systemic symptoms, or a bilateral presentation in a younger patient. Either can suggest a seronegative arthropathy.
 
 ## Unresolved or Bleeding-Edge Questions
 
-- __Collagen peptides + vitamin C for clinical endpoints.__ Mechanistic data (Shaw 2017) and pilot clinical data (Praet 2019) are consistent but small. No well-powered RCT with VISA-A as primary outcome has replicated Praet. Worth trialing; not yet proven.
-- __Isometric analgesia generalization to Achilles.__ Rio's strong findings are patellar-specific. Achilles replication has been mixed. Effect may exist but size and reliability are uncertain.
-- __Is "heavy" in HSR actually heavy enough?__ Morrison and Cook 2022 argues most published HSR protocols underload because the slow tempo drops working load below 70% 1RM by later reps. This may explain non-responders. Alternate protocols using cluster sets or lower reps with explicit load verification may be superior.
-- __Insertional vs midportion tendinopathy response to loading.__ Most HSR evidence is for midportion. Insertional responds less reliably to any loading protocol and may benefit from dorsiflexion-limited loading (heel-elevated position) to avoid compressive loading of the insertion.
-- __Return-to-sport criteria.__ Published guidelines (Silbernagel and Crossley 2015, Habets 2018) suggest pain <2/10 in daily life, symmetric heel-rise endurance, and hop tolerance, but no validated composite score exists.
+- __Collagen peptides with vitamin C, measured against clinical endpoints.__ The mechanistic data (Shaw 2017) and the pilot clinical data (Praet 2019) agree with each other, but both studies are small. No well-powered RCT with VISA-A as the primary outcome has replicated Praet. The supplement is worth a trial. It is not proven.
+- __Whether isometric analgesia transfers to the Achilles.__ Rio's strong findings are specific to the patellar tendon. Replication in the Achilles has been mixed. The effect may exist. Its size and its reliability are both uncertain.
+- __Whether "heavy" in HSR is actually heavy enough.__ Morrison and Cook 2022 argue that most published HSR protocols underload the tendon, because the slow tempo drops the working load below 70% of 1RM by the later reps. This may explain the non-responders. An alternate protocol may be better, using cluster sets, or fewer reps with the load verified directly.
+- __How insertional tendinopathy responds to loading, against midportion tendinopathy.__ Most HSR evidence covers the midportion type. The insertional type responds less reliably to any loading protocol. It may respond better to loading with the dorsiflexion limited, in a heel-elevated position, which avoids compression at the insertion.
+- __Return-to-sport criteria.__ Published guidelines suggest three criteria: pain below 2 out of 10 in daily life, symmetric heel-rise endurance, and hop tolerance (Silbernagel and Crossley 2015; Habets 2018). No validated composite score exists.
 
 ## References
 
@@ -104,8 +121,8 @@ Rio et al. (2015, Br J Sports Med 49(19):1277-83) demonstrated central nervous s
 
 ## Corrections Log
 
-- __2026-04-18:__ File initialized. Corrections to prior claims in `../CLAUDE.md`:
-  - __Beyer 2015 protocol__: CLAUDE.md Section 4 described "3x6 at 6RM with 3-sec concentric / 3-sec eccentric." This is __only the final phase__ (weeks 9-12). The actual protocol is progressive: 15RM → 12RM → 10RM → 8RM → 6RM over 12 weeks. Update CLAUDE.md to reflect progressive loading.
-  - __Silbernagel 2007 numeric thresholds__: The specific "0-3 safe, 4-5 caution, >5 stop" cutoffs are consensus refinements in secondary literature (JOSPT 2018 clinical practice guidelines; Silbernagel et al. 2020 clinical concepts), not verbatim in the 2007 primary paper. The 24-hour return-to-baseline rule and the principle of continued sport with pain monitoring are accurately attributed to Silbernagel 2007.
-  - __PRP status__: CLAUDE.md did not address this directly. Per de Vos 2010 JAMA RCT and subsequent meta-analyses, PRP should be classified as __not recommended__ for Achilles tendinopathy, not emerging.
-  - __"Heavy" in HSR may not be heavy enough__: Morrison and Cook 2022 caveat is new. Verify working weight stays above 70% 1RM throughout the set despite slow tempo, or the protocol underloads.
+- __2026-04-18:__ This file was created. It corrects four claims in `../CLAUDE.md`:
+  - __The Beyer 2015 protocol.__ CLAUDE.md Section 4 described it as "3x6 at 6RM with 3-sec concentric / 3-sec eccentric". That describes __the final phase only__, which is weeks 9 to 12. The real protocol progresses the load: 15RM, then 12RM, then 10RM, then 8RM, then 6RM, over 12 weeks. Update CLAUDE.md to show the progressive load.
+  - __The Silbernagel 2007 numeric thresholds.__ The bands of 0 to 3 safe, 4 to 5 caution, and above 5 stop are consensus refinements from secondary literature. The sources are the JOSPT 2018 clinical practice guidelines and Silbernagel et al. 2020. The 2007 primary paper does not state them. Two things are correctly attributed to Silbernagel 2007: the 24-hour return-to-baseline rule, and the principle of continued sport under pain monitoring.
+  - __The status of PRP.__ CLAUDE.md did not address this. The de Vos 2010 JAMA RCT and the later meta-analyses put PRP in the __not recommended__ category for Achilles tendinopathy. It is not an emerging treatment.
+  - __"Heavy" in HSR may not be heavy enough.__ The Morrison and Cook 2022 caveat is new. Check that the working weight stays above 70% of 1RM through the whole set, despite the slow tempo. If it does not, the protocol underloads the tendon.

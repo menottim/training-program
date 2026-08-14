@@ -2,120 +2,168 @@
 
 ## Scope
 
-Covers the acute medial gastrocnemius strain ("tennis leg"): anatomy and mechanism, the can't-miss differential diagnoses that present identically, evidence-based acute management (PEACE & LOVE, the NSAID question), a phased criteria-based rehabilitation progression, return-to-sport criteria and timelines, and recurrence risk. Calibrated for a 40-year-old in-season recreational athlete (6'2", ~220 lbs) with bilateral midportion Achilles tendinopathy who plays basketball and hockey. Does NOT cover definitive clinical diagnosis or imaging interpretation (those belong to an in-person clinician), Achilles tendon rupture management, or surgical decision-making.
+This file covers the acute medial gastrocnemius strain, which is also called "tennis leg". It has six subjects: the anatomy and the mechanism; the can't-miss differential diagnoses that look identical; evidence-based acute management, meaning PEACE and LOVE and the NSAID question; a phased criteria-based rehabilitation progression; the return-to-sport criteria and timelines; and the recurrence risk.
 
-__Origin:__ Written 2026-06-23 after an acute left-calf injury during Sun 6/21 AM basketball: a minor right-calf "pull" played through, then minutes later sudden severe left-calf pain ("like being shot with a lacrosse ball"), with difficulty bearing weight since. This is the textbook tennis-leg presentation. The inability to weight-bear is why the differential-diagnosis section leads.
+The file is calibrated for a 40-year-old in-season recreational athlete. He is 6 ft 2 in and approximately 220 lb. He has bilateral midportion Achilles tendinopathy. He plays basketball and hockey.
 
-## Differential Diagnosis FIRST (the can't-miss step)
+This file does NOT give a definitive clinical diagnosis, and it does not interpret imaging. Those tasks belong to a clinician who examines the athlete in person. The file also does not cover Achilles tendon rupture management or surgical decisions.
 
-A calf that suddenly feels "struck/shot/kicked," with difficulty bearing weight, is NOT automatically a muscle strain. Three of the differentials are dangerous to miss. __An in-person clinical exam is required before any programming.__ This file is a coach's knowledge base, not a substitute for that exam.
+__Origin.__ This file was written on 2026-06-23, after an acute left-calf injury during Sunday AM basketball on 6/21. The athlete first felt a minor "pull" in the right calf and continued to play. Minutes later he felt sudden severe pain in the left calf, which he described as "like being shot with a lacrosse ball". He has had difficulty bearing weight since then. This is the textbook tennis-leg presentation. He could not bear weight, and that is why the differential-diagnosis section comes first.
 
-| Diagnosis | Why it mimics a calf strain | How it is ruled out | Evidence |
+## Differential Diagnosis FIRST (the step you must not skip)
+
+A calf can suddenly feel struck, shot or kicked, and the athlete can have difficulty bearing weight. That combination is NOT automatically a muscle strain. Three of the differential diagnoses are dangerous to miss. __A clinician must examine the athlete in person before you program anything.__ This file is a coach's knowledge base. It does not replace that examination.
+
+| Diagnosis | Why it looks like a calf strain | How to rule it out | Evidence |
 |---|---|---|---|
-| __Achilles tendon rupture__ (the critical miss) | Rupture patients describe being "hit in the calf," can often still WALK, can weakly plantarflex (long toe flexors, tib post, peronei still cross to the foot), and may have NO palpable gap, all falsely reassuring. | Thompson/Simmonds calf-squeeze test (squeeze calf → foot should plantarflex; no movement = rupture). Combine ≥2 tests. Imaging can falsely reassure acutely; the clinical test governs. A radiological "partial tear" is treated as complete until proven otherwise. | Boyd 2015 (Strong); Maffulli 1998 calf-squeeze sensitivity 0.96 (Strong) |
-| __Deep vein thrombosis (DVT)__ | A calf strain can coexist with, mimic, or mask a clot. Present in ~10% of clinically diagnosed tennis-leg cases. | Wells pretest-probability score + Doppler ultrasound. Red flags: disproportionate unilateral swelling, warmth, redness, calf tenderness, calf >3 cm larger than the other side. | Delgado 2002 (DVT in 9.9%, Strong); Wells 1997 (Strong) |
-| __Acute compartment syndrome__ (surgical emergency) | Severe calf pain + swelling. | Pain OUT OF PROPORTION to exam, tense/firm compartment, pain on passive stretch, paresthesia. These are EARLY; pulselessness/pallor/paralysis are LATE. Emergent fasciotomy if intracompartmental pressure high. Higher suspicion if anticoagulated. | Pechar & Lyons 2016 (Strong for ICP threshold/fasciotomy) |
-| __Ruptured Baker's (popliteal) cyst__ | Synovial fluid leaks into the calf → "pseudothrombophlebitis," mimics DVT. | Ultrasound/MRI; "crescent sign" (ecchymosis below medial malleolus). Not mutually exclusive with DVT. | Moderate (case-series/review level) |
-| __Isolated plantaris rupture__ | Acute posterior calf pain, same mechanism. | Imaging; benign, but DVT still must be excluded. Only ~1.4% of tennis-leg. | Spina 2007 (Moderate); Delgado 2002 |
+| __Achilles tendon rupture__, the critical miss | A rupture patient describes a hit to the calf. He can often still WALK. He can plantarflex weakly, because the long toe flexors, the tibialis posterior and the peronei still cross to the foot. He may have NO gap that you can feel. All three signs falsely reassure the examiner. | Use the Thompson or Simmonds calf-squeeze test. Squeeze the calf. The foot must plantarflex. No movement means a rupture. Combine 2 or more tests. Imaging can falsely reassure in the acute phase, so the clinical test governs. Treat a radiological "partial tear" as complete until proven otherwise. | Boyd 2015 (Strong); Maffulli 1998, calf-squeeze sensitivity 0.96 (Strong) |
+| __Deep vein thrombosis (DVT)__ | A calf strain can occur with a clot, look like a clot, or hide a clot. A clot is present in approximately 10% of clinically diagnosed tennis-leg cases. | Use the Wells pretest-probability score, plus a Doppler ultrasound. Red flags: unilateral swelling out of proportion, warmth, redness, calf tenderness, and a calf more than 3 cm larger than the other side. | Delgado 2002, DVT in 9.9% (Strong); Wells 1997 (Strong) |
+| __Acute compartment syndrome__, a surgical emergency | Severe calf pain with swelling. | Look for pain OUT OF PROPORTION to the examination, a tense or firm compartment, pain on passive stretch, and paresthesia. Those signs are EARLY. Absent pulses, pallor and paralysis are LATE. The treatment is emergency fasciotomy if the intracompartmental pressure is high. Raise your suspicion if the patient takes an anticoagulant. | Pechar and Lyons 2016 (Strong for the ICP threshold and fasciotomy) |
+| __Ruptured Baker's (popliteal) cyst__ | Synovial fluid leaks into the calf. This causes pseudothrombophlebitis, which looks like a DVT. | Use ultrasound or MRI. Look for the crescent sign, which is ecchymosis below the medial malleolus. A ruptured cyst and a DVT can both be present. | Moderate (case series and review level) |
+| __Isolated plantaris rupture__ | Acute posterior calf pain, from the same mechanism. | Use imaging. The condition is benign, but you must still exclude a DVT. It accounts for only approximately 1.4% of tennis-leg cases. | Spina 2007 (Moderate); Delgado 2002 |
 
-__Red flags warranting urgent in-person evaluation / imaging:__ inability to bear weight or push off (→ exclude Achilles rupture by squeeze test); disproportionate swelling/warmth/redness (→ exclude DVT); pain out of proportion to exam with a tense compartment (→ emergency, compartment syndrome). Calf-strain diagnosis is otherwise primarily clinical, with ultrasound first-line and MRI the reference standard to confirm location, grade, and aponeurotic involvement.
+__Red flags that need urgent in-person evaluation or imaging.__ There are three:
+
+1. The athlete cannot bear weight or push off. Exclude an Achilles rupture with the squeeze test.
+2. There is swelling, warmth or redness out of proportion. Exclude a DVT.
+3. There is pain out of proportion to the examination, with a tense compartment. This is an emergency: compartment syndrome.
+
+Otherwise the diagnosis of a calf strain is primarily clinical. Ultrasound is the first-line imaging. MRI is the reference standard, and it confirms the location, the grade, and any aponeurotic involvement.
 
 ## Key Findings
 
 | Claim | Evidence tier | Primary source |
 |---|---|---|
-| "Tennis leg" is most often a tear of the medial head of gastrocnemius at the distal myotendinous junction (~67%), NOT plantaris (~1.4%); DVT found in ~10%. | Strong | Delgado et al. 2002, Radiology |
-| Mechanism: sudden knee extension with the ankle dorsiflexed (the biarticular gastroc maximally stretched), eccentric overload at explosive push-off; classically a middle-aged male. | Strong | Dixon 2009, Curr Rev Musculoskelet Med |
-| Achilles rupture is missed because patients can still walk and weakly plantarflex; the calf-squeeze test must be performed in all calf injuries (sensitivity 0.96). | Strong | Boyd 2015, Br J Gen Pract; Maffulli 1998, Am J Sports Med |
-| Soft-tissue injury is managed by PEACE (acute) then LOVE (subacute); the framework advises avoiding routine anti-inflammatories and ice as healing modalities. | Moderate (expert editorial in a peer-reviewed journal) | Dubois & Esculier 2020, BJSM |
-| Brief protection then EARLY controlled loading beats prolonged immobilization; immobilization causes atrophy and a weaker, denser scar. | Moderate | Järvinen et al. 2005, Am J Sports Med |
-| Starting rehab on day 2 vs day 9 after a severe thigh/calf strain returned athletes to full activity ~3 weeks sooner, with no increase in re-injury. | Moderate (single RCT, n=50, unblinded) | Bayer et al. 2017, NEJM; Bayer et al. 2018, Scand J Med Sci Sports |
-| Human evidence on NSAIDs and muscle-strain healing is MIXED: small studies show blunted satellite-cell response to exercise damage, but a meta-analysis of 41 studies found a small SHORT-TERM benefit and no proven human harm. The "avoid" stance is precautionary, mainly about prolonged use. | Moderate (mixed) | Morelli et al. 2018, AJSM; Mikkelsen 2009; Mackey 2007; Mackey 2016 |
-| Calf-strain rehab follows a phased, criteria-based progression (protected loading → isometrics → loaded strength incl. soleus → endurance/power/plyo → running → change-of-direction → return to play); ongoing calf-capacity monitoring predicts prognosis better than the calendar. | Strong (20-expert consensus) | Green et al. 2022, Sports Med Open |
-| Return-to-sport criteria: single-leg calf-raise ≥30 reps and ≤10% inter-limb asymmetry; loaded strength ≥1.0× BW knee-extended and ≥1.5× BW knee-flexed (soleus); ~20 symptom-free single-leg hops before running; hop/jump asymmetry ≤10%; VAS 0/10. | Strong (consensus) | Green et al. 2022 |
-| Calf strains recur frequently and "without warning"; recurrence is definition-dependent (~13-21% within 2 years in elite cohorts). The two strongest risk factors are increasing AGE and PREVIOUS calf injury; older age and prior ankle injury predict early recurrence. | Strong (registry cohorts) | Green 2017, BJSM; Green 2020, AJSM; Green 2025, BMJ Open SEM |
-| HSR is an effective, well-tolerated loading substrate for the gastroc-soleus-Achilles complex, but as tendinopathy evidence; for an acute muscle strain it must be DE-LOADED and rebuilt, not continued at prior heavy loads. | Strong (for tendinopathy); Moderate/extrapolated (for acute strain) | Beyer et al. 2015, AJSM |
-| Aponeurotic / connective-tissue (intramuscular tendon) involvement and intramuscular fluid predict a LONGER return to sport, because connective tissue heals slower than muscle. | Moderate | Green 2020; Meek 2022, JBJS Rev |
+| "Tennis leg" is most often a tear of the medial head of the gastrocnemius, at the distal myotendinous junction, in approximately 67% of cases. It is NOT usually the plantaris, at approximately 1.4%. A DVT is present in approximately 10%. | Strong | Delgado et al. 2002, Radiology |
+| The mechanism is sudden knee extension with the ankle dorsiflexed, which stretches the biarticular gastrocnemius to its maximum length. An eccentric overload at explosive push-off then tears it. The classic patient is a middle-aged male. | Strong | Dixon 2009, Curr Rev Musculoskelet Med |
+| Examiners miss an Achilles rupture because the patient can still walk and can plantarflex weakly. Perform the calf-squeeze test on every calf injury. Its sensitivity is 0.96. | Strong | Boyd 2015, Br J Gen Pract; Maffulli 1998, Am J Sports Med |
+| Manage a soft-tissue injury with PEACE in the acute phase, then with LOVE in the subacute phase. The framework advises against routine anti-inflammatories and ice as healing treatments. | Moderate (expert editorial in a peer-reviewed journal) | Dubois and Esculier 2020, BJSM |
+| Brief protection, then early controlled loading, beats long immobilization. Immobilization causes atrophy, and it produces a weaker and denser scar. | Moderate | Järvinen et al. 2005, Am J Sports Med |
+| Athletes who started rehab on day 2 returned to full activity approximately 3 weeks earlier than athletes who started on day 9, after a severe thigh or calf strain. Re-injury did not increase. | Moderate (single RCT, n=50, unblinded) | Bayer et al. 2017, NEJM; Bayer et al. 2018, Scand J Med Sci Sports |
+| The human evidence on NSAIDs and muscle-strain healing is MIXED. Small studies show a blunted satellite-cell response to exercise damage. A meta-analysis of 41 studies found a small SHORT-TERM benefit and no proven harm in humans. The "avoid" position is precautionary, and it mainly concerns prolonged use. | Moderate (mixed) | Morelli et al. 2018, AJSM; Mikkelsen 2009; Mackey 2007; Mackey 2016 |
+| Calf-strain rehab follows a phased, criteria-based progression. The phases are: protected loading, isometrics, loaded strength including the soleus, endurance and power and plyometrics, running, change of direction, and return to play. Continuous monitoring of calf capacity predicts the prognosis better than the calendar does. | Strong (20-expert consensus) | Green et al. 2022, Sports Med Open |
+| The return-to-sport criteria are: a single-leg calf raise of 30 reps or more, with 10% or less asymmetry between the limbs; loaded strength of 1.0x body weight or more with the knee extended, and 1.5x body weight or more with the knee flexed, for the soleus; approximately 20 symptom-free single-leg hops before running; hop and jump asymmetry of 10% or less; and VAS 0 out of 10. | Strong (consensus) | Green et al. 2022 |
+| Calf strains recur often, and the consensus states that they give "no warning". The recurrence rate depends on the definition used, and runs approximately 13 to 21% within 2 years in elite cohorts. The two strongest risk factors are increasing AGE and a PREVIOUS calf injury. Older age and a prior ankle injury both predict an early recurrence. | Strong (registry cohorts) | Green 2017, BJSM; Green 2020, AJSM; Green 2025, BMJ Open SEM |
+| HSR is an effective and well-tolerated way to load the gastrocnemius, soleus and Achilles complex. That evidence comes from tendinopathy. For an acute muscle strain you must DE-LOAD the HSR and rebuild it. Do not continue at the previous heavy loads. | Strong (for tendinopathy); Moderate and extrapolated (for an acute strain) | Beyer et al. 2015, AJSM |
+| Two findings predict a LONGER return to sport: involvement of the aponeurosis, which is the intramuscular tendon, and fluid inside the muscle. Connective tissue heals more slowly than muscle. | Moderate | Green 2020; Meek 2022, JBJS Rev |
 
-## Anatomy & Mechanism
+## Anatomy and Mechanism
 
-The triceps surae = gastrocnemius (two heads, biarticular, crossing knee and ankle) + soleus (monoarticular) + plantaris, uniting into the Achilles tendon. Because the gastrocnemius crosses the knee, it is maximally lengthened when the knee extends and the ankle dorsiflexes simultaneously, exactly the position of an explosive push-off or a lunge for a ball. An eccentric contraction in that lengthened position drives the tear, almost always at the distal medial musculotendinous junction (Delgado 2002, PMID 12091669; Dixon 2009, PMID 19468870). The soleus, not crossing the knee, is comparatively protected, which is why the gastroc is the usual "explosive-sport" strain and the soleus is more the "overuse/endurance" strain. This is why soleus-biased (bent-knee) work is added deliberately later in rehab. It does not get loaded the same way by knee-straight calf raises.
+The triceps surae has three parts. The gastrocnemius has two heads, is biarticular, and crosses both the knee and the ankle. The soleus is monoarticular. The plantaris is the third. All three join into the Achilles tendon.
+
+The gastrocnemius crosses the knee, so it reaches its maximum length when the knee extends and the ankle dorsiflexes at the same time. That is the exact position of an explosive push-off, or of a lunge for a ball. An eccentric contraction in that lengthened position tears the muscle. The tear occurs almost always at the distal medial musculotendinous junction (Delgado 2002, PMID 12091669; Dixon 2009, PMID 19468870).
+
+The soleus does not cross the knee, so it is comparatively protected. That is why the gastrocnemius is the usual strain in an explosive sport, and the soleus is more often an overuse or endurance strain. It is also why the rehab adds soleus-biased bent-knee work deliberately, and later. A knee-straight calf raise does not load the soleus the same way.
 
 ## Grading
 
-- __Traditional Grade I-III__ (legacy clinical convention; both modern systems describe it as the prior standard): Grade I = able to weight-bear, minimal strength loss, no defect; Grade II = antalgic/painful weight-bearing, definite strength loss, possible focal defect; Grade III = unable to weight-bear, marked strength loss, palpable defect. The Sun 6/21 presentation (acute, can't-weight-bear) is __at least a Grade II__.
-- __British Athletics Muscle Injury Classification (BAMIC)__ (Pollock 2014, PMID 25031367): MRI grade 0-4 plus an anatomical suffix a/b/c (myofascial / musculotendinous / intratendinous). Higher grade and "c" (intratendinous) carry longer RTP and higher reinjury risk.
-- __Munich consensus__ (Mueller-Wohlfahrt 2013, PMID 23080315): separates functional disorders (no fiber tear: type 1 overexertion, type 2 neuromuscular) from structural injuries (type 3 partial tear, type 4 (sub)total tear/avulsion).
+- __The traditional Grade I to III system__ is the legacy clinical convention. Both modern systems describe it as the previous standard. Grade I: the patient can bear weight, loses minimal strength, and has no defect. Grade II: weight-bearing is painful or antalgic, strength loss is definite, and a focal defect may be present. Grade III: the patient cannot bear weight, strength loss is marked, and a defect is present that you can feel. The presentation on Sunday 6/21 was acute and the athlete could not bear weight, so it is __at least a Grade II__.
+- __The British Athletics Muscle Injury Classification (BAMIC)__ (Pollock 2014, PMID 25031367) gives an MRI grade from 0 to 4, plus an anatomical suffix of a, b or c. Those suffixes mean myofascial, musculotendinous and intratendinous. A higher grade, and the "c" suffix, both carry a longer return to play and a higher reinjury risk.
+- __The Munich consensus__ (Mueller-Wohlfahrt 2013, PMID 23080315) separates functional disorders from structural injuries. The functional disorders have no fiber tear: type 1 is overexertion and type 2 is neuromuscular. The structural injuries are type 3, a partial tear, and type 4, a total or subtotal tear or an avulsion.
 
-Grade matters mostly because aponeurotic involvement, not just "grade," drives the timeline (Green 2020).
+Grade matters mostly as a proxy. Aponeurotic involvement drives the timeline more than the grade does (Green 2020).
 
-## Acute Management (first ~1-2 weeks): PEACE & LOVE
+## Acute Management, for the first 1 to 2 weeks: PEACE and LOVE
 
-Source: Dubois & Esculier 2020, BJSM (PMID 31377722, DOI 10.1136/bjsports-2019-101253). This is expert editorial guidance (tier Moderate as guidance); the individual components rest on the primary literature tiered above. RICE is outdated; Gabe Mirkin, who coined RICE in 1978, later walked back the "rest + ice" advice (his own website statement, expert opinion only, lowest evidentiary weight; do not cite as evidence).
+The source is Dubois and Esculier 2020, BJSM (PMID 31377722, DOI 10.1136/bjsports-2019-101253). It is expert editorial guidance, so the guidance tier is Moderate. The individual components rest on the primary literature tiered above.
 
-__PEACE: immediately (first days):__
-- __Protection:__ unload / restrict movement 1-3 days to limit bleeding and avoid distracting healing fibers. Protect, do not fully immobilize. Protected weight-bearing (crutches with a "feathering" gait, bilateral heel lifts, a boot for severe cases) per the calf-specific review (Pagan-Rosado 2025, PMID 41385031).
-- __Elevation:__ limb above heart to drain interstitial fluid (weak evidence, low risk).
-- __Avoid anti-inflammatory modalities:__ routine NSAIDs and ice are positioned as analgesic at best, not healing-promoting (see NSAID verdict below; the human evidence is more nuanced than "never").
-- __Compression:__ taping/bandage to limit swelling and intra-tissue hemorrhage.
-- __Education:__ set realistic expectations; avoid over-medicalisation and unnecessary passive treatment.
+RICE is out of date. Gabe Mirkin coined RICE in 1978 and later withdrew the "rest plus ice" advice. That withdrawal appeared on his own website. It is expert opinion only, with the lowest evidentiary weight. Do not cite it as evidence.
 
-__LOVE: after the first days (subacute/rehab):__
-- __Load:__ resume mechanical loading as symptoms allow; optimal pain-free loading promotes repair and tissue tolerance.
-- __Optimism:__ catastrophising/fear predict worse outcomes.
-- __Vascularisation:__ pain-free aerobic activity (e.g., bike with the uninjured emphasis early, then graded) to drive blood flow and reduce analgesic need.
-- __Exercise:__ restore mobility, strength, proprioception; use pain as the progression guide to cut recurrence.
+__PEACE, for the first days:__
 
-### The NSAID / ibuprofen verdict (the athlete's direct question)
+- __Protection.__ Unload the limb, or restrict its movement, for 1 to 3 days. This limits bleeding and it avoids pulling the healing fibers apart. Protect the limb. Do not immobilize it completely. Use protected weight-bearing: crutches with a feathering gait, bilateral heel lifts, or a boot in a severe case, per the calf-specific review (Pagan-Rosado 2025, PMID 41385031).
+- __Elevation.__ Keep the limb above the heart, to drain interstitial fluid. The evidence is weak and the risk is low.
+- __Avoid anti-inflammatory treatments.__ Routine NSAIDs and ice are analgesic at best. They do not promote healing. See the NSAID verdict below, where the human evidence is more nuanced than "never".
+- __Compression.__ Use tape or a bandage to limit swelling and bleeding inside the tissue.
+- __Education.__ Set realistic expectations. Avoid over-medicalization and unnecessary passive treatment.
 
-The honest read: __mixed evidence; do not overstate harm.__
-- Mechanistic concern (Moderate): prostaglandin (PGE2) signaling drives satellite-cell proliferation, and NSAIDs blunt it. Two small human studies show suppressed satellite-cell response to muscle-damaging EXERCISE: Mikkelsen 2009 (PMID 19713429) and Mackey 2007 (PMID 17463304). These are exercise-damage models, not traumatic strains.
-- Contradictory human data (Moderate): Mackey 2016 (PMID 26936358) found ibuprofen 1200 mg/d _augmented_ satellite-cell activation after a large induced injury, so injury scale and type change the direction of effect.
-- Best pooled clinical evidence (Moderate-to-Strong): Morelli, Brown & Warren 2018 (PMID 28355084), 41 studies, found NSAIDs gave a small-to-medium SHORT-TERM benefit (less strength loss, soreness, CK) in humans; harm signals appeared mainly in animal studies with longer dosing/follow-up.
-- __Net:__ a short course of ibuprofen for genuine pain in the acute phase is defensible and not clearly harmful short-term. The theoretical concern is prolonged use and long-term tissue quality, where human data are thin. Two practical caveats favor restraint: (1) NSAIDs inhibit platelets, so the first ~48-72 h carry a theoretical hematoma/bleeding concern; (2) acetaminophen/paracetamol is a reasonable analgesic that sidesteps the anti-inflammatory question (Rahusen 2004, PMID 15572312, rabbit contusion: NSAID had no healing advantage over acetaminophen). Recommendation for this athlete: use ibuprofen short-term for pain control if needed, transition to acetaminophen as pain eases, and do not run NSAIDs continuously through the multi-week healing phase. NOTE: no high-quality human RCT compares acetaminophen vs ibuprofen on muscle-strain HEALING outcomes; the acetaminophen preference is mechanistic/precautionary, not proven.
+__LOVE, after the first days, in the subacute and rehab phases:__
+
+- __Load.__ Return to mechanical loading as the symptoms allow. Optimal pain-free loading promotes repair and builds tissue tolerance.
+- __Optimism.__ Catastrophizing and fear both predict a worse outcome.
+- __Vascularization.__ Use pain-free aerobic activity to drive blood flow and to reduce the need for an analgesic. Start with a bike, weighted toward the uninjured side, then progress.
+- __Exercise.__ Restore mobility, strength and proprioception. Use pain as the guide to progression. This reduces recurrence.
+
+### The NSAID and ibuprofen verdict, which the athlete asked about directly
+
+The honest answer: __the evidence is mixed. Do not overstate the harm.__
+
+- The mechanistic concern is Moderate. Prostaglandin PGE2 signaling drives satellite-cell proliferation, and NSAIDs reduce it. Two small human studies show a suppressed satellite-cell response to muscle-damaging EXERCISE: Mikkelsen 2009 (PMID 19713429) and Mackey 2007 (PMID 17463304). Both are exercise-damage models. Neither is a traumatic strain.
+- Contradictory human data is also Moderate. Mackey 2016 (PMID 26936358) found that ibuprofen at 1200 mg per day _increased_ satellite-cell activation after a large induced injury. The scale and the type of injury therefore change the direction of the effect.
+- The best pooled clinical evidence is Moderate to Strong. Morelli, Brown and Warren 2018 (PMID 28355084) reviewed 41 studies. NSAIDs gave a small to medium SHORT-TERM benefit in humans, measured as less strength loss, less soreness and lower CK. The harm signals appeared mainly in animal studies with longer dosing and longer follow-up.
+- __The net position.__ A short course of ibuprofen for genuine pain in the acute phase is defensible. It is not clearly harmful in the short term. The theoretical concern applies to prolonged use and to long-term tissue quality, where the human data is thin. Two practical points favor restraint. First, NSAIDs inhibit platelets, so the first 48 to 72 hours carry a theoretical bleeding and hematoma concern. Second, acetaminophen is a reasonable analgesic that avoids the anti-inflammatory question. Rahusen 2004 (PMID 15572312), a rabbit contusion study, found no healing advantage for an NSAID over acetaminophen.
+- __The recommendation for this athlete.__ Use ibuprofen short-term for pain control if he needs it. Change to acetaminophen as the pain reduces. Do not run NSAIDs continuously through the multi-week healing phase. NOTE: no high-quality human RCT compares acetaminophen against ibuprofen on muscle-strain HEALING outcomes. The preference for acetaminophen is mechanistic and precautionary. It is not proven.
 
 ### Early mobilization beats immobilization
 
-Järvinen 2005 (PMID 15851777): immobilization → atrophy + denser/weaker scar; a brief protection period (let the scar gain initial strength) followed by early controlled mobilization → better regeneration, capillary in-growth, fiber orientation, and strength return. Bayer 2017 (PMID 28953439, NEJM) is the direct clinical RCT: day-2 vs day-9 rehab start in 50 athletes with severe thigh/calf strains → early group reached full activity ~3 weeks sooner, no re-injury increase (companion: Bayer 2018, PMID 30043997). Caveat: "early" still means after a brief protected period; it is early controlled loading, not "no protection."
+Järvinen 2005 (PMID 15851777) showed that immobilization causes atrophy and a denser, weaker scar. A brief protection period, which lets the scar gain initial strength, followed by early controlled mobilization, gives better regeneration, better capillary in-growth, better fiber orientation, and a better strength return.
+
+Bayer 2017 (PMID 28953439, NEJM) is the direct clinical RCT. It compared a rehab start on day 2 against a start on day 9, in 50 athletes with severe thigh or calf strains. The early group reached full activity approximately 3 weeks sooner, with no increase in re-injury. The companion paper is Bayer 2018 (PMID 30043997).
+
+One caveat: "early" still means after a brief protected period. This is early controlled loading. It is not "no protection".
 
 ## Phased Rehab Protocol (criteria-based, not calendar-based)
 
-Built from Green 2022 (PMID 35032233, six-phase consensus framework), Bayer 2017 (early-rehab steps), Silbernagel 2007 (pain monitoring), Beyer 2015 (HSR). Week ranges assume a moderate (Grade II) medial gastroc strain and are PLANNING ANCHORS ONLY: exit criteria govern progression, not the calendar. Given age 40 + bilateral Achilles tendinopathy, bias to the conservative end of every range.
+This protocol is built from four sources: Green 2022 (PMID 35032233), a six-phase consensus framework; Bayer 2017, for the early-rehab steps; Silbernagel 2007, for pain monitoring; and Beyer 2015, for HSR.
 
-__Phase 0: Acute / protected (≈ day 0-7):__ protected weight-bearing, avoid end-range dorsiflexion stretch, pain-free ankle pumps/ROM, then pain-free submaximal isometric plantarflexion as tolerated late in the phase. Suspend/markedly de-load the prior HSR calf work. Exit: walk without an antalgic gait; pain-free submax isometric plantarflexion; swelling controlled.
+The week ranges assume a moderate Grade II medial gastroc strain. They are PLANNING ANCHORS ONLY. The exit criteria govern the progression. The calendar does not. The athlete is 40 and has bilateral Achilles tendinopathy, so choose the conservative end of every range.
 
-__Phase 1: Isometric → early isotonic (≈ week 1-3):__ isometrics → double-leg then single-leg calf raises through a tolerable range; begin RE-INTRODUCING HSR at a markedly reduced load (rebuild, do not resume prior heavy loads). Apply pain rules (below). Exit: pain-free full active ROM; single-leg calf-raise capacity building; no morning-after symptom escalation.
+__Phase 0: Acute and protected, approximately day 0 to 7.__ Use protected weight-bearing. Avoid an end-range dorsiflexion stretch. Do pain-free ankle pumps and range-of-motion work. Late in the phase, add pain-free submaximal isometric plantarflexion, as tolerated. Suspend the previous HSR calf work, or de-load it markedly. Exit criteria: the athlete walks without an antalgic gait; submaximal isometric plantarflexion is pain-free; and the swelling is controlled.
 
-__Phase 2: Progressive loaded strength incl. soleus (≈ week 3-6):__ build toward ≥1.0× BW knee-extended and ≥1.5× BW knee-flexed (soleus), ≤10% asymmetry; bent-knee work to load soleus specifically; address the kinetic chain. Exit: strength benchmarks met within ≤10% asymmetry; soleus load tolerance established.
+__Phase 1: Isometric to early isotonic, approximately week 1 to 3.__ Start with isometrics. Progress to double-leg calf raises, then to single-leg calf raises, through a tolerable range. Begin to RE-INTRODUCE HSR at a markedly reduced load. Rebuild the load. Do not resume the previous heavy loads. Apply the pain rules below. Exit criteria: full active range of motion is pain-free; single-leg calf-raise capacity is building; and there is no increase in symptoms the next morning.
 
-__Phase 3: Endurance, power/plyo, return to running (≈ week 5-9):__ calf-raise endurance toward ≥30 reps / ≤10% asymmetry (referenced to Hébert-Losier 2017 age/sex norms, PMID 28886865); gate running on ~20 symptom-free single-leg hops; graded return to running; reintroduce step-down plyometrics (per the Achilles protocol, never rebounding box jumps). Exit: ≥30 calf raises ≤10% asymmetry; ~20 symptom-free single-leg hops; pain-free graded running; hop asymmetry ≤10%.
+__Phase 2: Progressive loaded strength, including the soleus, approximately week 3 to 6.__ Build toward 1.0x body weight or more with the knee extended, and 1.5x body weight or more with the knee flexed for the soleus, at 10% asymmetry or less. Add bent-knee work to load the soleus specifically. Address the kinetic chain. Exit criteria: the athlete meets the strength benchmarks within 10% asymmetry, and he tolerates the soleus load.
 
-__Phase 4: Change of direction → return to full training → return to sport (≈ week 8-12+):__ progressive cutting/deceleration, sport-specific volume; return to basketball/hockey only after symptom-free full training. RTS criteria (ALL): VAS 0/10 (pain/tightness/cramping); calf-raise ≥30 reps ≤10% asymmetry; strength benchmarks ≤10% asymmetry; hop/jump asymmetry ≤10%; completed symptom-free sport-specific COD/plyo exposure. Post-RTS: recurrence risk persists up to 2 years and ~20% of recurrences happen before full recovery. Resume maintenance HSR and treat calf-raise capacity as a permanent maintenance plan, not a discharge milestone.
+__Phase 3: Endurance, power and plyometrics, and return to running, approximately week 5 to 9.__ Build calf-raise endurance toward 30 reps or more at 10% asymmetry or less, referenced to the Hébert-Losier 2017 age and sex norms (PMID 28886865). Gate running on approximately 20 symptom-free single-leg hops. Return to running in graded steps. Reintroduce step-down plyometrics, per the Achilles protocol. Never use rebounding box jumps. Exit criteria: 30 or more calf raises at 10% asymmetry or less; approximately 20 symptom-free single-leg hops; pain-free graded running; and hop asymmetry of 10% or less.
 
-### Pain-monitoring during reloading
+__Phase 4: Change of direction, then return to full training, then return to sport, approximately week 8 to 12 and beyond.__ Add progressive cutting and deceleration, then sport-specific volume. Return the athlete to basketball or hockey only after symptom-free full training.
 
-Use the same model as the Achilles protocol (Silbernagel 2007, PMID 17307888): pain during loading and the next morning may reach up to __5/10 on the NPRS__, must settle to baseline within 24 h, and must not increase week to week. NOTE/CORRECTION: the repo's Achilles section and `achilles-tendinopathy-hsr.md` use a 0-3 acceptable / 4-5 caution / >5 stop tree, those exact cutoffs are secondary-literature refinements (Martin 2018 JOSPT; Silbernagel 2020), not the primary RCT, whose threshold is ≤5/10. For an acute muscle strain on a complex already compromised by bilateral Achilles tendinopathy, biasing to the more conservative ≤2-3/10 ceiling early is reasonable, but the primary-source threshold is ≤5/10. Transferability of the tendinopathy pain model to acute muscle-strain reloading is Moderate/extrapolated; flag honestly.
+The return-to-sport criteria are ALL of these:
+
+1. VAS 0 out of 10, for pain, tightness and cramping.
+2. A calf raise of 30 reps or more, at 10% asymmetry or less.
+3. The strength benchmarks, at 10% asymmetry or less.
+4. Hop and jump asymmetry of 10% or less.
+5. A completed symptom-free sport-specific exposure to change of direction and plyometrics.
+
+After the return to sport, the recurrence risk continues for up to 2 years. Approximately 20% of recurrences happen before full recovery. Resume maintenance HSR. Treat calf-raise capacity as a permanent maintenance plan, not as a milestone to discharge.
+
+### Pain monitoring during reloading
+
+Use the same model as the Achilles protocol (Silbernagel 2007, PMID 17307888). Pain during loading, and pain the next morning, may reach __5 out of 10 on the NPRS__. It must settle to baseline inside 24 hours. It must not increase from week to week.
+
+NOTE and CORRECTION: the Achilles section of this repository, and `achilles-tendinopathy-hsr.md`, use a decision tree of 0 to 3 acceptable, 4 to 5 caution, and above 5 stop. Secondary literature defined those exact cutoffs (Martin 2018 JOSPT; Silbernagel 2020). The primary RCT uses a threshold of 5 out of 10 or less. For an acute muscle strain, on a complex already compromised by bilateral Achilles tendinopathy, a more conservative early ceiling of 2 to 3 out of 10 is reasonable. The primary-source threshold is still 5 out of 10. Transfer of the tendinopathy pain model to acute muscle-strain reloading is Moderate and extrapolated. State that honestly.
 
 ## Return-to-Sport Timelines (rough anchors only)
 
-- Grade I gastroc: ~10-12 days; Grade II: ~16-21 days (broader clinical ranges cite 3-6 weeks); Grade III: up to ~6 months, occasionally surgical. These day counts come from a clinical-body fact sheet (Sports Medicine Australia), tier Emerging/guideline, not primary literature.
-- Cohort-anchored (Moderate, primary data): elite AFL mean RTP 19.4 ± 10.8 days with no aponeurotic disruption vs 31.3 ± 12.6 days with severe disruption; a running mechanism predicted longer RTP (Green 2020, PMID 33030961). Structural/imaging severity drives the timeline more than "grade" alone.
-- __Practical expectation for this athlete:__ given can't-weight-bear onset (≥ Grade II), age 40, and bilateral Achilles tendinopathy, plan for a conservative, criteria-gated return to basketball/hockey, realistically several weeks (think ~4-8+ weeks to symptom-free sport), governed by the Phase-4 criteria, NOT a target date. Do not chase a calendar.
+- Grade I gastroc: approximately 10 to 12 days. Grade II: approximately 16 to 21 days, and broader clinical ranges cite 3 to 6 weeks. Grade III: up to approximately 6 months, and occasionally surgical. These day counts come from a clinical-body fact sheet from Sports Medicine Australia. The tier is Emerging or guideline. It is not primary literature.
+- Cohort-anchored data is Moderate and primary. In elite AFL players, the mean return to play was 19.4 ± 10.8 days with no aponeurotic disruption, and 31.3 ± 12.6 days with severe disruption. A running mechanism predicted a longer return (Green 2020, PMID 33030961). Structural severity on imaging drives the timeline more than the grade alone.
+- __The practical expectation for this athlete.__ He could not bear weight at onset, so the injury is Grade II or worse. He is 40 years old and he has bilateral Achilles tendinopathy. Plan a conservative return to basketball and hockey, gated on criteria. Expect several weeks, realistically approximately 4 to 8 weeks or more to symptom-free sport. The Phase 4 criteria govern the return, NOT a target date. Do not chase a calendar.
 
-## Recurrence (why conservative is correct here)
+## Recurrence (why a conservative approach is correct here)
 
-Calf strains recur frequently and, per the 20-expert consensus, give "no warning" before recurrence, unlike hamstrings. Recurrence frequency is definition-dependent: within 2 years 13.0-21.3%, within season 7.5-13.9% (Green 2025, PMID 40919406). The two strongest risk factors across the literature are __increasing age__ and __previous calf injury__ (Green 2017, PMID 28259848); older age and prior ankle injury predict EARLY recurrence (Green 2020, PMID 33030961). This athlete is 40 (now also with a prior calf event on record), placing him in the highest-risk band, the single strongest argument for finishing the full criteria-based progression rather than returning on feel.
+Calf strains recur often. The 20-expert consensus states that they give "no warning" before a recurrence, unlike hamstring strains.
+
+The recurrence frequency depends on the definition. Within 2 years it is 13.0 to 21.3%. Within a season it is 7.5 to 13.9% (Green 2025, PMID 40919406).
+
+The two strongest risk factors across the literature are __increasing age__ and __a previous calf injury__ (Green 2017, PMID 28259848). Older age and a prior ankle injury both predict an EARLY recurrence (Green 2020, PMID 33030961).
+
+This athlete is 40, and he now has a prior calf event on record. That places him in the highest-risk band. It is the single strongest argument to finish the full criteria-based progression, rather than to return on feel.
 
 ## Modifications for bilateral Achilles tendinopathy (this athlete specifically)
 
-The gastroc-soleus-Achilles complex is already load-compromised, so reloading should be more gradual and pain-monitored. The existing HSR protocol (Beyer 2015, PMID 26018970; see `achilles-tendinopathy-hsr.md`) is an appropriate REHAB SUBSTRATE, but it must be de-loaded to near zero acutely and rebuilt from a low load, not resumed at the pre-injury working loads (e.g., seated 155 lb, single-leg BW+72 lb). There is no direct trial on resuming prior HSR loads through an acute gastroc strain; de-loading is a reasoned extrapolation from muscle-healing biology plus tendinopathy load-management principles. The upside: the rehab trajectory (progressive calf loading) and the tendinopathy management plan are the SAME trajectory, so once past the acute phase, calf-strain rehab and Achilles maintenance reconverge into one progressive loading program. The achilles green-zone streak (the program's anchor signal) is paused, not lost. It resumes as load rebuilds.
+The gastrocnemius, soleus and Achilles complex is already compromised for load. Reload it more gradually, and monitor the pain.
 
-## Unresolved Questions / Honest Gaps
+The existing HSR protocol is an appropriate REHAB SUBSTRATE (Beyer 2015, PMID 26018970; see `achilles-tendinopathy-hsr.md`). You must de-load it to near zero in the acute phase and rebuild from a low load. Do not resume the pre-injury working loads, which were 155 lb seated and body weight plus 72 lb single-leg. No trial has tested a resumption of prior HSR loads through an acute gastroc strain. The de-load is a reasoned extrapolation from muscle-healing biology, plus the tendinopathy load-management principles.
 
-- No direct RCT or cohort exists for ECCENTRIC loading or HSR of an ACUTE gastrocnemius muscle strain (as opposed to Achilles tendinopathy). The strong eccentric/HSR evidence is tendinopathy evidence; transferability to acute calf-strain rehab and reinjury prevention is Moderate/uncertain and extrapolated.
-- The Nordic-hamstring "eccentric prevents reinjury" analogy is hamstring evidence; there is no equivalent calf-specific eccentric prevention RCT. Treat as a hypothesis for the calf.
-- No high-quality human RCT compares acetaminophen vs ibuprofen on muscle-strain HEALING/recurrence outcomes, only ED analgesia equivalence trials. The acetaminophen preference is mechanistic/precautionary.
-- Exact grade of THIS injury is unknown without in-person exam/imaging; the plan assumes Grade II and stays criteria-gated.
+There is an advantage here. The rehab trajectory and the tendinopathy management plan are the same trajectory: progressive calf loading. Once the acute phase ends, calf-strain rehab and Achilles maintenance become one progressive loading program. The achilles green-zone streak, which is the program's anchor signal, is paused. It is not lost. It resumes as the load rebuilds.
+
+## Unresolved Questions and Honest Gaps
+
+- No RCT or cohort study has tested ECCENTRIC loading or HSR on an ACUTE gastrocnemius muscle strain, as opposed to Achilles tendinopathy. The strong eccentric and HSR evidence is tendinopathy evidence. Its transfer to acute calf-strain rehab, and to reinjury prevention, is Moderate, uncertain and extrapolated.
+- The Nordic-hamstring finding that eccentric work prevents reinjury is hamstring evidence. No equivalent calf-specific prevention RCT exists. Treat it as a hypothesis for the calf.
+- No high-quality human RCT compares acetaminophen against ibuprofen on muscle-strain HEALING or recurrence outcomes. Only emergency-department analgesia equivalence trials exist. The preference for acetaminophen is mechanistic and precautionary.
+- No one knows the exact grade of THIS injury without an in-person examination or imaging. The plan assumes Grade II, and it stays gated on criteria.
 
 ## References (verified)
 
@@ -149,5 +197,5 @@ The gastroc-soleus-Achilles complex is already load-compromised, so reloading sh
 
 ## Corrections Log
 
-- __2026-06-23 (file created).__ Flagged that the repo's "0-3/10 acceptable pain" Achilles cutoffs are secondary-literature refinements; Silbernagel 2007's primary-RCT threshold is ≤5/10. No change to the Achilles file's stated tiering (it already notes the cutoffs are consensus refinements), recorded here for cross-reference.
-- __Verification note:__ Wells DVT paper correct PMID is 9428249; a web search surfaced 9396841, which is a false match (a 1998 bacteriology paper). Compartment-syndrome review (Pechar & Lyons 2016) PMID could not be independently confirmed, cited by DOI/PMCID. MLG-R (Barcelona) classification was not verified and is intentionally omitted.
+- __2026-06-23, when this file was created.__ The repository's Achilles pain cutoffs of 0 to 3 out of 10 acceptable are secondary-literature refinements. The primary-RCT threshold in Silbernagel 2007 is 5 out of 10 or less. The Achilles file already notes that its cutoffs are consensus refinements, so its tiering does not change. This entry records the point for cross-reference.
+- __Verification note.__ The correct PMID for the Wells DVT paper is 9428249. A web search returned 9396841, which is a false match: a 1998 bacteriology paper. The PMID for the compartment-syndrome review (Pechar and Lyons 2016) could not be confirmed independently, so this file cites it by DOI and PMCID. The MLG-R (Barcelona) classification was not verified, and this file omits it deliberately.

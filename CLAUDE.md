@@ -232,6 +232,24 @@ __Keep `longDesc`, `reason` and `notes` short. They state decisions. They do not
 - __Do not carry the superseded plan.__ Phrases such as "ORIGINAL PLAN FOLLOWS" and "The original rationale follows" turn every card into an archive. Git holds the history. State the current prescription, and state what changed if the change affects a decision.
 - __Do not use enumeration scaffolding or restatement.__ Cut "Two items went wrong. The first was the row. The second was the core work." Name the two things. Cut a sentence that repeats the previous one, such as "The row holds at 135 lb. It does not step to 145 lb."
 
+__The site carries the plan. It does not carry the evidence or the program critique.__ The live site is the athlete's training plan, not a coaching notebook. Before this rule the rendered page showed 12 PMIDs, 3 PMCIDs, 3 `knowledge/` file references and 5 `CLAUDE.md` references. None of that belongs there. Keep these out of any field the site renders:
+
+- __Citations and evidence apparatus.__ No PMID, no PMCID, no author-year, no evidence tier, no pointer to a `knowledge/` file or to this file. State the instruction and the number. "Pain up to 3/10 during loading is acceptable" is the instruction; the Silbernagel attribution belongs in Section 4.
+- __Program self-assessment.__ No commentary on whether the program is working, what the last review concluded, what the binding constraint is, or what the next review should decide. "Fourth slip on the graded return-to-run" is a fact and it stays. "The next review should either place it somewhere it will run or stop re-authoring it" is a note to the coach and it does not.
+
+Keep on the site: the prescription, the loads, the sets and reps, the tempo and ROM cues, the gates and symptom thresholds as bare numbers, what got done, and what changed.
+
+__Which fields the site renders__ (verified by rendering the page, not by reading the code):
+
+| Field | Renders |
+|---|---|
+| `modifiedWeeks` reason, subtitle, desc, longDesc, exercises[].notes | Yes |
+| `activityLog` notes and exercises[].notes | Yes |
+| `scienceReviews` findings and changes | No |
+| `bodyLog` notes | No |
+
+`scienceReviews` is therefore the home for the analysis, the citations and the honest assessment of what is failing. It is internal, it has no word cap, and nothing there needs to be softened for an audience.
+
 __Measure the writing, do not assert it.__ ASD-STE100 compliance and the word caps above are both checkable. Run a script over every prose field in `data.json` and report the count. The rules to check: a sentence over 20 words in an instruction field or over 25 in a description; a run of two or more all-caps words used as syntax; a paragraph over 6 sentences; a field over its word cap; and any scaffolding phrase from the list above. Week 23 sits at 0 violations across 56 fields. Do not claim a file is compliant without the number.
 
 __Every prescribed exercise must show a target weight.__ The renderer resolves the displayed weight in two ways:

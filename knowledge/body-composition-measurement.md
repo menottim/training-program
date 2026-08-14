@@ -2,75 +2,94 @@
 
 ## Scope
 
-Covers how to interpret day-to-day scale weight, the reliability of different body-composition measurement methods (consumer BIA scales, DEXA, skinfolds, 3D/ultrasound), and when point measurements versus trends actually carry signal. Applies to decisions about whether a weigh-in number is meaningful, how often to measure, and which tool to use for which question. Does not cover clinical diagnosis of eating disorders or obesity; this is applied sport-nutrition usage.
+This file covers three topics. First, how to interpret day-to-day scale weight. Second, the reliability of the different body-composition measurement methods: consumer BIA scales, DEXA, skinfolds, and 3D or ultrasound methods. Third, when a single measurement carries signal, and when only a trend does.
+
+Use it to decide three things: whether a weigh-in number means anything, how often to measure, and which tool answers which question.
+
+This file does not cover the clinical diagnosis of an eating disorder or of obesity. It covers applied sport-nutrition use only.
 
 ## Key Findings
 
 | Claim | Evidence tier | Primary source |
 |---|---|---|
-| Roughly 84% of short-term (≤2 week) weight change is fat-free mass (water, glycogen, gut contents, lean tissue), not fat. | Strong | Bhutani et al. 2017, Physiological Reports |
-| Glycogen stores ~3 g water per gram under typical recovery, up to ~17 g when post-exercise fluid is amply replaced. The 3:1 ratio is a floor, not a ceiling. | Strong | Fernández-Elías et al. 2015, Eur J Appl Physiol |
-| Consumer BIA scales measure body mass accurately (±0.3 kg vs DXA) but systematically misestimate body-fat percentage: fat mass underestimated by 2.5-5.7 kg, FFM overestimated by 3.4-8.3 kg versus DEXA across normal BMI. | Moderate | Achamrah et al. 2018, PLoS One; Kyle et al. 2004 ESPEN I and II |
-| Under standardized protocol (fasted, rested, minimal clothing, same operator), DEXA has typical error of ~0.1% total mass, ~0.4% lean mass, ~1.9% fat mass. Non-standardized protocol doubles this. | Strong | Nana et al. 2016, Int J Sport Nutr Exerc Metab |
-| A single exercise session before a DEXA scan increases typical error by ~10% and can shift regional mass estimates measurably. | Strong | Nana et al. 2013, Med Sci Sports Exerc |
-| Skinfolds performed by an experienced ISAK-accredited rater yield TEM <5%; novice rater TEM reaches 7.5-20%+. Reliability is strongly rater-dependent. | Strong | Kasper et al. 2021, Nutrients; Amaral-Gomes et al. 2024 |
-| Consistent daily self-weighing is associated with better long-term weight maintenance; breaks >1 month predict regain. | Moderate | Helander et al. 2014, PLoS ONE |
-| Body weight follows a weekly rhythm (higher Sun/Mon, lower mid-week) driven by behavior, not adiposity. | Moderate | Orsama et al. 2014, Obesity Facts |
-| Multi-frequency BIA (MFBIA) improves body-water reliability over single-frequency BIA but validation in lean, muscular athletes is thin. | Emerging | Looney et al. 2024, Frontiers in Nutrition |
+| Approximately 84% of a short-term weight change, over 2 weeks or less, is fat-free mass. That mass is water, glycogen, gut contents and lean tissue. It is not fat. | Strong | Bhutani et al. 2017, Physiological Reports |
+| Glycogen stores approximately 3 g of water per gram in typical recovery. It stores up to approximately 17 g per gram when the athlete fully replaces the post-exercise fluid deficit. The 3:1 ratio is a floor, not a ceiling. | Strong | Fernández-Elías et al. 2015, Eur J Appl Physiol |
+| A consumer BIA scale measures body mass accurately, to within 0.3 kg against DXA. It misestimates body-fat percentage systematically. Across a normal BMI it underestimates fat mass by 2.5 to 5.7 kg, and it overestimates fat-free mass by 3.4 to 8.3 kg, against DEXA. | Moderate | Achamrah et al. 2018, PLoS One; Kyle et al. 2004 ESPEN I and II |
+| Under a standardized protocol, DEXA has a typical error of approximately 0.1% for total mass, approximately 0.4% for lean mass, and approximately 1.9% for fat mass. The protocol requires the subject to be fasted and rested, in minimal clothing, with the same operator. A non-standardized protocol doubles these errors. | Strong | Nana et al. 2016, Int J Sport Nutr Exerc Metab |
+| One exercise session before a DEXA scan increases the typical error by approximately 10%. It can also shift the regional mass estimates measurably. | Strong | Nana et al. 2013, Med Sci Sports Exerc |
+| An experienced ISAK-accredited rater measures skinfolds with a technical error of measurement below 5%. A novice rater reaches 7.5 to 20% or more. Reliability depends strongly on the rater. | Strong | Kasper et al. 2021, Nutrients; Amaral-Gomes et al. 2024 |
+| Consistent daily self-weighing is associated with better long-term weight maintenance. A break longer than 1 month predicts weight regain. | Moderate | Helander et al. 2014, PLoS ONE |
+| Body weight follows a weekly rhythm. It is higher on Sunday and Monday, and lower mid-week. Behavior drives this rhythm, not adiposity. | Moderate | Orsama et al. 2014, Obesity Facts |
+| Multi-frequency BIA improves body-water reliability against single-frequency BIA. Validation in a lean, muscular athlete is thin. | Emerging | Looney et al. 2024, Frontiers in Nutrition |
 
 ## Mechanism (what the controlled data actually shows)
 
-### The scale sums everything inside the body envelope
+### The scale adds up everything inside the body
 
-Bhutani et al. (2017, Physiol Rep 5(13):e13336) directly decomposed two-week weight change in free-living adults and found that __~84% of the observed change was fat-free mass__, driven by water, glycogen, gut contents, and day-to-day lean-tissue fluctuations. Only ~16% was fat. Within a single day, total body water can shift by up to ~5%, and intestinal contents alone vary by 100-300 mL. For a 220-lb adult, day-to-day swings of 1-3 lb are physiologically normal and carry almost no information about adiposity.
+Bhutani et al. (2017, Physiol Rep 5(13):e13336) decomposed a two-week weight change in free-living adults. __Approximately 84% of the observed change was fat-free mass.__ Water, glycogen, gut contents and day-to-day lean-tissue fluctuation drove that change. Only approximately 16% was fat.
 
-### Glycogen is the single largest acute non-fat contributor
+Inside a single day, total body water can change by up to approximately 5%. Intestinal contents alone vary by 100 to 300 mL. For a 220 lb adult, a day-to-day swing of 1 to 3 lb is physiologically normal, and it carries almost no information about body fat.
 
-Fernández-Elías et al. (2015, Eur J Appl Physiol 115(9):1919-26) directly measured muscle biopsy glycogen and water content during recovery from prolonged heat exercise. With partial rehydration (~400 mL), the glycogen-to-water ratio was ~1:3. With full fluid-deficit replacement (~3,170 mL), the ratio reached ~1:17, meaning water stored beyond glycogen-bound fractions. A 220-lb athlete completing a hockey or basketball session and then eating carbs can oscillate 400-800 g of muscle glycogen overnight, producing 2-5 lb of scale-weight variance with no change in fat mass. The 3:1 figure commonly cited is the floor of the range, not the average.
+### Glycogen is the largest acute non-fat contributor
 
-### Consumer BIA scales measure weight well and body fat poorly
+Fernández-Elías et al. (2015, Eur J Appl Physiol 115(9):1919-26) measured muscle glycogen and water content directly by biopsy, during recovery from prolonged exercise in the heat. With partial rehydration of approximately 400 mL, the glycogen-to-water ratio was approximately 1:3. With full replacement of the fluid deficit, at approximately 3,170 mL, the ratio reached approximately 1:17. The extra water was stored beyond the glycogen-bound fraction.
 
-The ESPEN guidelines (Kyle et al. 2004, Clin Nutr 23(5): 1226-1243 Part I and 23(6): 1430-1453 Part II) established that bioelectrical impedance estimates total body water via tissue conductivity, then derives fat-free mass from a population-specific equation assuming ~73% hydration of FFM. That assumption breaks whenever hydration is perturbed, which is constantly: recent meals, recent exercise, dehydration, skin temperature, even skin moisture from moisturizer. Looney et al. (2024, Front Nutr 11:1491931) under highly standardized conditions reported same-day ICC ≥0.999 for whole-body impedance measures with same-day differences of 0.0-0.2 kg body mass and 0.0-0.2 L body water. Between-day spread widens to 0.1-0.7 kg and 0.0-0.5 L.
+A 220 lb athlete can complete a hockey or basketball session, then eat carbohydrate, and shift 400 to 800 g of muscle glycogen overnight. That produces 2 to 5 lb of scale-weight variance, with no change in fat mass. The commonly cited 3:1 figure is the floor of the range. It is not the average.
 
-For the absolute body-fat-percentage readout, consumer BIA systematically underestimates fat mass by 2.5-5.7 kg and overestimates FFM by 3.4-8.3 kg versus DEXA across normal BMI ranges. Conclusion: __track the delta, not the absolute number__.
+### A consumer BIA scale measures weight well and body fat poorly
 
-### DEXA precision requires strict protocol, and free-living noise eats real signal
+The ESPEN guidelines (Kyle et al. 2004, Clin Nutr 23(5):1226-1243 Part I and 23(6):1430-1453 Part II) explain the method. Bioelectrical impedance estimates total body water from tissue conductivity. It then derives fat-free mass from a population-specific equation, which assumes that fat-free mass is approximately 73% water.
 
-Nana et al. (2012, IJSNEM 22(3):183-92) showed that eating, drinking, and training before a scan systematically shifts body-composition estimates. Nana et al. (2013, MSSE 45(1):178-85) quantified post-exercise artifacts in regional mass estimates. Nana et al. (2016, IJSNEM 26(3):259-67) found that identical-equipment DEXA scans under non-standardized protocol had SD of change scores of 2-3% for total and fat-free soft tissue, versus 1-2% under best-practice protocol. Kasper et al. (2021, Nutrients 13(4):1075) summarized typical DEXA TEs under strict protocol at ~0.1% total mass, ~0.4% lean mass, ~1.9% fat mass, ~0.7% bone mineral content.
+That assumption fails whenever hydration changes, and hydration changes constantly. A recent meal, recent exercise, dehydration, skin temperature, and even moisturizer on the skin all affect it.
 
-Practical implication: a DEXA scan pair in this athlete needs to show a fat-mass change of roughly __≥1 kg (~2.2 lb)__ to be distinguishable from noise, and _only_ if both scans are done fasted, rested, and on the same device. Casual-protocol scans at different times of day or after training can produce 2-3 kg of spurious change.
+Looney et al. (2024, Front Nutr 11:1491931) measured reliability under highly standardized conditions. Same-day ICC was 0.999 or higher for the whole-body impedance measures. Same-day differences were 0.0 to 0.2 kg of body mass and 0.0 to 0.2 L of body water. Between-day differences widen, to 0.1 to 0.7 kg and 0.0 to 0.5 L.
 
-### Skinfolds, correctly performed, are underrated for in-season tracking
+For the absolute body-fat-percentage reading, a consumer BIA scale underestimates fat mass by 2.5 to 5.7 kg, and it overestimates fat-free mass by 3.4 to 8.3 kg, against DEXA, across a normal BMI range.
 
-Kasper et al. (2021) made an explicit case that skinfolds measured by an experienced ISAK-accredited rater are __less__ affected by hydration/feeding state than BIA or free-living DEXA, because they measure subcutaneous fat directly without relying on body-water-dependent inferences. The tradeoff is rater skill: Amaral-Gomes et al. (2024) showed experts held TEM below 5% across standard sites while novices exceeded 7.5% on iliac crest and abdominal sites. Inter-rater ICCs are site-dependent (triceps, subscapular, calf: good; biceps: poor).
+The conclusion is direct: __track the change, not the absolute number__.
 
-Best practice for longitudinal tracking: __report the sum of 7 ISAK sites in millimeters__, not converted to body-fat percentage. The conversion equations add another layer of error that obscures small real changes. Daily self-weighing research (Helander 2014, Orsama 2014) supports that trend-smoothed daily weight combined with periodic skinfold tracking is the most informative applied-sport combination.
+### DEXA precision needs a strict protocol, and free-living noise destroys real signal
+
+Nana et al. (2012, IJSNEM 22(3):183-92) showed that eating, drinking and training before a scan shift the body-composition estimate systematically. Nana et al. (2013, MSSE 45(1):178-85) quantified the post-exercise artifacts in the regional mass estimates.
+
+Nana et al. (2016, IJSNEM 26(3):259-67) compared protocols on identical equipment. Under a non-standardized protocol, the standard deviation of the change scores was 2 to 3% for total soft tissue and for fat-free soft tissue. Under a best-practice protocol it was 1 to 2%.
+
+Kasper et al. (2021, Nutrients 13(4):1075) summarized the typical DEXA errors under a strict protocol: approximately 0.1% for total mass, approximately 0.4% for lean mass, approximately 1.9% for fat mass, and approximately 0.7% for bone mineral content.
+
+The practical result follows. For this athlete, a pair of DEXA scans must show a fat-mass change of approximately __1 kg or more, which is approximately 2.2 lb__, before you can separate it from noise. That holds only if both scans are done fasted, rested, and on the same device. A casual-protocol scan at a different time of day, or after training, can produce 2 to 3 kg of false change.
+
+### Skinfolds, done correctly, are underrated for in-season tracking
+
+Kasper et al. (2021) argue that skinfolds from an experienced ISAK-accredited rater are __less__ affected by hydration and feeding state than either BIA or free-living DEXA. The reason is direct: skinfolds measure subcutaneous fat, and they do not depend on an inference from body water.
+
+The trade-off is rater skill. Amaral-Gomes et al. (2024) showed that experts held the technical error of measurement below 5% across the standard sites. Novices exceeded 7.5% on the iliac crest and abdominal sites. Inter-rater ICCs also depend on the site. The triceps, subscapular and calf sites are good. The biceps site is poor.
+
+For longitudinal tracking, use this best practice: __report the sum of the 7 ISAK sites in millimeters__. Do not convert that sum to a body-fat percentage. The conversion equations add a second layer of error, which hides a small real change.
+
+The daily self-weighing research supports a combination (Helander 2014; Orsama 2014). Trend-smoothed daily weight, plus periodic skinfold tracking, is the most informative pair of tools in applied sport.
 
 ## Practical Application
 
-1. __Weigh daily, same conditions, track the 7-day moving average.__ Morning, post-void, pre-breakfast, minimal clothing, same scale. For a 220-lb adult, daily noise of ~1-3 lb is normal. The 7-day rolling average is the signal; any single-day number is not.
+1. __Weigh daily, under the same conditions, and track the 7-day moving average.__ Weigh in the morning, after voiding, before breakfast, in minimal clothing, on the same scale. For a 220 lb adult, daily noise of approximately 1 to 3 lb is normal. The 7-day rolling average is the signal. A single-day number is not.
 
-2. __Only act on a sustained trend change.__ A rule of thumb: only adjust programming when the 7-day rolling average has moved __>1% body weight (>2.2 lb for this athlete) in a sustained direction over ≥2 weeks__. Below that threshold, the signal is indistinguishable from measurement and biological noise.
+2. __Act only on a sustained change in the trend.__ Use this rule: change the program only after the 7-day rolling average moves __more than 1% of body weight, which is more than 2.2 lb for this athlete, in one direction, across 2 or more weeks__. Below that threshold, you cannot separate the signal from measurement noise and biological noise.
 
-3. __Do not interpret post-training or post-game spikes as fat gain.__ Glycogen repletion plus carb-rich recovery meals routinely produce overnight weight increases of 2-4 lb. These resolve within 24-72 hours.
+3. __Do not read a spike after training or after a game as fat gain.__ Glycogen repletion, plus carbohydrate-rich recovery meals, routinely produce an overnight weight increase of 2 to 4 lb. That increase resolves inside 24 to 72 hours.
 
-4. __Consumer BIA scale body-fat percentage is for trend, not absolute truth.__ Weigh at the exact same time, same hydration state, same foot-sole contact. The device is likely over-estimating FFM by several kg vs DEXA. Track the 30-day direction of the body-fat number, not the number itself.
+4. __Use the body-fat percentage from a consumer BIA scale as a trend only. It is not the absolute truth.__ Weigh at exactly the same time, in the same hydration state, with the same foot contact on the plates. The device probably overestimates fat-free mass by several kg against DEXA. Track the 30-day direction of the body-fat number. Do not track the number itself.
 
-5. __If a definitive body-comp number is needed, use strict-protocol DEXA.__ Fasted overnight, rested, no training for 24+ hours, minimal clothing, same scanner, ideally same operator. Accept that repeat-scan least-significant-change is ~1-2 kg fat mass. Radiation dose is low but not zero; 2-3 scans per year is a reasonable in-season cadence.
+5. __If you need a definitive body-composition number, use DEXA under a strict protocol.__ The athlete must be fasted overnight and rested, with no training for 24 hours or more, in minimal clothing, on the same scanner, and ideally with the same operator. Accept that the least significant change between repeat scans is approximately 1 to 2 kg of fat mass. The radiation dose is low, but it is not zero. Two or three scans per year is a reasonable in-season rate.
 
-6. __Experienced-rater skinfolds (sum-of-mm) are the best in-season applied-sport tool__ when one is available. Same rater every measurement. Do not convert to body-fat percentage; report raw sum-of-7-site mm.
+6. __Skinfolds from an experienced rater, reported as a sum in millimeters, are the best in-season applied-sport tool__, when a rater is available. Use the same rater for every measurement. Do not convert the result to a body-fat percentage. Report the raw sum of the 7 sites in millimeters.
 
-7. __Reserve body-comp judgments for 4-6 week blocks.__ Day-to-day and week-to-week variance in a training athlete is dominated by glycogen, hydration, inflammation, and gut contents. Trend assessment across a full mesocycle is where real signal lives.
+7. __Judge body composition over a 4 to 6 week block.__ In a training athlete, day-to-day and week-to-week variance comes mainly from glycogen, hydration, inflammation and gut contents. The real signal appears across a full mesocycle.
 
 ## Unresolved or Bleeding-Edge Questions
 
-- __Multi-frequency BIA and bioimpedance spectroscopy:__ MFBIA devices (InBody, SECA mBCA) show improved body-water compartment reliability versus single-frequency scales (Looney 2024), but validation in lean, muscular, tendinopathy-affected athletes is thin. Not yet a DEXA substitute.
-
-- __A-mode ultrasound for subcutaneous fat:__ Several studies suggest it outperforms novice-administered skinfolds for inter-rater reliability, but it has mixed agreement with DEXA/BOD POD for body-fat percentage. AI-based image segmentation is advancing rapidly but lacks longitudinal validation in athletes.
-
-- __3D optical scanning and smartphone body-comp apps:__ Promising for circumference tracking but poor accuracy for fat mass vs DEXA; athlete-specific longitudinal validation is minimal.
-
-- __Smart-scale ML trend anomaly detection:__ Population-level signal is clear (Zheng et al. 2021 smart-scale cohort), but individual-level "is this deviation real" flagging is not yet in validated consumer products.
+- __Multi-frequency BIA and bioimpedance spectroscopy.__ Multi-frequency devices such as the InBody and the SECA mBCA show better reliability for the body-water compartments than a single-frequency scale (Looney 2024). Validation in a lean, muscular athlete with tendinopathy is thin. These devices do not yet replace DEXA.
+- __A-mode ultrasound for subcutaneous fat.__ Several studies suggest it beats novice-administered skinfolds on inter-rater reliability. Its agreement with DEXA and BOD POD for body-fat percentage is mixed. AI-based image segmentation is advancing quickly, and it has no longitudinal validation in athletes.
+- __3D optical scanning, and smartphone body-composition apps.__ Both look promising for circumference tracking. Both give poor accuracy for fat mass against DEXA. Athlete-specific longitudinal validation is minimal.
+- __Anomaly detection in smart-scale trends by machine learning.__ The population-level signal is clear (Zheng et al. 2021, a smart-scale cohort). No validated consumer product yet flags whether an individual deviation is real.
 
 ## References
 
@@ -92,9 +111,9 @@ Best practice for longitudinal tracking: __report the sum of 7 ISAK sites in mil
 
 ## Corrections Log
 
-- __2026-04-18:__ File initialized. Explicit corrections to prior general claims:
-  - The common heuristic "morning-evening swing ~1 lb" understates typical diurnal variance; 2-4 lb is more accurate per ingested food/fluid transit.
-  - "DEXA is the gold standard" is accepted-but-qualified: it is the practical in-vivo standard, not the 4-compartment-model true gold standard. DEXA is not interchangeable across machines, software versions, or operators.
-  - "Skinfolds are outdated" is refuted by Kasper et al. 2021. Experienced-rater skinfolds are arguably superior to BIA or free-living DEXA for in-season trend tracking because they are minimally affected by glycogen/hydration noise.
-  - "3 g water per 1 g glycogen" is a floor, not a ceiling (Fernández-Elías 2015: up to 17:1 with full rehydration). This was stated correctly in `sodium-hydration.md` and is reiterated here.
-  - "Weight gain over a single week equals fat gain" is refuted by Bhutani 2017: ~84% of weekly weight change is fat-free mass shifts.
+- __2026-04-18:__ This file was created. It corrects five earlier general claims:
+  - The common heuristic that the morning-to-evening swing is approximately 1 lb understates the typical daily variance. A range of 2 to 4 lb is more accurate, because of the food and fluid moving through the gut.
+  - The claim that DEXA is the gold standard is accepted with a qualification. DEXA is the practical in-vivo standard. It is not the true gold standard, which is the 4-compartment model. DEXA results are also not interchangeable across machines, software versions or operators.
+  - The claim that skinfolds are outdated is refuted by Kasper et al. 2021. Skinfolds from an experienced rater are arguably better than BIA or free-living DEXA for in-season trend tracking, because glycogen and hydration noise affect them very little.
+  - The figure of 3 g of water per 1 g of glycogen is a floor, not a ceiling. Fernández-Elías 2015 measured up to 17:1 with full rehydration. `sodium-hydration.md` already states this correctly, and this file repeats it.
+  - The claim that a weight gain across one week equals a fat gain is refuted by Bhutani 2017. Approximately 84% of a weekly weight change is a shift in fat-free mass.

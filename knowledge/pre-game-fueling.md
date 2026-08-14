@@ -2,96 +2,106 @@
 
 ## Scope
 
-Practical guidance for stocking pre-packaged, shelf-stable snacks that Menotti can keep on hand (home pantry, car, gym bag, office desk) for pre-game, pre-training, and halftime fueling. Focuses on carb-forward, low-fat, low-fiber options appropriate for the 30-minute to 3-hour pre-exercise window. Not a comprehensive nutrition review - that content lives in `knowledge/protein-distribution.md` and the nutrition section of `CLAUDE.md`.
+This file gives practical guidance on pre-packaged, shelf-stable snacks. Menotti keeps these in four places: the home pantry, the car, the gym bag, and the office desk. He uses them before a game, before training, and at halftime.
+
+The file covers carb-forward, low-fat, low-fiber options, for the window from 30 minutes to 3 hours before exercise.
+
+This file is not a full nutrition review. That content is in `knowledge/protein-distribution.md` and in the nutrition section of `CLAUDE.md`.
 
 ## Evidence Basis (brief)
 
-- __[Thomas et al. 2016 Academy of Nutrition / ACSM / Dietitians of Canada joint position stand](https://pubmed.ncbi.nlm.nih.gov/26891166/)__: 1-4 g/kg carb 1-4 hours pre-exercise. For Menotti at ~100 kg, that's 100-400 g carbs over that window. Most pre-game snacks target 30-60 g carbs 1-2 hours out.
-- __Low fat + low fiber pre-exercise__: fat delays gastric emptying; fiber causes GI discomfort under sport load. Target <5 g fat and <5 g fiber in the 1-2 hour window.
-- __Familiar foods only__: pre-game is not the window to experiment. Test new snacks in practice first.
+- __[Thomas et al. 2016, the joint position stand from the Academy of Nutrition, ACSM and Dietitians of Canada](https://pubmed.ncbi.nlm.nih.gov/26891166/).__ Take 1 to 4 g of carbohydrate per kg, 1 to 4 hours before exercise. Menotti weighs approximately 100 kg, so that is 100 to 400 g of carbohydrate across the window. Most pre-game snacks target 30 to 60 g of carbohydrate, 1 to 2 hours out.
+- __Keep the fat and the fiber low before exercise.__ Fat slows gastric emptying. Fiber causes GI discomfort under sport load. Target less than 5 g of fat and less than 5 g of fiber in the 1 to 2 hour window.
+- __Use familiar foods only.__ The pre-game window is not the time to experiment. Test a new snack in practice first.
 
-## Tier 1: Best for 1-2 hour pre-game window
+## Tier 1: Best for the 1 to 2 hour pre-game window
 
-Simple carbs, very low fat (<3 g), very low fiber (<2 g). Minimal GI risk during play.
-
-| Product | Format | Carbs | Fat | Protein | Cal | Shelf life | Notes |
-|---|---|---|---|---|---|---|---|
-| __Clif Bloks Energy Chews__ | 2.12 oz pouch | 48 g | 0 g | 0 g | 200 | 12+ months | Sports-specific; pure fast carbs (tapioca syrup + cane sugar + maltodextrin). Take 15-30 min pre-exercise or split across first half. |
-| __GU Energy Chews / Gels__ | pouch or gel | 20-25 g | 0 g | 0 g | 100 | 12+ months | Similar to Clif Bloks. Gels are faster, chews easier on stomach. |
-| __Quaker Rice Cakes (mini, plain or lightly salted)__ | single-serve bags or loose | 11 g/cake | 0.5 g | 1 g | 60/cake | 6 months | Cheapest option. 2-3 cakes hits the carb target. |
-| __Pretzels (Snyder's, Rold Gold, Old Thyme)__ | single-serve 1 oz bags | 22-24 g | 1 g | 2 g | 110 | 6+ months | Low-fat, includes sodium (useful for pre-sport). Your preferred brand is already validated. |
-| __Welch's Fruit Snacks / Annie's Bunny Fruit Snacks__ | pouch | 20-22 g | 0 g | 1-2 g | 80-90 | 12 months | Pure simple sugar. Kid-snack but works for adults. |
-| __Rice Krispies Treats (individual-wrapped)__ | bar | 17 g | 1.5 g | 1 g | 90 | 6 months | Simple carbs, minimal fat. Low fiber. |
-
-## Tier 2: Best for 2-3 hour pre-game window
-
-Moderate carbs with slightly more substance. Small amount of fat and protein is tolerable.
+These are simple carbohydrates, with very low fat below 3 g and very low fiber below 2 g. They carry minimal GI risk during play.
 
 | Product | Format | Carbs | Fat | Protein | Cal | Shelf life | Notes |
 |---|---|---|---|---|---|---|---|
-| __Honey Stinger Waffles__ | stroopwafel | 21-24 g | 6-7 g | 1 g | 140-160 | 12 months | Sports-specific. Slightly fattier than Tier 1 so not ideal <1 hr out, but widely used by cyclists / endurance athletes 30 min out. |
-| __Nature's Bakery Fig Bars (original or strawberry)__ | 2-bar pouch | 37 g | 5 g | 3 g | 200 | 12 months | Whole wheat + fig paste. 4 g fiber is the one downside; still GI-friendly for most. |
-| __Fig Newtons__ | 2-cookie pack | 22 g | 2.5 g | 1 g | 110 | 9 months | Lower fat than Nature's Bakery, simpler ingredients. |
-| __Graham crackers (single-serve packs)__ | 2-4 crackers | 20-24 g | 3 g | 2 g | 120 | 6 months | Classic carb snack. |
-| __GoGo Squeez applesauce pouches__ | 3.2 oz pouch | 14 g | 0 g | 0 g | 60 | 6-12 months | Shelf-stable fruit pouch. Low cal, fast carbs. |
-| __Sun-Maid raisin snack packs__ | 1 oz box | 22-25 g | 0 g | 1 g | 85-100 | 12+ months | Real dried fruit; some fiber (~1.5 g) but tolerable. |
-| __Medjool dates (individually wrapped)__ | 1-2 dates | 36-72 g | 0 g | 1-2 g | 140-280 | 3 months | Heavily concentrated sugar, high potassium. 1-2 dates hits the target. |
+| __Clif Bloks Energy Chews__ | 2.12 oz pouch | 48 g | 0 g | 0 g | 200 | 12 months or more | Sports-specific. Pure fast carbohydrate, from tapioca syrup, cane sugar and maltodextrin. Take it 15 to 30 minutes before exercise, or split it across the first half. |
+| __GU Energy Chews or Gels__ | pouch or gel | 20 to 25 g | 0 g | 0 g | 100 | 12 months or more | Similar to Clif Bloks. A gel absorbs faster. Chews are easier on the stomach. |
+| __Quaker Rice Cakes, mini, plain or lightly salted__ | single-serve bags, or loose | 11 g per cake | 0.5 g | 1 g | 60 per cake | 6 months | The cheapest option. Two or three cakes reach the carbohydrate target. |
+| __Pretzels: Snyder's, Rold Gold, Old Thyme__ | single-serve 1 oz bags | 22 to 24 g | 1 g | 2 g | 110 | 6 months or more | Low in fat. They also supply sodium, which is useful before sport. Menotti's preferred brand already works. |
+| __Welch's Fruit Snacks, or Annie's Bunny Fruit Snacks__ | pouch | 20 to 22 g | 0 g | 1 to 2 g | 80 to 90 | 12 months | Pure simple sugar. These are marketed to children. They work for an adult. |
+| __Rice Krispies Treats, individually wrapped__ | bar | 17 g | 1.5 g | 1 g | 90 | 6 months | Simple carbohydrate with minimal fat. Low in fiber. |
 
-## Tier 3: For 3+ hour pre-game or post-game
+## Tier 2: Best for the 2 to 3 hour pre-game window
 
-More substantial. Includes protein. Too much fat for <2 hour pre-game.
+These give moderate carbohydrate with more substance. A small amount of fat and protein is acceptable in this window.
 
 | Product | Format | Carbs | Fat | Protein | Cal | Shelf life | Notes |
 |---|---|---|---|---|---|---|---|
-| __Clif Builder Bar__ | bar | 29 g | 9 g | 20 g | 280 | 12 months | You already use this pre-game; 10g fat is the reason to stay 2+ hr out ideally. Protein makes it useful for 3-4 hour window. |
-| __RX Bar__ | bar | 23 g | 5 g | 12 g | 210 | 12 months | Whole-food protein source (egg whites, dates, nuts). Some fiber (~5 g) - not ideal <2 hr out. |
-| __Shelf-stable chocolate milk (Horizon single-serve)__ | 8 oz box | 22 g | 5 g | 8 g | 170 | 6 months | Classic post-game recovery drink; works 3+ hr pre-game. Refrigerate after opening. |
-| __Trail mix (simple, mostly fruit + pretzels, light on nuts)__ | 1 oz pouch | 20 g | 5-10 g | 2-4 g | 150-180 | 3-6 months | Avoid heavily-nutted trail mix pre-game - fat delays gastric emptying. |
+| __Honey Stinger Waffles__ | stroopwafel | 21 to 24 g | 6 to 7 g | 1 g | 140 to 160 | 12 months | Sports-specific. It holds more fat than a Tier 1 item, so it is not ideal under 1 hour out. Cyclists and endurance athletes commonly use it 30 minutes out. |
+| __Nature's Bakery Fig Bars, original or strawberry__ | 2-bar pouch | 37 g | 5 g | 3 g | 200 | 12 months | Whole wheat with fig paste. The one drawback is 4 g of fiber. It is still GI-friendly for most people. |
+| __Fig Newtons__ | 2-cookie pack | 22 g | 2.5 g | 1 g | 110 | 9 months | Lower in fat than Nature's Bakery, with simpler ingredients. |
+| __Graham crackers, single-serve packs__ | 2 to 4 crackers | 20 to 24 g | 3 g | 2 g | 120 | 6 months | A classic carbohydrate snack. |
+| __GoGo Squeez applesauce pouches__ | 3.2 oz pouch | 14 g | 0 g | 0 g | 60 | 6 to 12 months | A shelf-stable fruit pouch. Low in calories, with fast carbohydrate. |
+| __Sun-Maid raisin snack packs__ | 1 oz box | 22 to 25 g | 0 g | 1 g | 85 to 100 | 12 months or more | Real dried fruit. It holds some fiber, at approximately 1.5 g, which is tolerable. |
+| __Medjool dates, individually wrapped__ | 1 to 2 dates | 36 to 72 g | 0 g | 1 to 2 g | 140 to 280 | 3 months | Highly concentrated sugar, with high potassium. One or two dates reach the target. |
+
+## Tier 3: For 3 or more hours before a game, or after a game
+
+These are more substantial and they include protein. They hold too much fat for a window under 2 hours before a game.
+
+| Product | Format | Carbs | Fat | Protein | Cal | Shelf life | Notes |
+|---|---|---|---|---|---|---|---|
+| __Clif Builder Bar__ | bar | 29 g | 9 g | 20 g | 280 | 12 months | Menotti already uses this before a game. The 10 g of fat is the reason to keep it 2 or more hours out. Its protein makes it useful in the 3 to 4 hour window. |
+| __RX Bar__ | bar | 23 g | 5 g | 12 g | 210 | 12 months | A whole-food protein source, from egg whites, dates and nuts. It holds approximately 5 g of fiber, so it is not ideal under 2 hours out. |
+| __Shelf-stable chocolate milk, Horizon single-serve__ | 8 oz box | 22 g | 5 g | 8 g | 170 | 6 months | A classic recovery drink after a game. It also works 3 or more hours before one. Refrigerate it after you open it. |
+| __Trail mix, simple, mostly fruit and pretzels, light on nuts__ | 1 oz pouch | 20 g | 5 to 10 g | 2 to 4 g | 150 to 180 | 3 to 6 months | Avoid a trail mix that is heavy on nuts before a game. Fat slows gastric emptying. |
 
 ## Stock List Recommendation
 
-Given your schedule (basketball Tue PM, Sun AM, occasional hockey; work office M-F), stock these three contexts:
+Menotti plays basketball on Tuesday PM and Sunday AM, plays hockey occasionally, and works in an office Monday to Friday. Stock these three locations.
 
-### Home pantry (bulk buy, rotate):
-- Box of Clif Bloks (8 pouches) or GU Chews
-- Box of Nature's Bakery Fig Bars (12 pouches)
-- Snack-size pretzels (6-12 pack)
-- Mini rice cakes (1 large bag)
-- Clif Builder Bars (you already stock; keep 6-8 on hand)
-- Box of Fig Newtons or graham crackers
+### Home pantry: buy in bulk and rotate
 
-### Gym bag / car (replace monthly):
-- 2 Clif Bloks pouches (tier 1, fastest fuel)
-- 2 Nature's Bakery Fig Bars (tier 2, 2-3 hr window)
-- 1 Clif Builder Bar (tier 3, longer window or post-game)
+- One box of Clif Bloks, 8 pouches, or GU Chews.
+- One box of Nature's Bakery Fig Bars, 12 pouches.
+- Snack-size pretzels, a 6 to 12 pack.
+- Mini rice cakes, one large bag.
+- Clif Builder Bars. He already stocks these. Keep 6 to 8 on hand.
+- One box of Fig Newtons, or graham crackers.
 
-### Office desk (low rotation, always on hand):
-- 4-6 individual pretzel bags
-- Box of rice cakes
-- 2-3 GoGo Squeez applesauce pouches
-- 2 Clif Builder Bars
+### Gym bag and car: replace monthly
+
+- 2 Clif Bloks pouches, which are Tier 1 and the fastest fuel.
+- 2 Nature's Bakery Fig Bars, which are Tier 2 for the 2 to 3 hour window.
+- 1 Clif Builder Bar, which is Tier 3 for a longer window, or for after a game.
+
+### Office desk: low rotation, always on hand
+
+- 4 to 6 individual pretzel bags.
+- One box of rice cakes.
+- 2 to 3 GoGo Squeez applesauce pouches.
+- 2 Clif Builder Bars.
 
 ## Pre-Game Decision Tree
 
-- __0-30 min pre-game__: Clif Bloks (half pouch) or a few pretzels. Minimal volume in stomach.
-- __1-2 hours pre-game__ (target window for Menotti): Tier 1 picks. 30-40 g carbs. e.g., pretzels + half Clif Bloks, or 2 mini rice cakes + raisins, or 1 Fig Newton pack.
-- __2-3 hours pre-game__: Tier 2 picks. Nature's Bakery fig bars, Honey Stinger waffle, 2 Medjool dates.
-- __3+ hours pre-game__: treat as a meal window. Tier 3 protein-containing option or just eat a proper light meal (the lunch guidance applies).
+- __0 to 30 minutes before a game.__ Take half a pouch of Clif Bloks, or a few pretzels. Keep the volume in the stomach small.
+- __1 to 2 hours before a game.__ This is Menotti's target window. Choose Tier 1 items, for 30 to 40 g of carbohydrate. Examples: pretzels plus half a pouch of Clif Bloks; 2 mini rice cakes plus raisins; or 1 pack of Fig Newtons.
+- __2 to 3 hours before a game.__ Choose Tier 2 items. Examples: Nature's Bakery fig bars, a Honey Stinger waffle, or 2 Medjool dates.
+- __3 or more hours before a game.__ Treat this as a meal window. Choose a Tier 3 item that contains protein, or eat a proper light meal. The lunch guidance applies here.
 
-## What to Avoid Pre-Game
+## What to Avoid Before a Game
 
-- __Nuts alone, peanut butter, cheese, beef jerky in volume__: too much fat, slow gastric emptying
-- __Granola bars with nuts__ (Kind, most trail-mix bars): fat + fiber combo = GI risk
-- __Protein shakes__ with large protein doses: slower to empty, not what you need acutely
-- __High-fiber cereal, bran, beans, legumes__: fermentation during play = discomfort
-- __Anything new or experimental__: test in practice first
-- __Sugar alcohols__ (sugar-free/keto snacks with erythritol, xylitol, sorbitol): GI issues under exercise
+- __Nuts on their own, peanut butter, cheese, or a large amount of beef jerky.__ All hold too much fat, which slows gastric emptying.
+- __A granola bar that contains nuts__, such as a Kind bar or most trail-mix bars. The combination of fat and fiber creates a GI risk.
+- __A protein shake with a large protein dose.__ It empties slowly, and it is not what the athlete needs immediately before play.
+- __High-fiber cereal, bran, beans and legumes.__ These ferment during play and cause discomfort.
+- __Anything new or experimental.__ Test it in practice first.
+- __Sugar alcohols__, which appear in sugar-free and keto snacks as erythritol, xylitol and sorbitol. They cause GI problems under exercise.
 
-## Sodium / Hydration Companion
+## Sodium and Hydration Companion
 
-For a 50-min indoor basketball game with moderate sweat loss, plain water is sufficient pre-game. For longer or outdoor sessions, or if you're a heavy/salty sweater (visible white salt on skin after), consider:
-- __Electrolyte tablet in water__ (Nuun, LMNT, Liquid IV 30 min before)
-- __Salted pretzels__ already provide ~500-700 mg sodium per 2 oz serving
+For a 50-minute indoor basketball game with moderate sweat loss, plain water is sufficient before the game.
+
+For a longer session, an outdoor session, or a heavy or salty sweater, consider two options. A salty sweater leaves visible white salt on the skin after a session.
+
+- __An electrolyte tablet in water__, such as Nuun, LMNT or Liquid IV, taken 30 minutes before.
+- __Salted pretzels.__ These already supply approximately 500 to 700 mg of sodium per 2 oz serving.
 
 ## References
 
@@ -100,4 +110,4 @@ For a 50-min indoor basketball game with moderate sweat loss, plain water is suf
 
 ## Corrections Log
 
-- __2026-04-21:__ File initialized in response to Menotti asking for pre-packaged, shelf-stable pre-game snack recommendations. Product tiers calibrated against evidence-based pre-game fueling principles (Thomas 2016 ACSM position stand, Kerksick 2017 ISSN nutrient timing).
+- __2026-04-21:__ This file was created after Menotti asked for pre-packaged, shelf-stable pre-game snack recommendations. The product tiers are calibrated against evidence-based pre-game fueling principles, from the Thomas 2016 ACSM position stand and the Kerksick 2017 ISSN nutrient timing stand.

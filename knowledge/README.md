@@ -25,6 +25,7 @@ Primary-source evidence files that back the recommendations in `CLAUDE.md`. Each
 | [blood-donation-recovery.md](blood-donation-recovery.md) | Power Red / whole blood donation: acute VO2max hit, two-clock recovery (blood volume vs red-cell mass), DRCA extrapolation, iron's role for repeat donors, training modulation post-donation | 2026-06-14 |
 | [calf-strain-rehab.md](calf-strain-rehab.md) | Acute medial gastrocnemius strain ("tennis leg"): can't-miss differentials (Achilles rupture, DVT, compartment syndrome), PEACE & LOVE acute care, the NSAID/ibuprofen verdict, phased criteria-based rehab, return-to-sport criteria/timelines, recurrence risk, modifications for bilateral Achilles tendinopathy | 2026-06-23 |
 | [detraining-and-return.md](detraining-and-return.md) | Returning from a travel gap or injury layoff: strength-vs-size decay clocks, why strength outlives muscle, muscle memory (strong in rodents, negative in the one human test), restart-load bands, ramping caution and the ACWR critique | 2026-07-27 |
+| [proximity-to-failure.md](proximity-to-failure.md) | How close to take a set to failure: strength is indifferent to RIR while hypertrophy is not, volume's diminishing returns hit strength harder, the 24-48 h fatigue clock after failure, velocity-loss thresholds and vertical jump, RIR prediction error, and the defensible case for "5+" AMRAP sets as calibration rather than stimulus | 2026-08-14 |
 
 ## When to consult
 

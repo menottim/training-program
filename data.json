@@ -3262,12 +3262,12 @@
               "name": "Seated Calf Raise",
               "sets": "3x15",
               "weight": "bodyweight",
-              "notes": "Unweighted, matching what 7/29 actually did and what the PT appears to intend. The program's 90 lb anchor and the 70 lb reduction off it were both invented from an assumption; the real dose is bodyweight and there is nothing to reduce. Ask the PT whether bodyweight is meant to stay or to progress."
+              "notes": "Unweighted, matching what 7/29 did and what the PT appears to intend. The program's 90 lb anchor, and the 70 lb reduction off it, were both assumptions. The real dose is bodyweight, so there is nothing to reduce. Ask the PT whether bodyweight stays or progresses."
             },
             {
               "name": "Step-Back Off Small Box (chest lean forward)",
               "sets": "not today",
-              "notes": "Held until a morning read comes in under 3/10. A novel eccentric on top of a climbing read would make the next read uninterpretable, and that read is what matters right now. A coaching call, not the PT's."
+              "notes": "Held until a morning read comes in under 3/10. A novel eccentric on top of a climbing read would make the next read uninterpretable. That read is what matters right now. A coaching call, not the PT's."
             },
             {
               "name": "Single-Leg Balance",
@@ -3281,7 +3281,7 @@
           "date": "2026-07-31",
           "type": "training",
           "desc": "Squat clean attempt, PT single-leg work",
-          "longDesc": "Squat session 2, not the restart, since Tuesday already brought it back. Tuesday ramped 45/95/135 and held 135 for two sets, so the job here is all four sets at 135. That earns plus 10 to 145.\n\nRoughly 48 hours ahead of Sunday PM hockey, so this stays the lightest lifting day: RPE 6, no plyometrics, no jumps.\n\nThe single-leg RDL enters as the PT's 2-3x weekly item, replacing the Glute-Ham Raise and the Bulgarian split squat. It is hip-dominant, single-leg and calf-sparing, and it exposes left against right. The loaded single-leg calf raise runs once weekly on this day.\n\nThe calf work is gated on this morning's read, because Thursday climbed to 3-5/10. Under 3/10: run the day as written. Still 3-5/10: keep the seated raise unweighted, skip the loaded single-leg raise, and keep step-backs unstarted. Above 5/10, or localized to the strain site: isometrics only, and say so before Sunday's hockey.",
+          "longDesc": "Squat session 2, not the restart, since Tuesday already brought it back. Tuesday ramped 45/95/135 and held 135 for two sets, so the job here is all four sets at 135. That earns plus 10 to 145.\n\nRoughly 48 hours ahead of Sunday PM hockey, so this stays the lightest lifting day: RPE 6, no plyometrics, no jumps.\n\nThe single-leg RDL enters as the PT's 2-3x weekly item, replacing the Glute-Ham Raise and the Bulgarian split squat. It is hip-dominant and calf-sparing, and it exposes left against right.\n\nThe calf work is gated on this morning's read, because Thursday climbed to 3-5/10. Under 3/10: run the day as written. Still 3-5/10: keep the seated raise unweighted, skip the loaded single-leg raise, and keep step-backs unstarted. Above 5/10, or localized to the strain site: isometrics only, and say so before Sunday's hockey.",
           "exercises": [
             {
               "name": "Back Squat",
@@ -3317,13 +3317,13 @@
               "name": "Seated Calf Raise",
               "sets": "3x15",
               "weight": "bodyweight",
-              "notes": "PT daily block, unweighted, as performed. This is a much lighter calf dose than the retired 3x/week 3x8 at 135, which is why the loaded single-leg raise below matters. Ask the PT whether bodyweight is meant to stay or to progress. Knee bent, full plantarflexion, pain-free bottom."
+              "notes": "PT daily block, unweighted, as performed. This is a much lighter calf dose than the retired 3x/week 3x8 at 135. That is why the loaded single-leg raise below matters. Ask the PT whether bodyweight is meant to stay or to progress. Knee bent, full plantarflexion, pain-free bottom."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg",
               "weight": "BW + 25 lb/leg",
-              "notes": "Program item, not the PT's, kept at once weekly on this day. Gated on a Friday morning read under 3/10, given Thursday's climb to 3-5/10. It is the only item in either program that reaches the knee-extended benchmark: bodyweight plus 25 is roughly 1.11x bodyweight, where a bodyweight hold is not. Log left and right separately. Floor range only."
+              "notes": "Program item, not the PT's, kept at once weekly on this day. Gated on a Friday morning read under 3/10, given Thursday's climb to 3-5/10. It is the only item in either program that reaches the knee-extended benchmark. Bodyweight plus 25 is roughly 1.11x bodyweight. A bodyweight hold is not. Log left and right separately. Floor range only."
             }
           ]
         },

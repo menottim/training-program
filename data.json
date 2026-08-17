@@ -5399,6 +5399,174 @@
         { "day": "Fri", "date": "2026-07-17", "type": "rehab", "desc": "Heaviest calf load · provisional", "longDesc": "Placeholder; gated on clean mornings before any load step-up." },
         { "day": "Sat", "date": "2026-07-18", "type": "rest", "desc": "Rest · provisional", "longDesc": "Placeholder. Barbell lower reintroduces only after the capacity gate clears; Phase 3 (running/hop/plyo prep) opens once single-leg capacity is climbing + ~20 symptom-free single-leg hops - written week-by-week." }
       ]
+    },
+
+    "24": {
+      "title": "Basketball back, Sunday is a double-header again",
+      "blockLabel": "Return to sport",
+      "subtitle": "Basketball returned 8/16 after 56 days and both Sunday games were symptom-free. The daily bodyweight calf block comes out, loaded HSR stays at three sessions, and the row caps at 5 reps.",
+      "reason": "Basketball returned on 8/16 after 56 days, at 20 minutes and half intensity, symptom-free. Hockey followed the same day, 60 minutes at high intensity, also symptom-free. Sunday is a double-header again.\n\nThere is no Tuesday game. The slate is basketball Sunday AM and hockey Sunday PM.\n\nTwo gym days, Thursday and Friday. Thursday carries barbell lower and the jumps, which puts it 72 hours before Sunday. Friday is upper, core and calf, which leaves the legs clean.\n\nThe daily bodyweight calf block comes out. It has been skipped on almost every day for three weeks, and the tissue has now handled a double-header. Loaded HSR stays at three sessions: Tuesday, Thursday and Friday.\n\nThe graded run loses its gate and becomes ordinary conditioning. It was a rehab test toward returning to sport, and the return already happened.\n\nThe row caps at 5 reps. Friday's set of 10 produced sharp lower back pain, which cleared over the weekend and held through both games. The cap is the fix, not a load cut.\n\nSaturday owes the body-composition reading, last taken on 6/12.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-08-16",
+          "type": "game",
+          "desc": "Basketball AM and hockey PM, both clean",
+          "longDesc": "Done. Basketball 20 minutes at half intensity, then hockey 60 minutes at high intensity. Both symptom-free.\n\nFirst basketball since the 6/21 strain, 56 days. First Sunday double-header since 6/14. The lower back held through landing, rotation and the skating posture with nothing.",
+          "exercises": [
+            {
+              "name": "Basketball",
+              "sets": "20 min",
+              "weight": "moderate, self-limited",
+              "notes": "Returned at roughly half intensity by choice rather than at full pace. Calf and Achilles quiet throughout."
+            },
+            {
+              "name": "Hockey",
+              "sets": "60 min",
+              "weight": "high",
+              "notes": "Second game of the day. Symptom-free start to finish, and the larger demand of the two."
+            }
+          ]
+        },
+        {
+          "day": "Mon",
+          "date": "2026-08-17",
+          "type": "rest",
+          "desc": "Rest after the double-header",
+          "longDesc": "Full rest. No calf work and no lifting, the day after two games.\n\nLog the morning read. It is the first read after the largest sport load since the strain, and it sets the rest of the week."
+        },
+        {
+          "day": "Tue",
+          "date": "2026-08-18",
+          "type": "training",
+          "desc": "Run one, plus loaded calf",
+          "longDesc": "Two items, and neither needs a gym.\n\nThe run goes first. This is run one at the starting dose, because it has never happened. Flat and level, easy conversational pace, no hills and no cutting. It carries no gate now. It is conditioning, not a rehab test.\n\nThen the loaded single-leg calf raise, stepping to bodyweight plus 35. 7/31 and 8/14 both went clean at plus 25, and 8/14 was confirmed as a true 6RM.",
+          "exercises": [
+            {
+              "name": "Graded Return-to-Run (walk-jog intervals)",
+              "sets": "6 rounds of 1 min jog / 1 min walk",
+              "weight": "bodyweight",
+              "notes": "Run one, at the starting dose. Roughly 6 minutes of jogging. Land mid-foot, not up on the toes. Flat and level, no hills and no cutting. Stop on any sharp calf pain and record where."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 35 lb/leg",
+              "notes": "Step up from bodyweight plus 25, after two clean sessions. Run it as a true 6RM: the sixth rep is the last available at full tempo. If it feels easy the load is wrong. Floor range only. 3 seconds up, 3 seconds down."
+            }
+          ]
+        },
+        {
+          "day": "Wed",
+          "date": "2026-08-19",
+          "type": "rest",
+          "desc": "Rest",
+          "longDesc": "Rest. Nothing prescribed.\n\nLog the morning read after Tuesday's run and loaded calf work."
+        },
+        {
+          "day": "Thu",
+          "date": "2026-08-20",
+          "type": "training",
+          "desc": "Lower, jumps, calf steps to 165",
+          "longDesc": "Box jumps first, while fresh, stepping from 12 contacts to 15. Still an 18 in box, and still a step down on every rep.\n\nTrap bar deadlift holds 215 and carries the 5+ calibration set, because Thursday is the day farther from Sunday.\n\nSquat steps to 145 after clean sessions at 135 on 7/31 and 8/13. Seated calf raise steps to 165 for 3x8, which moves it from the 10-rep phase to the 8-rep phase. Single-leg RDL steps to the 25s after three sessions at the 20s.",
+          "exercises": [
+            {
+              "name": "Box Jump (step down)",
+              "sets": "5x3",
+              "weight": "18 in box",
+              "notes": "First, before any lifting, while fresh. Step up from 12 contacts to 15. Jump up, step down, never rebound. Land soft, knees over the toes."
+            },
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "3x5, set 3 = 5+",
+              "weight": "215 lbs",
+              "notes": "The calibration set of the day. Sets 1 and 2 are straight fives at 2-3 RIR. Set 3 is 5+: five reps, then continue to the last clean rep, hard cap 10. Full range from the floor, hips back, neutral spine."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "3x5",
+              "weight": "145 lbs",
+              "notes": "Step up from 135 after clean sessions on 7/31 and 8/13. At least parallel while it stays pain-free. Heels flat throughout."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x8",
+              "weight": "165 lbs",
+              "notes": "Step up from 150, which went clean on 8/13. This moves from the 10-rep phase to the 8-rep phase. Run it as a true 8RM. Tempo 3 seconds up, 3 seconds down. Floor range, no bottom-end stretch."
+            },
+            {
+              "name": "Single-Leg RDL (dumbbell)",
+              "sets": "3x8/leg",
+              "weight": "25 lb DBs",
+              "notes": "Step up from the 20s after three sessions there. Hinge to a hamstring stretch, flat back, control the return."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-08-21",
+          "type": "training",
+          "desc": "Upper, bench 175, row capped at 5",
+          "longDesc": "Bench takes 175 and carries the 5+ set, off the 8 reps at 170 on 8/14.\n\nThe row is the one to watch. It holds 135 and caps at 5 reps per set. The set of 10 on 8/14 is what produced the back pain, so the cap is the fix rather than a load cut.\n\nClose grip steps to 105, since 10 reps at 95 showed it was far too light. Overhead press steps to the 40s. Core drops to 20 lb, because 30 allowed only 5 reps against a prescribed 10.",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "3x5, set 3 = 5+",
+              "weight": "175 lbs",
+              "notes": "The calibration set of the day. Sets 1 and 2 are straight fives at 2-3 RIR. Set 3 is 5+: five reps, then continue to the last clean rep, hard cap 10. Full ROM, bar to the chest, no bounce."
+            },
+            {
+              "name": "Close Grip Bench Press",
+              "sets": "3x5",
+              "weight": "105 lbs",
+              "notes": "Step up from 95, which gave 10 reps on 8/14 against a prescribed 5. Elbows tucked, full ROM to the lower chest."
+            },
+            {
+              "name": "Bent Over Barbell Row",
+              "sets": "3x5",
+              "weight": "135 lbs",
+              "notes": "Holds 135, and caps at 5 reps per set. The set of 10 on 8/14 produced sharp lower back pain. Stop at five even if more are available. Torso near 45 degrees, flat back, pull to the lower ribs."
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "2x8",
+              "weight": "145 lbs",
+              "notes": "Two sets, both to genuine failure. 8/14 found failure at exactly 8 reps twice, so the load is correct. Log the actual reps."
+            },
+            {
+              "name": "Strict Overhead Press (dumbbell)",
+              "sets": "3x6",
+              "weight": "40 lb DBs",
+              "notes": "Step up from the 35s after a clean 3x6 on 8/14. Strict, no knee dip."
+            },
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "3x10/side",
+              "weight": "20 lbs",
+              "notes": "Load drops from 30, which allowed only 5 reps against a prescribed 10. Get the 10. Rotate through the trunk, hips driving."
+            },
+            {
+              "name": "Pallof Press",
+              "sets": "3x10/side",
+              "weight": "20 lbs",
+              "notes": "Load drops from 30 for the same reason. Anti-rotation: resist the pull rather than moving through it."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg",
+              "weight": "BW + 35 lb/leg",
+              "notes": "Second loaded gastroc session of the week, at Tuesday's load. Run it as a true 6RM. Floor range only. 3 seconds up, 3 seconds down."
+            }
+          ]
+        },
+        {
+          "day": "Sat",
+          "date": "2026-08-22",
+          "type": "rest",
+          "desc": "Rest, body comp, science review",
+          "longDesc": "No lifting.\n\nTake the body-composition reading. The last was 6/12 at 219.5 lb and 22.7 percent, which is 71 days.\n\nThe Week 24 science review also runs today. Week 23's never happened."
+        }
+      ]
     }
   }
 }

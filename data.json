@@ -2340,6 +2340,24 @@
         { "name": "Single-Leg Calf Raise (HSR)", "sets": "3x6/leg", "weight": "BW + 25 lb/leg", "notes": "Confirmed as a true 6RM. The sixth rep was the last one available at full tempo." }
       ],
       "notes": "First session under the two-day effort model. Bench ran 5, 5 and 8 at 170, with set 3 as the prescribed 5+ calibration set. Close grip ran 5, 5 and 10 at 95. Bent over row ran 5, 5 and 10 at 135. The third set produced sharp lower back pain, still present 30 minutes later. Lat pulldown found failure at exactly 8 reps on both sets at 145. Dumbbell overhead press ran 3x6 at the 35s. Woodchop and Pallof press both ran sets of 5 at 30 lb against a prescribed 10. The load was too heavy for the rep target. Single-leg calf raise ran 3x6 per leg at bodyweight plus 25, confirmed as a true 6RM. The achilles and both calves were symptom-free. The daily isometric block was skipped. Three reps-plus sets ran, against the one prescribed."
+    },
+    {
+      "date": "2026-08-16",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "moderate, self-limited to about half",
+      "achillesPain": 0,
+      "notes": "First basketball since the 6/21 strain, 56 days. Played 20 minutes at roughly half intensity by choice, rather than returning at full intensity. Calf and Achilles quiet throughout. The lower back held with nothing through landing and rotation. It had produced sharp pain on Friday's row and cleared over the weekend."
+    },
+    {
+      "date": "2026-08-16",
+      "type": "game",
+      "activity": "Hockey",
+      "duration": "60 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "Second game of the day, after the morning basketball return. 60 minutes at high intensity, symptom-free start to finish. First Sunday double-header since 6/14. The lower back held through the flexed skating posture with nothing."
     }
   ],
   "scienceReviews": [
@@ -2730,7 +2748,8 @@
     },
     { "date": "2026-08-12", "achillesPainAM": 0, "notes": "Morning read: back to 0/10, left Achilles clear, no stiffness reported. THIS CLOSES THE TWO-DAY TENDON SIGNAL. The 8/10 and 8/11 reads were both 1/10 on the left Achilles with 15-30 min of stiffness on the second, against a block baseline of 0/10 across 30 logged sessions, and the concern on 8/11 was specifically that it had not cleared at roughly 48 h where Silbernagel's 24-hour rule expects a return to pre-exercise baseline (PMID 17307888). It cleared at roughly 72 h post-game. Read as a delayed but complete settle after the first full high-intensity hockey game of the block rather than as a step change in the tendon, and the decision made on 8/11, hold the loaded calf work at BW+25 rather than withdraw it, was the right call by outcome. ONE CAVEAT ON WHAT THIS READ IS WORTH: Tuesday's prescribed loaded single-leg session did not happen and Monday's run did not happen, so this follows two days with no calf loading at all and should be read as a floor rather than a tolerance test, the same caveat that applied to 8/5." },
     { "date": "2026-08-13", "achillesPainAM": 0, "notes": "Morning read: 0/10, second consecutive clean read. This is the read the box jumps were gated on, and at 0/10 it cleared the under-3/10 criterion outright, so the plyometric exposure ran. Also follows a second day with no calf loading, since Wednesday's run was skipped, so like 8/12 it is a floor read. Today's session is the tolerance test." },
-    { "date": "2026-08-14", "achillesPainAM": 0, "notes": "Morning read: 0/10, third consecutive clean read, at roughly 24 h after the largest combined lower-body exposure since the 6/21 strain: 4x3 step-down box jumps off an 18 in box, trap bar deadlift 4x5 at 215, back squat 4x5 at 135 and seated calf raise 3x10 at 150. THIS IS THE READ THAT SETTLES THURSDAY. The left medial gastroc registered 1-3/10 during the jumps themselves, and Silbernagel's model accepts up to 5/10 during loading provided it returns to baseline inside 24 h and does not climb week to week (PMID 17307888). It returned to baseline, so the jumps cost nothing measurable and the 150 lb seated calf step is validated at the tissue level. What the clean read does NOT do is retroactively make the exposure symptom-free, which is the wording Green 2022's Phase 4 checklist uses (PMID 35032233). Clean reads now run 7/31, 8/2, 8/3, 8/4, 8/5, 8/12, 8/13 and 8/14, with the only non-zero readings of the block being 8/10 and 8/11 at 1/10, both resolved. No week-to-week climb." }
+    { "date": "2026-08-14", "achillesPainAM": 0, "notes": "Morning read: 0/10, third consecutive clean read, at roughly 24 h after the largest combined lower-body exposure since the 6/21 strain: 4x3 step-down box jumps off an 18 in box, trap bar deadlift 4x5 at 215, back squat 4x5 at 135 and seated calf raise 3x10 at 150. THIS IS THE READ THAT SETTLES THURSDAY. The left medial gastroc registered 1-3/10 during the jumps themselves, and Silbernagel's model accepts up to 5/10 during loading provided it returns to baseline inside 24 h and does not climb week to week (PMID 17307888). It returned to baseline, so the jumps cost nothing measurable and the 150 lb seated calf step is validated at the tissue level. What the clean read does NOT do is retroactively make the exposure symptom-free, which is the wording Green 2022's Phase 4 checklist uses (PMID 35032233). Clean reads now run 7/31, 8/2, 8/3, 8/4, 8/5, 8/12, 8/13 and 8/14, with the only non-zero readings of the block being 8/10 and 8/11 at 1/10, both resolved. No week-to-week climb." },
+    { "date": "2026-08-16", "notes": "THE LOWER BACK CLEARED, AND THEN HELD UNDER SPORT. Friday's row produced sharp pain at rep 10 of a set prescribed at 5, still present 30 minutes later. By the weekend there was nothing. It then held through 20 minutes of basketball and 60 minutes of hockey with no symptoms. That reads as a positional failure inside one set rather than a tissue problem, so the answer is to cap the row at 5 reps rather than to withdraw loaded hinging. THE CALF AND ACHILLES ANSWERED A BIGGER QUESTION TODAY. Basketball returned after 56 days, and the athlete self-limited to 20 minutes at roughly half intensity rather than waiting for a strictly symptom-free box jump. Friday's jumps had read 1-3/10 in the left gastroc, which left Green 2022's Phase 4 wording unsatisfied (PMID 35032233), so the strict checklist never cleared. A graded, self-limited re-entry is arguably the better instrument: it produces a tolerance datum at a controlled dose, where a binary gate produces only a pass or a fail. Both games were symptom-free, and the hockey game was the larger demand at 60 minutes and high intensity. No morning read was reported for 8/15 or 8/16. Saturday delivered nothing: no calf block, no Week 23 science review, and no body-composition reading, which is now 65 days out." }
   ],
   "modifiedWeeks": {
     "23": {
@@ -3008,7 +3027,7 @@
           "date": "2026-08-15",
           "type": "rest",
           "desc": "Rest, science review, body comp",
-          "longDesc": "No lifting. Daily calf block only.\n\nThe lower back read comes first. Friday's row produced sharp pain at rep 10 of a set prescribed at 5, still present 30 minutes later. Cleared by this morning means the row caps at 5 reps. Still present at 24 hours, or worse on flexion or on standing up, holds all loaded hinging.\n\nThe Sunday basketball decision follows from this morning's reads. Also due: a body-composition reading. The last was 6/12 at 219.5 lb and 22.7 percent.",
+          "longDesc": "Not done. Full rest, and the daily calf block did not run. The Week 23 science review and the body-composition reading were both due, and neither happened.\n\nThe lower back read came back clear over the weekend, so the row caps at 5 reps rather than holding loaded hinging.\n\nOriginal plan follows. No lifting, daily calf block only.\n\nThe lower back read comes first. Friday's row produced sharp pain at rep 10 of a set prescribed at 5, still present 30 minutes later. Cleared by this morning means the row caps at 5 reps. Still present at 24 hours, or worse on flexion or on standing up, holds all loaded hinging.\n\nThe Sunday basketball decision follows from this morning's reads. Also due: a body-composition reading. The last was 6/12 at 219.5 lb and 22.7 percent.",
           "exercises": [
             {
               "name": "Isometric Standing Calf Hold (bilateral)",

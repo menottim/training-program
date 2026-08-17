@@ -729,6 +729,12 @@
           "weight": "50 lbs"
         },
         {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "135 lbs",
+          "notes": "Second squat of the week, the first time it has run twice since the restart. Thursday takes the heavy exposure at 145, so hold 135 here at RPE 7 or below. At least parallel while it stays pain-free. Heels flat throughout."
+        },
+        {
           "name": "Bent Over Barbell Row",
           "sets": "3x8",
           "weight": "135 lbs"
@@ -5405,7 +5411,7 @@
       "title": "Basketball back, Sunday is a double-header again",
       "blockLabel": "Return to sport",
       "subtitle": "Basketball returned 8/16 after 56 days and both Sunday games were symptom-free. The daily bodyweight calf block comes out, loaded HSR stays at three sessions, and the row caps at 5 reps.",
-      "reason": "Basketball returned on 8/16 after 56 days, at 20 minutes and half intensity, symptom-free. Hockey followed the same day, 60 minutes at high intensity, also symptom-free. Sunday is a double-header again.\n\nThere is no Tuesday game. The slate is basketball Sunday AM and hockey Sunday PM.\n\nTwo gym days, Thursday and Friday. Thursday carries barbell lower and the jumps, which puts it 72 hours before Sunday. Friday is upper, core and calf, which leaves the legs clean.\n\nThe daily bodyweight calf block comes out. It has been skipped on almost every day for three weeks, and the tissue has now handled a double-header. Loaded HSR stays at three sessions: Tuesday, Thursday and Friday.\n\nThe graded run loses its gate and becomes ordinary conditioning. It was a rehab test toward returning to sport, and the return already happened.\n\nThe row caps at 5 reps. Friday's set of 10 produced sharp lower back pain, which cleared over the weekend and held through both games. The cap is the fix, not a load cut.\n\nSaturday owes the body-composition reading, last taken on 6/12.",
+      "reason": "Basketball returned on 8/16 after 56 days, at 20 minutes and half intensity, symptom-free. Hockey followed the same day, 60 minutes at high intensity, also symptom-free.\n\nThere is no hockey for roughly three weeks from 8/17, and no Tuesday game. Sunday is basketball only until hockey returns, around mid-September.\n\nThat leaves one moderate game a week, which is the largest recovery headroom of the block. It goes into squat frequency. The squat moves to twice a week, heavy Thursday and moderate Friday. It is the lift furthest behind its target, and it has run once a week since the restart.\n\nTwo gym days, Thursday and Friday. Thursday carries barbell lower and the jumps. Friday is upper, core, calf and the second squat.\n\nThe daily bodyweight calf block comes out. It has been skipped on almost every day for three weeks, and the tissue has now handled a double-header. Loaded HSR stays at three sessions: Tuesday, Thursday and Friday.\n\nThe graded run loses its gate and becomes conditioning. The return to sport already happened.\n\nThe row caps at 5 reps, after the set of 10 that produced sharp lower back pain.\n\nSaturday owes the body-composition reading, last taken on 6/12.",
       "schedule": [
         {
           "day": "Sun",
@@ -5506,8 +5512,8 @@
           "day": "Fri",
           "date": "2026-08-21",
           "type": "training",
-          "desc": "Upper, bench 175, row capped at 5",
-          "longDesc": "Bench takes 175 and carries the 5+ set, off the 8 reps at 170 on 8/14.\n\nThe row is the one to watch. It holds 135 and caps at 5 reps per set. The set of 10 on 8/14 is what produced the back pain, so the cap is the fix rather than a load cut.\n\nClose grip steps to 105, since 10 reps at 95 showed it was far too light. Overhead press steps to the 40s. Core drops to 20 lb, because 30 allowed only 5 reps against a prescribed 10.",
+          "desc": "Upper, bench 175, squat returns",
+          "longDesc": "Bench takes 175 and carries the 5+ set, off the 8 reps at 170 on 8/14.\n\nThe squat runs a second time this week, at 135. Thursday takes the heavy exposure at 145, and today takes a moderate one at RPE 7 or below. This is what the missing hockey game pays for. It sits roughly 40 hours before Sunday basketball, which is a moderate game, so the legs have room.\n\nThe row holds 135 and caps at 5 reps per set. The set of 10 on 8/14 produced the back pain, so the cap is the fix rather than a load cut.\n\nClose grip steps to 105. Overhead press steps to the 40s. Core drops to 20 lb, because 30 allowed only 5 reps against a prescribed 10.",
           "exercises": [
             {
               "name": "Bench Press",
@@ -5520,6 +5526,12 @@
               "sets": "3x5",
               "weight": "105 lbs",
               "notes": "Step up from 95, which gave 10 reps on 8/14 against a prescribed 5. Elbows tucked, full ROM to the lower chest."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "3x5",
+              "weight": "135 lbs",
+              "notes": "Second squat of the week, the first time it has run twice since the restart. Thursday takes the heavy exposure at 145, so hold 135 here at RPE 7 or below. At least parallel while it stays pain-free. Heels flat throughout."
             },
             {
               "name": "Bent Over Barbell Row",

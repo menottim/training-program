@@ -4,7 +4,7 @@
 
 This file covers the acute medial gastrocnemius strain, which is also called "tennis leg". It has six subjects: the anatomy and the mechanism; the can't-miss differential diagnoses that look identical; evidence-based acute management, meaning PEACE and LOVE and the NSAID question; a phased criteria-based rehabilitation progression; the return-to-sport criteria and timelines; and the recurrence risk.
 
-The file is calibrated for a 40-year-old in-season recreational athlete. He is 6 ft 2 in and approximately 220 lb. He has bilateral midportion Achilles tendinopathy. He plays basketball and hockey.
+The file is calibrated for a 40-year-old in-season recreational athlete. He is 6 ft 2.5 in and approximately 222 lb. He has bilateral midportion Achilles tendinopathy. He plays basketball and hockey.
 
 This file does NOT give a definitive clinical diagnosis, and it does not interpret imaging. Those tasks belong to a clinician who examines the athlete in person. The file also does not cover Achilles tendon rupture management or surgical decisions.
 

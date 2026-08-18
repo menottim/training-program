@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository is a personal training program tracker. The athlete is a 40-year-old male, 6 ft 2 in, approximately 220 lb, with bilateral achilles tendinopathy. He works Monday to Friday, 9 to 5.
+This repository is a personal training program tracker. The athlete is a 40-year-old male, 6 ft 2.5 in, approximately 222 lb, with bilateral achilles tendinopathy. He works Monday to Friday, 9 to 5.
 
 Goals, in priority order:
 

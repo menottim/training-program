@@ -2364,6 +2364,18 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Second game of the day, after the morning basketball return. 60 minutes at high intensity, symptom-free start to finish. First Sunday double-header since 6/14. The lower back held through the flexed skating posture with nothing."
+    },
+    {
+      "date": "2026-08-18",
+      "type": "training",
+      "activity": "Squat, pull and calf (Tue Phase 3)",
+      "exercises": [
+        { "name": "Back Squat", "sets": "3x5", "weight": "135 lbs", "notes": "As prescribed. Squat exposure one of two this week." },
+        { "name": "Bent Over Barbell Row", "sets": "1x5, 1x5, 1x10", "weight": "135 lbs", "notes": "Inverted grip. Set 3 ran to 10 against a 5-rep cap, and the lower back was fine this time." },
+        { "name": "Lat Pulldown", "sets": "2x8", "weight": "145 lbs", "notes": "Both sets to failure, and failure came at 8 reps twice. Same as 8/14, so 145 holds." },
+        { "name": "Single-Leg Calf Raise (HSR)", "sets": "3x8/leg", "weight": "BW + 35 lb/leg", "notes": "Ran 8 reps per set against a prescribed 6. Eight reps were available at this load, so it is not a 6RM." }
+      ],
+      "notes": "First session of the three-day week. Squat ran 3x5 at 135 as prescribed, the first of two exposures. Row ran 5, 5 and 10 at 135 with an inverted grip. The third set went to 10 against a 5-rep cap, and the lower back was fine, which differs from 8/14 where the same rep count produced sharp pain. Lat pulldown found failure at 8 reps on both sets at 145, matching 8/14. Single-leg calf raise stepped to bodyweight plus 35 and ran 3x8 per leg rather than the prescribed 3x6, so eight reps were available at that load."
     }
   ],
   "scienceReviews": [
@@ -5451,8 +5463,8 @@
           "day": "Tue",
           "date": "2026-08-18",
           "type": "training",
-          "desc": "Squat, pull, calf: third gym day",
-          "longDesc": "Tuesday becomes a full session. Three gym days for the next three weeks, while Sunday is one moderate game.\n\nSquat exposure one of two, at 135. Thursday takes the heavy set at 145, which gives 48 hours between them. Squat has not moved off 135 in four months, and it ran once a week the whole time.\n\nRow and pulldown move here off Friday, which was too long to finish. The row still caps at 5 reps per set.\n\nThen the loaded single-leg calf raise at bodyweight plus 35, the first of three loaded calf sessions this week.",
+          "desc": "Done, calf ran 8s not 6s",
+          "longDesc": "Done. Squat 3x5 at 135 as prescribed. Row 5, 5 and 10 at 135, inverted grip. Pulldown found failure at 8 twice at 145.\n\nTwo things to carry forward. The row went to 10 again and the back was fine, where the same rep count on 8/14 produced sharp pain. That points at session fatigue on 8/14 rather than at the movement.\n\nThe calf raise ran 3x8 at bodyweight plus 35 against a prescribed 3x6. Eight reps were available, so plus 35 is not a 6RM and the load steps again.",
           "exercises": [
             {
               "name": "Back Squat",

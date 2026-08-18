@@ -2373,7 +2373,7 @@
         { "name": "Back Squat", "sets": "3x5", "weight": "135 lbs", "notes": "As prescribed. Squat exposure one of two this week." },
         { "name": "Bent Over Barbell Row", "sets": "1x5, 1x5, 1x10", "weight": "135 lbs", "notes": "Inverted grip. Set 3 ran to 10 against a 5-rep cap, and the lower back was fine this time." },
         { "name": "Lat Pulldown", "sets": "2x8", "weight": "145 lbs", "notes": "Both sets to failure, and failure came at 8 reps twice. Same as 8/14, so 145 holds." },
-        { "name": "Single-Leg Calf Raise (HSR)", "sets": "3x8/leg", "weight": "BW + 35 lb/leg", "notes": "Ran 8 reps per set against a prescribed 6. Eight reps were available at this load, so it is not a 6RM." }
+        { "name": "Single-Leg Calf Raise (HSR)", "sets": "3x8/leg", "weight": "BW + 35 lb/leg", "notes": "Loaded by holding a 35 lb dumbbell in one hand, so bodyweight plus 35 as written. Ran 8 reps per set against a prescribed 6, so eight reps were available at that load." }
       ],
       "notes": "First session of the three-day week. Squat ran 3x5 at 135 as prescribed, the first of two exposures. Row ran 5, 5 and 10 at 135 with an inverted grip. The third set went to 10 against a 5-rep cap, and the lower back was fine, which differs from 8/14 where the same rep count produced sharp pain. Lat pulldown found failure at 8 reps on both sets at 145, matching 8/14. Single-leg calf raise stepped to bodyweight plus 35 and ran 3x8 per leg rather than the prescribed 3x6, so eight reps were available at that load."
     }
@@ -5578,8 +5578,8 @@
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg",
-              "weight": "BW + 45 lb/leg",
-              "notes": "Step up from bodyweight plus 35, because Tuesday produced 8 reps against a prescribed 6. Run it as a true 6RM: the sixth rep is the last available at full tempo. If eight are still there, add load again rather than reps. Floor range only. 3 seconds up, 3 seconds down."
+              "weight": "BW + 45 lb/leg, machine",
+              "notes": "Back to the standing calf raise machine, single-leg, as used through May and June. A held dumbbell caps out on grip and balance before the calf does. Pre-injury this ran at plus 67 to plus 72, so plus 45 is well inside what you owned. Set the load so the sixth rep is the last available. 3 seconds up, 3 seconds down."
             }
           ]
         },

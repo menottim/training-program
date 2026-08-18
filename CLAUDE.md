@@ -414,6 +414,7 @@ Do these things during a science review:
 
 - The athlete has a seated calf raise machine.
 - He has a GHR machine. Prefer it to the Nordic hamstring curl.
+- __Single-leg calf raise loading has two methods, and they have very different ceilings.__ A held dumbbell reached 25 to 35 lb. Grip and balance become the limiter there, not the calf. The standing calf raise machine, run single-leg, reached bodyweight plus 67 to plus 72 through May and June. The machine is the only method that can approach the knee-flexed return-to-sport benchmark of roughly 1.5x bodyweight. Prescribe the machine whenever the load needs to progress, and reserve the dumbbell for travel.
 - __He has no fractional plates.__ The smallest barbell plate increment is 5 lb. This changes the progression-stall protocol in Section 1. The microloading step, which uses fractional plates or 2.5 lb increases, is not available. Use the standard 5 lb double-progression rule instead: after 2 clean sessions at the same weight, add 5 lb. If a lift stalls, skip the microload step. Go directly to the next step, which adds one set at the current weight before any load increase. If that fails, use the 10% reset.
 
 ## Exercise Prescription Conventions

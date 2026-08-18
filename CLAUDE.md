@@ -9,6 +9,14 @@ Goals, in priority order:
 1. Injury prevention.
 2. Strength and power.
 3. Vertical jump.
+4. Physique and body composition. Added 2026-08-18 at the athlete's request. Size is not the goal; a leaner, better-developed look is.
+
+__What the physique goal changes, and what it does not.__ It sits fourth, so it never displaces a performance decision. It does earn the cheap volume that the first three goals do not need.
+
+- __Volume is the primary lever for it, not effort.__ Each added set contributes roughly 0.37% more muscle, on a continuous dose-response with no threshold (Schoenfeld 2017, PMID 27433992). Proximity to failure does help hypertrophy, unlike strength, but 1 to 2 RIR captures nearly all of it: Refalo 2024 (PMID 38393985) found the same quadriceps hypertrophy at 1-2 RIR as at momentary failure, and the Refalo 2023 meta-analysis put the momentary-failure advantage at ES 0.12 with a confidence interval crossing zero. So add sets and run them at 1-2 RIR. Do not start grinding the barbell strength lifts.
+- __Spend it on isolation work, where it costs nothing.__ As of 2026-08-18 the program had logged zero direct arm or delt sets across 64 distinct exercises and five and a half months. Lateral raises, curls and triceps work carry no systemic fatigue, no spinal load and no achilles or calf exposure, so they compete with nothing. That is where the physique volume goes first.
+- __Frequency still applies:__ 2 sessions per week per muscle beats 1 at matched volume (Schoenfeld 2016, PMID 27102172).
+- __The bigger lever is energy balance, and it has no data.__ `athlete.targetWeight` is 210 lb and `athlete.targetBodyFatPct` is 15. The last reading was 6/12 at 219.5 lb and 22.7 percent. That gap is roughly 17 to 20 lb of fat at maintained lean mass, which is a six-month job at a sustainable rate. Intake tracking was retired on 2026-08-10 after 91 days with no logged data, and it is not coming back. __The minimum viable feedback loop is therefore a body-composition reading every two weeks.__ Without it this goal cannot be managed and should not be reported on. Interpret readings per `knowledge/body-composition-measurement.md`: use a 7-day rolling average and act only on a sustained move of more than 1% of body weight across two or more weeks.
 
 __The game slate changes by season. Check it. Do not assume it.__ The standard in-season slate is basketball on Tuesday PM and Sunday AM, plus hockey on Sunday PM. Much of this file assumes that three-game week. Section 5 session spacing and the Section 3 volume ceiling both do. The three-game week is not always correct. __As of 2026-08-17 the slate is basketball on Sunday AM only. There is no Tuesday game, and there is no hockey for roughly three weeks. Hockey returns around mid-September.__ Basketball returned on 8/16 after 56 days out with the calf strain, and both Sunday games that day were symptom-free.
 

@@ -14,7 +14,13 @@ __The game slate changes by season. Check it. Do not assume it.__ The standard i
 
 A one-moderate-game week is the loosest constraint this program has had. Treat it as a build window rather than as a maintenance week, and spend the freed recovery on the lift that is furthest behind. In Week 24 that is the squat, which moves to twice a week. When hockey returns, Sunday becomes a two-game day again, and Friday goes back to protecting it. The current slate is always in `data.modifiedWeeks`. If it is unclear, ask. Do not inherit the three-game assumption.
 
-__Build each week for TWO gym days, not three.__ This rule comes from the Week 23 review on 2026-08-10. Weeks 18 to 23 delivered 1, 0, 0, 3, 2 and 0 lift days. Each of those weeks planned approximately three. The average was one. A three-session plan caused a volume audit to fail every week, and the plan itself caused that failure. Everything necessary must now fit in two sessions:
+__Build each week for TWO gym days by default. Three is allowed only when compliance and the game slate both support it.__ The two-day default came from the Week 23 review on 2026-08-10, which recorded weeks 18 to 23 as delivering 1, 0, 0, 3, 2 and 0 lift days and concluded the program averaged one.
+
+__That count was wrong, and the 2026-08-18 review corrected it.__ It was taken mid-week-23, before 8/13 and 8/14 ran, and it read week 22 as 2 rather than 3. The true sequence is 1, 0, 0, 3, 3, 2. Weeks 21, 22 and 23 each met or beat plan, so the collapse was weeks 18 to 20, which were one bad week plus two travel weeks. It was not a standing pattern.
+
+Two days therefore remains the default, not a ceiling. Go to three when both conditions hold: the last three weeks each delivered at least two sessions, and the game slate is one moderate game or fewer. __Revert to two days the moment any week delivers fewer than two sessions.__ Week 24 runs three days on that basis, with no hockey for three weeks.
+
+On a two-day week, everything necessary must fit in two sessions:
 
 - Day A: barbell lower body, plus plyometrics.
 - Day B: upper body, plus core, plus loaded gastroc work.

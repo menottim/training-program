@@ -5411,7 +5411,7 @@
       "title": "Basketball back, Sunday is a double-header again",
       "blockLabel": "Return to sport",
       "subtitle": "Basketball returned 8/16 after 56 days and both Sunday games were symptom-free. The daily bodyweight calf block comes out, loaded HSR stays at three sessions, and the row caps at 5 reps.",
-      "reason": "Basketball returned on 8/16 after 56 days, at 20 minutes and half intensity, symptom-free. Hockey followed the same day, 60 minutes at high intensity, also symptom-free.\n\nThere is no hockey for roughly three weeks from 8/17, and no Tuesday game. Sunday is basketball only until hockey returns, around mid-September.\n\nThat leaves one moderate game a week, which is the largest recovery headroom of the block. It goes into squat frequency. The squat moves to twice a week, heavy Thursday and moderate Friday. It is the lift furthest behind its target, and it has run once a week since the restart.\n\nTwo gym days, Thursday and Friday. Thursday carries barbell lower and the jumps. Friday is upper, core, calf and the second squat.\n\nThe daily bodyweight calf block comes out. It has been skipped on almost every day for three weeks, and the tissue has now handled a double-header. Loaded HSR stays at three sessions: Tuesday, Thursday and Friday.\n\nThe graded run loses its gate and becomes conditioning. The return to sport already happened.\n\nThe row caps at 5 reps, after the set of 10 that produced sharp lower back pain.\n\nSaturday owes the body-composition reading, last taken on 6/12.",
+      "reason": "Basketball returned on 8/16 after 56 days, at 20 minutes and half intensity, symptom-free. Hockey followed the same day, 60 minutes at high intensity, also symptom-free.\n\nThere is no hockey for roughly three weeks, and no Tuesday game. Sunday is basketball only until hockey returns, around mid-September.\n\nThat leaves one moderate game a week, the largest recovery headroom of the block. It goes into squat frequency. The squat moves to twice a week, heavy Thursday and moderate Friday. It is the lift furthest behind its target.\n\nTwo gym days, Thursday and Friday. Thursday carries barbell lower and the jumps. Friday is upper, core, calf and the second squat.\n\nThe daily bodyweight calf block comes out. It was skipped nearly every day for three weeks, and the tissue has now handled a double-header. Loaded HSR stays at three sessions: Tuesday, Thursday and Friday.\n\nThe graded return-to-run is retired. It was a rehab gate toward returning to sport, and basketball came back on 8/16 without it. It had also been re-authored five times without running once.\n\nThe row caps at 5 reps, after the set of 10 that produced sharp lower back pain.\n\nSaturday owes the body-composition reading, last taken on 6/12.",
       "schedule": [
         {
           "day": "Sun",
@@ -5445,15 +5445,9 @@
           "day": "Tue",
           "date": "2026-08-18",
           "type": "training",
-          "desc": "Run one, plus loaded calf",
-          "longDesc": "Two items, and neither needs a gym.\n\nThe run goes first. This is run one at the starting dose, because it has never happened. Flat and level, easy conversational pace, no hills and no cutting. It carries no gate now. It is conditioning, not a rehab test.\n\nThen the loaded single-leg calf raise, stepping to bodyweight plus 35. 7/31 and 8/14 both went clean at plus 25, and 8/14 was confirmed as a true 6RM.",
+          "desc": "Loaded calf, single-leg at BW plus 35",
+          "longDesc": "One item, and it needs no gym.\n\nThe loaded single-leg calf raise steps to bodyweight plus 35. 7/31 and 8/14 both went clean at plus 25, and 8/14 was confirmed as a true 6RM. This is the first of three loaded calf sessions this week.\n\nThe graded return-to-run is retired. It was a rehab gate toward returning to sport, and the return already happened on 8/16.",
           "exercises": [
-            {
-              "name": "Graded Return-to-Run (walk-jog intervals)",
-              "sets": "6 rounds of 1 min jog / 1 min walk",
-              "weight": "bodyweight",
-              "notes": "Run one, at the starting dose. Roughly 6 minutes of jogging. Land mid-foot, not up on the toes. Flat and level, no hills and no cutting. Stop on any sharp calf pain and record where."
-            },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg",

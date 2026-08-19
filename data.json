@@ -47,6 +47,18 @@
           ]
         }
       },
+      "glp1ForBodyComposition": {
+          "raisedBy": "athlete",
+          "date": "2026-08-18",
+          "question": "Whether a GLP-1 receptor agonist is worth considering to reach the body-composition targets of 210 lb and 15 percent body fat.",
+          "status": "Open. This is a physician decision and the program does not recommend for or against it.",
+          "currentNumbers": "6 ft 2.5 in, 222 lb, 23.5 percent body fat on 2026-08-18. BMI 28.1. Fat mass 52.2 lb, lean mass 169.8 lb.",
+          "eligibilityGate": "FDA labeling for chronic weight management with semaglutide 2.4 mg and tirzepatide is BMI 30 or above, or BMI 27 or above plus at least one weight-related comorbidity such as hypertension, dyslipidemia, type 2 diabetes, obstructive sleep apnea or cardiovascular disease. At BMI 28.1 he falls in the second bracket, so eligibility depends on a comorbidity. He is described as non-hypertensive and has no diabetes on record, and NO LIPID PANEL HAS EVER BEEN RUN. The lipid panel already requested in knowledge/supplements.md is therefore the gate on whether this is even on the table. Get it before the conversation.",
+          "leanMassEvidence": "The SURMOUNT-1 DXA substudy (Look et al. 2025, Diabetes Obes Metab 27:2720-2729, PMID 39996356, n=160, 72 weeks) found body weight down 21.3 percent, fat mass down 33.9 percent and lean mass down 10.9 percent on tirzepatide. Approximately 75 percent of the weight lost was fat and 25 percent was lean. The placebo group showed the same 75/25 split, so that proportion is what weight loss does rather than a drug effect. A STEP 1 exploratory DXA analysis (n=140) showed fat mass down 19.3 percent and lean mass down 9.7 percent on semaglutide 2.4 mg. Across recent GLP-1 and GLP-1/GIP trials, lean soft tissue was 26 to 40 percent of the weight lost.",
+          "whatItMeansForHim": "At the observed 75/25 split, losing the 22 lb of fat needed to reach 15 percent would mean roughly 29.6 lb of total loss, of which about 7.4 lb is lean. That is 4.4 percent of his current lean mass, and lean mass is the engine for goals 2 and 3, strength and power and the vertical jump. Set against that: lower body weight reduces achilles tendon load, and CLAUDE.md Section 6 already identifies relative strength as the primary limit on his vertical jump, so 22 lb of fat off a 222 lb frame is a genuine performance gain if the lean mass holds.",
+          "whatProtectsLeanMass": "Resistance training and adequate protein, both of which are in the program's control rather than the drug's. A case series of three patients emphasizing resistance training and high protein recorded lean soft tissue changes of -6.9, +2.5 and +5.8 percent, so two of three gained lean tissue during GLP-1 weight loss. Protein guidance is unchanged at 1.6 to 2.2 g per kg per day, which is 160 to 220 g at his weight.",
+          "programRecommendationIfHeProceeds": "Switch body-composition measurement from the consumer BIA scale to DXA. BIA misestimates absolute fat mass against DXA and cannot resolve a 7 lb lean-mass question. Keep the resistance training running throughout, because it is the main defence for lean mass. Report lean mass, not just weight."
+        },
       "nextPhysicianVisit": "Request the following labs together to cover multiple coaching questions:",
       "required": [
         {

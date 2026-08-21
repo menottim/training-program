@@ -2732,6 +2732,57 @@
         }
       ],
       "notes": "Box jumps ran 5x3 at the 18 in box, stepped up to 15 contacts, no pain. Trap bar ran 5, 5 and 10 at 215, with set 3 as the 5+ calibration set. It hit the 10-rep hard cap, so the load was too light and steps to 235 next time. Squat ran 3x5 at 145 as prescribed, the second exposure of the week. Seated calf raise ran 3x8 at 165 as prescribed, moving into the 8-rep phase. Single-leg RDL ran 3x8 per leg at the 25s as prescribed. No achilles, calf or back symptoms."
+    },
+    {
+      "date": "2026-08-21",
+      "type": "training",
+      "activity": "Upper, arms and delts (Fri Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "1x5, 1x5, 1x7",
+          "weight": "175 lbs",
+          "notes": "Set 3 was the prescribed 5+ calibration set and hit 7 reps. That steps the load to 180 next time."
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5",
+          "weight": "105 lbs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Strict Overhead Press (dumbbell)",
+          "sets": "1x5, 1x5, 1x5",
+          "weight": "40, 40, 35 lbs",
+          "notes": "Came up short of the prescribed 3x6, and set 3 dropped to 35 instead of taking 40 to failure."
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3x10",
+          "weight": "10 lb DBs",
+          "notes": "First session on this new lift. Ran lighter than the prescribed 15s and 12-15 reps."
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x10",
+          "weight": "30 lbs",
+          "notes": "Same load as prescribed, short of the prescribed 12 reps."
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "1x10, 1x10, 1x10",
+          "weight": "30, 35, 40 lbs",
+          "notes": "Ran as a ramping cable curl instead of the prescribed straight-set dumbbell curl."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 67 lb/leg, machine",
+          "notes": "Well above the prescribed plus 45. No pain, and more reps were available at that load. Left leg felt a little weaker than the right."
+        }
+      ],
+      "notes": "Bench ran 5, 5 and 7 at 175, with set 3 as the 5+ calibration set. Seven reps steps the load to 180 next time. Close grip ran a clean 3x5 at 105. Overhead press came up short: 5, 5 and 5 instead of 3x6, with set 3 dropping to 35. Cable woodchop and Pallof press were both skipped. Lateral raise ran 3x10 at the 10s, lighter than the prescribed 15s. Triceps pushdown ran 3x10 at 30, short of the prescribed 12. Biceps ran as a ramping cable curl instead of a straight-set dumbbell curl. 10 reps each at 30, 35 and 40. Single-leg calf raise on the machine jumped to bodyweight plus 67, well above the prescribed plus 45. No achilles, calf or back pain. The left leg felt a little weaker than the right, and more reps were available at that load."
     }
   ],
   "scienceReviews": [

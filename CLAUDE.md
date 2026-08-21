@@ -399,6 +399,8 @@ Do these three things when a new conversation starts:
 2. Read `data.scienceReviews[]` for the date of the last review.
 3. If the last review is more than 7 days old, ask this: _"It's been [N] days since the last science-based program review. Want to do a check against the research guidelines?"_
 
+__Check the model before a science review.__ A science review reads the whole training history, weighs conflicting evidence and decides on a program change, so it needs the best available model. Routine work, such as logging a session or updating the current week, does not, and can run on a lighter model such as Sonnet. Before starting a science review, confirm the session is on the best available model (Opus, unless a newer top-tier model has since shipped). If it is not, tell the user and ask to switch via `/model` before doing the review.
+
 Do these things during a science review:
 
 1. __Audit the lifting compliance first.__ Compare the sessions completed against the sessions planned, week by week. You cannot interpret any item below without this.

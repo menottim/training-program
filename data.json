@@ -5317,14 +5317,14 @@
     "13": {
       "title": "Plyo maintenance (1 of 2), travel week",
       "label": "Phase 2 Wk 5: Plyo maintenance (1 of 2). Travel Wed/Thu, salvage Fri Lower + Sat Upper before the Sun 6/7 double",
-      "reason": "First of the 2-week plyo maintenance block (Wks 13-14) before Phase 3 (Wk 15, ~Jun 15). Travel Wed 6/3 + Thu 6/4 (no gym) eliminates the normal Wed Lower and Thu Upper. Fri 6/5 + Sat 6/6 are the only training days, then Sun 6/7 (Wk 14) is a basketball-AM + hockey-PM double. Approach: heavy Lower Fri (48h before the Sun double), Upper + Core Sat (keeps legs fresh), HSR both days = 2/3 Beyer 2015 (PMID 26018970, Strong), the realistic ceiling with two travel days and far better than 0/3. Plyo maintenance dose skipped this week (one missed maintenance session is negligible after the closed 4-wk block; Markovic 2007, Ebben 2010); resume Wk 14. Mon 6/1 fatigue rest after the Sun 5/31 double deferred the Mon HSR anchor to Wk 14. TB DL hold 245 (or +5 to 250 only if clean), no PR chase before a game-heavy stretch (Baker 2001 PMID 11710401, Moderate). Cash the deferred Back Squat 160 IF a rack is available. Protein still 0% logged, the binding gap for the Sun 6/7 review.",
+      "reason": "First of a 2-week plyo-maintenance block before Phase 3 starts around June 15. Travel on Wednesday and Thursday cancels the normal Lower and Upper sessions. Friday and Saturday are the only training days. Sunday June 7 is a basketball and hockey double.\n\nFriday carries heavy Lower, 48 hours before the Sunday double. Saturday carries Upper and Core, which keeps the legs fresh. HSR runs both days, 2 of the usual 3 weekly sessions. Plyo maintenance is skipped this week. One missed session is a small cost after a full block, and it resumes next week.\n\nMonday's fatigue rest, after Sunday's double, pushed the Monday HSR session to next week. Trap Bar Deadlift holds at 245, with a step to 250 only if every rep is clean. No new max attempt goes in before this game-heavy stretch. Back Squat cashes in the deferred step to 160 if a rack is available. Protein intake is still not logged this week.",
       "schedule": [
         {
           "day": "Sun",
           "date": "2026-05-31",
           "type": "game",
           "status": "done",
-          "desc": "Basketball AM 30 min high + Hockey PM 22 min high (double)",
+          "desc": "Basketball AM and hockey PM double",
           "longDesc": "Both logged. AM achilles 1/10 (green, ~10+ wk streak). High combined leg/skating load, which set up the Mon fatigue rest."
         },
         {
@@ -5363,7 +5363,8 @@
           "date": "2026-06-05",
           "type": "training",
           "status": "done",
-          "desc": "Lower + HSR (the week's quality strength day, 48h before the Sun 6/7 double) - DONE as RXed: TB DL held 245, Back Squat cashed at 160 (rack available), both HSR variants.",
+          "desc": "Lower and HSR, done as prescribed",
+          "longDesc": "Trap Bar Deadlift held at 245. Back Squat cashed in at 160, since a rack was open. Both calf-raise variants ran as planned.",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
@@ -5401,7 +5402,8 @@
           "date": "2026-06-06",
           "type": "training",
           "status": "skipped",
-          "desc": "SKIPPED - Upper + Core + HSR not performed. Wk 13 closed with Fri Lower as the only lift: zero upper-body volume this week, and HSR landed at 1/3 (Fri only). Originally planned to recover the travel-displaced Thu Upper and bank HSR session 2.",
+          "desc": "Upper, Core and HSR skipped",
+          "longDesc": "The week closed with Friday's Lower session as the only lift. Upper-body volume was zero, and HSR landed at 1 of 3 planned sessions.",
           "exercises": [
             {
               "name": "Barbell Bench Press",
@@ -5442,8 +5444,8 @@
     "14": {
       "title": "Plyo maintenance, final week before Phase 3",
       "subtitle": "Recover the upper-body gap (bench dark since 5/28); HSR now rides on the lift days; VJ baseline before Phase 3.",
-      "label": "Phase 2 Wk 6: Plyo maintenance (2 of 2), final week before Phase 3. Recover the upper-body gap (Wed Upper - bench dark since 5/28), 1 plyo maintenance dose + VJ baseline, HSR bolted onto every lift day (Wed/Thu/Fri = 3/3, replacing the standalone Monday anchor that failed 3x). Phase 3 (power realization) opens Wk 15, Sun 6/14.",
-      "reason": "Second and final week of the plyo-maintenance bridge (Wks 13-14) before Phase 3 (Wk 15, ~Jun 14). Wk 13 closed thin: only Fri Lower happened (Sat Upper skipped, Wed/Thu travel), so zero upper-body volume and HSR 1/3; Mon 6/8 HSR anchor skipped (3rd straight failure of that fix). STRUCTURAL HSR FIX: discontinue the standalone Monday anchor (missed 5/18, 5/25, 6/8) and bolt HSR onto the lift days that actually happen - Wed Upper + Thu Lower + Fri Plyo each carry HSR = 3/3 by riding committed sessions (Beyer 2015 PMID 26018970, Strong; habit needs a trigger). WED PRIORITY = UPPER: barbell pressing dark since 5/28 (13 days), chest/back below the Schoenfeld 2017 6-set weekly minimum; Bench is the only lift on its 12-month pace (~15 lb/mo toward 225x5), so recover it first. Hold 155, +5 to 160 only if crisp. VJ baseline goes FIRST on Wed (freshest legs: Mon rest + only light games since) - goal #3 has no measurement and the just-closed plyo block can't be evaluated without one (Markovic 2007, Strong). THU LOWER = maintenance hold (TB DL 245, Squat 160, RPE 6-7, no PR) - keep the pattern without overreaching before a power phase (Baker 2001 PMID 11710401, Moderate). FRI PLYO = ~30-contact maintenance dose, half the 60-contact block peak (Ebben 2010; Markovic 2007), 48h before the Sun game (the proven plyo->game cluster, all clean). Sat rest absorbs the Wed/Thu/Fri load. STANDING GAPS unchanged: protein 0% logged since 5/11 (the binding constraint on every body-comp read), achilles + sleep capture still the ask. Strength targets per the Wk 12 re-horizon: Bench 225 at 12 months (on pace), TB DL 385 / Squat 315 at ~18 months.",
+      "label": "Phase 2 Week 6, final week before Phase 3. Recovers the upper-body gap, adds one plyo dose and the VJ baseline. HSR now rides every lift day instead of a separate Monday session. Phase 3 opens Sunday June 14.",
+      "reason": "Second and final week of the plyo-maintenance bridge before Phase 3 opens on June 14. Last week closed thin: only Friday's Lower session ran, so upper volume was zero and HSR landed 1 of 3 sessions. The Monday HSR slot also missed again, a third straight miss.\n\nThe Monday HSR slot is discontinued. HSR now rides the lift days that actually happen: Wednesday Upper, Thursday Lower, and Friday Plyo each carry a session, for 3 of 3.\n\nWednesday's priority is Upper. Barbell pressing has been dark for 13 days, and bench is the lift closest to its 12-month target, so it goes first. Hold at 155, with a step to 160 only if every rep is clean. The vertical jump baseline also goes first on Wednesday, on the freshest legs of the week. The plyo block just closed with no measurement against it.\n\nThursday Lower is a maintenance hold at Trap Bar Deadlift 245 and Squat 160, no new max attempt before the power phase. Friday Plyo runs about 30 contacts, half the block's peak, 48 hours before Sunday's game. Saturday absorbs the week's load.\n\nProtein intake is still not logged. Strength targets are unchanged from the last review.",
       "schedule": [
         {
           "day": "Sun",
@@ -5473,7 +5475,8 @@
           "day": "Wed",
           "date": "2026-06-10",
           "type": "training",
-          "desc": "VJ baseline + Upper + Core + HSR - PRIORITY: recover the upper-body gap (barbell pressing untouched since 5/28). VJ test first on fresh legs. HSR session 1 of 3.",
+          "desc": "VJ baseline, Upper, Core and HSR",
+          "longDesc": "Priority is recovering the upper-body gap; barbell pressing has been untouched for 13 days. The vertical jump test goes first, on fresh legs. This is HSR session 1 of 3.",
           "exercises": [
             {
               "name": "Vertical Jump Test (baseline)",
@@ -5524,13 +5527,14 @@
           "day": "Thu",
           "date": "2026-06-11",
           "type": "training",
-          "desc": "Lower (maintenance hold) + HSR - 245/160 at RPE 6-7, no PR push. HSR session 2 of 3.",
+          "desc": "Lower maintenance hold and HSR",
+          "longDesc": "Trap Bar Deadlift and Squat hold at 245 and 160, moderate effort, no new max attempt. This is HSR session 2 of 3.",
           "exercises": [
             {
               "name": "Trap Bar Deadlift",
               "sets": "4x5",
               "weight": "245 lbs",
-              "notes": "MAINTENANCE hold at 245, RPE 6-7 - no PR push in the last week before Phase 3 (Baker 2001 PMID 11710401, Moderate). Phase 3 shifts toward power realization."
+              "notes": "Maintenance hold at 245, moderate effort. No new max attempt in the last week before Phase 3, which shifts toward power."
             },
             {
               "name": "Back Squat",
@@ -5555,7 +5559,8 @@
           "day": "Fri",
           "date": "2026-06-12",
           "type": "training",
-          "desc": "Plyo maintenance (30 contacts) + HSR - 48h before the Sun game. HSR session 3 of 3, closing the week at Beyer 3/3.",
+          "desc": "Plyo maintenance and HSR",
+          "longDesc": "About 30 contacts, 48 hours before Sunday's game. This closes HSR at 3 of 3 sessions for the week.",
           "exercises": [
             {
               "name": "Box Jump (step down)",
@@ -5573,13 +5578,13 @@
               "name": "Broad Jump",
               "sets": "3x3",
               "weight": "BW",
-              "notes": "9 contacts. Stick every landing. Session total = 30 contacts, ~half the 60-contact block peak (Ebben 2010 maintenance dose)."
+              "notes": "9 contacts. Stick every landing. Session total is about 30 contacts, roughly half the block's peak."
             },
             {
               "name": "Seated Calf Raise (HSR)",
               "sets": "3x6",
               "weight": "150 lbs",
-              "notes": "HSR session 3 of 3 - closes the week at Beyer 3/3 by bolting onto the lift days. Soleus-bias, 3s/3s tempo."
+              "notes": "HSR session 3 of 3 for the week, riding the lift day. Soleus-bias, 3-second tempo up and down."
             }
           ]
         },
@@ -5588,28 +5593,28 @@
           "date": "2026-06-13",
           "type": "rest",
           "desc": "Rest / pre-game prep",
-          "longDesc": "Absorb the Wed/Thu/Fri load before Sun. Phase 3 (power realization) opens Wk 15 starting Sun 6/14 - the next review defines the Phase 2->3 transition and the Phase 3 schedule."
+          "longDesc": "Absorb this week's load before Sunday. Phase 3 opens Sunday June 14, shifting toward power realization."
         }
       ]
     },
     "15": {
       "subtitle": "Phase 3 opens (power realization) on a Power-Red-depleted system: hold loads, move fast, finally get the VJ baseline, no PR chase.",
-      "label": "Phase 3 Wk 1 (power realization). VJ baseline still deferred - the Wed upper-power session shifted to Thu AM and the VJ was skipped (4th+ deferral); targeting the Fri plyo warm-up, else the Wk 16 deload. Goal #3 still has zero data. Power intent = velocity and contrast/PAP at HELD loads (TB DL 245 / Squat 160 / Bench 155), not heavier; ~40-contact plyo maintained; HSR bolted onto all 3 lift days (Wed/Thu/Fri = 3/3, the proven Wk 14 fix). Calibrated to the 6/13 Power Red: aerobic capacity down ~4-6 wks, so power (spared) is the focus, conditioning and PRs are out, rest periods long. Wk 16 = scheduled deload - lean toward honoring it.",
-      "reason": "First Phase 3 week, opening on the system left depleted by the 6/13 Power Red and the 6/14 basketball-AM + hockey-PM double. Phase 2 closed ready (strength held through the maintenance bridge, achilles green ~13 wks, the HSR bolt-on fix hit 3/3 in Wk 14, body comp broke its plateau to 219.5/22.7%), so power realization is the right next block. But the donation reshapes HOW it opens. Power (ATP-PCr) is the quality least affected by reduced red-cell mass, while aerobic capacity and between-effort recovery are down for ~4-6+ weeks (Meurrens 2016 PMID 27873242; Kiss 2015 PMID 25668261; knowledge/blood-donation-recovery.md). So Wk 15: (1) VJ BASELINE goes first on Wed, on the freshest legs, before any lifting - it has been deferred 3+ times and Phase 3 is un-evaluable against goal #3 without it (Markovic 2007, Strong); a power baseline is valid even on a depleted week since power is spared. (2) HOLD all loads and express them fast (velocity / compensatory acceleration) rather than adding weight - no PR chase on a depleted system (Baker 2001 PMID 11710401, Moderate). (3) Lower power via contrast/complex - heavy submaximal lift paired with an explosive jump for post-activation potentiation (Suchomel 2016; Markovic 2007). (4) Plyo held at ~40 contacts Fri - a realization/maintenance dose, down from the 60-contact Phase 2 peak (Ebben 2010). (5) HSR bolted onto Wed/Thu/Fri (Beyer 2015 PMID 26018970, Strong) - the durability fix that worked. (6) Long rest (3-5 min) between power sets and NO conditioning finishers for ~4-6 weeks. Auto-regulate everything aerobic by RPE (reads 1-2 points high). STANDING GAPS: protein 0% logged since 5/11 (one daily read: 40g-by-lunch Y/N); strength-target re-horizon still pending athlete sign-off (targets unchanged at TB DL 385 / Squat 315 / Bench 225). Wk 16 is the next scheduled deload - lean toward honoring it given the donation's systemic recovery demand.",
+      "label": "Phase 3 Week 1, power realization. The vertical jump baseline is still deferred; it moves to Friday's plyo warm-up, or the Week 16 deload. Power intent means moving fast at held loads, not adding weight. Plyo holds near 40 contacts. HSR rides all 3 lift days. The week accounts for reduced blood-donation recovery: power is the focus, conditioning and new maxes wait.",
+      "reason": "This is the first Phase 3 week, opening on a system still recovering from Sunday's blood donation and a same-day basketball-hockey double. Phase 2 closed in good shape: strength held, the achilles has stayed quiet for about 13 weeks, and HSR hit 3 of 3 last week.\n\nBlood donation changes how the week opens. Power is the quality least affected by a lower red blood cell count; aerobic capacity and recovery between efforts stay down for weeks.\n\nThe vertical jump baseline goes first on Wednesday, on the freshest legs, before any lifting. It has been deferred several times, and this block needs a number to measure against. A baseline is still valid on a depleted week, since power itself is spared.\n\nEvery load holds this week. The focus is moving fast, not adding weight. Lower-body power pairs a heavy hold with an explosive jump right after it. Plyo holds near 40 contacts Friday, down from the Phase 2 peak. HSR rides Wednesday, Thursday and Friday.\n\nRest periods run long, 3 to 5 minutes, with no conditioning work for weeks. Protein is still not logged. Next week is a scheduled deload, worth taking given the donation.",
       "schedule": [
         {
           "day": "Sun",
           "date": "2026-06-14",
           "type": "game",
           "status": "done",
-          "desc": "Basketball AM 30 min high + Hockey PM 23 min high - double-game day, ~24-36h post-Power-Red",
-          "longDesc": "Phase 3 opens on a depleted system. AM basketball: wind down, legs oddly decent, achilles 0/10. PM hockey (avg HR 138, 7 of 23 min in Z4-Z5): wind hard, legs bad - the cumulative cost of a double on reduced red-cell mass. No red flags. See knowledge/blood-donation-recovery.md."
+          "desc": "Basketball AM and hockey PM, double game day",
+          "longDesc": "Phase 3 opens on a system still recovering from Sunday's blood donation. AM basketball: wind down some, legs surprisingly decent, achilles 0 out of 10. PM hockey: wind hard, legs heavy, the cost of a double game on reduced blood cell count. No red flags either game."
         },
         {
           "day": "Mon",
           "date": "2026-06-15",
           "type": "rest",
-          "desc": "Rest - recover the double + donation. No Monday HSR (anchor discontinued).",
+          "desc": "Rest to recover from the double and donation",
           "longDesc": "Genuine rest after Sun's double on a Power-Red-depleted system. Recovery levers: daily iron + vitamin C, protein floor, hydration for plasma re-expansion (which finishes ~day 3). HSR now rides the lift days, not Monday - the standalone anchor was discontinued after 3 straight misses."
         },
         {
@@ -5617,22 +5622,22 @@
           "date": "2026-06-16",
           "type": "game",
           "status": "done",
-          "desc": "Basketball PM, done (auto-regulated). Sleep poor the prior 2 nights; calves tight the next morning.",
-          "longDesc": "Tue PM basketball as usual. Auto-regulate by feel: expect elevated RPE/HR, shorter bursts, full recovery between possessions. Power and skill are unaffected; conditioning is. A-priority game stays on."
+          "desc": "Basketball PM, auto-regulated for poor sleep",
+          "longDesc": "Sleep was poor the two nights before, and calves felt tight the next morning. Played at reduced intensity by feel."
         },
         {
           "day": "Wed",
           "date": "2026-06-17",
           "type": "rest",
-          "desc": "Rest (unplanned) - the prescribed Wed upper-power session shifted to Thu AM (logged 6/18). VJ baseline skipped.",
-          "longDesc": "Wednesday went unused: the Phase 3 upper-power session and the VJ baseline prescribed here both moved to Thursday (upper run Thu AM; VJ still skipped, the 4th+ deferral). Effectively an extra rest day on a Power-Red-depleted week - not harmful, but the fresh-legs VJ window was lost."
+          "desc": "Rest, unplanned; session moved to Thursday",
+          "longDesc": "Wednesday went unused. The upper-power session and the vertical jump baseline both moved to Thursday; the jump test was skipped again. This became an extra rest day on a recovering week, though the fresh-legs window for the jump test was lost."
         },
         {
           "day": "Thu",
           "date": "2026-06-18",
           "type": "training",
           "status": "done",
-          "desc": "Two-a-day, both done: Upper Power (AM) and Lower Power contrast/PAP (PM). HSR 1 and 2 of 3. VJ baseline still deferred.",
+          "desc": "Two-a-day: Upper AM, Lower PM",
           "exercises": [
             {
               "name": "Bench Press",
@@ -5694,18 +5699,18 @@
               "notes": "PM. HSR 2 of 3."
             }
           ],
-          "longDesc": "Schedule shifted: the Wed upper-power session and this lower-power session both ran Thursday as a two-a-day (upper AM, lower PM) on a Power-Red-depleted system after two poor nights. Upper: bench held 155, lat pulldown PR'd to a 155 top set, push press ran volume rather than the prescribed power triples. Lower: completed as prescribed (TB DL 245 / Squat 160 held, box-jump PAP pairing). HSR 1 and 2 of 3 banked; Fri plyo closes 3/3. VJ baseline skipped again."
+          "longDesc": "Wednesday's upper-power session and Thursday's lower-power session both ran today as a two-a-day, after two poor nights of sleep.\n\nUpper: bench held at 155. Lat pulldown set a new top set at 155. Push press ran as volume work, not the prescribed explosive triples. Lower ran as prescribed, holding 245 and 160, with box jumps paired after each set. HSR banked 2 of 3 sessions; Friday's plyo closes the third. The vertical jump baseline was skipped again."
         },
         {
           "day": "Fri",
           "date": "2026-06-19",
           "type": "training",
-          "desc": "Phase 3 Wk 1: VJ baseline (finally, in the warm-up), then plyo ~40 contacts and HSR 3/3. 48h before the weekend game. Trim contacts if calves or achilles flag.",
+          "desc": "VJ baseline, plyo and HSR",
           "exercises": [
             {
               "name": "Vertical Jump Test (baseline)",
               "sets": "3 attempts",
-              "notes": "Salvage the deferred baseline here: once fully warm (calves especially), 3 max attempts before the plyo work - the max box jumps double as a PAP primer. Legs are post-two-a-day, so this reads below a true fresh baseline; record the best of 3, annotate 'post-two-a-day, Power-Red week', and re-test clean in the Wk 16 deload. An imperfect number beats a 5th deferral (Markovic 2007, Strong)."
+              "notes": "This gets the deferred baseline in, once fully warm, especially the calves. Take 3 max attempts before the plyo work; the box jumps double as a warm-up primer. Legs are still tired from Thursday's two-a-day, so this likely reads low. Record the best of 3 and re-test clean next week."
             },
             {
               "name": "Box Jump (step down)",
@@ -5723,52 +5728,52 @@
               "name": "Broad Jump",
               "sets": "4x3",
               "weight": "BW",
-              "notes": "12 contacts. Stick every landing. Session total ~40 contacts - a realization/maintenance dose (Ebben 2010), down from the 60-contact Phase 2 peak; Phase 3 expresses power, it does not accumulate volume."
+              "notes": "12 contacts. Stick every landing. Session total is about 40 contacts, down from the 60-contact Phase 2 peak. Phase 3 expresses power; it does not build volume."
             },
             {
               "name": "Standing Calf Raise (HSR)",
               "sets": "3x6",
               "weight": "150 lbs",
-              "notes": "HSR 3 of 3 - closes the week at Beyer 3/3 via the bolt-on. Gastroc-bias, 3s/3s tempo."
+              "notes": "HSR session 3 of 3 for the week. Gastroc-bias, 3-second tempo up and down."
             }
           ],
-          "longDesc": "Jump-power day, ~40 contacts (realization dose, not the Phase 2 build), 48h before the Sun game - the proven plyo-to-game cluster, all clean to date. Achilles has tolerated everything through 60 contacts, so 40 is comfortable."
+          "longDesc": "Jump-power day, about 40 contacts, a realization dose rather than a building dose. This runs 48 hours before Sunday's game, the same combination that has been clean every time so far. The achilles has tolerated up to 60 contacts, so 40 is comfortable. Trim contacts if the calves or achilles flag."
         },
         {
           "day": "Sat",
           "date": "2026-06-20",
           "type": "rest",
           "desc": "Rest - absorb the Phase 3 week, pre-game.",
-          "longDesc": "Absorb the Wed/Thu/Fri power load before the Sun game. Note: Wk 16 is the next scheduled deload - given the Power Red overlay, lean toward honoring it this time rather than repeating the Wk 8/12 skip pattern."
+          "longDesc": "Absorb this week's power load before Sunday's game. Next week is a scheduled deload, and this week's blood donation makes it worth taking rather than skipping again."
         }
       ]
     },
     "16": {
       "title": "INJURED - acute calf strain (Phase 0 protection)",
-      "subtitle": "Left medial gastrocnemius strain Sun 6/21 ('shot in the calf'). Phase 3 is HALTED. This week = protected weight-bearing + an in-person clinical eval. No games, no calf loading. Full plan: knowledge/calf-strain-rehab.md.",
-      "reason": "Sun 6/21 AM basketball: a minor right-calf pull was played through, then minutes later an acute severe left-calf strain - the textbook 'tennis leg' (acute medial gastrocnemius strain; Delgado 2002 PMID 12091669; Dixon 2009 PMID 19468870). Difficulty bearing weight since = at least Grade II. The #1 priority is an IN-PERSON exam before any programming: rule out Achilles rupture via the Thompson/Simmonds squeeze test (the critical miss - rupture patients can still walk and weakly plantarflex; Boyd 2015 PMID 26622031; Maffulli 1998 PMID 9548122), assess DVT (~10% of tennis-leg; Wells 1997 PMID 9428249), and seek emergency care if pain is out of proportion with a tense compartment. Acute care = PEACE then LOVE (Dubois & Esculier 2020 PMID 31377722): protect, elevate, compression, education; short-course ibuprofen for pain is fine (Morelli 2018 PMID 28355084) but transition to acetaminophen as pain eases and don't run NSAIDs for weeks. Early protected loading beats immobilization (Jarvinen 2005 PMID 15851777; Bayer 2017 PMID 28953439), so gentle pain-free ROM starts now and pain-free isometrics late this week. HSR is de-loaded to zero and rebuilt later - NOT continued at the pre-injury 155 lb / BW+72 loads. Recurrence risk is high (age + prior calf injury are the top risk factors; Green 2017 PMID 28259848), so the whole block is criteria-gated.",
+      "subtitle": "Left calf strain on June 21. Phase 3 is paused. This week is protected weight-bearing plus an in-person exam. No games, no calf loading.",
+      "reason": "Sunday's basketball produced a minor right-calf pull that was played through, then minutes later an acute, severe left-calf strain, the classic 'tennis leg' pattern. Difficulty bearing weight since means at least a Grade II strain.\n\nThe first priority is an in-person exam before any programming. That exam needs to rule out an Achilles rupture with the calf-squeeze test. A rupture can still let someone walk and weakly push off, which makes it easy to miss. The exam also needs to rule out a blood clot, which shows up in about 1 in 10 similar injuries. Seek emergency care if the pain is out of proportion to the exam, with a tense, swollen calf.\n\nAcute care follows protect-elevate-compress-educate, then load-optimism-vascularization-exercise. A short course of ibuprofen is fine for pain, then switch to acetaminophen as pain eases; don't run an anti-inflammatory for weeks. Early, gentle loading beats full immobilization, so pain-free range-of-motion work starts now, with pain-free isometrics late this week.\n\nHSR drops to zero and rebuilds later, not at the pre-injury loads. Recurrence risk is high at this age with a prior calf injury on record. Every step of this rehab is gated on meeting a criterion, not a calendar date.",
       "schedule": [
         {
           "day": "Sun",
           "date": "2026-06-21",
           "type": "game",
           "status": "done",
-          "desc": "Basketball AM - INJURY EVENT. Acute left medial gastrocnemius strain ('shot with a lacrosse ball'); a minor right-calf pull was played through first. Could not continue.",
-          "longDesc": "Classic tennis-leg presentation (Delgado 2002 PMID 12091669). The right calf was likely a Grade I warning pushed past. Difficulty bearing weight since = at least Grade II - must rule out Achilles rupture and DVT in person before programming."
+          "desc": "Basketball AM, acute left calf strain",
+          "longDesc": "This is a classic tennis-leg presentation. The right calf was likely a Grade I warning that got played through. Difficulty bearing weight since means at least a Grade II strain. An in-person exam must rule out an Achilles rupture and a blood clot before any programming starts."
         },
         {
           "day": "Mon",
           "date": "2026-06-22",
           "type": "rest",
           "status": "done",
-          "desc": "Acute protection (PEACE): relative rest, elevation, compression, ibuprofen for pain.",
+          "desc": "Acute protection: rest, elevation, compression, ibuprofen",
           "longDesc": "First days = protect, don't fully immobilize. Elevation to drain swelling; compression to limit hemorrhage."
         },
         {
           "day": "Tue",
           "date": "2026-06-23",
           "type": "rehab",
-          "desc": "Day 3. Protected weight-bearing + pain-free ankle ROM only. NO Tue basketball. #1 TASK: in-person clinical eval (rule out Achilles rupture + DVT).",
+          "desc": "Day 3: protected weight-bearing, no basketball",
           "exercises": [
             {
               "name": "Ankle pumps / circles",
@@ -5785,7 +5790,7 @@
               "notes": "build toward this late in the phase"
             }
           ],
-          "longDesc": "Phase 0. Get the squeeze test / DVT check done before progressing. Walk as tolerated; pain-free loading promotes repair (LOVE)."
+          "longDesc": "Phase 0. The top priority is getting the squeeze test and blood-clot check done before progressing. Walk as tolerated; pain-free loading promotes repair."
         },
         {
           "day": "Wed",
@@ -5802,20 +5807,20 @@
               "sets": "frequent"
             }
           ],
-          "longDesc": "Pain rule (Silbernagel 2007 PMID 17307888): <=5/10 during and next-morning, settle to baseline within 24h; bias <=2-3/10 early given the compromised complex."
+          "longDesc": "Pain rule: stay at or below 5 out of 10 during and the next morning, and settle back to baseline within 24 hours. Bias toward 2 to 3 out of 10 early on, given the compromised calf."
         },
         {
           "day": "Thu",
           "date": "2026-06-25",
           "type": "rest",
-          "desc": "Relative rest; continue ankle ROM. Re-assess walking and isometric tolerance.",
+          "desc": "Relative rest; continue ankle ROM",
           "longDesc": "Phase 0 exit criteria: walk without an antalgic gait, pain-free submax isometrics, swelling controlled - AND rupture/DVT excluded."
         },
         {
           "day": "Fri",
           "date": "2026-06-26",
           "type": "rehab",
-          "desc": "Progress isometrics; double-leg calf raise to a pain-free range if tolerated.",
+          "desc": "Progress isometrics to double-leg calf raises",
           "exercises": [
             {
               "name": "Isometric plantarflexion",
@@ -5833,34 +5838,34 @@
           "day": "Sat",
           "date": "2026-06-27",
           "type": "rest",
-          "desc": "Rest. Gate into Wk 17 on: walking without a limp, pain-free isometrics, AND clinical clearance.",
-          "longDesc": "Progression is criteria-based, not date-based. If the eval re-grades the strain, the rehab phase shifts accordingly."
+          "desc": "Rest; gate into next week on 3 criteria",
+          "longDesc": "Progression is criteria-based, not date-based. Move to next week only after walking without a limp, pain-free isometrics, and clinical clearance. If the exam re-grades the strain, the rehab plan shifts accordingly."
         }
       ]
     },
     "17": {
       "title": "Calf rehab Phase 1 + calf-sparing leg/upper strength",
-      "subtitle": "Calf rehab HELD at current load (mornings still linger); legs kept working with calf-SPARING lifts (leg extension, hip thrust, back ext) + an upper day. No calf-loading compounds (squat/DL/leg press/lunge/plyo), no games. knowledge/calf-strain-rehab.md.",
-      "reason": "Phase 1 begins once the athlete walks without a limp, isometrics are pain-free, and the can't-miss differentials are excluded. Progress isometrics -> double-leg -> single-leg calf raises through a tolerable range, and REINTRODUCE HSR at a markedly reduced load (rebuild, do not resume the pre-injury 155 lb seated / BW+72 single-leg loads). The rehab trajectory and the Achilles tendinopathy plan are the same progressive-loading trajectory, so they reconverge here (Beyer 2015 PMID 26018970 as the loading substrate; transfer to acute strain is Moderate/extrapolated). Pain rule throughout (Silbernagel 2007 PMID 17307888): <=5/10 during/next-morning, no week-to-week increase; bias conservative. No games this week - calf strains recur 'without warning' and the priority order is injury prevention first. | 6/29 REVIEW UPDATE: calf is improving but at the LOAD CEILING - morning-after pain lingers (the 24h return-to-baseline rule is not cleanly met) and stair descent plus occasional sharp steps still hurt (eccentric gastroc reactivity). HOLD rehab load this week; gate any increase (the Wed/Fri steps, single-leg progression, soleus loading) on the next-morning pain FIRST returning to baseline. WHAT YOU CAN STILL TRAIN to limit detraining: upper body (as the 6/25 session) plus calf-SPARING lower isolation - seated leg extension, hip thrust / glute bridge, back extension (bent knee + quiet ankle = minimal gastroc demand). HOLD all calf-loading compounds until Phase 2: back squat, deadlift incl. trap bar, leg press, lunges / split squats, heavy leg curls, and all jumping / running. The gastroc is biarticular - a loaded squat stretches it at depth and a deadlift loads it under heavy axial drive, which is too much at ~day 8 of a Grade I-II strain. Recurrence risk is highest at 40 with a calf injury now on record (Green 2017 PMID 28259848; Green 2020 PMID 33030961) - do not load on feel.",
+      "subtitle": "Calf rehab holds at the current load, since mornings still linger. Legs stay working with calf-sparing lifts, plus an upper day. No calf-loading compounds, no games.",
+      "reason": "Phase 1 begins once the athlete walks without a limp, isometrics are pain-free, and the serious differentials are excluded. Progress moves from isometrics to double-leg to single-leg calf raises through a tolerable range. HSR reintroduces at a markedly reduced load, rebuilt rather than resumed at the pre-injury level. Pain rule: stay at or below 5 out of 10 during and the next morning, with no week-to-week increase. No games this week; calf strains can recur without warning.\n\nUpdate: the calf is improving but sitting at a load ceiling. Morning-after pain still lingers past 24 hours, and stair descent still produces an occasional sharp twinge. This week holds the rehab load; any increase waits on a clean morning first.\n\nUpper body and calf-sparing lower work can still train: leg extension, hip thrust, and back extension. Every calf-loading compound stays on hold until Phase 2: squat, deadlift, leg press, lunges, split squats, heavy leg curls, and all jumping or running. A deep squat and a heavy deadlift both cross the knee and ankle, asking more than this strain can take yet.\n\nRecurrence risk is highest at this age with a calf injury on record, so nothing here loads on feel alone.",
       "schedule": [
         {
           "day": "Sun",
           "date": "2026-06-28",
           "type": "rest",
           "status": "done",
-          "desc": "No basketball/hockey (out, recovering). Light pain-free walking + ankle ROM.",
+          "desc": "No games; light pain-free walking",
           "longDesc": "Games stay out until criteria-gated RTS. Vascularisation (LOVE): pain-free easy aerobic (e.g., upper-body bike) is fine to drive blood flow."
         },
         {
           "day": "Mon",
           "date": "2026-06-29",
           "type": "rehab",
-          "desc": "Calf rehab (PLANNED today, not yet done): double-leg calf raises (tolerable range), isometrics, first DE-LOADED HSR (light). Rebuild from low - NOT the pre-injury load; keep it pain-free (<=3/10).",
+          "desc": "Calf rehab: raises, isometrics, first de-loaded HSR",
           "exercises": [
             {
               "name": "Double-leg calf raise",
               "sets": "3x pain-free",
-              "notes": "controlled tempo. ROM: FLOOR RANGE - rise to full plantarflexion, lower to neutral only; NO heel-drop deficit off a step until stair descent is pain-free"
+              "notes": "Controlled tempo. Range: floor only, rising to full plantarflexion and lowering to neutral. No heel-drop below the step until stair descent is pain-free."
             },
             {
               "name": "Seated Calf Raise (HSR, de-loaded)",
@@ -5873,13 +5878,13 @@
               "sets": "holds"
             }
           ],
-          "longDesc": "First de-loaded HSR session - planned for today, not yet done. Per the 6/29 review the morning-after pain has been LINGERING from the earlier 6/24/6/26 rehab (the 24h rule is not cleanly met), so treat this as the load CEILING: rebuild from a low load, keep it <=3/10, do not chase weight. Log the next-morning pain - that read is the gate for any step-up."
+          "longDesc": "This is the first de-loaded HSR session. Morning-after pain has been lingering from earlier rehab sessions. Treat this load as a ceiling: rebuild from low, keep it at or below 3 out of 10, and don't chase weight. The next morning's pain reading is the gate for any step-up."
         },
         {
           "day": "Tue",
           "date": "2026-06-30",
           "type": "rehab",
-          "desc": "Calf rehab (HOLD) + LOWER (calf-sparing). Calf: double-leg raises at Mon's load + single-leg balance. Legs: leg extension, hip thrust, back extension + core. NO Tue basketball.",
+          "desc": "Calf rehab hold, plus calf-sparing lower",
           "exercises": [
             {
               "name": "Double-leg calf raise",
@@ -5912,13 +5917,13 @@
               "notes": "anti-rotation core"
             }
           ],
-          "longDesc": "Legs working WITHOUT loading the gastroc: leg extension is knee extension (quads, no calf); hip thrust and back extension are hip extension off a bent knee with a quiet ankle (minimal gastroc). HOLD the single-leg calf RAISE progression - Mon's mornings still linger. Stop any movement that puts tension/pull in the left calf."
+          "longDesc": "These lower exercises work the legs without loading the calf. Leg extension works the knees, not the calf. Hip thrust and back extension work the hips off a bent knee with a quiet ankle. The single-leg calf raise progression holds, since Monday's morning soreness still lingers. Stop any movement that pulls on the left calf."
         },
         {
           "day": "Wed",
           "date": "2026-07-01",
           "type": "rehab",
-          "desc": "Calf rehab (HOLD load) + UPPER. Calf: raises + de-loaded HSR at Mon's load (no step up). Upper: bench, strict OH press, row, pulldown + core.",
+          "desc": "Calf rehab hold, plus Upper",
           "exercises": [
             {
               "name": "Seated Calf Raise (HSR)",
@@ -5951,20 +5956,20 @@
               "notes": "core, calf-neutral"
             }
           ],
-          "longDesc": "Upper day with calf rehab bolted on at HELD load. Strict overhead press replaces DB push press - the push-press dip-and-drive loads ankle plantarflexion (the 6/25 flag) on a fresh gastroc strain. Rebuild HSR load only once a morning settles to baseline (Silbernagel 2007)."
+          "longDesc": "This is an upper day with calf rehab held at the current load. Strict overhead press replaces the dumbbell push press, since the push-press's leg drive loads the ankle on a fresh calf strain. HSR load rebuilds only once a morning settles back to baseline."
         },
         {
           "day": "Thu",
           "date": "2026-07-02",
           "type": "rest",
-          "desc": "Recovery: relative rest for the calf (ROM + isometrics). Optional core + upper-body bike for blood flow. Re-assess morning-after calf response.",
+          "desc": "Recovery: relative rest for the calf",
           "longDesc": "Phase 1 exit criteria: pain-free full active ROM, single-leg calf-raise capacity building, no morning-after escalation. Vascularisation (LOVE): a pain-free upper-body ergometer drives blood flow without loading the gastroc. Keep this day genuinely light - the prior days carried work."
         },
         {
           "day": "Fri",
           "date": "2026-07-03",
           "type": "rehab",
-          "desc": "Calf rehab (soleus) + LOWER (calf-sparing) #2. Calf: double-leg + light bent-knee soleus raises + de-loaded HSR at held load. Legs: leg extension, hip thrust, hip abduction + core.",
+          "desc": "Calf rehab plus calf-sparing lower, again",
           "exercises": [
             {
               "name": "Double-leg calf raise",
@@ -6004,14 +6009,14 @@
               "notes": "anti-extension core"
             }
           ],
-          "longDesc": "Second calf-sparing leg session plus the soleus (bent-knee) introduction from the base Phase 1 plan, kept light. Soleus work matters because it is not loaded by knee-straight raises (Dixon 2009 PMID 19468870); the bent knee also protects the strained gastroc. Keep all calf work pain-free at the held load until a morning wakes at baseline."
+          "longDesc": "This is the second calf-sparing leg session, adding a light bent-knee soleus raise. Soleus work matters because a knee-straight raise doesn't load it, and the bent knee also protects the strained gastroc. Keep all calf work pain-free at the held load until a morning wakes at baseline."
         },
         {
           "day": "Sat",
           "date": "2026-07-04",
           "type": "rest",
-          "desc": "Rest (July 4). Optional easy pain-free walk / upper-body aerobic. Gate into Wk 18 on pain-free full ROM + building single-leg capacity + clean mornings.",
-          "longDesc": "Criteria, not calendar. Hold in Phase 1 longer if morning-after symptoms persist. Wk 18 = progressive loaded strength incl. soleus once Phase 1 exit criteria are met."
+          "desc": "Rest; gate into next week on 3 signs",
+          "longDesc": "Criteria, not calendar. Hold in Phase 1 longer if morning-after symptoms persist. Move to next week once there's pain-free full range of motion, building single-leg capacity, and clean mornings."
         }
       ]
     },
@@ -6019,7 +6024,7 @@
       "title": "Calf: Phase 2 strength and monitored return to games",
       "blockLabel": "Calf rehab",
       "subtitle": "Confirm-and-protect: measure single-leg capacity, keep loading the calf, watch the morning-after read after games. Barbell lower stays frozen until the capacity gate clears.",
-      "reason": "Wk 18 pivots from linear rehab to CONFIRM-AND-PROTECT after the athlete returned to hockey off-plan on Sun 7/5 (day 14) and tolerated it - light morning-after soreness that subsided within the 24-hour window (Silbernagel 2007 PMID 17307888), a pass that beats the 6/29 lingering pattern. That clears the gate the prior review waited on, so cautious continued play is defensible and games are the A-priority (no longer withheld). BUT the return jumped ahead of the objective RTS gates, which remain UNTESTED: single-leg calf-raise capacity >=30 reps and inter-limb asymmetry <=10%, plus loaded strength toward >=1.0x BW knee-extended and >=1.5x BW knee-flexed soleus (Green 2022 PMID 35032233; Hebert-Losier 2017 PMID 28886865). A capacity/strength deficit can persist while pain is gone, and that deficit is the recurrence substrate - recurrence is frequent, 'without warning,' and highest in his band (age 40 + prior calf injury; Green 2017 PMID 28259848; Green 2020 PMID 33030961). So this week does three things at once: (1) MEASURE - get the single-leg capacity/asymmetry number early, fresh (the one hard datum still missing); (2) LOAD - keep building calf strength, gastroc (knee-straight) + soleus (bent-knee) HSR rebuilding toward but not past the pre-injury loads, because loading out the deficit is the active protection against recurrence, more than rest is; (3) MONITOR - log pain-during and pain-next-morning after every game/hard session; light-and-subsiding = keep going, lingering-or-climbing = pull back to loaded rehab that week. De-risk each game: thorough calf warm-up, ease into maximal push-off, stop on any sharp calf pain. Lower-body BARBELL lifts (TB DL, squat) stay FROZEN until the capacity gate clears and mornings stay clean. Pain rule throughout: <=5/10 during and next-morning, settle in 24h, no week-to-week increase; bias conservative given the bilateral Achilles-tendinopathy context. Full evidence: knowledge/calf-strain-rehab.md.",
+      "reason": "This week shifts from straight rehab to confirm-and-protect. Sunday's off-plan hockey game was tolerated well: light morning soreness that settled within 24 hours, better than the prior pattern. That clears the gate the last review was waiting on, so cautious continued play is fine, and games are back to top priority.\n\nBut that return got ahead of the actual return-to-sport tests, still unmeasured. The tests are 30 or more single-leg calf-raise reps, 10% or less side-to-side difference, and calf strength benchmarks. A deficit can persist after pain is gone, and that gap drives recurrence. Recurrence strikes without warning and is more likely at this age with a prior calf injury.\n\nThis week does three things. First, measure single-leg capacity while fresh, the one hard number still missing. Second, keep loading the calf toward the pre-injury level, since loading the deficit out protects against recurrence more than rest does. Third, log pain during and after every game; light and settling means keep going, lingering or climbing means pull back to rehab.\n\nDe-risk every game with a full calf warm-up and an eased-in push-off, and stop on any sharp pain. Barbell lower lifts stay frozen until the capacity gate clears.",
       "schedule": [
         {
           "day": "Sun",
@@ -6039,7 +6044,7 @@
             {
               "name": "Single-leg calf-raise to fatigue",
               "sets": "test each leg",
-              "notes": "the week's key datum - record reps + % asymmetry vs the uninjured leg (RTS target >=30 reps, <=10% gap). Test FRESH, not post-game. ROM: floor range, full plantarflexion up, controlled down to neutral; no heel-drop deficit off a step yet (stair descent only 'improving', not pain-free)"
+              "notes": "This is the week's key number. Reps and asymmetry against the uninjured leg, targeting 30-plus reps with 10% or less gap. Test fresh, not after a game. Range: floor only, full plantarflexion up, controlled to neutral down. No heel-drop below a step yet; stair descent is improving but not pain-free."
             },
             {
               "name": "Seated Calf Raise (HSR)",
@@ -6060,14 +6065,14 @@
               "notes": "bent knee slackens gastroc, biases soleus. ROM: controlled, no forced bottom stretch"
             }
           ],
-          "longDesc": "Heavy-slow tempo (3s up / 3s down) as load allows. Pain <=5/10 during and next-morning, settle in 24h. The capacity test is now DIAGNOSTIC of whether continued play is safe, not just a milestone - log the numbers. DONE 7/6: capacity 30/30 reps (L injured / R) - hits the >=30-rep, <=10%-asymmetry gate on raw count, BUT the injured left produced less force + less lift height per rep, so functional asymmetry is not confirmed <=10%; re-test at standardized full ROM/cadence on a clean morning before treating the gate as cleared, and it's only one of several RTS criteria. Loaded work: seated calf raises bodyweight from a chair only (soleus-biased, de-loaded from 95 lb); standing single-leg gastroc + weighted soleus skipped. CAUTION: a loaded end-range dorsiflexion stretch (foot propped on a curb, leaning bodyweight over it) caused a sharp pain shot - that end-range stretch is contraindicated at this stage, drop it. 7/7 AM read: mild calf soreness on certain movements + slight hamstring tenderness - watching the 24h settle."
+          "longDesc": "Heavy-slow tempo, 3 seconds up and down, as load allows. Pain stays at or below 5 out of 10 during and the next morning, settling within 24 hours. This capacity test now tells us whether continued play is safe, not just marking progress.\n\nResult: 30 reps on both legs, hitting the 30-rep target on raw count. The injured left produced less force and height per rep, though. The asymmetry isn't confirmed under 10% yet; a standardized re-test on a clean morning will confirm it.\n\nLoaded work today: seated calf raises at bodyweight only, de-loaded from the prior 95 lb. Standing single-leg and weighted soleus work were skipped.\n\nCaution: a loaded end-range ankle stretch caused a sharp pain and is off the table now. The next morning showed mild soreness on certain movements; watching whether it settles."
         },
         {
           "day": "Tue",
           "date": "2026-07-07",
           "type": "rest",
           "desc": "No basketball; rest or optional capacity re-test",
-          "longDesc": "Basketball dropped by choice - no games Tue this week. Use the freed day as rest, or run a controlled capacity re-test: single-leg calf-raise to fatigue, full height each rep at a metronome cadence, both legs, to confirm whether inter-limb asymmetry is truly <=10% (Green 2022 PMID 35032233; Hebert-Losier 2017 PMID 28886865). NO static end-range dorsiflexion stretching - the 7/6 curb-lean caused a sharp pain shot. Next game is Sun 7/12 hockey PM (no AM basketball). Barbell lower lifts still frozen until the capacity gate cleanly clears."
+          "longDesc": "Basketball is dropped by choice this week, no Tuesday game. Use the freed day as rest, or run a controlled capacity re-test: single-leg calf raises to fatigue, full height each rep, both legs. This confirms whether the side-to-side difference is truly under 10%. No static end-range ankle stretching; yesterday's version of that caused a sharp pain. The next game is Sunday's hockey, with no Saturday basketball. Barbell lower lifts stay frozen until the capacity gate clearly clears."
         },
         {
           "day": "Wed",
@@ -6113,7 +6118,7 @@
               "notes": "proximal chain contributes to plantarflexion force; calf-sparing"
             }
           ],
-          "longDesc": "Upper line preserved cleanly through the injury - keep it progressing. Rebuild HSR load only once mornings stay clean (Silbernagel 24h rule). DONE 7/8: bench to 165x5 (double-progression step); OHP moved to barbell 95/75/75; barbell row subbed for cable row 75/95/105; lat pulldown 95/145/145. Calf ran AHEAD of the gate - seated ramped to 135 (vs held 95), single-leg BW+25 - so the 7/9 AM morning-after read is the governor."
+          "longDesc": "The upper-body line has stayed clean through the injury, so it keeps progressing. HSR load rebuilds only once mornings stay clean. Today: bench stepped to 165 for 5, overhead press moved to barbell, and lat pulldown ran its usual ramp. The calf ran ahead of plan today, with seated raises jumping to 135 from a held 95. Tomorrow morning's read is what governs whether that holds."
         },
         {
           "day": "Thu",
@@ -6172,7 +6177,7 @@
       "title": "Confirm-and-protect (cont.): re-test capacity, keep loading calf, cautious games",
       "blockLabel": "Calf rehab",
       "subtitle": "Provisional week: only Sun 7/12 hockey PM is fixed. Rehab and lift days are set at the Sun 7/12 review.",
-      "reason": "Week 19 is intentionally lean. Per the plan's week-by-week, data-gated design (see the Wk 18 Sat note), next week's rehab loading and any barbell-lower reintroduction are set only AFTER (a) the single-leg calf-raise capacity is re-tested at standardized full ROM + set cadence to confirm inter-limb asymmetry <=10% - Mon 7/6's 30/30 met the rep count but came at reduced force/height on the injured left, so the quality gate is unconfirmed - and (b) the morning-after reads across Wk 18 stay light and subsiding within 24h (Silbernagel 2007 PMID 17307888). The one thing fixed now is the athlete's committed game: Sun 7/12 hockey PM, with no Sunday-AM basketball. Barbell lower lifts (TB DL, squat) remain FROZEN until the capacity gate cleanly clears. RTS criteria unchanged (Green 2022 PMID 35032233; norms Hebert-Losier 2017 PMID 28886865).",
+      "reason": "This week is intentionally lean. Rehab loading and any barbell-lower reintroduction get set only after two things happen. First, the single-leg calf-raise capacity gets re-tested at a standardized pace. That confirms whether the side-to-side difference is truly under 10 percent. Last week's test met the rep count but came at reduced force on the injured side. Second, this week's morning-after readings need to stay light and settle within 24 hours.\n\nThe one fixed thing is the game: hockey on Sunday, with no Saturday basketball. Barbell lower lifts stay frozen until the capacity gate clearly clears. The return-to-sport criteria are unchanged.",
       "schedule": [
         {
           "day": "Sun",
@@ -6186,14 +6191,14 @@
               "notes": "do not go cold into max push-off; no static end-range dorsiflexion stretch"
             }
           ],
-          "longDesc": "The committed game this week. Log the 7/13 AM morning-after read - light+subsiding = keep building and continue cautious play; lingering/climbing = drop back to loaded rehab this week (Silbernagel 24h rule)."
+          "longDesc": "This is the committed game this week. Log tomorrow morning's read: light and settling means keep building and continue cautious play; lingering or climbing means drop back to loaded rehab this week."
         },
         {
           "day": "Mon",
           "date": "2026-07-13",
           "type": "rehab",
           "desc": "Calf strength \u00b7 provisional",
-          "longDesc": "Placeholder: continue rebuilding calf strength toward, not past, pre-injury loads, and add the standing single-leg (gastroc) + weighted bent-knee (soleus) work skipped on 7/6 - those are what close the inter-limb deficit. Gated on the 7/12 read."
+          "longDesc": "Placeholder for now. The plan continues rebuilding calf strength toward the pre-injury loads. It adds the standing single-leg and weighted soleus work skipped earlier, since those close the side-to-side deficit. This is gated on Sunday's read."
         },
         {
           "day": "Tue",
@@ -6228,7 +6233,7 @@
           "date": "2026-07-18",
           "type": "rest",
           "desc": "Rest \u00b7 provisional",
-          "longDesc": "Placeholder. Barbell lower reintroduces only after the capacity gate clears; Phase 3 (running/hop/plyo prep) opens once single-leg capacity is climbing + ~20 symptom-free single-leg hops - written week-by-week."
+          "longDesc": "Placeholder for now. Barbell lower work returns only after the capacity gate clears. The next phase, adding running and hop work, opens once single-leg capacity is climbing and about 20 symptom-free single-leg hops are met. This gets written week by week."
         }
       ]
     },

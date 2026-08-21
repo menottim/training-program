@@ -4150,6 +4150,7 @@
           '<td style="font-size:0.8rem;color:var(--text-muted);">' + esc(s.evidenceTier) + '</td>' +
         '</tr>';
       }).join('');
+      // "Why" column reads from the evidenceTier field, but shows plain-language reasoning, not a study citation.
       var recipesHTML = '';
       if (athleteData.defaultShakeRecipes) {
         recipesHTML = '<h4 style="margin-top:1rem;">Default shake variants (all include 5g creatine + 5g psyllium)</h4>' +
@@ -4168,7 +4169,7 @@
       }
       supsMount.innerHTML =
         '<h3 style="margin-top:1rem;">Daily Supplement Stack</h3>' +
-        '<table style="font-size:0.9rem;"><thead><tr><th>Supplement</th><th>Dose</th><th>Evidence tier</th></tr></thead><tbody>' + supsRows + '</tbody></table>' +
+        '<table style="font-size:0.9rem;"><thead><tr><th>Supplement</th><th>Dose</th><th>Why</th></tr></thead><tbody>' + supsRows + '</tbody></table>' +
         bdHTML +
         recipesHTML;
     }

@@ -178,7 +178,7 @@
         "albuminUnit": "g/dL",
         "albuminRange": "3.6-5.1 g/dL",
         "albuminFlag": "normal upper end",
-        "notes": "KEY FINDING: elevated SHBG (83 vs upper limit 50) is pulling total T out of circulation. Total T 811 is upper-normal but free/bioavailable T are at the BOTTOM of range. This is a 'functionally low-T presentation' despite robust total T. Technically does not meet Endocrine Society 2018 hypogonadism criteria (free T above floor, no reported symptoms). Borderline high estradiol tracks with high total T (aromatization). Prolactin normal rules out pituitary cause. Next step: understand SHBG driver - thyroid (TSH + free T4), liver (AST/ALT/bilirubin), metabolic (fasting insulin / HbA1c). Source: Quest Diagnostics ZD478125F Men's Hormone Panel Expanded, ordering physician MARKS, Lianne, PWN Health.",
+        "notes": "KEY FINDING: elevated SHBG (83 vs upper limit 50) is pulling total T out of circulation. Total T 811 is upper-normal but free/bioavailable T are at the BOTTOM of range. This is a 'functionally low-T presentation' despite robust total T. Technically does not meet the clinical cutoff for low testosterone (free T above the floor, no reported symptoms). Borderline high estradiol tracks with high total T (aromatization). Prolactin normal rules out pituitary cause. Next step: understand SHBG driver - thyroid (TSH + free T4), liver (AST/ALT/bilirubin), metabolic (fasting insulin / HbA1c). Source: Quest Diagnostics ZD478125F Men's Hormone Panel Expanded, ordering physician MARKS, Lianne, PWN Health.",
         "lab": "Quest Diagnostics / PWN Health",
         "orderingPhysician": "Lianne Marks, PWN Health"
       }
@@ -227,37 +227,37 @@
       {
         "name": "One A Day Men's multivitamin",
         "dose": "1 tablet",
-        "evidenceTier": "Weak (athletes with adequate diet); see knowledge/supplements.md"
+        "evidenceTier": "Low priority if your diet is already solid. Full detail: knowledge/supplements.md"
       },
       {
         "name": "Fish oil",
         "dose": "1400mg (980mg omega-3 EPA+DHA)",
-        "evidenceTier": "Moderate for athletes; dose may be sub-therapeutic for tendon/recovery effects (2-3g EPA+DHA typical)"
+        "evidenceTier": "Worth taking, but the dose runs light for tendon and recovery benefits. 2-3g of EPA+DHA is the effective range."
       },
       {
         "name": "Iron + vitamin C",
         "dose": "65mg elemental iron + 125mg vit C",
-        "evidenceTier": "CLINICALLY APPROPRIATE for Double Reds donor (2-3x/year). Red Cross recommends 18-38mg elemental for 120 days post-Power Red; his ~940-1,410mg/year iron loss justifies chronic supplementation. Dose is slightly above official 18-38mg range but within typical OTC tablet strength. Annual ferritin check warranted to confirm iron balance."
+        "evidenceTier": "Makes sense given how much iron you lose donating blood a few times a year. The dose runs a bit above the typical guideline, but it is normal OTC strength. Get ferritin checked yearly to confirm iron stays balanced."
       },
       {
         "name": "Magnesium glycinate",
         "dose": "240mg",
-        "evidenceTier": "Moderate; appropriate dose and form for sleep/recovery"
+        "evidenceTier": "Good form and dose for sleep and recovery."
       },
       {
         "name": "Creatine monohydrate",
         "dose": "5g/day (in shake)",
-        "evidenceTier": "Strong; ISSN position stand"
+        "evidenceTier": "One of the most reliable supplements there is. Take it daily, no cycling needed."
       },
       {
         "name": "Psyllium husk powder",
         "dose": "5g/day (in shake)",
-        "evidenceTier": "Strong for cholesterol, moderate for glycemic control and satiety. Jovanovski 2018 meta-analysis (Am J Clin Nutr, PMID 30239559): psyllium reduces LDL cholesterol 5-10% at 7-15g/day. 5g/day is modest; could benefit from 2-3x daily dosing or bump to 10g for full LDL effect per FDA qualified health claim threshold."
+        "evidenceTier": "Good for cholesterol, and it helps blood sugar and fullness too. Your current dose is on the low end for the full cholesterol benefit; 10g/day would get you there."
       },
       {
         "name": "Momentous Collagen Peptides (1 scoop)",
         "dose": "15g collagen peptides (11.6g grass-fed bovine + 5.2g FORTIGEL) + 50mg vitamin C, in shake",
-        "evidenceTier": "Emerging for tendinopathy. Shaw 2017 (PMID 27852613) showed 15g gelatin/collagen + ~50mg vitamin C 30-60 min pre-loading doubles collagen synthesis biomarkers in serum. Praet 2019 (PMID 30609761) RCT used FORTIGEL specifically for achilles tendinopathy and found symptom improvements. Momentous formulation matches both protocols (15g + 50mg vit C, FORTIGEL inclusion). Optimal timing: 30-60 min PRE Wed/Fri HSR sessions for tendon-specific adaptation. Post-game/post-loading timing has weaker evidence but still contributes to general recovery."
+        "evidenceTier": "Early evidence for tendon support, and your dose matches what the research used. Best taken 30-60 minutes before a Wednesday or Friday calf session. After a game or at a random time still helps recovery generally, just less specifically for the tendon."
       }
     ],
     "defaultShakeRecipes": {

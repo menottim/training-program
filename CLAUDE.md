@@ -107,6 +107,25 @@ Always commit and push with the personal identity. Do not use a corporate identi
 git -c user.name="menottim" -c user.email="menottim@users.noreply.github.com" commit -m "message"
 ```
 
+## Model Conformance
+
+Not every task in this repo needs the same model. Match the model to the stakes and the reasoning load.
+
+__Use the best available model (Opus, unless a newer top-tier model has since shipped) for:__
+
+- A science review. It reads the whole training history, weighs conflicting evidence and decides on a program change.
+- Writing or editing a `knowledge/*.md` file, or verifying a citation. This is the evidence root every week and every review derives from. A wrong PMID or a misread finding here poisons everything downstream.
+- Anything touching acute injury triage, a differential diagnosis (for example the rupture, DVT and compartment-syndrome checks in `calf-strain-rehab.md`), or a new clinical ask (for example the GLP-1 entry in `clinicalWorkupAsks`).
+- A `CLAUDE.md` edit to the effort model, the progression rules, or any rule that changes what the athlete lifts.
+
+__A lighter model, such as Sonnet, is fine for:__
+
+- Logging a session to `activityLog[]` or a reading to `bodyLog[]`, and the git commit and push.
+- A `modifiedWeeks` update that applies the double-progression or deload tables already in Section 1.
+- STE100 or word-cap cleanup, and `index.html` rendering fixes.
+
+Before starting a task in the first list, confirm the session is on the best available model. If it is not, tell the user and ask to switch via `/model` first.
+
 ## How to Log Activity
 
 Follow these steps when the user reports a workout, a game, or a recovery session.
@@ -399,7 +418,7 @@ Do these three things when a new conversation starts:
 2. Read `data.scienceReviews[]` for the date of the last review.
 3. If the last review is more than 7 days old, ask this: _"It's been [N] days since the last science-based program review. Want to do a check against the research guidelines?"_
 
-__Check the model before a science review.__ A science review reads the whole training history, weighs conflicting evidence and decides on a program change, so it needs the best available model. Routine work, such as logging a session or updating the current week, does not, and can run on a lighter model such as Sonnet. Before starting a science review, confirm the session is on the best available model (Opus, unless a newer top-tier model has since shipped). If it is not, tell the user and ask to switch via `/model` before doing the review.
+__Check the model before a science review.__ See Model Conformance above.
 
 Do these things during a science review:
 

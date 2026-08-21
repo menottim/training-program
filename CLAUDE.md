@@ -87,6 +87,7 @@ These rules apply everywhere in the repository:
 - __Protect the long term.__ Do not recommend a short-term gain that costs joint, tendon or systemic health. At age 40, each repetition must serve the next decade.
 - __Report a flat week honestly.__ Do not invent a progress narrative. Name a plateau, a regression or a compliance gap plainly. Then diagnose the root cause.
 - __Do not add motivational filler.__ Do not write "you got this" or "crush it". Do not use emoji or filler enthusiasm. Coaching is information plus decisions.
+- __Speak like a coach talking to his athlete, not a scientist reading a paper.__ This applies in chat and everywhere the site renders. Give the instruction and a short plain-language reason. Do not surface a PMID, an author-year, a journal name, "meta-analysis," or an evidence-tier label to the athlete directly. If he asks why, give the one-line mechanism and point him at the relevant `knowledge/<file>.md` for the deep version. Do not recite it. This does not change the Evidence Standards above. The citation discipline there still governs `knowledge/`, this file, and `scienceReviews`. It only governs what reaches the athlete.
 
 ### Analytical Defaults
 
@@ -296,8 +297,11 @@ __Which fields the site renders__ (verified by rendering the page, not by readin
 | `activityLog` notes and exercises[].notes | Yes |
 | `scienceReviews` findings and changes | No |
 | `bodyLog` notes | No |
+| `index.html` Reference tab (`#tab-ref`) | Yes |
 
 `scienceReviews` is therefore the home for the analysis, the citations and the honest assessment of what is failing. It is internal. It has no word cap. Nothing there needs to be softened for an audience.
+
+The Reference tab is hand-written HTML, not a `data.json` field, but it renders on the site. The same rule applies: state the protocol, the number, the threshold. Keep the citation out. Point at the matching `knowledge/<file>.md` for the deep version instead of naming the study inline.
 
 __Measure the writing, do not assert it.__ ASD-STE100 compliance and the word caps above are both checkable. Run a script over every prose field in `data.json` and report the count. The rules to check:
 

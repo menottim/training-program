@@ -56,7 +56,9 @@ def violations(k, v, path=''):
         # an exercise cue is short; a session record legitimately covers the whole session
         CAP['notes'] = 60 if '.exercises[' in path else (160 if path.startswith('.activityLog') else 250)
     n = len(v.split())
-    if k in CAP and n > CAP[k]:
+    # scienceReviews has no word cap (CLAUDE.md: "It has no word cap. Nothing there
+    # needs to be softened for an audience.") - it's internal, not site-rendered.
+    if k in CAP and n > CAP[k] and not path.startswith('.scienceReviews'):
         bad.append(f'{k} bloat: {n} words (cap {CAP[k]})')
     SCAFFOLD = [
         'ORIGINAL PLAN FOLLOWS', 'ORIGINAL RATIONALE FOLLOWS', 'ORIGINAL PRESCRIPTION FOLLOWS',

@@ -2693,6 +2693,45 @@
       "details": "Walk 15 min",
       "achillesPain": 0,
       "notes": "No achilles or calf pain during the walk."
+    },
+    {
+      "date": "2026-08-20",
+      "type": "training",
+      "activity": "Lower, jumps and calf (Thu Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "5x3",
+          "weight": "18 in box",
+          "notes": "As prescribed. Stepped up to 15 contacts. No pain."
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "1x5, 1x5, 1x10",
+          "weight": "215 lbs",
+          "notes": "Set 3 was the prescribed 5+ calibration set and hit the 10-rep hard cap. The load was too light. Next lower-body 5+ session steps to 235."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "145 lbs",
+          "notes": "As prescribed. Second squat exposure of the week."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x8",
+          "weight": "165 lbs",
+          "notes": "As prescribed. Moved from the 10-rep phase to the 8-rep phase."
+        },
+        {
+          "name": "Single-Leg RDL (dumbbell)",
+          "sets": "3x8/leg",
+          "weight": "25 lb DBs",
+          "notes": "As prescribed."
+        }
+      ],
+      "notes": "Box jumps ran 5x3 at the 18 in box, stepped up to 15 contacts, no pain. Trap bar ran 5, 5 and 10 at 215, with set 3 as the 5+ calibration set. It hit the 10-rep hard cap, so the load was too light and steps to 235 next time. Squat ran 3x5 at 145 as prescribed, the second exposure of the week. Seated calf raise ran 3x8 at 165 as prescribed, moving into the 8-rep phase. Single-leg RDL ran 3x8 per leg at the 25s as prescribed. No achilles, calf or back symptoms."
     }
   ],
   "scienceReviews": [

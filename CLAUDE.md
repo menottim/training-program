@@ -40,7 +40,7 @@ Two days therefore remains the default, not a ceiling. Go to three when both con
 - The last three weeks each delivered at least two sessions.
 - The game slate is one moderate game or fewer.
 
-__Revert to two days the moment any week delivers fewer than two sessions.__ Week 24 runs three days on that basis, with no hockey for three weeks.
+__Revert to two days the moment any week delivers fewer than two sessions.__ Weeks 24 and 25 run three days on that basis, with no hockey until mid-September. Week 24 delivered all three. Expect the third day to come out when hockey returns and Sunday becomes a double-header again.
 
 On a two-day week, everything necessary must fit in two sessions:
 

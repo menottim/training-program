@@ -2799,6 +2799,51 @@
       "activity": "Recovery day",
       "achillesPain": 0,
       "notes": "Right calf, not the leg with the June strain, feels tight this morning. Pain 1 to 2 out of 10, worst on the way down from standing on the toes. No swelling, and no difference in size or shape versus the left side."
+    },
+    {
+      "date": "2026-08-25",
+      "type": "training",
+      "activity": "Squat, pull, core and calf (Tue Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "145 lbs",
+          "notes": "Deliberate step past the prescribed 140, to match Thursday's working weight."
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "3x5",
+          "weight": "145 lbs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "2x8",
+          "weight": "150 lbs",
+          "notes": "As prescribed. Failure hit at exactly 8 reps on both sets, so the load holds."
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "3x10/side",
+          "weight": "22 lbs",
+          "notes": "Sets and reps as prescribed. Ran at 22 lb instead of the prescribed 20."
+        },
+        {
+          "name": "Pallof Press",
+          "sets": "3x10/side",
+          "weight": "22 lbs",
+          "notes": "Sets and reps as prescribed. Ran at 22 lb instead of the prescribed 20."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 67 lb/leg, machine",
+          "notes": "The lightest setting the machine allows, well above the prescribed plus 45. The right calf held up fine at that load."
+        }
+      ],
+      "notes": "Squat ran 3x5 at 145 instead of the prescribed 140, a deliberate step to match Thursday's weight. Row ran as prescribed, 3x5 at 145. Pulldown ran as prescribed, 2x8 at 150, with failure at exactly 8 reps on both sets. Woodchop and Pallof ran the prescribed sets and reps at 22 lb instead of 20. Single-leg calf raise ran 3x6 per leg at bodyweight plus 67, the lightest the machine allows. That is well above the prescribed plus 45. The right calf held up fine. No achilles pain."
     }
   ],
   "scienceReviews": [

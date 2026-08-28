@@ -2851,6 +2851,39 @@
       "activity": "Recovery day",
       "achillesPain": 0,
       "notes": "Bike, 30 min. Right calf and achilles both felt good, no pain."
+    },
+    {
+      "date": "2026-08-27",
+      "type": "training",
+      "activity": "Trap bar, jumps, squat and calf (Thu Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "5x3",
+          "weight": "18 in box",
+          "notes": "As prescribed. Held at 15 contacts. No pain."
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "1x5, 1x5, 1x8",
+          "weight": "235 lbs",
+          "notes": "Set 3 was the prescribed 5+ calibration set and gave 8 reps. That steps the load to 245 next time."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "145 lbs",
+          "notes": "As prescribed. Second clean session at this weight."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x8",
+          "weight": "180 lbs",
+          "notes": "As prescribed."
+        }
+      ],
+      "notes": "Box jumps ran as prescribed, 5x3 at the 18 in box, held at 15 contacts. Trap bar ran 5, 5 and 8 at 235, with set 3 as the 5+ calibration set. Eight reps steps the load to 245 next time. Squat ran 3x5 at 145 as prescribed, the second clean session at that weight. Seated calf raise ran 3x8 at 180 as prescribed. Single-leg RDL did not run. Right calf checked good before the session, and no achilles pain."
     }
   ],
   "scienceReviews": [

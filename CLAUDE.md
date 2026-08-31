@@ -337,9 +337,17 @@ __Use the canonical exercise names, so the history matches the plan.__ The `exer
 
 Use the canonical spelling, which is the plan's exact name, when you log a session. The history lookup and the carry-forward then continue to work. To add a genuinely new variant, do one of two things: reuse a canonical name, or add a fold to `exerciseCanon` in `index.html`.
 
-__A missing week entry is not a blank week. It is the pre-injury default.__ If `modifiedWeeks` holds no entry for the current week, the renderer uses a fixed standard week from `index.html`. That standard week is: Wednesday Lower Body (Heavy), Friday Lower Moderate plus Plyometrics, Sunday Basketball AM and Hockey PM, and Tuesday Basketball PM. The renderer cannot tell an un-authored week from a week where the default applies. An un-authored week therefore restores the standard pre-injury program without any warning.
+__A missing week entry now shows as a missing week entry. Changed 2026-08-31.__ If `modifiedWeeks` holds no entry for the current week, the site says "No plan authored for Week N" in the summary bar, on the Today Card, and in place of the week grid. It prescribes nothing.
 
-This happened during the calf block in June and July 2026. `modifiedWeeks` stopped at Week 19. For approximately two weeks, the live site prescribed Friday plyometrics and unmodified heavy lower body work. At that time the athlete was six weeks past a gastroc strain, and his barbell lower body work was frozen. Treat an un-authored current week as a defect, not a gap. Author `modifiedWeeks[<week>]` for every week that differs from the standard slate. Check the current week again whenever a block changes or the week rolls over.
+__Before that change the fallback fabricated a week, and it did so twice.__ `index.html` held a hardcoded standard week: Wednesday Lower Body (Heavy), Friday Lower Moderate plus Plyometrics, Sunday Basketball AM and Hockey PM, and Tuesday Basketball PM. The renderer could not tell an un-authored week from a week where that default applied, so an un-authored week restored the pre-injury program with no warning.
+
+The first time was the calf block in June and July 2026. `modifiedWeeks` stopped at Week 19. For approximately two weeks, the live site prescribed Friday plyometrics and unmodified heavy lower body work, while the athlete was six weeks past a gastroc strain with his barbell lower body work frozen.
+
+The second time was Week 26, on 2026-08-31. The week rolled over on the Sunday with no entry authored, so the site showed a Tuesday PM basketball game and Sunday PM hockey. Neither is on the slate. The athlete caught it, which is not the control this should rely on.
+
+__The fix removes the fabrication, not the duty to author.__ The site no longer guesses, so an un-authored week is now visible instead of silent. It still prescribes nothing, so it is still a defect. Author `modifiedWeeks[<week>]` for every week. Check the current week whenever a block changes or the week rolls over.
+
+__Do not put a schedule back into `index.html`.__ Any hardcoded slate there goes stale the next time the season changes, and then it lies. The current week lives in `data.json` and nowhere else.
 
 __How to capture a change:__
 

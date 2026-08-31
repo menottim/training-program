@@ -1486,49 +1486,23 @@
 
 <!-- WEEKLY OVERVIEW -->
 <h2 id="week">Weekly Overview</h2>
+<!-- Un-authored-week placeholder. The renderer hides this whenever modifiedWeeks
+     holds an entry for the current week, which should be every week. Do NOT put a
+     schedule here. A hardcoded slate goes stale and then silently prescribes a week
+     that does not exist: that is what happened during the June 2026 calf block, and
+     again on 2026-08-31 when an un-authored Week 26 showed a Tuesday basketball game
+     and Sunday hockey, neither of which is on the slate. -->
 <div class="week-grid">
-  <div class="day-card game">
-    <div class="day-name">Sun</div>
-    <div class="day-type">Game x2</div>
-    <div class="day-detail">Basketball AM<br>Hockey PM</div>
-  </div>
-  <div class="day-card rest">
-    <div class="day-name">Mon</div>
-    <div class="day-type">Recovery</div>
-    <div class="day-detail">Low-intensity cardio, foam roll, achilles protocol</div>
-    <div class="md-next-up"><strong>Next up Tue:</strong> Basketball PM</div>
-  </div>
-  <div class="day-card game">
-    <div class="day-name">Tue</div>
-    <div class="day-type">Game</div>
-    <div class="day-detail">Optional AM prehab<br>Basketball PM</div>
-  </div>
-  <div class="day-card train">
-    <div class="day-name">Wed</div>
-    <div class="day-type">Train</div>
-    <div class="day-detail"><strong>Lower Heavy</strong><br>Deadlift, split squat, hamstrings</div>
-  </div>
-  <div class="day-card train">
-    <div class="day-name">Thu</div>
-    <div class="day-type">Train</div>
-    <div class="day-detail"><strong>Upper + Power</strong><br>Press, pull, cable power</div>
-  </div>
-  <div class="day-card train">
-    <div class="day-name">Fri</div>
-    <div class="day-type">Train</div>
-    <div class="day-detail"><strong>Lower Mod + Plyo</strong><br>Lighter, explosive</div>
-  </div>
-  <div class="day-card rest">
-    <div class="day-name">Sat</div>
-    <div class="day-type">Recovery</div>
-    <div class="day-detail">Mobility, activation, pre-game prep</div>
-    <div class="md-next-up"><strong>Next up Sun:</strong> Basketball AM + Hockey PM</div>
+  <div class="day-card rest" style="grid-column: 1 / -1;">
+    <div class="day-name">No plan authored</div>
+    <div class="day-detail" id="unplanned-week-msg">This week has no entry in <code>modifiedWeeks</code>. Nothing below is prescribed.</div>
   </div>
 </div>
 
 <div class="info-box">
-  <strong>Why Wed/Thu/Fri?</strong>
-  48+ hours between heavy training and games. Wednesday is furthest from all games. Friday is deliberately the lightest session (~36 hrs before Sunday AM).
+  <strong>Nothing is prescribed for this week.</strong>
+  The plan is authored per week in data.json. Until that happens, this page has no
+  schedule to show, and it deliberately does not guess one.
 </div>
 
 <!-- Modified Week Plan (rendered from data.json when active, replaces the static grid above) -->
@@ -1848,7 +1822,7 @@
 
 <div class="info-box">
   <strong>Carb Timing</strong>
-  Higher carbs on game days (Sun, Tue) and training days (Wed, Thu, Fri). Lower carbs on recovery days (Mon, Sat). This fuels performance without excess.
+  Higher carbs on game days and lifting days. Lower carbs on rest days. This fuels performance without excess. Which days those are changes with the season, so read them off the current week rather than from a fixed list.
 </div>
 
 <div class="info-box">
@@ -2132,14 +2106,15 @@
         }
       }
     } else {
-      var std = { Sun: 'Basketball AM + Hockey PM', Mon: 'Recovery', Tue: 'Basketball PM',
-        Wed: 'Lower Heavy', Thu: 'Upper + Core', Fri: 'Lower Moderate', Sat: 'Recovery' };
-      var stdOrder = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-      todayDesc = std[todayName];
-      var si = stdOrder.indexOf(todayName);
-      for (var k = 1; k < 7; k++) {
-        var nd = stdOrder[(si + k) % 7];
-        if (nd !== 'Mon' && nd !== 'Sat') { nextUpDesc = nd + ': ' + std[nd]; break; }
+      // No entry for this week. Say so; never invent a slate. The old default here
+      // hardcoded a Tuesday basketball game and Sunday hockey, and kept showing them
+      // long after both left the schedule.
+      todayDesc = 'No plan authored for Week ' + weekNum;
+      nextUpDesc = 'author modifiedWeeks[' + weekNum + ']';
+      var msgEl = document.getElementById('unplanned-week-msg');
+      if (msgEl) {
+        msgEl.innerHTML = 'Week ' + weekNum + ' has no entry in <code>modifiedWeeks</code>. ' +
+          'Nothing on this page is prescribed for it.';
       }
     }
 
@@ -2371,12 +2346,10 @@
       title = todayDay.desc || sessionLabel;
       if (todayDay.status === 'done') typeClass += ' is-done';
     } else {
-      var stdSchedule = { Sun: 'Basketball AM', Mon: 'Recovery day', Tue: 'Basketball PM',
-        Wed: 'Lower Body (Heavy)', Thu: 'Upper Body + Power', Fri: 'Lower Moderate + Plyo', Sat: 'Pre-game prep' };
-      title = stdSchedule[todayName] || '';
-      if (todayName === 'Sun' || todayName === 'Tue') { typeClass = 'is-game'; sessionLabel = 'Game'; }
-      else if (todayName === 'Mon' || todayName === 'Sat') { typeClass = 'is-rest'; sessionLabel = 'Rest'; }
-      else { typeClass = 'is-training'; sessionLabel = 'Training'; }
+      // No entry for this week. Show the gap rather than a guessed session.
+      title = 'No plan authored for Week ' + weekNum;
+      typeClass = 'is-rest';
+      sessionLabel = 'Unplanned';
     }
 
     var checklistHTML = '';

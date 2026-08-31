@@ -2884,6 +2884,80 @@
         }
       ],
       "notes": "Box jumps ran as prescribed, 5x3 at the 18 in box, held at 15 contacts. Trap bar ran 5, 5 and 8 at 235, with set 3 as the 5+ calibration set. Eight reps steps the load to 245 next time. Squat ran 3x5 at 145 as prescribed, the second clean session at that weight. Seated calf raise ran 3x8 at 180 as prescribed. Single-leg RDL did not run. Right calf checked good before the session, and no achilles pain."
+    },
+    {
+      "date": "2026-08-28",
+      "type": "training",
+      "activity": "Bench, arms and calf asymmetry check (Fri Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "3x5",
+          "weight": "180 lbs",
+          "notes": "Set 3 ran flat instead of the prescribed 5+. No calibration data from this session. Retry the 5+ next time before moving the load."
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5",
+          "weight": "105 lbs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Strict Overhead Press (dumbbell)",
+          "sets": "3x5",
+          "weight": "40 lb DBs",
+          "notes": "As prescribed, rebuilding reps at this load."
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3x10",
+          "weight": "10 lb DBs",
+          "notes": "Under the prescribed 12-15 reps at the same weight."
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x12",
+          "weight": "30 lbs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "3x10-12",
+          "weight": "40 lbs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 77 lb/leg, machine",
+          "notes": "Both legs completed all 6 reps clean. The left leg felt about 20% harder than the right, confirming last week's read."
+        }
+      ],
+      "notes": "Bench ran a flat 3x5 at 180 instead of the prescribed 5+ on set 3. No calibration data came from it this time. Close grip, overhead press, triceps pushdown and biceps curl all ran as prescribed. Lateral raise ran 3x10 instead of the prescribed 12-15, same weight. Calf raise ran 3x6 per leg at bodyweight plus 77, both legs clean. The left was about 20% harder than the right. No achilles pain."
+    },
+    {
+      "date": "2026-08-29",
+      "type": "rest",
+      "activity": "Recovery day",
+      "achillesPain": 0,
+      "notes": "No weigh-in today. Weighed in Monday instead."
+    },
+    {
+      "date": "2026-08-30",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "50 min",
+      "intensity": "moderate",
+      "achillesPain": 0,
+      "notes": "Some achilles and calf tightness during the game, no pain."
+    },
+    {
+      "date": "2026-08-31",
+      "type": "recovery",
+      "activity": "Recovery day",
+      "achillesPain": 1,
+      "notes": "Achilles and calf both read 1 to 2 out of 10 this morning. Up from the quiet week behind it, and the first achilles read above 0 in weeks."
     }
   ],
   "scienceReviews": [
@@ -3314,6 +3388,12 @@
       "weight": 226,
       "bodyFatPct": 24.2,
       "notes": "Second reading of the weekly series, 6 days after 8/18. Weight is up 3.1 lb and body fat is up 0.7 points. Off the usual Saturday slot, since the 8/22 weigh-in did not happen, so conditions may not match exactly. The stated rule needs three consecutive same-direction readings, or a change above 4 lb, before a trend is callable. This single reading does not clear either bar. Two readings and 6 days is not enough to call anything yet."
+    },
+    {
+      "date": "2026-08-31",
+      "weight": 225,
+      "bodyFatPct": 23,
+      "notes": "Third reading of the weekly series, taken Monday instead of Saturday since the 8/29 weigh-in did not happen. Weight is about flat since 8/24 and body fat is down from it. The direction has now flipped between readings, which fits normal noise rather than a trend in either direction."
     }
   ],
   "modifiedWeeks": {

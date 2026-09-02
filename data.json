@@ -2958,6 +2958,51 @@
       "activity": "Recovery day",
       "achillesPain": 1,
       "notes": "Achilles and calf both read 1 to 2 out of 10 this morning. Up from the quiet week behind it, and the first achilles read above 0 in weeks."
+    },
+    {
+      "date": "2026-09-01",
+      "type": "training",
+      "activity": "Squat, pull, core and calf (Tue Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "155 lbs",
+          "notes": "As prescribed. Achilles and calf read 0 this morning, clearing the gate."
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "5x5",
+          "weight": "145 lbs",
+          "notes": "Ran 5 sets instead of the prescribed 3, same weight and reps."
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "2x8",
+          "weight": "150 lbs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "3x12/side",
+          "weight": "25 lbs",
+          "notes": "Ran at 25 lb instead of the prescribed 22, at the top of the prescribed rep range."
+        },
+        {
+          "name": "Pallof Press",
+          "sets": "3x12/side",
+          "weight": "25 lbs",
+          "notes": "Ran at 25 lb instead of the prescribed 22, at the top of the prescribed rep range."
+        },
+        {
+          "name": "Single-Leg Calf Raise",
+          "sets": "3x10/leg",
+          "weight": "bodyweight, floor",
+          "notes": "The machine was unavailable. Ran bodyweight only, standing on the floor, instead of the prescribed bodyweight plus 67 on the machine."
+        }
+      ],
+      "notes": "Achilles and calf read 0 this morning, clearing the gate. Squat ran 3x5 at 155 as prescribed. Row ran 5 sets instead of the prescribed 3, same weight and reps. Pulldown ran as prescribed, 2x8 at 150. Woodchop and Pallof both ran at 25 lb instead of the prescribed 22, at the top of the rep range. The calf raise machine was unavailable. The single-leg raise ran bodyweight only on the floor, 3x10 per leg. That replaced the prescribed bodyweight plus 67 on the machine."
     }
   ],
   "scienceReviews": [

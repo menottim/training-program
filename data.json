@@ -3003,6 +3003,45 @@
         }
       ],
       "notes": "Achilles and calf read 0 this morning, clearing the gate. Squat ran 3x5 at 155 as prescribed. Row ran 5 sets instead of the prescribed 3, same weight and reps. Pulldown ran as prescribed, 2x8 at 150. Woodchop and Pallof both ran at 25 lb instead of the prescribed 22, at the top of the rep range. The calf raise machine was unavailable. The single-leg raise ran bodyweight only on the floor, 3x10 per leg. That replaced the prescribed bodyweight plus 67 on the machine."
+    },
+    {
+      "date": "2026-09-03",
+      "type": "training",
+      "activity": "Trap bar, jumps, squat (Thu Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "5x5",
+          "weight": "18 in box",
+          "notes": "Ran 5 sets instead of the prescribed 5x3, same box height and contacts."
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "3x5, set 3 = 5+",
+          "weight": "245 lbs",
+          "notes": "As prescribed. Set three (5+) reached 10 reps, the hard cap."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "155 lbs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Barbell Romanian Deadlift",
+          "sets": "1x5, 4x5",
+          "weight": "95/135/135/135/135 lbs",
+          "notes": "Substituted a dual-leg barbell RDL for the prescribed single-leg dumbbell RDL (3x8/leg at 25 lb DBs). Ran a warm-up set at 95, then four working sets at 135."
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x8",
+          "weight": "180 lbs",
+          "notes": "As prescribed."
+        }
+      ],
+      "notes": "Achilles and calf read 0. Box jumps ran 5x5 instead of the prescribed 5x3. Trap bar deadlift ran as prescribed, with the 5+ set hitting 10 reps, the hard cap. Squat ran as prescribed at 155. Single-leg dumbbell RDL was substituted with dual-leg barbell RDL, one set at 95 then four at 135. Seated calf raise ran as prescribed at 180."
     }
   ],
   "scienceReviews": [

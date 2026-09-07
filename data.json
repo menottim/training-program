@@ -3099,6 +3099,22 @@
         }
       ],
       "notes": "Achilles and calf read 0. All lifts as prescribed. Bench 5+ set hit 7 reps. Close grip bench last set hit 10 reps. Pushdowns and curls capped at 12 reps, could not exceed. Calf capacity test: right leg 11 reps, left leg 8 reps, a roughly 27 percent side-to-side gap, above the 10 percent flag threshold."
+    },
+    {
+      "date": "2026-09-06",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "40 min",
+      "intensity": "medium/high",
+      "achillesPain": 0,
+      "notes": "No achilles or calf pain during the game."
+    },
+    {
+      "date": "2026-09-07",
+      "type": "recovery",
+      "activity": "Rest day",
+      "achillesPain": 1,
+      "notes": "Morning-after read: mild tightness, both sides, 1/10 pain. Day after Sunday basketball."
     }
   ],
   "scienceReviews": [

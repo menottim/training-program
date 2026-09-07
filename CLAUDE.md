@@ -479,7 +479,7 @@ Do these things during a science review:
 
 - The athlete has a seated calf raise machine.
 - He has a GHR machine. Prefer it to the Nordic hamstring curl.
-- __Single-leg calf raise loading has two methods, and they have very different ceilings.__ A held dumbbell reached 25 to 35 lb. Grip and balance become the limiter there, not the calf. The standing calf raise machine, run single-leg, reached bodyweight plus 67 to plus 72 through May and June. The machine is the only method that can approach the knee-flexed return-to-sport benchmark of roughly 1.5x bodyweight. Prescribe the machine whenever the load needs to progress. Reserve the dumbbell for travel.
+- __Single-leg calf raise loading has two methods, and they have very different ceilings.__ A held dumbbell reached 25 to 35 lb. Grip and balance become the limiter there, not the calf. The standing calf raise machine, run single-leg, reached bodyweight plus 67 to plus 72 through May and June. The machine is the only method that can approach the knee-flexed return-to-sport benchmark of roughly 1.5x bodyweight. Prescribe the machine whenever the load needs to progress. Reserve the dumbbell for travel, or for a session where the machine is occupied. That second case cost Week 26 its third loaded calf session, because the prescription named no fallback and the session dropped to bodyweight. Bodyweight is not a substitute. Every machine calf prescription must name the dumbbell fallback and its load.
 - __The standing calf raise machine's lightest single-leg setting is bodyweight plus 67.__ On 8/21 and again on 8/25, a prescription of bodyweight plus 45 turned into bodyweight plus 67 on the actual machine, because 45 is not a selectable pin. Do not prescribe a single-leg machine load below plus 67. If a lighter load is genuinely needed, for example while a symptom is settling, prescribe the held dumbbell instead, capped at 35 lb, rather than a machine number the equipment cannot produce.
 - __He has no fractional plates.__ The smallest barbell plate increment is 5 lb. This changes the progression-stall protocol in Section 1. The microloading step, which uses fractional plates or 2.5 lb increases, is not available. Use the standard 5 lb double-progression rule instead: after 2 clean sessions at the same weight, add 5 lb. If a lift stalls, skip the microload step. Go directly to the next step, which adds one set at the current weight before any load increase. If that fails, use the 10% reset.
 
@@ -602,7 +602,7 @@ __Set targets for a two-gym-day week.__ These were set on 2026-08-14. They repla
 
 | Pattern | Sets per week | Notes |
 |---|---|---|
-| Hinge: trap bar deadlift and single-leg RDL | 5 | 3 trap bar deadlift, plus 2 single-leg RDL |
+| Hinge: trap bar deadlift and barbell RDL | 6 | 3 trap bar deadlift, plus 3 barbell RDL. The single-leg dumbbell RDL was retired at the Week 27 review, on 2026-09-07, after it ran 0 of 2 sessions as written. Two misses at the same prescription point at the prescription. |
 | Squat | 3 | A frequency of 1x per week is the accepted cost of a two-day week |
 | Horizontal push: bench press and close grip bench | 6 | One of these two lifts carries the reps-plus set |
 | Vertical push: dumbbell overhead press | 3 | Below the 6 to 10 set floor above. Accepted. |

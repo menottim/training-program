@@ -3042,6 +3042,63 @@
         }
       ],
       "notes": "Achilles and calf read 0. Box jumps ran 5x5 instead of the prescribed 5x3. Trap bar deadlift ran as prescribed, with the 5+ set hitting 10 reps, the hard cap. Squat ran as prescribed at 155. Single-leg dumbbell RDL was substituted with dual-leg barbell RDL, one set at 95 then four at 135. Seated calf raise ran as prescribed at 180."
+    },
+    {
+      "date": "2026-09-04",
+      "type": "training",
+      "activity": "Bench 180, arms, calf asymmetry test (Fri Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "3x5, set 3 = 7",
+          "weight": "180 lbs",
+          "notes": "As prescribed. Set three (5+) reached 7 reps."
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5, set 3 = 10",
+          "weight": "110 lbs",
+          "notes": "As prescribed. Last set hit 10 reps."
+        },
+        {
+          "name": "Strict Overhead Press (dumbbell)",
+          "sets": "3x6",
+          "weight": "40 lb DBs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3x10-12",
+          "weight": "10 lb DBs",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x12",
+          "weight": "35 lbs",
+          "notes": "As prescribed. Could not exceed 12 reps."
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "3x12",
+          "weight": "40 lbs",
+          "notes": "As prescribed. Could not exceed 12 reps."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg",
+          "weight": "BW + 77 lb/leg, machine",
+          "notes": "As prescribed."
+        },
+        {
+          "name": "Single-Leg Calf Raise Capacity Test",
+          "sets": "1 set/leg to failure",
+          "weight": "BW + 67 lb/leg, machine",
+          "notes": "Right leg 11 reps, left leg 8 reps. Gap of roughly 27 percent, above the 10 percent asymmetry threshold."
+        }
+      ],
+      "notes": "Achilles and calf read 0. All lifts as prescribed. Bench 5+ set hit 7 reps. Close grip bench last set hit 10 reps. Pushdowns and curls capped at 12 reps, could not exceed. Calf capacity test: right leg 11 reps, left leg 8 reps, a roughly 27 percent side-to-side gap, above the 10 percent flag threshold."
     }
   ],
   "scienceReviews": [

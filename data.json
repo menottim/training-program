@@ -3115,6 +3115,44 @@
       "activity": "Rest day",
       "achillesPain": 1,
       "notes": "Morning-after read: mild tightness, both sides, 1 out of 10 pain. Day after Sunday basketball. Stiffness lasted about one hour, reported for the first time. That is past the 30-minute regression threshold. Weigh-in 224.0 lb."
+    },
+    {
+      "date": "2026-09-09",
+      "type": "training",
+      "activity": "Squat, row, pull, accessories, calf test (Wed Phase 3)",
+      "exercises": [
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "165 lbs (as prescribed)"
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "4x5",
+          "weight": "150 lbs (as prescribed)"
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "1x6, 1x5, 1x5",
+          "weight": "155 lbs"
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "2x8/side",
+          "weight": "32 lbs"
+        },
+        {
+          "name": "Pallof Press",
+          "sets": "2x8/side",
+          "weight": "32 lbs"
+        },
+        {
+          "name": "Standing Calf Raise Test (bodyweight)",
+          "sets": "1x30/leg",
+          "weight": "bodyweight, floor range"
+        }
+      ],
+      "notes": "Unplanned session on a scheduled rest day. Squat and row ran the Tue Phase 3 prescription. Calf raise test was bodyweight only, floor range, 30 reps per side."
     }
   ],
   "scienceReviews": [

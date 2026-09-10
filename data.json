@@ -3154,6 +3154,36 @@
       ],
       "notes": "Ran the Tue Phase 3 prescription for squat and row. Calf raise test was bodyweight only, floor range, 30 reps per side.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-09-10",
+      "type": "training",
+      "activity": "Trap bar, squat, RDL, calf (Thu Phase 3)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "3x5, set 3 = 8",
+          "weight": "265 lbs",
+          "notes": "As prescribed. Set three (5+) reached 8 reps, under the 10-rep hard cap. Holds 265 next time."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "165 lbs (as prescribed)"
+        },
+        {
+          "name": "Barbell Romanian Deadlift",
+          "sets": "3x5",
+          "weight": "135 lbs (as prescribed)"
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x8",
+          "weight": "185 lbs",
+          "notes": "5 lb over the 180 lb prescription."
+        }
+      ],
+      "notes": "Trap bar, squat and RDL as prescribed. Seated calf raise ran 185 lbs instead of the prescribed 180."
     }
   ],
   "scienceReviews": [

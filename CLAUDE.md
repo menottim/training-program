@@ -27,9 +27,9 @@ __What the physique goal changes, and what it does not.__ It sits fourth. It nev
 
 __The game slate changes by season. Check it. Do not assume it.__ The standard in-season slate is basketball on Tuesday PM and Sunday AM, plus hockey on Sunday PM. Much of this file assumes that three-game week. Section 5 session spacing assumes it. The Section 3 volume ceiling assumes it too. The three-game week is not always correct.
 
-__As of 2026-08-17 the slate is basketball on Sunday AM only.__ There is no Tuesday game. There is no hockey for roughly three weeks. Hockey returns around mid-September. Basketball returned on 8/16, after 56 days out with the calf strain. Both Sunday games that day were symptom-free.
+__As of 2026-09-13 the slate is basketball Sunday AM plus hockey Sunday PM, with no Tuesday game.__ Hockey returned on 9/13 after roughly four weeks out. This is a two-game Sunday, not the three-game week this file was originally written around, and not the one-game window that ran from 8/17 to mid-September. Basketball itself returned on 8/16, after 56 days out with the calf strain, and every logged game since has been symptom-free.
 
-A one-moderate-game week is the loosest constraint this program has had. Treat it as a build window, not as a maintenance week. Spend the freed recovery on the lift that is furthest behind. In Week 24 that lift is the squat, which moves to twice a week. When hockey returns, Sunday becomes a two-game day again, and Friday goes back to protecting it. The current slate is always in `data.modifiedWeeks`. If it is unclear, ask. Do not inherit the three-game assumption.
+__When hockey returns, Sunday becomes a two-game day again, and Friday goes back to protecting it.__ The third gym day comes out under a two-game Sunday, because the condition for a third day is one moderate game or fewer (below). It returns only when both hold: morning stiffness reads under 30 minutes across a full week, and the calf asymmetry closes to 10% or less on two consecutive clean retests. The current slate is always in `data.modifiedWeeks`. If it is unclear, ask. Do not inherit the three-game assumption, and do not inherit the one-game assumption either.
 
 __Build each week for TWO gym days by default. Three is allowed only when compliance and the game slate both support it.__ The two-day default came from the Week 23 review on 2026-08-10. That review recorded weeks 18 to 23 as delivering 1, 0, 0, 3, 2 and 0 lift days, and it concluded the program averaged one.
 
@@ -40,7 +40,7 @@ Two days therefore remains the default, not a ceiling. Go to three when both con
 - The last three weeks each delivered at least two sessions.
 - The game slate is one moderate game or fewer.
 
-__Revert to two days the moment any week delivers fewer than two sessions.__ Weeks 24 and 25 run three days on that basis, with no hockey until mid-September. Week 24 delivered all three. Expect the third day to come out when hockey returns and Sunday becomes a double-header again.
+__Revert to two days the moment any week delivers fewer than two sessions.__ Weeks 24, 25, 26 and 27 ran three days on the one-moderate-game basis. Hockey returned 9/13 and Sunday is a double-header again, so Week 28 reverts to two. The third day comes back only when morning stiffness reads under 30 minutes across a full week and the calf asymmetry closes to 10% or less on two consecutive clean retests.
 
 On a two-day week, everything necessary must fit in two sessions:
 
@@ -176,7 +176,7 @@ __The Week 23 review on 2026-08-10 withdrew the sleep request.__ Sleep was logge
 
 ### Step 2: Match "as prescribed" exercises
 
-The user can say "the rest as prescribed". If he does, find the prescribed exercises for that day in `index.html`. The training plan is organized by phase and by day. Wednesday is Lower Body. Thursday is Upper Body and Core. Friday is Lower Moderate. Log each prescribed exercise with the weight "as prescribed". If the user gave a specific number, log that number instead.
+The user can say "the rest as prescribed". If he does, find the prescribed exercises for that day. Check `data.modifiedWeeks[<current week>]` first: an authored week overrides the static template and names the actual day-to-session mapping. Only fall back to the static `index.html` template (Wednesday Lower Body, Thursday Upper Body and Core, Friday Lower Moderate) when the current week has no authored entry. __That static template has drifted from what actually runs.__ Weeks 26 and 27 ran Tue/Thu/Fri. Week 28 runs Mon/Fri, because hockey's return leaves only one gym day before Friday. Log each prescribed exercise with the weight "as prescribed". If the user gave a specific number, log that number instead.
 
 ### Step 3: Append to activityLog in data.json
 
@@ -479,7 +479,7 @@ Do these things during a science review:
 
 - __The seated calf raise machine holds at least 315 lb, and possibly 405.__ Reported on 2026-09-07, after the question sat open across three reviews. 315 is confirmed and 405 is not. This matters, because the knee-flexed soleus benchmark of 1.5x bodyweight is 336 lb at a bodyweight of 224. So 315 reaches only 1.41x and falls short of the benchmark, while 405 clears it. Confirm whether 405 is loadable before treating the benchmark as reachable on this equipment. Note also that the benchmark falls as bodyweight falls: at the 210 lb target weight, 1.5x is exactly 315.
 - He has a GHR machine. Prefer it to the Nordic hamstring curl.
-- __Single-leg calf raise loading has two methods, and they have very different ceilings.__ A held dumbbell reached 25 to 35 lb. Grip and balance become the limiter there, not the calf. The standing calf raise machine, run single-leg, reached bodyweight plus 67 to plus 72 through May and June. The machine is the only method that can approach the knee-flexed return-to-sport benchmark of roughly 1.5x bodyweight. Prescribe the machine whenever the load needs to progress. Reserve the dumbbell for travel, or for a session where the machine is occupied. That second case cost Week 26 its third loaded calf session, because the prescription named no fallback and the session dropped to bodyweight. Bodyweight is not a substitute. Every machine calf prescription must name the dumbbell fallback and its load.
+- __Single-leg calf raise loading has two methods, and they have very different ceilings.__ A held dumbbell reached 25 to 35 lb. Grip and balance become the limiter there, not the calf. The standing calf raise machine, run single-leg, reached bodyweight plus 67 to plus 72 through May and June. The machine is the only method that can approach the knee-flexed return-to-sport benchmark of roughly 1.5x bodyweight. Prescribe the machine whenever the load needs to progress. Reserve the dumbbell for travel, or for a session where the machine is occupied. That second case cost Week 26 its third loaded calf session, and it happened again on 9/8, because the prescription named no fallback and the session dropped to bodyweight both times. Bodyweight is not a substitute, and it does not count toward the 3-per-week HSR target. __A machine calf prescription without a named dumbbell fallback and load is an incomplete prescription.__ Write the fallback into every one, not only for travel weeks.
 - __The standing calf raise machine's lightest single-leg setting is bodyweight plus 67.__ On 8/21 and again on 8/25, a prescription of bodyweight plus 45 turned into bodyweight plus 67 on the actual machine, because 45 is not a selectable pin. Do not prescribe a single-leg machine load below plus 67. If a lighter load is genuinely needed, for example while a symptom is settling, prescribe the held dumbbell instead, capped at 35 lb, rather than a machine number the equipment cannot produce.
 - __He has no fractional plates.__ The smallest barbell plate increment is 5 lb. This changes the progression-stall protocol in Section 1. The microloading step, which uses fractional plates or 2.5 lb increases, is not available. Use the standard 5 lb double-progression rule instead: after 2 clean sessions at the same weight, add 5 lb. If a lift stalls, skip the microload step. Go directly to the next step, which adds one set at the current weight before any load increase. If that fails, use the 10% reset.
 
@@ -620,7 +620,9 @@ __How to count game load. Use words, not numbers:__
 - A basketball session gives approximately a moderate lower body training stimulus.
 - A hockey session gives approximately a moderate to high lower body and core stimulus.
 - In a 3-game week, substantial lower body fatigue accumulates before the Wednesday training session.
+- __In a two-game Sunday, both games land on one day rather than spreading across the week.__ The fatigue is compressed into Monday and Tuesday instead of distributed. Monday is therefore the compromised training day, not Wednesday, whenever the week's first lifting session falls the day after the double-header.
 - If the game load increases, from an extra game or a tournament, reduce the lifting volume that week. Drop the Friday session first. Then reduce the Wednesday sets.
+- No published work converts game load into a number of lifting sets, whatever the slate. State the direction of the effect. Do not give a number for it.
 
 References: Impellizzeri et al. 2004 internal vs external load; Impellizzeri et al. 2019 15-years-on update (PMID 30614348); Schoenfeld et al. 2017 dose-response (PMID 27433992); Schoenfeld et al. 2016 frequency meta-analysis (PMID 27102172); Androulakis-Korakakis et al. 2020 minimum effective dose (PMID 31797219); Baker 2001 (PMID 11710401); Suchomel et al. 2018 (PMID 29372481). Full set in `knowledge/in-season-volume.md`.
 
@@ -666,12 +668,13 @@ References: Beyer et al. 2015 (PMID 26018970); Silbernagel et al. 2007 (PMID 173
 - __Sleep need is individual.__ It is not a fixed 8 hours. The NSF adult range is 7 to 9 hours (Hirshkowitz et al. 2015, PMID 29073412). The Walsh et al. 2021 IOC consensus argues directly against a single prescription for all athletes (PMID 33144349).
 - __Regular cold water immersion after lifting reduces hypertrophy__ (Roberts et al. 2015, PMID 26174323). Use cold water immersion for game recovery when the next performance is inside 48 hours. Do not use it routinely after lifting.
 
-__Session spacing.__ These rules assume the standard three-game slate. Read the slate note in the Overview before you apply them.
+__Session spacing.__ These rules assume the standard three-game slate unless stated otherwise. Read the slate note in the Overview before you apply them.
 
 - Leave 48 hours or more between heavy lifting and a game (Suchomel et al. 2018).
 - A Wednesday heavy session to a Sunday game gives 3.5 days. That is optimal.
-- A Wednesday heavy session to the following Tuesday game gives 6 days. That is also optimal. This applies only when a Tuesday PM basketball game is on the slate. Basketball was in its off-season as of July 2026, so there was no Tuesday game.
-- Friday is the lightest lifting session by design. It sits approximately 36 hours before Sunday AM basketball, and approximately 48 hours before Sunday PM hockey. Without Sunday AM basketball, Friday has slightly more room. Keep Friday the lightest day while any Sunday game remains.
+- A Wednesday heavy session to the following Tuesday game gives 6 days. That is also optimal. This applies only when a Tuesday PM basketball game is on the slate. There has been no Tuesday game since basketball's July 2026 off-season, and none returned with hockey on 9/13.
+- Friday is the lightest lifting session by design. It sits approximately 36 hours before Sunday AM basketball, and approximately 48 hours before Sunday PM hockey. Keep Friday the lightest day while any Sunday game remains.
+- __Under a two-game Sunday with no Tuesday game, a Monday session is the day after a double-header.__ Treat it like the day-after-a-game rule below: RPE 7 ceiling, no reps-plus set. This is a heavier constraint than the old Wednesday slot, which had 3.5 days of separation from Sunday. A Monday session has less than 24 hours.
 
 __Auto-regulation signals. Reduce the intensity or the volume of that session when you see one of these:__
 

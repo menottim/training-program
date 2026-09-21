@@ -3238,6 +3238,56 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "First hockey game since 8/16 return, roughly four weeks out. No basketball this Sunday. No achilles or calf pain during or after the game."
+    },
+    {
+      "date": "2026-09-15",
+      "type": "training",
+      "activity": "Upper Body (Tue Phase 3)",
+      "achillesPain": 0,
+      "exercises": [
+        {
+          "name": "DB Bench Press",
+          "sets": "3x10",
+          "weight": "30/40/50 lbs",
+          "notes": "Ramped across three sets, one arm at a time."
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x10",
+          "weight": "40 lbs"
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "3x10",
+          "weight": "40 lbs"
+        }
+      ],
+      "notes": "Only session of Week 28. Monday and Friday both lost to travel and gym access. No calf work ran."
+    },
+    {
+      "date": "2026-09-20",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "high",
+      "achillesPain": 1,
+      "notes": "Left calf 1 out of 10 with light stiffness during the game. First in-game symptom since the 8/16 return. Right side clean. Inside the acceptable band."
+    },
+    {
+      "date": "2026-09-20",
+      "type": "game",
+      "activity": "Hockey",
+      "duration": "60 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "Clean, no pain, after 20 minutes of basketball earlier the same day. First two-game Sunday since hockey returned."
+    },
+    {
+      "date": "2026-09-21",
+      "type": "recovery",
+      "activity": "Rest day",
+      "achillesPain": 1,
+      "notes": "Morning read 1 to 2 out of 10, settles fast. Stiffness under 15 minutes, consistent across the past week. Day after the first two-game Sunday."
     }
   ],
   "scienceReviews": [
@@ -3348,6 +3398,12 @@
       "week": 27,
       "findings": "Hockey returns Sunday 9/13, the first day of Week 28. Sunday becomes a two-game day again: basketball AM, hockey PM, no Tuesday game. CLAUDE.md line 30 still read the 8/17 slate note, three weeks stale. The three-day gym rule requires the game slate to be one moderate game or fewer. A two-game Sunday fails that test, so the third gym day comes out, as flagged at the Week 27 review. Week 28 also mixes gym and hotel access: Monday gym only, Tuesday through Thursday hotel, Friday and Saturday back to normal.\n\nWeek 28 is also a calendar deload week, every 4th per line 442. Only one reactive-deload trigger is currently live, the 9/7 stiffness read past 30 minutes. Section 2 needs two or more triggers to justify a cut. Coleman 2024 argues against a calendar deload absent fatigue signals, so Week 28 does not run one. The travel-forced two-day, reduced-set week already delivers a volume cut in the same range a deload would prescribe.\n\nSeparately, Tuesday's 9/8 loaded calf retest did not run as prescribed. The machine was taken and it defaulted to bodyweight 30 reps per leg, so the 9/4 27 percent left-right gap is still unconfirmed. And the 9/10 seated calf raise ran 185 against a held 180 during the Week 27 freeze. It is a small deviation, but the second time in two weeks a held prescription was stepped past. Box jumps ran 5x5 against a held 15 contacts on 9/3.",
       "changes": "modifiedWeeks[\"28\"] authored: two lift days, Monday barbell lower plus calf, Friday upper plus core plus calf. Three hotel days between them: Tuesday true-failure bodyweight calf test, Wednesday rest, Thursday optional isolation. Monday carries the only barbell work before Friday and runs at RPE 7 with sets cut, since it follows a two-game Sunday. All calf loads hold through Monday. The banked 195 lb seated raise step waits for Friday's retest rather than running now.\n\nFriday's loaded single-leg retest at bodyweight plus 67 is the real 9/4 rerun, first item of the session, left leg first. Two-gym-day set table applies. Core lands at 4 sets against a 4-to-6 target, since cable work has no hotel equivalent. Third-day return condition stated. It comes back when morning stiffness reads under 30 minutes across a full week. It also needs the calf asymmetry at 10 percent or less on two consecutive clean retests.\n\nWeek 28 deload skipped. HSR holds full load and frequency regardless. Morning pain-and-stiffness read requested on every Week 28 tile, including hotel days. The 9/21 clinical-review decision date is named on the Saturday tile.\n\nCLAUDE.md updated: Overview slate note replaced with the current two-game Sunday slate. Section 3 game-load accounting adds the two-game-Sunday case. Section 5 session spacing updated for the same. The stale Wed/Thu/Fri day template noted as drifted against the actual pattern now run. Equipment note strengthened on named calf fallbacks after its second failure.\n\nknowledge/in-season-volume.md Scope corrected for the actual lift cadence. knowledge/hockey-load-profile.md created, sourcing the skating calf-load claim to Buckeridge 2015 and naming the gaps the literature does not cover. Next review Mon 9/14, after the first two-game Sunday in four weeks. Three straight full-volume weeks sit behind it, unlike 8/16, which followed one lift day."
+    },
+    {
+      "date": "2026-09-21",
+      "week": 29,
+      "findings": "Week 29 review, run Mon 9/21, ten days after the 9/11 review. Run on the best available model, per Model Conformance.\n\nCompliance is the headline and it is bad. Week 28 delivered one lift day against two planned. Monday and Friday were both lost to travel and gym access. That ends a run of four consecutive weeks at full plan, weeks 24 through 27. The cause is circumstance rather than a standing pattern, and the file already distinguishes those two cases. The revert trigger at fewer than two sessions has fired, but the program is already at the two-day default and no rule sits below it. Week 29 stays at two.\n\nHSR compliance went to zero, and this is the more serious finding. Week 28 delivered no loaded calf sessions against a target of three. The one session that ran carried no calf work at all. Beyer 2015 (PMID 26018970) sets the dose at three sessions per week across a 12-week progression. Morrison and Cook 2022 (PMCID PMC9124646) hold that an underloaded protocol does not signal the tendon. Strong. A week at zero is not a slow week, it is an absent one, against the program's first-priority goal.\n\nThe structural cause is worth naming, because it is not a one-week travel accident. A two-gym-day week can deliver at most two loaded calf sessions when the calf work rides along inside the lift days. Section 3's two-day table prescribes six calf sets per week across those two days. Section 4 prescribes three sessions per week. Those two rules have been in conflict since the two-day default was set on 2026-08-14, and the conflict resolved silently in favor of the calendar every time. Tendon loading has therefore been running at two-thirds of protocol frequency as a matter of structure, not of compliance.\n\nMorning stiffness settled, and this closes the clock the Week 27 review opened. The 9/7 read was about an hour, which is past the 30-minute regression threshold and is reactive-deload trigger three. The decision date for a clinical referral was set at 2026-09-21. The athlete reports under 15 minutes on most mornings across the past week. That is inside the typical band the pain-monitoring tree names. No referral is due and no entry goes into the clinical workup asks.\n\nRead the caveat honestly. Duration was requested for the first time on 9/7 and there is still no baseline behind it. A single hour-long read followed by a week under 15 minutes is more consistent with one bad morning than with a resolved regression. The capture request stays in place. The value of the week is that the trigger now has an input, which it did not have through three prior reviews.\n\nThe first in-game symptom since the return appeared on 9/20, and the pattern is not the one the prior review predicted. Basketball ran 20 minutes at high intensity and produced left calf pain at 1 out of 10 with light stiffness. Hockey ran 60 minutes at high intensity immediately after and was clean. The Week 27 review's working hypothesis was that game duration drives symptoms, built on 50-minute and 40-minute games producing the only two non-zero Monday reads. A symptomatic 20-minute game followed by a clean 60-minute game does not fit that.\n\nA warm-up effect fits better. Pain that is present at the start of activity and eases as the tissue warms is the classic presentation in both tendinopathy and a healing gastroc. `knowledge/achilles-tendinopathy-hsr.md` records localized morning stiffness and pain under load as presenting features but does not cover the within-session warm-up pattern. Label this speculation, not evidence. It is mechanism-level reasoning off a single session, and n equals one. Do not rewrite the duration hypothesis on it. Collect the per-game reads and let three or four more Sundays decide.\n\nThe side matters. The symptom was in the left calf, which is the leg that tore on 6/21 and the leg carrying the 27 percent capacity deficit. Two independent signals now point at the same limb. Green and Pizzari 2017 (PMID 28259848) name previous calf injury and increasing age as the two strongest recurrence risk factors, and at 40 with a prior event he sits high on both. Roughly 20 percent of recurrences happen before full recovery. Strong.\n\nThe asymmetry retest has now failed to run three consecutive times, and that is a program defect rather than a compliance one. It missed on 9/8 when the machine was taken, on 9/15 to travel, and on 9/18 when the session did not happen. The last clean measurement is 9/4, at 11 reps right against 8 left. That reading is 17 days stale and it is the largest open question in the program.\n\nThe common cause across all three misses is placement. The retest has been scheduled as one line item inside a full lift session, so it dies whenever the session dies or the equipment is occupied. The file's own precedent applies here: the Week 26 and 27 reviews both held that two misses at the same prescription point at the prescription, not at the athlete. This is three.\n\nThree progression calls in the log or the prior plan were wrong, and the record should say so. The 9/10 trap bar note reads \"Set three reached 8 reps, under the 10-rep hard cap. Holds 265 next time.\" The Section 1 reps-plus table puts 7 to 8 reps on the plus-10 row for a lower body lift. The load should have gone to 275 and the note asserted a hold the table does not support. Second, the 9/11 bench 5+ set was logged as \"set 3 = 5+\" with no rep count, so a calibration set produced no calibration and the lift has to hold. Third, the 9/8 lat pulldown ran 6, 5, 5 against a 3x6-8 prescription and was not flagged as a miss, so the hold at 155 was arrived at by accident rather than by rule.\n\nVolume by pattern, Week 28. One session. Upper body only, contents unrecorded at review time. Squat 0, hinge 0, loaded calf 0, core 0. There is no volume analysis worth running against a one-session week, which is exactly what the Analytical Defaults predict: a volume audit against a plan that did not run tells you very little.\n\nBody composition. Six readings now sit in the weekly slot or near it: 222.9 on 8/18, 226.0 on 8/24, 225.0 on 8/31, 224.0 on 9/7, 222.2 on 9/19 and 223.5 on 9/21. The 9/11 reading of 224.6 is off-slot on a Friday. Taken in slot, 226.0 down to 222.2 is four consecutive readings moving the same direction, which meets the program's own threshold for calling a trend. The magnitude is 3.8 lb over 26 days, just under the 4 lb alternative threshold.\n\nDo not oversell it. The 9/21 reading of 223.5 is up 1.3 lb from 9/19 and breaks the run at the first opportunity, and it was taken on a Monday after 80 minutes of sport rather than in the Saturday slot. Body fat has gone 23.5, 24.2, 23.0, 23.8, 23.6, which is flat inside the noise of a consumer scale. `knowledge/body-composition-measurement.md` puts day-to-day variation at 1 to 3 lb for a 220 lb adult, which is the same size as the entire observed change. The direction is mildly favorable and the composition is unchanged. Bhutani 2017 (PMID 28701524) still applies: roughly 84 percent of a short-term weight change is fat-free mass. No intake comment, per the Week 23 retirement.\n\nDeload. Week 32 is the next calendar deload. No reactive trigger is currently live. The stiffness trigger that fired on 9/7 has cleared. Loads were climbing before the travel week, there is no matched-effort performance drop on record, and two of the seven triggers remain permanently unavailable. Week 28 also functioned as an unplanned volume cut, so nothing further is owed.\n\nThe third gym day. The condition set on 9/11 has two halves. Morning stiffness under 30 minutes across a full week is now met. Calf asymmetry at 10 percent or less on two consecutive clean retests has zero clean retests behind it, so it cannot be met before roughly 9/29 at the earliest. The third day stays out. Restoring it on the half that happens to be satisfied would be the intuitive move and the wrong one, since the unmet half is the one attached to the injury-prevention goal.\n\nPhase. Phase 3 runs from Week 15 with no defined exit rule and no Phase 4. Week 29 continues Phase 3. This is the fifth review to record that there is nothing to advance to, and the observation has not produced a change in any of them. Either define a Phase 4 or stop reporting the item.\n\nStill open. Confirmation that the seated calf stack takes 405 lb, which decides whether the knee-flexed soleus benchmark is reachable on this equipment. The knowledge-file check on the repetition basis of the Green 2022 1.5x benchmark, queued at the Week 27 review and still not done. The fasting lipid panel. Hop and jump asymmetry, a Green 2022 return-to-sport criterion that has never been measured with a number.",
+      "changes": "1. A calf-only session is added on Thursday, and this is the main change. It is about fifteen minutes: standing single-leg HSR at bodyweight plus 67, plus the seated raise at 195. No barbell work and no substitution creep. This is the structural fix for the zero-HSR week and for the standing two-versus-three frequency conflict. Calf work carries no systemic fatigue, no spinal load and no barbell risk, so a third exposure costs the lift days nothing. The week now delivers three loaded calf sessions on two gym days.\n\nRule edit required. Section 3's two-day table caps loaded calf HSR at 6 sets per week, which cannot hold three sessions. That row changes, and the rule that a two-gym-day week carries a standalone calf session is written into the file.\n\n2. The asymmetry retest moves to the first item of Tuesday, before the box jumps, before the barbell work, and before any other calf loading. It runs on a fresh leg, at bodyweight plus 67 on the machine, left leg first, two minutes between legs, floor range. This is the third attempt at the clean 9/4 rerun.\n\nThe fallback rule inverts for this one item. Every other calf prescription falls back to a 35 lb dumbbell. The retest does not, because changing the instrument destroys the comparison with 9/4. If the machine is occupied, the retest moves to Friday as the first item and the rest of Tuesday runs as written.\n\n3. The calf freeze lifts. The seated raise takes the 195 lb step banked at the Week 27 review. The standing single-leg loads stay at plus 67 and plus 77, not as a freeze but because they are the reference loads for the asymmetry measurement. They progress after two clean retests read 10 percent or less.\n\n4. Box jumps return at 15 contacts, 5x3 off the 18 inch box, always stepping down. They were removed on 9/7 under the Section 5 rule on stiffness persisting past the warm-up. Stiffness is under 15 minutes across a week, so the condition for removal is gone. They go on Tuesday, after the retest and before the barbell work, which is five days clear of the next games.\n\n5. The extra left-side calf set continues on both loaded standing sessions. It comes out when two consecutive clean retests read 10 percent or less. The evidence tier is unchanged from the Week 27 statement: the 10 percent target is Strong from Green 2022 (PMID 35032233), and per-limb corrective dosing for this presentation has no trial support and is labeled speculation.\n\n6. Six loads step, all off existing tables and logged data. Trap bar 265 to 275, correcting the 9/10 note. Squat 165 to 175. Barbell RDL 135 to 145. Seated calf 185 to 195. Dumbbell overhead press 40 to 45 lb dumbbells. Lateral raise 10 to 15 lb dumbbells.\n\n7. Five loads hold, each for a stated reason rather than by default. Bench holds 185 because the 9/11 calibration set recorded no rep count. Close grip holds 120, row holds 150, pushdown holds 40 and curl holds 45, each on one clean session where the rule needs two. Lat pulldown holds 155 because 9/8 did not reach the prescribed rep range.\n\n8. The bench calibration set carries an explicit instruction to report the rep count. A 5+ set logged without a number is a set to failure with none of the benefit, since its only purpose is calibration and not stimulus.\n\n9. Week 29 runs Tuesday and Friday rather than Monday and Friday. A Monday session is less than 24 hours after a two-game Sunday and carries an RPE 7 ceiling with no calibration set under Section 5. Tuesday gives 48 hours, which removes the ceiling and lets the reps-plus set run. Friday sits about 36 hours before Sunday basketball, which is the existing spacing rule. Week 28's Monday slot was lost anyway.\n\n10. The third gym day does not return. The stiffness half of the condition is met and the asymmetry half has no clean retest behind it. Both halves are required, as stated on 9/11.\n\n11. No clinical referral. The 9/21 decision date is resolved by a week of sub-15-minute reads. The stiffness duration capture request stays, since one week is not a baseline.\n\n12. The per-game pain read becomes standing practice on a two-game Sunday, one number per game rather than one for the day. The 9/20 split, a symptomatic 20-minute basketball game followed by a clean 60-minute hockey game, is only visible because the reads were taken separately. A single day-level read would have averaged it away.\n\nDeviations recorded, so they are not hidden. The Thursday calf session pushes weekly calf volume above the Section 3 two-day table, which is deliberate and moves toward the Beyer dose rather than away from it. The retest is exempted from the fallback ladder that applies to every other calf prescription. The warm-up reading of the 9/20 in-game symptom is mechanism-level speculation on a single session and changes no prescription.\n\nNot changed. Proximity to failure stays at 2 to 3 reps in reserve on the compound barbell lifts, with one calibration set per session. Isolation, cable and core work still runs to genuine failure. Calf HSR still runs at a true rep max. No deload. No nutrition guidance, per the Week 23 retirement.\n\nNext review: Mon 9/28, after Tuesday's retest has a number. Bring it forward on any of four signals. An in-game read above 3 out of 10. A failed 24-hour rule. Stiffness back above 30 minutes. A third consecutive week under two lift days."
     }
   ],
   "bodyLog": [
@@ -3698,6 +3754,22 @@
       "weight": 224.0,
       "achillesPainAM": 1,
       "notes": "Fourth weekly reading. Weight 224.0 lb, with no body-fat number reported. The sequence now runs 226.0 on 8/24, then 225.0 on 8/31, then 224.0 today. That is three consecutive weekly readings moving down, which meets the program threshold for calling a trend. The magnitude is 2 lb across 14 days.\n\nRead it with care. The 8/18 reading of 222.9 sits below all three of these. So the four-point arc is flat to noisy rather than a clean decline. The 8/24 reading of 226.0 came on a Monday after a missed Saturday slot, and it may be the outlier.\n\nMorning stiffness duration reported for the first time, at about one hour in the calves, both sides. Pain read 1 out of 10. The stiffness threshold for a regression signal is 30 minutes, and typical duration is under 15. No baseline exists, because duration has never been asked for before today."
+    },
+    {
+      "date": "2026-09-11",
+      "weight": 224.6,
+      "bodyFatPct": 23.8
+    },
+    {
+      "date": "2026-09-19",
+      "weight": 222.2
+    },
+    {
+      "date": "2026-09-21",
+      "weight": 223.5,
+      "bodyFatPct": 23.6,
+      "achillesPainAM": 1,
+      "notes": "Morning stiffness under 15 minutes, and it has read that way across the past week. This closes the clinical-review clock opened on 9/7."
     }
   ],
   "modifiedWeeks": {
@@ -7715,6 +7787,197 @@
           "type": "rest",
           "desc": "Rest, weigh-in, prep",
           "longDesc": "No lifting. Weigh-in. Pre-game prep for Sundays double-header. The 9/7 stiffness signal decides on 2026-09-21: if morning stiffness has not settled under 30 minutes by then, a clinical review is due."
+        }
+      ]
+    },
+    "29": {
+      "title": "Two lift days, a calf-only day, and the retest",
+      "blockLabel": "Return to sport",
+      "subtitle": "Tuesday lower, Thursday calves only, Friday upper. The retest runs first Tuesday.",
+      "reason": "Week 28 lost both gym days to travel and delivered one session and zero loaded calf work. Stiffness settled under 15 minutes across the week, so the calf freeze lifts and box jumps come back. The third gym day stays out: the stiffness gate is met, the asymmetry gate has no clean retest behind it. A calf-only Thursday restores three loaded calf sessions without adding a lift day. The asymmetry retest is the first item Tuesday, on a fresh leg, before anything else loads the calf.",
+      "schedule": [
+        {
+          "day": "Sun",
+          "date": "2026-09-20",
+          "type": "game",
+          "desc": "Basketball AM, hockey PM",
+          "longDesc": "First true two-game Sunday since hockey returned. Report a pain read per game, not one for the day.",
+          "exercises": [
+            {
+              "name": "Basketball",
+              "sets": "AM",
+              "weight": "game",
+              "notes": "20 min. Left calf read 1/10 with light stiffness."
+            },
+            {
+              "name": "Hockey",
+              "sets": "PM",
+              "weight": "game",
+              "notes": "60 min. Clean, no pain."
+            }
+          ]
+        },
+        {
+          "day": "Mon",
+          "date": "2026-09-21",
+          "type": "rest",
+          "desc": "Rest, morning read",
+          "longDesc": "No lifting. An easy walk is fine. Report the morning pain number and the stiffness duration."
+        },
+        {
+          "day": "Tue",
+          "date": "2026-09-22",
+          "type": "training",
+          "desc": "Calf retest, jumps, trap bar, squat",
+          "longDesc": "Order matters. The calf retest runs first, before the box jumps and before any barbell work. Left leg first, 2 minutes between legs, floor range, no heel drop.",
+          "exercises": [
+            {
+              "name": "Single-Leg Calf Raise Capacity Test",
+              "sets": "1 set/leg to failure",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "First item, before anything else. Left leg first, 2 min between legs, floor range, no heel drop. If the machine is taken, do not substitute a dumbbell. Move the retest to Friday, first item, and run the rest of today as written."
+            },
+            {
+              "name": "Box Jump (step down)",
+              "sets": "5x3",
+              "weight": "18 in box",
+              "notes": "15 contacts, hold there. Always step down."
+            },
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "3x5, set 3 = 5+",
+              "weight": "275 lbs",
+              "notes": "The one calibration set of the day. Stop at the last clean rep, hard cap 10."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "3x5",
+              "weight": "175 lbs",
+              "notes": "At least parallel, heels flat. 2 to 3 RIR, no reps-plus set."
+            },
+            {
+              "name": "Barbell Romanian Deadlift",
+              "sets": "3x5",
+              "weight": "145 lbs",
+              "notes": "Hinge to a hamstring stretch, flat back."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x8",
+              "weight": "195 lbs",
+              "notes": "Knees bent, full range, 3s up and 3s down. Fallback if taken: 35 lb dumbbell, one leg at a time, never bodyweight."
+            }
+          ]
+        },
+        {
+          "day": "Wed",
+          "date": "2026-09-23",
+          "type": "rest",
+          "desc": "Rest, morning read",
+          "longDesc": "No lifting. Report the morning pain number and the stiffness duration."
+        },
+        {
+          "day": "Thu",
+          "date": "2026-09-24",
+          "type": "training",
+          "desc": "Calves only, about fifteen minutes",
+          "longDesc": "This is not a lift day. It exists so the week delivers three loaded calf sessions instead of two. No barbell work, no substitution creep.",
+          "exercises": [
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg, plus 1 extra left",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "Floor range, 3s up and 3s down. Fallback: 35 lb dumbbell held, same sets. Never bodyweight."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x8",
+              "weight": "195 lbs",
+              "notes": "Knees bent, full range, same tempo. Fallback: 35 lb dumbbell, one leg at a time."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-09-25",
+          "type": "training",
+          "desc": "Bench, arms, core, calves",
+          "longDesc": "If Tuesday's retest was skipped for the machine, it runs first today instead, at BW + 67, same protocol.",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "3x5, set 3 = 5+",
+              "weight": "185 lbs",
+              "notes": "Calibration set. Report the rep count. The 9/11 set ran without one, so it calibrated nothing."
+            },
+            {
+              "name": "Close Grip Bench Press",
+              "sets": "3x5",
+              "weight": "120 lbs",
+              "notes": "Stop at five. Bench carries the day's calibration set."
+            },
+            {
+              "name": "Bent Over Barbell Row",
+              "sets": "3x5",
+              "weight": "150 lbs",
+              "notes": "Five-rep cap holds, from the 8/14 back episode."
+            },
+            {
+              "name": "Strict Overhead Press (dumbbell)",
+              "sets": "3x6",
+              "weight": "45 lb DBs",
+              "notes": "Strict, no leg dip."
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "2x6-8",
+              "weight": "155 lbs",
+              "notes": "Both sets to failure."
+            },
+            {
+              "name": "Dumbbell Lateral Raise",
+              "sets": "3x10-12",
+              "weight": "15 lb DBs",
+              "notes": "Last set to failure."
+            },
+            {
+              "name": "Cable Triceps Pushdown",
+              "sets": "3x10-12",
+              "weight": "40 lbs",
+              "notes": "Last set to failure."
+            },
+            {
+              "name": "Cable Biceps Curl",
+              "sets": "3x10-12",
+              "weight": "45 lbs",
+              "notes": "Last set to failure."
+            },
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "2x8-10/side",
+              "weight": "32 lbs",
+              "notes": "Rotate through the trunk. Last set to failure."
+            },
+            {
+              "name": "Pallof Press",
+              "sets": "2x8-10/side",
+              "weight": "32 lbs",
+              "notes": "Resist the pull. Last set to failure."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg, plus 1 extra left",
+              "weight": "BW + 77 lb/leg, machine",
+              "notes": "Fallback: 35 lb dumbbell held. Never bodyweight."
+            }
+          ]
+        },
+        {
+          "day": "Sat",
+          "date": "2026-09-26",
+          "type": "rest",
+          "desc": "Rest, weigh-in, prep",
+          "longDesc": "Weigh-in in the usual conditions. Morning read. Pre-game prep for Sunday."
         }
       ]
     }

@@ -27,7 +27,7 @@ __What the physique goal changes, and what it does not.__ It sits fourth. It nev
 
 __The game slate changes by season. Check it. Do not assume it.__ The standard in-season slate is basketball on Tuesday PM and Sunday AM, plus hockey on Sunday PM. Much of this file assumes that three-game week. Section 5 session spacing assumes it. The Section 3 volume ceiling assumes it too. The three-game week is not always correct.
 
-__As of 2026-09-13 the slate is basketball Sunday AM plus hockey Sunday PM, with no Tuesday game.__ Hockey returned on 9/13 after roughly four weeks out. This is a two-game Sunday, not the three-game week this file was originally written around, and not the one-game window that ran from 8/17 to mid-September. Basketball itself returned on 8/16, after 56 days out with the calf strain, and every logged game since has been symptom-free.
+__As of 2026-09-20 the slate is confirmed: basketball Sunday AM plus hockey Sunday PM, with no Tuesday game.__ 9/20 was the first true two-game Sunday since hockey returned, at 20 minutes of basketball and 60 minutes of hockey. The 9/13 Sunday ran hockey only. This is a two-game Sunday, not the three-game week much of this file was written around, and not the one-game window that ran from 8/17 to mid-September.
 
 __When hockey returns, Sunday becomes a two-game day again, and Friday goes back to protecting it.__ The third gym day comes out under a two-game Sunday, because the condition for a third day is one moderate game or fewer (below). It returns only when both hold: morning stiffness reads under 30 minutes across a full week, and the calf asymmetry closes to 10% or less on two consecutive clean retests. The current slate is always in `data.modifiedWeeks`. If it is unclear, ask. Do not inherit the three-game assumption, and do not inherit the one-game assumption either.
 
@@ -40,7 +40,7 @@ Two days therefore remains the default, not a ceiling. Go to three when both con
 - The last three weeks each delivered at least two sessions.
 - The game slate is one moderate game or fewer.
 
-__Revert to two days the moment any week delivers fewer than two sessions.__ Weeks 24, 25, 26 and 27 ran three days on the one-moderate-game basis. Hockey returned 9/13 and Sunday is a double-header again, so Week 28 reverts to two. The third day comes back only when morning stiffness reads under 30 minutes across a full week and the calf asymmetry closes to 10% or less on two consecutive clean retests.
+__Revert to two days the moment any week delivers fewer than two sessions.__ Week 28 delivered one lift day of two planned, lost to travel and gym access. The two-day default already applies and no rule sits below it, so Week 29 stays at two. The third day comes back only when both halves hold. __The stiffness half is met as of 2026-09-21__, with morning reads under 15 minutes across a full week. The asymmetry half is not: it needs two consecutive clean retests at 10 percent or less, and no clean retest has run since 9/4.
 
 On a two-day week, everything necessary must fit in two sessions:
 
@@ -176,7 +176,7 @@ __The Week 23 review on 2026-08-10 withdrew the sleep request.__ Sleep was logge
 
 ### Step 2: Match "as prescribed" exercises
 
-The user can say "the rest as prescribed". If he does, find the prescribed exercises for that day. Check `data.modifiedWeeks[<current week>]` first: an authored week overrides the static template and names the actual day-to-session mapping. Only fall back to the static `index.html` template (Wednesday Lower Body, Thursday Upper Body and Core, Friday Lower Moderate) when the current week has no authored entry. __That static template has drifted from what actually runs.__ Weeks 26 and 27 ran Tue/Thu/Fri. Week 28 runs Mon/Fri, because hockey's return leaves only one gym day before Friday. Log each prescribed exercise with the weight "as prescribed". If the user gave a specific number, log that number instead.
+The user can say "the rest as prescribed". If he does, find the prescribed exercises for that day. Check `data.modifiedWeeks[<current week>]` first: an authored week overrides the static template and names the actual day-to-session mapping. Only fall back to the static `index.html` template (Wednesday Lower Body, Thursday Upper Body and Core, Friday Lower Moderate) when the current week has no authored entry. __That static template has drifted from what actually runs.__ Weeks 26 and 27 ran Tue/Thu/Fri. Week 28 was authored Mon/Fri, but travel and gym access cut it to one session. Week 29 runs Tue, a calf-only Thu, and Fri. Log each prescribed exercise with the weight "as prescribed". If the user gave a specific number, log that number instead.
 
 ### Step 3: Append to activityLog in data.json
 
@@ -465,6 +465,7 @@ Do these things during a science review:
 7. Assess whether the athlete is ready for the next phase.
 8. Append the findings to `data.scienceReviews[]`.
 9. __Do not review nutrition or sleep.__ The Week 23 review retired both. A report on either one, or on the absence of either one, is noise.
+10. __Author `modifiedWeeks` for the upcoming week as the last action of the review.__ An un-authored week has now shipped three times: the June and July calf block, Week 26 on 8/31, and Week 29 on 9/20. The renderer no longer fabricates a schedule, so the failure is visible rather than silent, but the site still prescribes nothing. The review is the only recurring event that reliably happens, so the authoring step attaches to it.
 
 ```json
 {
@@ -501,7 +502,7 @@ __The primary progression model is double progression. Add reps first, then add 
 
 - __Compound lower body lifts__, such as the trap bar deadlift and the squat: add 10 lb per cycle.
 - __Compound upper body lifts__, such as the bench press and rows: add 5 lb per cycle.
-- __Dumbbell accessory lifts__, such as the dumbbell press, the overhead press and RDLs: add 5 lb per cycle.
+- __Dumbbell accessory lifts__, such as the dumbbell press and the overhead press: add 5 lb per cycle. __The barbell Romanian deadlift is a compound lower body lift and takes the 10 lb step.__ The 5 lb figure here was written for the single-leg dumbbell RDL, which was retired at the Week 27 review on 2026-09-07.
 - __Machine and cable exercises__: add one plate increment after the athlete reaches the top of the rep range on all sets.
 - __Bodyweight exercises__, such as the GHR and pull-ups: add reps first. Then add external load in 5 to 10 lb increments.
 
@@ -609,9 +610,11 @@ __Set targets for a two-gym-day week.__ These were set on 2026-08-14. They repla
 | Horizontal pull: barbell row | 3 | |
 | Vertical pull: lat pulldown | 2 | Take both sets to failure. Cable work costs little fatigue. |
 | Core: woodchop and Pallof press | 6 | Take the last set of each movement to failure |
-| Loaded calf HSR | 6 | 3 seated soleus sets, plus 3 standing gastroc sets, at a true rep max |
+| Loaded calf HSR | 9 to 12 | Across 3 sessions, at a true rep max. See the standalone calf session rule below. |
 
-The total is 34 working sets per week. The three-day structure carried 42. Two costs come with this table, and this file states them rather than hides them. First, shoulders and vertical pull get fewer sets than the 6 to 10 set floor above. Second, squat frequency stays at 1x per week. The program accepts both costs. The effort model in Section 1 is what makes the lower set count defensible.
+__A two-gym-day week carries a third, calf-only session.__ Section 4 sets the HSR dose at 3 sessions per week, per Beyer 2015 (PMID 26018970). A two-gym-day week can deliver only 2 when the calf work rides inside the lift days, so the calendar silently overrode the tendon protocol for six weeks. Add a standalone session of about 15 minutes on a non-lift day: standing single-leg HSR plus the seated raise, at the prescribed loads with the named dumbbell fallback. It is not a lift day and it carries no barbell work. Calf HSR produces no systemic fatigue, no spinal load and no barbell risk, so the third exposure costs the lift days nothing. This raises weekly calf sets above the two-day table's previous figure of 6. That is intended: 6 sets across 2 sessions was below the Beyer dose, not at it. Injury prevention is the program's first-priority goal and it was the one running at two-thirds of protocol.
+
+The total is 37 to 40 working sets per week, depending on the calf sets run. The three-day structure carried 42. Two costs come with this table, and this file states them rather than hides them. First, shoulders and vertical pull get fewer sets than the 6 to 10 set floor above. Second, squat frequency stays at 1x per week. The program accepts both costs. The effort model in Section 1 is what makes the lower set count defensible.
 
 Hypertrophy research suggests 10 to 20 sets per muscle per week (Schoenfeld 2017). An in-season athlete should target the low end of that range and count sport exposure qualitatively. The goal is maintenance plus a modest strength gain. The goal is not maximum volume. This athlete started at a 135 lb bench press, so an in-season gain is realistic, not only maintenance. Baker 2001 showed that a younger and weaker cohort gained bench press 1RM across a 29-week season.
 

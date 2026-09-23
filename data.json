@@ -3288,6 +3288,46 @@
       "activity": "Rest day",
       "achillesPain": 1,
       "notes": "Morning read 1 to 2 out of 10, settles fast. Stiffness under 15 minutes, consistent across the past week. Day after the first two-game Sunday."
+    },
+    {
+      "date": "2026-09-22",
+      "type": "training",
+      "activity": "Calf retest, jumps, trap bar, squat (Tue Phase 3)",
+      "exercises": [
+        {
+          "name": "Single-Leg Calf Raise Capacity Test",
+          "sets": "1 set/leg to failure",
+          "weight": "BW + 67 lb/leg, machine"
+        },
+        {
+          "name": "Box Jump (step down)",
+          "sets": "5x3",
+          "weight": "18 in box"
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "3x5, set 3 = 5+",
+          "weight": "275 lbs",
+          "notes": "Final set (5+) was 5 reps, not extended past the base."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "175 lbs"
+        },
+        {
+          "name": "Barbell Romanian Deadlift",
+          "sets": "3x5",
+          "weight": "145 lbs"
+        },
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x8",
+          "weight": "195 lbs",
+          "notes": "Weight was challenging."
+        }
+      ],
+      "notes": "All as prescribed. Deadlift 5+ set stopped at 5 reps. Seated calf raise weight challenging. No achilles or calf pain."
     }
   ],
   "scienceReviews": [

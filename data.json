@@ -3810,6 +3810,11 @@
       "bodyFatPct": 23.6,
       "achillesPainAM": 1,
       "notes": "Morning stiffness under 15 minutes, and it has read that way across the past week. This closes the clinical-review clock opened on 9/7."
+    },
+    {
+      "date": "2026-09-24",
+      "weight": 218.7,
+      "bodyFatPct": 22.3
     }
   ],
   "modifiedWeeks": {

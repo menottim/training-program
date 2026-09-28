@@ -1197,6 +1197,10 @@
     padding: 0.4rem 0.5rem;
     vertical-align: top;
   }
+  .log-ex { list-style: none; margin: 0.35rem 0 0; padding: 0; }
+  .log-ex li { padding: 0.15rem 0; border-top: 1px solid #f0f0f0; }
+  .log-ex strong { font-weight: 600; }
+  .log-ex-note { display: block; color: var(--text-muted); font-size: 0.72rem; }
   .log-table .tag {
     display: inline-block;
     padding: 1px 8px;
@@ -1685,6 +1689,9 @@
     <!-- Body Composition History -->
     <div id="body-log-mount"></div>
 
+    <!-- Body Weight + Body Fat Trend -->
+    <div id="body-chart-mount"></div>
+
     <!-- Achilles Pain Trend -->
     <div id="achilles-chart-mount"></div>
 
@@ -1846,8 +1853,6 @@
   Every 1 lb of fat lost is dead weight you no longer lift off the ground. A 10 lb fat loss (while maintaining muscle) makes you ~5% more powerful relative to bodyweight, measurable inches on your vertical with zero strength gains needed.
 </div>
 
-<!-- Body Composition Trend Chart (weight + BF%) -->
-<div id="body-chart-mount"></div>
 
 <!-- Lean Mass + Fat Mass breakdown over time -->
 <div id="body-comp-breakdown-mount"></div>
@@ -2640,6 +2645,15 @@
         if (e.duration) details += ' \u00b7 ' + esc(e.duration);
         if (e.intensity) details += ' \u00b7 ' + esc(e.intensity) + ' intensity';
         if (e.details) details += (details ? ' \u00b7 ' : '') + linkifyText(e.details);
+        if (e.exercises && e.exercises.length) {
+          details += '<ul class="log-ex">' + e.exercises.map(function(x) {
+            var line = '<strong>' + esc(x.name) + '</strong>';
+            if (x.sets) line += ' \u00b7 ' + esc(x.sets);
+            if (x.weight) line += ' \u00b7 ' + esc(x.weight);
+            if (x.notes) line += '<span class="log-ex-note">' + esc(x.notes) + '</span>';
+            return '<li>' + line + '</li>';
+          }).join('') + '</ul>';
+        }
         var notesText = e.notes || '';
         var notesHTML = notesText
           ? '<div class="log-notes-cell">' + linkifyText(notesText) + '</div>' +
@@ -2958,6 +2972,22 @@
       '</svg>';
   }
 
+  function dayNum(dateStr) {
+    return new Date(dateStr + 'T00:00:00').getTime() / 86400000;
+  }
+
+  // First-of-month ticks between two dayNum values
+  function monthTicks(d0, d1) {
+    var out = [];
+    var s = new Date(d0 * 86400000);
+    var d = new Date(s.getFullYear(), s.getMonth() + 1, 1);
+    while (d.getTime() / 86400000 <= d1) {
+      out.push({ x: d.getTime() / 86400000, label: d.toLocaleDateString('en-US', { month: 'short' }) });
+      d = new Date(d.getFullYear(), d.getMonth() + 1, 1);
+    }
+    return out;
+  }
+
   function parseMaxWeight(str) {
     if (!str) return null;
     var s = str.toLowerCase().replace(/\s+/g, '');
@@ -2981,7 +3011,7 @@
       var g = entries.filter(function(e) { return e.type === 'game'; }).length;
       var t = entries.filter(function(e) { return e.type === 'training'; }).length;
       var r = entries.filter(function(e) { return e.type === 'recovery'; }).length;
-      weekKeys.push('Wk ' + wn);
+      weekKeys.push(String(wn));
       weekData.push({ games: g, training: t, recovery: r, total: g + t + r });
     });
 
@@ -2996,6 +3026,7 @@
     var xScale = scaleLinear(0, weekKeys.length, pad.left, W - pad.right);
     var yScale = scaleLinear(0, yMax, H - pad.bottom, pad.top);
     var barW = Math.min(40, (W - pad.left - pad.right) / weekKeys.length * 0.6);
+    var labelStep = Math.max(1, Math.ceil(weekKeys.length * 22 / (W - pad.left - pad.right)));
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
@@ -3019,11 +3050,14 @@
         if (seg.val === 0) return;
         var h = y0 - yScale(seg.val);
         var barY = y0 - cumY - h;
-        parts.push(svgBar(x, barY, barW, h, seg.color, weekKeys[i] + ': ' + seg.label));
+        parts.push(svgBar(x, barY, barW, h, seg.color, 'Week ' + weekKeys[i] + ': ' + seg.label));
         cumY += h;
       });
-      parts.push(svgLabel(cx, H - pad.bottom + 14, weekKeys[i], { size: 10 }));
+      if (i % labelStep === 0 || i === weekData.length - 1) {
+        parts.push(svgLabel(cx, H - pad.bottom + 14, weekKeys[i], { size: 10 }));
+      }
     });
+    parts.push(svgLabel(pad.left - 6, H - pad.bottom + 14, 'Wk', { anchor: 'end', size: 9 }));
 
     parts.push('</svg>');
 
@@ -3056,14 +3090,16 @@
     }
 
     var W = 600, H = 180, pad = { top: 20, right: 55, bottom: 35, left: 50 };
+    var tW = athlete.targetWeight, tBF = athlete.targetBodyFatPct;
 
     var weights = sorted.map(function(e) { return e.weight; });
     var bfs = sorted.filter(function(e) { return e.bodyFatPct != null; }).map(function(e) { return e.bodyFatPct; });
 
-    var wTicks = niceRange(Math.min.apply(null, weights) - 2, Math.max.apply(null, weights) + 2, 4);
-    var bfTicks = bfs.length >= 2 ? niceRange(Math.min.apply(null, bfs) - 1, Math.max.apply(null, bfs) + 1, 4) : [];
+    var wTicks = niceRange(Math.min.apply(null, weights.concat(tW || [])) - 2, Math.max.apply(null, weights) + 2, 4);
+    var bfTicks = bfs.length >= 2 ? niceRange(Math.min.apply(null, bfs.concat(tBF || [])) - 1, Math.max.apply(null, bfs) + 1, 4) : [];
 
-    var xScale = scaleLinear(0, sorted.length - 1, pad.left, W - pad.right);
+    var d0 = dayNum(sorted[0].date), d1 = dayNum(sorted[sorted.length - 1].date);
+    var xScale = scaleLinear(d0, d1, pad.left, W - pad.right);
     var yW = scaleLinear(wTicks[0], wTicks[wTicks.length - 1], H - pad.bottom, pad.top);
     var yBF = bfTicks.length >= 2
       ? scaleLinear(bfTicks[0], bfTicks[bfTicks.length - 1], H - pad.bottom, pad.top)
@@ -3079,44 +3115,43 @@
 
     if (yBF) {
       bfTicks.forEach(function(t) {
-        var y = yBF(t);
-        parts.push(svgLabel(W - pad.right + 6, y, t + '%', { anchor: 'start', size: 9, fill: '#e94560' }));
+        parts.push(svgLabel(W - pad.right + 6, yBF(t), t + '%', { anchor: 'start', size: 9, fill: '#e94560' }));
       });
     }
 
-    var wPts = sorted.map(function(e, i) { return [xScale(i), yW(e.weight)]; });
+    function targetLine(y, color, text) {
+      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="' + color + '" stroke-width="1" stroke-dasharray="4,3" opacity="0.7"/>');
+      parts.push(svgLabel(pad.left + 4, y - 6, text, { anchor: 'start', size: 8, fill: color }));
+    }
+    if (tW) targetLine(yW(tW), '#0f3460', 'target ' + tW + ' lb');
+    if (yBF && tBF) targetLine(yBF(tBF), '#e94560', 'target ' + tBF + '%');
+
+    var wPts = sorted.map(function(e) { return [xScale(dayNum(e.date)), yW(e.weight)]; });
     var wLabels = sorted.map(function(e) { return e.date + ': ' + e.weight + ' lbs'; });
     parts.push(svgLine(wPts, '#0f3460'));
-    parts.push(svgDots(wPts, '#0f3460', 4, wLabels));
+    parts.push(svgDots(wPts, '#0f3460', 3.5, wLabels));
 
     if (yBF) {
-      var bfPts = [];
-      var bfLabels = [];
-      sorted.forEach(function(e, i) {
-        if (e.bodyFatPct != null) {
-          bfPts.push([xScale(i), yBF(e.bodyFatPct)]);
-          bfLabels.push(e.date + ': ' + e.bodyFatPct + '% BF');
-        }
-      });
-      if (bfPts.length >= 2) {
-        parts.push(svgLine(bfPts, '#e94560'));
-        parts.push(svgDots(bfPts, '#e94560', 4, bfLabels));
-      }
+      var bfEntries = sorted.filter(function(e) { return e.bodyFatPct != null; });
+      var bfPts = bfEntries.map(function(e) { return [xScale(dayNum(e.date)), yBF(e.bodyFatPct)]; });
+      var bfLabels = bfEntries.map(function(e) { return e.date + ': ' + e.bodyFatPct + '% BF'; });
+      parts.push(svgLine(bfPts, '#e94560'));
+      parts.push(svgDots(bfPts, '#e94560', 3.5, bfLabels));
     }
 
-    sorted.forEach(function(e, i) {
-      var d = new Date(e.date + 'T00:00:00');
-      var label = (d.getMonth() + 1) + '/' + d.getDate();
-      parts.push(svgLabel(xScale(i), H - pad.bottom + 14, label, { size: 9 }));
+    monthTicks(d0, d1).forEach(function(t) {
+      parts.push(svgLabel(xScale(t.x), H - pad.bottom + 14, t.label, { size: 9 }));
     });
 
     parts.push('</svg>');
 
     mount.insertAdjacentHTML('beforeend',
+      '<h3>Body Weight &amp; Body Fat</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#0f3460"></span> Weight (lbs)</span>' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#e94560"></span> Body Fat %</span>' +
+        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#0f3460"></span> Weight (lbs, left axis)</span>' +
+        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#e94560"></span> Body Fat % (right axis)</span>' +
+        '<span class="chart-legend-item" style="opacity:0.5">┄ dashed = target</span>' +
       '</div>');
   })();
 
@@ -3366,7 +3401,8 @@
     var yTicks = niceRange(0, Math.max(Math.max.apply(null, vals), 6), 3);
     var yMax = yTicks[yTicks.length - 1];
 
-    var xScale = scaleLinear(0, painEntries.length - 1, pad.left, W - pad.right);
+    var d0 = dayNum(painEntries[0].date), d1 = dayNum(painEntries[painEntries.length - 1].date);
+    var xScale = scaleLinear(d0, d1, pad.left, W - pad.right);
     var yScale = scaleLinear(0, yMax, H - pad.bottom, pad.top);
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
@@ -3381,14 +3417,13 @@
     parts.push('<line x1="' + pad.left + '" y1="' + refY + '" x2="' + (W - pad.right) + '" y2="' + refY + '" stroke="#fd7e14" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>');
     parts.push(svgLabel(W - pad.right + 4, refY, 'limit', { anchor: 'start', size: 8, fill: '#fd7e14' }));
 
-    var pts = painEntries.map(function(e, i) { return [xScale(i), yScale(e.achillesPain)]; });
-    var labels = painEntries.map(function(e) { return e.date + ': pain ' + e.achillesPain + '/10'; });
+    var pts = painEntries.map(function(e) { return [xScale(dayNum(e.date)), yScale(e.achillesPain)]; });
+    var labels = painEntries.map(function(e) { return e.date + ' ' + esc(e.activity || '') + ': pain ' + e.achillesPain + '/10'; });
     parts.push(svgLine(pts, '#fd7e14'));
-    parts.push(svgDots(pts, '#fd7e14', 4, labels));
+    parts.push(svgDots(pts, '#fd7e14', 3, labels));
 
-    painEntries.forEach(function(e, i) {
-      var d = new Date(e.date + 'T00:00:00');
-      parts.push(svgLabel(xScale(i), H - pad.bottom + 12, (d.getMonth() + 1) + '/' + d.getDate(), { size: 9 }));
+    monthTicks(d0, d1).forEach(function(t) {
+      parts.push(svgLabel(xScale(t.x), H - pad.bottom + 12, t.label, { size: 9 }));
     });
 
     parts.push('</svg>');

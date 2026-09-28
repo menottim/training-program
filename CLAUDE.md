@@ -438,7 +438,7 @@ Log it as `"Back Squat"`, which maps to the `backSquat` target of 315x5.
 - Each week runs from Sunday to Saturday.
 - Phase 1, Foundation: Weeks 1 to 8, March 8 to May 2. The plan extended this phase from 6 weeks to 8 weeks, to compensate for the travel gap in Weeks 3 and 4.
 - Phase 2, Strength-Power: Weeks 9 to 14, May 3 to June 13. This phase introduces plyometrics and RPE 7 to 8.
-- Phase 3, Power Realization: Week 15 onward, from June 14.
+- Phase 3, Power Realization: Week 15 onward, from June 14. __Phase 3 is open-ended.__ The athlete confirmed on 2026-09-28 that the basketball and hockey slate runs year-round, so there is no off-season to build a Phase 4 around. Phase 3 is the standing in-season block. Blocks change on events, such as an injury, a slate change or travel, not on a phase calendar.
 - __Deload weeks fall on every 4th week__, at Weeks 4, 8, 12 and so on. Week 8 is both a deload week and the transition from Phase 1 to Phase 2.
 - To calculate the current week, use `ceil((days since March 8 + 1) / 7)`.
 
@@ -462,7 +462,7 @@ Do these things during a science review:
 4. Compare the progression rates against the expected ranges in Section 7.
 5. Check the body composition trend.
 6. Check the achilles and calf pain against the pain-monitoring decision tree.
-7. Assess whether the athlete is ready for the next phase.
+7. Do not assess phase readiness. Phase 3 is the standing year-round block (see Schedule). Report a block change only when an event forces one.
 8. Append the findings to `data.scienceReviews[]`.
 9. __Do not review nutrition or sleep.__ The Week 23 review retired both. A report on either one, or on the absence of either one, is noise.
 10. __Author `modifiedWeeks` for the upcoming week as the last action of the review.__ An un-authored week has now shipped three times: the June and July calf block, Week 26 on 8/31, and Week 29 on 9/20. The renderer no longer fabricates a schedule, so the failure is visible rather than silent, but the site still prescribes nothing. The review is the only recurring event that reliably happens, so the authoring step attaches to it.
@@ -478,7 +478,7 @@ Do these things during a science review:
 
 ## Equipment Notes
 
-- __The seated calf raise machine holds at least 315 lb, and possibly 405.__ Reported on 2026-09-07, after the question sat open across three reviews. 315 is confirmed and 405 is not. This matters, because the knee-flexed soleus benchmark of 1.5x bodyweight is 336 lb at a bodyweight of 224. So 315 reaches only 1.41x and falls short of the benchmark, while 405 clears it. Confirm whether 405 is loadable before treating the benchmark as reachable on this equipment. Note also that the benchmark falls as bodyweight falls: at the 210 lb target weight, 1.5x is exactly 315.
+- __The seated calf raise machine takes 405 lb.__ Confirmed on 2026-09-28, after the question sat open across four reviews. The knee-flexed soleus benchmark of 1.5x bodyweight is 328 lb at 218.7 lb, so it is reachable on this equipment. The benchmark falls as bodyweight falls: at the 210 lb target weight, 1.5x is exactly 315.
 - He has a GHR machine. Prefer it to the Nordic hamstring curl.
 - __Single-leg calf raise loading has two methods, and they have very different ceilings.__ A held dumbbell reached 25 to 35 lb. Grip and balance become the limiter there, not the calf. The standing calf raise machine, run single-leg, reached bodyweight plus 67 to plus 72 through May and June. The machine is the only method that can approach the knee-flexed return-to-sport benchmark of roughly 1.5x bodyweight. Prescribe the machine whenever the load needs to progress. Reserve the dumbbell for travel, or for a session where the machine is occupied. That second case cost Week 26 its third loaded calf session, and it happened again on 9/8, because the prescription named no fallback and the session dropped to bodyweight both times. Bodyweight is not a substitute, and it does not count toward the 3-per-week HSR target. __A machine calf prescription without a named dumbbell fallback and load is an incomplete prescription.__ Write the fallback into every one, not only for travel weeks.
 - __The standing calf raise machine's lightest single-leg setting is bodyweight plus 67.__ On 8/21 and again on 8/25, a prescription of bodyweight plus 45 turned into bodyweight plus 67 on the actual machine, because 45 is not a selectable pin. Do not prescribe a single-leg machine load below plus 67. If a lighter load is genuinely needed, for example while a symptom is settling, prescribe the held dumbbell instead, capped at 35 lb, rather than a machine number the equipment cannot produce.

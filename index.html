@@ -1700,8 +1700,59 @@
 <!-- ═══════════════════════════════════════════════ -->
 <div id="tab-plan" class="tab-content">
 
+<!-- STRENGTH TARGETS -->
+<h2 id="targets">Strength Targets</h2>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Your fastest path to jumping higher is getting stronger. Plyometrics on a weak base produce minimal returns.</p>
+
+<!-- Strength Target Cards (rendered from data.json) -->
+<div id="targets-mount"></div>
+
+<!-- Strength Progress Bars -->
+<div id="strength-mount"></div>
+
+<details class="insights-section">
+  <summary><strong>Strength progress</strong></summary>
+  <div class="insights-body">
+    <!-- Strength Progression Chart -->
+    <div id="strength-chart-mount"></div>
+
+    <div class="info-box success">
+      <strong>The Key Metric for Vertical Jump</strong>
+      A trap bar deadlift of 2.0-2.5x bodyweight is the benchmark for elite jumping. At your current strength, every pound you add on the bar turns into inches on your vertical.
+    </div>
+
+    <!-- Strength Standards Gauges -->
+    <div id="standards-mount"></div>
+  </div>
+</details>
+
+<details class="insights-section">
+  <summary><strong>Body and achilles</strong></summary>
+  <div class="insights-body">
+    <!-- Body Composition History -->
+    <div id="body-log-mount"></div>
+
+    <!-- Body Weight + Body Fat Trend -->
+    <div id="body-chart-mount"></div>
+
+    <!-- Achilles Pain Trend -->
+    <div id="achilles-chart-mount"></div>
+  </div>
+</details>
+
+<details class="insights-section">
+  <summary><strong>Stats and volume</strong></summary>
+  <div class="insights-body">
+    <!-- Dashboard Summary -->
+    <div id="dashboard-mount"></div>
+
+    <!-- Weekly Activity Volume Chart -->
+    <div id="volume-chart-mount"></div>
+  </div>
+</details>
+
 <details class="insights-section" id="phases">
-<summary><strong>Training Phases</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>Training Phases</strong></summary>
 <div class="insights-body">
 
 <div class="info-box">
@@ -1825,56 +1876,6 @@
 </div>
 
 </div>
-</details>
-
-<!-- STRENGTH TARGETS -->
-<h2 id="targets">Strength Targets</h2>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Your fastest path to jumping higher is getting stronger. Plyometrics on a weak base produce minimal returns.</p>
-
-<!-- Strength Target Cards (rendered from data.json) -->
-<div id="targets-mount"></div>
-
-<div class="info-box success">
-  <strong>The Key Metric for Vertical Jump</strong>
-  A trap bar deadlift of 2.0-2.5x bodyweight is the benchmark for elite jumping. At your current strength, every pound you add on the bar turns into inches on your vertical.
-</div>
-
-<!-- Strength Progression Chart -->
-<div id="strength-chart-mount"></div>
-
-<!-- Strength Standards Gauges -->
-<details class="insights-section">
-  <summary><strong>Strength standards</strong></summary>
-  <div class="insights-body">
-    <div id="standards-mount"></div>
-  </div>
-</details>
-
-<!-- Insights & history (moved from This Week tab, progress-tracking content lives with the Plan) -->
-<h2 id="insights" style="margin-top:2.5rem;">Insights &amp; History</h2>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">How you're tracking against the program. Dashboard, body composition, achilles trend, and weekly volume chart.</p>
-
-<details class="insights-section" open>
-  <summary><strong>Dashboard &amp; trends</strong> <span class="insights-hint">click to collapse</span></summary>
-  <div class="insights-body">
-    <!-- Dashboard Summary -->
-    <div id="dashboard-mount"></div>
-
-    <!-- Strength Progress Bars -->
-    <div id="strength-mount"></div>
-
-    <!-- Body Composition History -->
-    <div id="body-log-mount"></div>
-
-    <!-- Body Weight + Body Fat Trend -->
-    <div id="body-chart-mount"></div>
-
-    <!-- Achilles Pain Trend -->
-    <div id="achilles-chart-mount"></div>
-
-    <!-- Weekly Activity Volume Chart -->
-    <div id="volume-chart-mount"></div>
-  </div>
 </details>
 
 </div><!-- /tab-plan -->

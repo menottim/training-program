@@ -1585,7 +1585,33 @@
   }
 
   /* ws:tables (start) */
-
+  /* Body composition log on phones: one compact card per reading */
+  @media (max-width: 639px) {
+    .log-table--body { min-width: 0; margin: 0.5rem 0; }
+    .log-table--body thead { display: none; }
+    .log-table--body tbody { display: block; }
+    .log-table--body tr {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.15rem 0.5rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .log-table.log-table--body tbody td {
+      display: block;
+      padding: 0;
+      border: 0;
+      min-width: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .log-table.log-table--body tbody td.log-date { grid-column: 1 / -1; font-weight: 600; }
+    .log-table--body td[data-label]::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+  }
   /* ws:tables (end) */
 
   /* ---- */
@@ -2698,7 +2724,7 @@
       var bfCell = bf != null ? bf + '%' : '\u2014';
       var wCell = w != null ? w : '\u2014';
       var hideClass = idx < hiddenCount ? ' class="body-log-old" style="display:none;"' : '';
-      var row = '<tr' + hideClass + '><td>' + esc(entry.date) + '</td><td>' + wCell + '</td><td>' + bfCell + '</td><td>' + leanMass + '</td><td>' + fatMass + '</td>';
+      var row = '<tr' + hideClass + '><td class="log-date">' + esc(entry.date) + '</td><td data-label="Weight">' + wCell + '</td><td data-label="Body fat">' + bfCell + '</td><td data-label="Lean">' + leanMass + '</td><td data-label="Fat">' + fatMass + '</td>';
       return row + '</tr>';
     });
     var headers = '<th>Date</th><th>Weight</th><th>Body Fat %</th><th>Lean Mass</th><th>Fat Mass</th>';
@@ -2710,7 +2736,7 @@
         (hiddenCount > 0 ? ' <span style="font-size:0.7rem;font-weight:400;color:var(--text-muted);">(last ' + BODY_LOG_DEFAULT_ROWS + ' of ' + totalBodyRows + ')</span>' : '') +
       '</h3>' +
       toggleBtn +
-      '<table class="log-table"><thead><tr>' + headers +
+      '<table class="log-table log-table--body"><thead><tr>' + headers +
       '</tr></thead><tbody>' + compRows.join('') + '</tbody></table>';
     var bodyToggle = document.getElementById('body-log-toggle');
     if (bodyToggle) {

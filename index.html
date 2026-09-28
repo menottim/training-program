@@ -179,12 +179,13 @@
   .athlete-profile summary::marker { content: ""; }
   .athlete-profile-sum {
     display: flex;
-    gap: 1rem;
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 0.15rem 0.9rem;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
   }
   .athlete-profile-sum strong { color: var(--accent2); font-weight: 700; }
-  .athlete-profile-sum .ap-sep { color: var(--border); }
   .athlete-profile-toggle {
     font-size: 0.7rem;
     color: var(--text-muted);
@@ -1656,6 +1657,10 @@
   /* ---- */
 
   /* ws:body (start) */
+  .athlete-profile summary { flex-wrap: nowrap; }
+  .athlete-profile-sum .ap-item { white-space: nowrap; }
+  .athlete-profile-sum .ap-muted { color: var(--text-muted); font-size: var(--fs-label); }
+  .athlete-profile-toggle { flex: none; }
 
   /* ws:body (end) */
 
@@ -1698,9 +1703,7 @@
 <details class="athlete-profile">
   <summary>
     <span class="athlete-profile-sum" id="athlete-profile-sum-mount">
-      <strong>In-Season Training Program</strong>
-      <span class="ap-sep">|</span>
-      <span>Age 40 &middot; 6'2"</span>
+      <strong>Weigh-in</strong>
     </span>
     <span class="athlete-profile-toggle">Profile</span>
   </summary>
@@ -2434,17 +2437,48 @@
 
   headerMount.insertAdjacentHTML('beforeend', statsHTML);
 
-  // Populate the collapsed Athlete Profile summary with current key stats
+  // Weigh-in trend from bodyLog, read as weekly readings (last per Sun-Sat week).
+  // A trend word only when 3+ consecutive weekly readings move one way, or the
+  // latest differs from the previous weekly reading by more than 4 lb.
+  function weighInTrend(log) {
+    var byWeek = {};
+    log.filter(function(e) { return e.weight != null; })
+      .sort(function(a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; })
+      .forEach(function(e) {
+        var d = new Date(e.date + 'T00:00:00');
+        d.setDate(d.getDate() - d.getDay());
+        byWeek[d.getTime()] = e.weight;
+      });
+    var w = Object.keys(byWeek).sort(function(a, b) { return a - b; }).map(function(k) { return byWeek[k]; });
+    var n = w.length;
+    if (n < 2) return '';
+    var diff = w[n - 1] - w[n - 2];
+    if (n >= 3) {
+      var d2 = w[n - 2] - w[n - 3];
+      if (diff < 0 && d2 < 0) return 'trending down';
+      if (diff > 0 && d2 > 0) return 'trending up';
+    }
+    if (diff < -4) return 'trending down';
+    if (diff > 4) return 'trending up';
+    return '';
+  }
+
+  // Collapsed Athlete Profile summary: latest weigh-in, target, then reading date.
   var apSumMount = document.getElementById('athlete-profile-sum-mount');
   if (apSumMount) {
-    apSumMount.innerHTML =
-      '<strong>Profile</strong>' +
-      '<span class="ap-sep">|</span>' +
-      '<span>' + esc(athlete.height) + ' &middot; <strong>' + latestWeight + ' lbs</strong>' +
-      (curBFVal != null ? ' &middot; <strong>' + curBFDisplay + '</strong>' : '') +
-      ' &middot; BMI ' + curBMI + '</span>' +
-      '<span class="ap-sep">|</span>' +
-      '<span style="color:var(--text-muted);">→ ' + tgtWeight + ' lbs / ' + tgtBF + '%</span>';
+    var wiHTML = '<span class="ap-item"><strong>' + latestWeight + ' lb</strong>' +
+      (latestWeightEntry && latestWeightEntry.bodyFatPct != null ? ' &middot; <strong>' + latestWeightEntry.bodyFatPct + '%</strong>' : '') +
+      '</span>';
+    wiHTML += '<span class="ap-item ap-muted">target ' + tgtWeight + ' lb &middot; ' + tgtBF + '%</span>';
+    if (latestWeightEntry) {
+      var wiDate = new Date(latestWeightEntry.date + 'T00:00:00');
+      var wiLabel = wiDate.toLocaleDateString('en-US', { weekday: 'short' }) + ' ' + shortDate(latestWeightEntry.date);
+      var wiStale = calendarDays(wiDate, today) > 8;
+      var wiTrend = weighInTrend(bodyLog);
+      wiHTML += '<span class="ap-item ap-muted">' + (wiStale ? 'last reading ' : '') + wiLabel +
+        (wiTrend ? ' &middot; ' + wiTrend : '') + '</span>';
+    }
+    apSumMount.innerHTML = wiHTML;
   }
 
   // Dashboard

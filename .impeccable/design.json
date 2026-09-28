@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-28T00:00:00Z",
+  "title": "Design System: Training Program",
+  "extensions": {
+    "colorMeta": {
+      "night-navy":    { "role": "primary",   "displayName": "Night Navy",    "canonical": "#1a1a2e", "tonalRamp": ["#0b0b14","#1a1a2e","#2d2d4a","#454566","#66668a","#9090ad","#c2c2d3","#ececf1"] },
+      "training-blue": { "role": "secondary", "displayName": "Training Blue", "canonical": "#0f3460", "tonalRamp": ["#061426","#0a2242","#0f3460","#1f4f8c","#3f72b3","#7099cc","#b0c8e4","#e8f0fa"] },
+      "signal-coral":  { "role": "tertiary",  "displayName": "Signal Coral",  "canonical": "#e94560", "tonalRamp": ["#5c0f1e","#8a1a2f","#b82c45","#e94560","#ee6f84","#f39aa9","#f8c6cf","#fde8ec"] }
+    },
+    "typographyMeta": {
+      "title": { "displayName": "Title", "purpose": "Day name on the Today Card." },
+      "body":  { "displayName": "Body",  "purpose": "Checklist rows and notes." },
+      "label": { "displayName": "Label", "purpose": "Tabs, meta lines and toggles, uppercase." }
+    },
+    "shadows": [
+      { "name": "card-faint", "value": "0 2px 8px rgba(0,0,0,0.04)", "purpose": "Today Card only." },
+      { "name": "focus-ring", "value": "0 0 0 2px rgba(15,52,96,0.15)", "purpose": "Focused inputs." }
+    ],
+    "motion": [
+      { "name": "quick", "value": "0.15s", "purpose": "Tab colour and background changes." },
+      { "name": "chevron", "value": "0.2s", "purpose": "Disclosure chevron rotation." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "640px" },
+      { "name": "narrow", "value": "700px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Tab Button",
+      "kind": "nav",
+      "refersTo": "tab-button",
+      "description": "Uppercase label in the fixed navy nav; active tab gets a coral underline.",
+      "html": "<div style=\"background:#1a1a2e;border-bottom:2px solid #e94560;display:flex\"><button class=\"ds-tab\">Today</button><button class=\"ds-tab active\">Plan</button></div>",
+      "css": ".ds-tab{background:none;border:none;color:rgba(255,255,255,0.7);font:600 0.78rem -apple-system,Segoe UI,Roboto,Arial,sans-serif;letter-spacing:0.3px;text-transform:uppercase;padding:0.7rem 1.2rem;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:color .15s,background .15s}.ds-tab:hover,.ds-tab:focus-visible{color:#fff;background:rgba(255,255,255,0.08)}.ds-tab.active{color:#fff;border-bottom-color:#e94560}"
+    },
+    {
+      "name": "Today Card",
+      "kind": "card",
+      "refersTo": "today-card",
+      "description": "Primary card. Border colour carries the day type.",
+      "html": "<div class=\"ds-today\"><div class=\"ds-today-head\"><span class=\"ds-today-day\">Tuesday</span><span class=\"ds-today-meta\">Week 30</span></div><div class=\"ds-today-title\">Lower body, heavy</div><ul class=\"ds-list\"><li><span>Trap Bar Deadlift</span><span>3x5 · 285 lb</span></li><li><span>Back Squat</span><span>3x5 · 205 lb</span></li></ul></div>",
+      "css": ".ds-today{background:#fff;border:2px solid #0f3460;border-radius:10px;padding:1.25rem 1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#212529}.ds-today-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem}.ds-today-day{font-size:1.2rem;font-weight:700}.ds-today-meta{font-size:.75rem;color:#6c757d;text-transform:uppercase;letter-spacing:.5px}.ds-today-title{font-size:1rem;font-weight:600;color:#0f3460;margin-bottom:.75rem}.ds-list{list-style:none;margin:0;padding:0}.ds-list li{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-bottom:1px solid #dee2e6;font-size:.9rem}"
+    },
+    {
+      "name": "Game Tag",
+      "kind": "chip",
+      "refersTo": "tag-game",
+      "description": "Pale coral pill for game days.",
+      "html": "<span class=\"ds-tag ds-tag-game\">Game</span> <span class=\"ds-tag ds-tag-train\">Train</span>",
+      "css": ".ds-tag{display:inline-block;font:600 .7rem -apple-system,Segoe UI,Roboto,Arial,sans-serif;text-transform:uppercase;letter-spacing:.3px;padding:2px 6px;border-radius:4px}.ds-tag-game{background:#fde8ec;color:#e94560}.ds-tag-train{background:#e8f0fe;color:#0f3460}"
+    },
+    {
+      "name": "Collapsible Section",
+      "kind": "custom",
+      "description": "Details block with a Paper Alt header and rotating chevron.",
+      "html": "<details class=\"ds-sec\" open><summary>Insights <span>▾</span></summary><div class=\"ds-sec-body\">Body content</div></details>",
+      "css": ".ds-sec{border:1px solid #dee2e6;border-radius:8px;overflow:hidden;background:#fff;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif}.ds-sec summary{list-style:none;cursor:pointer;padding:.85rem 1.25rem;background:#f8f9fa;font-size:.95rem;display:flex;justify-content:space-between}.ds-sec summary:hover{background:#eef0f3}.ds-sec-body{padding:1rem 1.25rem 1.5rem;font-size:.9rem}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Clipboard",
+    "overview": "A coach's sheet, not a dashboard product. Information comes first, surfaces are flat and white, and one hot accent is reserved for games, the active tab and hover. The page is a single 900px column that reads on a phone without expanding anything, with detail folded behind toggles.",
+    "keyCharacteristics": ["Flat surfaces with 1px hairline borders; almost no shadow.", "System font only.", "Colour is a code (game, train, done, rest), not a mood.", "Long text is clamped or collapsed by default."],
+    "rules": [
+      { "name": "The Colour-As-Code Rule", "body": "Coral means game, blue means training, green means done, grey means rest. Do not reuse them decoratively.", "section": "colors" },
+      { "name": "The Small Caps Label Rule", "body": "Uppercase is for short labels only. Never set a sentence in uppercase.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. Do not add shadows to cards to make them feel raised.", "section": "elevation" }
+    ],
+    "dos": ["Do keep the Today Card the first thing on the page.", "Do keep each tile headline to about 8 words and fold the rest behind a toggle.", "Do use the four state colours only for their meaning.", "Do keep tap targets comfortable on a phone."],
+    "donts": ["Don't add nutrition or sleep UI. Both are retired.", "Don't put citations, evidence tiers or program self-assessment in any rendered field.", "Don't hardcode a schedule in index.html; an un-authored week must show as missing.", "Don't add a webfont, framework or build step."]
+  }
+}

@@ -102,18 +102,19 @@
     background: none;
     border: none;
     color: var(--accent2);
-    font-size: 0.7rem;
+    font-size: var(--fs-label);
     font-weight: 600;
     cursor: pointer;
-    padding: 2px 0;
-    margin-top: 2px;
+    min-height: 44px;
+    padding: 0 12px 0 0;
+    margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 0.3px;
     font-family: inherit;
   }
   .log-notes-toggle:hover { color: var(--accent); }
   @media (max-width: 700px) {
-    .log-notes-cell { -webkit-line-clamp: 2; font-size: 0.72rem; }
+    .log-notes-cell { -webkit-line-clamp: 2; font-size: 0.8125rem; }
   }
 
   /* Insights & history collapsible section (default-closed below Today Card area) */
@@ -1427,6 +1428,31 @@
   /* ---- */
 
   /* ws:log (start) */
+  /* Activity log on phones: each row is a stacked card, no sideways scroll */
+  @media (max-width: 639px) {
+    .log-table--activity { min-width: 0; margin: 0.5rem 0; }
+    .log-table--activity thead { display: none; }
+    .log-table--activity tbody,
+    .log-table--activity tr { display: block; }
+    .log-table--activity tr { padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+    .log-table.log-table--activity tbody td {
+      display: block;
+      padding: 0;
+      border: 0;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .log-table.log-table--activity tbody td.log-date,
+    .log-table.log-table--activity tbody td.log-type { display: inline-block; vertical-align: middle; }
+    .log-table.log-table--activity tbody td.log-date { font-weight: 600; margin-right: 0.5rem; }
+    .log-table.log-table--activity tbody td.log-details { margin-top: 0.3rem; }
+    .log-table.log-table--activity tbody td.log-notes-td { margin-top: 0.35rem; }
+    .log-table.log-table--activity tbody td.log-notes-td:empty { display: none; }
+  }
+
+  @media (min-width: 701px) {
+    .log-notes-toggle--phone { display: none; }
+  }
 
   /* ws:log (end) */
 
@@ -2595,18 +2621,19 @@
         var notesText = e.notes || '';
         var notesHTML = notesText
           ? '<div class="log-notes-cell">' + linkifyText(notesText) + '</div>' +
-            (notesText.length > 140 ? '<button class="log-notes-toggle" type="button" aria-label="Expand notes">more</button>' : '')
+            // Phones clamp to 2 lines at a larger size, so shorter notes also need the toggle there.
+            (notesText.length > 80 ? '<button class="log-notes-toggle' + (notesText.length > 140 ? '' : ' log-notes-toggle--phone') + '" type="button" aria-label="Expand notes">more</button>' : '')
           : '';
         return '<tr>' +
-          '<td>' + fmtDate(e.date) + '</td>' +
-          '<td><span class="tag ' + tagClass + '">' + esc(typeLabel) + '</span></td>' +
-          '<td>' + details + '</td>' +
+          '<td class="log-date">' + fmtDate(e.date) + '</td>' +
+          '<td class="log-type"><span class="tag ' + tagClass + '">' + esc(typeLabel) + '</span></td>' +
+          '<td class="log-details">' + details + '</td>' +
           '<td class="log-notes-td">' + notesHTML + '</td>' +
         '</tr>';
       }).join('');
       var wn = Math.max(1, Math.ceil((calendarDays(startDate, ws) + 1) / 7));
       var mwBanner = modifiedWeeks[String(wn)]
-        ? '<span class="mw-log-banner">\u26a0\ufe0f ' + esc(modifiedWeeks[String(wn)].title || modifiedWeeks[String(wn)].label) + '</span>'
+        ? '<span class="mw-log-banner">' + esc(modifiedWeeks[String(wn)].title || modifiedWeeks[String(wn)].label) + '</span>'
         : '';
       logHTML += '<div class="week-summary">' +
         '<div class="week-summary-header">' +
@@ -2617,7 +2644,7 @@
             '<span class="week-mini-stat">' + games + ' games</span>' +
           '</div>' +
         '</div>' +
-        '<table class="log-table">' +
+        '<table class="log-table log-table--activity">' +
           '<thead><tr><th>Date</th><th>Type</th><th>Details</th><th>Notes</th></tr></thead>' +
           '<tbody>' + rows + '</tbody>' +
         '</table>' +
@@ -2633,6 +2660,7 @@
       if (!cell) return;
       var expanded = cell.classList.toggle('expanded');
       btn.textContent = expanded ? 'less' : 'more';
+      btn.setAttribute('aria-expanded', expanded);
     });
   });
 

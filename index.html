@@ -276,7 +276,7 @@
   .wt-hold { color: var(--text-muted); font-weight: 700; }
   .wt-carried { color: var(--text-muted); font-style: italic; font-weight: 400; font-size: 0.85em; }
   .ex-hist { color: var(--text-muted); font-size: 0.75rem; }
-  .today-card-checklist .ex-hist { flex-basis: 100%; margin-top: 1px; }
+  .today-card-checklist .ex-hist { flex-basis: 100%; margin-top: 1px; font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
   .today-card-next {
     font-size: 0.8rem;
     color: var(--text-muted);
@@ -1582,6 +1582,74 @@
   /* ---- */
 
   /* ws:today (start) */
+  /* Tap-off checklist on training days. The check is its own 44px button so
+     the exercise link keeps working; done rows strike the name and mute. */
+  .today-card-progress {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .today-card-checklist.is-checkable li {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0 0.25rem;
+    padding: 0;
+  }
+  .today-card-checklist .ex-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+    padding: 0.65rem 0;
+  }
+  .ex-check {
+    flex: none;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    margin-left: -11px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ex-check::before {
+    content: "";
+    position: absolute;
+    inset: 11px;
+    border: 2px solid var(--accent2);
+    border-radius: 4px;
+    background: var(--bg);
+    transition: background-color 120ms ease-out, border-color 120ms ease-out;
+  }
+  .ex-check[aria-pressed="true"]::before { background: var(--success); border-color: var(--success); }
+  .ex-check[aria-pressed="true"]::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 14px;
+    width: 6px;
+    height: 12px;
+    border: solid var(--bg);
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+  }
+  .ex-check:focus-visible { outline: 2px solid var(--accent2); outline-offset: -2px; }
+  .today-card-checklist li.is-done .ex-name { color: var(--text-muted); text-decoration: line-through; }
+  .today-card-checklist li.is-done .ex-weight,
+  .today-card-checklist li.is-done .ex-weight * { color: var(--text-muted); }
+  @media (max-width: 640px) {
+    .today-card-checklist .ex-body { gap: 0.25rem; }
+  }
 
   /* ws:today (end) */
 
@@ -2456,10 +2524,34 @@
       sessionLabel = 'Unplanned';
     }
 
+    // Tap-off checklist: per-browser "done" marks for today's training rows.
+    // localStorage only; it never writes data.json. Storage can throw, so every
+    // access is guarded and the card still renders without it.
+    var checkable = typeClass.indexOf('is-training') !== -1 &&
+      todayDay && todayDay.exercises && todayDay.exercises.length > 0;
+    var doneKey = 'tp-done-' + todayStr;
+    var doneSet = {};
+    if (checkable) {
+      try {
+        var cutoff = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 14);
+        for (var si = localStorage.length - 1; si >= 0; si--) {
+          var sk = localStorage.key(si);
+          var m = sk && /^tp-done-(\d{4})-(\d{2})-(\d{2})$/.exec(sk);
+          if (m && new Date(+m[1], +m[2] - 1, +m[3]) < cutoff) localStorage.removeItem(sk);
+        }
+        (JSON.parse(localStorage.getItem(doneKey)) || []).forEach(function(n) { doneSet[n] = true; });
+      } catch (e) { /* storage blocked: marks just won't persist */ }
+    }
+    function doneCountText() {
+      var n = todayDay.exercises.filter(function(ex) { return doneSet[ex.name]; }).length;
+      return n + ' of ' + todayDay.exercises.length + ' done';
+    }
+
     var checklistHTML = '';
     if (todayDay && todayDay.exercises && todayDay.exercises.length > 0) {
-      checklistHTML = '<ul class="today-card-checklist">' +
-        todayDay.exercises.map(function(ex) {
+      checklistHTML = (checkable ? '<div class="today-card-progress" aria-live="polite">' + doneCountText() + '</div>' : '') +
+        '<ul class="today-card-checklist' + (checkable ? ' is-checkable' : '') + '">' +
+        todayDay.exercises.map(function(ex, idx) {
           var nameHTML = exerciseLinks[ex.name]
             ? '<a href="' + esc(exerciseLinks[ex.name]) + '" target="_blank">' + esc(ex.name) + '</a>'
             : esc(ex.name);
@@ -2471,11 +2563,16 @@
           var meta = sets + (sets && weight ? ' ' : '') + weight;
           var note = ex.notes ? '<div class="ex-note">' + esc(ex.notes) + '</div>' : '';
           var hist = info.last ? '<div class="ex-hist">last ' + esc(info.last.weight) + (info.last.sets ? ' · ' + esc(info.last.sets) : '') + ' · ' + shortDate(info.last.date) + '</div>' : '';
-          return '<li>' +
-            '<span class="ex-name">' + nameHTML + '</span>' +
+          var body = '<span class="ex-name">' + nameHTML + '</span>' +
             (meta ? '<span>' + meta + '</span>' : '') +
             note +
-            hist +
+            hist;
+          if (!checkable) return '<li>' + body + '</li>';
+          var isDone = !!doneSet[ex.name];
+          return '<li' + (isDone ? ' class="is-done"' : '') + '>' +
+            '<button type="button" class="ex-check" data-i="' + idx + '" aria-pressed="' + isDone + '"' +
+              ' aria-label="Mark ' + esc(ex.name) + ' done"></button>' +
+            '<div class="ex-body">' + body + '</div>' +
           '</li>';
         }).join('') +
       '</ul>';
@@ -2522,6 +2619,20 @@
         nextHTML +
         longHTML +
       '</div>';
+
+    if (checkable) {
+      mount.addEventListener('click', function(e) {
+        var btn = e.target.closest('.ex-check');
+        if (!btn) return;
+        var name = todayDay.exercises[+btn.dataset.i].name;
+        var on = btn.getAttribute('aria-pressed') !== 'true';
+        if (on) doneSet[name] = true; else delete doneSet[name];
+        btn.setAttribute('aria-pressed', String(on));
+        btn.parentNode.classList.toggle('is-done', on);
+        mount.querySelector('.today-card-progress').textContent = doneCountText();
+        try { localStorage.setItem(doneKey, JSON.stringify(Object.keys(doneSet))); } catch (err) {}
+      });
+    }
   })();
 
   (function renderModifiedWeek() {

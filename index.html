@@ -1417,12 +1417,15 @@
     color: #fff;
   }
   .standard-ticks {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    height: 1.2em;
     font-size: 0.6rem;
     color: var(--text-muted);
     margin-top: 2px;
-    padding: 0 2px;
+  }
+  .standard-ticks span {
+    position: absolute;
+    transform: translateX(-50%);
   }
   .standard-formula-note {
     font-size: 0.72rem;
@@ -3364,21 +3367,19 @@
       var tgtLevelText = tgtLevelIdx >= 0 ? levelNames[tgtLevelIdx] : 'Untrained';
 
       // Gauge: zones are proportional to the ratio range
-      // Range from 0 to elite + 20% headroom
+      // Range from 0 to elite + 15% headroom. Each ratio is where that level
+      // starts, so below ratios[0] is Untrained and above ratios[4] is Elite.
       var gaugeMax = std.ratios[4] * 1.15;
-      var breakpoints = [0].concat(std.ratios);
+      var breakpoints = [0].concat(std.ratios, [gaugeMax]);
+      var zoneLabels = ['Untrained'].concat(levelNames);
+      var zoneColors = ['#aaa'].concat(levelColors);
 
       var zones = '';
-      for (var z = 0; z < 5; z++) {
-        var zoneStart = breakpoints[z];
-        var zoneEnd = breakpoints[z + 1];
-        var widthPct = ((zoneEnd - zoneStart) / gaugeMax * 100).toFixed(1);
-        zones += '<div class="standard-zone" style="width:' + widthPct + '%;background:' + levelColors[z] + ';">' +
-          (parseFloat(widthPct) > 12 ? levelNames[z] : '') + '</div>';
+      for (var z = 0; z < zoneLabels.length; z++) {
+        var widthPct = ((breakpoints[z + 1] - breakpoints[z]) / gaugeMax * 100).toFixed(1);
+        zones += '<div class="standard-zone" style="width:' + widthPct + '%;background:' + zoneColors[z] + ';">' +
+          (parseFloat(widthPct) > 12 ? zoneLabels[z] : '') + '</div>';
       }
-      // Remaining headroom zone
-      var remainPct = ((gaugeMax - std.ratios[4]) / gaugeMax * 100).toFixed(1);
-      zones += '<div class="standard-zone" style="width:' + remainPct + '%;background:#ddd;"></div>';
 
       // Current marker position
       var markerPct = Math.min(Math.max(ratio / gaugeMax * 100, 0), 99).toFixed(1);
@@ -3390,9 +3391,9 @@
 
       // Tick labels showing weights at each threshold
       var ticks = '<div class="standard-ticks">';
-      ticks += '<span>0</span>';
+      ticks += '<span style="left:0;transform:none;">0</span>';
       for (var t = 0; t < 5; t++) {
-        ticks += '<span>' + Math.round(std.ratios[t] * bw) + '</span>';
+        ticks += '<span style="left:' + (std.ratios[t] / gaugeMax * 100).toFixed(1) + '%;">' + Math.round(std.ratios[t] * bw) + '</span>';
       }
       ticks += '</div>';
 

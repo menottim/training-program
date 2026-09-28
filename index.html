@@ -380,7 +380,7 @@
   .goal:nth-child(2) { background: var(--accent2); color: #fff; }
   .goal:nth-child(3) { background: var(--primary); color: #fff; }
   .goal .priority {
-    font-size: 0.65rem;
+    font-size: var(--fs-label);
     text-transform: uppercase;
     letter-spacing: 1px;
     opacity: 0.8;
@@ -547,7 +547,7 @@
     color: var(--success);
   }
   .target-card .ratio {
-    font-size: 0.7rem;
+    font-size: var(--fs-label);
     color: var(--text-muted);
   }
 
@@ -912,7 +912,7 @@
     /* Bar chart labels: tighter on mobile */
     .bar-label {
       width: 90px;
-      font-size: 0.7rem;
+      font-size: var(--fs-label);
     }
 
     /* Header stats: wrap tighter */
@@ -1093,13 +1093,13 @@
     color: var(--primary);
   }
   .dash-card .dash-label {
-    font-size: 0.65rem;
+    font-size: var(--fs-label);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--text-muted);
   }
   .dash-card .dash-sub {
-    font-size: 0.7rem;
+    font-size: var(--fs-label);
     color: var(--text-muted);
     margin-top: 2px;
   }
@@ -1138,7 +1138,7 @@
     display: flex;
     align-items: center;
     padding-left: 8px;
-    font-size: 0.7rem;
+    font-size: var(--fs-label);
     font-weight: 600;
     color: #fff;
     transition: width 0.3s;
@@ -1157,7 +1157,7 @@
     position: absolute;
     top: 3px;
     right: -2.25rem;
-    font-size: 0.65rem;
+    font-size: var(--fs-label);
     font-weight: 600;
     color: var(--text-muted);
     white-space: nowrap;
@@ -1362,7 +1362,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.6rem;
+    font-size: var(--fs-micro);
     font-weight: 600;
     color: rgba(255,255,255,0.85);
     letter-spacing: 0.3px;
@@ -1384,7 +1384,7 @@
     top: -14px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.65rem;
+    font-size: var(--fs-label);
     font-weight: 700;
     color: var(--text);
     white-space: nowrap;
@@ -1393,14 +1393,14 @@
     display: inline-block;
     padding: 1px 8px;
     border-radius: 3px;
-    font-size: 0.7rem;
+    font-size: var(--fs-label);
     font-weight: 600;
     color: #fff;
   }
   .standard-ticks {
     position: relative;
     height: 1.2em;
-    font-size: 0.6rem;
+    font-size: var(--fs-micro);
     color: var(--text-muted);
     margin-top: 2px;
   }
@@ -1421,7 +1421,9 @@
   }
 
   /* ws:type (start) */
-
+  @media (max-width: 640px) {
+    .standard-ticks { display: none; }
+  }
   /* ws:type (end) */
 
   /* ---- */
@@ -1694,7 +1696,12 @@
 <div id="strength-chart-mount"></div>
 
 <!-- Strength Standards Gauges -->
-<div id="standards-mount"></div>
+<details class="insights-section">
+  <summary><strong>Strength standards</strong></summary>
+  <div class="insights-body">
+    <div id="standards-mount"></div>
+  </div>
+</details>
 
 <!-- Insights & history (moved from This Week tab, progress-tracking content lives with the Plan) -->
 <h2 id="insights" style="margin-top:2.5rem;">Insights &amp; History</h2>
@@ -2904,9 +2911,14 @@
     opts = opts || {};
     var anchor = opts.anchor || 'middle';
     var fill = opts.fill || '#6c757d';
-    var size = opts.size || 10;
+    var size = opts.size || 11;
     var dy = opts.dy || '0.35em';
     return '<text x="' + x + '" y="' + y + '" text-anchor="' + anchor + '" fill="' + fill + '" font-size="' + size + '" dy="' + dy + '">' + text + '</text>';
+  }
+
+  // viewBox width close to the rendered width, so SVG font sizes are real pixels on phones
+  function chartW() {
+    return Math.max(280, Math.min(600, (document.documentElement.clientWidth || 690) - 90));
   }
 
   function svgEmptyState(w, h, msg) {
@@ -2946,7 +2958,7 @@
   // Note: all data.json strings are escaped via esc() before innerHTML interpolation
 
   (function renderVolumeChart() {
-    var W = 600, H = 160, pad = { top: 15, right: 20, bottom: 35, left: 40 };
+    var W = chartW(), H = 160, pad = { top: 15, right: 12, bottom: 35, left: 36 };
     var weekKeys = [];
     var weekData = [];
     weeks.forEach(function(entries, wsISO) {
@@ -2970,14 +2982,14 @@
     var xScale = scaleLinear(0, weekKeys.length, pad.left, W - pad.right);
     var yScale = scaleLinear(0, yMax, H - pad.bottom, pad.top);
     var barW = Math.min(40, (W - pad.left - pad.right) / weekKeys.length * 0.6);
-    var labelStep = Math.max(1, Math.ceil(weekKeys.length * 22 / (W - pad.left - pad.right)));
+    var labelStep = Math.max(1, Math.ceil(weekKeys.length * 26 / (W - pad.left - pad.right)));
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
     ticks.forEach(function(t) {
       var y = yScale(t);
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
-      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 9 }));
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11 }));
     });
 
     weekData.forEach(function(d, i) {
@@ -2997,11 +3009,11 @@
         parts.push(svgBar(x, barY, barW, h, seg.color, 'Week ' + weekKeys[i] + ': ' + seg.label));
         cumY += h;
       });
-      if (i % labelStep === 0 || i === weekData.length - 1) {
-        parts.push(svgLabel(cx, H - pad.bottom + 14, weekKeys[i], { size: 10 }));
+      if (i % labelStep === 0 || (i === weekData.length - 1 && (i % labelStep) >= labelStep / 2)) {
+        parts.push(svgLabel(cx, H - pad.bottom + 14, weekKeys[i], { size: 11 }));
       }
     });
-    parts.push(svgLabel(pad.left - 6, H - pad.bottom + 14, 'Wk', { anchor: 'end', size: 9 }));
+    parts.push(svgLabel(pad.left - 6, H - pad.bottom + 14, 'Wk', { anchor: 'end', size: 11 }));
 
     parts.push('</svg>');
 
@@ -3033,7 +3045,7 @@
       return;
     }
 
-    var W = 600, H = 180, pad = { top: 20, right: 55, bottom: 35, left: 50 };
+    var W = chartW(), H = 180, pad = { top: 20, right: 40, bottom: 35, left: 40 };
     var tW = athlete.targetWeight, tBF = athlete.targetBodyFatPct;
 
     var weights = sorted.map(function(e) { return e.weight; });
@@ -3054,18 +3066,18 @@
     wTicks.forEach(function(t) {
       var y = yW(t);
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
-      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 9, fill: '#0f3460' }));
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11, fill: '#0f3460' }));
     });
 
     if (yBF) {
       bfTicks.forEach(function(t) {
-        parts.push(svgLabel(W - pad.right + 6, yBF(t), t + '%', { anchor: 'start', size: 9, fill: '#e94560' }));
+        parts.push(svgLabel(W - pad.right + 6, yBF(t), t + '%', { anchor: 'start', size: 11, fill: '#e94560' }));
       });
     }
 
     function targetLine(y, color, text) {
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="' + color + '" stroke-width="1" stroke-dasharray="4,3" opacity="0.7"/>');
-      parts.push(svgLabel(pad.left + 4, y - 6, text, { anchor: 'start', size: 8, fill: color }));
+      parts.push(svgLabel(pad.left + 4, y - 6, text, { anchor: 'start', size: 11, fill: color }));
     }
     if (tW) targetLine(yW(tW), '#0f3460', 'target ' + tW + ' lb');
     if (yBF && tBF) targetLine(yBF(tBF), '#e94560', 'target ' + tBF + '%');
@@ -3084,7 +3096,7 @@
     }
 
     monthTicks(d0, d1).forEach(function(t) {
-      parts.push(svgLabel(xScale(t.x), H - pad.bottom + 14, t.label, { size: 9 }));
+      parts.push(svgLabel(xScale(t.x), H - pad.bottom + 14, t.label, { size: 11 }));
     });
 
     parts.push('</svg>');
@@ -3138,7 +3150,7 @@
       return;
     }
 
-    var W = 600, H = 200, pad = { top: 20, right: 20, bottom: 35, left: 50 };
+    var W = chartW(), H = 200, pad = { top: 20, right: 12, bottom: 35, left: 40 };
 
     var allVals = [];
     Object.keys(liftByWeek).forEach(function(name) {
@@ -3158,7 +3170,7 @@
     yTicks.forEach(function(t) {
       var y = yScale(t);
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
-      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 9 }));
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11 }));
     });
 
     Object.keys(keyLifts).forEach(function(name) {
@@ -3190,11 +3202,11 @@
       }
     });
 
-    var tickStep = Math.max(1, Math.ceil((xMax - xMin + 1) * 22 / (W - pad.left - pad.right)));
+    var tickStep = Math.max(1, Math.ceil((xMax - xMin + 1) * 26 / (W - pad.left - pad.right)));
     for (var wk = xMin; wk <= xMax; wk += tickStep) {
-      parts.push(svgLabel(xScale(wk), H - pad.bottom + 14, wk, { size: 10 }));
+      parts.push(svgLabel(xScale(wk), H - pad.bottom + 14, wk, { size: 11 }));
     }
-    parts.push(svgLabel(pad.left - 6, H - pad.bottom + 14, 'Wk', { anchor: 'end', size: 9 }));
+    parts.push(svgLabel(pad.left - 6, H - pad.bottom + 14, 'Wk', { anchor: 'end', size: 11 }));
 
     parts.push('</svg>');
 
@@ -3240,7 +3252,6 @@
     }
 
     var html = '<div class="standards-section">' +
-      '<h3>Strength Standards</h3>' +
       '<p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem;">' +
       'Where your lifts rank among all male lifters at your body weight (' + Math.round(bw) + ' lbs). ' +
       'Based on <a href="https://strengthlevel.com/strength-standards" target="_blank" style="color:var(--accent2)">strengthlevel.com</a> data.</p>';
@@ -3341,7 +3352,7 @@
     var painEntries = activityLog.filter(function(e) { return e.achillesPain != null; });
     if (painEntries.length < 2) return;
 
-    var W = 600, H = 120, pad = { top: 15, right: 20, bottom: 30, left: 40 };
+    var W = chartW(), H = 120, pad = { top: 15, right: 12, bottom: 30, left: 32 };
 
     painEntries.sort(function(a, b) { return a.date < b.date ? -1 : 1; });
     var vals = painEntries.map(function(e) { return e.achillesPain; });
@@ -3357,12 +3368,12 @@
     yTicks.forEach(function(t) {
       var y = yScale(t);
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
-      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 9 }));
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11 }));
     });
 
     var refY = yScale(5);
     parts.push('<line x1="' + pad.left + '" y1="' + refY + '" x2="' + (W - pad.right) + '" y2="' + refY + '" stroke="#fd7e14" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>');
-    parts.push(svgLabel(W - pad.right + 4, refY, 'limit', { anchor: 'start', size: 8, fill: '#fd7e14' }));
+    parts.push(svgLabel(W - pad.right, refY - 8, 'limit', { anchor: 'end', size: 11, fill: '#a84300' }));
 
     var pts = painEntries.map(function(e) { return [xScale(dayNum(e.date)), yScale(e.achillesPain)]; });
     var labels = painEntries.map(function(e) { return e.date + ' ' + esc(e.activity || '') + ': pain ' + e.achillesPain + '/10'; });
@@ -3370,7 +3381,7 @@
     parts.push(svgDots(pts, '#fd7e14', 3, labels));
 
     monthTicks(d0, d1).forEach(function(t) {
-      parts.push(svgLabel(xScale(t.x), H - pad.bottom + 12, t.label, { size: 9 }));
+      parts.push(svgLabel(xScale(t.x), H - pad.bottom + 12, t.label, { size: 11 }));
     });
 
     parts.push('</svg>');
@@ -3998,7 +4009,7 @@
       return;
     }
 
-    var W = 600, H = 220, pad = { top: 30, right: 55, bottom: 45, left: 55 };
+    var W = chartW(), H = 220, pad = { top: 42, right: 40, bottom: 45, left: 40 };
 
     var points = sorted.map(function(e) {
       var fat = +(e.weight * e.bodyFatPct / 100).toFixed(1);
@@ -4023,21 +4034,21 @@
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
-    parts.push('<text x="' + (W/2) + '" y="16" text-anchor="middle" font-size="12" font-weight="600" fill="#0f3460">Lean Mass + Fat Mass over time</text>');
+    parts.push('<text x="' + (W/2) + '" y="14" text-anchor="middle" font-size="12" font-weight="600" fill="#0f3460">Lean Mass + Fat Mass over time</text>');
 
     leanTicks.forEach(function(t) {
       var y = yLean(t);
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
-      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 9, fill: '#2e7d32' }));
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11, fill: '#2e7d32' }));
     });
 
     fatTicks.forEach(function(t) {
       var y = yFat(t);
-      parts.push(svgLabel(W - pad.right + 6, y, t, { anchor: 'start', size: 9, fill: '#e94560' }));
+      parts.push(svgLabel(W - pad.right + 6, y, t, { anchor: 'start', size: 11, fill: '#e94560' }));
     });
 
-    parts.push('<text x="10" y="' + (pad.top - 10) + '" font-size="9" fill="#2e7d32" font-weight="600">Lean (lb)</text>');
-    parts.push('<text x="' + (W - 45) + '" y="' + (pad.top - 10) + '" font-size="9" fill="#e94560" font-weight="600">Fat (lb)</text>');
+    parts.push('<text x="4" y="' + (pad.top - 10) + '" font-size="11" fill="#2e7d32" font-weight="600">Lean (lb)</text>');
+    parts.push('<text x="' + (W - 4) + '" y="' + (pad.top - 10) + '" text-anchor="end" font-size="11" fill="#e94560" font-weight="600">Fat (lb)</text>');
 
     var leanPts = points.map(function(p, i) { return [xScale(i), yLean(p.lean)]; });
     var leanLabels = points.map(function(p) { return p.date + ': ' + p.lean + ' lb lean'; });
@@ -4049,10 +4060,13 @@
     parts.push(svgLine(fatPts, '#e94560'));
     parts.push(svgDots(fatPts, '#e94560', 4, fatLabels));
 
+    var dateStep = Math.max(1, Math.ceil(points.length * 34 / (W - pad.left - pad.right)));
     points.forEach(function(p, i) {
+      var lastFits = (points.length - 1) % dateStep >= dateStep / 2;
+      if (i % dateStep !== 0 && !(i === points.length - 1 && lastFits)) return;
       var d = new Date(p.date + 'T00:00:00');
       var label = (d.getMonth() + 1) + '/' + d.getDate();
-      parts.push(svgLabel(xScale(i), H - pad.bottom + 14, label, { size: 9 }));
+      parts.push(svgLabel(xScale(i), H - pad.bottom + 14, label, { size: 11 }));
     });
 
     parts.push('</svg>');

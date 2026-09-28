@@ -1427,6 +1427,11 @@
     position: absolute;
     transform: translateX(-50%);
   }
+  .standard-zone .zone-short { display: none; }
+  @media (max-width: 700px) {
+    .standard-zone .zone-full { display: none; }
+    .standard-zone .zone-short { display: inline; }
+  }
   .standard-formula-note {
     font-size: 0.72rem;
     color: var(--text-muted);
@@ -3373,12 +3378,15 @@
       var breakpoints = [0].concat(std.ratios, [gaugeMax]);
       var zoneLabels = ['Untrained'].concat(levelNames);
       var zoneColors = ['#aaa'].concat(levelColors);
+      var zoneShort = ['Unt', 'Beg', 'Nov', 'Int', 'Adv', 'Elite'];
 
       var zones = '';
       for (var z = 0; z < zoneLabels.length; z++) {
         var widthPct = ((breakpoints[z + 1] - breakpoints[z]) / gaugeMax * 100).toFixed(1);
         zones += '<div class="standard-zone" style="width:' + widthPct + '%;background:' + zoneColors[z] + ';">' +
-          (parseFloat(widthPct) > 12 ? zoneLabels[z] : '') + '</div>';
+          (parseFloat(widthPct) > 9
+            ? '<span class="zone-full">' + zoneLabels[z] + '</span><span class="zone-short">' + zoneShort[z] + '</span>'
+            : '') + '</div>';
       }
 
       // Current marker position

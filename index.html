@@ -2450,11 +2450,14 @@
         d.setDate(d.getDate() - d.getDay());
         byWeek[d.getTime()] = e.weight;
       });
-    var w = Object.keys(byWeek).sort(function(a, b) { return a - b; }).map(function(k) { return byWeek[k]; });
+    var keys = Object.keys(byWeek).map(Number).sort(function(a, b) { return a - b; });
+    var w = keys.map(function(k) { return byWeek[k]; });
     var n = w.length;
     if (n < 2) return '';
     var diff = w[n - 1] - w[n - 2];
-    if (n >= 3) {
+    // Three readings in back-to-back weeks; a skipped week breaks the run.
+    var adj = function(i) { return Math.round((keys[i] - keys[i - 1]) / 864e5) === 7; };
+    if (n >= 3 && adj(n - 1) && adj(n - 2)) {
       var d2 = w[n - 2] - w[n - 3];
       if (diff < 0 && d2 < 0) return 'trending down';
       if (diff > 0 && d2 > 0) return 'trending up';

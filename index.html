@@ -547,24 +547,6 @@
     color: var(--text-muted);
   }
 
-  /* Nutrition grid */
-  .nutrition-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    margin: 0.75rem 0 1rem;
-  }
-  .nutrition-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0.75rem;
-    background: var(--bg-alt);
-    border-radius: 4px;
-    font-size: 0.85rem;
-  }
-  .nutrition-item .label { color: var(--text-muted); }
-  .nutrition-item .value { font-weight: 700; }
-
   /* Signals table */
   .signal-row {
     display: flex;
@@ -910,11 +892,6 @@
 
     /* Strength targets grid: stack on mobile */
     .targets-grid {
-      grid-template-columns: 1fr;
-    }
-
-    /* Nutrition grid: stack on mobile */
-    .nutrition-grid {
       grid-template-columns: 1fr;
     }
 
@@ -1527,11 +1504,8 @@
 <!-- Modified Week Plan (rendered from data.json when active, replaces the static grid above) -->
 <div id="modified-week-mount"></div>
 
-<!-- Today's Stats Strip (compact: cal target, week counts, achilles trend) -->
+<!-- Today's Stats Strip (compact: week counts, achilles trend) -->
 <div id="today-coaching-mount"></div>
-
-<!-- Nutrition Goals Progress (this week vs Option B targets) -->
-<div id="nutrition-progress-mount"></div>
 
 <!-- Activity Log (stays visible by default; already compacted to current week) -->
 <div id="activity-log-mount"></div>
@@ -1818,50 +1792,10 @@
 
 <!-- NUTRITION -->
 <details class="insights-section">
-<summary><strong>Body Composition &amp; Nutrition</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>Body Composition</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body">
-<h2 id="nutrition">Body Composition &amp; Nutrition</h2>
+<h2 id="nutrition">Body Composition</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Target: ~15% BF (~205-210 lbs) over 6-9 months via gradual recomposition. No aggressive cuts; protect game performance and recovery.</p>
-
-<div class="nutrition-grid">
-  <div class="nutrition-item"><span class="label">Protein (daily)</span><span class="value">160-220g (1.6-2.2 g/kg)</span></div>
-  <div class="nutrition-item"><span class="label">Sodium (sport/training day)</span><span class="value">3,500-5,000 mg</span></div>
-  <div class="nutrition-item"><span class="label">Sodium (rest day)</span><span class="value">2,500-3,500 mg</span></div>
-  <div class="nutrition-item"><span class="label">Hydration (daily)</span><span class="value">3L+ (more game days)</span></div>
-  <div class="nutrition-item"><span class="label">Creatine</span><span class="value">5g/day, every day</span></div>
-  <div class="nutrition-item"><span class="label">Sleep</span><span class="value">7.5-9 hrs, individualized</span></div>
-</div>
-
-<div class="info-box">
-  <strong>Protein Distribution</strong>
-  Target ~0.4 g/kg per meal across 4 meals (~40g each). Spreading it across the day builds more muscle than the same total in fewer meals. The payoff for more protein tops out around 1.62 g/kg a day, with some benefit up to about 2.2 g/kg for certain people. Full detail: <code>knowledge/protein-distribution.md</code>.
-</div>
-
-<div class="info-box">
-  <strong>Sodium is athlete-calibrated, not general-population</strong>
-  The standard 2,300 mg/day sodium ceiling is built for a sedentary adult, not an athlete. You lose 750-2,000 mg of sodium in a 60-90 min game. For a non-hypertensive athlete: rest day 2,500-3,500 mg, sport day 3,500-5,000 mg, and don't make a habit of running past about 5,500-6,000 mg. A single big salty meal shows up as a scale spike the next morning &mdash; that's water, not fat, and it clears in 1-3 days. Full detail: <code>knowledge/sodium-hydration.md</code>.
-</div>
-
-<div class="info-box">
-  <strong>Carb Timing</strong>
-  Higher carbs on game days and lifting days. Lower carbs on rest days. This fuels performance without excess. Which days those are changes with the season, so read them off the current week rather than from a fixed list.
-</div>
-
-<div class="info-box">
-  <strong>The "anabolic window" is 4-6 hours, not 30 minutes</strong>
-  The post-workout window is wider than gym culture makes it sound. Your total daily protein, and how you spread it across the day, matter far more than hitting a tight window right after training. A protein meal within a couple hours of training is plenty. Full detail: <code>knowledge/protein-distribution.md</code>.
-</div>
-
-<div class="info-box warning">
-  <strong>Alcohol cost</strong>
-  Alcohol after training cuts your muscle-building response by roughly a quarter, even if you eat protein with it. More drinks cost more. Three or four drinks will also wreck your REM sleep in the second half of the night. Cap it at 1-2 drinks on a training day, and stop at least 3 hours before bed. Full detail: <code>knowledge/recovery-sleep.md</code>.
-</div>
-
-<div class="info-box">
-  <strong>Nutrition goals retired (Aug 10, 2026)</strong>
-  The 3-day calorie-anchor goal and the restaurant-meal cap were both withdrawn at the Week 23 review. Neither had a logged data point in 91 days, and recalibrating a target nobody measures is bookkeeping rather than intervention. No calorie, protein, or meal targets are asserted anywhere in the program now.
-  <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">Body composition is still tracked, via scale weight and body-fat readings in <code>bodyLog</code>, and the 210 lb / 15% targets are unchanged. That is now the only lens on the recomposition goal. The reasoning behind those old targets is still saved in <code>data.json athlete.nutritionGoals.supersededGoals</code>, in case intake tracking ever comes back. The reference material below stays as background, not as an active prescription.</p>
-</div>
 
 <div class="info-box success">
   <strong>Why Recomp Matters for Your Vertical</strong>
@@ -2164,27 +2098,10 @@
       }
     }
 
-    // Protein + calories from bodyLog (primary) or activityLog (fallback)
-    var proteinToday = '\u2014';
-    var caloriesToday = '\u2014';
-    var todayBodyLog = bodyLog.find(function(e) { return e.date === todayStr; });
-    if (todayBodyLog) {
-      if (todayBodyLog.proteinGrams != null) proteinToday = todayBodyLog.proteinGrams + 'g';
-      if (todayBodyLog.calories != null) caloriesToday = todayBodyLog.calories.toLocaleString();
-    }
-    if (proteinToday === '\u2014') {
-      var todayActivity = activityLog.filter(function(e) { return e.date === todayStr; });
-      for (var m = 0; m < todayActivity.length; m++) {
-        if (todayActivity[m].proteinGrams != null) { proteinToday = todayActivity[m].proteinGrams + 'g'; break; }
-      }
-    }
-
     var blockLabel = (mw && mw.blockLabel) ? mw.blockLabel : ('Phase ' + phase + ': ' + phaseNames[phase]);
     var parts = ['<strong>Week ' + weekNum + '</strong> ' + esc(blockLabel)];
     parts.push('<strong>Today:</strong> ' + esc(todayDesc));
     if (nextUpDesc) parts.push('<strong>Next:</strong> ' + esc(nextUpDesc));
-    parts.push('<strong>Protein:</strong> ' + proteinToday);
-    parts.push('<strong>Cal:</strong> ' + caloriesToday);
 
     document.getElementById('today-summary').innerHTML = parts.join(' &nbsp;\u00b7&nbsp; ');
   })();
@@ -2504,7 +2421,6 @@
 
   // Body Composition History \u2014 default-collapse to last 7 entries
   if (bodyLog.length > 0) {
-    var hasNutrition = bodyLog.some(function(e) { return e.sleepHours != null || e.proteinGrams != null || e.calories != null; });
     var BODY_LOG_DEFAULT_ROWS = 7;
     var totalBodyRows = bodyLog.length;
     var hiddenCount = Math.max(0, totalBodyRows - BODY_LOG_DEFAULT_ROWS);
@@ -2517,15 +2433,9 @@
       var wCell = w != null ? w : '\u2014';
       var hideClass = idx < hiddenCount ? ' class="body-log-old" style="display:none;"' : '';
       var row = '<tr' + hideClass + '><td>' + esc(entry.date) + '</td><td>' + wCell + '</td><td>' + bfCell + '</td><td>' + leanMass + '</td><td>' + fatMass + '</td>';
-      if (hasNutrition) {
-        row += '<td>' + (entry.sleepHours != null ? entry.sleepHours + 'h' : '\u2014') + '</td>';
-        row += '<td>' + (entry.proteinGrams != null ? entry.proteinGrams + 'g' : '\u2014') + '</td>';
-        row += '<td>' + (entry.calories != null ? entry.calories.toLocaleString() : '\u2014') + '</td>';
-      }
       return row + '</tr>';
     });
     var headers = '<th>Date</th><th>Weight</th><th>Body Fat %</th><th>Lean Mass</th><th>Fat Mass</th>';
-    if (hasNutrition) headers += '<th>Sleep</th><th>Protein</th><th>Calories</th>';
     var toggleBtn = hiddenCount > 0
       ? '<button class="show-all-btn" id="body-log-toggle">Show all ' + totalBodyRows + ' entries</button>'
       : '';
@@ -3601,9 +3511,6 @@
             '<div class="log-form-group"><label>Weight (lbs)</label><input type="number" id="log-body-weight" step="0.1" placeholder="221"></div>' +
             '<div class="log-form-group"><label>Body Fat %</label><input type="number" id="log-body-bf" step="0.1" placeholder="23.3"></div></div></div>' +
 
-        '<div class="log-form-row" style="margin-top:0.75rem">' +
-          '<div class="log-form-group"><label>Sleep (hours)</label><input type="number" id="log-sleep" step="0.5" placeholder="7.5"></div>' +
-          '<div class="log-form-group"><label>Protein (grams)</label><input type="number" id="log-protein" step="5" placeholder="180"></div></div>' +
         '<div class="log-form-group"><label>Notes</label><textarea id="log-notes" placeholder="How did it feel?"></textarea></div>' +
 
         '<button class="log-submit" onclick="window._submitLog()">Log Activity</button>' +
@@ -3698,8 +3605,6 @@
     function buildEntry() {
       var type = document.getElementById('log-type').value;
       var entry = { date: document.getElementById('log-date').value, type: type };
-      var sleep = document.getElementById('log-sleep').value;
-      var protein = document.getElementById('log-protein').value;
       var notes = document.getElementById('log-notes').value.trim();
 
       if (type === 'training') {
@@ -3724,8 +3629,6 @@
         entry.activity = 'Recovery day';
         entry.details = document.getElementById('log-recovery-details').value.trim();
       }
-      if (sleep) entry.sleepHours = parseFloat(sleep);
-      if (protein) entry.proteinGrams = parseInt(protein, 10);
       if (notes) entry.notes = notes;
       return entry;
     }
@@ -3734,13 +3637,9 @@
       var e = { date: document.getElementById('log-date').value };
       var w = document.getElementById('log-body-weight').value;
       var bf = document.getElementById('log-body-bf').value;
-      var sleep = document.getElementById('log-sleep').value;
-      var protein = document.getElementById('log-protein').value;
       var notes = document.getElementById('log-notes').value.trim();
       if (w) e.weight = parseFloat(w);
       if (bf) e.bodyFatPct = parseFloat(bf);
-      if (sleep) e.sleepHours = parseFloat(sleep);
-      if (protein) e.proteinGrams = parseInt(protein, 10);
       if (notes) e.notes = notes;
       return e;
     }
@@ -3766,9 +3665,8 @@
       } else if (type === 'recovery') {
         if (!document.getElementById('log-recovery-details').value.trim()) errors.push('Recovery details are required');
       } else if (type === 'body') {
-        if (!document.getElementById('log-body-weight').value && !document.getElementById('log-body-bf').value
-            && !document.getElementById('log-sleep').value && !document.getElementById('log-protein').value)
-          errors.push('Enter at least one field (weight, body fat, sleep, or protein)');
+        if (!document.getElementById('log-body-weight').value && !document.getElementById('log-body-bf').value)
+          errors.push('Enter weight or body fat');
       }
       return errors;
     }
@@ -3789,8 +3687,6 @@
         var parts = [];
         if (entryData.weight) parts.push(entryData.weight + ' lbs');
         if (entryData.bodyFatPct) parts.push(entryData.bodyFatPct + '% BF');
-        if (entryData.proteinGrams) parts.push(entryData.proteinGrams + 'g protein');
-        if (entryData.sleepHours) parts.push(entryData.sleepHours + 'h sleep');
         commitMsg = 'Log body stats: ' + (parts.length ? parts.join(', ') : 'check-in') + ' \u2014 ' + entryData.date;
       } else {
         commitMsg = 'Log ' + type + ': ' + entryData.activity + (entryData.duration ? ' ' + entryData.duration : '') + ' \u2014 ' + entryData.date;
@@ -3928,25 +3824,11 @@
     }
   })();
 
-  // --- Today's Stats Strip (compact supplementary data: cal target, week counts, achilles) ---
+  // --- Today's Stats Strip (compact supplementary data: week counts, achilles) ---
   // Day type / plan summary / exercise checklist now live in the Today Card above.
   (function todaysStatsStrip() {
     var mount = document.getElementById('today-coaching-mount');
     if (!mount) return;
-
-    var dayOfWeek = today.getDay();
-    var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-
-    var goalsObj = (data.athlete && data.athlete.nutritionGoals) ? data.athlete.nutritionGoals : null;
-    var anchorDays = [];
-    if (goalsObj && goalsObj.goals) {
-      goalsObj.goals.forEach(function(g) {
-        if (g.anchorDays) anchorDays = anchorDays.concat(g.anchorDays);
-      });
-    }
-    var isAnchor = anchorDays.indexOf(dayNames[dayOfWeek]) >= 0;
-    // Nutrition goals retired 2026-08-10 (Wk 23 review); the summary bar no longer
-    // asserts a calorie target. anchorDays stays wired so a future goal set revives it.
 
     var thisWeekSport = 0, thisWeekTraining = 0;
     activityLog.forEach(function(e) {
@@ -3966,94 +3848,10 @@
       ? recentAchilles.reverse().map(function(a) { return a.pain + '/10'; }).join(' → ')
       : 'no recent data';
 
-    var anchorBadge = isAnchor ? ' <span style="color:var(--warning);font-size:0.7rem;font-weight:bold;">● DEFICIT ANCHOR</span>' : '';
-
     mount.innerHTML =
       '<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.8rem;color:var(--text-muted);padding:0.5rem 0;margin-bottom:1rem;border-bottom:1px dashed var(--border);">' +
-        (anchorBadge ? '<span>' + anchorBadge + '</span>' : '') +
         '<span><strong style="color:var(--text);">This week:</strong> ' + thisWeekTraining + ' lift · ' + thisWeekSport + ' game</span>' +
         '<span><strong style="color:var(--text);">Recent achilles:</strong> ' + achillesHTML + '</span>' +
-      '</div>';
-  })();
-
-  // --- Nutrition Goals Progress Tracker ---
-  (function nutritionProgress() {
-    var mount = document.getElementById('nutrition-progress-mount');
-    if (!mount) return;
-    var goalsObj = (data.athlete && data.athlete.nutritionGoals) ? data.athlete.nutritionGoals : null;
-    if (!goalsObj || !goalsObj.goals) return;
-
-    var today = new Date();
-    var dayOfWeek = today.getDay();
-    var sundayDate = new Date(today);
-    sundayDate.setDate(today.getDate() - dayOfWeek);
-    var weekDates = [];
-    for (var i = 0; i < 7; i++) {
-      var d = new Date(sundayDate);
-      d.setDate(sundayDate.getDate() + i);
-      weekDates.push(d.toISOString().slice(0,10));
-    }
-
-    var dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    var anchorIdx = [1, 4, 6];
-
-    var bodyByDate = {};
-    bodyLog.forEach(function(b) { bodyByDate[b.date] = b; });
-
-    var anchorRowsHTML = anchorIdx.map(function(di) {
-      var dateStr = weekDates[di];
-      var dayName = dayNames[di];
-      var b = bodyByDate[dateStr];
-      var cal = (b && b.calories != null) ? b.calories : null;
-      var isFuture = new Date(dateStr + 'T23:59:59') > today;
-      var status, statusColor;
-      if (isFuture && !cal) { status = 'upcoming'; statusColor = 'var(--text-muted)'; }
-      else if (!cal) { status = 'no data'; statusColor = 'var(--warning)'; }
-      else if (cal >= 2300 && cal <= 2500) { status = 'on target'; statusColor = 'var(--success)'; }
-      else if (cal < 2300) { status = 'under target'; statusColor = 'var(--accent2)'; }
-      else { status = 'over target (+' + (cal - 2500) + ')'; statusColor = 'var(--warning)'; }
-      return '<tr>' +
-        '<td>' + dayName + ' ' + dateStr.slice(5) + '</td>' +
-        '<td>' + (cal != null ? cal + ' cal' : '-') + '</td>' +
-        '<td style="color:' + statusColor + ';font-weight:500;">' + status + '</td>' +
-      '</tr>';
-    }).join('');
-
-    var restaurantKeywords = /panda express|chick & hawk|chick and hawk|in-n-out|mcdonald|taco bell|chipotle|galley|crack taco|el pueblo|restaurant|nomade|n[oó]made|jojo|cardiff|1\.5 pints|buffalo wings|hero sandwich/i;
-    var restaurantMealsThisWeek = 0;
-    var restaurantDetails = [];
-    bodyLog.forEach(function(b) {
-      if (weekDates.indexOf(b.date) < 0) return;
-      if (b.notes && restaurantKeywords.test(b.notes)) {
-        restaurantMealsThisWeek++;
-        restaurantDetails.push(b.date.slice(5));
-      }
-    });
-
-    var anchorsHit = 0;
-    anchorIdx.forEach(function(di) {
-      var dateStr = weekDates[di];
-      var b = bodyByDate[dateStr];
-      if (b && b.calories != null && b.calories <= 2500) anchorsHit++;
-    });
-
-    var restaurantColor = restaurantMealsThisWeek <= 3 ? 'var(--success)' : 'var(--warning)';
-
-    mount.innerHTML =
-      '<h3 style="margin-top:1.5rem;">Nutrition Goals (Option B)</h3>' +
-      '<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Week of ' + weekDates[0].slice(5) + ' &ndash; ' + weekDates[6].slice(5) + ' &middot; 3 deficit days at 2,300-2,500 + &le;3 restaurant meals.</p>' +
-      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:0.75rem;">' +
-        '<div class="info-box" style="margin:0;background:rgba(33,150,243,0.04);">' +
-          '<strong>Deficit-anchor compliance: ' + anchorsHit + ' / 3 hit</strong>' +
-          '<table style="margin-top:0.5rem;font-size:0.85rem;"><tbody>' + anchorRowsHTML + '</tbody></table>' +
-        '</div>' +
-        '<div class="info-box" style="margin:0;background:rgba(33,150,243,0.04);">' +
-          '<strong style="color:' + restaurantColor + ';">Restaurant meals: ' + restaurantMealsThisWeek + ' / 3</strong>' +
-          '<div style="font-size:0.85rem;margin-top:0.5rem;">' +
-            (restaurantDetails.length > 0 ? 'Dates: ' + restaurantDetails.join(', ') : 'None yet this week.') +
-          '</div>' +
-          '<div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;">Evidence: Hall 2019 Cell Metab; ISSN 2017.</div>' +
-        '</div>' +
       '</div>';
   })();
 

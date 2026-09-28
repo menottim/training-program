@@ -812,8 +812,8 @@
   .modified-day .md-next-up strong {
     color: var(--text);
   }
-  .tag-hotel { background: #fff3e0; color: #e65100; }
-  .tag-gym-deload { background: #e8f5e9; color: var(--success); }
+  .tag-hotel { background: #fff3e0; color: var(--caution-ink); }
+  .tag-gym-deload { background: #e8f5e9; color: #146c43; }
   .mw-log-banner {
     font-size: 0.75rem;
     color: #e65100;
@@ -1189,10 +1189,10 @@
     font-size: 0.7rem;
     font-weight: 600;
   }
-  .tag-game { background: #fde8ec; color: var(--accent); }
+  .tag-game { background: #fde8ec; color: var(--accent-ink); }
   .tag-train { background: #e8f0fe; color: var(--accent2); }
-  .tag-recovery { background: #e9ecef; color: var(--text-muted); }
-  .tag-rest { background: #f5f5f5; color: #aaa; }
+  .tag-recovery { background: #e9ecef; color: #495057; }
+  .tag-rest { background: #f5f5f5; color: #5c636a; }
 
   /* Progress log tables */
   .progress-log {
@@ -1433,6 +1433,117 @@
   /* ---- */
 
   /* ws:controls (start) */
+  /* One disclosure style: uppercase label, one CSS chevron, 44px hit area. */
+  .modified-day details.md-detail > summary,
+  details.today-card-details > summary,
+  .modified-week-banner details.mw-why > summary,
+  details.insights-section > summary,
+  .athlete-profile-toggle,
+  .show-all-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--accent2);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  .modified-day details.md-detail > summary,
+  details.today-card-details > summary,
+  .modified-week-banner details.mw-why > summary { width: fit-content; padding: 0 0.5rem 0 0; }
+  details.insights-section > summary strong { font-weight: 600; }
+  .athlete-profile summary { min-height: 44px; }
+  .show-all-btn { display: inline-flex; padding: 0 0.8rem; }
+  .modified-day details.md-detail > summary::-webkit-details-marker,
+  details.today-card-details > summary::-webkit-details-marker,
+  .modified-week-banner details.mw-why > summary::-webkit-details-marker { display: none; }
+  .modified-day details.md-detail > summary::before,
+  details.today-card-details > summary::before,
+  .modified-week-banner details.mw-why > summary::before,
+  .modified-day details.md-detail[open] > summary::before,
+  details.today-card-details[open] > summary::before { content: none; }
+  .modified-day details.md-detail > summary::after,
+  details.today-card-details > summary::after,
+  .modified-week-banner details.mw-why > summary::after,
+  details.insights-section > summary::after,
+  .athlete-profile-toggle::after {
+    content: "";
+    width: 0.4em;
+    height: 0.4em;
+    flex: none;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-25%) rotate(45deg);
+    transition: transform 0.2s;
+    color: inherit;
+  }
+  details.insights-section > summary::after { margin-left: auto; }
+  .modified-day details.md-detail[open] > summary::after,
+  details.today-card-details[open] > summary::after,
+  .modified-week-banner details.mw-why[open] > summary::after,
+  details.insights-section[open] > summary::after,
+  .athlete-profile[open] .athlete-profile-toggle::after { transform: translateY(25%) rotate(-135deg); }
+  .modified-day details.md-detail > summary:hover,
+  details.today-card-details > summary:hover,
+  .modified-week-banner details.mw-why > summary:hover,
+  details.insights-section > summary:hover,
+  .athlete-profile summary:hover .athlete-profile-toggle,
+  .show-all-btn:hover { color: var(--accent-ink); }
+  details > summary:focus-visible,
+  .show-all-btn:focus-visible,
+  .tab-btn:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+  .tab-btn:focus-visible { outline-color: #fff; outline-offset: -2px; }
+  .insights-hint { display: none; }
+
+  .tab-btn {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: var(--fs-label);
+  }
+
+  /* Tags: one pill everywhere, including day-type pills on week tiles. */
+  .tag, .log-table .tag, .modified-day .md-type {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .tag-rehab { background: #fff3e0; color: var(--caution-ink); }
+  .modified-day.type-training .md-type { background: #e8f0fe; color: var(--accent2); }
+  .modified-day.type-game .md-type { background: #fde8ec; color: var(--accent-ink); }
+  .modified-day.type-hotel .md-type,
+  .modified-day.type-rehab .md-type { background: #fff3e0; color: var(--caution-ink); }
+  .modified-day.type-gym-deload .md-type { background: #e8f5e9; color: #146c43; }
+  .modified-day.type-rest .md-type,
+  .modified-day.type-recovery .md-type { background: #e9ecef; color: #495057; }
+  .modified-day.md-done .md-type { background: #c8e6c9 !important; color: #1b5e20 !important; }
+  .achilles-protocol a { color: var(--caution-ink); border-bottom-color: var(--caution-ink); }
+
+  /* Exercise links: 44px tall hit area on phones. Vertical padding on an
+     inline box grows the tap target without moving the line, so the dotted
+     rule moves from border to text-decoration to stay under the text. */
+  @media (max-width: 640px) {
+    td.exercise a,
+    .today-card-checklist .ex-name a,
+    .achilles-protocol a {
+      padding: 14px 0;
+      border-bottom: 0;
+      text-decoration: underline dotted;
+      text-underline-offset: 3px;
+    }
+    .today-card-checklist .ex-name a { text-decoration-color: var(--text-muted); }
+    td.exercise a:hover, .achilles-protocol a:hover { text-decoration-color: var(--accent); }
+  }
 
   /* ws:controls (end) */
 
@@ -2377,7 +2488,8 @@
     if (!mw) return;
 
     var typeLabels = {
-      'game': 'Game', 'hotel': 'Hotel', 'gym-deload': 'Gym Deload', 'rest': 'Rest', 'rehab': 'Rehab'
+      'game': 'Game', 'training': 'Training', 'recovery': 'Recovery', 'hotel': 'Hotel',
+      'gym-deload': 'Gym Deload', 'rest': 'Rest', 'rehab': 'Rehab'
     };
 
     var todayStr = today.getFullYear() + '-' +
@@ -2422,7 +2534,7 @@
       var detailHTML = detailInner
         ? '<details class="md-detail"><summary>detail</summary>' + detailInner + '</details>'
         : '';
-      var typeLabel = d.status === 'done' ? '✓ Done' : (typeLabels[d.type] || d.type);
+      var typeLabel = d.status === 'done' ? '✓ Done' : (typeLabels[d.type] || String(d.type || '').replace(/^./, function(c) { return c.toUpperCase(); }));
       return '<div class="modified-day ' + typeClass + todayClass + doneClass + '">' +
         '<div class="md-head">' +
           '<div class="md-name">' + esc(d.day) + '</div>' +

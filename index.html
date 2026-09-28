@@ -493,19 +493,19 @@
 
   /* Info boxes */
   .info-box {
-    border-left: 4px solid var(--accent2);
+    border: 1px solid #c9d6f2;
     background: #f0f4ff;
     padding: 0.75rem 1rem;
     margin: 1rem 0;
-    border-radius: 0 6px 6px 0;
+    border-radius: 6px;
     font-size: 0.85rem;
   }
   .info-box.warning {
-    border-left-color: var(--warning);
+    border-color: #f5d3ae;
     background: #fff8f0;
   }
   .info-box.success {
-    border-left-color: var(--success);
+    border-color: #bfe3cb;
     background: #f0fff4;
   }
   .info-box strong {
@@ -608,7 +608,7 @@
     margin: 1rem 0;
   }
   .achilles-protocol h4 {
-    color: var(--warning);
+    color: var(--caution-ink);
     margin-bottom: 0.5rem;
   }
   .achilles-protocol ul {
@@ -625,37 +625,47 @@
     padding: 1rem;
     margin: 1rem 0;
   }
-  .deload-box h4 { color: var(--success); margin-bottom: 0.5rem; }
+  .deload-box h4 { color: #146c43; margin-bottom: 0.5rem; }
   .deload-box ul { margin-left: 1.25rem; font-size: 0.85rem; }
   .deload-box li { margin-bottom: 0.25rem; }
 
   /* Modified Week */
   .modified-week {
     margin: 1.5rem 0;
-    border: 2px solid var(--warning);
+    border: 1px solid #dee2e6;
     border-radius: 8px;
     overflow: hidden;
   }
   .modified-week-banner {
-    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    background: #f8f9fa;
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid #ffcc80;
+    border-bottom: 1px solid #dee2e6;
   }
   .modified-week-banner h3 {
-    color: #e65100;
+    color: #212529;
     margin: 0 0 0.25rem;
     font-size: 1rem;
   }
+  .modified-week-banner h3::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    background: var(--caution-ink);
+    vertical-align: 0.1em;
+  }
   .modified-week-banner p {
     font-size: 0.8rem;
-    color: #bf360c;
+    color: #212529;
     margin: 0;
     line-height: 1.4;
   }
   .modified-week-banner .mw-subtitle {
     font-size: 0.85rem;
     font-weight: 400;
-    color: #bf360c;
+    color: #212529;
     margin: 0;
     line-height: 1.4;
   }
@@ -816,9 +826,10 @@
   .tag-hotel { background: #fff3e0; color: #e65100; }
   .tag-gym-deload { background: #e8f5e9; color: var(--success); }
   .mw-log-banner {
-    font-size: 0.75rem;
-    color: #e65100;
-    background: #fff3e0;
+    font-size: var(--fs-label);
+    color: var(--caution-ink);
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
     padding: 4px 8px;
     border-radius: 4px;
     margin-bottom: 0.5rem;

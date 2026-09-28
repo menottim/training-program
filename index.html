@@ -3233,7 +3233,7 @@
       allWeeks.forEach(function(wn) {
         if (data[wn] != null) {
           pts.push([xScale(wn), yScale(data[wn])]);
-          labels.push('Wk ' + wn + ': ' + data[wn] + ' lbs');
+          labels.push('Week ' + wn + ': ' + data[wn] + ' lbs');
         }
       });
       if (pts.length >= 1) {
@@ -3242,13 +3242,15 @@
         var legendName = exerciseLinks[name]
           ? '<a href="' + esc(exerciseLinks[name]) + '" target="_blank">' + esc(name) + '</a>'
           : esc(name);
-        legendItems.push('<span class="chart-legend-item"><span class="chart-legend-dot" style="background:' + cfg.color + '"></span> ' + legendName + '</span>');
+        legendItems.push('<span class="chart-legend-item"><span class="chart-legend-dot" style="background:' + cfg.color + '"></span> ' + legendName + ' (target ' + cfg.target + ')</span>');
       }
     });
 
-    allWeeks.forEach(function(wn) {
-      parts.push(svgLabel(xScale(wn), H - pad.bottom + 14, 'Wk ' + wn, { size: 10 }));
-    });
+    var tickStep = Math.max(1, Math.ceil((xMax - xMin + 1) * 22 / (W - pad.left - pad.right)));
+    for (var wk = xMin; wk <= xMax; wk += tickStep) {
+      parts.push(svgLabel(xScale(wk), H - pad.bottom + 14, wk, { size: 10 }));
+    }
+    parts.push(svgLabel(pad.left - 6, H - pad.bottom + 14, 'Wk', { anchor: 'end', size: 9 }));
 
     parts.push('</svg>');
 
@@ -3257,7 +3259,7 @@
       '<h3>Strength Progression</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' + legendItems.join('') +
-        '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = 12-mo target</span>' +
+        '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = 5-rep target</span>' +
       '</div>');
   })();
 

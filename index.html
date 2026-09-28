@@ -1738,9 +1738,9 @@
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Bilateral management. Heavy Slow Resistance (HSR) works as well as the eccentric-only method, and it's easier to actually stick with. 3&times;/week, folded into training days.</p>
 
 <div class="achilles-protocol">
-  <h4>Protocol (3x/week: Wed, Fri, + 1 Recovery Day)</h4>
+  <h3>Protocol (3x/week: Wed, Fri, + 1 Recovery Day)</h3>
   <p style="font-size:0.85rem;margin-bottom:0.5rem;">3 sets per session, 6-second tempo (3s concentric / 3s eccentric). Include both <a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">seated</a> (bent-knee, soleus bias) and <a href="https://musclewiki.com/exercise/barbell-calf-raises" target="_blank">standing</a> (straight-knee, gastroc bias) variants. Optional: <a href="https://musclewiki.com/exercise/bodyweight-single-leg-calf-raise" target="_blank">single-leg heel drop</a> 3&times;15 on a lighter day for unilateral work.</p>
-  <h4>Progressive 12-week load</h4>
+  <h3>Progressive 12-week load</h3>
   <table style="font-size:0.85rem;">
     <thead><tr><th>Weeks</th><th>Load</th><th>Reps per set</th></tr></thead>
     <tbody>
@@ -1752,19 +1752,18 @@
     </tbody>
   </table>
   <p style="font-size:0.85rem;margin-top:0.5rem;"><strong>Heavy must be heavy.</strong> If every rep feels easy, add weight &mdash; slow tempo alone does not guarantee enough strain. Keep the working weight above 70% of your one-rep max across the set.</p>
-  <h4>What to do about pain</h4>
+  <h3>What to do about pain</h3>
   <ul>
     <li>Normal ache during loading, up to about 3/10, is fine &mdash; keep going.</li>
     <li>More than that, or still sore the next morning, means the load was too much. Back off and tell me so I can adjust it.</li>
     <li>Always <strong>step down</strong> from box jumps &mdash; never rebound.</li>
     <li>HSR stays at full load even during a deload. Tendons adapt on a months-long clock, not a weekly one.</li>
   </ul>
-  <h4>Worth trying</h4>
+  <h3>Worth trying</h3>
   <ul>
-    <li><strong>Collagen peptides or gelatin + vitamin C:</strong> 10-15g collagen/gelatin + ~50mg vit C, 30-60 min before loading. Early evidence, low cost to try.</li>
     <li><strong>ESWT</strong> if HSR plateaus at 12 weeks for a midportion (not insertional) tendon &mdash; paired with continued loading, not instead of it.</li>
   </ul>
-  <h4>Not recommended</h4>
+  <h3>Not recommended</h3>
   <ul>
     <li><strong>PRP injection.</strong> No better than a saline shot when added to loading.</li>
     <li><strong>GTN patches.</strong> Weak evidence, and a real headache side effect.</li>
@@ -1842,13 +1841,12 @@
 </div>
 </details>
 
-<!-- SUPPLEMENTS + LABS + CLINICAL WORKUP -->
+<!-- LABS + CLINICAL WORKUP -->
 <details class="insights-section">
-<summary><strong>Supplements, Labs &amp; Workup</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>Labs &amp; Workup</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body">
-<h2 id="supplements-labs">Supplements, Labs &amp; Workup</h2>
+<h2 id="labs">Labs &amp; Workup</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">The deep evidence for each item lives in the <a href="https://github.com/menottim/training-program/tree/main/knowledge" target="_blank"><code>knowledge/</code></a> directory. This panel shows where things stand right now.</p>
-<div id="supplements-mount"></div>
 <div id="hormone-labs-mount"></div>
 <div id="clinical-workup-mount"></div>
 </div>
@@ -1858,8 +1856,9 @@
 <details class="insights-section">
 <summary><strong>When the Plan Changes</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body" id="deload">
+<h2>When the Plan Changes</h2>
 <p style="font-size:0.85rem;margin-bottom:0.75rem;">Deloads and mid-week changes are reactive, not scheduled. I watch your RPE, sleep, pain and progress, and I adjust the week when something's off. You don't need to run that diagnosis yourself &mdash; just tell me when something feels different, and I'll handle the rest. Full detail: <code>knowledge/in-season-volume.md</code>.</p>
-<h4>What a deload actually changes</h4>
+<h3>What a deload actually changes</h3>
 <ul>
   <li>Volume drops roughly in half (4&times;5 becomes 2&times;5, 3&times;8 becomes 2&times;8).</li>
   <li>Weight stays about the same &mdash; dropping it further just costs you strength for no extra recovery.</li>
@@ -1876,8 +1875,7 @@
 </div><!-- /tab-ref -->
 
 <div class="footer">
-  <p>Program designed March 2026 &middot; Based on current sports medicine research &middot; Consult a physician before beginning</p>
-  <p style="margin-top:0.25rem;">Review and adjust every 6 weeks based on progress and how your body responds</p>
+  <p id="footer-updated"></p>
 </div>
 
 <script>
@@ -3889,42 +3887,9 @@
       '</div>';
   })();
 
-  // --- Supplements, Hormone Labs & Clinical Workup ---
-  (function supplementsAndLabs() {
+  // --- Hormone Labs & Clinical Workup ---
+  (function labsAndWorkup() {
     var athleteData = data.athlete || {};
-
-    var supsMount = document.getElementById('supplements-mount');
-    if (supsMount && athleteData.dailySupplements) {
-      var supsRows = athleteData.dailySupplements.map(function(s) {
-        return '<tr>' +
-          '<td><strong>' + esc(s.name) + '</strong></td>' +
-          '<td>' + esc(s.dose) + '</td>' +
-          '<td style="font-size:0.8rem;color:var(--text-muted);">' + esc(s.evidenceTier) + '</td>' +
-        '</tr>';
-      }).join('');
-      // "Why" column reads from the evidenceTier field, but shows plain-language reasoning, not a study citation.
-      var recipesHTML = '';
-      if (athleteData.defaultShakeRecipes) {
-        recipesHTML = '<h4 style="margin-top:1rem;">Default shake variants (all include 5g creatine + 5g psyllium)</h4>' +
-          '<table style="font-size:0.85rem;"><thead><tr><th>Variant</th><th>Macros</th><th>Ingredients</th></tr></thead><tbody>';
-        Object.keys(athleteData.defaultShakeRecipes).forEach(function(k) {
-          var r = athleteData.defaultShakeRecipes[k];
-          recipesHTML += '<tr><td><strong>' + esc(k) + '</strong></td><td>' + esc(r.approxMacros) + '</td><td style="font-size:0.8rem;">' + esc(r.ingredients) + '</td></tr>';
-        });
-        recipesHTML += '</tbody></table>';
-      }
-      var bdHTML = '';
-      if (athleteData.bloodDonation) {
-        var bd = athleteData.bloodDonation;
-        bdHTML = '<div class="info-box" style="margin-top:1rem;"><strong>Blood donation context:</strong> ' +
-          esc(bd.type) + ', ' + esc(bd.frequency) + '. Iron loss per donation: ' + esc(bd.ironLossPerDonation) + ' (annual: ' + esc(bd.annualIronLoss) + '). This is why the iron supplement is clinically appropriate.</div>';
-      }
-      supsMount.innerHTML =
-        '<h3 style="margin-top:1rem;">Daily Supplement Stack</h3>' +
-        '<table style="font-size:0.9rem;"><thead><tr><th>Supplement</th><th>Dose</th><th>Why</th></tr></thead><tbody>' + supsRows + '</tbody></table>' +
-        bdHTML +
-        recipesHTML;
-    }
 
     var hormMount = document.getElementById('hormone-labs-mount');
     if (hormMount && athleteData.testosteroneHistory) {
@@ -4077,6 +4042,13 @@
       '<div class="chart-container" style="margin-top:1rem;">' + parts.join('') + summaryHTML +
         '<div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;">Calculated from weight &times; BF%. Only plots dates where both metrics are logged. BIA scale fat percentages have ~2-4% typical variance per knowledge/body-composition-measurement.md; trend direction matters more than any single reading.</div>' +
       '</div>');
+  })();
+
+  // --- Footer: last logged date ---
+  (function renderFooterUpdated() {
+    var el = document.getElementById('footer-updated');
+    var last = activityLog.reduce(function(m, e) { return e.date > m ? e.date : m; }, '');
+    if (el && last) el.textContent = 'Updated ' + fmtDate(last);
   })();
 
 })();

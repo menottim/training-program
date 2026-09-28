@@ -13,7 +13,7 @@
     --bg-alt: #f8f9fa;
     --border: #dee2e6;
     --text: #212529;
-    --text-muted: #6c757d;
+    --text-muted: #5c636a;
     --success: #198754;
     --warning: #fd7e14;
     --accent-ink: #c0233c;
@@ -377,7 +377,7 @@
     font-weight: 600;
     font-size: 0.85rem;
   }
-  .goal:nth-child(1) { background: var(--accent); color: #fff; }
+  .goal:nth-child(1) { background: var(--accent-ink); color: #fff; }
   .goal:nth-child(2) { background: var(--accent2); color: #fff; }
   .goal:nth-child(3) { background: var(--primary); color: #fff; }
   .goal .priority {
@@ -434,20 +434,20 @@
     margin-bottom: 4px;
   }
   .day-card .day-type {
-    font-size: 0.65rem;
+    font-size: var(--fs-micro);
     padding: 2px 6px;
     border-radius: 3px;
     display: inline-block;
     margin-bottom: 4px;
   }
   .day-card.game { background: #fff3f3; border-color: var(--accent); }
-  .day-card.game .day-type { background: var(--accent); color: #fff; }
+  .day-card.game .day-type { background: var(--accent-ink); color: #fff; }
   .day-card.train { background: #f0f4ff; border-color: var(--accent2); }
   .day-card.train .day-type { background: var(--accent2); color: #fff; }
   .day-card.rest { background: var(--bg-alt); }
   .day-card.rest .day-type { background: #e9ecef; color: var(--text-muted); }
   .day-card .day-detail {
-    font-size: 0.65rem;
+    font-size: var(--fs-micro);
     color: var(--text-muted);
     line-height: 1.3;
   }
@@ -595,8 +595,8 @@
     border-radius: 12px;
   }
   .phase:nth-of-type(1) .phase-header { background: #e8f0fe; color: var(--accent2); }
-  .phase:nth-of-type(2) .phase-header { background: #fde8ec; color: var(--accent); }
-  .phase:nth-of-type(3) .phase-header { background: #e8f5e9; color: var(--success); }
+  .phase:nth-of-type(2) .phase-header { background: #fde8ec; color: var(--accent-ink); }
+  .phase:nth-of-type(3) .phase-header { background: #e8f5e9; color: #146c43; }
   .phase-body { padding: 1rem; }
 
   /* Achilles section */
@@ -676,7 +676,7 @@
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 600;
-    color: #e65100;
+    color: var(--caution-ink);
     list-style: none;
     display: inline-flex;
     align-items: center;
@@ -695,11 +695,11 @@
   }
   .modified-week-banner .mw-why-body {
     font-size: 0.8rem;
-    color: #bf360c;
+    color: var(--text);
     line-height: 1.4;
     margin-top: 0.5rem;
     padding-top: 0.5rem;
-    border-top: 1px solid #ffcc80;
+    border-top: 1px solid var(--border);
   }
   .modified-week-grid {
     display: grid;
@@ -722,12 +722,12 @@
     margin-bottom: 2px;
   }
   .modified-day .md-date {
-    font-size: 0.65rem;
+    font-size: var(--fs-micro);
     color: var(--text-muted);
     margin-bottom: 4px;
   }
   .modified-day .md-type {
-    font-size: 0.6rem;
+    font-size: var(--fs-micro);
     padding: 2px 6px;
     border-radius: 3px;
     display: inline-block;
@@ -743,7 +743,7 @@
   .modified-day .md-detail { margin-top: 4px; }
   .modified-day .md-detail summary {
     cursor: pointer;
-    font-size: 0.62rem;
+    font-size: var(--fs-micro);
     font-weight: 600;
     color: var(--accent2);
     list-style: none;
@@ -757,7 +757,7 @@
   .modified-day .md-detail[open] summary::before { content: "\25be "; }
   .modified-day .md-detail summary:hover { color: var(--accent); }
   .modified-day .md-long {
-    font-size: 0.65rem;
+    font-size: var(--fs-micro);
     color: var(--text-muted);
     line-height: 1.45;
     margin-top: 4px;
@@ -776,12 +776,12 @@
   .modified-day.type-rehab { background: #fff8e1; }
   .modified-day.type-rehab .md-type { background: var(--warning); color: #fff; }
   .modified-day.type-rehab .exercise-list li::before { color: var(--warning); }
-  .modified-day.type-rehab .exercise-list .ex-weight { color: #e65100; font-weight: 600; }
+  .modified-day.type-rehab .exercise-list .ex-weight { color: var(--caution-ink); font-weight: 600; }
   .modified-day .exercise-list {
     margin: 4px 0 0;
     padding: 0;
     list-style: none;
-    font-size: 0.6rem;
+    font-size: var(--fs-micro);
     line-height: 1.5;
     color: #555;
   }
@@ -813,7 +813,7 @@
     color: #2e7d32 !important;
   }
   .modified-day .md-next-up {
-    font-size: 0.6rem;
+    font-size: var(--fs-micro);
     color: var(--text-muted);
     margin-top: 6px;
     padding-top: 4px;
@@ -944,9 +944,9 @@
     position: absolute;
     top: 2px;
     right: 4px;
-    font-size: 0.5rem;
+    font-size: var(--fs-micro);
     font-weight: 700;
-    color: var(--accent);
+    color: var(--accent-ink);
     letter-spacing: 0.5px;
   }
 
@@ -1432,15 +1432,10 @@
     text-align: center;
   }
 
-  /* ws:type (start) */
   @media (max-width: 640px) {
     .standard-ticks { display: none; }
   }
-  /* ws:type (end) */
 
-  /* ---- */
-
-  /* ws:log (start) */
   /* Activity log on phones: each row is a stacked card, no sideways scroll */
   @media (max-width: 639px) {
     .log-table--activity { min-width: 0; margin: 0.5rem 0; }
@@ -1467,11 +1462,7 @@
     .log-notes-toggle--phone { display: none; }
   }
 
-  /* ws:log (end) */
 
-  /* ---- */
-
-  /* ws:controls (start) */
   /* One disclosure style: uppercase label, one CSS chevron, 44px hit area. */
   .modified-day details.md-detail > summary,
   details.today-card-details > summary,
@@ -1583,22 +1574,6 @@
     .today-card-checklist .ex-name a { text-decoration-color: var(--text-muted); }
     td.exercise a:hover, .achilles-protocol a:hover { text-decoration-color: var(--accent); }
   }
-
-  /* ws:controls (end) */
-
-  /* ---- */
-
-  /* ws:banner (start) */
-
-  /* ws:banner (end) */
-
-  /* ---- */
-
-  /* ws:copy (start) */
-
-  /* ws:copy (end) */
-
-  /* ---- */
 
   /* Print */
   @media print {
@@ -2361,7 +2336,7 @@
     statsHTML += '<div class="stat">' +
       '<div class="stat-value">' + s.cur + '</div>' +
       '<div class="stat-label">' + s.label + '</div>' +
-      '<div style="font-size:0.65rem;color:var(--text-muted);margin-top:2px;">\u2192 ' + s.tgt + '</div>' +
+      '<div style="font-size:var(--fs-label);color:var(--text-muted);margin-top:2px;">\u2192 ' + s.tgt + '</div>' +
     '</div>';
   });
 

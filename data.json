@@ -3328,6 +3328,76 @@
         }
       ],
       "notes": "All as prescribed. Deadlift 5+ set stopped at 5 reps. Seated calf raise weight challenging. No achilles or calf pain."
+    },
+    {
+      "date": "2026-09-25",
+      "type": "training",
+      "activity": "Bench, arms, core, calves (Fri Phase 3)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "3x5, set 3 = 5+",
+          "weight": "185 lbs",
+          "notes": "As prescribed, final set difficult"
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5",
+          "weight": "120 lbs"
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "3x5",
+          "weight": "150 lbs"
+        },
+        {
+          "name": "Barbell Overhead Press",
+          "sets": "1x5, 2x5",
+          "weight": "95/65/65 lbs",
+          "notes": "Swapped from prescribed DB OHP"
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "2x6-8",
+          "weight": "155 lbs",
+          "notes": "As prescribed, difficult"
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3x10",
+          "weight": "15 lb DBs"
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x10-12",
+          "weight": "40 lbs"
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "3x10-12",
+          "weight": "45 lbs"
+        }
+      ],
+      "achillesPain": 0,
+      "notes": "Cable Woodchop, Pallof Press and the single-leg calf raise HSR were skipped. No achilles or calf pain."
+    },
+    {
+      "date": "2026-09-27",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "20 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": ""
+    },
+    {
+      "date": "2026-09-27",
+      "type": "game",
+      "activity": "Hockey",
+      "duration": "60 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "Clean, no pain"
     }
   ],
   "scienceReviews": [

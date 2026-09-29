@@ -1639,6 +1639,78 @@
   /* ---- */
 
   /* ws:session (start) */
+  /* 5+ rep field on the reps-plus row, and the calm session-close line. */
+  .today-card-checklist .ex-reps {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 0.6rem;
+    margin-top: 0.35rem;
+  }
+  .today-card-checklist .ex-reps label {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--accent2);
+  }
+  .today-card-checklist .ex-reps input {
+    width: 4.5rem;
+    min-height: 44px;
+    padding: 0 0.6rem;
+    border: 1px solid var(--text-muted);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .today-card-checklist .ex-reps input:focus-visible { outline: 2px solid var(--accent2); outline-offset: 1px; }
+  .today-card-checklist .ex-reps input[aria-invalid="true"] { border-color: var(--caution-ink); border-width: 2px; }
+  .today-card-checklist .ex-reps-hint { font-size: 0.8125rem; color: var(--text-muted); }
+  .today-card-checklist .ex-reps input[aria-invalid="true"] + .ex-reps-hint { color: var(--caution-ink); }
+  .today-card-progress { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem; }
+  .today-card-progress.is-complete {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--text);
+    padding: 0.5rem 0;
+  }
+  .tc-copy {
+    min-height: 44px;
+    padding: 0 0.9rem;
+    border: 1px solid var(--accent2);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--accent2);
+    font: inherit;
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .tc-copy[hidden] { display: none; }
+  .tc-copy:hover { background: var(--bg-alt); }
+  .tc-copy:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+  .tc-copy-status { font-size: var(--fs-label); font-weight: 600; color: var(--success); }
+  .tc-copy-status:empty { display: none; }
+  .tc-copy-fallback {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--text-muted);
+    border-radius: 6px;
+    font: inherit;
+    font-size: 0.85rem;
+    color: var(--text);
+    background: var(--bg);
+    resize: vertical;
+  }
 
   /* ws:session (end) */
 
@@ -2436,26 +2508,72 @@
     var checkable = typeClass.indexOf('is-training') !== -1 &&
       todayDay && todayDay.exercises && todayDay.exercises.length > 0;
     var doneKey = 'tp-done-' + todayStr;
+    var repsKey = 'tp-reps-' + todayStr;
     var doneSet = {};
+    var repsMap = {};
     if (checkable) {
       try {
         var cutoff = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 14);
         for (var si = localStorage.length - 1; si >= 0; si--) {
           var sk = localStorage.key(si);
-          var m = sk && /^tp-done-(\d{4})-(\d{2})-(\d{2})$/.exec(sk);
+          var m = sk && /^tp-(?:done|reps)-(\d{4})-(\d{2})-(\d{2})$/.exec(sk);
           if (m && new Date(+m[1], +m[2] - 1, +m[3]) < cutoff) localStorage.removeItem(sk);
         }
         (JSON.parse(localStorage.getItem(doneKey)) || []).forEach(function(n) { doneSet[n] = true; });
+        repsMap = JSON.parse(localStorage.getItem(repsKey)) || {};
       } catch (e) { /* storage blocked: marks just won't persist */ }
     }
+    // The one reps-plus row ("5+" in sets or notes). Its count is a note for the
+    // athlete to send to the coach; nothing here logs it.
+    var plusEx = checkable ? todayDay.exercises.filter(function(ex) {
+      return /(^|\D)5\+/.test((ex.sets || '') + ' ' + (ex.notes || ''));
+    })[0] : null;
+    function plusReps() {
+      var n = plusEx && repsMap[plusEx.name];
+      return (Number.isInteger(n) && n >= 1 && n <= 10) ? n : null;
+    }
+    function allDone() {
+      return todayDay.exercises.every(function(ex) { return doneSet[ex.name]; });
+    }
     function doneCountText() {
+      if (allDone()) {
+        if (!plusEx) return 'Session done. Send the session.';
+        var r = plusReps();
+        return r ? 'Session done. Send the 5+ count: ' + plusEx.name + ' ' + r + (r === 1 ? ' rep.' : ' reps.')
+                 : 'Session done. Add the 5+ reps, then send the session.';
+      }
       var n = todayDay.exercises.filter(function(ex) { return doneSet[ex.name]; }).length;
       return n + ' of ' + todayDay.exercises.length + ' done';
+    }
+    function summaryText() {
+      var lines = [fullTodayName + ' ' + todayStr.slice(5).replace('-', '/') + ': session done'];
+      todayDay.exercises.forEach(function(ex) {
+        var t = exWeightInfo(ex).target;
+        lines.push('- ' + ex.name + (ex.sets ? ' ' + ex.sets : '') + (t ? ' @ ' + t : ''));
+      });
+      if (plusEx) lines.push('5+ set: ' + plusEx.name + ' ' + (plusReps() ? plusReps() + ' reps' : 'count not entered'));
+      return lines.join('\n');
+    }
+    function renderProgress() {
+      var box = mount.querySelector('.today-card-progress');
+      var done = allDone();
+      box.classList.toggle('is-complete', done);
+      box.querySelector('.tc-progress-text').textContent = doneCountText();
+      box.querySelector('.tc-copy').hidden = !done;
+      if (!done) {
+        box.querySelector('.tc-copy-status').textContent = '';
+        var fb = box.querySelector('.tc-copy-fallback');
+        if (fb) fb.remove();
+      }
     }
 
     var checklistHTML = '';
     if (todayDay && todayDay.exercises && todayDay.exercises.length > 0) {
-      checklistHTML = (checkable ? '<div class="today-card-progress" aria-live="polite">' + doneCountText() + '</div>' : '') +
+      checklistHTML = (checkable ? '<div class="today-card-progress' + (allDone() ? ' is-complete' : '') + '">' +
+          '<span class="tc-progress-text" aria-live="polite">' + esc(doneCountText()) + '</span>' +
+          '<button type="button" class="tc-copy"' + (allDone() ? '' : ' hidden') + '>Copy summary</button>' +
+          '<span class="tc-copy-status" role="status"></span>' +
+        '</div>' : '') +
         '<ul class="today-card-checklist' + (checkable ? ' is-checkable' : '') + '">' +
         todayDay.exercises.map(function(ex, idx) {
           var nameHTML = exerciseLinks[ex.name]
@@ -2474,6 +2592,14 @@
             note +
             hist;
           if (!checkable) return '<li>' + body + '</li>';
+          if (ex === plusEx) {
+            body += '<div class="ex-reps">' +
+              '<label for="tc-reps">5+ set reps</label>' +
+              '<input id="tc-reps" type="number" inputmode="numeric" min="1" max="10" step="1"' +
+                ' value="' + (plusReps() || '') + '" aria-describedby="tc-reps-hint">' +
+              '<span id="tc-reps-hint" class="ex-reps-hint">1 to 10, stop at the last clean rep</span>' +
+            '</div>';
+          }
           var isDone = !!doneSet[ex.name];
           return '<li' + (isDone ? ' class="is-done"' : '') + '>' +
             '<button type="button" class="ex-check" data-i="' + idx + '" aria-pressed="' + isDone + '"' +
@@ -2535,9 +2661,51 @@
         if (on) doneSet[name] = true; else delete doneSet[name];
         btn.setAttribute('aria-pressed', String(on));
         btn.parentNode.classList.toggle('is-done', on);
-        mount.querySelector('.today-card-progress').textContent = doneCountText();
+        renderProgress();
         try { localStorage.setItem(doneKey, JSON.stringify(Object.keys(doneSet))); } catch (err) {}
       });
+
+      mount.addEventListener('click', function(e) {
+        if (!e.target.closest('.tc-copy')) return;
+        var text = summaryText();
+        var status = mount.querySelector('.tc-copy-status');
+        function manual() {
+          // No clipboard access: show the text selected so it can be copied by hand.
+          var box = mount.querySelector('.today-card-progress');
+          var ta = box.querySelector('.tc-copy-fallback') || document.createElement('textarea');
+          ta.className = 'tc-copy-fallback';
+          ta.readOnly = true;
+          ta.rows = text.split('\n').length;
+          ta.value = text;
+          ta.setAttribute('aria-label', 'Session summary');
+          box.appendChild(ta);
+          ta.focus();
+          ta.select();
+          status.textContent = 'Copy blocked. Summary selected below.';
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function() { status.textContent = 'Copied'; }, manual);
+        } else {
+          manual();
+        }
+      });
+
+      var repsInput = mount.querySelector('#tc-reps');
+      if (repsInput) {
+        repsInput.addEventListener('input', function() {
+          var raw = repsInput.value.trim();
+          var n = Number(raw);
+          var ok = raw !== '' && Number.isInteger(n) && n >= 1 && n <= 10;
+          var empty = raw === '' && !repsInput.validity.badInput;
+          repsInput.setAttribute('aria-invalid', String(!ok && !empty));
+          mount.querySelector('.ex-reps-hint').textContent = (ok || empty)
+            ? '1 to 10, stop at the last clean rep'
+            : 'Enter a whole number from 1 to 10. The cap is 10.';
+          if (ok) repsMap[plusEx.name] = n; else delete repsMap[plusEx.name];
+          try { localStorage.setItem(repsKey, JSON.stringify(repsMap)); } catch (err) {}
+          renderProgress();
+        });
+      }
     }
   })();
 

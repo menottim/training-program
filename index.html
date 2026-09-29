@@ -1597,6 +1597,23 @@
   /* ---- */
 
   /* ws:color (start) */
+  /* Colour-as-code: coral = game, blue = training, green = done, grey = rest.
+     Progress, targets and ranks below use ink and Training Blue only. */
+  .header .stat-value { color: var(--primary); }
+  .goal:nth-child(1) { background: var(--primary); }
+  .goal:nth-child(2) { background: var(--accent2); }
+  .goal:nth-child(3) { background: var(--text-muted); }
+  .target-card .arrow { color: var(--text-muted); }
+  .target-card .target { color: var(--primary); }
+  .dash-card.warning .dash-value { color: var(--caution-ink); }
+  .day-card.today { outline: 2px solid var(--text); outline-offset: -2px; }
+  .day-card.today::after { color: var(--text); }
+  .modified-day.md-today { outline-color: var(--text); }
+  .bar-target { background: var(--text-muted); opacity: 1; }
+  .bar-target-label { background: var(--bg); }
+  /* Gauge zones run a light-to-dark blue ramp; dark text on the light four. */
+  .standard-zone { color: var(--text); }
+  .standard-zone:nth-child(n+5) { color: #fff; }
 
   /* ws:color (end) */
 
@@ -2727,8 +2744,8 @@
   var bw = latestWeight;
   var lifts = [
     { key: 'trapBarDeadlift', label: 'TB Deadlift', color: 'var(--accent2)' },
-    { key: 'backSquat', label: 'Back Squat', color: 'var(--accent)' },
-    { key: 'benchPress', label: 'Bench Press', color: 'var(--success)' }
+    { key: 'backSquat', label: 'Back Squat', color: 'var(--accent2)' },
+    { key: 'benchPress', label: 'Bench Press', color: 'var(--accent2)' }
   ];
   var barRows = lifts.map(function(l) {
     var cur = currentLifts[l.key];
@@ -3298,7 +3315,7 @@
 
     if (yBF) {
       bfTicks.forEach(function(t) {
-        parts.push(svgLabel(W - pad.right + 6, yBF(t), t + '%', { anchor: 'start', size: 11, fill: '#e94560' }));
+        parts.push(svgLabel(W - pad.right + 6, yBF(t), t + '%', { anchor: 'start', size: 11, fill: '#5c636a' }));
       });
     }
 
@@ -3307,7 +3324,7 @@
       parts.push(svgLabel(pad.left + 4, y - 6, text, { anchor: 'start', size: 11, fill: color }));
     }
     if (tW) targetLine(yW(tW), '#0f3460', 'target ' + tW + ' lb');
-    if (yBF && tBF) targetLine(yBF(tBF), '#e94560', 'target ' + tBF + '%');
+    if (yBF && tBF) targetLine(yBF(tBF), '#5c636a', 'target ' + tBF + '%');
 
     var wPts = sorted.map(function(e) { return [xScale(dayNum(e.date)), yW(e.weight)]; });
     var wLabels = sorted.map(function(e) { return e.date + ': ' + e.weight + ' lbs'; });
@@ -3318,8 +3335,8 @@
       var bfEntries = sorted.filter(function(e) { return e.bodyFatPct != null; });
       var bfPts = bfEntries.map(function(e) { return [xScale(dayNum(e.date)), yBF(e.bodyFatPct)]; });
       var bfLabels = bfEntries.map(function(e) { return e.date + ': ' + e.bodyFatPct + '% BF'; });
-      parts.push(svgLine(bfPts, '#e94560'));
-      parts.push(svgDots(bfPts, '#e94560', 3.5, bfLabels));
+      parts.push(svgLine(bfPts, '#5c636a', { dash: '6,4' }));
+      parts.push(svgDots(bfPts, '#5c636a', 3.5, bfLabels));
     }
 
     monthTicks(d0, d1).forEach(function(t) {
@@ -3333,8 +3350,8 @@
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
         '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#0f3460"></span> Weight (lbs, left axis)</span>' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#e94560"></span> Body Fat % (right axis)</span>' +
-        '<span class="chart-legend-item" style="opacity:0.5">┄ dashed = target</span>' +
+        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#5c636a"></span> Body Fat % (right axis, dashed)</span>' +
+        '<span class="chart-legend-item">┄ thin dashed = target</span>' +
       '</div>');
   })();
 
@@ -3346,9 +3363,9 @@
     // Note: maps "Bench Press" (barbell) to benchPress target, NOT "DB Bench Press"
     // per CLAUDE.md, DB bench and barbell bench are different lifts.
     var keyLifts = {
-      'Trap Bar Deadlift': { color: '#0f3460', target: targets.trapBarDeadlift.weight },
-      'Bench Press': { color: '#198754', target: targets.benchPress.weight },
-      'Back Squat': { color: '#e94560', target: targets.backSquat.weight }
+      'Trap Bar Deadlift': { color: '#0f3460', dash: '', target: targets.trapBarDeadlift.weight },
+      'Bench Press': { color: '#5c636a', dash: '2,3', target: targets.benchPress.weight },
+      'Back Squat': { color: '#3b6fb6', dash: '6,4', target: targets.backSquat.weight }
     };
     var liftByWeek = {};
     activityLog.forEach(function(entry) {
@@ -3420,12 +3437,12 @@
         }
       });
       if (pts.length >= 1) {
-        parts.push(svgLine(pts, cfg.color));
+        parts.push(svgLine(pts, cfg.color, { dash: cfg.dash }));
         parts.push(svgDots(pts, cfg.color, 4, labels));
         var legendName = exerciseLinks[name]
           ? '<a href="' + esc(exerciseLinks[name]) + '" target="_blank">' + esc(name) + '</a>'
           : esc(name);
-        legendItems.push('<span class="chart-legend-item"><span class="chart-legend-dot" style="background:' + cfg.color + '"></span> ' + legendName + ' (target ' + cfg.target + ')</span>');
+        legendItems.push('<span class="chart-legend-item"><svg width="20" height="8" aria-hidden="true"><line x1="1" y1="4" x2="19" y2="4" stroke="' + cfg.color + '" stroke-width="2"' + (cfg.dash ? ' stroke-dasharray="' + cfg.dash + '"' : '') + '/></svg> ' + legendName + ' (target ' + cfg.target + ')</span>');
       }
     });
 
@@ -3442,7 +3459,7 @@
       '<h3>Strength Progression</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' + legendItems.join('') +
-        '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = 5-rep target</span>' +
+        '<span class="chart-legend-item">\u2504 thin dashed = 5-rep target</span>' +
       '</div>');
   })();
 
@@ -3470,7 +3487,7 @@
       }
     };
     var levelNames = ['Beginner', 'Novice', 'Intermediate', 'Advanced', 'Elite'];
-    var levelColors = ['#6c9bd2', '#5bb370', '#e8b84b', '#e07840', '#c04050'];
+    var levelColors = ['#dbe5f4', '#bccfe9', '#8eaad6', '#3b5f93', '#0f3460'];
 
     // Epley formula: estimated 1RM = weight × (1 + reps / 30)
     function est1RM(weight, reps) {
@@ -3497,7 +3514,8 @@
         if (ratio >= std.ratios[i]) levelIdx = i;
       }
       var levelText = levelIdx >= 0 ? levelNames[levelIdx] : 'Untrained';
-      var levelColor = levelIdx >= 0 ? levelColors[levelIdx] : '#aaa';
+      var levelColor = levelIdx >= 0 ? levelColors[levelIdx] : '#e9ecef';
+      var levelInk = levelIdx >= 3 ? '#fff' : 'var(--text)';
 
       // Target 1RM and level
       var tgt1RM = est1RM(tgt.weight, tgt.reps);
@@ -3514,7 +3532,7 @@
       var gaugeMax = std.ratios[4] * 1.15;
       var breakpoints = [0].concat(std.ratios, [gaugeMax]);
       var zoneLabels = ['Untrained'].concat(levelNames);
-      var zoneColors = ['#aaa'].concat(levelColors);
+      var zoneColors = ['#e9ecef'].concat(levelColors);
       var zoneShort = ['Unt', 'Beg', 'Nov', 'Int', 'Adv', 'Elite'];
 
       var zones = '';
@@ -3549,7 +3567,7 @@
             : esc(std.label)) + '</span>' +
           '<span class="standard-stats">' +
             'Est. 1RM: <strong>' + oneRM + ' lbs</strong> (' + ratio.toFixed(2) + 'x BW) \u00b7 ' +
-            '<span class="standard-level-label" style="background:' + levelColor + ';">' + levelText + '</span>' +
+            '<span class="standard-level-label" style="background:' + levelColor + ';color:' + levelInk + ';">' + levelText + '</span>' +
             ' \u2192 Target: ' + tgt1RM + ' lbs (' + tgtLevelText + ')' +
           '</span>' +
         '</div>' +
@@ -3599,13 +3617,13 @@
     });
 
     var refY = yScale(5);
-    parts.push('<line x1="' + pad.left + '" y1="' + refY + '" x2="' + (W - pad.right) + '" y2="' + refY + '" stroke="#fd7e14" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>');
-    parts.push(svgLabel(W - pad.right, refY - 8, 'limit', { anchor: 'end', size: 11, fill: '#a84300' }));
+    parts.push('<line x1="' + pad.left + '" y1="' + refY + '" x2="' + (W - pad.right) + '" y2="' + refY + '" stroke="#5c636a" stroke-width="1" stroke-dasharray="4,3"/>');
+    parts.push(svgLabel(W - pad.right, refY - 8, 'limit', { anchor: 'end', size: 11, fill: '#5c636a' }));
 
     var pts = painEntries.map(function(e) { return [xScale(dayNum(e.date)), yScale(e.achillesPain)]; });
     var labels = painEntries.map(function(e) { return e.date + ' ' + esc(e.activity || '') + ': pain ' + e.achillesPain + '/10'; });
-    parts.push(svgLine(pts, '#fd7e14'));
-    parts.push(svgDots(pts, '#fd7e14', 3, labels));
+    parts.push(svgLine(pts, '#a84300'));
+    parts.push(svgDots(pts, '#a84300', 3, labels));
 
     monthTicks(d0, d1).forEach(function(t) {
       parts.push(svgLabel(xScale(t.x), H - pad.bottom + 12, t.label, { size: 11 }));
@@ -3615,11 +3633,11 @@
 
     var mount = document.getElementById('achilles-chart-mount');
     mount.insertAdjacentHTML('beforeend',
-      '<h3 style="color:var(--warning)">Achilles Pain Trend</h3>' +
+      '<h3>Achilles Pain Trend</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#fd7e14"></span> Pain level (0\u201310)</span>' +
-        '<span class="chart-legend-item" style="opacity:0.5">\u2504 dashed = protocol threshold (5)</span>' +
+        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#a84300"></span> Pain level (0\u201310)</span>' +
+        '<span class="chart-legend-item">\u2504 dashed = protocol threshold (5)</span>' +
       '</div>');
   })();
 
@@ -3698,7 +3716,8 @@
       });
       if (hasHSR) hsrThisWeek++;
     });
-    var hsrClass = hsrThisWeek >= 3 ? ' improving' : hsrThisWeek === 0 ? ' warning' : '';
+    var hsrPace = Math.floor(3 * (new Date().getDay() + 1) / 7);
+    var hsrClass = hsrThisWeek >= 3 ? ' improving' : hsrThisWeek < hsrPace ? ' warning' : '';
     var dashMount = document.getElementById('dashboard-mount');
     var dashGrid = dashMount.querySelector('.dashboard');
     if (dashGrid) {

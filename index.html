@@ -322,72 +322,55 @@
   }
   .show-all-btn:hover { background: var(--bg-alt); }
 
-  /* Header */
+  /* Header (inside the Profile panel): compact, left-aligned */
   .header {
-    text-align: center;
-    padding: 2rem 0 1.5rem;
-    border-bottom: 3px solid var(--primary);
-    margin-bottom: 2rem;
+    padding: 0.75rem 0 0.5rem;
   }
   .header h1 {
-    font-size: 1.8rem;
+    font-size: 1rem;
+    font-weight: 700;
     color: var(--primary);
-    letter-spacing: -0.5px;
-    margin-bottom: 0.25rem;
+    margin: 0;
   }
   .header .subtitle {
-    font-size: 1rem;
+    font-size: var(--fs-label);
     color: var(--text-muted);
-    font-weight: 400;
+    margin: 0 0 0.75rem;
   }
   .header .stats {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    gap: 0.5rem 1rem;
+    margin: 0;
   }
-  .header .stat {
-    text-align: center;
+  .header .stat dt {
+    font-size: var(--fs-label);
+    color: var(--text-muted);
   }
-  .header .stat-value {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--accent);
+  .header .stat dd {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.35;
   }
-  .header .stat-label {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  .header .stat .stat-tgt {
+    display: block;
+    font-size: var(--fs-label);
+    font-weight: 400;
     color: var(--text-muted);
   }
 
-  /* Goals banner */
-  .goals {
-    display: flex;
-    gap: 0;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-  }
-  .goal {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    text-align: center;
-    font-weight: 600;
-    font-size: 0.85rem;
-  }
-  .goal:nth-child(1) { background: var(--accent-ink); color: #fff; }
-  .goal:nth-child(2) { background: var(--accent2); color: #fff; }
-  .goal:nth-child(3) { background: var(--primary); color: #fff; }
-  .goal .priority {
+  /* Priorities: plain ordered list */
+  .goals-label {
     font-size: var(--fs-label);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.8;
-    display: block;
-    margin-bottom: 2px;
+    color: var(--text-muted);
+    margin: 0.75rem 0 0.15rem;
+  }
+  .goals {
+    margin: 0 0 0.75rem;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
   }
 
   /* Section */
@@ -927,10 +910,6 @@
       font-size: var(--fs-label);
     }
 
-    /* Header stats: wrap tighter */
-    .header .stats {
-      gap: 1rem;
-    }
   }
 
   /* Today indicator */
@@ -1616,10 +1595,6 @@
 
   /* Colour-as-code: coral = game, blue = training, green = done, grey = rest.
      Progress, targets and ranks below use ink and Training Blue only. */
-  .header .stat-value { color: var(--primary); }
-  .goal:nth-child(1) { background: var(--primary); }
-  .goal:nth-child(2) { background: var(--accent2); }
-  .goal:nth-child(3) { background: var(--text-muted); }
   .target-card .arrow { color: var(--text-muted); }
   .target-card .target { color: var(--primary); }
   .dash-card.warning .dash-value { color: var(--caution-ink); }
@@ -1645,6 +1620,7 @@
   /* ---- */
 
   /* ws:profile (start) */
+  .athlete-profile-body { padding: 0 1rem; }
 
   /* ws:profile (end) */
 
@@ -1688,17 +1664,19 @@
   <div class="athlete-profile-body">
     <div id="top" class="header">
       <h1>In-Season Training Program</h1>
-      <p class="subtitle">Multi-Sport Athlete &middot; Perpetual In-Season &middot; Age 40</p>
-      <div id="header-stats-mount" class="stats">
+      <p class="subtitle">Basketball and hockey, in season year-round, age 40</p>
+      <dl id="header-stats-mount" class="stats">
         <!-- Rendered from data.json -->
-      </div>
+      </dl>
     </div>
 
-    <div class="goals">
-      <div class="goal"><span class="priority">Priority 1</span> Injury Prevention</div>
-      <div class="goal"><span class="priority">Priority 2</span> Strength &amp; Power</div>
-      <div class="goal"><span class="priority">Priority 3</span> Vertical / Above the Rim</div>
-    </div>
+    <p class="goals-label">Priorities</p>
+    <ol class="goals">
+      <li>Injury prevention</li>
+      <li>Strength and power</li>
+      <li>Vertical jump</li>
+      <li>Physique and body composition</li>
+    </ol>
   </div>
 </details>
 
@@ -2291,17 +2269,11 @@
     { label: 'Lean / Fat Mass', cur: curLean + ' / ' + curFat + ' lbs', tgt: tgtLean + ' / ' + tgtFat + ' lbs' }
   ];
 
-  var statsHTML = '<div class="stat">' +
-    '<div class="stat-value">' + esc(athlete.height) + '</div>' +
-    '<div class="stat-label">Height</div>' +
-  '</div>';
+  var statsHTML = '<div class="stat"><dt>Height</dt><dd>' + esc(athlete.height) + '</dd></div>';
 
   statPairs.forEach(function(s) {
-    statsHTML += '<div class="stat">' +
-      '<div class="stat-value">' + s.cur + '</div>' +
-      '<div class="stat-label">' + s.label + '</div>' +
-      '<div style="font-size:var(--fs-label);color:var(--text-muted);margin-top:2px;">\u2192 ' + s.tgt + '</div>' +
-    '</div>';
+    statsHTML += '<div class="stat"><dt>' + s.label + '</dt><dd>' + s.cur +
+      '<span class="stat-tgt">target ' + s.tgt + '</span></dd></div>';
   });
 
   headerMount.insertAdjacentHTML('beforeend', statsHTML);

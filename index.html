@@ -529,9 +529,9 @@
   }
   .chart-tip {
     position: fixed; display: none; pointer-events: none; z-index: 1000;
-    background: #1a1a2e; color: #fff; font-size: 0.75rem; line-height: 1.3;
-    padding: 4px 8px; border-radius: 4px; white-space: nowrap;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background: var(--margin-2); color: var(--ink); border: 1px solid var(--hair); font-size: 0.75rem; line-height: 1.3;
+    padding: 4px 8px; border-radius: 2px; white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
   }
   [data-tip] { cursor: pointer; }
   .chart-legend {
@@ -633,7 +633,7 @@
   details > summary:focus-visible,
   .show-all-btn:focus-visible,
   .tab-btn:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
-  .tab-btn:focus-visible { outline-color: #fff; outline-offset: -2px; }
+  .tab-btn:focus-visible { outline-color: var(--clin); outline-offset: -2px; }
   .insights-hint { display: none; }
 
   .tab-btn {
@@ -864,6 +864,7 @@
     color: var(--ink-3);
   }
   .today-card-meta > * + *::before { content: "\00b7"; margin-right: 0.6rem; color: var(--ink-3); }
+  @media (max-width: 700px) { .today-card-meta .tc-who { flex-basis: 100%; } .today-card-meta .tc-who::before { content: none; } }
   .tc-mark { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink-2); }
   .tc-mark--game { color: var(--accent-ink); }
   .tc-mark--done { color: #146c43; }
@@ -1038,6 +1039,7 @@
     padding: 0.5rem 0;
     border-top: 1px dashed var(--ink-3);
   }
+  .today-card-progress.tc-foot:not(.is-complete) { display: none; }
   .today-card-progress.tc-foot.is-complete .tc-progress-text { font-weight: 600; color: var(--ink); }
   .tc-copy {
     min-height: 44px;
@@ -1078,6 +1080,7 @@
 
   /* Margin panels: coaching detail, plan change */
   .today-card-details,
+  .tc-pain,
   .modified-week-banner {
     margin-top: 0.75rem;
     padding: 0 0.875rem;
@@ -1097,17 +1100,12 @@
     white-space: pre-line;
     max-width: 70ch;
   }
+  .tc-pain { padding: 0.6rem 0.875rem 0.7rem; }
+  .tc-pain-label { margin: 0 0 0.2rem; font-size: var(--fs-label); font-weight: 700; color: var(--clin); }
+  .tc-pain ul { margin: 0; padding: 0; list-style: none; line-height: 1.5; }
   .modified-week { margin: 0.75rem 0 1.5rem; }
   .modified-week-banner { margin: 0 0 1rem; padding-top: 0.7rem; }
-  .modified-week-banner h3 {
-    margin: 0 0 0.15rem;
-    font-size: var(--fs-label);
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: var(--clin);
-  }
-  .modified-week-banner .mw-title { margin: 0; font-size: 0.9375rem; font-weight: 700; line-height: 1.35; }
+  .modified-week-banner .mw-title { margin: 0; font-size: 0.9375rem; font-weight: 700; line-height: 1.35; color: var(--ink); }
   .modified-week-banner .mw-subtitle { margin: 0.15rem 0 0; line-height: 1.4; }
   .modified-week-banner > p:last-child { padding-bottom: 0.75rem; }
 
@@ -1247,14 +1245,7 @@
   .week-summary-header h4 { font-size: 0.9375rem; font-weight: 700; color: var(--ink); }
   .week-summary-header .week-tags { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; }
   .week-mini-stat { font-size: 0.8125rem; color: var(--ink-2); white-space: nowrap; }
-  .mw-log-banner {
-    padding: 1px 6px;
-    border-radius: 2px;
-    background: #fff3e0;
-    color: var(--caution-ink);
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
+  .mw-log-banner { font-size: 0.8125rem; color: var(--ink); }
   .log-table.log-table--activity { width: 100%; margin: 0; font-size: 0.8125rem; }
   .log-table--activity thead th {
     padding: 0.45rem 0.75rem 0.3rem 0;
@@ -1652,7 +1643,7 @@
 <div id="today-card-mount"></div>
 
 <!-- WEEKLY OVERVIEW -->
-<h2 id="week">Weekly Overview</h2>
+<h2 id="week">Weekly overview</h2>
 <!-- Un-authored-week placeholder. The renderer hides this whenever modifiedWeeks
      holds an entry for the current week, which should be every week. Do NOT put a
      schedule here. A hardcoded slate goes stale and then silently prescribes a week
@@ -1689,7 +1680,7 @@
 <div id="tab-plan" class="tab-content">
 
 <!-- STRENGTH TARGETS -->
-<h2 id="targets">Strength Targets</h2>
+<h2 id="targets">Strength targets</h2>
 
 <!-- Strength targets table (rendered from data.json) -->
 <div id="targets-mount"></div>
@@ -1731,7 +1722,7 @@
 </details>
 
 <details class="insights-section" id="phases">
-<summary><strong>Training Phases</strong></summary>
+<summary><strong>Training phases</strong></summary>
 <div class="insights-body">
 <p>Phase 3 is the standing in-season block. It changes on events such as injury, a slate change or travel, not on a calendar.</p>
 </div>
@@ -1746,9 +1737,9 @@
 
 <!-- ACHILLES PROTOCOL -->
 <details class="insights-section">
-<summary><strong>Achilles Protocol</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>Achilles protocol</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body">
-<h2 id="achilles">Achilles Tendinopathy Protocol</h2>
+<h2 id="achilles">Achilles tendinopathy protocol</h2>
 <p class="ref-lede">Both sides. Heavy Slow Resistance (HSR) calf raises, 3 loaded sessions per week. This week's plan names the days.</p>
 
 <div class="achilles-protocol">
@@ -1793,11 +1784,11 @@
 
 <!-- RECOVERY -->
 <details class="insights-section">
-<summary><strong>Recovery Days &amp; Modalities</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>Recovery days and modalities</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body">
-<h2 id="recovery">Recovery Days</h2>
+<h2 id="recovery">Recovery days</h2>
 
-<h3>Monday: Post-Double Game Day</h3>
+<h3>Monday: post-double game day</h3>
 <table class="ref-stack">
   <thead><tr><th scope="col">Activity</th><th scope="col">Duration</th><th scope="col">Purpose</th></tr></thead>
   <tbody>
@@ -1808,7 +1799,7 @@
   </tbody>
 </table>
 
-<h3>Saturday: Pre-Game Prep</h3>
+<h3>Saturday: pre-game prep</h3>
 <table class="ref-stack">
   <thead><tr><th scope="col">Activity</th><th scope="col">Duration</th><th scope="col">Purpose</th></tr></thead>
   <tbody>
@@ -1820,7 +1811,7 @@
   </tbody>
 </table>
 
-<h3 id="recovery-modalities">Recovery Modality Payoff (highest to lowest)</h3>
+<h3 id="recovery-modalities">Recovery modality payoff (highest to lowest)</h3>
 <p class="ref-lede">Ranked by payoff. Spend your time at the top of this list.</p>
 <table class="ref-stack">
   <thead><tr><th scope="col">Modality</th><th scope="col">Payoff</th><th scope="col">When to use</th></tr></thead>
@@ -1842,9 +1833,9 @@
 
 <!-- NUTRITION -->
 <details class="insights-section">
-<summary><strong>Body Composition</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>Body composition</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body">
-<h2 id="nutrition">Body Composition</h2>
+<h2 id="nutrition">Body composition</h2>
 <p class="ref-lede">Target: ~15% BF (~205-210 lbs) over 6-9 months via gradual recomposition. No aggressive cuts; protect game performance and recovery.</p>
 
 <!-- Lean Mass + Fat Mass breakdown over time -->
@@ -1854,9 +1845,9 @@
 
 <!-- LABS + CLINICAL WORKUP -->
 <details class="insights-section">
-<summary><strong>Labs &amp; Workup</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>Labs and workup</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body">
-<h2 id="labs">Labs &amp; Workup</h2>
+<h2 id="labs">Labs and workup</h2>
 <div id="hormone-labs-mount"></div>
 <div id="clinical-workup-mount"></div>
 </div>
@@ -1864,9 +1855,9 @@
 
 <!-- WHEN THE PLAN CHANGES (deload + autoregulation, merged and trimmed to what actually changes for the athlete) -->
 <details class="insights-section">
-<summary><strong>When the Plan Changes</strong> <span class="insights-hint">click to expand</span></summary>
+<summary><strong>When the plan changes</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body" id="deload">
-<h2>When the Plan Changes</h2>
+<h2>When the plan changes</h2>
 <p class="ref-lede">Deloads are reactive, not scheduled. Tell me when something feels different, and I adjust the week.</p>
 <div class="info-box">
 <h3>What triggers a deload</h3>
@@ -2159,7 +2150,6 @@
     var blockLabel = (mw && mw.blockLabel) ? mw.blockLabel : ('Phase ' + phase + ': ' + phaseNames[phase]);
     var parts = ['<strong>Week ' + weekNum + '</strong> ' + esc(blockLabel)];
     parts.push('<strong>Today:</strong> ' + esc(todayDesc));
-    if (nextUpDesc) parts.push('<strong>Next:</strong> ' + esc(nextUpDesc));
 
     document.getElementById('today-summary').innerHTML = parts.join(' &nbsp;\u00b7&nbsp; ');
   })();
@@ -2387,7 +2377,7 @@
         return r ? 'Session done. Send the 5+ count: ' + plusEx.name + ' ' + r + (r === 1 ? ' rep.' : ' reps.')
                  : 'Session done. Add the 5+ reps, then send the session.';
       }
-      return countText();
+      return '';
     }
     function summaryText() {
       var lines = [fullTodayName + ' ' + todayStr.slice(5).replace('-', '/') + ': session done'];
@@ -2462,6 +2452,13 @@
         '</div>' : '');
     }
 
+    var painHTML = checkable ? '<aside class="tc-pain" aria-label="Pain rule"><p class="tc-pain-label">Pain rule</p><ul>' +
+      ['0 to 3/10: keep going.', '4 to 5/10: hold the load, no added weight.',
+       'Above 5/10: stop, and cut the load 25% next session.',
+       'Back to baseline by the next morning, or the load was too high.',
+       'Tell me if something feels off.'].map(function(t) { return '<li>' + t + '</li>'; }).join('') +
+      '</ul></aside>' : '';
+
     var longHTML = '';
     if (todayDay && todayDay.longDesc) {
       longHTML = '<details class="today-card-details">' +
@@ -2499,8 +2496,10 @@
           (checkable ? '<div class="today-card-progress tc-count">' + esc(countText()) + '</div>' : '') +
         '</div>' +
         '<div class="today-card-title">' + linkifyText(title) + '</div>' +
-        '<div class="today-card-meta">' + markHTML + '<span>Week ' + weekNum + ', Phase ' + phase + '</span><span>' + esc(block) + '</span></div>' +
+        '<div class="today-card-meta">' + markHTML + '<span>Week ' + weekNum + ', Phase ' + phase + '</span><span>' + esc(block) + '</span>' +
+          '<span class="tc-who">' + esc(athlete.name || 'Menotti') + ' \u00b7 both achilles</span></div>' +
         checklistHTML +
+        painHTML +
         nextHTML +
         longHTML +
       '</section>';
@@ -2561,6 +2560,14 @@
       }
     }
   })();
+
+  // "Retest moves..." reads "Week 30: retest moves...". Only a plain capitalised
+  // word is lowered; acronyms, day and month names keep their capital.
+  function mwHeadTitle(t) {
+    var w = (/^\S+/.exec(t) || [''])[0];
+    if (!/^[A-Z][a-z]+$/.test(w) || /^(Sun|Mon|Tue|Wed|Thu|Fri|Sat|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/.test(w)) return t;
+    return t.charAt(0).toLowerCase() + t.slice(1);
+  }
 
   (function renderModifiedWeek() {
     var mw = modifiedWeeks[String(weekNum)];
@@ -2629,8 +2636,7 @@
     document.getElementById('modified-week-mount').innerHTML =
       '<div class="modified-week">' +
         '<aside class="modified-week-banner" aria-label="Plan change">' +
-          '<h3>Week ' + weekNum + ' plan change</h3>' +
-          '<p class="mw-title">' + esc(mw.title || mw.label || '') + '</p>' +
+          '<h3 class="mw-title">Week ' + weekNum + ': ' + esc(mwHeadTitle(mw.title || mw.label || '')) + '</h3>' +
           (mw.subtitle ? '<p class="mw-subtitle">' + linkifyText(mw.subtitle) + '</p>' : '') +
           (mw.reason ? '<details class="mw-why"><summary>Why this week</summary>' +
             '<div class="mw-why-body">' + linkifyText(mw.reason) + '</div></details>' : '') +
@@ -2666,7 +2672,7 @@
       ? '<button class="show-all-btn" id="body-log-toggle">Show all ' + totalBodyRows + ' entries</button>'
       : '';
     document.getElementById('body-log-mount').innerHTML =
-      '<h3>Body Composition' +
+      '<h3>Body composition' +
         (hiddenCount > 0 ? ' <small>last ' + BODY_LOG_DEFAULT_ROWS + ' of ' + totalBodyRows + '</small>' : '') +
       '</h3>' +
       toggleBtn +
@@ -2742,7 +2748,7 @@
     weeks.get(ws).push(entry);
   });
 
-  var logHTML = '<h3>Activity Log</h3>';
+  var logHTML = '<h3>Activity log</h3>';
   if (activityLog.length === 0) {
     logHTML += '<div class="empty-state">No activities logged yet. Start tracking!</div>';
   } else {
@@ -3126,11 +3132,12 @@
 
   // Plan-tab chart palette and inline legend keys (drawn, not glyphs).
   var CLIN = '#2456a6', INK2 = '#3d434b', INK3 = '#5b6470', GAME = '#e94560', CAUTION = '#a84300';
+  var GAME_TINT = '#8aa3cf'; // games in a clinical-blue tint; red only as the 2px cap
   function legendKey(label, color, opts) {
     opts = opts || {};
     var mark = opts.dash != null
       ? '<svg width="22" height="8" aria-hidden="true"><line x1="1" y1="4" x2="21" y2="4" stroke="' + color + '" stroke-width="' + (opts.width || 2) + '"' + (opts.dash ? ' stroke-dasharray="' + opts.dash + '"' : '') + '/></svg>'
-      : '<span class="chart-key-sw' + (opts.dot ? ' chart-key-dot' : '') + '" style="background:' + color + '"></span>';
+      : '<span class="chart-key-sw' + (opts.dot ? ' chart-key-dot' : '') + '" style="background:' + color + (opts.cap ? ';border-top:2px solid ' + opts.cap : '') + '"></span>';
     return '<span class="chart-legend-item">' + mark + label + '</span>';
   }
 
@@ -3174,7 +3181,7 @@
       var x = cx - barW / 2;
       var y0 = yScale(0);
       var segments = [
-        { val: d.games, color: GAME, label: d.games + ' game' + (d.games !== 1 ? 's' : '') },
+        { val: d.games, color: GAME_TINT, cap: GAME, label: d.games + ' game' + (d.games !== 1 ? 's' : '') },
         { val: d.training, color: CLIN, label: d.training + ' session' + (d.training !== 1 ? 's' : '') },
         { val: d.recovery, color: INK3, label: d.recovery + ' recovery' }
       ];
@@ -3184,6 +3191,7 @@
         var h = y0 - yScale(seg.val);
         var barY = y0 - cumY - h;
         parts.push(svgBar(x, barY, barW, h, seg.color, 'Week ' + weekKeys[i] + ': ' + seg.label));
+        if (seg.cap) parts.push('<rect x="' + x + '" y="' + barY + '" width="' + barW + '" height="2" fill="' + seg.cap + '"/>');
         cumY += h;
       });
       if (i % labelStep === 0 || (i === weekData.length - 1 && (i % labelStep) >= labelStep / 2)) {
@@ -3196,9 +3204,9 @@
 
     var mount = document.getElementById('volume-chart-mount');
     mount.insertAdjacentHTML('beforeend',
-      '<h3>Weekly Activity Volume</h3>' +
+      '<h3>Weekly activity volume</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
-      '<div class="chart-legend">' + legendKey('Games', GAME) + legendKey('Training', CLIN) + legendKey('Recovery', INK3) + '</div>');
+      '<div class="chart-legend">' + legendKey('Games', GAME_TINT, { cap: GAME }) + legendKey('Training', CLIN) + legendKey('Recovery', INK3) + '</div>');
   })();
 
   // ═══════════════════════════════════════════════
@@ -3275,7 +3283,7 @@
     parts.push('</svg>');
 
     mount.insertAdjacentHTML('beforeend',
-      '<h3>Body Weight &amp; Body Fat</h3>' +
+      '<h3>Body weight and body fat</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
         legendKey('Weight, lb (left)', CLIN, { dash: '' }) +
@@ -3385,7 +3393,6 @@
 
     var mount = document.getElementById('strength-chart-mount');
     mount.insertAdjacentHTML('beforeend',
-      '<h3>Strength Progression</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' + legendItems.join('') +
         legendKey('5-rep target', INK3, { dash: '4,3', width: 1 }) +
@@ -3431,7 +3438,7 @@
     }
 
     var html = '<div class="standards-section">' +
-      '<h3>Strength Standards</h3>' +
+      '<h3>Strength standards</h3>' +
       '<p class="sheet-note">Rank among male lifters at ' + Math.round(bw) + ' lb, from ' +
       '<a href="https://strengthlevel.com/strength-standards" target="_blank">strengthlevel.com</a> data.</p>';
 
@@ -3539,7 +3546,7 @@
 
     var mount = document.getElementById('achilles-chart-mount');
     mount.insertAdjacentHTML('beforeend',
-      '<h3>Achilles Pain Trend</h3>' +
+      '<h3>Achilles pain trend</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
         legendKey('Pain, 0\u201310', CLIN, { dash: '' }) +
@@ -3703,7 +3710,7 @@
         return '<tr><th scope="row">' + esc(h.date) + '</th><td><ul class="lab-vals">' + vals + '</ul></td></tr>';
       }).join('');
       hormMount.innerHTML =
-        '<h3>Hormone Lab History</h3>' +
+        '<h3>Hormone lab history</h3>' +
         '<p class="ref-lede">A dot marks a value out of range.</p>' +
         '<table class="lab-table"><thead><tr><th scope="col">Date</th><th scope="col">Values</th></tr></thead><tbody>' + rowsHTML + '</tbody></table>';
     }
@@ -3720,7 +3727,7 @@
         return '<h4 class="ask-group">' + title + '</h4><ul class="ask-list">' + rows + '</ul>';
       }
       cwMount.innerHTML =
-        '<h3>Labs to Request</h3>' +
+        '<h3>Labs to request</h3>' +
         '<p class="ref-lede">' + esc(cw.nextPhysicianVisit || 'Request these at the next physician visit.') + '</p>' +
         renderAskList('Required', cw.required || []) +
         renderAskList('Recommended', cw.recommended || []) +
@@ -3770,7 +3777,7 @@
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
-    parts.push('<text x="' + (W/2) + '" y="14" text-anchor="middle" font-size="12" font-weight="600" fill="#16181b">Lean Mass + Fat Mass over time</text>');
+    parts.push('<text x="' + (W/2) + '" y="14" text-anchor="middle" font-size="12" font-weight="600" fill="#16181b">Lean mass and fat mass over time</text>');
 
     leanTicks.forEach(function(t) {
       var y = yLean(t);

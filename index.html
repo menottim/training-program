@@ -1703,6 +1703,29 @@
   .athlete-profile-body { padding: 0 1rem; }
 
   /* ws:card (start) */
+  /* Done rows fold to one 44px line (check, name, weight) so the next row
+     stays under the thumb. The 5+ field stays visible on its row. */
+  .today-card-checklist li.is-done .ex-body { padding: 0; }
+  .today-card-checklist li.is-done .ex-name,
+  .today-card-checklist li.is-done .ex-meta { line-height: 44px; }
+  .today-card-checklist li.is-done .ex-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .today-card-checklist li.is-done .ex-meta { flex: none; }
+  .today-card-checklist li.is-done .ex-reps { margin: 0 0 0.65rem; }
+  .today-card-checklist li.is-done .wt-chip,
+  .today-card-checklist li.is-done .ex-sets,
+  .today-card-checklist li.is-done .ex-note,
+  .today-card-checklist li.is-done .ex-hist { display: none; }
+  /* Session-close footer right after the last row. */
+  .today-card-progress.tc-foot { padding: 0.25rem 0 0.75rem; }
+  .today-card-progress.tc-foot.is-complete { padding: 0.5rem 0 0.75rem; }
+  @media (max-width: 640px) {
+    /* Sets, weight and chip on their own line so names get the full width. */
+    .today-card-checklist li:not(.is-done) .ex-meta { flex-basis: 100%; }
+  }
 
   /* ws:card (end) */
 
@@ -2525,7 +2548,12 @@
           var m = sk && /^tp-(?:done|reps)-(\d{4})-(\d{2})-(\d{2})$/.exec(sk);
           if (m && new Date(+m[1], +m[2] - 1, +m[3]) < cutoff) localStorage.removeItem(sk);
         }
-        (JSON.parse(localStorage.getItem(doneKey)) || []).forEach(function(n) { doneSet[n] = true; });
+        // Keys are "<row>:<name>" so a repeated exercise ticks one row. Older
+        // name-only arrays mark every row with that name.
+        (JSON.parse(localStorage.getItem(doneKey)) || []).forEach(function(k) {
+          if (/^\d+:/.test(k)) { doneSet[k] = true; return; }
+          todayDay.exercises.forEach(function(ex, i) { if (ex.name === k) doneSet[i + ':' + k] = true; });
+        });
         repsMap = JSON.parse(localStorage.getItem(repsKey)) || {};
       } catch (e) { /* storage blocked: marks just won't persist */ }
     }
@@ -2538,9 +2566,12 @@
       var n = plusEx && repsMap[plusEx.name];
       return (Number.isInteger(n) && n >= 1 && n <= 10) ? n : null;
     }
-    function allDone() {
-      return todayDay.exercises.every(function(ex) { return doneSet[ex.name]; });
+    function rowKey(i) { return i + ':' + todayDay.exercises[i].name; }
+    function doneN() {
+      return todayDay.exercises.filter(function(ex, i) { return doneSet[rowKey(i)]; }).length;
     }
+    function allDone() { return doneN() === todayDay.exercises.length; }
+    function countText() { return doneN() + ' of ' + todayDay.exercises.length + ' done'; }
     function doneCountText() {
       if (allDone()) {
         if (!plusEx) return 'Session done. Send the session.';
@@ -2548,8 +2579,7 @@
         return r ? 'Session done. Send the 5+ count: ' + plusEx.name + ' ' + r + (r === 1 ? ' rep.' : ' reps.')
                  : 'Session done. Add the 5+ reps, then send the session.';
       }
-      var n = todayDay.exercises.filter(function(ex) { return doneSet[ex.name]; }).length;
-      return n + ' of ' + todayDay.exercises.length + ' done';
+      return countText();
     }
     function summaryText() {
       var lines = [fullTodayName + ' ' + todayStr.slice(5).replace('-', '/') + ': session done'];
@@ -2561,7 +2591,8 @@
       return lines.join('\n');
     }
     function renderProgress() {
-      var box = mount.querySelector('.today-card-progress');
+      mount.querySelector('.tc-count').textContent = countText();
+      var box = mount.querySelector('.tc-foot');
       var done = allDone();
       box.classList.toggle('is-complete', done);
       box.querySelector('.tc-progress-text').textContent = doneCountText();
@@ -2575,11 +2606,9 @@
 
     var checklistHTML = '';
     if (todayDay && todayDay.exercises && todayDay.exercises.length > 0) {
-      checklistHTML = (checkable ? '<div class="today-card-progress' + (allDone() ? ' is-complete' : '') + '">' +
-          '<span class="tc-progress-text" aria-live="polite">' + esc(doneCountText()) + '</span>' +
-          '<button type="button" class="tc-copy"' + (allDone() ? '' : ' hidden') + '>Copy summary</button>' +
-          '<span class="tc-copy-status" role="status"></span>' +
-        '</div>' : '') +
+      // Short counter on top; the footer under the last row carries the done
+      // line and Copy so the session close lands under the thumb.
+      checklistHTML = (checkable ? '<div class="today-card-progress tc-count">' + esc(countText()) + '</div>' : '') +
         '<ul class="today-card-checklist' + (checkable ? ' is-checkable' : '') + '">' +
         todayDay.exercises.map(function(ex, idx) {
           var nameHTML = exerciseLinks[ex.name]
@@ -2592,9 +2621,11 @@
             : '';
           var meta = sets + (sets && weight ? ' ' : '') + weight;
           var note = ex.notes ? '<div class="ex-note">' + esc(ex.notes) + '</div>' : '';
-          var hist = info.last ? '<div class="ex-hist">last ' + esc(info.last.weight) + (info.last.sets ? ' · ' + esc(info.last.sets) : '') + ' · ' + shortDate(info.last.date) + '</div>' : '';
+          // On a hold the chip already says it; the last-load line would repeat the number.
+          var isHold = info.marker && info.marker.dir === 'hold';
+          var hist = info.last && !isHold ? '<div class="ex-hist">last ' + esc(info.last.weight) + (info.last.sets ? ' · ' + esc(info.last.sets) : '') + ' · ' + shortDate(info.last.date) + '</div>' : '';
           var body = '<span class="ex-name">' + nameHTML + '</span>' +
-            (meta ? '<span>' + meta + '</span>' : '') +
+            (meta ? '<span class="ex-meta">' + meta + '</span>' : '') +
             note +
             hist;
           if (!checkable) return '<li>' + body + '</li>';
@@ -2606,14 +2637,19 @@
               '<span id="tc-reps-hint" class="ex-reps-hint">1 to 10, stop at the last clean rep</span>' +
             '</div>';
           }
-          var isDone = !!doneSet[ex.name];
+          var isDone = !!doneSet[rowKey(idx)];
           return '<li' + (isDone ? ' class="is-done"' : '') + '>' +
             '<button type="button" class="ex-check" data-i="' + idx + '" aria-pressed="' + isDone + '"' +
               ' aria-label="Mark ' + esc(ex.name) + ' done"></button>' +
             '<div class="ex-body">' + body + '</div>' +
           '</li>';
         }).join('') +
-      '</ul>';
+      '</ul>' +
+      (checkable ? '<div class="today-card-progress tc-foot' + (allDone() ? ' is-complete' : '') + '">' +
+          '<span class="tc-progress-text" aria-live="polite">' + esc(doneCountText()) + '</span>' +
+          '<button type="button" class="tc-copy"' + (allDone() ? '' : ' hidden') + '>Copy summary</button>' +
+          '<span class="tc-copy-status" role="status"></span>' +
+        '</div>' : '');
     }
 
     var longHTML = '';
@@ -2662,9 +2698,9 @@
       mount.addEventListener('click', function(e) {
         var btn = e.target.closest('.ex-check');
         if (!btn) return;
-        var name = todayDay.exercises[+btn.dataset.i].name;
+        var key = rowKey(+btn.dataset.i);
         var on = btn.getAttribute('aria-pressed') !== 'true';
-        if (on) doneSet[name] = true; else delete doneSet[name];
+        if (on) doneSet[key] = true; else delete doneSet[key];
         btn.setAttribute('aria-pressed', String(on));
         btn.parentNode.classList.toggle('is-done', on);
         renderProgress();
@@ -2677,7 +2713,7 @@
         var status = mount.querySelector('.tc-copy-status');
         function manual() {
           // No clipboard access: show the text selected so it can be copied by hand.
-          var box = mount.querySelector('.today-card-progress');
+          var box = mount.querySelector('.tc-foot');
           var ta = box.querySelector('.tc-copy-fallback') || document.createElement('textarea');
           ta.className = 'tc-copy-fallback';
           ta.readOnly = true;

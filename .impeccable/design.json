@@ -1,216 +1,468 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T14:51:03.071683Z",
-  "title": "Design System: Training Program",
+  "generatedAt": "2026-09-29T15:53:24+00:00",
+  "title": "Design System: In-Season Training Program",
   "extensions": {
     "colorMeta": {
-      "night-navy": {
-        "role": "primary",
-        "displayName": "Night Navy",
-        "canonical": "#1a1a2e"
-      },
-      "training-blue": {
-        "role": "primary",
-        "displayName": "Training Blue",
-        "canonical": "#0f3460"
-      },
-      "signal-coral": {
-        "role": "tertiary",
-        "displayName": "Signal Coral",
-        "canonical": "#e94560"
-      },
-      "coral-ink": {
-        "role": "tertiary",
-        "displayName": "Coral Ink",
-        "canonical": "#c0233c"
-      },
-      "paper": {
+      "sheet": {
         "role": "neutral",
-        "displayName": "Paper",
-        "canonical": "#ffffff"
-      },
-      "paper-alt": {
-        "role": "neutral",
-        "displayName": "Paper Alt",
-        "canonical": "#f8f9fa"
-      },
-      "paper-hover": {
-        "role": "neutral",
-        "displayName": "Paper Hover",
-        "canonical": "#eef0f3"
-      },
-      "hairline": {
-        "role": "neutral",
-        "displayName": "Hairline",
-        "canonical": "#dee2e6"
-      },
-      "neutral-wash": {
-        "role": "neutral",
-        "displayName": "Neutral Wash",
-        "canonical": "#e9ecef"
+        "displayName": "Sheet",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#434343",
+          "#616161",
+          "#7e7e7e",
+          "#9b9b9b",
+          "#b8b8b8",
+          "#d5d5d5",
+          "#f2f2f2"
+        ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
-        "canonical": "#212529"
+        "canonical": "#16181b",
+        "tonalRamp": [
+          "#22252a",
+          "#3d424a",
+          "#575f6a",
+          "#717b8b",
+          "#9199a5",
+          "#b1b7bf",
+          "#d1d4d9",
+          "#f1f2f4"
+        ]
       },
-      "ink-soft": {
+      "ink-2": {
         "role": "neutral",
-        "displayName": "Ink Soft",
-        "canonical": "#495057"
+        "displayName": "Ink 2",
+        "canonical": "#3d434b",
+        "tonalRamp": [
+          "#22262a",
+          "#3c424a",
+          "#575f6a",
+          "#717c8b",
+          "#9199a5",
+          "#b1b7bf",
+          "#d1d4d9",
+          "#f1f2f4"
+        ]
       },
-      "ink-muted": {
+      "ink-3": {
         "role": "neutral",
-        "displayName": "Ink Muted",
-        "canonical": "#5c636a"
+        "displayName": "Ink 3",
+        "canonical": "#5b6470",
+        "tonalRamp": [
+          "#22262a",
+          "#3c424a",
+          "#575f6b",
+          "#717c8b",
+          "#9099a5",
+          "#b1b7bf",
+          "#d1d4d9",
+          "#f1f2f4"
+        ]
       },
-      "done-green": {
-        "role": "status",
-        "displayName": "Done Green",
-        "canonical": "#198754"
-      },
-      "done-ink": {
+      "rule": {
         "role": "neutral",
-        "displayName": "Done Ink",
-        "canonical": "#146c43"
+        "displayName": "Rule",
+        "canonical": "#16181b",
+        "tonalRamp": [
+          "#22252a",
+          "#3d424a",
+          "#575f6a",
+          "#717b8b",
+          "#9199a5",
+          "#b1b7bf",
+          "#d1d4d9",
+          "#f1f2f4"
+        ]
       },
-      "done-ink-deep": {
+      "hair": {
         "role": "neutral",
-        "displayName": "Done Ink Deep",
-        "canonical": "#1b5e20"
+        "displayName": "Hairline",
+        "canonical": "#d7dde5",
+        "tonalRamp": [
+          "#1e252e",
+          "#354152",
+          "#4c5e75",
+          "#637a98",
+          "#8698b0",
+          "#a9b6c7",
+          "#ccd4de",
+          "#f0f2f5"
+        ]
       },
-      "caution-orange": {
-        "role": "status",
-        "displayName": "Caution Orange",
-        "canonical": "#fd7e14"
-      },
-      "caution-ink": {
+      "margin": {
         "role": "neutral",
-        "displayName": "Caution Ink",
-        "canonical": "#a84300"
+        "displayName": "Margin",
+        "canonical": "#e6ebf2",
+        "tonalRamp": [
+          "#1a2432",
+          "#2e4059",
+          "#425b7f",
+          "#5677a5",
+          "#7b96ba",
+          "#a2b4ce",
+          "#c8d3e2",
+          "#eef2f6"
+        ]
+      },
+      "margin-2": {
+        "role": "neutral",
+        "displayName": "Margin 2",
+        "canonical": "#f4f6f9",
+        "tonalRamp": [
+          "#1b2431",
+          "#303f57",
+          "#445b7d",
+          "#5976a3",
+          "#7d95b8",
+          "#a3b4cd",
+          "#c9d3e1",
+          "#eff2f6"
+        ]
+      },
+      "margin-hair": {
+        "role": "neutral",
+        "displayName": "Margin Hairline",
+        "canonical": "#c9d2de",
+        "tonalRamp": [
+          "#1d252f",
+          "#334154",
+          "#495d78",
+          "#5f799c",
+          "#8397b3",
+          "#a7b6c9",
+          "#cbd4df",
+          "#eff2f5"
+        ]
+      },
+      "clin": {
+        "role": "primary",
+        "displayName": "Clinical Blue",
+        "canonical": "#2456a6",
+        "tonalRamp": [
+          "#0e213f",
+          "#18396f",
+          "#22529f",
+          "#2d6bcf",
+          "#5a8cdb",
+          "#8aade6",
+          "#bacff0",
+          "#eaf0fa"
+        ]
+      },
+      "clin-wash": {
+        "role": "primary",
+        "displayName": "Clinical Wash",
+        "canonical": "#e8eef8",
+        "tonalRamp": [
+          "#12213b",
+          "#1f3a67",
+          "#2d5494",
+          "#3b6dc1",
+          "#658dd0",
+          "#92aede",
+          "#bfd0eb",
+          "#ebf1f9"
+        ]
+      },
+      "clin-deep": {
+        "role": "primary",
+        "displayName": "Deep Clinical",
+        "canonical": "#0a2440",
+        "tonalRamp": [
+          "#0a2542",
+          "#124275",
+          "#1a5ea7",
+          "#227ad9",
+          "#5298e4",
+          "#84b6ec",
+          "#b7d4f4",
+          "#e9f2fc"
+        ]
+      },
+      "game-ink": {
+        "role": "secondary",
+        "displayName": "Game Red",
+        "canonical": "#c0233c",
+        "tonalRamp": [
+          "#410c14",
+          "#721524",
+          "#a31e33",
+          "#d52742",
+          "#e0566c",
+          "#e98796",
+          "#f2b8c1",
+          "#fbe9ec"
+        ]
+      },
+      "game-cap": {
+        "role": "secondary",
+        "displayName": "Game Cap",
+        "canonical": "#e94560",
+        "tonalRamp": [
+          "#440812",
+          "#790e20",
+          "#ad142d",
+          "#e11b3b",
+          "#ea4c66",
+          "#f08092",
+          "#f6b4bf",
+          "#fce8ec"
+        ]
       },
       "game-wash": {
-        "role": "status",
+        "role": "secondary",
         "displayName": "Game Wash",
-        "canonical": "#fde8ec"
+        "canonical": "#fde8ec",
+        "tonalRamp": [
+          "#460612",
+          "#7c0b20",
+          "#b20f2e",
+          "#e7143c",
+          "#ef4767",
+          "#f47c93",
+          "#f8b2bf",
+          "#fde8ec"
+        ]
       },
-      "train-wash": {
-        "role": "status",
-        "displayName": "Train Wash",
-        "canonical": "#e8f0fe"
+      "done-ink": {
+        "role": "secondary",
+        "displayName": "Done Green",
+        "canonical": "#146c43",
+        "tonalRamp": [
+          "#0c4128",
+          "#157247",
+          "#1ea365",
+          "#27d484",
+          "#56e0a0",
+          "#87e9bb",
+          "#b8f2d7",
+          "#e9fbf3"
+        ]
       },
       "done-wash": {
-        "role": "status",
+        "role": "secondary",
         "displayName": "Done Wash",
-        "canonical": "#e8f5e9"
+        "canonical": "#e8f5e9",
+        "tonalRamp": [
+          "#173519",
+          "#295e2d",
+          "#3b8740",
+          "#4caf54",
+          "#73c279",
+          "#9cd4a0",
+          "#c5e6c7",
+          "#edf7ee"
+        ]
+      },
+      "caution-ink": {
+        "role": "secondary",
+        "displayName": "Caution Orange",
+        "canonical": "#a84300",
+        "tonalRamp": [
+          "#4c1f00",
+          "#873600",
+          "#c14d00",
+          "#fb6400",
+          "#ff8737",
+          "#ffaa71",
+          "#ffcdab",
+          "#fff0e6"
+        ]
       },
       "caution-wash": {
-        "role": "status",
+        "role": "secondary",
         "displayName": "Caution Wash",
-        "canonical": "#fff3e0"
+        "canonical": "#fff3e0",
+        "tonalRamp": [
+          "#4c2f00",
+          "#875300",
+          "#c17600",
+          "#fb9a00",
+          "#ffb137",
+          "#ffc871",
+          "#ffdfab",
+          "#fff5e6"
+        ]
       },
-      "info-border": {
-        "role": "status",
-        "displayName": "Info Border",
-        "canonical": "#c9d6f2"
+      "chart-game-tint": {
+        "role": "tertiary",
+        "displayName": "Game Tint",
+        "canonical": "#8aa3cf",
+        "tonalRamp": [
+          "#162236",
+          "#273c60",
+          "#385589",
+          "#496fb2",
+          "#718fc5",
+          "#9ab0d6",
+          "#c4d0e7",
+          "#edf1f8"
+        ]
       },
-      "caution-border": {
-        "role": "status",
-        "displayName": "Caution Border",
-        "canonical": "#f5d3ae"
-      },
-      "done-border": {
-        "role": "status",
-        "displayName": "Done Border",
-        "canonical": "#bfe3cb"
-      },
-      "series-mid-blue": {
-        "role": "status",
-        "displayName": "Series Mid Blue",
-        "canonical": "#3b6fb6"
+      "chart-squat": {
+        "role": "tertiary",
+        "displayName": "Squat Blue",
+        "canonical": "#3b6fb6",
+        "tonalRamp": [
+          "#13233a",
+          "#213e66",
+          "#2f5992",
+          "#3e74be",
+          "#6893ce",
+          "#94b2dc",
+          "#c0d2ea",
+          "#ecf1f9"
+        ]
       },
       "standard-1": {
-        "role": "status",
+        "role": "tertiary",
         "displayName": "Standard 1",
-        "canonical": "#e9ecef"
+        "canonical": "#dbe5f4",
+        "tonalRamp": [
+          "#16181b",
+          "#0f3460",
+          "#3b5f93",
+          "#8eaad6",
+          "#bccfe9",
+          "#dbe5f4",
+          "#e6ebf2",
+          "#ffffff"
+        ]
       },
       "standard-2": {
-        "role": "status",
+        "role": "tertiary",
         "displayName": "Standard 2",
-        "canonical": "#dbe5f4"
+        "canonical": "#bccfe9",
+        "tonalRamp": [
+          "#16181b",
+          "#0f3460",
+          "#3b5f93",
+          "#8eaad6",
+          "#bccfe9",
+          "#dbe5f4",
+          "#e6ebf2",
+          "#ffffff"
+        ]
       },
       "standard-3": {
-        "role": "status",
+        "role": "tertiary",
         "displayName": "Standard 3",
-        "canonical": "#bccfe9"
+        "canonical": "#8eaad6",
+        "tonalRamp": [
+          "#16181b",
+          "#0f3460",
+          "#3b5f93",
+          "#8eaad6",
+          "#bccfe9",
+          "#dbe5f4",
+          "#e6ebf2",
+          "#ffffff"
+        ]
       },
       "standard-4": {
-        "role": "status",
+        "role": "tertiary",
         "displayName": "Standard 4",
-        "canonical": "#8eaad6"
+        "canonical": "#3b5f93",
+        "tonalRamp": [
+          "#16181b",
+          "#0f3460",
+          "#3b5f93",
+          "#8eaad6",
+          "#bccfe9",
+          "#dbe5f4",
+          "#e6ebf2",
+          "#ffffff"
+        ]
       },
       "standard-5": {
-        "role": "status",
+        "role": "tertiary",
         "displayName": "Standard 5",
-        "canonical": "#3b5f93"
-      },
-      "standard-6": {
-        "role": "status",
-        "displayName": "Standard 6",
-        "canonical": "#0f3460"
+        "canonical": "#0f3460",
+        "tonalRamp": [
+          "#16181b",
+          "#0f3460",
+          "#3b5f93",
+          "#8eaad6",
+          "#bccfe9",
+          "#dbe5f4",
+          "#e6ebf2",
+          "#ffffff"
+        ]
       }
     },
     "typographyMeta": {
-      "stat": {
-        "displayName": "Stat"
-      },
-      "title": {
-        "displayName": "Title"
+      "sheet-day": {
+        "displayName": "Sheet day",
+        "purpose": "Day and date atop This Week; 1.5rem at 640px and below."
       },
       "headline": {
-        "displayName": "Headline"
+        "displayName": "Headline",
+        "purpose": "Page-level h2 with a 2px rule beneath."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Session headline under the sheet day."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Disclosure line heading each Plan and Reference section."
+      },
+      "row": {
+        "displayName": "Row",
+        "purpose": "Dosing-table rows."
       },
       "body": {
-        "displayName": "Body"
-      },
-      "body-small": {
-        "displayName": "Body Small"
-      },
-      "note": {
-        "displayName": "Note"
+        "displayName": "Body",
+        "purpose": "Prose, margin panels, week rows."
       },
       "meta": {
-        "displayName": "Meta"
+        "displayName": "Meta",
+        "purpose": "Header meta, cues, stats, log text."
       },
       "label": {
-        "displayName": "Label"
+        "displayName": "Label",
+        "purpose": "Uppercase nav tabs, column heads, toggles."
       },
       "micro": {
-        "displayName": "Micro"
+        "displayName": "Micro",
+        "purpose": "Uppercase pills, chips, panel labels, zone names; the 11px floor."
+      },
+      "sheet-day-phone": {
+        "displayName": "Sheet day (phone)",
+        "purpose": "Sheet day at 640px and below."
+      },
+      "entry": {
+        "displayName": "Entry",
+        "purpose": "Profile h1 and the 5+ write-in count."
       }
     },
     "shadows": [
       {
-        "name": "card-faint",
-        "value": "0 2px 8px rgba(0,0,0,0.04)",
-        "purpose": "Today Card only."
-      },
-      {
         "name": "tooltip",
-        "value": "0 2px 6px rgba(0,0,0,0.2)",
-        "purpose": "Chart tooltips."
+        "value": "0 2px 6px rgba(0,0,0,0.12)",
+        "purpose": "Chart hover tooltip only."
       }
     ],
     "motion": [
       {
-        "name": "quick",
-        "value": "0.15s",
-        "purpose": "Tab colour and background changes."
+        "name": "tick-fill",
+        "value": "120ms ease-out",
+        "purpose": "Tick box fills clinical blue on press."
       },
       {
         "name": "chevron",
-        "value": "0.2s",
+        "value": "transform 0.2s",
         "purpose": "Disclosure chevron rotation."
+      },
+      {
+        "name": "hover-colour",
+        "value": "color 0.15s, background 0.15s",
+        "purpose": "Nav tab hover."
       }
     ],
     "breakpoints": [
@@ -221,106 +473,145 @@
       {
         "name": "narrow",
         "value": "700px"
+      },
+      {
+        "name": "measure",
+        "value": "900px"
       }
     ]
   },
   "components": [
     {
-      "name": "Tab Button",
+      "name": "Navigation",
       "kind": "nav",
-      "refersTo": "tab-button",
-      "description": "Uppercase label in the fixed navy nav; active tab gets a coral underline.",
-      "html": "<div style=\"background:#1a1a2e;border-bottom:2px solid #e94560;display:flex\"><button class=\"ds-tab\">Today</button><button class=\"ds-tab active\">Plan</button></div>",
-      "css": ".ds-tab{background:none;border:none;color:rgba(255,255,255,0.7);font:600 0.78rem -apple-system,Segoe UI,Roboto,Arial,sans-serif;letter-spacing:0.3px;text-transform:uppercase;padding:0.7rem 1.2rem;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:color .15s,background .15s}.ds-tab:hover,.ds-tab:focus-visible{color:#fff;background:rgba(255,255,255,0.08)}.ds-tab.active{color:#fff;border-bottom-color:#e94560}"
+      "refersTo": "nav-tab",
+      "description": "Thin sheet nav: three uppercase tabs, 2px ink rule under the bar, 3px clinical-blue underline on the active tab.",
+      "html": "<nav class=\"ds-nav\"><button class=\"ds-tab ds-tab-active\">This Week</button><button class=\"ds-tab\">Training Plan</button><button class=\"ds-tab\">Reference</button></nav>",
+      "css": "font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-variant-numeric:tabular-nums;color:var(--ink,#16181b);.ds-nav{display:flex;background:#fff;border-bottom:2px solid #16181b;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}.ds-tab{min-height:44px;padding:0 1.2rem;margin-bottom:-2px;background:none;border:0;border-bottom:3px solid transparent;font:inherit;font-size:.75rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:#5b6470;cursor:pointer;transition:color .15s,background .15s}.ds-tab:hover{color:#16181b;background:#f4f6f9}.ds-tab:focus-visible{outline:2px solid #2456a6;outline-offset:-2px}.ds-tab-active{color:#16181b;border-bottom-color:#2456a6}"
     },
     {
-      "name": "Today Card",
-      "kind": "card",
-      "refersTo": "today-card",
-      "description": "Primary card. Border colour carries the day type.",
-      "html": "<div class=\"ds-today\"><div class=\"ds-today-head\"><span class=\"ds-today-day\">Tuesday</span><span class=\"ds-today-meta\">Week 30</span></div><div class=\"ds-today-title\">Lower body, heavy</div><ul class=\"ds-list\"><li><span>Trap Bar Deadlift</span><span>3x5 · 285 lb</span></li><li><span>Back Squat</span><span>3x5 · 205 lb</span></li></ul></div>",
-      "css": ".ds-today{background:#fff;border:2px solid #0f3460;border-radius:10px;padding:1.25rem 1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#212529}.ds-today-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem}.ds-today-day{font-size:1.2rem;font-weight:700}.ds-today-meta{font-size:.75rem;color:#6c757d;text-transform:uppercase;letter-spacing:.5px}.ds-today-title{font-size:1rem;font-weight:600;color:#0f3460;margin-bottom:.75rem}.ds-list{list-style:none;margin:0;padding:0}.ds-list li{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-bottom:1px solid #dee2e6;font-size:.9rem}"
-    },
-    {
-      "name": "Collapsible Section",
+      "name": "Dosing Table Row",
       "kind": "custom",
-      "description": "Details block with a Paper Alt header and rotating chevron.",
-      "html": "<details class=\"ds-sec\" open><summary>Insights <span>▾</span></summary><div class=\"ds-sec-body\">Body content</div></details>",
-      "css": ".ds-sec{border:1px solid #dee2e6;border-radius:8px;overflow:hidden;background:#fff;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif}.ds-sec summary{list-style:none;cursor:pointer;padding:.85rem 1.25rem;background:#f8f9fa;font-size:.95rem;display:flex;justify-content:space-between}.ds-sec summary:hover{background:#eef0f3}.ds-sec-body{padding:1rem 1.25rem 1.5rem;font-size:.9rem}"
+      "refersTo": "tick-box",
+      "description": "Numbered exercise row: number, name and cue, dose, load with change chip, square tick box. Ticking fills the box blue in 120ms and strikes the row to one line.",
+      "html": "<div class=\"ds-dose\"><div class=\"ds-head\"><span>#</span><span>Exercise</span><span>Dose</span><span>Load</span><span style=\"text-align:center\">Done</span></div><div class=\"ds-row\"><span class=\"ds-no\">1</span><span><span class=\"ds-name\">Trap Bar Deadlift</span><span class=\"ds-cue\">Brace, drive the floor away. Last set 5+.</span></span><span class=\"ds-sets\">3x5</span><span class=\"ds-load\">275 lbs <span class=\"ds-chip ds-up\">+10</span></span><button class=\"ds-tick\" aria-pressed=\"false\" aria-label=\"Done\"></button></div><div class=\"ds-row ds-done\"><span class=\"ds-no\">2</span><span class=\"ds-name\">Back Squat</span><span class=\"ds-sets\"></span><span class=\"ds-load\">175 lbs</span><button class=\"ds-tick\" aria-pressed=\"true\" aria-label=\"Done\"></button></div></div>",
+      "css": ".ds-dose{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-variant-numeric:tabular-nums;color:#16181b;border-top:2px solid #16181b;max-width:640px}.ds-head,.ds-row{display:grid;grid-template-columns:1.5rem minmax(0,1fr) 5rem 7rem 44px;column-gap:.75rem;align-items:start}.ds-head{padding:.55rem 0 .3rem;border-bottom:1px solid #16181b;font-size:.6875rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:#5b6470}.ds-row{padding:.6rem 0;border-bottom:1px solid #d7dde5;font-size:.9375rem;line-height:1.4}.ds-no{font-weight:700;color:#2456a6}.ds-name{display:block;font-weight:600}.ds-cue{display:block;font-size:.8125rem;color:#3d434b}.ds-sets{color:#3d434b}.ds-load{font-weight:700}.ds-chip{display:inline-block;margin-left:.35em;padding:0 5px;border-radius:2px;font-size:.6875rem;font-weight:700;line-height:1.5}.ds-up{background:#e8eef8;color:#2456a6}.ds-tick{position:relative;width:44px;height:44px;margin-top:-11px;padding:0;border:0;background:none;cursor:pointer}.ds-tick::before{content:'';position:absolute;inset:11px;border:1.5px solid #16181b;border-radius:1px;background:#fff;transition:background-color 120ms ease-out,border-color 120ms ease-out}.ds-tick:hover::before{border-color:#2456a6}.ds-tick:focus-visible{outline:2px solid #2456a6;outline-offset:-3px}.ds-tick[aria-pressed=true]::before{background:#2456a6;border-color:#2456a6}.ds-tick[aria-pressed=true]::after{content:'';position:absolute;left:18px;top:14px;width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}.ds-done{padding:0;align-items:center}.ds-done .ds-tick{margin-top:0}.ds-done .ds-no,.ds-done .ds-load{color:#5b6470;line-height:44px}.ds-done .ds-name{line-height:44px;font-weight:500;color:#5b6470;text-decoration:line-through}"
     },
     {
-      "name": "Tags",
-      "kind": "chip",
-      "refersTo": "tag-game",
-      "description": "Day-type pills: wash fill, ink text.",
-      "html": "<span class=\"ds-tag ds-g\">Game</span> <span class=\"ds-tag ds-t\">Training</span> <span class=\"ds-tag ds-d\">Done</span> <span class=\"ds-tag ds-c\">Hotel</span>",
-      "css": ".ds-tag{display:inline-block;font:600 .6875rem -apple-system,Segoe UI,Roboto,Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;padding:2px 8px;border-radius:4px}.ds-g{background:#fde8ec;color:#c0233c}.ds-t{background:#e8f0fe;color:#0f3460}.ds-d{background:#e8f5e9;color:#146c43}.ds-c{background:#fff3e0;color:#a84300}"
+      "name": "5+ Write-in Line",
+      "kind": "input",
+      "refersTo": "write-in",
+      "description": "Underlined field for the reps-plus count: blue label, ink line, no box.",
+      "html": "<div class=\"ds-reps\"><label for=\"ds-r\">5+ set reps</label><input id=\"ds-r\" class=\"ds-reps-in\" inputmode=\"numeric\" value=\"7\"><span class=\"ds-hint\">1 to 10, stop at the last clean rep</span></div>",
+      "css": ".ds-reps{display:flex;flex-wrap:wrap;align-items:flex-end;gap:0 .5rem;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}.ds-reps label{padding-bottom:.3rem;font-size:.8125rem;font-weight:600;color:#2456a6}.ds-reps-in{width:3.5rem;height:44px;padding:.7rem .25rem 0;border:0;border-bottom:1.5px solid #16181b;border-radius:0;background:transparent;color:#2456a6;font:inherit;font-size:1.25rem;font-weight:700;text-align:center;font-variant-numeric:tabular-nums}.ds-reps-in:focus-visible{outline:none;border-bottom:2px solid #2456a6;background:#e8eef8}.ds-reps-in[aria-invalid=true]{border-bottom:2px solid #a84300}.ds-hint{flex-basis:100%;margin-top:.15rem;font-size:.75rem;color:#5b6470}"
     },
     {
-      "name": "Weight Chips",
-      "kind": "chip",
-      "refersTo": "weight-chip-hold",
-      "description": "Change against the last logged weight.",
-      "html": "<span>275 lbs <span class=\"ds-wc ds-h\">hold</span></span> <span>125 lbs <span class=\"ds-wc ds-u\">+5</span></span> <span>BW + 67 <span class=\"ds-wc ds-dn\">−10</span></span>",
-      "css": ".ds-wc{display:inline-block;margin-left:.3em;font:600 .6875rem -apple-system,Segoe UI,Roboto,Arial,sans-serif;padding:1px 6px;border-radius:4px;white-space:nowrap}.ds-h{background:#e9ecef;color:#5c636a}.ds-u{background:#e8f0fe;color:#0f3460}.ds-dn{background:#fff3e0;color:#a84300}"
-    },
-    {
-      "name": "Check Button",
+      "name": "Send Button",
       "kind": "button",
-      "refersTo": "check-button",
-      "description": "Tap-off control on training-day rows.",
-      "html": "<button class=\"ds-chk\" aria-pressed=\"false\" aria-label=\"Mark done\"></button><button class=\"ds-chk\" aria-pressed=\"true\" aria-label=\"Done\"></button>",
-      "css": ".ds-chk{width:44px;height:44px;border:0;background:none;position:relative;cursor:pointer}.ds-chk::before{content:'';position:absolute;inset:11px;border:2px solid #5c636a;border-radius:4px;background:#fff}.ds-chk[aria-pressed=true]::before{background:#198754;border-color:#198754}.ds-chk:focus-visible{outline:2px solid #0f3460;outline-offset:2px}"
+      "refersTo": "send-button",
+      "description": "The sign-off action under a dashed rule: blue outline, fills blue on hover.",
+      "html": "<div class=\"ds-sign\"><span class=\"ds-sign-t\">All 7 done</span><button class=\"ds-send\">Copy session</button></div>",
+      "css": ".ds-sign{display:flex;align-items:center;gap:.75rem;min-height:44px;padding:.5rem 0;border-top:1px dashed #5b6470;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:.8125rem}.ds-sign-t{font-weight:600;color:#16181b}.ds-send{min-height:44px;padding:0 1rem;border:1.5px solid #2456a6;border-radius:2px;background:#fff;color:#2456a6;font:inherit;font-weight:700;cursor:pointer}.ds-send:hover{background:#2456a6;color:#fff}.ds-send:focus-visible{outline:2px solid #2456a6;outline-offset:2px}"
+    },
+    {
+      "name": "Margin Panel",
+      "kind": "card",
+      "refersTo": "margin-panel",
+      "description": "Flat blue-grey callout for the pain rule, coaching detail and reference notes.",
+      "html": "<aside class=\"ds-panel\"><strong>Pain rule</strong><ul><li><b>0 to 3/10</b> during loading: carry on.</li><li><b>4 to 5/10</b>: hold the load.</li><li><b>Above 5/10</b>: stop the exercise.</li></ul></aside>",
+      "css": ".ds-panel{max-width:34rem;padding:.75rem .875rem;background:#e6ebf2;border-radius:3px;color:#16181b;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:.875rem;line-height:1.5}.ds-panel>strong{display:block;margin-bottom:.25rem;font-size:.6875rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#2456a6}.ds-panel ul{list-style:none;margin:0;padding:0}.ds-panel li{padding:.35rem 0;border-top:1px solid #c9d2de}.ds-panel li:first-child{border-top:0}"
+    },
+    {
+      "name": "Day-type Pills and Change Chips",
+      "kind": "chip",
+      "refersTo": "pill-training",
+      "description": "Colour-as-code marks: training, game, done, caution, rest; up, hold, down.",
+      "html": "<div class=\"ds-marks\"><span class=\"ds-pill ds-train\">Training</span><span class=\"ds-pill ds-game\">Game</span><span class=\"ds-pill ds-donep\">Done</span><span class=\"ds-pill ds-caut\">Hotel</span><span class=\"ds-pill ds-rest\">Rest</span> <span class=\"ds-chip ds-up\">+5</span><span class=\"ds-chip ds-hold\">hold</span><span class=\"ds-chip ds-down\">-10</span></div>",
+      "css": ".ds-marks{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}.ds-pill,.ds-chip{display:inline-block;border-radius:2px;font-size:.6875rem;font-weight:700;line-height:1.5;white-space:nowrap}.ds-pill{padding:1px 6px;letter-spacing:.5px;text-transform:uppercase}.ds-chip{padding:0 5px}.ds-train,.ds-up{background:#e8eef8;color:#2456a6}.ds-game{background:#fde8ec;color:#c0233c}.ds-donep{background:#e8f5e9;color:#146c43}.ds-caut,.ds-down{background:#fff3e0;color:#a84300}.ds-rest,.ds-hold{background:#e6ebf2;color:#3d434b}"
+    },
+    {
+      "name": "Week Schedule Row",
+      "kind": "custom",
+      "refersTo": "pill-training",
+      "description": "One ruled disclosure row per day: marker, day, date, type pill, headline, detail toggle with CSS chevron.",
+      "html": "<div class=\"ds-week\"><details class=\"ds-day ds-today\"><summary class=\"ds-mdrow\"><span class=\"ds-d\">Tue</span><span class=\"ds-dt\">9/29</span><span class=\"ds-pill ds-train\">Training</span><span class=\"ds-desc\">Jumps, trap bar, squat, core</span><span class=\"ds-tog\">Detail</span></summary><div class=\"ds-body\">Box jump, trap bar deadlift 5+, back squat, RDL, calf HSR, woodchop.</div></details><details class=\"ds-day\"><summary class=\"ds-mdrow\"><span class=\"ds-d\">Sun</span><span class=\"ds-dt\">10/4</span><span class=\"ds-pill ds-game\">Game</span><span class=\"ds-desc\">Basketball AM, hockey PM</span><span class=\"ds-tog\">Detail</span></summary></details></div>",
+      "css": ".ds-week{border-top:2px solid #16181b;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-variant-numeric:tabular-nums;color:#16181b;max-width:640px}.ds-day{border-bottom:1px solid #d7dde5}.ds-mdrow{display:grid;grid-template-columns:.625rem 2.5rem 2.75rem 6rem minmax(0,1fr) 4.5rem;align-items:center;column-gap:.75rem;min-height:44px;padding:.4rem 0;list-style:none;cursor:pointer}.ds-mdrow::-webkit-details-marker{display:none}.ds-mdrow::before{content:'';width:.625rem;height:.625rem}.ds-today .ds-mdrow::before{background:#2456a6;border-radius:1px}.ds-d{font-weight:700;font-size:.875rem}.ds-dt{font-size:.8125rem;color:#5b6470}.ds-desc{font-size:.875rem}.ds-today .ds-desc{font-weight:700}.ds-pill{justify-self:start;padding:1px 6px;border-radius:2px;font-size:.6875rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase}.ds-train{background:#e8eef8;color:#2456a6}.ds-game{background:#fde8ec;color:#c0233c}.ds-tog{justify-self:end;display:inline-flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:#2456a6}.ds-tog::after{content:'';width:.4em;height:.4em;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-25%) rotate(45deg);transition:transform .2s}.ds-day[open] .ds-tog::after{transform:translateY(25%) rotate(-135deg)}.ds-mdrow:hover .ds-tog{color:#16181b}.ds-mdrow:focus-visible{outline:2px solid #2456a6;outline-offset:-2px}.ds-body{padding:0 0 .75rem 1.375rem;font-size:.875rem;color:#3d434b}"
+    },
+    {
+      "name": "Strength Target Row",
+      "kind": "custom",
+      "refersTo": "margin-panel",
+      "description": "Ruled targets table with a blue percentage over a 6px outlined progress bar.",
+      "html": "<table class=\"ds-tg\"><thead><tr><th>Lift</th><th>Now</th><th>Target</th><th>Progress</th></tr></thead><tbody><tr><th>Trap Bar Deadlift</th><td>275 x 5<small>1.26x BW</small></td><td>385 x 5<small>Mar 2028</small></td><td><span class=\"ds-pct\">71%</span><span class=\"ds-bar\"><span style=\"width:71%\"></span></span></td></tr></tbody></table>",
+      "css": ".ds-tg{width:100%;max-width:640px;border-collapse:collapse;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-variant-numeric:tabular-nums;font-size:.875rem;line-height:1.3;color:#16181b}.ds-tg thead th{padding:.35rem .4rem .35rem 0;border-bottom:2px solid #16181b;text-align:left;font-size:.75rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:#5b6470}.ds-tg tbody th,.ds-tg tbody td{padding:.6rem .4rem .6rem 0;border-bottom:1px solid #d7dde5;text-align:left;vertical-align:top}.ds-tg tbody th{font-weight:600}.ds-tg small{display:block;font-size:.75rem;color:#5b6470}.ds-tg td:last-child{width:30%}.ds-pct{display:block;font-weight:600;color:#2456a6}.ds-bar{display:block;height:6px;margin-top:.35rem;border:1px solid #2456a6;background:#fff}.ds-bar>span{display:block;height:100%;background:#2456a6}"
     }
   ],
   "narrative": {
-    "northStar": "The Clipboard",
-    "overview": "A coach's sheet, not a dashboard product. Information comes first, surfaces are flat and white, and one hot accent, coral, is reserved for games and the active tab. The page is a single 900px column that reads on a phone without expanding anything, with detail folded behind toggles.\n\nState is carried by colour and border, never by decoration. A card's border says what kind of day it is: coral for a game, blue for training, green for done, grey for rest.",
+    "northStar": "The Physio Exercise Sheet",
+    "overview": "The site is the sheet a clinician or strength coach hands the athlete: numbered moves, a dosing table, square tick boxes, a line to write the 5+ count on, and the rules set off in the margin. Everything sits on one white sheet in near-black ink. Structure comes from rules, never from boxes: a heavy ink rule opens every table and section, hairlines separate rows, and pale blue-grey margin panels carry the rules and coaching notes.\n\nDensity is that of a printed handout read at arm's length in a gym. Rows are tight but every control has a 44px target. One clinical blue carries the numbers that matter, the ticks and the links; the other state inks (game red, done green, caution orange) appear only as small marks and pills. The sheet shortens as the session runs: a ticked row fills its box blue and strikes down to one line.\n\nThe world rejects the tracker-app stack of rounded cards, the dashboard of stat tiles, dark themes, gamified feedback and webfonts. It is set in the system sans with tabular numerals throughout.",
     "keyCharacteristics": [
-      "Flat surfaces with 1px hairline borders; almost no shadow.",
-      "System font only. Hierarchy comes from weight, size and small uppercase labels.",
-      "Colour is a code (game, train, done, rest), not a mood.",
-      "Long text is clamped or collapsed by default; expand on tap.",
-      "Every control and link has a 44px hit area on phones; no text below 11px."
+      "White sheet, near-black ink, one clinical blue.",
+      "Ruled tables: 2px ink rule under headers and at section tops, 1px hairlines between rows.",
+      "Square tick boxes and a write-in line, drawn in CSS.",
+      "Margin panels in flat blue-grey for rules and detail.",
+      "Colour-as-code confined to small marks and pills.",
+      "System sans, tabular numerals, 11px floor."
     ],
     "rules": [
       {
-        "name": "Colour-As-Code Rule",
-        "body": "Coral means game, blue means training, green means done, grey means rest or hold, orange means caution. Do not reuse them decoratively.",
+        "name": "The One Blue Rule",
+        "body": "Clinical Blue is the only accent that carries emphasis. A second accent hue for emphasis is off-system.",
         "section": "colors"
       },
       {
-        "name": "Ink Rule",
-        "body": "A state colour used as text on white or a wash always uses its ink version, so every label reaches 4.5:1.",
+        "name": "The Marks Only Rule",
+        "body": "Game red, done green and caution orange appear as pills, chips, small squares, dots and short text marks. They never fill a row, tint a panel, colour a heading or run down an edge.",
         "section": "colors"
       },
       {
-        "name": "11px Floor Rule",
-        "body": "No rendered text below 11px on screen, including SVG text scaled to its rendered width.",
+        "name": "The Code Holds Rule",
+        "body": "Red means game, blue means training, green means done, orange means caution, grey means rest or hold. A colour is never borrowed for a different meaning, including hover states.",
+        "section": "colors"
+      },
+      {
+        "name": "The 11px Floor Rule",
+        "body": "No rendered text below 0.6875rem (11px), including chart labels.",
         "section": "typography"
       },
       {
-        "name": "Small Caps Label Rule",
-        "body": "Uppercase is for short labels only. Never set a sentence in uppercase.",
+        "name": "The Tabular Rule",
+        "body": "Numerals are tabular everywhere. Any new number column inherits it; never switch it off.",
         "section": "typography"
       },
       {
-        "name": "Flat-By-Default Rule",
-        "body": "Surfaces are flat at rest. Do not add shadows to cards to make them feel raised.",
+        "name": "The Sentence Case Heading Rule",
+        "body": "Headings and section lines are sentence case. Uppercase is reserved for label and micro sizes, where it names a column, a control or a panel.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper Rule",
+        "body": "Nothing sits above the sheet except a transient tooltip. Separation is a rule or a margin fill, never a shadow.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "keep the Today Card the first thing on the page.",
-      "keep each tile headline to about 8 words and fold the rest behind a toggle.",
-      "use the four state colours only for their meaning.",
-      "give every control and link a 44px hit area on phones (vertical padding on the inline box, not bigger text)."
+      "**Do** open every table and section with a 2px ink rule and divide rows with 1px hairlines.",
+      "**Do** keep Clinical Blue as the only emphasis colour, and put state inks on pills, chips and small marks only.",
+      "**Do** draw tick boxes, chevrons, checks and legend keys in CSS or inline SVG.",
+      "**Do** use the system sans with tabular numerals and keep text at 11px or above.",
+      "**Do** give every control a 44px target on phones, and keep contrast at 4.5:1.",
+      "**Do** set rules, notes and cautions in a flat Margin panel with an optional blue label.",
+      "**Do** limit motion to the 120ms tick fill and disclosure chevrons."
     ],
     "donts": [
-      "add nutrition or sleep UI. Both are retired.",
-      "put citations, evidence tiers or program self-assessment in any rendered field.",
-      "hardcode a schedule in `index.html`; an un-authored week must show as missing.",
-      "add a webfont, framework or build step."
+      "**Don't** build rounded cards, stat tiles or boxed dashboards; use ruled rows and label/value lists.",
+      "**Don't** use a coloured side stripe or edge bar on any row, panel or callout.",
+      "**Don't** add an uppercase kicker or eyebrow label above a heading.",
+      "**Don't** use glyph or emoji icons, or icon fonts.",
+      "**Don't** add shadows to anything that is not a transient tooltip.",
+      "**Don't** ship a dark theme or gamified feedback.",
+      "**Don't** load a webfont.",
+      "**Don't** use game red, done green or caution orange for hover, emphasis or decoration."
     ]
   }
 }

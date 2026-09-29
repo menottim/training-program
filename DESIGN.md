@@ -1,287 +1,369 @@
 ---
-name: Training Program
-description: A flat, phone-first coach's sheet in navy and blue, with coral kept for games, for one athlete's week, log and targets.
+name: In-Season Training Program
+description: One athlete's training plan, set out as the exercise sheet a clinician hands over.
 colors:
-  night-navy: "#1a1a2e"
-  training-blue: "#0f3460"
-  signal-coral: "#e94560"
-  coral-ink: "#c0233c"
-  paper: "#ffffff"
-  paper-alt: "#f8f9fa"
-  paper-hover: "#eef0f3"
-  hairline: "#dee2e6"
-  neutral-wash: "#e9ecef"
-  ink: "#212529"
-  ink-soft: "#495057"
-  ink-muted: "#5c636a"
-  done-green: "#198754"
-  done-ink: "#146c43"
-  done-ink-deep: "#1b5e20"
-  caution-orange: "#fd7e14"
-  caution-ink: "#a84300"
+  sheet: "#ffffff"
+  ink: "#16181b"
+  ink-2: "#3d434b"
+  ink-3: "#5b6470"
+  rule: "#16181b"
+  hair: "#d7dde5"
+  margin: "#e6ebf2"
+  margin-2: "#f4f6f9"
+  margin-hair: "#c9d2de"
+  clin: "#2456a6"
+  clin-wash: "#e8eef8"
+  clin-deep: "#0a2440"
+  game-ink: "#c0233c"
+  game-cap: "#e94560"
   game-wash: "#fde8ec"
-  train-wash: "#e8f0fe"
+  done-ink: "#146c43"
   done-wash: "#e8f5e9"
+  caution-ink: "#a84300"
   caution-wash: "#fff3e0"
-  info-border: "#c9d6f2"
-  caution-border: "#f5d3ae"
-  done-border: "#bfe3cb"
-  series-mid-blue: "#3b6fb6"
-  standard-1: "#e9ecef"
-  standard-2: "#dbe5f4"
-  standard-3: "#bccfe9"
-  standard-4: "#8eaad6"
-  standard-5: "#3b5f93"
-  standard-6: "#0f3460"
+  chart-game-tint: "#8aa3cf"
+  chart-squat: "#3b6fb6"
+  standard-1: "#dbe5f4"
+  standard-2: "#bccfe9"
+  standard-3: "#8eaad6"
+  standard-4: "#3b5f93"
+  standard-5: "#0f3460"
 typography:
-  stat:
+  sheet-day:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "1.625rem"
+    fontWeight: 700
+    lineHeight: 1.15
+    letterSpacing: "-0.02em"
+    fontFeature: "tnum"
+  sheet-day-phone:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "1.5rem"
     fontWeight: 700
-  title:
+    lineHeight: 1.15
+    letterSpacing: "-0.02em"
+    fontFeature: "tnum"
+  entry:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "1.2rem"
+    fontSize: "1.25rem"
     fontWeight: 700
-    lineHeight: 1.6
+    lineHeight: 1.3
+    letterSpacing: "-0.01em"
+    fontFeature: "tnum"
   headline:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "1rem"
+    fontSize: "1.3rem"
+    fontWeight: 700
+    lineHeight: 1.3
+    letterSpacing: "-0.01em"
+  title:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "1.0625rem"
     fontWeight: 600
+    lineHeight: 1.3
+  section:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "1rem"
+    fontWeight: 700
+    lineHeight: 1.3
+    letterSpacing: "-0.005em"
+  row:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "0.9375rem"
+    fontWeight: 400
+    lineHeight: 1.4
+    fontFeature: "tnum"
   body:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "0.9rem"
-    fontWeight: 400
-    lineHeight: 1.6
-  body-small:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "0.85rem"
+    fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.5
-  note:
+    fontFeature: "tnum"
+  meta:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "0.8125rem"
     fontWeight: 400
-    lineHeight: 1.4
-  meta:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "0.8rem"
-    fontWeight: 400
+    lineHeight: 1.45
+    fontFeature: "tnum"
   label:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "0.75rem"
     fontWeight: 600
+    lineHeight: 1.4
     letterSpacing: "0.5px"
   micro:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "0.6875rem"
-    fontWeight: 600
+    fontWeight: 700
+    lineHeight: 1.5
     letterSpacing: "0.5px"
 rounded:
-  xs: "3px"
-  sm: "4px"
-  md: "6px"
-  lg: "8px"
-  xl: "10px"
-  pill: "50%"
+  box: "1px"
+  mark: "2px"
+  panel: "3px"
 spacing:
-  xs: "0.25rem"
-  sm: "0.5rem"
-  md: "1rem"
-  lg: "1.5rem"
+  row-y: "0.6rem"
+  col-gap: "0.75rem"
+  panel-x: "0.875rem"
+  gutter: "1.5rem"
+  section: "2.5rem"
   tap: "44px"
+  measure: "900px"
 components:
-  tab-button:
-    backgroundColor: "{colors.night-navy}"
-    textColor: "{colors.paper}"
+  nav-tab:
+    backgroundColor: "{colors.sheet}"
+    textColor: "{colors.ink-3}"
     typography: "{typography.label}"
     height: "44px"
-  today-card:
-    backgroundColor: "{colors.paper}"
+    padding: "0 1.2rem"
+  nav-tab-active:
     textColor: "{colors.ink}"
-    rounded: "{rounded.xl}"
-    padding: "1.25rem 1.5rem"
-  check-button:
-    backgroundColor: "{colors.paper}"
-    rounded: "{rounded.sm}"
-    size: "44px"
-  insights-section:
-    backgroundColor: "{colors.paper}"
-    rounded: "{rounded.lg}"
-    padding: "1rem 1.25rem"
-  tag-game:
+  tick-box:
+    backgroundColor: "{colors.sheet}"
+    rounded: "{rounded.box}"
+    size: "22px"
+  tick-box-checked:
+    backgroundColor: "{colors.clin}"
+    textColor: "{colors.sheet}"
+    rounded: "{rounded.box}"
+    size: "22px"
+  write-in:
+    backgroundColor: "{colors.sheet}"
+    textColor: "{colors.clin}"
+    width: "3.5rem"
+    height: "44px"
+  send-button:
+    backgroundColor: "{colors.sheet}"
+    textColor: "{colors.clin}"
+    rounded: "{rounded.mark}"
+    height: "44px"
+    padding: "0 1rem"
+  send-button-hover:
+    backgroundColor: "{colors.clin}"
+    textColor: "{colors.sheet}"
+  margin-panel:
+    backgroundColor: "{colors.margin}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body}"
+    rounded: "{rounded.panel}"
+    padding: "0.75rem 0.875rem"
+  pill-training:
+    backgroundColor: "{colors.clin-wash}"
+    textColor: "{colors.clin}"
+    typography: "{typography.micro}"
+    rounded: "{rounded.mark}"
+    padding: "1px 6px"
+  pill-game:
     backgroundColor: "{colors.game-wash}"
-    textColor: "{colors.coral-ink}"
+    textColor: "{colors.game-ink}"
     typography: "{typography.micro}"
-    rounded: "{rounded.sm}"
-  tag-train:
-    backgroundColor: "{colors.train-wash}"
-    textColor: "{colors.training-blue}"
-    typography: "{typography.micro}"
-    rounded: "{rounded.sm}"
-  tag-done:
+    rounded: "{rounded.mark}"
+    padding: "1px 6px"
+  pill-done:
     backgroundColor: "{colors.done-wash}"
     textColor: "{colors.done-ink}"
     typography: "{typography.micro}"
-    rounded: "{rounded.sm}"
-  tag-caution:
+    rounded: "{rounded.mark}"
+    padding: "1px 6px"
+  pill-caution:
     backgroundColor: "{colors.caution-wash}"
     textColor: "{colors.caution-ink}"
     typography: "{typography.micro}"
-    rounded: "{rounded.sm}"
-  weight-chip-hold:
-    backgroundColor: "{colors.neutral-wash}"
-    textColor: "{colors.ink-muted}"
+    rounded: "{rounded.mark}"
+    padding: "1px 6px"
+  pill-rest:
+    backgroundColor: "{colors.margin}"
+    textColor: "{colors.ink-2}"
     typography: "{typography.micro}"
-    rounded: "{rounded.sm}"
-  weight-chip-up:
-    backgroundColor: "{colors.train-wash}"
-    textColor: "{colors.training-blue}"
+    rounded: "{rounded.mark}"
+    padding: "1px 6px"
+  chip-up:
+    backgroundColor: "{colors.clin-wash}"
+    textColor: "{colors.clin}"
     typography: "{typography.micro}"
-    rounded: "{rounded.sm}"
-  weight-chip-down:
+    rounded: "{rounded.mark}"
+    padding: "0 5px"
+  chip-hold:
+    backgroundColor: "{colors.margin}"
+    textColor: "{colors.ink-2}"
+    typography: "{typography.micro}"
+    rounded: "{rounded.mark}"
+    padding: "0 5px"
+  chip-down:
     backgroundColor: "{colors.caution-wash}"
     textColor: "{colors.caution-ink}"
     typography: "{typography.micro}"
-    rounded: "{rounded.sm}"
+    rounded: "{rounded.mark}"
+    padding: "0 5px"
 ---
 
-# Design System: Training Program
+# Design System: In-Season Training Program
 
 ## Overview
 
-**Creative North Star: "The Clipboard"**
+**Creative North Star: "The Physio Exercise Sheet"**
 
-A coach's sheet, not a dashboard product. Information comes first, surfaces are flat and white, and one hot accent, coral, is reserved for games and the active tab. The page is a single 900px column that reads on a phone without expanding anything, with detail folded behind toggles.
+The site is the sheet a clinician or strength coach hands the athlete: numbered moves, a dosing table, square tick boxes, a line to write the 5+ count on, and the rules set off in the margin. Everything sits on one white sheet in near-black ink. Structure comes from rules, never from boxes: a heavy ink rule opens every table and section, hairlines separate rows, and pale blue-grey margin panels carry the rules and coaching notes.
 
-State is carried by colour and border, never by decoration. A card's border says what kind of day it is: coral for a game, blue for training, green for done, grey for rest.
+Density is that of a printed handout read at arm's length in a gym. Rows are tight but every control has a 44px target. One clinical blue carries the numbers that matter, the ticks and the links; the other state inks (game red, done green, caution orange) appear only as small marks and pills. The sheet shortens as the session runs: a ticked row fills its box blue and strikes down to one line.
+
+The world rejects the tracker-app stack of rounded cards, the dashboard of stat tiles, dark themes, gamified feedback and webfonts. It is set in the system sans with tabular numerals throughout.
 
 **Key Characteristics:**
-- Flat surfaces with 1px hairline borders; almost no shadow.
-- System font only. Hierarchy comes from weight, size and small uppercase labels.
-- Colour is a code (game, train, done, rest), not a mood.
-- Long text is clamped or collapsed by default; expand on tap.
-- Every control and link has a 44px hit area on phones; no text below 11px.
+- White sheet, near-black ink, one clinical blue.
+- Ruled tables: 2px ink rule under headers and at section tops, 1px hairlines between rows.
+- Square tick boxes and a write-in line, drawn in CSS.
+- Margin panels in flat blue-grey for rules and detail.
+- Colour-as-code confined to small marks and pills.
+- System sans, tabular numerals, 11px floor.
 
 ## Colors
 
-Navy and Training Blue carry the page; coral, green and orange are reserved for state, each with a darker "ink" version for text.
+A monochrome ink sheet with one clinical blue, plus four state inks that only ever appear as marks.
 
 ### Primary
-- **Night Navy**: fixed nav bar, header stat values, target numbers.
-- **Training Blue**: training days, links, strength bars, the dark end of the standards ramp, focus rings.
-- **Signal Coral**: game days only. As text on white or its wash it becomes **Coral Ink**.
+- **Clinical Blue** (clin): exercise numbers, tick fills, the 5+ label and entry, links, progress fills, rank names, margin-panel labels, focus rings, the active nav underline and the current-day square in the week schedule. It is the only colour allowed to carry a number at large size.
+- **Clinical Wash** (clin-wash): the background of training pills and up chips, text selection and the focused write-in line.
+- **Deep Clinical** (clin-deep): hover ink for content links on Plan and Reference, where the underline turns solid and 2px.
+
+### Secondary (state inks, marks only)
+- **Game Red** (game-ink) on **Game Wash** (game-wash): game pills and the game mark in the sheet header.
+- **Game Cap** (game-cap): the 2px cap on game bars in the weekly volume chart. Nowhere else.
+- **Done Green** (done-ink) on **Done Wash** (done-wash): the done mark, completed-day pills, deload pills and the copied-status line.
+- **Caution Orange** (caution-ink) on **Caution Wash** (caution-wash): hotel and rehab pills, down chips, out-of-range lab marks, pain points above 3/10, invalid write-in entries, a body-composition value moving the wrong way.
 
 ### Neutral
-- **Paper** and **Paper Alt**: page, cards, summary bars, plan-change banner. **Paper Hover** on section headers.
-- **Hairline**: borders and dividers. **Neutral Wash**: hold chips, recovery tags, the lightest standards zone.
-- **Ink**, **Ink Soft** and **Ink Muted**: body text, secondary text, metadata and "last weight" references.
+- **Sheet** (sheet): the page. There is no other page background.
+- **Ink** (ink) and **Rule** (rule): body text, exercise names, loads, and the heavy rules. Rule is the same ink as text, named for its role.
+- **Ink 2** (ink-2): secondary text, dose, notes, prose on Reference.
+- **Ink 3** (ink-3): column heads, dates, history lines, done rows, the dashed sign-off rule, chart baselines.
+- **Hairline** (hair): row dividers, footer rule, chart gridlines on body composition.
+- **Margin** (margin): margin panels, rest and hold marks, chart gridlines, the untrained zone of the standards scale.
+- **Margin 2** (margin-2): nav hover, tooltip fill, the copy-fallback textarea.
+- **Margin Hairline** (margin-hair): dividers between list items inside a margin panel.
 
-### Status
-- **Done Green** fills checks; **Done Ink** (and **Done Ink Deep** for pills) is its text version.
-- **Caution Orange** is a fill only; **Caution Ink** is used for any caution text (hotel, rehab, behind on HSR, deload chips).
-- **Washes** (game, train, done, caution) back tags and chips; the matching **borders** frame info, caution and done callouts.
-
-### Charts and gauge
-Series use Training Blue (solid), **Series Mid Blue** (dashed) and Ink Muted (dotted). The strength-standards gauge is a six-step blue ramp (**Standard 1** to **Standard 6**) with ink text on the four light zones and white on the two dark ones.
+### Chart series
+- Trap bar deadlift in Clinical Blue solid, bench in Ink 2 dotted (2,3), back squat in **Squat Blue** (chart-squat) dashed (6,4). Series are told apart by dash, not by hue alone.
+- Games in the volume chart are **Game Tint** (chart-game-tint) with the red cap; training in Clinical Blue; recovery in Ink 3.
+- The strength standards ramp runs **standard-1** to **standard-5** (Beginner to Elite), light to dark in the clinical hue, with Margin for Untrained. Segments are separated by a 1px sheet-coloured inset.
 
 ### Named Rules
-**The Colour-As-Code Rule.** Coral means game, blue means training, green means done, grey means rest or hold, orange means caution. Do not reuse them decoratively.
+**The One Blue Rule.** Clinical Blue is the only accent that carries emphasis. A second accent hue for emphasis is off-system.
 
-**The Ink Rule.** A state colour used as text on white or a wash always uses its ink version, so every label reaches 4.5:1.
+**The Marks Only Rule.** Game red, done green and caution orange appear as pills, chips, small squares, dots and short text marks. They never fill a row, tint a panel, colour a heading or run down an edge.
+
+**The Code Holds Rule.** Red means game, blue means training, green means done, orange means caution, grey means rest or hold. A colour is never borrowed for a different meaning, including hover states.
 
 ## Typography
 
-**Font:** the system stack. No webfont is loaded.
+**Body Font:** the system sans stack (-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif)
+**Display Font:** the same stack; there is no second family.
 
-**Character:** neutral and quick to read on a phone in a gym.
+**Character:** A plain clinical handout face. Weight and size carry hierarchy; tabular numerals are on for the whole body so loads, dates and counts align down a column.
 
 ### Hierarchy
-- **Stat** (700, 1.5rem): dashboard values.
-- **Title** (700, 1.2rem): the Today Card day name.
-- **Headline** (600, 1rem): card titles, profile stat values.
-- **Body** (400, 0.9rem, 1.6) and **Body small** (0.85rem): checklist rows, tables, Reference copy.
-- **Note** (0.8125rem): log notes and exercise notes on phones, "last weight" on the Today Card.
-- **Meta** (0.8rem): secondary lines.
-- **Label** (600, 0.75rem, `--fs-label`): tabs, toggles, chart labels people read.
-- **Micro** (600, 0.6875rem, `--fs-micro`): pills, chips, gauge zones, dense ticks. This is the floor.
-
-Off-ramp sizes still in the code (0.95, 1.05, 1.3, 0.82, 0.78, 0.72 and 0.7rem) are drift from earlier passes; fold them into the nearest step when a component is next touched rather than adding new steps.
+- **Sheet day** (700, 1.625rem, 1.15, -0.02em; the sheet-day-phone step, 1.5rem, at 640px and below): the day and date at the top of This Week. The largest type on the site.
+- **Headline** (700, 1.3rem): page-level h2 over the strength targets table, with a 2px rule beneath.
+- **Entry** (700, 1.25rem, -0.01em): the h1 in the expanded patient block, and the count written on the 5+ line.
+- **Title** (600, 1.0625rem, 1.3, balanced wrap): the session headline under the sheet day.
+- **Section** (700, 1rem, -0.005em, sentence case): the disclosure line that heads each Plan and Reference section. Sub-heads inside are 700 at 0.9375rem.
+- **Row** (0.9375rem, 1.4): dosing-table rows; exercise names at 600, loads at 700 in Ink.
+- **Body** (0.875rem, 1.5, max 68 to 70ch): prose, margin panels, week rows.
+- **Meta** (0.8125rem): header meta line, cues, week stats, log text.
+- **Label** (600, 0.75rem, 0.5px, uppercase): nav tabs, column heads, disclosure toggles such as detail and show all.
+- **Micro** (700, 0.6875rem, 0.5px, uppercase): pills, chips, dosing-table column heads, margin-panel labels, scale zone names. This is the floor.
 
 ### Named Rules
-**The 11px Floor Rule.** No rendered text below 11px on screen, including SVG text scaled to its rendered width.
+**The 11px Floor Rule.** No rendered text below 0.6875rem (11px), including chart labels.
 
-**The Small Caps Label Rule.** Uppercase is for short labels only. Never set a sentence in uppercase.
+**The Tabular Rule.** Numerals are tabular everywhere. Any new number column inherits it; never switch it off.
+
+**The Sentence Case Heading Rule.** Headings and section lines are sentence case. Uppercase is reserved for label and micro sizes, where it names a column, a control or a panel.
 
 ## Layout
 
-One centred column, max 900px, 1.5rem side padding, 3.5rem top padding under the fixed nav. Sections stack; the week is a 7-column grid of day cards that tightens at 700px (smaller gaps, 60px minimum height, 0.25rem padding). Breakpoints are 640px (phones: stacked cards, 44px link padding, hidden gauge ticks) and 700px (tighter grid and tabs). Tab rail scrolls horizontally with no visible scrollbar.
+A single column, max 900px, with 1.5rem side gutters and a fixed thin nav on top (body top padding 3.5rem). The sheet reads top to bottom: profile line, sheet header, dosing table, sign-off line, margin panels, week schedule, then the log. Plan and Reference are a stack of ruled sections opened by disclosure lines.
+
+The dosing table is a five-column grid (1.5rem number, flexible exercise, 8.5rem dose, 9.5rem load, 44px tick) with a 0.75rem column gap. At 640px and below it becomes four columns with dose stacked above load (1.25rem, flexible, 6.25rem, 44px) so the exercise name keeps its width. The week schedule is a six-column row (marker, day, date, type, headline, toggle) that wraps its headline to a second line at 700px. Activity-log and reference tables stack into ruled entries on phones rather than scrolling sideways. The label/value dashboard list goes two-up above 700px.
+
+Rhythm: rows pad about 0.6rem vertically; sections open 1rem to 2.5rem apart; prose is capped near 70ch. Every interactive element keeps a 44px target on phones, grown with padding on inline links so the line does not move.
 
 ## Elevation & Depth
 
-Flat by default. No side-stripe borders; callouts use a full 1px tinted border and a tinted fill. Depth is conveyed with 1px borders and Paper Alt fills. Shadows appear only on the Today Card (`0 2px 8px rgba(0,0,0,0.04)`, barely visible), on chart tooltips, and as a 2px focus ring in Training Blue at 15% opacity.
+Flat. The sheet has no shadows, no layered cards and no gradients; depth is carried by rules and by the margin fill. The one exception is the chart tooltip, which floats over the chart and takes a small ambient shadow.
+
+### Shadow Vocabulary
+- **Tooltip** (`box-shadow: 0 2px 6px rgba(0,0,0,0.12)`): chart hover tooltip only.
 
 ### Named Rules
-**The Flat-By-Default Rule.** Surfaces are flat at rest. Do not add shadows to cards to make them feel raised.
+**The Paper Rule.** Nothing sits above the sheet except a transient tooltip. Separation is a rule or a margin fill, never a shadow.
 
 ## Shapes
 
-Softly squared. Cards and sections 8 to 10px, controls, tags and chips 3 to 6px, check dots and markers 50%. Borders are 1px hairline, or 2px in a state colour on the Today Card. The 12px, 2px and 1px radii in the code are one-offs; use the scale.
+Square by default. Tick boxes and printed checklist boxes are 1px-radius squares with a 1.5px ink stroke. Pills, chips, the send button and marks are 2px. Margin panels are 3px. Tables, sections, rows and the nav have no radius at all. Chevrons are drawn with two 2px borders on a rotated square, legend keys are drawn swatches or short SVG lines, and progress bars are a 6px outlined bar with a flat blue fill. Round shapes appear only as chart dots and the small out-of-range lab dot.
 
 ## Components
 
 ### Navigation
-Fixed Night Navy bar with a 2px coral bottom rule. Tabs are uppercase labels at 70% white. Hover lightens the background by 8%. Active tab is full white with a coral underline.
+Thin and quiet. Three tabs on the sheet in Label type, Ink 3 at rest, Ink with Margin 2 behind on hover, Ink with a 3px Clinical Blue underline when active. A 2px ink rule runs under the whole bar. It scrolls sideways on narrow screens with the scrollbar hidden.
 
-### Today Card
-The primary answer to "what do I do today?". White, 2px state-coloured border, 10px radius. Header row holds the day and a muted meta line, then a coloured title, then a checklist with hairline dividers and target weights on the right. Coaching detail sits behind a toggle.
+### Sheet header
+The day and date in Sheet day type with the done count at right, the session title beneath, then a meta line (day-type mark, week and phase, block, athlete) separated by middots and closed by a 2px ink rule. Game and done marks are a 0.5rem square in the state ink before the word.
 
-### Today Checklist
-On training days each exercise row has its own check button (22px box, 44px hit area, done-green fill when pressed) and a "N of M done" line. Done rows strike through and mute. State lives in this browser only (`tp-done-<date>`); it never claims to log.
+### Dosing table (signature)
+Numbered rows: number in bold Clinical Blue, exercise name at 600 with a dotted-underline link, cue and history in smaller Ink 2 and Ink 3, dose in Ink 2, load in bold Ink with a change chip, and the tick box at right. Column heads are Micro in Ink 3 over a 1px ink rule; rows are divided by hairlines.
+- **Tick box:** a 44px button drawing a 22px square with a 1.5px ink stroke. Hover turns the stroke blue. Pressed fills Clinical Blue in 120ms with a white CSS check. This fill is the site's only motion beyond disclosure chevrons.
+- **Done row:** strikes to one 44px line (number, name struck through in Ink 3 at 500, load, tick); dose, cue, history and chips hide.
+- **5+ write-in line:** a blue 600 label, then a 3.5rem underlined field (1.5px ink bottom border, no box) set at 1.25rem 700 in Clinical Blue. Focus thickens the line to 2px blue on Clinical Wash; an invalid count turns the line and hint Caution Orange.
+- **Change chips:** Micro, 2px radius, beside the load. Up is Clinical on Clinical Wash, hold is Ink 2 on Margin, down is Caution on Caution Wash.
 
-### Weight Chips
-After each target weight a small chip states the change against the last logged weight: "hold" (grey wash), "+5" (Training Blue on the train wash), "−10" (caution ink on the caution wash). Screen readers get the full phrase; no tooltip-only meaning.
+### Sign-off line
+Appears when every row is ticked. A dashed Ink 3 rule, a bold status line, and a send button: 44px tall, 1.5px Clinical Blue outline, 2px radius, blue text, filling blue with white text on hover. The copied status is Done Green.
 
-### Session Close
-The first row with a 5+ set carries a 1 to 10 reps field. At M of M the progress line becomes "Session done" with the 5+ count, plus a Copy summary button. Browser-only, never "logged".
+### Margin panel
+Every callout on the sheet: the pain rule, coaching detail, the week-change note and reference callouts. Flat Margin fill, 3px radius, no border, Ink text at 0.875rem. A panel may open with a Clinical Blue label; list items inside are divided by Margin Hairline.
 
-### Profile Bar
-Collapsed summary on one or two lines; the expanded panel is a compact left-aligned block with a label/value stat grid and a plain list of all four goals: latest weight and body fat, target, reading date, and a trend word only after three back-to-back weekly readings move the same way or a change over 4 lb. Gap-based layout, no pipe separators.
+### Day-type pills
+Micro uppercase, 2px radius, 1px 6px padding: training, game, hotel or rehab, deload or done, rest or recovery, in the pairs listed under Colors.
 
-### Training Plan Groups
-Targets and progress bars lead. Everything else folds into closed groups: Strength progress, Body and achilles, Stats and volume, Training Phases.
+### Weekly schedule
+Seven ruled rows under a 2px ink rule. Each row is a disclosure: a 10px marker (filled Clinical Blue square on today), bold day, date in Ink 3, type pill, headline (bold on today, Ink 3 once done), and a blue Label toggle with a CSS chevron. The open body lists exercises with dose right-aligned and the long description in Ink 2.
 
-### Day Card (week grid)
-Compact tile with a day-type tag. Shows a short `desc` headline; longer text sits behind a per-tile detail toggle.
+### Section disclosure line
+Plan and Reference sections open with a 2px ink rule and a 48px summary line in Section type, with a CSS chevron in Ink 3 at right. Hover turns the line Clinical Blue. Small toggles elsewhere use Label type in Clinical Blue with the same chevron.
 
-### Tags
-Small pills with a pale wash and matching text: game (coral), train (blue), recovery (grey), rest (light grey), hotel (orange), deload (green).
+### Strength targets table
+Ruled table: lift, now, target, due, progress. Secondary values sit beneath in Label size Ink 3. Progress is a blue percentage over a 6px bar outlined in Clinical Blue and filled flat blue.
 
-### Disclosure Controls
-One style for every toggle: uppercase 12px label in Training Blue, one CSS-drawn chevron that rotates when open, 44px minimum hit area, visible focus ring.
+### Standards scale
+One ruled row per lift: name, rank in all-small-caps Clinical Blue, then a 6px segmented gauge in the standards ramp with a 2px ink mark for now and a 2px dotted Ink 3 mark for the target. Zone names sit beneath in Micro Ink 3, shortened on phones.
 
-### Plan-Change Banner
-Flat Paper Alt panel with a hairline border, ink text and a small caution-ink dot before the title. It is information, never louder than the Today Card.
+### Activity log
+Per week, a bold heading and mini-stats over a 2px ink rule, then a ruled table (date, type pill, detail, notes) with hairline rows and exercise lines divided by hairlines. On phones each entry stacks: date and pill on one line, detail and notes below. Notes clamp to three lines with a blue more toggle.
 
-### Collapsible Sections
-Insights and athlete profile use `<details>`. Header on Paper Alt with a rotating chevron; body on Paper.
+### Profile patient block
+Collapsed, a single line of weight, body fat and target in tabular Ink with a Label toggle. Open, it shows a 2px rule, the h1, a ruled label/value list, and a numbered priorities list with Clinical Blue counters under a Micro Ink 3 label.
 
-### Log Notes
-Clamped to 3 lines (2 on phones) with a small uppercase "more" toggle in Training Blue that turns coral on hover.
-
-### Charts
-Series are told apart by blue and neutral shades plus dash patterns (solid, dashed, dotted), never by coral or green, which keep their game and done meanings. Legends show line samples. The strength-standards gauge is a light-to-dark blue ramp with ink or white text per zone.
-Inline charts with instant hover and tap tooltips and a dot-and-label legend.
+### Footer
+One hairline and a Label-size Ink 3 update line, left-aligned.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep the Today Card the first thing on the page.
-- **Do** keep each tile headline to about 8 words and fold the rest behind a toggle.
-- **Do** use the four state colours only for their meaning.
-- **Do** give every control and link a 44px hit area on phones (vertical padding on the inline box, not bigger text).
+- **Do** open every table and section with a 2px ink rule and divide rows with 1px hairlines.
+- **Do** keep Clinical Blue as the only emphasis colour, and put state inks on pills, chips and small marks only.
+- **Do** draw tick boxes, chevrons, checks and legend keys in CSS or inline SVG.
+- **Do** use the system sans with tabular numerals and keep text at 11px or above.
+- **Do** give every control a 44px target on phones, and keep contrast at 4.5:1.
+- **Do** set rules, notes and cautions in a flat Margin panel with an optional blue label.
+- **Do** limit motion to the 120ms tick fill and disclosure chevrons.
 
 ### Don't:
-- **Don't** add nutrition or sleep UI. Both are retired.
-- **Don't** put citations, evidence tiers or program self-assessment in any rendered field.
-- **Don't** hardcode a schedule in `index.html`; an un-authored week must show as missing.
-- **Don't** add a webfont, framework or build step.
+- **Don't** build rounded cards, stat tiles or boxed dashboards; use ruled rows and label/value lists.
+- **Don't** use a coloured side stripe or edge bar on any row, panel or callout.
+- **Don't** add an uppercase kicker or eyebrow label above a heading.
+- **Don't** use glyph or emoji icons, or icon fonts.
+- **Don't** add shadows to anything that is not a transient tooltip.
+- **Don't** ship a dark theme or gamified feedback.
+- **Don't** load a webfont.
+- **Don't** use game red, done green or caution orange for hover, emphasis or decoration.

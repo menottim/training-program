@@ -272,9 +272,6 @@
   .today-card-checklist .ex-weight { color: var(--accent2); font-weight: 600; font-size: 0.85rem; white-space: nowrap; }
   .today-card-checklist .ex-note { flex-basis: 100%; color: var(--text-muted); font-size: 0.82rem; line-height: 1.4; }
   /* History-aware weight display */
-  .wt-up { color: #146c43; font-weight: 700; }
-  .wt-down { color: var(--caution-ink); font-weight: 700; }
-  .wt-hold { color: var(--text-muted); font-weight: 700; }
   .wt-carried { color: var(--text-muted); font-style: italic; font-weight: 400; font-size: 0.85em; }
   .ex-hist { color: var(--text-muted); font-size: 0.75rem; }
   .today-card-checklist .ex-hist { flex-basis: 100%; margin-top: 1px; font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
@@ -1633,6 +1630,26 @@
   .standard-zone:nth-child(n+5) { color: #fff; }
 
   /* ws:marker (start) */
+  /* Load-change chip after a target weight: blue up, grey hold, orange down. */
+  .wt-chip {
+    display: inline-block;
+    margin-left: 0.3em;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    line-height: 1.5;
+    vertical-align: 1px;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .wt-up { background: #e8f0fe; color: var(--accent2); }
+  .wt-hold { background: #e9ecef; color: var(--text-muted); }
+  .wt-down { background: #fff3e0; color: var(--caution-ink); }
+  .wt-sr {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+  }
 
   /* ws:marker (end) */
 
@@ -2119,15 +2136,21 @@
     var marker = '';
     if (last && ex.weight) {
       var t = soleWeightNum(ex.weight), l = soleWeightNum(last.weight);
-      if (t != null && l != null) marker = t > l ? 'up' : (t < l ? 'down' : 'hold');
+      if (t != null && l != null) marker = { dir: t > l ? 'up' : (t < l ? 'down' : 'hold'), delta: Math.abs(t - l) };
     }
     return { target: target, carried: carried, marker: marker, last: last };
   }
+  // Word chip after a target weight: "hold", "+10", "\u221220". Direction is
+  // also spelled out for screen readers; accepts a bare 'up'/'down'/'hold'
+  // string when no numeric delta is known.
   function markerHTML(m) {
-    if (m === 'up') return ' <span class="wt-up" title="heavier than last">▲</span>';
-    if (m === 'down') return ' <span class="wt-down" title="lighter than last (de-load)">▼</span>';
-    if (m === 'hold') return ' <span class="wt-hold" title="same as last">=</span>';
-    return '';
+    if (!m) return '';
+    var dir = m.dir || m, d = m.delta;
+    if (dir !== 'up' && dir !== 'down' && dir !== 'hold') return '';
+    var text = dir === 'hold' ? 'hold' : (d ? (dir === 'up' ? '+' : '\u2212') + d : dir);
+    var sr = dir === 'hold' ? 'same load as last session'
+      : (dir === 'up' ? 'up ' : 'down ') + (d ? d + ' lb ' : '') + 'from last session';
+    return ' <span class="wt-chip wt-' + dir + '"><span aria-hidden="true">' + text + '</span><span class="wt-sr">' + sr + '</span></span>';
   }
 
   const startDate = new Date(athlete.startDate + 'T00:00:00');

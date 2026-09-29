@@ -1733,6 +1733,50 @@
   /* ---- */
 
   /* ws:ref (start) */
+  /* Row headers in Reference tables look like the body cells they replaced. */
+  #tab-ref tbody th {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    text-align: left;
+    font-weight: 600;
+  }
+  #tab-ref th.exercise a {
+    color: var(--accent2);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent2);
+  }
+  #tab-ref th.exercise a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* Recovery tables stack on phones: activity on its own line, then time and purpose. */
+  @media (max-width: 640px) {
+    #tab-ref th.exercise a {
+      padding: 14px 0;
+      border-bottom: 0;
+      text-decoration: underline dotted;
+      text-underline-offset: 3px;
+    }
+    #tab-ref table.ref-stack thead {
+      position: absolute; width: 1px; height: 1px; overflow: hidden;
+      clip: rect(0 0 0 0); white-space: nowrap;
+    }
+    #tab-ref table.ref-stack tr {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      column-gap: 0.75rem;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    #tab-ref table.ref-stack th,
+    #tab-ref table.ref-stack td {
+      display: block;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+    }
+    #tab-ref table.ref-stack th { grid-column: 1 / -1; }
+  }
+  #hormone-labs-mount td, #hormone-labs-mount tbody th { white-space: nowrap; }
 
   /* ws:ref (end) */
 
@@ -1894,7 +1938,7 @@
 
 <!-- STRENGTH TARGETS -->
 <h2 id="targets">Strength Targets</h2>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Your fastest path to jumping higher is getting stronger. Plyometrics on a weak base produce minimal returns.</p>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Each lift's target and time frame are below.</p>
 
 <!-- Strength Target Cards (rendered from data.json) -->
 <div id="targets-mount"></div>
@@ -1907,11 +1951,6 @@
   <div class="insights-body">
     <!-- Strength Progression Chart -->
     <div id="strength-chart-mount"></div>
-
-    <div class="info-box success">
-      <strong>The Key Metric for Vertical Jump</strong>
-      A trap bar deadlift of 2.0-2.5x bodyweight is the benchmark for elite jumping. At your current strength, every pound you add on the bar turns into inches on your vertical.
-    </div>
 
     <!-- Strength Standards Gauges -->
     <div id="standards-mount"></div>
@@ -1969,13 +2008,13 @@
   <p style="font-size:0.85rem;margin-bottom:0.5rem;">3 sets per session. Tempo 3s up, 3s down. Do both variants: <a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">seated</a> (bent knee, soleus) and <a href="https://musclewiki.com/exercise/barbell-calf-raises" target="_blank">standing</a> (straight knee, gastroc). Bodyweight raises do not count toward the 3.</p>
   <h3>Progressive 12-week load</h3>
   <table style="font-size:0.85rem;">
-    <thead><tr><th>Weeks</th><th>Load</th><th>Reps per set</th></tr></thead>
+    <thead><tr><th scope="col">Weeks</th><th scope="col">Load</th><th scope="col">Reps per set</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>15RM</td><td>15</td></tr>
-      <tr><td>2-3</td><td>12RM</td><td>12</td></tr>
-      <tr><td>4-5</td><td>10RM</td><td>10</td></tr>
-      <tr><td>6-8</td><td>8RM</td><td>8</td></tr>
-      <tr><td>9-12</td><td>6RM</td><td>6</td></tr>
+      <tr><th scope="row">1</th><td>15RM</td><td>15</td></tr>
+      <tr><th scope="row">2-3</th><td>12RM</td><td>12</td></tr>
+      <tr><th scope="row">4-5</th><td>10RM</td><td>10</td></tr>
+      <tr><th scope="row">6-8</th><td>8RM</td><td>8</td></tr>
+      <tr><th scope="row">9-12</th><td>6RM</td><td>6</td></tr>
     </tbody>
   </table>
   <p style="font-size:0.85rem;margin-top:0.5rem;"><strong>Heavy must be heavy.</strong> Each set is a true rep max: the last rep is the last one you can do at full tempo. If every rep feels easy, add weight. Never add reps.</p>
@@ -1998,7 +2037,6 @@
     <li><strong>PRP injection.</strong> No better than a saline shot when added to loading.</li>
     <li><strong>GTN patches.</strong> Weak evidence, and a real headache side effect.</li>
   </ul>
-  <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">Full evidence review: <code>knowledge/achilles-tendinopathy-hsr.md</code></p>
 </div>
 </div>
 </details>
@@ -2010,44 +2048,44 @@
 <h2 id="recovery">Recovery Days</h2>
 
 <h3>Monday: Post-Double Game Day</h3>
-<table>
-  <thead><tr><th>Activity</th><th>Duration</th><th>Purpose</th></tr></thead>
+<table class="ref-stack">
+  <thead><tr><th scope="col">Activity</th><th scope="col">Duration</th><th scope="col">Purpose</th></tr></thead>
   <tbody>
-    <tr><td class="exercise">Low-intensity cycling or swimming</td><td class="sets">15-20 min</td><td class="notes">30-40% peak HR, anti-inflammatory</td></tr>
-    <tr><td class="exercise"><a href="https://health.clevelandclinic.org/foam-rolling" target="_blank">Foam rolling</a> / massage gun</td><td class="sets">10 min</td><td class="notes">Quads, calves, IT band, glutes</td></tr>
-    <tr><td class="exercise"><a href="https://health.clevelandclinic.org/90-90-stretch" target="_blank">Hip 90/90 mobility flow</a></td><td class="sets">5 min</td><td class="notes">Hip mobility maintenance</td></tr>
-    <tr><td class="exercise">HSR calf raise protocol (<a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">seated</a> + <a href="https://musclewiki.com/exercise/barbell-calf-raises" target="_blank">standing</a>)</td><td class="sets">10 min</td><td class="notes">If achilles pain is 3/10 or less</td></tr>
+    <tr><th scope="row" class="exercise">Low-intensity cycling or swimming</th><td class="sets">15-20 min</td><td class="notes">30-40% peak HR, anti-inflammatory</td></tr>
+    <tr><th scope="row" class="exercise"><a href="https://health.clevelandclinic.org/foam-rolling" target="_blank">Foam rolling</a> / massage gun</th><td class="sets">10 min</td><td class="notes">Quads, calves, IT band, glutes</td></tr>
+    <tr><th scope="row" class="exercise"><a href="https://health.clevelandclinic.org/90-90-stretch" target="_blank">Hip 90/90 mobility flow</a></th><td class="sets">5 min</td><td class="notes">Hip mobility maintenance</td></tr>
+    <tr><th scope="row" class="exercise">HSR calf raise protocol (<a href="https://musclewiki.com/exercise/seated-calf-raise" target="_blank">seated</a> + <a href="https://musclewiki.com/exercise/barbell-calf-raises" target="_blank">standing</a>)</th><td class="sets">10 min</td><td class="notes">If achilles pain is 3/10 or less</td></tr>
   </tbody>
 </table>
 
 <h3>Saturday: Pre-Game Prep</h3>
-<table>
-  <thead><tr><th>Activity</th><th>Duration</th><th>Purpose</th></tr></thead>
+<table class="ref-stack">
+  <thead><tr><th scope="col">Activity</th><th scope="col">Duration</th><th scope="col">Purpose</th></tr></thead>
   <tbody>
-    <tr><td class="exercise">Light dynamic warmup</td><td class="sets">10 min</td><td class="notes">Prepare without fatiguing</td></tr>
-    <tr><td class="exercise"><a href="https://www.rehabhero.ca/exercise/banded-ankle-dorsiflexion" target="_blank">Ankle mobility + banded dorsiflexion</a></td><td class="sets">5 min</td><td class="notes">Range of motion</td></tr>
-    <tr><td class="exercise"><a href="https://musclewiki.com/exercise/single-leg-bosu-ball-balance-2" target="_blank">Single-leg balance work</a></td><td class="sets">5 min</td><td class="notes">Proprioception</td></tr>
-    <tr><td class="exercise"><a href="https://musclewiki.com/exercise/glute-bridge" target="_blank">Glute bridges</a> + band walks</td><td class="sets">5 min</td><td class="notes">Activation</td></tr>
-    <tr><td class="exercise"><a href="https://musclewiki.com/exercise/hip-flexor-stretch-kneeling-lunge-3" target="_blank">Hip flexor stretching</a></td><td class="sets">5 min</td><td class="notes">Counteract hockey posture</td></tr>
+    <tr><th scope="row" class="exercise">Light dynamic warmup</th><td class="sets">10 min</td><td class="notes">Prepare without fatiguing</td></tr>
+    <tr><th scope="row" class="exercise"><a href="https://www.rehabhero.ca/exercise/banded-ankle-dorsiflexion" target="_blank">Ankle mobility + banded dorsiflexion</a></th><td class="sets">5 min</td><td class="notes">Range of motion</td></tr>
+    <tr><th scope="row" class="exercise"><a href="https://musclewiki.com/exercise/single-leg-bosu-ball-balance-2" target="_blank">Single-leg balance work</a></th><td class="sets">5 min</td><td class="notes">Proprioception</td></tr>
+    <tr><th scope="row" class="exercise"><a href="https://musclewiki.com/exercise/glute-bridge" target="_blank">Glute bridges</a> + band walks</th><td class="sets">5 min</td><td class="notes">Activation</td></tr>
+    <tr><th scope="row" class="exercise"><a href="https://musclewiki.com/exercise/hip-flexor-stretch-kneeling-lunge-3" target="_blank">Hip flexor stretching</a></th><td class="sets">5 min</td><td class="notes">Counteract hockey posture</td></tr>
   </tbody>
 </table>
 
 <h3 id="recovery-modalities">Recovery Modality Payoff (highest to lowest)</h3>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Ranked by payoff. Spend your time at the top of this list. Full detail: <code>knowledge/recovery-sleep.md</code>.</p>
-<table>
-  <thead><tr><th>Modality</th><th>Payoff</th><th>When to use</th></tr></thead>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;">Ranked by payoff. Spend your time at the top of this list.</p>
+<table class="ref-stack">
+  <thead><tr><th scope="col">Modality</th><th scope="col">Payoff</th><th scope="col">When to use</th></tr></thead>
   <tbody>
-    <tr><td class="exercise">Zone 2 active recovery walk/bike</td><td class="sets">High</td><td class="notes">20&ndash;30 min on off days. Clears fatigue without adding more.</td></tr>
-    <tr><td class="exercise">Massage / percussion gun</td><td class="sets">High</td><td class="notes">Does the most for muscle soreness of anything on this list.</td></tr>
-    <tr><td class="exercise"><a href="https://health.clevelandclinic.org/foam-rolling" target="_blank">Foam rolling</a></td><td class="sets">Medium</td><td class="notes">Small benefit for soreness and range of motion. Use before training to warm up, after to loosen up.</td></tr>
-    <tr><td class="exercise">Sauna (non-training day)</td><td class="sets">Medium</td><td class="notes">2&ndash;3x/week, 15&ndash;20 min. Good for blood volume and heart health.</td></tr>
-    <tr><td class="exercise">Static stretching</td><td class="sets">Low</td><td class="notes">Doesn't prevent injury. Can cost you 3&ndash;5% force if held over 60s right before lifting. Fine for flexibility work, not as a warmup.</td></tr>
+    <tr><th scope="row" class="exercise">Zone 2 active recovery walk/bike</th><td class="sets">High</td><td class="notes">20&ndash;30 min on off days. Clears fatigue without adding more.</td></tr>
+    <tr><th scope="row" class="exercise">Massage / percussion gun</th><td class="sets">High</td><td class="notes">Does the most for muscle soreness of anything on this list.</td></tr>
+    <tr><th scope="row" class="exercise"><a href="https://health.clevelandclinic.org/foam-rolling" target="_blank">Foam rolling</a></th><td class="sets">Medium</td><td class="notes">Small benefit for soreness and range of motion. Use before training to warm up, after to loosen up.</td></tr>
+    <tr><th scope="row" class="exercise">Sauna (non-training day)</th><td class="sets">Medium</td><td class="notes">2&ndash;3x/week, 15&ndash;20 min. Good for blood volume and heart health.</td></tr>
+    <tr><th scope="row" class="exercise">Static stretching</th><td class="sets">Low</td><td class="notes">Doesn't prevent injury. Can cost you 3&ndash;5% force if held over 60s right before lifting. Fine for flexibility work, not as a warmup.</td></tr>
   </tbody>
 </table>
 
 <div class="info-box warning">
-  <strong>Cold water immersion: use selectively, not routinely</strong>
-  Regular ice baths after lifting blunt your muscle-building response over time. <strong>Yes:</strong> after games when next performance is within 48h. <strong>No:</strong> routinely after lifting during strength/hypertrophy blocks. If you use it in-season, save it for after games, not after lifts.
+  <strong>Cold water immersion: after games only</strong>
+  Regular ice baths after lifting blunt muscle gains over time. Use them after a game when the next one is within 48 hours. Skip them after lifts.
 </div>
 </div>
 </details>
@@ -2059,12 +2097,6 @@
 <h2 id="nutrition">Body Composition</h2>
 <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Target: ~15% BF (~205-210 lbs) over 6-9 months via gradual recomposition. No aggressive cuts; protect game performance and recovery.</p>
 
-<div class="info-box success">
-  <strong>Why Recomp Matters for Your Vertical</strong>
-  Every 1 lb of fat lost is dead weight you no longer lift off the ground. A 10 lb fat loss (while maintaining muscle) makes you ~5% more powerful relative to bodyweight, measurable inches on your vertical with zero strength gains needed.
-</div>
-
-
 <!-- Lean Mass + Fat Mass breakdown over time -->
 <div id="body-comp-breakdown-mount"></div>
 </div>
@@ -2075,7 +2107,6 @@
 <summary><strong>Labs &amp; Workup</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body">
 <h2 id="labs">Labs &amp; Workup</h2>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">The deep evidence for each item lives in the <a href="https://github.com/menottim/training-program/tree/main/knowledge" target="_blank"><code>knowledge/</code></a> directory. This panel shows where things stand right now.</p>
 <div id="hormone-labs-mount"></div>
 <div id="clinical-workup-mount"></div>
 </div>
@@ -2086,7 +2117,7 @@
 <summary><strong>When the Plan Changes</strong> <span class="insights-hint">click to expand</span></summary>
 <div class="insights-body" id="deload">
 <h2>When the Plan Changes</h2>
-<p style="font-size:0.85rem;margin-bottom:0.75rem;">Deloads are reactive, not scheduled. Tell me when something feels different, and I adjust the week. Full detail: <code>knowledge/in-season-volume.md</code>.</p>
+<p style="font-size:0.85rem;margin-bottom:0.75rem;">Deloads are reactive, not scheduled. Tell me when something feels different, and I adjust the week.</p>
 <h3>What triggers a deload</h3>
 <p style="font-size:0.85rem;margin-bottom:0.5rem;">Two or more of these:</p>
 <ul>
@@ -3953,20 +3984,19 @@
     if (hormMount && athleteData.testosteroneHistory) {
       var rowsHTML = athleteData.testosteroneHistory.map(function(h) {
         var d = esc(h.date);
-        var time = h.collectionTime ? ' @ ' + esc(h.collectionTime) : '';
-        var t = h.totalTestosterone != null ? h.totalTestosterone + ' ng/dL' : '-';
-        var free = h.freeTestosterone != null ? h.freeTestosterone + ' pg/mL' : '-';
-        var shbg = h.shbg != null ? h.shbg + ' nmol/L' : '-';
-        var bio = h.bioavailableTestosterone != null ? h.bioavailableTestosterone + ' ng/dL' : '-';
-        var e2 = h.estradiol != null ? h.estradiol + ' pg/mL' : '-';
-        var prl = h.prolactin != null ? h.prolactin + ' ng/mL' : '-';
+        var t = h.totalTestosterone != null ? h.totalTestosterone + ' ng/dL' : '&mdash;';
+        var free = h.freeTestosterone != null ? h.freeTestosterone + ' pg/mL' : '&mdash;';
+        var shbg = h.shbg != null ? h.shbg + ' nmol/L' : '&mdash;';
+        var bio = h.bioavailableTestosterone != null ? h.bioavailableTestosterone + ' ng/dL' : '&mdash;';
+        var e2 = h.estradiol != null ? h.estradiol + ' pg/mL' : '&mdash;';
+        var prl = h.prolactin != null ? h.prolactin + ' ng/mL' : '&mdash;';
         var flagCount = 0;
         ['totalTestosteroneFlag','shbgFlag','freeTestosteroneFlag','bioavailableTestosteroneFlag','estradiolFlag'].forEach(function(k) {
           if (h[k] && /elevated|low|borderline|above|below|floor/i.test(h[k])) flagCount++;
         });
-        var flagDot = flagCount > 0 ? '<span style="color:var(--caution-ink);"> &#9679;</span>' : '';
+        var flagDot = flagCount > 0 ? '<span style="color:var(--caution-ink);" role="img" aria-label="Out of range" title="Out of range"> &#9679;</span>' : '';
         return '<tr>' +
-          '<td>' + d + time + flagDot + '</td>' +
+          '<th scope="row">' + d + flagDot + '</th>' +
           '<td>' + t + '</td>' +
           '<td>' + free + '</td>' +
           '<td>' + shbg + '</td>' +
@@ -3975,13 +4005,10 @@
           '<td>' + prl + '</td>' +
         '</tr>';
       }).join('');
-      var latestHormone = athleteData.testosteroneHistory[athleteData.testosteroneHistory.length - 1];
-      var latestNotes = latestHormone && latestHormone.notes ? latestHormone.notes : '';
       hormMount.innerHTML =
         '<h3 style="margin-top:1.5rem;">Hormone Lab History</h3>' +
-        '<p style="font-size:0.85rem;color:var(--text-muted);">Detailed interpretation in <a href="https://github.com/menottim/training-program/blob/main/knowledge/hormones-testosterone.md" target="_blank">knowledge/hormones-testosterone.md</a>.</p>' +
-        '<div style="overflow-x:auto;"><table style="font-size:0.85rem;min-width:640px;"><thead><tr><th>Date</th><th>Total T</th><th>Free T</th><th>SHBG</th><th>Bioavail T</th><th>E2</th><th>Prolactin</th></tr></thead><tbody>' + rowsHTML + '</tbody></table></div>' +
-        (latestNotes ? '<div class="info-box warning" style="margin-top:0.75rem;"><strong>Latest panel interpretation:</strong><br>' + esc(latestNotes) + '</div>' : '');
+        '<p style="font-size:0.85rem;color:var(--text-muted);">A dot marks a panel with a value out of range.</p>' +
+        '<div style="overflow-x:auto;"><table style="font-size:0.85rem;min-width:640px;"><thead><tr><th scope="col">Date</th><th scope="col">Total T</th><th scope="col">Free T</th><th scope="col">SHBG</th><th scope="col">Bioavail T</th><th scope="col">E2</th><th scope="col">Prolactin</th></tr></thead><tbody>' + rowsHTML + '</tbody></table></div>';
     }
 
     var cwMount = document.getElementById('clinical-workup-mount');
@@ -3990,17 +4017,17 @@
       function renderAskList(title, list) {
         if (!list || list.length === 0) return '';
         var rows = list.map(function(item) {
-          return '<tr><td><strong>' + esc(item.test) + '</strong></td><td style="font-size:0.8rem;">' + esc(item.reason) + '</td></tr>';
+          return '<tr><th scope="row">' + esc(item.test) + '</th><td style="font-size:0.8rem;">' + esc(item.reason) + '</td></tr>';
         }).join('');
         return '<h4 style="margin-top:0.75rem;">' + title + '</h4>' +
           '<table style="font-size:0.85rem;"><tbody>' + rows + '</tbody></table>';
       }
       cwMount.innerHTML =
-        '<h3 style="margin-top:1.5rem;">Outstanding Clinical Workup Asks</h3>' +
-        '<p style="font-size:0.85rem;color:var(--text-muted);">' + esc(cw.nextPhysicianVisit || 'Labs to request at next physician visit') + '</p>' +
+        '<h3 style="margin-top:1.5rem;">Labs to Request</h3>' +
+        '<p style="font-size:0.85rem;color:var(--text-muted);">' + esc(cw.nextPhysicianVisit || 'Request these at the next physician visit.') + '</p>' +
         renderAskList('Required', cw.required || []) +
         renderAskList('Recommended', cw.recommended || []) +
-        renderAskList('Recommended (from July 2025 panel follow-up)', cw.recommendedFollowUpFromJuly2025Panel || []) +
+        renderAskList('Follow-up to the July 2025 panel', cw.recommendedFollowUpFromJuly2025Panel || []) +
         renderAskList('Optional', cw.optional || []);
     }
   })();

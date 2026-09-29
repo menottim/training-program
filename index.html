@@ -449,14 +449,17 @@
     gap: 0.5rem;
   }
   .collapsible-header::before {
-    content: '\25BC';
-    font-size: 0.6rem;
-    color: var(--text-muted);
+    content: '';
+    width: 0.45em;
+    height: 0.45em;
+    border-right: 2px solid var(--ink-3);
+    border-bottom: 2px solid var(--ink-3);
+    transform: rotate(45deg);
     transition: transform 0.2s;
     flex-shrink: 0;
   }
   .collapsible-header.collapsed::before {
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
   }
   .collapsible-body {
     overflow: hidden;
@@ -507,14 +510,23 @@
   .progress-log thead .upcoming-col { background: #fff3cd; color: #856404; font-style: normal; }
 
   .empty-state {
-    text-align: center;
-    padding: 2rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    border: 2px dashed var(--border);
-    border-radius: 8px;
+    padding: 0.75rem 0;
+    color: var(--ink-3);
+    font-size: 0.875rem;
+    border-top: 2px solid var(--rule);
+    border-bottom: 1px solid var(--hair);
     margin: 1rem 0;
   }
+  .week-grid.unplanned-week {
+    display: block;
+    gap: 0;
+    overflow: visible;
+    border-bottom: 1px solid var(--hair);
+    padding: 0.25rem 0 0.75rem;
+    margin: 0 0 1rem;
+  }
+  .unplanned-week .unplanned-title { margin: 0; font-weight: 700; color: var(--ink); }
+  .unplanned-week .unplanned-msg { margin: 0.25rem 0 0; font-size: 0.875rem; color: var(--ink-3); }
 
   /* Charts */
   .chart-container {
@@ -1649,11 +1661,9 @@
      that does not exist: that is what happened during the June 2026 calf block, and
      again on 2026-08-31 when an un-authored Week 26 showed a Tuesday basketball game
      and Sunday hockey, neither of which is on the slate. -->
-<div class="week-grid">
-  <div class="day-card rest" style="grid-column: 1 / -1;">
-    <div class="day-name">No plan authored</div>
-    <div class="day-detail" id="unplanned-week-msg">This week has no entry in <code>modifiedWeeks</code>. Nothing below is prescribed.</div>
-  </div>
+<div class="week-grid unplanned-week">
+  <p class="unplanned-title">No plan authored</p>
+  <p class="unplanned-msg" id="unplanned-week-msg">This week has no entry in <code>modifiedWeeks</code>. Nothing below is prescribed.</p>
 </div>
 
 <div class="info-box">
@@ -2749,7 +2759,7 @@
 
   var logHTML = '<h3>Activity log</h3>';
   if (activityLog.length === 0) {
-    logHTML += '<div class="empty-state">No activities logged yet. Start tracking!</div>';
+    logHTML += '<div class="empty-state">No sessions logged yet.</div>';
   } else {
     weeks.forEach(function(entries, wsISO) {
       var ws = new Date(wsISO);
@@ -3095,8 +3105,8 @@
 
   function svgEmptyState(w, h, msg) {
     return '<svg viewBox="0 0 ' + w + ' ' + h + '" xmlns="http://www.w3.org/2000/svg">' +
-      '<rect width="' + w + '" height="' + h + '" fill="#f8f9fa" rx="6"/>' +
-      '<text x="' + (w / 2) + '" y="' + (h / 2) + '" text-anchor="middle" fill="#6c757d" font-size="13" dy="0.35em">' + msg + '</text>' +
+      '<rect width="' + w + '" height="' + h + '" fill="#f4f6f9" rx="1"/>' +
+      '<text x="' + (w / 2) + '" y="' + (h / 2) + '" text-anchor="middle" fill="#5b6470" font-size="13" dy="0.35em">' + msg + '</text>' +
       '</svg>';
   }
 

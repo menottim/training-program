@@ -1,1 +1,9 @@
 .DS_Store
+# Impeccable scratch (critique snapshots, review captures, decision pages, direction mocks)
+.impeccable/critique/
+.impeccable/review/
+.impeccable/questions/
+.impeccable/live/
+.impeccable/mocks-directions.html
+.playwright-mcp/
+__pycache__/

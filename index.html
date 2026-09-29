@@ -1604,7 +1604,6 @@
   .standard-zone { color: var(--text); }
   .standard-zone:nth-child(n+5) { color: #fff; }
 
-  /* ws:marker (start) */
   /* Load-change chip after a target weight: blue up, grey hold, orange down. */
   .wt-chip {
     display: inline-block;
@@ -1626,11 +1625,7 @@
     clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
   }
 
-  /* ws:marker (end) */
 
-  /* ---- */
-
-  /* ws:session (start) */
   /* 5+ rep field on the reps-plus row, and the calm session-close line. */
   .today-card-checklist .ex-reps {
     flex-basis: 100%;
@@ -1689,7 +1684,7 @@
   .tc-copy[hidden] { display: none; }
   .tc-copy:hover { background: var(--bg-alt); }
   .tc-copy:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
-  .tc-copy-status { font-size: var(--fs-label); font-weight: 600; color: var(--success); }
+  .tc-copy-status { font-size: var(--fs-label); font-weight: 600; color: #146c43; }
   .tc-copy-status:empty { display: none; }
   .tc-copy-fallback {
     flex-basis: 100%;
@@ -1704,16 +1699,8 @@
     resize: vertical;
   }
 
-  /* ws:session (end) */
 
-  /* ---- */
-
-  /* ws:profile (start) */
   .athlete-profile-body { padding: 0 1rem; }
-
-  /* ws:profile (end) */
-
-  /* ---- */
 
   /* Print */
   @media print {

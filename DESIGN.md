@@ -155,8 +155,14 @@ The primary answer to "what do I do today?". White, 2px state-coloured border, 1
 ### Today Checklist
 On training days each exercise row has its own check button (22px box, 44px hit area, done-green fill when pressed) and a "N of M done" line. Done rows strike through and mute. State lives in this browser only (`tp-done-<date>`); it never claims to log.
 
+### Weight Chips
+After each target weight a small chip states the change against the last logged weight: "hold" (grey wash), "+5" (Training Blue on the train wash), "−10" (caution ink on the caution wash). Screen readers get the full phrase; no tooltip-only meaning.
+
+### Session Close
+The first row with a 5+ set carries a 1 to 10 reps field. At M of M the progress line becomes "Session done" with the 5+ count, plus a Copy summary button. Browser-only, never "logged".
+
 ### Profile Bar
-Collapsed summary on one or two lines: latest weight and body fat, target, reading date, and a trend word only after three back-to-back weekly readings move the same way or a change over 4 lb. Gap-based layout, no pipe separators.
+Collapsed summary on one or two lines; the expanded panel is a compact left-aligned block with a label/value stat grid and a plain list of all four goals: latest weight and body fat, target, reading date, and a trend word only after three back-to-back weekly readings move the same way or a change over 4 lb. Gap-based layout, no pipe separators.
 
 ### Training Plan Groups
 Targets and progress bars lead. Everything else folds into closed groups: Strength progress, Body and achilles, Stats and volume, Training Phases.

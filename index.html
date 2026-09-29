@@ -6,14 +6,26 @@
 <title>Training Program: In-Season Multi-Sport Athlete</title>
 <style>
   :root {
-    --primary: #1a1a2e;
+    /* Sheet world: the exercise sheet a clinician hands you. */
+    --sheet: #ffffff;
+    --ink: #16181b;
+    --ink-2: #3d434b;
+    --ink-3: #5b6470;
+    --rule: #16181b;
+    --hair: #d7dde5;
+    --margin: #e6ebf2;
+    --margin-2: #f4f6f9;
+    --clin: #2456a6;
+    --clin-wash: #e8eef8;
+    /* Legacy names mapped onto the sheet palette. */
+    --primary: var(--ink);
     --accent: #e94560;
-    --accent2: #0f3460;
-    --bg: #ffffff;
-    --bg-alt: #f8f9fa;
-    --border: #dee2e6;
-    --text: #212529;
-    --text-muted: #5c636a;
+    --accent2: var(--clin);
+    --bg: var(--sheet);
+    --bg-alt: var(--margin-2);
+    --border: var(--hair);
+    --text: var(--ink);
+    --text-muted: var(--ink-3);
     --success: #198754;
     --warning: #fd7e14;
     --accent-ink: #c0233c;
@@ -1817,6 +1829,39 @@
     .standard-header { flex-wrap: wrap; }
     .standard-lift-name { flex-basis: 100%; }
   }
+
+  /* ---- Sheet foundation ---- */
+  ::selection { background: var(--clin-wash); color: var(--ink); }
+  html { accent-color: var(--clin); caret-color: var(--clin); scrollbar-color: var(--hair) transparent; }
+  body { font-variant-numeric: tabular-nums; background: var(--sheet); color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--clin); outline-offset: 2px; }
+  .nav { background: var(--sheet); border-bottom: 2px solid var(--rule); }
+  .nav .tab-btn { color: var(--ink-3); border-bottom: 3px solid transparent; }
+  .nav .tab-btn:hover, .nav .tab-btn:focus-visible { color: var(--ink); background: var(--margin-2); }
+  .nav .tab-btn.active { color: var(--ink); border-bottom-color: var(--clin); background: none; }
+  h2 { color: var(--ink); border-bottom: 2px solid var(--rule); padding-bottom: 0.35rem; font-weight: 700; letter-spacing: -0.01em; }
+  h3 { color: var(--ink); font-weight: 700; }
+  table { border-collapse: collapse; }
+  thead th { background: none; color: var(--ink-3); border-bottom: 2px solid var(--rule); font-size: var(--fs-label); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; border-radius: 0 !important; }
+  tbody td, tbody th { border-bottom: 1px solid var(--hair); }
+
+  /* ws:week (start) */
+
+  /* ws:week (end) */
+
+  /* ---- */
+
+  /* ws:plan (start) */
+
+  /* ws:plan (end) */
+
+  /* ---- */
+
+  /* ws:ref (start) */
+
+  /* ws:ref (end) */
+
+  /* ---- */
 
   /* Print */
   @media print {

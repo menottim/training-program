@@ -324,7 +324,7 @@
     padding: 0.75rem 0 0.5rem;
   }
   .header h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary);
     margin: 0;
@@ -1780,6 +1780,11 @@
   /* ---- */
 
   /* ws:labels (start) */
+  /* Standards: longer target line, so stack lift name above it on phones */
+  @media (max-width: 640px) {
+    .standard-header { flex-wrap: wrap; }
+    .standard-lift-name { flex-basis: 100%; }
+  }
 
   /* ws:labels (end) */
 
@@ -2384,8 +2389,8 @@
 
   const latestBFEntry = bodyLog.slice().reverse().find(e => e.bodyFatPct != null);
   const latestBF = latestBFEntry ? latestBFEntry.bodyFatPct : null;
-  const bfDisplay = latestBF != null ? latestBF + '%' : (athlete.bodyFatPct != null ? athlete.bodyFatPct + '% est.' : '\u2014');
-  const bfSub = athlete.bodyFatPct != null ? 'from ' + athlete.bodyFatPct + '% est.' : '';
+  const bfDisplay = latestBF != null ? latestBF + '%' : (athlete.bodyFatPct != null ? athlete.bodyFatPct + '%' : '\u2014');
+  const bfSub = latestBF != null ? 'latest reading' : (athlete.bodyFatPct != null ? 'start estimate' : 'no reading yet');
 
   const achillesEntries = activityLog.filter(e => e.achillesPain != null);
   const achillesAvg = achillesEntries.length > 0
@@ -2496,7 +2501,7 @@
     '<div class="dash-card">',
       '<div class="dash-value">' + weekNum + '</div>',
       '<div class="dash-label">Week</div>',
-      '<div class="dash-sub">of Phase ' + phase + '</div>',
+      '<div class="dash-sub">Phase ' + phase + ', week ' + (weekNum - { 1: 0, 2: 8, 3: 14 }[phase]) + '</div>',
     '</div>',
     '<div class="dash-card">',
       '<div class="dash-value">' + totalSessions + ' / ' + totalGames + '</div>',
@@ -3032,8 +3037,8 @@
           '<h4>' + weekLabel(ws) + '</h4>' +
           '<div class="week-tags">' +
             mwBanner +
-            '<span class="week-mini-stat">' + sessions + ' sessions</span>' +
-            '<span class="week-mini-stat">' + games + ' games</span>' +
+            '<span class="week-mini-stat">' + sessions + (sessions === 1 ? ' session' : ' sessions') + '</span>' +
+            '<span class="week-mini-stat">' + games + (games === 1 ? ' game' : ' games') + '</span>' +
           '</div>' +
         '</div>' +
         '<table class="log-table log-table--activity">' +
@@ -3717,7 +3722,7 @@
 
       // Target marker (lighter, dashed-like)
       var tgtMarkerPct = Math.min(tgtRatio / gaugeMax * 100, 99).toFixed(1);
-      var tgtMarker = '<div style="position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--text);opacity:0.25;left:' + tgtMarkerPct + '%;z-index:1;border-radius:1px;" title="12-mo target: ' + tgt1RM + ' lbs"></div>';
+      var tgtMarker = '<div style="position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--text);opacity:0.25;left:' + tgtMarkerPct + '%;z-index:1;border-radius:1px;" title="Program target ' + tgt.weight + ' x ' + tgt.reps + ', est. 1RM ' + tgt1RM + ' lbs"></div>';
 
       // Tick labels showing weights at each threshold
       var ticks = '<div class="standard-ticks">';
@@ -3733,9 +3738,9 @@
             ? '<a href="' + esc(exerciseLinks[std.label]) + '" target="_blank">' + esc(std.label) + '</a>'
             : esc(std.label)) + '</span>' +
           '<span class="standard-stats">' +
-            'Est. 1RM: <strong>' + oneRM + ' lbs</strong> (' + ratio.toFixed(2) + 'x BW) \u00b7 ' +
+            'Est. 1RM <strong>' + oneRM + ' lbs</strong> (' + ratio.toFixed(2) + 'x BW) \u00b7 rank ' +
             '<span class="standard-level-label" style="background:' + levelColor + ';color:' + levelInk + ';">' + levelText + '</span>' +
-            ' \u2192 Target: ' + tgt1RM + ' lbs (' + tgtLevelText + ')' +
+            ' \u00b7 Program target <strong>' + tgt.weight + ' x ' + tgt.reps + '</strong> (est. 1RM ' + tgt1RM + ' lbs, ' + tgtLevelText + ')' +
           '</span>' +
         '</div>' +
         '<div style="position:relative;margin-top:16px;">' +
@@ -3887,7 +3892,14 @@
       });
       if (hasHSR) hsrThisWeek++;
     });
-    var hsrPace = Math.floor(3 * (new Date().getDay() + 1) / 7);
+    // Pace = calf HSR days in this week's authored plan that are already past.
+    // Today does not count until it is over. No authored week: no pace, stay ink.
+    var mwHsr = modifiedWeeks[String(weekNum)];
+    var hsrPace = 0;
+    if (mwHsr && mwHsr.schedule) mwHsr.schedule.forEach(function(d) {
+      if (!d.date || new Date(d.date + 'T00:00:00') >= today) return;
+      if ((d.exercises || []).some(function(ex) { return ex.name && /calf raise/i.test(ex.name) && /hsr/i.test(ex.name); })) hsrPace++;
+    });
     var hsrClass = hsrThisWeek >= 3 ? ' improving' : hsrThisWeek < hsrPace ? ' warning' : '';
     var dashMount = document.getElementById('dashboard-mount');
     var dashGrid = dashMount.querySelector('.dashboard');
@@ -3927,7 +3939,7 @@
 
     mount.innerHTML =
       '<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.8rem;color:var(--text-muted);padding:0.5rem 0;margin-bottom:1rem;border-bottom:1px dashed var(--border);">' +
-        '<span><strong style="color:var(--text);">This week:</strong> ' + thisWeekTraining + ' lift · ' + thisWeekSport + ' game</span>' +
+        '<span><strong style="color:var(--text);">This week:</strong> ' + thisWeekTraining + (thisWeekTraining === 1 ? ' lift' : ' lifts') + ' · ' + thisWeekSport + (thisWeekSport === 1 ? ' game' : ' games') + '</span>' +
         '<span><strong style="color:var(--text);">Recent achilles:</strong> ' + achillesHTML + '</span>' +
       '</div>';
   })();

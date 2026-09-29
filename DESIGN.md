@@ -1,37 +1,79 @@
 ---
 name: Training Program
-description: A flat, phone-first coach's sheet in navy and coral for one athlete's week, log and targets.
+description: A flat, phone-first coach's sheet in navy and blue, with coral kept for games, for one athlete's week, log and targets.
 colors:
   night-navy: "#1a1a2e"
   training-blue: "#0f3460"
   signal-coral: "#e94560"
+  coral-ink: "#c0233c"
   paper: "#ffffff"
   paper-alt: "#f8f9fa"
+  paper-hover: "#eef0f3"
   hairline: "#dee2e6"
+  neutral-wash: "#e9ecef"
   ink: "#212529"
+  ink-soft: "#495057"
   ink-muted: "#5c636a"
-  coral-ink: "#c0233c"
-  caution-ink: "#a84300"
   done-green: "#198754"
+  done-ink: "#146c43"
+  done-ink-deep: "#1b5e20"
   caution-orange: "#fd7e14"
+  caution-ink: "#a84300"
   game-wash: "#fde8ec"
   train-wash: "#e8f0fe"
   done-wash: "#e8f5e9"
   caution-wash: "#fff3e0"
+  info-border: "#c9d6f2"
+  caution-border: "#f5d3ae"
+  done-border: "#bfe3cb"
+  series-mid-blue: "#3b6fb6"
+  standard-1: "#e9ecef"
+  standard-2: "#dbe5f4"
+  standard-3: "#bccfe9"
+  standard-4: "#8eaad6"
+  standard-5: "#3b5f93"
+  standard-6: "#0f3460"
 typography:
+  stat:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "1.5rem"
+    fontWeight: 700
   title:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "1.2rem"
     fontWeight: 700
     lineHeight: 1.6
+  headline:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "1rem"
+    fontWeight: 600
   body:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "0.9rem"
     fontWeight: 400
     lineHeight: 1.6
+  body-small:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "0.85rem"
+    fontWeight: 400
+    lineHeight: 1.5
+  note:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "0.8125rem"
+    fontWeight: 400
+    lineHeight: 1.4
+  meta:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "0.8rem"
+    fontWeight: 400
   label:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "0.75rem"
+    fontWeight: 600
+    letterSpacing: "0.5px"
+  micro:
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontSize: "0.6875rem"
     fontWeight: 600
     letterSpacing: "0.5px"
 rounded:
@@ -40,33 +82,66 @@ rounded:
   md: "6px"
   lg: "8px"
   xl: "10px"
+  pill: "50%"
 spacing:
   xs: "0.25rem"
   sm: "0.5rem"
   md: "1rem"
   lg: "1.5rem"
+  tap: "44px"
 components:
   tab-button:
     backgroundColor: "{colors.night-navy}"
     textColor: "{colors.paper}"
     typography: "{typography.label}"
-    padding: "0.7rem 1.2rem"
+    height: "44px"
   today-card:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
     rounded: "{rounded.xl}"
     padding: "1.25rem 1.5rem"
+  check-button:
+    backgroundColor: "{colors.paper}"
+    rounded: "{rounded.sm}"
+    size: "44px"
   insights-section:
     backgroundColor: "{colors.paper}"
     rounded: "{rounded.lg}"
     padding: "1rem 1.25rem"
   tag-game:
     backgroundColor: "{colors.game-wash}"
-    textColor: "{colors.signal-coral}"
+    textColor: "{colors.coral-ink}"
+    typography: "{typography.micro}"
     rounded: "{rounded.sm}"
   tag-train:
     backgroundColor: "{colors.train-wash}"
     textColor: "{colors.training-blue}"
+    typography: "{typography.micro}"
+    rounded: "{rounded.sm}"
+  tag-done:
+    backgroundColor: "{colors.done-wash}"
+    textColor: "{colors.done-ink}"
+    typography: "{typography.micro}"
+    rounded: "{rounded.sm}"
+  tag-caution:
+    backgroundColor: "{colors.caution-wash}"
+    textColor: "{colors.caution-ink}"
+    typography: "{typography.micro}"
+    rounded: "{rounded.sm}"
+  weight-chip-hold:
+    backgroundColor: "{colors.neutral-wash}"
+    textColor: "{colors.ink-muted}"
+    typography: "{typography.micro}"
+    rounded: "{rounded.sm}"
+  weight-chip-up:
+    backgroundColor: "{colors.train-wash}"
+    textColor: "{colors.training-blue}"
+    typography: "{typography.micro}"
+    rounded: "{rounded.sm}"
+  weight-chip-down:
+    backgroundColor: "{colors.caution-wash}"
+    textColor: "{colors.caution-ink}"
+    typography: "{typography.micro}"
     rounded: "{rounded.sm}"
 ---
 
@@ -76,7 +151,7 @@ components:
 
 **Creative North Star: "The Clipboard"**
 
-A coach's sheet, not a dashboard product. Information comes first, surfaces are flat and white, and one hot accent is reserved for games, the active tab and hover. The page is a single 900px column that reads on a phone without expanding anything, with detail folded behind toggles.
+A coach's sheet, not a dashboard product. Information comes first, surfaces are flat and white, and one hot accent, coral, is reserved for games and the active tab. The page is a single 900px column that reads on a phone without expanding anything, with detail folded behind toggles.
 
 State is carried by colour and border, never by decoration. A card's border says what kind of day it is: coral for a game, blue for training, green for done, grey for rest.
 
@@ -85,53 +160,61 @@ State is carried by colour and border, never by decoration. A card's border says
 - System font only. Hierarchy comes from weight, size and small uppercase labels.
 - Colour is a code (game, train, done, rest), not a mood.
 - Long text is clamped or collapsed by default; expand on tap.
+- Every control and link has a 44px hit area on phones; no text below 11px.
 
 ## Colors
 
-A navy and coral pair on white, with green and orange as status colours and pale washes for tags.
+Navy and Training Blue carry the page; coral, green and orange are reserved for state, each with a darker "ink" version for text.
 
 ### Primary
-- **Night Navy** (#1a1a2e): the fixed top nav bar background.
-- **Training Blue** (#0f3460): training-day borders and titles, links, strong text in summary bars, focus ring.
-- **Signal Coral** (#e94560): game days, the active tab underline, hover on toggles.
+- **Night Navy**: fixed nav bar, header stat values, target numbers.
+- **Training Blue**: training days, links, strength bars, the dark end of the standards ramp, focus rings.
+- **Signal Coral**: game days only. As text on white or its wash it becomes **Coral Ink**.
 
 ### Neutral
-- **Paper** (#ffffff): page and card background.
-- **Paper Alt** (#f8f9fa): summary bars, collapsed-section headers.
-- **Hairline** (#dee2e6): borders and row dividers.
-- **Ink** (#212529): body text.
-- **Ink Muted** (#5c636a): metadata, rest-day borders, secondary labels.
+- **Paper** and **Paper Alt**: page, cards, summary bars, plan-change banner. **Paper Hover** on section headers.
+- **Hairline**: borders and dividers. **Neutral Wash**: hold chips, recovery tags, the lightest standards zone.
+- **Ink**, **Ink Soft** and **Ink Muted**: body text, secondary text, metadata and "last weight" references.
 
 ### Status
-- **Done Green** (#198754): completed sessions.
-- **Caution Orange** (#fd7e14): hotel and modified-day warnings.
-- **Washes** (#fde8ec game, #e8f0fe train, #e8f5e9 done, #fff3e0 caution): tag backgrounds only.
+- **Done Green** fills checks; **Done Ink** (and **Done Ink Deep** for pills) is its text version.
+- **Caution Orange** is a fill only; **Caution Ink** is used for any caution text (hotel, rehab, behind on HSR, deload chips).
+- **Washes** (game, train, done, caution) back tags and chips; the matching **borders** frame info, caution and done callouts.
 
-- **Coral Ink** (#c0233c) and **Caution Ink** (#a84300): text versions of coral and orange, used whenever those colours sit on white or a pale wash (both at least 4.5:1).
+### Charts and gauge
+Series use Training Blue (solid), **Series Mid Blue** (dashed) and Ink Muted (dotted). The strength-standards gauge is a six-step blue ramp (**Standard 1** to **Standard 6**) with ink text on the four light zones and white on the two dark ones.
 
 ### Named Rules
-**The Colour-As-Code Rule.** Coral means game, blue means training, green means done, grey means rest. Do not reuse them decoratively.
+**The Colour-As-Code Rule.** Coral means game, blue means training, green means done, grey means rest or hold, orange means caution. Do not reuse them decoratively.
+
+**The Ink Rule.** A state colour used as text on white or a wash always uses its ink version, so every label reaches 4.5:1.
 
 ## Typography
 
-**Font:** the system stack (-apple-system, Segoe UI, Roboto, Arial). No webfont is loaded.
+**Font:** the system stack. No webfont is loaded.
 
-**Character:** neutral and quick to read. Nothing to wait for.
+**Character:** neutral and quick to read on a phone in a gym.
 
 ### Hierarchy
-- **Title** (700, 1.2rem): day name on the Today Card.
-- **Headline** (600, 1rem): card titles, coloured by day type.
-- **Body** (400, 0.9rem, 1.6): checklist rows and notes.
-- **Label** (600, 0.7 to 0.78rem, +0.3 to 0.5px, uppercase): tabs, meta lines, toggles.
+- **Stat** (700, 1.5rem): dashboard values.
+- **Title** (700, 1.2rem): the Today Card day name.
+- **Headline** (600, 1rem): card titles, profile stat values.
+- **Body** (400, 0.9rem, 1.6) and **Body small** (0.85rem): checklist rows, tables, Reference copy.
+- **Note** (0.8125rem): log notes and exercise notes on phones, "last weight" on the Today Card.
+- **Meta** (0.8rem): secondary lines.
+- **Label** (600, 0.75rem, `--fs-label`): tabs, toggles, chart labels people read.
+- **Micro** (600, 0.6875rem, `--fs-micro`): pills, chips, gauge zones, dense ticks. This is the floor.
 
-Floor: no rendered text under 11px (`--fs-micro`, 0.6875rem); readable labels use 12px (`--fs-label`, 0.75rem). Charts size their SVG to the viewport so this holds on screen, not just in CSS.
+Off-ramp sizes still in the code (0.95, 1.05, 1.3, 0.82, 0.78, 0.72 and 0.7rem) are drift from earlier passes; fold them into the nearest step when a component is next touched rather than adding new steps.
 
 ### Named Rules
+**The 11px Floor Rule.** No rendered text below 11px on screen, including SVG text scaled to its rendered width.
+
 **The Small Caps Label Rule.** Uppercase is for short labels only. Never set a sentence in uppercase.
 
 ## Layout
 
-One centred column, max 900px, 1.5rem side padding, 3.5rem top padding under the fixed nav. Sections stack; the week is a 7-column grid of day cards that tightens at 700px (smaller gaps, 60px minimum height, 0.25rem padding). Breakpoints are 640px and 700px. Tab rail scrolls horizontally with no visible scrollbar.
+One centred column, max 900px, 1.5rem side padding, 3.5rem top padding under the fixed nav. Sections stack; the week is a 7-column grid of day cards that tightens at 700px (smaller gaps, 60px minimum height, 0.25rem padding). Breakpoints are 640px (phones: stacked cards, 44px link padding, hidden gauge ticks) and 700px (tighter grid and tabs). Tab rail scrolls horizontally with no visible scrollbar.
 
 ## Elevation & Depth
 
@@ -142,7 +225,7 @@ Flat by default. No side-stripe borders; callouts use a full 1px tinted border a
 
 ## Shapes
 
-Softly squared. Cards 8 to 10px, controls and tags 3 to 6px, dots 50%. Borders are 1px hairline, or 2px in a state colour on the Today Card.
+Softly squared. Cards and sections 8 to 10px, controls, tags and chips 3 to 6px, check dots and markers 50%. Borders are 1px hairline, or 2px in a state colour on the Today Card. The 12px, 2px and 1px radii in the code are one-offs; use the scale.
 
 ## Components
 

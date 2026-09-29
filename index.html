@@ -1702,7 +1702,6 @@
 
   .athlete-profile-body { padding: 0 1rem; }
 
-  /* ws:card (start) */
   /* Done rows fold to one 44px line (check, name, weight) so the next row
      stays under the thumb. The 5+ field stays visible on its row. */
   .today-card-checklist li.is-done .ex-body { padding: 0; }
@@ -1728,11 +1727,7 @@
     .today-card-checklist li:not(.is-done) .ex-sets { white-space: normal; overflow-wrap: anywhere; }
   }
 
-  /* ws:card (end) */
 
-  /* ---- */
-
-  /* ws:ref (start) */
   /* Row headers in Reference tables look like the body cells they replaced. */
   #tab-ref tbody th {
     padding: 0.5rem 0.75rem;
@@ -1778,11 +1773,7 @@
   }
   #hormone-labs-mount td, #hormone-labs-mount tbody th { white-space: nowrap; }
 
-  /* ws:ref (end) */
 
-  /* ---- */
-
-  /* ws:color (start) */
   /* Content links on Plan and Reference: Training Blue, dotted underline
      like the Today card, never coral (coral = game). Underline via
      text-decoration so the 44px phone padding does not move it. */
@@ -1820,20 +1811,12 @@
   details.insights-section > summary:hover,
   .athlete-profile summary:hover .athlete-profile-toggle { color: #0a2440; }
 
-  /* ws:color (end) */
 
-  /* ---- */
-
-  /* ws:labels (start) */
   /* Standards: longer target line, so stack lift name above it on phones */
   @media (max-width: 640px) {
     .standard-header { flex-wrap: wrap; }
     .standard-lift-name { flex-basis: 100%; }
   }
-
-  /* ws:labels (end) */
-
-  /* ---- */
 
   /* Print */
   @media print {
@@ -4128,7 +4111,7 @@
 
     mount.insertAdjacentHTML('beforeend',
       '<div class="chart-container" style="margin-top:1rem;">' + parts.join('') + summaryHTML +
-        '<div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;">Calculated from weight &times; BF%. Only plots dates where both metrics are logged. BIA scale fat percentages have ~2-4% typical variance per knowledge/body-composition-measurement.md; trend direction matters more than any single reading.</div>' +
+        '<div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;">Calculated from weight &times; BF%. Only plots dates where both metrics are logged. Scale body-fat readings vary by 2 to 4 points, so watch the trend, not one reading.</div>' +
       '</div>');
   })();
 

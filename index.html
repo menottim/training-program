@@ -815,7 +815,6 @@
   thead th { background: none; color: var(--ink-3); border-bottom: 2px solid var(--rule); font-size: var(--fs-label); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; border-radius: 0 !important; }
   tbody td, tbody th { border-bottom: 1px solid var(--hair); }
 
-  /* ws:week (start) */
   /* This Week: the exercise sheet. Header line, ruled dosing table with
      square tick boxes, a dashed sign-off line, margin panels for rules. */
 
@@ -1331,11 +1330,7 @@
     }
   }
 
-  /* ws:week (end) */
 
-  /* ---- */
-
-  /* ws:plan (start) */
   /* Training Plan as a progress sheet: ruled tables, thin clinical-blue
      scales, sections opened by a heavy rule and a disclosure line. */
   #tab-plan .sheet-note { margin: 0.4rem 0 0; font-size: var(--fs-label); line-height: 1.45; color: var(--ink-3); }
@@ -1356,9 +1351,9 @@
   /* Groups: heavy rule plus a disclosure line, no box. */
   #tab-plan details.insights-section { margin: 1rem 0 0; border: 0; border-top: 2px solid var(--rule); border-radius: 0; background: none; overflow: visible; }
   #tab-plan details.insights-section:last-of-type { border-bottom: 1px solid var(--hair); }
-  #tab-plan details.insights-section > summary { padding: 0; background: none; color: var(--ink); font-size: 0.8125rem; letter-spacing: 0.06em; }
+  #tab-plan details.insights-section > summary { min-height: 48px; padding: 0.5rem 0.25rem 0.5rem 0; background: none; color: var(--ink); font-size: 1rem; text-transform: none; letter-spacing: -0.005em; }
   #tab-plan details.insights-section > summary strong { font-weight: 700; }
-  #tab-plan details.insights-section > summary::after { color: var(--clin); width: 0.5em; height: 0.5em; margin-right: 0.35rem; }
+  #tab-plan details.insights-section > summary::after { color: var(--ink-3); width: 0.5em; height: 0.5em; }
   #tab-plan details.insights-section > summary:hover { background: none; color: var(--clin); }
   #tab-plan .insights-body { padding: 0 0 1.25rem; }
   #tab-plan .insights-body > p { font-size: 0.875rem; color: var(--ink-2); }
@@ -1427,11 +1422,7 @@
     .tg-table th:last-child, .tg-table td:last-child { width: 24%; }
     .sheet-dl > div { grid-template-columns: 8.5rem 1fr; }
   }
-  /* ws:plan (end) */
 
-  /* ---- */
-
-  /* ws:ref (start) */
 
   /* Margin panel: every callout on the sheet. Fill, small blue label, ink text. */
   .info-box {
@@ -1596,10 +1587,6 @@
 
   /* Footer: one thin sheet line. */
   .footer { margin-top: 2.5rem; padding-top: 0.5rem; border-top: 1px solid var(--hair); text-align: left; font-size: var(--fs-label); color: var(--ink-3); }
-
-  /* ws:ref (end) */
-
-  /* ---- */
 
   /* Print */
   @media print {

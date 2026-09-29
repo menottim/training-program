@@ -180,6 +180,7 @@ Insights and athlete profile use `<details>`. Header on Paper Alt with a rotatin
 Clamped to 3 lines (2 on phones) with a small uppercase "more" toggle in Training Blue that turns coral on hover.
 
 ### Charts
+Series are told apart by blue and neutral shades plus dash patterns (solid, dashed, dotted), never by coral or green, which keep their game and done meanings. Legends show line samples. The strength-standards gauge is a light-to-dark blue ramp with ink or white text per zone.
 Inline charts with instant hover and tap tooltips and a dot-and-label legend.
 
 ## Do's and Don'ts

@@ -272,8 +272,8 @@
   .today-card-checklist .ex-weight { color: var(--accent2); font-weight: 600; font-size: 0.85rem; white-space: nowrap; }
   .today-card-checklist .ex-note { flex-basis: 100%; color: var(--text-muted); font-size: 0.82rem; line-height: 1.4; }
   /* History-aware weight display */
-  .wt-up { color: var(--success); font-weight: 700; }
-  .wt-down { color: var(--accent); font-weight: 700; }
+  .wt-up { color: #146c43; font-weight: 700; }
+  .wt-down { color: var(--caution-ink); font-weight: 700; }
   .wt-hold { color: var(--text-muted); font-weight: 700; }
   .wt-carried { color: var(--text-muted); font-style: italic; font-weight: 400; font-size: 0.85em; }
   .ex-hist { color: var(--text-muted); font-size: 0.75rem; }
@@ -565,7 +565,7 @@
   .signal-trigger {
     flex: 1;
     font-weight: 600;
-    color: var(--warning);
+    color: var(--caution-ink);
   }
   .signal-action {
     flex: 1.5;
@@ -1156,7 +1156,7 @@
   }
   .progress-log tbody tr:last-child td { border-bottom: none; }
   .progress-log tbody tr:nth-child(even) { background: #f4f5f6; }
-  .progress-log .empty-cell { color: #ccc; }
+  .progress-log .empty-cell { color: var(--text-muted); }
   .progress-log .upcoming-col { background: #fffbe6; font-style: italic; color: var(--accent2); }
   .progress-log thead .upcoming-col { background: #fff3cd; color: #856404; font-style: normal; }
 
@@ -1584,7 +1584,6 @@
     }
   }
 
-  /* ws:tables (start) */
   /* Body composition log on phones: one compact card per reading */
   @media (max-width: 639px) {
     .log-table--body { min-width: 0; margin: 0.5rem 0; }
@@ -1612,17 +1611,9 @@
       color: var(--text-muted);
     }
   }
-  /* ws:tables (end) */
 
-  /* ---- */
 
-  /* ws:stale (start) */
 
-  /* ws:stale (end) */
-
-  /* ---- */
-
-  /* ws:color (start) */
   /* Colour-as-code: coral = game, blue = training, green = done, grey = rest.
      Progress, targets and ranks below use ink and Training Blue only. */
   .header .stat-value { color: var(--primary); }
@@ -1640,10 +1631,6 @@
   /* Gauge zones run a light-to-dark blue ramp; dark text on the light four. */
   .standard-zone { color: var(--text); }
   .standard-zone:nth-child(n+5) { color: #fff; }
-
-  /* ws:color (end) */
-
-  /* ---- */
 
   /* Print */
   @media print {
@@ -2700,7 +2687,7 @@
     return '<div class="target-card">' +
       '<div class="lift-name">' + liftHTML + '</div>' +
       '<div class="current">' + cur.weight + ' \u00d7 ' + cur.reps + ' (' + curRatio + 'x BW)</div>' +
-      '<div class="arrow">\u2193</div>' +
+      '<div class="arrow">\u2192</div>' +
       '<div class="target">' + tgt.weight + plus + ' \u00d7 ' + tgt.reps + '</div>' +
       '<div class="ratio">' + horizon + '-month target \u00b7 ' + tgtRatio + 'x BW</div>' +
     '</div>';
@@ -3696,7 +3683,7 @@
         ['totalTestosteroneFlag','shbgFlag','freeTestosteroneFlag','bioavailableTestosteroneFlag','estradiolFlag'].forEach(function(k) {
           if (h[k] && /elevated|low|borderline|above|below|floor/i.test(h[k])) flagCount++;
         });
-        var flagDot = flagCount > 0 ? '<span style="color:var(--warning);"> &#9679;</span>' : '';
+        var flagDot = flagCount > 0 ? '<span style="color:var(--caution-ink);"> &#9679;</span>' : '';
         return '<tr>' +
           '<td>' + d + time + flagDot + '</td>' +
           '<td>' + t + '</td>' +
@@ -3788,11 +3775,11 @@
 
     fatTicks.forEach(function(t) {
       var y = yFat(t);
-      parts.push(svgLabel(W - pad.right + 6, y, t, { anchor: 'start', size: 11, fill: '#e94560' }));
+      parts.push(svgLabel(W - pad.right + 6, y, t, { anchor: 'start', size: 11, fill: '#5c636a' }));
     });
 
     parts.push('<text x="4" y="' + (pad.top - 10) + '" font-size="11" fill="#2e7d32" font-weight="600">Lean (lb)</text>');
-    parts.push('<text x="' + (W - 4) + '" y="' + (pad.top - 10) + '" text-anchor="end" font-size="11" fill="#e94560" font-weight="600">Fat (lb)</text>');
+    parts.push('<text x="' + (W - 4) + '" y="' + (pad.top - 10) + '" text-anchor="end" font-size="11" fill="#5c636a" font-weight="600">Fat (lb)</text>');
 
     var leanPts = points.map(function(p, i) { return [xScale(i), yLean(p.lean)]; });
     var leanLabels = points.map(function(p) { return p.date + ': ' + p.lean + ' lb lean'; });
@@ -3801,8 +3788,8 @@
 
     var fatPts = points.map(function(p, i) { return [xScale(i), yFat(p.fat)]; });
     var fatLabels = points.map(function(p) { return p.date + ': ' + p.fat + ' lb fat'; });
-    parts.push(svgLine(fatPts, '#e94560'));
-    parts.push(svgDots(fatPts, '#e94560', 4, fatLabels));
+    parts.push(svgLine(fatPts, '#5c636a'));
+    parts.push(svgDots(fatPts, '#5c636a', 4, fatLabels));
 
     var dateStep = Math.max(1, Math.ceil(points.length * 34 / (W - pad.left - pad.right)));
     points.forEach(function(p, i) {
@@ -3821,8 +3808,8 @@
     var fatDelta = (last.fat - first.fat).toFixed(1);
     var leanDeltaStr = (leanDelta >= 0 ? '+' : '') + leanDelta;
     var fatDeltaStr = (fatDelta >= 0 ? '+' : '') + fatDelta;
-    var leanColor = leanDelta >= 0 ? 'var(--success)' : 'var(--warning)';
-    var fatColor = fatDelta <= 0 ? 'var(--success)' : 'var(--warning)';
+    var leanColor = leanDelta >= 0 ? '#146c43' : 'var(--caution-ink)';
+    var fatColor = fatDelta <= 0 ? '#146c43' : 'var(--caution-ink)';
 
     var summaryHTML =
       '<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.85rem;margin-top:0.5rem;">' +

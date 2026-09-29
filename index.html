@@ -433,45 +433,6 @@
   td.notes { color: var(--text-muted); font-size: 0.8rem; }
 
 
-  /* Targets table */
-  .targets-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-    margin: 1rem 0;
-  }
-  .target-card {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-  }
-  .target-card .lift-name {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--text-muted);
-    margin-bottom: 0.5rem;
-  }
-  .target-card .current {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
-  .target-card .arrow {
-    font-size: 1.2rem;
-    color: var(--accent);
-    margin: 0.25rem 0;
-  }
-  .target-card .target {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--success);
-  }
-  .target-card .ratio {
-    font-size: var(--fs-label);
-    color: var(--text-muted);
-  }
-
   /* Signals table */
   .signal-row {
     display: flex;
@@ -796,25 +757,9 @@
       font-size: 0.75rem;
     }
 
-    /* Strength targets grid: stack on mobile */
-    .targets-grid {
-      grid-template-columns: 1fr;
-    }
-
-    /* Dashboard cards: 2 columns is fine, but allow wrapping */
-    .dashboard {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
     /* Progress log tables: ensure readability */
     .progress-table {
       font-size: 0.75rem;
-    }
-
-    /* Bar chart labels: tighter on mobile */
-    .bar-label {
-      width: 90px;
-      font-size: var(--fs-label);
     }
 
   }
@@ -867,95 +812,6 @@
   }
 
 
-  /* Activity Log */
-  .dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 0.5rem;
-    margin: 1rem 0;
-  }
-  .dash-card {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 0.75rem;
-    text-align: center;
-  }
-  .dash-card .dash-value {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary);
-  }
-  .dash-card .dash-label {
-    font-size: var(--fs-label);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--text-muted);
-  }
-  .dash-card .dash-sub {
-    font-size: var(--fs-label);
-    color: var(--text-muted);
-    margin-top: 2px;
-  }
-  .dash-card.improving .dash-value { color: var(--success); }
-  .dash-card.warning .dash-value { color: var(--warning); }
-
-  /* Strength chart (pure CSS bar chart) */
-  .bar-chart {
-    margin: 1rem 0;
-    padding-right: 2rem;
-  }
-  .bar-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.4rem;
-    font-size: 0.8rem;
-  }
-  .bar-label {
-    width: 130px;
-    font-weight: 600;
-    text-align: right;
-    padding-right: 0.75rem;
-    flex-shrink: 0;
-  }
-  .bar-track {
-    flex: 1;
-    height: 22px;
-    background: #eee;
-    border-radius: 4px;
-    position: relative;
-    overflow: visible;
-  }
-  .bar-fill {
-    height: 100%;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    padding-left: 8px;
-    font-size: var(--fs-label);
-    font-weight: 600;
-    color: #fff;
-    transition: width 0.3s;
-    overflow: hidden;
-  }
-  .bar-target {
-    position: absolute;
-    top: -4px;
-    bottom: -4px;
-    width: 2px;
-    background: var(--text);
-    opacity: 0.5;
-    border-radius: 1px;
-  }
-  .bar-target-label {
-    position: absolute;
-    top: 3px;
-    right: -2.25rem;
-    font-size: var(--fs-label);
-    font-weight: 600;
-    color: var(--text-muted);
-    white-space: nowrap;
-  }
-
   /* Activity log table */
   .log-table {
     width: 100%;
@@ -988,52 +844,6 @@
   .tag-rest { background: #f5f5f5; color: #5c636a; }
 
   /* Progress log tables */
-  .progress-log {
-    margin: 0.25rem 0 1.5rem;
-  }
-  .progress-log h4 {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.25rem;
-  }
-  .progress-log table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.8rem;
-    margin: 0;
-    background: #fafbfc;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  .progress-log thead th {
-    background: #e9ecef;
-    color: var(--text);
-    font-size: 0.7rem;
-    padding: 0.35rem 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    border-radius: 0;
-    text-align: center;
-  }
-  .progress-log thead th:first-child { border-radius: 0; text-align: left; }
-  .progress-log thead th:last-child { border-radius: 0; }
-  .progress-log tbody td {
-    padding: 0.3rem 0.5rem;
-    border-bottom: 1px solid #eee;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  .progress-log tbody td:first-child {
-    text-align: left;
-    font-weight: 600;
-    color: var(--text);
-  }
-  .progress-log tbody tr:last-child td { border-bottom: none; }
-  .progress-log tbody tr:nth-child(even) { background: #f4f5f6; }
-  .progress-log .empty-cell { color: var(--text-muted); }
   .progress-log .upcoming-col { background: #fffbe6; font-style: italic; color: var(--accent2); }
   .progress-log thead .upcoming-col { background: #fff3cd; color: #856404; font-style: normal; }
 
@@ -1123,100 +933,6 @@
   .standards-section .info-box {
     margin-top: 0.75rem;
   }
-  .standard-row {
-    margin-bottom: 1rem;
-  }
-  .standard-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 4px;
-  }
-  .standard-lift-name {
-    font-weight: 700;
-    font-size: 0.85rem;
-  }
-  .standard-stats {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-  }
-  .standard-stats strong {
-    color: var(--text);
-  }
-  .standard-gauge {
-    position: relative;
-    height: 22px;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
-  }
-  .standard-zone {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--fs-micro);
-    font-weight: 600;
-    color: rgba(255,255,255,0.85);
-    letter-spacing: 0.3px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .standard-marker {
-    position: absolute;
-    top: -3px;
-    bottom: -3px;
-    width: 3px;
-    background: var(--text);
-    border-radius: 2px;
-    z-index: 2;
-  }
-  .standard-marker::after {
-    content: attr(data-label);
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: var(--fs-label);
-    font-weight: 700;
-    color: var(--text);
-    white-space: nowrap;
-  }
-  .standard-level-label {
-    display: inline-block;
-    padding: 1px 8px;
-    border-radius: 3px;
-    font-size: var(--fs-label);
-    font-weight: 600;
-    color: #fff;
-  }
-  .standard-ticks {
-    position: relative;
-    height: 1.2em;
-    font-size: var(--fs-micro);
-    color: var(--text-muted);
-    margin-top: 2px;
-  }
-  .standard-ticks span {
-    position: absolute;
-    transform: translateX(-50%);
-  }
-  .standard-zone .zone-short { display: none; }
-  @media (max-width: 700px) {
-    .standard-zone .zone-full { display: none; }
-    .standard-zone .zone-short { display: inline; }
-  }
-  .standard-formula-note {
-    font-size: 0.72rem;
-    color: var(--text-muted);
-    margin-top: 0.75rem;
-    text-align: center;
-  }
-
-  @media (max-width: 640px) {
-    .standard-ticks { display: none; }
-  }
-
   /* Activity log on phones: each row is a stacked card, no sideways scroll */
   @media (max-width: 639px) {
     .log-table--activity { min-width: 0; margin: 0.5rem 0; }
@@ -1453,7 +1169,7 @@
   @media (max-width: 640px) {
     #tab-plan td a, #tab-ref td a,
     #tab-plan p a, #tab-ref p a,
-    .info-box a, .target-card a, .chart-legend a, .bar-label a,
+    .info-box a, .chart-legend a,
     .standard-lift-name a, .modified-day .exercise-list a {
       padding: 16px 0;
       margin: -16px 0;
@@ -1492,17 +1208,9 @@
 
   /* Colour-as-code: coral = game, blue = training, green = done, grey = rest.
      Progress, targets and ranks below use ink and Training Blue only. */
-  .target-card .arrow { color: var(--text-muted); }
-  .target-card .target { color: var(--primary); }
-  .dash-card.warning .dash-value { color: var(--caution-ink); }
   .day-card.today { outline: 2px solid var(--text); outline-offset: -2px; }
   .day-card.today::after { color: var(--text); }
   .modified-day.md-today { outline-color: var(--text); }
-  .bar-target { background: var(--text-muted); opacity: 1; }
-  .bar-target-label { background: var(--bg); }
-  /* Gauge zones run a light-to-dark blue ramp; dark text on the light four. */
-  .standard-zone { color: var(--text); }
-  .standard-zone:nth-child(n+5) { color: #fff; }
 
   /* Load-change chip after a target weight: blue up, grey hold, orange down. */
   .wt-chip {
@@ -1708,11 +1416,6 @@
   .athlete-profile summary:hover .athlete-profile-toggle { color: #0a2440; }
 
 
-  /* Standards: longer target line, so stack lift name above it on phones */
-  @media (max-width: 640px) {
-    .standard-header { flex-wrap: wrap; }
-    .standard-lift-name { flex-basis: 100%; }
-  }
 
   /* ---- Sheet foundation ---- */
   ::selection { background: var(--clin-wash); color: var(--ink); }
@@ -1736,7 +1439,97 @@
   /* ---- */
 
   /* ws:plan (start) */
+  /* Training Plan as a progress sheet: ruled tables, thin clinical-blue
+     scales, sections opened by a heavy rule and a disclosure line. */
+  #tab-plan .sheet-note { margin: 0.4rem 0 0; font-size: var(--fs-label); line-height: 1.45; color: var(--ink-3); }
 
+  /* Strength targets */
+  .tg-table { width: 100%; margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.3; }
+  .tg-table thead th { padding: 0.35rem 0.4rem 0.35rem 0; text-align: left; white-space: nowrap; }
+  .tg-table tbody th, .tg-table tbody td { padding: 0.6rem 0.4rem 0.6rem 0; vertical-align: top; text-align: left; }
+  .tg-table tbody th { font-weight: 600; color: var(--ink); }
+  .tg-table small { display: block; font-size: var(--fs-label); font-weight: 400; color: var(--ink-3); }
+  .tg-num { font-weight: 600; white-space: nowrap; }
+  #tab-plan .tg-table tbody tr, #body-log-mount tbody tr { background: none; }
+  .tg-table th:last-child, .tg-table td:last-child { padding-right: 0; width: 30%; }
+  .tg-pct { display: block; font-weight: 600; color: var(--clin); }
+  .tg-bar { display: block; height: 6px; margin-top: 0.35rem; border: 1px solid var(--clin); background: var(--sheet); }
+  .tg-bar > span { display: block; height: 100%; background: var(--clin); }
+
+  /* Groups: heavy rule plus a disclosure line, no box. */
+  #tab-plan details.insights-section { margin: 1rem 0 0; border: 0; border-top: 2px solid var(--rule); border-radius: 0; background: none; overflow: visible; }
+  #tab-plan details.insights-section:last-of-type { border-bottom: 1px solid var(--hair); }
+  #tab-plan details.insights-section > summary { padding: 0; background: none; color: var(--ink); font-size: 0.8125rem; letter-spacing: 0.06em; }
+  #tab-plan details.insights-section > summary strong { font-weight: 700; }
+  #tab-plan details.insights-section > summary::after { color: var(--clin); width: 0.5em; height: 0.5em; margin-right: 0.35rem; }
+  #tab-plan details.insights-section > summary:hover { background: none; color: var(--clin); }
+  #tab-plan .insights-body { padding: 0 0 1.25rem; }
+  #tab-plan .insights-body > p { font-size: 0.875rem; color: var(--ink-2); }
+  #tab-plan .insights-body h3 { margin: 1.5rem 0 0; font-size: 0.9375rem; line-height: 1.3; }
+  #tab-plan .insights-body > div:first-child h3,
+  #tab-plan .insights-body > div:first-child > .standards-section:first-child h3 { margin-top: 0.5rem; }
+  #tab-plan .insights-body h3 small { margin-left: 0.4em; font-size: var(--fs-label); font-weight: 400; color: var(--ink-3); }
+
+  /* Charts sit on the sheet; legends are small inline keys. */
+  #tab-plan .chart-container { margin: 0.5rem 0 0; }
+  #tab-plan .chart-legend { justify-content: flex-start; gap: 0.25rem 1rem; margin-top: 0.35rem; font-size: var(--fs-label); color: var(--ink-3); }
+  #tab-plan .chart-legend-item { gap: 6px; }
+  .chart-key-sw { display: inline-block; width: 10px; height: 10px; flex: none; }
+  .chart-key-dot { border-radius: 50%; }
+
+  /* Dashboard: ruled label / value list */
+  .sheet-dl { margin: 0.5rem 0 0; border-top: 2px solid var(--rule); }
+  .sheet-dl > div { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid var(--hair); font-size: 0.875rem; }
+  .sheet-dl dt { color: var(--ink-3); }
+  .sheet-dl dd { font-weight: 600; color: var(--ink); }
+  .sheet-dl dd small { margin-left: 0.5em; font-size: var(--fs-label); font-weight: 400; color: var(--ink-3); }
+  @media (min-width: 701px) {
+    .sheet-dl { display: grid; grid-template-columns: 1fr 1fr; column-gap: 2rem; }
+  }
+
+  /* Strength standards: one ruled row per lift, thin segmented scale */
+  .standards-section { margin: 0; }
+  .standard-row { padding: 0.7rem 0 0.6rem; border-bottom: 1px solid var(--hair); }
+  .standards-section .standard-row:first-of-type { margin-top: 0.6rem; border-top: 2px solid var(--rule); }
+  .standard-header { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; }
+  .standard-lift-name { font-weight: 700; font-size: 0.9375rem; }
+  .standard-rank { font-size: 1rem; font-variant-caps: all-small-caps; letter-spacing: 0.06em; font-weight: 700; color: var(--clin); white-space: nowrap; }
+  .standard-rank--tgt { color: var(--ink-2); }
+  .standard-scale { position: relative; height: 18px; margin-top: 0.35rem; }
+  .standard-gauge { position: absolute; left: 0; right: 0; top: 6px; height: 6px; display: flex; }
+  .standard-gauge > span { height: 100%; box-shadow: inset -1px 0 0 var(--sheet); }
+  .standard-mark { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--ink); }
+  .standard-mark--tgt { background: none; border-left: 2px dotted var(--ink-3); }
+  .standard-names { display: flex; margin-top: 1px; font-size: var(--fs-micro); line-height: 1.3; color: var(--ink-3); }
+  .standard-names > span { text-align: center; overflow: hidden; white-space: nowrap; }
+  .standard-names .zone-short { display: none; }
+  @media (max-width: 700px) {
+    .standard-names .zone-full { display: none; }
+    .standard-names .zone-short { display: inline; }
+  }
+  .standard-stats { margin: 0.3rem 0 0; font-size: 0.8125rem; line-height: 1.45; color: var(--ink-2); }
+  .standard-stats strong { color: var(--ink); }
+  .standard-stats .standard-rank { font-size: 0.9375rem; }
+  .standard-key-mark { display: inline-block; width: 0; height: 12px; margin: 0 0.35rem 0 0; vertical-align: -1px; border-left: 2px solid var(--ink); }
+  .standard-key-mark--tgt { margin-left: 0.5rem; border-left-style: dotted; border-left-color: var(--ink-3); }
+
+  /* Body composition log */
+  #body-log-mount .show-all-btn { border: 0; border-radius: 0; padding: 0; margin: 0; }
+  #body-log-mount .log-table--body { margin: 0.25rem 0 0; font-size: 0.875rem; }
+  #body-log-mount .log-table--body td { font-variant-numeric: tabular-nums; }
+  #body-log-mount .log-table--body td.log-date { white-space: nowrap; font-weight: 600; }
+  @media (max-width: 639px) {
+    #body-log-mount .log-table--body tbody { border-top: 2px solid var(--rule); }
+    #body-log-mount .log-table--body tr { border-bottom-color: var(--hair); }
+    #body-log-mount .log-table--body td[data-label]::before { text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-3); }
+  }
+
+  @media (max-width: 640px) {
+    #tab-plan th a { padding: 16px 0; margin: -16px 0; }
+    .tg-table { font-size: 0.8125rem; }
+    .tg-table th:last-child, .tg-table td:last-child { width: 24%; }
+    .sheet-dl > div { grid-template-columns: 8.5rem 1fr; }
+  }
   /* ws:plan (end) */
 
   /* ---- */
@@ -1921,7 +1714,7 @@
     .phase { page-break-inside: avoid; }
     .week-grid { gap: 2px; }
     .day-card { min-height: 60px; padding: 0.25rem; }
-    .targets-grid { page-break-inside: avoid; }
+    .info-box { page-break-inside: avoid; }
     table { page-break-inside: avoid; }
     .chart-container svg { max-height: 150px; }
     .no-print { display: none; }
@@ -2013,13 +1806,9 @@
 
 <!-- STRENGTH TARGETS -->
 <h2 id="targets">Strength Targets</h2>
-<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Each lift's target and time frame are below.</p>
 
-<!-- Strength Target Cards (rendered from data.json) -->
+<!-- Strength targets table (rendered from data.json) -->
 <div id="targets-mount"></div>
-
-<!-- Strength Progress Bars -->
-<div id="strength-mount"></div>
 
 <details class="insights-section">
   <summary><strong>Strength progress</strong></summary>
@@ -2236,7 +2025,7 @@
     const msg = '<div class="info-box warning"><strong>Could not load data.json</strong> ' +
       'If viewing locally via file://, use a local server or visit ' +
       '<a href="https://menottim.github.io/training-program/">the GitHub Pages version</a>.</div>';
-    document.querySelectorAll('#dashboard-mount, #strength-mount, #targets-mount, #activity-log-mount')
+    document.querySelectorAll('#dashboard-mount, #targets-mount, #activity-log-mount')
       .forEach(el => el.innerHTML = msg);
     return;
   }
@@ -2607,35 +2396,18 @@
   }
 
   // Dashboard
-  document.getElementById('dashboard-mount').innerHTML = [
-    '<div class="dashboard">',
-    '<div class="dash-card">',
-      '<div class="dash-value">' + weekNum + '</div>',
-      '<div class="dash-label">Week</div>',
-      '<div class="dash-sub">Phase ' + phase + ', week ' + (weekNum - { 1: 0, 2: 8, 3: 14 }[phase]) + '</div>',
-    '</div>',
-    '<div class="dash-card">',
-      '<div class="dash-value">' + totalSessions + ' / ' + totalGames + '</div>',
-      '<div class="dash-label">Sessions / Games</div>',
-      '<div class="dash-sub">total logged</div>',
-    '</div>',
-    '<div class="dash-card">',
-      '<div class="dash-value">' + latestWeight + '</div>',
-      '<div class="dash-label">Body Weight</div>',
-      '<div class="dash-sub">' + weightSub + '</div>',
-    '</div>',
-    '<div class="dash-card">',
-      '<div class="dash-value">' + bfDisplay + '</div>',
-      '<div class="dash-label">Body Fat</div>',
-      '<div class="dash-sub">' + bfSub + '</div>',
-    '</div>',
-    '<div class="dash-card">',
-      '<div class="dash-value">' + achillesAvg + '</div>',
-      '<div class="dash-label">Achilles Avg</div>',
-      '<div class="dash-sub">pain 0\u201310</div>',
-    '</div>',
-    '</div>'
-  ].join('');
+  // Dashboard: a ruled label / value list, not stat tiles.
+  var dashRows = [
+    ['Week', weekNum + '<small>Phase ' + phase + ', week ' + (weekNum - { 1: 0, 2: 8, 3: 14 }[phase]) + '</small>'],
+    ['Sessions / games', totalSessions + ' / ' + totalGames + '<small>total logged</small>'],
+    ['Body weight', latestWeight + '<small>' + weightSub + '</small>'],
+    ['Body fat', bfDisplay + '<small>' + bfSub + '</small>'],
+    ['Achilles average', achillesAvg + '<small>pain 0–10</small>']
+  ];
+  document.getElementById('dashboard-mount').innerHTML =
+    '<dl class="sheet-dl">' + dashRows.map(function(r) {
+      return '<div><dt>' + r[0] + '</dt><dd>' + r[1] + '</dd></div>';
+    }).join('') + '</dl>';
 
   // Modified Week Plan
   // Note: innerHTML uses esc() for all data.json string interpolation.
@@ -3006,8 +2778,8 @@
       ? '<button class="show-all-btn" id="body-log-toggle">Show all ' + totalBodyRows + ' entries</button>'
       : '';
     document.getElementById('body-log-mount').innerHTML =
-      '<h3 style="margin-top:2rem;">Body Composition' +
-        (hiddenCount > 0 ? ' <span style="font-size:0.7rem;font-weight:400;color:var(--text-muted);">(last ' + BODY_LOG_DEFAULT_ROWS + ' of ' + totalBodyRows + ')</span>' : '') +
+      '<h3>Body Composition' +
+        (hiddenCount > 0 ? ' <small>last ' + BODY_LOG_DEFAULT_ROWS + ' of ' + totalBodyRows + '</small>' : '') +
       '</h3>' +
       toggleBtn +
       '<table class="log-table log-table--body"><thead><tr>' + headers +
@@ -3023,57 +2795,36 @@
     }
   }
 
-  // Strength Progress Bars
+  // Strength targets: one ruled table; progress is a thin bar in its cell.
   var bw = latestWeight;
-  var lifts = [
-    { key: 'trapBarDeadlift', label: 'TB Deadlift', color: 'var(--accent2)' },
-    { key: 'backSquat', label: 'Back Squat', color: 'var(--accent2)' },
-    { key: 'benchPress', label: 'Bench Press', color: 'var(--accent2)' }
-  ];
-  var barRows = lifts.map(function(l) {
-    var cur = currentLifts[l.key];
-    var tgt = targets[l.key];
-    var pct = Math.round((cur.weight / tgt.weight) * 100);
-    var labelHTML = exerciseLinks[l.label]
-      ? '<a href="' + esc(exerciseLinks[l.label]) + '" target="_blank">' + esc(l.label) + '</a>'
-      : esc(l.label);
-    return '<div class="bar-row">' +
-      '<div class="bar-label">' + labelHTML + '</div>' +
-      '<div class="bar-track">' +
-        '<div class="bar-fill" style="width:' + pct + '%;background:' + l.color + ';">' + cur.weight + ' \u00d7 ' + cur.reps + '</div>' +
-        '<div class="bar-target" style="left:100%;"><div class="bar-target-label">' + tgt.weight + '</div></div>' +
-      '</div>' +
-    '</div>';
-  }).join('');
-  document.getElementById('strength-mount').innerHTML =
-    '<h3>Strength Progress vs. Targets</h3><div class="bar-chart">' + barRows + '</div>';
-
-  // Strength Target Cards
   var liftMeta = [
     { key: 'trapBarDeadlift', name: 'Trap Bar Deadlift' },
     { key: 'backSquat', name: 'Back Squat' },
     { key: 'benchPress', name: 'Bench Press' }
   ];
-  var targetCards = liftMeta.map(function(l) {
+  var targetRows = liftMeta.map(function(l) {
     var cur = currentLifts[l.key];
     var tgt = targets[l.key];
-    var curRatio = (cur.weight / bw).toFixed(2);
-    var tgtRatio = (tgt.weight / bw).toFixed(2);
-    var horizon = tgt.horizonMonths || 12;
+    var pct = Math.min(100, Math.round(cur.weight / tgt.weight * 100));
+    var due = new Date(startDate);
+    due.setMonth(due.getMonth() + (tgt.horizonMonths || 12));
     var plus = l.key === 'trapBarDeadlift' ? '+' : '';
     var liftHTML = exerciseLinks[l.name]
       ? '<a href="' + esc(exerciseLinks[l.name]) + '" target="_blank">' + esc(l.name) + '</a>'
       : esc(l.name);
-    return '<div class="target-card">' +
-      '<div class="lift-name">' + liftHTML + '</div>' +
-      '<div class="current">' + cur.weight + ' \u00d7 ' + cur.reps + ' (' + curRatio + 'x BW)</div>' +
-      '<div class="arrow">\u2192</div>' +
-      '<div class="target">' + tgt.weight + plus + ' \u00d7 ' + tgt.reps + '</div>' +
-      '<div class="ratio">' + horizon + '-month target \u00b7 ' + tgtRatio + 'x BW</div>' +
-    '</div>';
+    return '<tr>' +
+      '<th scope="row">' + liftHTML + '</th>' +
+      '<td class="tg-num">' + cur.weight + ' × ' + cur.reps + '<small>' + (cur.weight / bw).toFixed(2) + '× BW</small></td>' +
+      '<td class="tg-num">' + tgt.weight + plus + ' × ' + tgt.reps + '<small>' + (tgt.weight / bw).toFixed(2) + '× BW</small></td>' +
+      '<td class="tg-due">' + due.toLocaleDateString('en-US', { month: 'short' }) + '<small>' + due.getFullYear() + '</small></td>' +
+      '<td class="tg-prog"><span class="tg-pct">' + pct + '%</span>' +
+        '<span class="tg-bar" role="img" aria-label="' + pct + ' percent of target load"><span style="width:' + pct + '%"></span></span></td>' +
+    '</tr>';
   }).join('');
   document.getElementById('targets-mount').innerHTML =
-    '<div class="targets-grid">' + targetCards + '</div>';
+    '<table class="tg-table"><thead><tr><th>Lift</th><th>Now</th><th>Target</th><th>Due</th><th>Progress</th></tr></thead>' +
+    '<tbody>' + targetRows + '</tbody></table>' +
+    '<p class="sheet-note">Now is the latest logged load. Progress is that load as a share of the target load.</p>';
 
   // Activity Log grouped by week
   var dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
@@ -3484,6 +3235,16 @@
   // ═══════════════════════════════════════════════
   // Note: all data.json strings are escaped via esc() before innerHTML interpolation
 
+  // Plan-tab chart palette and inline legend keys (drawn, not glyphs).
+  var CLIN = '#2456a6', INK2 = '#3d434b', INK3 = '#5b6470', GAME = '#e94560', CAUTION = '#a84300';
+  function legendKey(label, color, opts) {
+    opts = opts || {};
+    var mark = opts.dash != null
+      ? '<svg width="22" height="8" aria-hidden="true"><line x1="1" y1="4" x2="21" y2="4" stroke="' + color + '" stroke-width="' + (opts.width || 2) + '"' + (opts.dash ? ' stroke-dasharray="' + opts.dash + '"' : '') + '/></svg>'
+      : '<span class="chart-key-sw' + (opts.dot ? ' chart-key-dot' : '') + '" style="background:' + color + '"></span>';
+    return '<span class="chart-legend-item">' + mark + label + '</span>';
+  }
+
   (function renderVolumeChart() {
     var W = chartW(), H = 160, pad = { top: 15, right: 12, bottom: 35, left: 36 };
     var weekKeys = [];
@@ -3513,9 +3274,9 @@
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
-    ticks.forEach(function(t) {
+    ticks.forEach(function(t, gi) {
       var y = yScale(t);
-      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
+      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="' + (gi ? '#e6ebf2' : '#5b6470') + '" stroke-width="1"/>');
       parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11 }));
     });
 
@@ -3524,9 +3285,9 @@
       var x = cx - barW / 2;
       var y0 = yScale(0);
       var segments = [
-        { val: d.games, color: '#e94560', label: d.games + ' game' + (d.games !== 1 ? 's' : '') },
-        { val: d.training, color: '#0f3460', label: d.training + ' session' + (d.training !== 1 ? 's' : '') },
-        { val: d.recovery, color: '#6c757d', label: d.recovery + ' recovery' }
+        { val: d.games, color: GAME, label: d.games + ' game' + (d.games !== 1 ? 's' : '') },
+        { val: d.training, color: CLIN, label: d.training + ' session' + (d.training !== 1 ? 's' : '') },
+        { val: d.recovery, color: INK3, label: d.recovery + ' recovery' }
       ];
       var cumY = 0;
       segments.forEach(function(seg) {
@@ -3548,11 +3309,7 @@
     mount.insertAdjacentHTML('beforeend',
       '<h3>Weekly Activity Volume</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
-      '<div class="chart-legend">' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#e94560"></span> Games</span>' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#0f3460"></span> Training</span>' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#6c757d"></span> Recovery</span>' +
-      '</div>');
+      '<div class="chart-legend">' + legendKey('Games', GAME) + legendKey('Training', CLIN) + legendKey('Recovery', INK3) + '</div>');
   })();
 
   // ═══════════════════════════════════════════════
@@ -3590,15 +3347,15 @@
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
-    wTicks.forEach(function(t) {
+    wTicks.forEach(function(t, gi) {
       var y = yW(t);
-      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#d7dde5" stroke-width="1"/>');
-      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11, fill: '#2456a6' }));
+      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="' + (gi ? '#e6ebf2' : '#5b6470') + '" stroke-width="1"/>');
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11, fill: CLIN }));
     });
 
     if (yBF) {
-      bfTicks.forEach(function(t) {
-        parts.push(svgLabel(W - pad.right + 6, yBF(t), t + '%', { anchor: 'start', size: 11, fill: '#5c636a' }));
+      bfTicks.forEach(function(t, gi) {
+        parts.push(svgLabel(W - pad.right + 6, yBF(t), t + '%', { anchor: 'start', size: 11, fill: INK2 }));
       });
     }
 
@@ -3606,20 +3363,20 @@
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="' + color + '" stroke-width="1" stroke-dasharray="4,3" opacity="0.7"/>');
       parts.push(svgLabel(pad.left + 4, y - 6, text, { anchor: 'start', size: 11, fill: color }));
     }
-    if (tW) targetLine(yW(tW), '#0f3460', 'target ' + tW + ' lb');
-    if (yBF && tBF) targetLine(yBF(tBF), '#5c636a', 'target ' + tBF + '%');
+    if (tW) targetLine(yW(tW), CLIN, 'target ' + tW + ' lb');
+    if (yBF && tBF) targetLine(yBF(tBF), INK2, 'target ' + tBF + '%');
 
     var wPts = sorted.map(function(e) { return [xScale(dayNum(e.date)), yW(e.weight)]; });
     var wLabels = sorted.map(function(e) { return e.date + ': ' + e.weight + ' lbs'; });
-    parts.push(svgLine(wPts, '#0f3460'));
-    parts.push(svgDots(wPts, '#0f3460', 3.5, wLabels));
+    parts.push(svgLine(wPts, CLIN));
+    parts.push(svgDots(wPts, CLIN, 3.5, wLabels));
 
     if (yBF) {
       var bfEntries = sorted.filter(function(e) { return e.bodyFatPct != null; });
       var bfPts = bfEntries.map(function(e) { return [xScale(dayNum(e.date)), yBF(e.bodyFatPct)]; });
       var bfLabels = bfEntries.map(function(e) { return e.date + ': ' + e.bodyFatPct + '% BF'; });
-      parts.push(svgLine(bfPts, '#5c636a', { dash: '6,4' }));
-      parts.push(svgDots(bfPts, '#5c636a', 3.5, bfLabels));
+      parts.push(svgLine(bfPts, INK2, { dash: '6,4' }));
+      parts.push(svgDots(bfPts, INK2, 3.5, bfLabels));
     }
 
     monthTicks(d0, d1).forEach(function(t) {
@@ -3632,9 +3389,9 @@
       '<h3>Body Weight &amp; Body Fat</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#0f3460"></span> Weight (lbs, left axis)</span>' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#5c636a"></span> Body Fat % (right axis, dashed)</span>' +
-        '<span class="chart-legend-item">┄ thin dashed = target</span>' +
+        legendKey('Weight, lb (left)', CLIN, { dash: '' }) +
+        legendKey('Body fat % (right)', INK2, { dash: '6,4' }) +
+        legendKey('Target', INK3, { dash: '4,3', width: 1 }) +
       '</div>');
   })();
 
@@ -3646,8 +3403,8 @@
     // Note: maps "Bench Press" (barbell) to benchPress target, NOT "DB Bench Press"
     // per CLAUDE.md, DB bench and barbell bench are different lifts.
     var keyLifts = {
-      'Trap Bar Deadlift': { color: '#0f3460', dash: '', target: targets.trapBarDeadlift.weight },
-      'Bench Press': { color: '#5c636a', dash: '2,3', target: targets.benchPress.weight },
+      'Trap Bar Deadlift': { color: CLIN, dash: '', target: targets.trapBarDeadlift.weight },
+      'Bench Press': { color: INK2, dash: '2,3', target: targets.benchPress.weight },
       'Back Squat': { color: '#3b6fb6', dash: '6,4', target: targets.backSquat.weight }
     };
     var liftByWeek = {};
@@ -3694,9 +3451,9 @@
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
-    yTicks.forEach(function(t) {
+    yTicks.forEach(function(t, gi) {
       var y = yScale(t);
-      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
+      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="' + (gi ? '#e6ebf2' : '#5b6470') + '" stroke-width="1"/>');
       parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11 }));
     });
 
@@ -3725,7 +3482,7 @@
         var legendName = exerciseLinks[name]
           ? '<a href="' + esc(exerciseLinks[name]) + '" target="_blank">' + esc(name) + '</a>'
           : esc(name);
-        legendItems.push('<span class="chart-legend-item"><svg width="20" height="8" aria-hidden="true"><line x1="1" y1="4" x2="19" y2="4" stroke="' + cfg.color + '" stroke-width="2"' + (cfg.dash ? ' stroke-dasharray="' + cfg.dash + '"' : '') + '/></svg> ' + legendName + ' (target ' + cfg.target + ')</span>');
+        legendItems.push(legendKey(legendName + ' (target ' + cfg.target + ')', cfg.color, { dash: cfg.dash }));
       }
     });
 
@@ -3742,7 +3499,7 @@
       '<h3>Strength Progression</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' + legendItems.join('') +
-        '<span class="chart-legend-item">\u2504 thin dashed = 5-rep target</span>' +
+        legendKey('5-rep target', INK3, { dash: '4,3', width: 1 }) +
       '</div>');
   })();
 
@@ -3778,94 +3535,68 @@
       return Math.round(weight * (1 + reps / 30));
     }
 
-    var html = '<div class="standards-section">' +
-      '<p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem;">' +
-      'Where your lifts rank among all male lifters at your body weight (' + Math.round(bw) + ' lbs). ' +
-      'Based on <a href="https://strengthlevel.com/strength-standards" target="_blank" style="color:var(--accent2)">strengthlevel.com</a> data.</p>';
+    function levelOf(r, ratios) {
+      var idx = -1;
+      for (var i = 0; i < ratios.length; i++) { if (r >= ratios[i]) idx = i; }
+      return idx >= 0 ? levelNames[idx] : 'Untrained';
+    }
 
-    var liftKeys = ['trapBarDeadlift', 'backSquat', 'benchPress'];
-    liftKeys.forEach(function(key) {
+    var html = '<div class="standards-section">' +
+      '<h3>Strength Standards</h3>' +
+      '<p class="sheet-note">Rank among male lifters at ' + Math.round(bw) + ' lb, from ' +
+      '<a href="https://strengthlevel.com/strength-standards" target="_blank">strengthlevel.com</a> data.</p>';
+
+    ['trapBarDeadlift', 'backSquat', 'benchPress'].forEach(function(key) {
       var std = standards[key];
       var cur = currentLifts[key];
       var tgt = targets[key];
       var oneRM = est1RM(cur.weight, cur.reps);
       var ratio = oneRM / bw;
-
-      // Determine current level
-      var levelIdx = -1;
-      for (var i = 0; i < std.ratios.length; i++) {
-        if (ratio >= std.ratios[i]) levelIdx = i;
-      }
-      var levelText = levelIdx >= 0 ? levelNames[levelIdx] : 'Untrained';
-      var levelColor = levelIdx >= 0 ? levelColors[levelIdx] : '#e9ecef';
-      var levelInk = levelIdx >= 3 ? '#fff' : 'var(--text)';
-
-      // Target 1RM and level
       var tgt1RM = est1RM(tgt.weight, tgt.reps);
       var tgtRatio = tgt1RM / bw;
-      var tgtLevelIdx = -1;
-      for (var j = 0; j < std.ratios.length; j++) {
-        if (tgtRatio >= std.ratios[j]) tgtLevelIdx = j;
-      }
-      var tgtLevelText = tgtLevelIdx >= 0 ? levelNames[tgtLevelIdx] : 'Untrained';
 
-      // Gauge: zones are proportional to the ratio range
-      // Range from 0 to elite + 15% headroom. Each ratio is where that level
+      // Scale from 0 to elite + 15% headroom. Each ratio is where that level
       // starts, so below ratios[0] is Untrained and above ratios[4] is Elite.
       var gaugeMax = std.ratios[4] * 1.15;
       var breakpoints = [0].concat(std.ratios, [gaugeMax]);
       var zoneLabels = ['Untrained'].concat(levelNames);
-      var zoneColors = ['#e9ecef'].concat(levelColors);
-      var zoneShort = ['Unt', 'Beg', 'Nov', 'Int', 'Adv', 'Elite'];
+      var zoneColors = ['#e6ebf2'].concat(levelColors);
+      var zoneShort = ['Untr', 'Beg', 'Nov', 'Int', 'Adv', 'Elite'];
 
-      var zones = '';
+      var zones = '', names = '';
       for (var z = 0; z < zoneLabels.length; z++) {
-        var widthPct = ((breakpoints[z + 1] - breakpoints[z]) / gaugeMax * 100).toFixed(1);
-        zones += '<div class="standard-zone" style="width:' + widthPct + '%;background:' + zoneColors[z] + ';">' +
-          (parseFloat(widthPct) > 9
-            ? '<span class="zone-full">' + zoneLabels[z] + '</span><span class="zone-short">' + zoneShort[z] + '</span>'
-            : '') + '</div>';
+        var w = (breakpoints[z + 1] - breakpoints[z]) / gaugeMax * 100;
+        zones += '<span style="width:' + w.toFixed(1) + '%;background:' + zoneColors[z] + '"></span>';
+        names += '<span style="width:' + w.toFixed(1) + '%">' + (w > 9
+          ? '<span class="zone-full">' + zoneLabels[z] + '</span><span class="zone-short">' + zoneShort[z] + '</span>'
+          : '') + '</span>';
       }
-
-      // Current marker position
-      var markerPct = Math.min(Math.max(ratio / gaugeMax * 100, 0), 99).toFixed(1);
-      var marker = '<div class="standard-marker" style="left:' + markerPct + '%;" data-label="' + oneRM + ' lbs"></div>';
-
-      // Target marker (lighter, dashed-like)
-      var tgtMarkerPct = Math.min(tgtRatio / gaugeMax * 100, 99).toFixed(1);
-      var tgtMarker = '<div style="position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--text);opacity:0.25;left:' + tgtMarkerPct + '%;z-index:1;border-radius:1px;" title="Program target ' + tgt.weight + ' x ' + tgt.reps + ', est. 1RM ' + tgt1RM + ' lbs"></div>';
-
-      // Tick labels showing weights at each threshold
-      var ticks = '<div class="standard-ticks">';
-      ticks += '<span style="left:0;transform:none;">0</span>';
-      for (var t = 0; t < 5; t++) {
-        ticks += '<span style="left:' + (std.ratios[t] / gaugeMax * 100).toFixed(1) + '%;">' + Math.round(std.ratios[t] * bw) + '</span>';
-      }
-      ticks += '</div>';
+      var markerPct = Math.min(Math.max(ratio / gaugeMax * 100, 0), 99.5).toFixed(1);
+      var tgtMarkerPct = Math.min(tgtRatio / gaugeMax * 100, 99.5).toFixed(1);
+      var liftHTML = exerciseLinks[std.label]
+        ? '<a href="' + esc(exerciseLinks[std.label]) + '" target="_blank">' + esc(std.label) + '</a>'
+        : esc(std.label);
 
       html += '<div class="standard-row">' +
         '<div class="standard-header">' +
-          '<span class="standard-lift-name">' + (exerciseLinks[std.label]
-            ? '<a href="' + esc(exerciseLinks[std.label]) + '" target="_blank">' + esc(std.label) + '</a>'
-            : esc(std.label)) + '</span>' +
-          '<span class="standard-stats">' +
-            'Est. 1RM <strong>' + oneRM + ' lbs</strong> (' + ratio.toFixed(2) + 'x BW) \u00b7 rank ' +
-            '<span class="standard-level-label" style="background:' + levelColor + ';color:' + levelInk + ';">' + levelText + '</span>' +
-            ' \u00b7 Program target <strong>' + tgt.weight + ' x ' + tgt.reps + '</strong> (est. 1RM ' + tgt1RM + ' lbs, ' + tgtLevelText + ')' +
-          '</span>' +
+          '<span class="standard-lift-name">' + liftHTML + '</span>' +
+          '<span class="standard-rank">' + levelOf(ratio, std.ratios) + '</span>' +
         '</div>' +
-        '<div style="position:relative;margin-top:16px;">' +
+        '<div class="standard-scale" role="img" aria-label="Now ' + levelOf(ratio, std.ratios) + ', target ' + levelOf(tgtRatio, std.ratios) + '">' +
           '<div class="standard-gauge">' + zones + '</div>' +
-          marker + tgtMarker +
+          '<span class="standard-mark standard-mark--tgt" style="left:' + tgtMarkerPct + '%"></span>' +
+          '<span class="standard-mark" style="left:' + markerPct + '%"></span>' +
         '</div>' +
-        ticks +
+        '<div class="standard-names" aria-hidden="true">' + names + '</div>' +
+        '<p class="standard-stats">Now est. 1RM <strong>' + oneRM + ' lb</strong>, ' + ratio.toFixed(2) + '× BW' +
+          '<br>Target ' + tgt.weight + ' × ' + tgt.reps +
+          ', est. 1RM ' + tgt1RM + ' lb, <span class="standard-rank standard-rank--tgt">' + levelOf(tgtRatio, std.ratios) + '</span></p>' +
       '</div>';
     });
 
-    html += '<p class="standard-formula-note">' +
-      'Est. 1RM via Epley formula: weight \u00d7 (1 + reps \u00f7 30). ' +
-      'Standards are for male lifters at ' + Math.round(bw) + ' lbs body weight.' +
-      '</p>';
+    html += '<p class="sheet-note standard-key">' +
+      '<span class="standard-key-mark"></span>now <span class="standard-key-mark standard-key-mark--tgt"></span>program target. ' +
+      'Est. 1RM = weight × (1 + reps ÷ 30).</p>';
 
     html += '</div>';
 
@@ -3893,22 +3624,22 @@
 
     var parts = ['<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'];
 
-    yTicks.forEach(function(t) {
+    yTicks.forEach(function(t, gi) {
       var y = yScale(t);
-      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
+      parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="' + (gi ? '#e6ebf2' : '#5b6470') + '" stroke-width="1"/>');
       parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11 }));
     });
 
     var refY = yScale(5);
-    parts.push('<line x1="' + pad.left + '" y1="' + refY + '" x2="' + (W - pad.right) + '" y2="' + refY + '" stroke="#5c636a" stroke-width="1" stroke-dasharray="4,3"/>');
-    parts.push(svgLabel(W - pad.right, refY - 8, 'limit', { anchor: 'end', size: 11, fill: '#5c636a' }));
+    parts.push('<line x1="' + pad.left + '" y1="' + refY + '" x2="' + (W - pad.right) + '" y2="' + refY + '" stroke="' + INK2 + '" stroke-width="1" stroke-dasharray="4,3"/>');
+    parts.push(svgLabel(W - pad.right, refY - 8, 'limit', { anchor: 'end', size: 11, fill: INK2 }));
 
     var pts = painEntries.map(function(e) { return [xScale(dayNum(e.date)), yScale(e.achillesPain)]; });
     var labels = painEntries.map(function(e) { return e.date + ' ' + esc(e.activity || '') + ': pain ' + e.achillesPain + '/10'; });
-    parts.push(svgLine(pts, '#0f3460'));
+    parts.push(svgLine(pts, CLIN));
     // Caution colour only for readings above the 3/10 acceptable ceiling.
     parts.push(pts.map(function(p, i) {
-      return svgDots([p], painEntries[i].achillesPain > 3 ? '#a84300' : '#0f3460', 3, [labels[i]]);
+      return svgDots([p], painEntries[i].achillesPain > 3 ? CAUTION : CLIN, 3, [labels[i]]);
     }).join(''));
 
     monthTicks(d0, d1).forEach(function(t) {
@@ -3922,9 +3653,9 @@
       '<h3>Achilles Pain Trend</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#0f3460"></span> Pain level (0\u201310)</span>' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#a84300"></span> Above 3/10</span>' +
-        '<span class="chart-legend-item">\u2504 dashed = protocol threshold (5)</span>' +
+        legendKey('Pain, 0\u201310', CLIN, { dash: '' }) +
+        legendKey('Above 3/10', CAUTION, { dot: true }) +
+        legendKey('Limit, 5/10', INK2, { dash: '4,3', width: 1 }) +
       '</div>');
   })();
 

@@ -1715,6 +1715,42 @@
   /* ---- */
 
   /* ws:color (start) */
+  /* Content links on Plan and Reference: Training Blue, dotted underline
+     like the Today card, never coral (coral = game). Underline via
+     text-decoration so the 44px phone padding does not move it. */
+  #tab-plan a, #tab-ref a,
+  #tab-plan a:visited, #tab-ref a:visited {
+    color: var(--accent2);
+    text-transform: none;
+    border-bottom: 0;
+    text-decoration: underline dotted var(--accent2);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  #tab-plan a:hover, #tab-ref a:hover {
+    color: #0a2440;
+    text-decoration-style: solid;
+    text-decoration-color: #0a2440;
+    text-decoration-thickness: 2px;
+  }
+  #tab-plan a:focus-visible, #tab-ref a:focus-visible {
+    outline: 2px solid var(--accent2);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Section rules: hairline, not coral. */
+  h2 { border-bottom: 1px solid var(--border); }
+
+  /* Green means done; explanatory callouts use the info style. */
+  .info-box.success { border-color: #c9d6f2; background: #f0f4ff; }
+
+  /* Achilles protocol: flat Paper Alt panel, hairline border. */
+  .achilles-protocol { background: var(--bg-alt); border-color: var(--border); }
+
+  /* Profile and insights toggles: darker blue on hover, not coral. */
+  details.insights-section > summary:hover,
+  .athlete-profile summary:hover .athlete-profile-toggle { color: #0a2440; }
 
   /* ws:color (end) */
 
@@ -3717,8 +3753,11 @@
 
     var pts = painEntries.map(function(e) { return [xScale(dayNum(e.date)), yScale(e.achillesPain)]; });
     var labels = painEntries.map(function(e) { return e.date + ' ' + esc(e.activity || '') + ': pain ' + e.achillesPain + '/10'; });
-    parts.push(svgLine(pts, '#a84300'));
-    parts.push(svgDots(pts, '#a84300', 3, labels));
+    parts.push(svgLine(pts, '#0f3460'));
+    // Caution colour only for readings above the 3/10 acceptable ceiling.
+    parts.push(pts.map(function(p, i) {
+      return svgDots([p], painEntries[i].achillesPain > 3 ? '#a84300' : '#0f3460', 3, [labels[i]]);
+    }).join(''));
 
     monthTicks(d0, d1).forEach(function(t) {
       parts.push(svgLabel(xScale(t.x), H - pad.bottom + 12, t.label, { size: 11 }));
@@ -3731,7 +3770,8 @@
       '<h3>Achilles Pain Trend</h3>' +
       '<div class="chart-container">' + parts.join('') + '</div>' +
       '<div class="chart-legend">' +
-        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#a84300"></span> Pain level (0\u201310)</span>' +
+        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#0f3460"></span> Pain level (0\u201310)</span>' +
+        '<span class="chart-legend-item"><span class="chart-legend-dot" style="background:#a84300"></span> Above 3/10</span>' +
         '<span class="chart-legend-item">\u2504 dashed = protocol threshold (5)</span>' +
       '</div>');
   })();
@@ -3962,7 +4002,7 @@
     leanTicks.forEach(function(t) {
       var y = yLean(t);
       parts.push('<line x1="' + pad.left + '" y1="' + y + '" x2="' + (W - pad.right) + '" y2="' + y + '" stroke="#eee" stroke-width="1"/>');
-      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11, fill: '#2e7d32' }));
+      parts.push(svgLabel(pad.left - 6, y, t, { anchor: 'end', size: 11, fill: '#0f3460' }));
     });
 
     fatTicks.forEach(function(t) {
@@ -3970,17 +4010,17 @@
       parts.push(svgLabel(W - pad.right + 6, y, t, { anchor: 'start', size: 11, fill: '#5c636a' }));
     });
 
-    parts.push('<text x="4" y="' + (pad.top - 10) + '" font-size="11" fill="#2e7d32" font-weight="600">Lean (lb)</text>');
+    parts.push('<text x="4" y="' + (pad.top - 10) + '" font-size="11" fill="#0f3460" font-weight="600">Lean (lb)</text>');
     parts.push('<text x="' + (W - 4) + '" y="' + (pad.top - 10) + '" text-anchor="end" font-size="11" fill="#5c636a" font-weight="600">Fat (lb)</text>');
 
     var leanPts = points.map(function(p, i) { return [xScale(i), yLean(p.lean)]; });
     var leanLabels = points.map(function(p) { return p.date + ': ' + p.lean + ' lb lean'; });
-    parts.push(svgLine(leanPts, '#2e7d32'));
-    parts.push(svgDots(leanPts, '#2e7d32', 4, leanLabels));
+    parts.push(svgLine(leanPts, '#0f3460'));
+    parts.push(svgDots(leanPts, '#0f3460', 4, leanLabels));
 
     var fatPts = points.map(function(p, i) { return [xScale(i), yFat(p.fat)]; });
     var fatLabels = points.map(function(p) { return p.date + ': ' + p.fat + ' lb fat'; });
-    parts.push(svgLine(fatPts, '#5c636a'));
+    parts.push(svgLine(fatPts, '#5c636a', { dash: '2,3' }));
     parts.push(svgDots(fatPts, '#5c636a', 4, fatLabels));
 
     var dateStep = Math.max(1, Math.ceil(points.length * 34 / (W - pad.left - pad.right)));
@@ -4000,8 +4040,8 @@
     var fatDelta = (last.fat - first.fat).toFixed(1);
     var leanDeltaStr = (leanDelta >= 0 ? '+' : '') + leanDelta;
     var fatDeltaStr = (fatDelta >= 0 ? '+' : '') + fatDelta;
-    var leanColor = leanDelta >= 0 ? '#146c43' : 'var(--caution-ink)';
-    var fatColor = fatDelta <= 0 ? '#146c43' : 'var(--caution-ink)';
+    var leanColor = leanDelta >= 0 ? 'var(--accent2)' : 'var(--caution-ink)';
+    var fatColor = fatDelta <= 0 ? 'var(--accent2)' : 'var(--caution-ink)';
 
     var summaryHTML =
       '<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.85rem;margin-top:0.5rem;">' +

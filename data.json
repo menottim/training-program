@@ -3449,6 +3449,41 @@
       "activity": "Rest day",
       "achillesPain": 1,
       "notes": "Morning read 1 out of 10. Stiffness about 15 minutes, unchanged from 9/28. Lower back sore and tight in the mornings since 9/29, not sharp."
+    },
+    {
+      "date": "2026-10-06",
+      "type": "training",
+      "activity": "Jumps, calf retest, trap bar, squat, RDL (Tue Phase 3)",
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "5x4",
+          "weight": "18 in box"
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "Set 1 to failure per leg (R 12, L 11), then 2x6/leg, plus 1 extra left",
+          "weight": "BW + 67 lb/leg, machine",
+          "notes": "Retest: right 12 reps, left 11 reps."
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "3x5, set 3 = 7",
+          "weight": "275 lbs",
+          "notes": "Final set ran 7 reps. Not prescribed this week."
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "185 lbs"
+        },
+        {
+          "name": "Barbell Romanian Deadlift",
+          "sets": "3x5",
+          "weight": "145 lbs"
+        }
+      ],
+      "notes": "Everything as prescribed except the final trap bar set, which ran 7 reps. Calf retest: right 12, left 11, a 8 percent gap. That is under the 10 percent threshold and is the first clean retest since the 27 percent gap on 9/4."
     }
   ],
   "scienceReviews": [

@@ -3485,6 +3485,48 @@
       ],
       "notes": "Everything as prescribed except the final trap bar set, which ran 7 reps. Calf retest: right 12, left 11, a 8 percent gap. That is under the 10 percent threshold and is the first clean retest since the 27 percent gap on 9/4. No achilles pain. Lower back felt good after the 7-rep set.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-10-07",
+      "type": "training",
+      "activity": "Seated calves, arms, shoulders, core (Wed Phase 3)",
+      "exercises": [
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x8",
+          "weight": "195 lbs"
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3x10-12",
+          "weight": "15 lb DBs"
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x10-12",
+          "weight": "40 lbs"
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "3x10-12, set 3 = 8",
+          "weight": "45 lbs",
+          "notes": "Final set failed at 8 reps."
+        },
+        {
+          "name": "Pallof Press",
+          "sets": "2x5/side",
+          "weight": "35 lbs",
+          "notes": "Machine was 35 lb, not 32. Reps cut to 5 per side."
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "2x5/side",
+          "weight": "35 lbs",
+          "notes": "Machine was 35 lb, not 32. Reps cut to 5 per side."
+        }
+      ],
+      "notes": "All as prescribed except Pallof and woodchop: 35 lb for 5 reps per side instead of 32 lb for 8 to 10. Curl final set failed at 8. No achilles or calf pain.",
+      "achillesPain": 0
     }
   ],
   "scienceReviews": [

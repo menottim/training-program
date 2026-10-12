@@ -2677,18 +2677,18 @@
       "notes": "First session of the three-day week. Squat ran 3x5 at 135 as prescribed, the first of two exposures. Row ran 5, 5 and 10 at 135 with an inverted grip. The third set went to 10 against a 5-rep cap. The lower back was fine this time, unlike 8/14 when the same rep count produced sharp pain. Lat pulldown found failure at 8 reps on both sets at 145, matching 8/14. Single-leg calf raise stepped to bodyweight plus 35 and ran 3x8 per leg rather than the prescribed 3x6. Eight reps were available at that load."
     },
     {
-      "date": "2026-08-19",
-      "type": "recovery",
-      "activity": "Recovery day",
-      "details": "Walk 20 min",
-      "achillesPain": 0,
-      "notes": "No achilles or calf pain during the walk."
-    },
-    {
       "date": "2026-08-18",
       "type": "recovery",
       "activity": "Recovery day",
       "details": "Walk 15 min",
+      "achillesPain": 0,
+      "notes": "No achilles or calf pain during the walk."
+    },
+    {
+      "date": "2026-08-19",
+      "type": "recovery",
+      "activity": "Recovery day",
+      "details": "Walk 20 min",
       "achillesPain": 0,
       "notes": "No achilles or calf pain during the walk."
     },
@@ -3533,6 +3533,52 @@
       "type": "recovery",
       "activity": "Rest day",
       "notes": "Morning read: muscular calf soreness from the 10/7 seated calf work. Not in the achilles. No stiffness figure reported."
+    },
+    {
+      "date": "2026-10-09",
+      "type": "training",
+      "activity": "Calves, bench, row, overhead press (Fri Phase 3)",
+      "exercises": [
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg, plus 1 extra left",
+          "weight": "BW + 67 lb/leg, machine"
+        },
+        {
+          "name": "Bench Press",
+          "sets": "3x5, set 3 = 5",
+          "weight": "185 lbs"
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5",
+          "weight": "125 lbs"
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "3x5",
+          "weight": "155 lbs"
+        },
+        {
+          "name": "Strict Overhead Press",
+          "sets": "3x5",
+          "weight": "85 lbs"
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "2x6-8, 8 then 6",
+          "weight": "155 lbs"
+        }
+      ],
+      "notes": "All as prescribed. Bench set 3 reached 5 reps."
+    },
+    {
+      "date": "2026-10-11",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "30 min",
+      "intensity": "medium",
+      "notes": "Sunday AM. Felt tired. No achilles or calf pain. Hockey not played."
     }
   ],
   "scienceReviews": [
@@ -4032,6 +4078,26 @@
       "date": "2026-09-24",
       "weight": 218.7,
       "bodyFatPct": 22.3
+    },
+    {
+      "date": "2026-09-29",
+      "weight": 222.0,
+      "bodyFatPct": 23.2
+    },
+    {
+      "date": "2026-10-06",
+      "weight": 221.8,
+      "bodyFatPct": 23.1
+    },
+    {
+      "date": "2026-10-10",
+      "weight": 218.7,
+      "bodyFatPct": 22.4
+    },
+    {
+      "date": "2026-10-12",
+      "weight": 218.7,
+      "bodyFatPct": 22.4
     }
   ],
   "modifiedWeeks": {

@@ -357,7 +357,8 @@
     "Trap Bar Deadlift": "https://musclewiki.com/exercise/barbell-deadlift",
     "Trap Bar Jump Squat": "https://musclewiki.com/exercise/barbell-deadlift",
     "Weighted Pull-up": "https://musclewiki.com/exercise/weighted-pull-ups",
-    "Weighted Pull-up / Lat Pulldown": "https://musclewiki.com/exercise/weighted-pull-ups"
+    "Weighted Pull-up / Lat Pulldown": "https://musclewiki.com/exercise/weighted-pull-ups",
+    "Countermovement Jump Test": "https://apps.apple.com/us/app/my-jump-lab-my-jump-3/id1554077178"
   },
   "activityLog": [
     {
@@ -9077,7 +9078,7 @@
           "date": "2026-11-03",
           "type": "training",
           "desc": "Jump test, box jumps, calf retest, lower",
-          "longDesc": "First lift in four weeks. Jump test first, fresh. Then box jumps, then calves with the retest as set 1, then barbell. Loads about 10% under the last clean sets.",
+          "longDesc": "First lift in four weeks. Jump test first, fresh. Then box jumps, then calves with the retest as set 1, then barbell. Loads about 10% under the last clean sets. Jump app setup and a lifting-fast demo are on the Reference tab.",
           "exercises": [
             {
               "name": "Countermovement Jump Test",
@@ -9266,7 +9267,7 @@
           "date": "2026-11-10",
           "type": "training",
           "desc": "Jump test, box jumps, calf retest, lower",
-          "longDesc": "Jump test first, fresh. Then box jumps, calves with the retest as set 1, then barbell. Drop box jumps to 5x4 if Sunday left the calves sore.",
+          "longDesc": "Jump test first, fresh. Then box jumps, calves with the retest as set 1, then barbell. Drop box jumps to 5x4 if Sunday left the calves sore. Jump app setup and a lifting-fast demo are on the Reference tab.",
           "exercises": [
             {
               "name": "Countermovement Jump Test",

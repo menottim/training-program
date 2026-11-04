@@ -3603,6 +3603,34 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Sunday PM, the day of the flight home. No achilles or calf pain. Basketball not played."
+    },
+    {
+      "date": "2026-11-03",
+      "type": "training",
+      "activity": "Jump test, box jumps, calf retest, lower (Tue Phase 3)",
+      "exercises": [
+        {
+          "name": "Box Jump (step down)",
+          "sets": "5x4",
+          "weight": "18 in box"
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "3x5",
+          "weight": "250 lbs"
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "165 lbs"
+        },
+        {
+          "name": "Barbell Romanian Deadlift",
+          "sets": "3x5",
+          "weight": "130 lbs"
+        }
+      ],
+      "notes": "Box jumps, trap bar, squat and RDL as prescribed. First lift in four weeks. Jump test heights and calf retest not reported."
     }
   ],
   "scienceReviews": [

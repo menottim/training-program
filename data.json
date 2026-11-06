@@ -3632,6 +3632,46 @@
       ],
       "notes": "Box jumps, trap bar, squat and RDL as prescribed. First lift in four weeks. All sets crisp at the current loads. No set ended early. No achilles or calf pain. Jump test not done. Calf retest not run.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-11-05",
+      "type": "training",
+      "activity": "Seated calves, arms, shoulders, core (Thu Phase 3)",
+      "exercises": [
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "2x8",
+          "weight": "185 lbs",
+          "notes": "10 lb over the 175 prescription. Set 3 not completed: fatigue or form."
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3x10-11",
+          "weight": "15 lb DBs"
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x10-11",
+          "weight": "35 lbs"
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "3x10-11",
+          "weight": "40 lbs"
+        },
+        {
+          "name": "Pallof Press",
+          "sets": "2x6-7/side",
+          "weight": "35 lbs"
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "2x6-7/side",
+          "weight": "35 lbs"
+        }
+      ],
+      "achillesPain": 0,
+      "notes": "Wednesday session moved to Thursday. Achilles and calf pain 0/10."
     }
   ],
   "scienceReviews": [
@@ -9156,6 +9196,13 @@
         {
           "day": "Wed",
           "date": "2026-11-04",
+          "type": "rest",
+          "desc": "Rest, morning read",
+          "longDesc": "No lifting. A day between calf sessions. Report the morning pain number and the stiffness duration."
+        },
+        {
+          "day": "Thu",
+          "date": "2026-11-05",
           "type": "training",
           "desc": "Seated calves, arms, shoulders, core",
           "longDesc": "About 25 minutes. No barbell, no spinal load. Seated calves first.",
@@ -9197,13 +9244,6 @@
               "notes": "Rotate through the trunk, not the arms. Last set to failure. Skip if it bothers the lower back."
             }
           ]
-        },
-        {
-          "day": "Thu",
-          "date": "2026-11-05",
-          "type": "rest",
-          "desc": "Rest, morning read",
-          "longDesc": "No lifting. A day between calf sessions. Report the morning pain number and the stiffness duration."
         },
         {
           "day": "Fri",

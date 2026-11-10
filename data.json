@@ -3709,6 +3709,24 @@
       ],
       "notes": "Single-leg calf raise and dumbbell lateral raise not done. Pulldown replaced by band-assisted chin-ups. Achilles and calf pain 0/10.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "30 min",
+      "intensity": "medium",
+      "achillesPain": 0,
+      "notes": "Sunday AM. First basketball since 10/11. No achilles or calf pain."
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game",
+      "activity": "Hockey",
+      "duration": "60 min",
+      "intensity": "high",
+      "achillesPain": 0,
+      "notes": "Sunday PM, second game of the day. No achilles or calf pain."
     }
   ],
   "scienceReviews": [

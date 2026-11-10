@@ -9372,10 +9372,10 @@
       ]
     },
     "36": {
-      "title": "Two-game Sundays return",
+      "title": "Weekday basketball starts",
       "blockLabel": "Power and jump",
-      "subtitle": "Loads climb back. Tue lower, Wed arms, Thu jumps, Fri upper.",
-      "reason": "Basketball returns: basketball AM and hockey PM on Sunday. Monday stays a rest day.\n\nLoads climb back: trap bar 260, squat 175, RDL 140, seated calf 185. Standing calf working sets step to BW + 77. Bench holds at 165: last Friday's 5+ set stopped at 5. Pulldown holds at 140: the machine was unavailable on 11/6.\n\nThe athlete lifted the calf-retest gate on 11/4 without a new retest. Thursday is a bonus jump day: skip it if Sunday's games leave the calves sore. Tuesday box jumps go to 24 contacts and Thursday adds 16, for 40 a week. Tuesday's retest still runs.\n\nThese loads assume Week 35 runs clean. They get adjusted as it is logged.",
+      "subtitle": "Runs Tue and Fri. Lower after Tuesday run, upper Friday.",
+      "reason": "Two-game Sunday, then two weekday runs at 11:30: Tuesday and Friday. Runs capped at 45 minutes. Never two run days in a row.\n\nTuesday: lower body at least 3 hours after the run. Wednesday: calf retest, seated calves, arms and core, no basketball. Friday: upper body before or after the run.\n\nLoads: trap bar 260, squat 175, RDL 140, seated calf 185. Bench holds at 165: last Friday's 5+ set stopped at 5. Pulldown holds at 140. Standing calf holds at BW + 67: no single-leg work since 10/9.\n\nBox jumps and the Thursday jump day are gone while three runs a week continue.",
       "schedule": [
         {
           "day": "Sun",
@@ -9407,20 +9407,20 @@
           "day": "Tue",
           "date": "2026-11-10",
           "type": "training",
-          "desc": "Box jumps, calf retest, lower",
-          "longDesc": "Box jumps first, fresh. Then calves with the retest as set 1, then barbell. Drop box jumps to 5x4 if Sunday left the calves sore. Lifting-fast demo is on the Reference tab.",
+          "desc": "Run 1: basketball, then lower",
+          "longDesc": "First weekday run. Play at 11:30, 45 minutes maximum. Lift at least 3 hours later: standing calves, then barbell. Every barbell set ends at the first slow rep. No box jumps.",
           "exercises": [
             {
-              "name": "Box Jump (step down)",
-              "sets": "6x4",
-              "weight": "18 in box",
-              "notes": "24 contacts. Always step down. Full hip extension at the top. Skip if achilles stiffness lasts past the warm-up."
+              "name": "Basketball (pickup)",
+              "sets": "11:30 AM, 45 min cap",
+              "weight": "game",
+              "notes": "Stop at 45 minutes. Report minutes, intensity and any achilles or calf pain."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "Set 1 to failure per leg at BW + 67, then 2x6/leg at BW + 77, plus 1 extra left",
-              "weight": "BW + 77 lb/leg, machine",
-              "notes": "Set 1 is the retest at BW + 67: left first, 2 min between legs. Report both counts. Floor range, no heel drop, 3s up and 3s down. Machine taken: skip the retest, 35 lb dumbbell to the last full-tempo rep."
+              "sets": "3x6/leg, plus 1 extra left",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "After basketball, not before. Held at the lowest pin: no single-leg work since 10/9. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             },
             {
               "name": "Trap Bar Deadlift",
@@ -9446,9 +9446,15 @@
           "day": "Wed",
           "date": "2026-11-11",
           "type": "training",
-          "desc": "Seated calves, arms, shoulders, core",
-          "longDesc": "About 25 minutes. No barbell, no spinal load. Seated calves first.",
+          "desc": "Non-run day: calf retest, arms, core",
+          "longDesc": "About 30 minutes. No barbell, no basketball. Calf retest first, fresh, then seated calves, arms and core.",
           "exercises": [
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "1 set to failure per leg",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "Retest, moved off the run day so the calf is fresh. Left first, 2 min between legs. Floor range, 3s up and 3s down. Report both counts. Machine taken: skip it."
+            },
             {
               "name": "Seated Calf Raise (HSR)",
               "sets": "3x8",
@@ -9464,13 +9470,13 @@
             {
               "name": "Cable Triceps Pushdown",
               "sets": "3x10-12",
-              "weight": "40 lbs",
+              "weight": "35 lbs",
               "notes": "Elbows pinned, full lockout. Last set to failure. Report reps per set."
             },
             {
               "name": "Cable Biceps Curl",
               "sets": "3x10-12",
-              "weight": "45 lbs",
+              "weight": "40 lbs",
               "notes": "Full extension at the bottom, no swing. Last set to failure. Report reps per set."
             },
             {
@@ -9490,31 +9496,17 @@
         {
           "day": "Thu",
           "date": "2026-11-12",
-          "type": "training",
-          "desc": "Bonus: second jump day",
-          "longDesc": "About 15 minutes. Box jumps only, no barbell. Skip if the calves are sore from Sunday or achilles stiffness lasts past the warm-up. Report any achilles or calf pain.",
-          "exercises": [
-            {
-              "name": "Box Jump (step down)",
-              "sets": "4x4",
-              "weight": "18 in box",
-              "notes": "16 contacts. Always step down. Full hip extension at the top. Rest 60 to 90 s between sets. Stop if pain passes 3 out of 10."
-            }
-          ]
+          "type": "rest",
+          "desc": "Rest, morning read",
+          "longDesc": "No basketball, no jumps. Report the morning pain number and the stiffness duration."
         },
         {
           "day": "Fri",
           "date": "2026-11-13",
           "type": "training",
-          "desc": "Calves, bench, row, overhead press",
-          "longDesc": "Standing calves first. Bench carries the one calibration set of the week. Upper only, so Sunday's legs stay fresh.",
+          "desc": "Run 2: upper, basketball",
+          "longDesc": "Upper body before basketball (finish by 10:30) or after. Standing calves after basketball. Bench carries the one calibration set of the week. Run capped at 45 minutes.",
           "exercises": [
-            {
-              "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "3x6/leg, plus 1 extra left",
-              "weight": "BW + 77 lb/leg, machine",
-              "notes": "Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Report if 8 or more were there. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
-            },
             {
               "name": "Bench Press",
               "sets": "3x5, set 3 = 5+",
@@ -9550,6 +9542,18 @@
               "sets": "2x10-12",
               "weight": "15 lb DBs",
               "notes": "Raise to shoulder height. Last set to failure."
+            },
+            {
+              "name": "Basketball (pickup)",
+              "sets": "11:30 AM, 45 min cap",
+              "weight": "game",
+              "notes": "Stop at 45 minutes. Report minutes, intensity and any achilles or calf pain."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg, plus 1 extra left",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "After basketball, not before. Held at the lowest pin: no single-leg work since 10/9. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             }
           ]
         },
@@ -9616,13 +9620,13 @@
             {
               "name": "Cable Triceps Pushdown",
               "sets": "3x10-12",
-              "weight": "40 lbs",
+              "weight": "35 lbs",
               "notes": "Elbows pinned, full lockout. Last set to failure. Report reps per set."
             },
             {
               "name": "Cable Biceps Curl",
               "sets": "3x10-12",
-              "weight": "45 lbs",
+              "weight": "40 lbs",
               "notes": "Full extension at the bottom, no swing. Last set to failure. Report reps per set."
             },
             {

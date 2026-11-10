@@ -3672,6 +3672,42 @@
       ],
       "achillesPain": 0,
       "notes": "Wednesday session moved to Thursday. Achilles and calf pain 0/10."
+    },
+    {
+      "date": "2026-11-06",
+      "type": "training",
+      "activity": "Calves, bench, row, overhead press (Fri Phase 3)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "3x5",
+          "weight": "165 lbs",
+          "notes": "Set 3 was 5+. Stopped at 5, no extra reps."
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5",
+          "weight": "115 lbs"
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "3x5",
+          "weight": "145 lbs",
+          "notes": "5 lb over the 140 prescription."
+        },
+        {
+          "name": "Strict Overhead Press",
+          "sets": "3x5",
+          "weight": "75 lbs"
+        },
+        {
+          "name": "Band-Assisted Chin-Up",
+          "sets": "not reported",
+          "weight": "band",
+          "notes": "Lat pulldown machine was not available."
+        }
+      ],
+      "notes": "Single-leg calf raise and dumbbell lateral raise not done. Pulldown replaced by band-assisted chin-ups."
     }
   ],
   "scienceReviews": [

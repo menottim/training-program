@@ -9369,7 +9369,7 @@
       "title": "Two-game Sundays return",
       "blockLabel": "Power and jump",
       "subtitle": "Loads climb back. Tue lower, Wed arms, Thu jumps, Fri upper.",
-      "reason": "Basketball returns: basketball AM and hockey PM on Sunday. Monday stays a rest day.\n\nLoads climb back: trap bar 260, squat 175, RDL 140, seated calf 185. Standing calf working sets step to BW + 77. Bench gets set from Friday's 5+ count.\n\nThe athlete lifted the calf-retest gate on 11/4 without a new retest. Thursday is a bonus jump day: skip it if Sunday's games leave the calves sore. Tuesday box jumps go to 24 contacts and Thursday adds 16, for 40 a week. Tuesday's retest still runs.\n\nThese loads assume Week 35 runs clean. They get adjusted as it is logged.",
+      "reason": "Basketball returns: basketball AM and hockey PM on Sunday. Monday stays a rest day.\n\nLoads climb back: trap bar 260, squat 175, RDL 140, seated calf 185. Standing calf working sets step to BW + 77. Bench holds at 165: last Friday's 5+ set stopped at 5. Pulldown holds at 140: the machine was unavailable on 11/6.\n\nThe athlete lifted the calf-retest gate on 11/4 without a new retest. Thursday is a bonus jump day: skip it if Sunday's games leave the calves sore. Tuesday box jumps go to 24 contacts and Thursday adds 16, for 40 a week. Tuesday's retest still runs.\n\nThese loads assume Week 35 runs clean. They get adjusted as it is logged.",
       "schedule": [
         {
           "day": "Sun",
@@ -9401,15 +9401,9 @@
           "day": "Tue",
           "date": "2026-11-10",
           "type": "training",
-          "desc": "Jump test, box jumps, calf retest, lower",
-          "longDesc": "Jump test first, fresh. Then box jumps, calves with the retest as set 1, then barbell. Drop box jumps to 5x4 if Sunday left the calves sore. Jump app setup and a lifting-fast demo are on the Reference tab.",
+          "desc": "Box jumps, calf retest, lower",
+          "longDesc": "Box jumps first, fresh. Then calves with the retest as set 1, then barbell. Drop box jumps to 5x4 if Sunday left the calves sore. Lifting-fast demo is on the Reference tab.",
           "exercises": [
-            {
-              "name": "Countermovement Jump Test",
-              "sets": "3 jumps",
-              "weight": "bodyweight",
-              "notes": "Phone slow-motion app. Hands on hips, dip to your own depth, jump max. 60 s between jumps. Land on both feet. Report all three heights."
-            },
             {
               "name": "Box Jump (step down)",
               "sets": "6x4",
@@ -9518,7 +9512,7 @@
             {
               "name": "Bench Press",
               "sets": "3x5, set 3 = 5+",
-              "weight": "175 lbs",
+              "weight": "165 lbs",
               "notes": "Set from the 11/6 count. 5 to 6 reps holds 165. 7 to 8 goes to 170. 9 to 10 goes to 175. Calibration set. Stop at the last clean rep, hard cap 10. Report the count. Bar to lower chest, touch and press."
             },
             {
@@ -9542,7 +9536,7 @@
             {
               "name": "Lat Pulldown",
               "sets": "2x6-8",
-              "weight": "150 lbs",
+              "weight": "140 lbs",
               "notes": "Full stretch at the top, bar to upper chest. Both sets to failure. Report reps per set."
             },
             {

@@ -91,6 +91,12 @@ Rio et al. (2015, Br J Sports Med 49(19):1277-83) showed central nervous system 
    - Fluoroquinolone antibiotic use inside the last 6 months. This increases the rupture risk.
    - Systemic symptoms, or a bilateral presentation in a younger patient. Either can suggest a seronegative arthropathy.
 
+### Spacing tendon-loading days
+
+After a loading bout, tendon collagen synthesis and breakdown both rise. Over the first 24 to 36 hours the balance is a net collagen loss. Net synthesis follows from 36 to 72 hours. Without enough rest between bouts, a continuing net loss is likely (Magnusson, Langberg and Kjaer 2010, PMID 20308995). This is a review built on earlier human tracer studies, not a dose trial, so it gives the direction and the rough time scale, not a validated rest rule. Tier: Moderate.
+
+Applied to this athlete: put the heavy tendon days (basketball, jumps, hockey) on the same days and leave about 48 hours between them, rather than spreading moderate tendon load across every day. The 48-hour figure is reasoning from the 36-to-72-hour window. It is not a published cutoff. HSR at a slow tempo is a lower tendon-strain stimulus than jump-and-cut sport, and Silbernagel 2007 allowed daily loading under pain monitoring, so a calf session on a rest day is acceptable when the schedule needs it.
+
 ## Unresolved or Bleeding-Edge Questions
 
 - __Collagen peptides with vitamin C, measured against clinical endpoints.__ The mechanistic data (Shaw 2017) and the pilot clinical data (Praet 2019) agree with each other, but both studies are small. No well-powered RCT with VISA-A as the primary outcome has replicated Praet. The supplement is worth a trial. It is not proven.
@@ -118,6 +124,7 @@ Rio et al. (2015, Br J Sports Med 49(19):1277-83) showed central nervous system 
 15. Paantjens MA, Helmhout PH, Backx FJG, van Etten-Jamaludin FS, Bakker EWP. __Extracorporeal Shockwave Therapy for Mid-portion and Insertional Achilles Tendinopathy: A Systematic Review of Randomized Controlled Trials.__ Sports Medicine Open, 2022; 8(1): 68.
 16. Silbernagel KG, Hanlon S, Sprague A. __Current Clinical Concepts: Conservative Management of Achilles Tendinopathy.__ Journal of Athletic Training, 2020; 55(5): 438-447. PMID: 32267723. PMCID: PMC7249277.
 17. Habets B, van Cingel REH, Backx FJG, et al. __Return to Sport in Athletes with Midportion Achilles Tendinopathy: A Qualitative Systematic Review Regarding Definitions and Criteria.__ Sports Medicine, 2018; 48(3): 705-723. PMCID: PMC5808052.
+18. Magnusson SP, Langberg H, Kjaer M. __The pathogenesis of tendinopathy: balancing the response to loading.__ Nature Reviews Rheumatology, 2010; 6(5): 262-268. PMID: 20308995. DOI: 10.1038/nrrheum.2010.43.
 
 ## Corrections Log
 

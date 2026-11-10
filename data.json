@@ -3702,12 +3702,13 @@
         },
         {
           "name": "Band-Assisted Chin-Up",
-          "sets": "not reported",
+          "sets": "3x5",
           "weight": "band",
           "notes": "Lat pulldown machine was not available."
         }
       ],
-      "notes": "Single-leg calf raise and dumbbell lateral raise not done. Pulldown replaced by band-assisted chin-ups."
+      "notes": "Single-leg calf raise and dumbbell lateral raise not done. Pulldown replaced by band-assisted chin-ups. Achilles and calf pain 0/10.",
+      "achillesPain": 0
     }
   ],
   "scienceReviews": [

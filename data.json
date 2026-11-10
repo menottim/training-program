@@ -3878,7 +3878,7 @@
       "date": "2026-11-10",
       "week": 36,
       "findings": "Triggered by a schedule change, run on Opus 5.5. The athlete has free weekdays from 11/10 to at least the end of February 2027 and wants pickup basketball 3 days a week. Sunday basketball AM and hockey PM continue through 11/29, then both stop until early January. Goal order unchanged.\n\nCompliance. Lift days, Weeks 27 to 35: 3, 1, 2, 1, 3, 0, travel, travel, 3. Week 36 so far: 0 of 3 to date (Tuesday lower is today). The binding constraint has been time and travel, and the athlete reports that time is no longer the limit. Whether compliance rises with free time is untested; treat Weeks 37 and 38 as the test.\n\nHSR. Week 35 delivered 1 loaded calf session of 3: 11/5 seated 2x8 at 185. The 11/3 single-leg work and retest did not run, and the 11/6 single-leg work was skipped. Well under the Beyer 3x/week dose (PMID 26018970). Calf work is the item that drops first when a session is shortened.\n\nAchilles and calf. All reads 0/10 through 11/9, including the 11/8 double-header (30 min basketball plus 60 min hockey) and the morning after. No trigger in the Section 4 tree.\n\nThe load change. Weekly basketball goes from about 30 minutes to 3 runs, likely 3 to 4.5 hours, a 6 to 9 fold rise in the athlete's highest-risk exposure. Achilles rupture incidence peaks in men aged 30 to 49 and basketball is the leading sport mechanism in US men (Sports Med 2026 meta-analysis, DOI 10.1007/s40279-026-02397-5; Alegre 2021 review, PMC8440049; author lists not verified, so cited by identifier). He also carries bilateral tendinopathy. A large rapid load increase tracks with soft-tissue injury (Gabbett, in knowledge/detraining-and-return.md), but no ratio threshold is valid (Impellizzeri 2020, PMID 32502973). So the ramp is set on symptoms, not on a ratio: weekday runs capped at 45 min in Week 37 and 60 min in Week 38, then plus about 15 min per run per week only while pain during play stays at or under 3/10, returns to baseline inside 24 h, and morning stiffness stays under 15 min (Silbernagel 2007, PMID 17307888, thresholds per Martin 2018 and Silbernagel 2020). The 45 and 60 minute caps are judgment, not published values.\n\nSpacing. Tendon collagen balance is net negative for 24 to 36 h after loading and net positive from 36 to 72 h (Magnusson, Langberg and Kjaer 2010, PMID 20308995; review, Moderate). So the hard tendon days are clustered and separated by about 48 h, never back to back. The 48 h figure is reasoning from that window.\n\nSame day or separate days. Clustering wins for the tendon: it buys full rest days. The interference cost is manageable with order and gap. Lifting before endurance work gave a 6.91% larger lower-body dynamic strength gain (95% CI 1.96 to 11.87) in a meta-analysis of 5-week-plus programs, with no order effect on hypertrophy or body fat (Eddens 2018, Sports Med 48:177-88, PMC5752732; Moderate). Strength gains were blunted with no gap and similar with 6 h or 24 h between sessions in 58 amateur rugby players (Robineau 2016, JSCR 30:672-83, DOI 10.1519/JSC.0000000000000798; Moderate). Neither used a jump-and-cut sport, so transfer to basketball is reasoning. Rule: lift in the morning, play 6 h or more later; under 6 h, upper body only. This overrides the Section 5 48-hour lift-to-game rule (Suchomel 2018) for weekday pickup only. Pickup is a training exposure, not a competition, and injury prevention outranks pickup performance. Lower sets already end at the first slow rep (Pareja-Blanco 2017, PMID 27038416), which limits the residual fatigue carried into the evening. Unresolved: whether heavy lower lifting hours before basketball changes landing mechanics or injury risk. No study found.\n\nLift days. Two barbell days plus the 25-minute calf, arms and core session. A third barbell day fails both CLAUDE.md conditions: the last three weeks did not each deliver two sessions (Week 32 was 0), and the slate is far above one moderate game. Volume and frequency already return little extra strength on a capped calendar (Pelland 2026, PMID 41343037).\n\nPlyometrics. Three basketball runs supply far more jumps than the 40 to 60 contact band (Ebben 2010). Section 6 removes gym plyos first when game load rises. Kept: one 12-contact box-jump block on the lower day, fresh, for maximal-intent jumps. Retired: the Thursday bonus jump day.\n\nBody composition. 219.0 on 11/2; downtrend from 9/11 stands. More basketball raises energy expenditure. No food guidance per CLAUDE.md.\n\nNovember week shape (Sunday games on): Sun games, Mon rest, Tue seated calf plus arms and core, Wed lower AM plus basketball PM, Thu rest, Fri upper plus standing calf AM plus basketball PM, Sat rest. Fri PM to Sun AM is about 40 h; accepted. December (no Sunday games): Mon lower plus basketball, Wed calf plus arms plus basketball, Fri upper plus basketball, with Tue, Thu, Sat and Sun off. Weekday run days are assumed Wed and Fri for November; to be confirmed by the athlete.",
-      "changes": "1. CLAUDE.md Overview: free-weekday basketball window added (3 days a week, cluster with lifting, lift first with 6 h or more before play, symptom-gated ramp, two barbell days, gym plyo cut). Section 5: 48-hour rule exception for weekday pickup.\n2. knowledge/in-season-volume.md: Eddens 2018 and Robineau 2016 added; same-day order item partly resolved; Corrections Log entry.\n3. knowledge/achilles-tendinopathy-hsr.md: tendon-day spacing section from Magnusson 2010.\n4. modifiedWeeks 37 authored: Sun games, Tue calf and arms, Wed lower AM plus basketball PM, Fri upper AM plus basketball PM, weekday runs capped at 45 min. Bonus jump day retired. Box jumps 4x3.\n5. Not changed: goal order, loads and progression model, HSR at a true rep max, lift targets and horizons, no nutrition guidance.\n\nRe-decide when Sunday games return in early January. Watch HSR delivery: 1 loaded session in Week 35."
+      "changes": "1. CLAUDE.md Overview: free-weekday basketball window added (3 days a week, cluster with lifting, lift first with 6 h or more before play, symptom-gated ramp, two barbell days, gym plyo cut). Section 5: 48-hour rule exception for weekday pickup.\n2. knowledge/in-season-volume.md: Eddens 2018 and Robineau 2016 added; same-day order item partly resolved; Corrections Log entry.\n3. knowledge/achilles-tendinopathy-hsr.md: tendon-day spacing section from Magnusson 2010.\n4. modifiedWeeks 37 authored: Sun games, Tue calf and arms, Wed lower AM plus basketball PM, Fri upper AM plus basketball PM, weekday runs capped at 45 min. Bonus jump day retired. Box jumps 4x3.\n5. Not changed: goal order, loads and progression model, HSR at a true rep max, lift targets and horizons, no nutrition guidance.\n\nRe-decide when Sunday games return in early January. Watch HSR delivery: 1 loaded session in Week 35.\n\nAmendment same day: runs start about 11:30 AM, so lift-AM-play-6-h-later is not possible. Revised: lower body after basketball, at least 3 hours later; upper body before or after; calf HSR after basketball, so the calf is not fatigued going into jump-and-cut play (reasoning). Order with a multi-hour gap is not tested: Eddens 2018 is intra-session order, and Robineau 2016 always ran strength first. Play-first protects the tendon cluster and avoids playing on lifting-fatigued legs; the possible cost is lower-quality lower sessions, which the stop-at-first-slow-rep rule self-limits. Gym box jumps retired entirely while 3 runs a week continue; jumps after basketball would be fatigued, and before would add to the day's tendon load. 3 h is judgment, not published."
     }
   ],
   "bodyLog": [
@@ -9565,8 +9565,8 @@
     "37": {
       "title": "Weekday basketball starts",
       "blockLabel": "Power and jump",
-      "subtitle": "Wed and Fri lift AM, basketball PM.",
-      "reason": "Free weekdays through February. Basketball goes to 3 days a week: Sunday plus two weekday runs while Sunday games last (through 11/29), then three weekday runs in December.\n\nBasketball days carry the lifting. Lift in the morning, play at least 6 hours later. Rest days stay free of basketball and jumps, so the achilles gets about 48 hours between hard days.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. They grow about 15 minutes a week only if pain while playing stays at 3/10 or less, it settles within 24 hours, and morning stiffness stays under 15 minutes.\n\nThe Thursday jump day is gone. Box jumps drop to 12 contacts on the lower day.\n\nLoads are this week's targets. They get adjusted when this week is logged.",
+      "subtitle": "Basketball 11:30 Wed and Fri. Lower after, upper either side.",
+      "reason": "Free weekdays through February. Basketball goes to 3 days a week: Sunday plus two weekday runs while Sunday games last (through 11/29), then three weekday runs in December.\n\nBasketball days carry the lifting. Runs start at 11:30. Lower body goes after basketball, at least 3 hours later. Upper body can go before or after. Calf work goes after basketball. Rest days stay free of basketball and jumps, so the achilles gets about 48 hours between hard days.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. They grow about 15 minutes a week only if pain while playing stays at 3/10 or less, it settles within 24 hours, and morning stiffness stays under 15 minutes.\n\nGym box jumps stop while three runs a week continue. Basketball supplies the jump volume.\n\nLoads are this week's targets. They get adjusted when this week is logged.",
       "schedule": [
         {
           "day": "Sun",
@@ -9643,14 +9643,14 @@
           "day": "Wed",
           "date": "2026-11-18",
           "type": "training",
-          "desc": "Lower AM, basketball PM",
-          "longDesc": "Lift in the morning: box jumps, standing calves, then barbell. Every barbell set ends at the first slow rep, so the legs are fresh for the evening. Play at least 6 hours later, 45 minutes maximum.",
+          "desc": "Basketball 11:30, lower PM",
+          "longDesc": "Play first, 45 minutes maximum. Lift mid-afternoon or later, at least 3 hours after. Standing calves, then barbell. Every barbell set ends at the first slow rep; expect lighter-feeling days and stop there, do not push through.",
           "exercises": [
             {
-              "name": "Box Jump (step down)",
-              "sets": "4x3",
-              "weight": "18 in box",
-              "notes": "12 contacts. Basketball supplies the rest of the jump volume. Always step down. Full hip extension at the top. Skip if achilles stiffness lasts past the warm-up."
+              "name": "Basketball (pickup)",
+              "sets": "11:30 AM, 45 min cap",
+              "weight": "game",
+              "notes": "Stop at 45 minutes this week. Report minutes, intensity and any achilles or calf pain."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
@@ -9675,12 +9675,6 @@
               "sets": "3x5",
               "weight": "140 lbs",
               "notes": "Hinge to a hamstring stretch, flat back, bar close to the legs."
-            },
-            {
-              "name": "Basketball (pickup)",
-              "sets": "PM, 45 min cap",
-              "weight": "game",
-              "notes": "At least 6 hours after the lift. Stop at 45 minutes this week. Report minutes, intensity and any achilles or calf pain."
             }
           ]
         },
@@ -9695,15 +9689,9 @@
           "day": "Fri",
           "date": "2026-11-20",
           "type": "training",
-          "desc": "Upper AM, basketball PM",
-          "longDesc": "Lift in the morning: standing calves first, then upper body. Bench carries the one calibration set of the week. Play at least 6 hours later, 45 minutes maximum.",
+          "desc": "Upper, basketball 11:30",
+          "longDesc": "Upper body is fine before or after basketball. Before: lift early, finish by 10:30. After: lift in the afternoon. Standing calves go after basketball either way. Bench carries the one calibration set of the week.",
           "exercises": [
-            {
-              "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "3x6/leg, plus 1 extra left",
-              "weight": "BW + 77 lb/leg, machine",
-              "notes": "Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Report if 8 or more were there. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
-            },
             {
               "name": "Bench Press",
               "sets": "3x5, set 3 = 5+",
@@ -9742,9 +9730,15 @@
             },
             {
               "name": "Basketball (pickup)",
-              "sets": "PM, 45 min cap",
+              "sets": "11:30 AM, 45 min cap",
               "weight": "game",
-              "notes": "At least 6 hours after the lift. Stop at 45 minutes this week. Report minutes, intensity and any achilles or calf pain."
+              "notes": "Stop at 45 minutes this week. Report minutes, intensity and any achilles or calf pain."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg, plus 1 extra left",
+              "weight": "BW + 77 lb/leg, machine",
+              "notes": "After basketball, not before. Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             }
           ]
         },

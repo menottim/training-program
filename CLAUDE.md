@@ -38,11 +38,11 @@ __As of 2026-09-20 the slate is confirmed: basketball Sunday AM plus hockey Sund
 
 __From 2026-11-10 to at least the end of February 2027 the athlete has free weekdays and wants pickup basketball 3 days a week.__ Set at the Week 36 review. Sunday basketball AM and hockey PM continue through 11/29, then both stop until early January. Count Sunday basketball as one of the 3 days while it runs, so November has 2 weekday runs and December has 3. Re-decide when Sunday games return in January. Rules for this window:
 
-- __Basketball days are tendon days. Cluster them, then rest.__ Never two basketball days in a row. Leave about 48 hours between them. Put the barbell sessions on basketball days, lifting first.
-- __Same-day order: lift in the morning, play 6 hours or more later.__ If the gap is under 6 hours, lift upper body only that day. This overrides the Section 5 48-hour lift-to-game rule for weekday pickup runs only. Sunday games keep the 48-hour rule.
+- __Basketball days are tendon days. Cluster them, then rest.__ Never two basketball days in a row. Leave about 48 hours between them. Put the barbell sessions on basketball days.
+- __Same-day order: runs start about 11:30 AM.__ Lower body goes after basketball, at least 3 hours later. Upper body can go before or after. Calf HSR goes after basketball. Morning-lift-then-play-6-hours-later was the first plan and does not fit the run time. This overrides the Section 5 48-hour lift-to-game rule for weekday pickup runs only. Sunday games keep the 48-hour rule.
 - __Ramp the basketball, do not jump to it.__ Weekly basketball went from about 30 minutes to a target of 3 runs. Cap weekday runs at 45 minutes in Week 37 and 60 in Week 38. Add about 15 minutes per run per week after that, only if all three hold: pain 3/10 or less while playing, back to baseline within 24 hours, morning stiffness under 15 minutes. Any miss holds the cap for a week. Pain above 5/10 or stiffness over 30 minutes drops a run.
 - __Lift days stay at two barbell days plus the short calf, arms and core session.__ Game load is now the highest it has been. The extra free time goes to basketball and recovery, not a third barbell day.
-- __Gym plyometrics drop to one short block of box jumps on the lower day.__ The bonus jump day is retired while 3 runs a week continue. Basketball supplies the jump volume.
+- __Gym plyometrics stop while 3 runs a week continue.__ Basketball supplies the jump volume.
 
 __When hockey returns, Sunday becomes a two-game day again, and Friday goes back to protecting it.__ The third gym day comes out under a two-game Sunday, because the condition for a third day is one moderate game or fewer (below). The calf-condition half of that return rule is met: morning stiffness has read under 30 minutes since 2026-09-21, and the athlete lifted the asymmetry gate on 2026-11-04 (see the plyometric note above). What still keeps the third day out is the game slate. The current slate is always in `data.modifiedWeeks`. If it is unclear, ask. Do not inherit the three-game assumption, and do not inherit the one-game assumption either.
 
@@ -688,7 +688,7 @@ References: Beyer et al. 2015 (PMID 26018970); Silbernagel et al. 2007 (PMID 173
 
 __Session spacing.__ These rules assume the standard three-game slate unless stated otherwise. Read the slate note in the Overview before you apply them.
 
-- Leave 48 hours or more between heavy lifting and a game (Suchomel et al. 2018). __Exception from 2026-11-10:__ weekday pickup runs may follow a same-day lift with 6 hours or more between them, lift first (Eddens 2018, PMC5752732; Robineau 2016, DOI 10.1519/JSC.0000000000000798). See the Overview slate note.
+- Leave 48 hours or more between heavy lifting and a game (Suchomel et al. 2018). __Exception from 2026-11-10:__ weekday pickup runs share a day with lifting. Lower body goes at least 3 hours after the run. See the Overview slate note and the Week 36 review.
 - A Wednesday heavy session to a Sunday game gives 3.5 days. That is optimal.
 - A Wednesday heavy session to the following Tuesday game gives 6 days. That is also optimal. This applies only when a Tuesday PM basketball game is on the slate. There has been no Tuesday game since basketball's July 2026 off-season, and none returned with hockey on 9/13.
 - Friday is the lightest lifting session by design. It sits approximately 36 hours before Sunday AM basketball, and approximately 48 hours before Sunday PM hockey. Keep Friday the lightest day while any Sunday game remains.

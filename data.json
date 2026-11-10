@@ -9565,8 +9565,8 @@
     "37": {
       "title": "Weekday basketball starts",
       "blockLabel": "Power and jump",
-      "subtitle": "Basketball 11:30 Wed and Fri. Lower after, upper either side.",
-      "reason": "Free weekdays through February. Basketball goes to 3 days a week: Sunday plus two weekday runs while Sunday games last (through 11/29), then three weekday runs in December.\n\nBasketball days carry the lifting. Runs start at 11:30. Lower body goes after basketball, at least 3 hours later. Upper body can go before or after. Calf work goes after basketball. Rest days stay free of basketball and jumps, so the achilles gets about 48 hours between hard days.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. They grow about 15 minutes a week only if pain while playing stays at 3/10 or less, it settles within 24 hours, and morning stiffness stays under 15 minutes.\n\nGym box jumps stop while three runs a week continue. Basketball supplies the jump volume.\n\nLoads are this week's targets. They get adjusted when this week is logged.",
+      "subtitle": "Two weekday runs, any non-consecutive days. Lifts follow the runs.",
+      "reason": "Free weekdays through February. Basketball goes to 3 days a week: Sunday plus two weekday runs while Sunday games last (through 11/29), then three weekday runs in December.\n\nPick the run days each week. Rules: never two days in a row, and not Monday after the Sunday games. Tue and Thu, Tue and Fri, or Wed and Fri all work. Wed and Fri are shown.\n\nThe lifts follow the runs. First run day: lower body after the run. Second run day: upper body, before or after. Calves, arms and core go on a non-run day. Lower body waits at least 3 hours after a run.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. They grow about 15 minutes a week only if pain while playing stays at 3/10 or less, it settles within 24 hours, and morning stiffness stays under 15 minutes.\n\nGym box jumps stop while three runs a week continue. Loads are this week's targets. They get adjusted when this week is logged.",
       "schedule": [
         {
           "day": "Sun",
@@ -9598,8 +9598,8 @@
           "day": "Tue",
           "date": "2026-11-17",
           "type": "training",
-          "desc": "Seated calves, arms, shoulders, core",
-          "longDesc": "About 25 minutes. No barbell, no spinal load, no basketball. Seated calves first.",
+          "desc": "Non-run day: calves, arms, core",
+          "longDesc": "About 25 minutes, on any day without a run. No barbell, no spinal load. Seated calves first.",
           "exercises": [
             {
               "name": "Seated Calf Raise (HSR)",
@@ -9643,7 +9643,7 @@
           "day": "Wed",
           "date": "2026-11-18",
           "type": "training",
-          "desc": "Basketball 11:30, lower PM",
+          "desc": "Run 1: basketball, then lower",
           "longDesc": "Play first, 45 minutes maximum. Lift mid-afternoon or later, at least 3 hours after. Standing calves, then barbell. Every barbell set ends at the first slow rep; expect lighter-feeling days and stop there, do not push through.",
           "exercises": [
             {
@@ -9683,13 +9683,13 @@
           "date": "2026-11-19",
           "type": "rest",
           "desc": "Rest, morning read",
-          "longDesc": "No basketball, no jumps. Report the morning pain number and the stiffness duration."
+          "longDesc": "Rest, or a run day if you swap. No two run days in a row. Report the morning pain number and the stiffness duration."
         },
         {
           "day": "Fri",
           "date": "2026-11-20",
           "type": "training",
-          "desc": "Upper, basketball 11:30",
+          "desc": "Run 2: upper, basketball",
           "longDesc": "Upper body is fine before or after basketball. Before: lift early, finish by 10:30. After: lift in the afternoon. Standing calves go after basketball either way. Bench carries the one calibration set of the week.",
           "exercises": [
             {

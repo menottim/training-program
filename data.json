@@ -3727,6 +3727,14 @@
       "intensity": "high",
       "achillesPain": 0,
       "notes": "Sunday PM, second game of the day. No achilles or calf pain."
+    },
+    {
+      "date": "2026-11-10",
+      "type": "game",
+      "activity": "Basketball (pickup)",
+      "duration": "30 min",
+      "intensity": "high",
+      "notes": "Weekday run 1 at 11:30. Under the 45 minute cap. No lift after the run. Lower body moved to 11/11."
     }
   ],
   "scienceReviews": [
@@ -3879,6 +3887,12 @@
       "week": 36,
       "findings": "Triggered by a schedule change, run on Opus 5.5. The athlete has free weekdays from 11/10 to at least the end of February 2027 and wants pickup basketball 3 days a week. Sunday basketball AM and hockey PM continue through 11/29, then both stop until early January. Goal order unchanged.\n\nCompliance. Lift days, Weeks 27 to 35: 3, 1, 2, 1, 3, 0, travel, travel, 3. Week 36 so far: 0 of 3 to date (Tuesday lower is today). The binding constraint has been time and travel, and the athlete reports that time is no longer the limit. Whether compliance rises with free time is untested; treat Weeks 37 and 38 as the test.\n\nHSR. Week 35 delivered 1 loaded calf session of 3: 11/5 seated 2x8 at 185. The 11/3 single-leg work and retest did not run, and the 11/6 single-leg work was skipped. Well under the Beyer 3x/week dose (PMID 26018970). Calf work is the item that drops first when a session is shortened.\n\nAchilles and calf. All reads 0/10 through 11/9, including the 11/8 double-header (30 min basketball plus 60 min hockey) and the morning after. No trigger in the Section 4 tree.\n\nThe load change. Weekly basketball goes from about 30 minutes to 3 runs, likely 3 to 4.5 hours, a 6 to 9 fold rise in the athlete's highest-risk exposure. Achilles rupture incidence peaks in men aged 30 to 49 and basketball is the leading sport mechanism in US men (Sports Med 2026 meta-analysis, DOI 10.1007/s40279-026-02397-5; Alegre 2021 review, PMC8440049; author lists not verified, so cited by identifier). He also carries bilateral tendinopathy. A large rapid load increase tracks with soft-tissue injury (Gabbett, in knowledge/detraining-and-return.md), but no ratio threshold is valid (Impellizzeri 2020, PMID 32502973). So the ramp is set on symptoms, not on a ratio: weekday runs capped at 45 min in Week 37 and 60 min in Week 38, then plus about 15 min per run per week only while pain during play stays at or under 3/10, returns to baseline inside 24 h, and morning stiffness stays under 15 min (Silbernagel 2007, PMID 17307888, thresholds per Martin 2018 and Silbernagel 2020). The 45 and 60 minute caps are judgment, not published values.\n\nSpacing. Tendon collagen balance is net negative for 24 to 36 h after loading and net positive from 36 to 72 h (Magnusson, Langberg and Kjaer 2010, PMID 20308995; review, Moderate). So the hard tendon days are clustered and separated by about 48 h, never back to back. The 48 h figure is reasoning from that window.\n\nSame day or separate days. Clustering wins for the tendon: it buys full rest days. The interference cost is manageable with order and gap. Lifting before endurance work gave a 6.91% larger lower-body dynamic strength gain (95% CI 1.96 to 11.87) in a meta-analysis of 5-week-plus programs, with no order effect on hypertrophy or body fat (Eddens 2018, Sports Med 48:177-88, PMC5752732; Moderate). Strength gains were blunted with no gap and similar with 6 h or 24 h between sessions in 58 amateur rugby players (Robineau 2016, JSCR 30:672-83, DOI 10.1519/JSC.0000000000000798; Moderate). Neither used a jump-and-cut sport, so transfer to basketball is reasoning. Rule: lift in the morning, play 6 h or more later; under 6 h, upper body only. This overrides the Section 5 48-hour lift-to-game rule (Suchomel 2018) for weekday pickup only. Pickup is a training exposure, not a competition, and injury prevention outranks pickup performance. Lower sets already end at the first slow rep (Pareja-Blanco 2017, PMID 27038416), which limits the residual fatigue carried into the evening. Unresolved: whether heavy lower lifting hours before basketball changes landing mechanics or injury risk. No study found.\n\nLift days. Two barbell days plus the 25-minute calf, arms and core session. A third barbell day fails both CLAUDE.md conditions: the last three weeks did not each deliver two sessions (Week 32 was 0), and the slate is far above one moderate game. Volume and frequency already return little extra strength on a capped calendar (Pelland 2026, PMID 41343037).\n\nPlyometrics. Three basketball runs supply far more jumps than the 40 to 60 contact band (Ebben 2010). Section 6 removes gym plyos first when game load rises. Kept: one 12-contact box-jump block on the lower day, fresh, for maximal-intent jumps. Retired: the Thursday bonus jump day.\n\nBody composition. 219.0 on 11/2; downtrend from 9/11 stands. More basketball raises energy expenditure. No food guidance per CLAUDE.md.\n\nNovember week shape (Sunday games on): Sun games, Mon rest, Tue seated calf plus arms and core, Wed lower AM plus basketball PM, Thu rest, Fri upper plus standing calf AM plus basketball PM, Sat rest. Fri PM to Sun AM is about 40 h; accepted. December (no Sunday games): Mon lower plus basketball, Wed calf plus arms plus basketball, Fri upper plus basketball, with Tue, Thu, Sat and Sun off. Weekday run days are assumed Wed and Fri for November; to be confirmed by the athlete.",
       "changes": "1. CLAUDE.md Overview: free-weekday basketball window added (3 days a week, cluster with lifting, lift first with 6 h or more before play, symptom-gated ramp, two barbell days, gym plyo cut). Section 5: 48-hour rule exception for weekday pickup.\n2. knowledge/in-season-volume.md: Eddens 2018 and Robineau 2016 added; same-day order item partly resolved; Corrections Log entry.\n3. knowledge/achilles-tendinopathy-hsr.md: tendon-day spacing section from Magnusson 2010.\n4. modifiedWeeks 37 authored: Sun games, Tue calf and arms, Wed lower AM plus basketball PM, Fri upper AM plus basketball PM, weekday runs capped at 45 min. Bonus jump day retired. Box jumps 4x3.\n5. Not changed: goal order, loads and progression model, HSR at a true rep max, lift targets and horizons, no nutrition guidance.\n\nRe-decide when Sunday games return in early January. Watch HSR delivery: 1 loaded session in Week 35.\n\nAmendment same day: runs start about 11:30 AM, so lift-AM-play-6-h-later is not possible. Revised: lower body after basketball, at least 3 hours later; upper body before or after; calf HSR after basketball, so the calf is not fatigued going into jump-and-cut play (reasoning). Order with a multi-hour gap is not tested: Eddens 2018 is intra-session order, and Robineau 2016 always ran strength first. Play-first protects the tendon cluster and avoids playing on lifting-fatigued legs; the possible cost is lower-quality lower sessions, which the stop-at-first-slow-rep rule self-limits. Gym box jumps retired entirely while 3 runs a week continue; jumps after basketball would be fatigued, and before would add to the day's tendon load. 3 h is judgment, not published."
+    },
+    {
+      "date": "2026-11-11",
+      "week": 36,
+      "findings": "Triggered by the athlete after the first weekday run (11/10, 30 min, high intensity, no lift after): he judged basketball plus lifting on one day too much. Run on Opus 5.5.\n\nThe 11/10 plan put barbell on run days for tendon clustering, play at 11:30 and lower body 3 h later. That order was untested: Eddens 2018 (PMC5752732) is intra-session order and Robineau 2016 (DOI 10.1519/JSC.0000000000000798) always ran strength first. Robineau 2016 does show strength gains similar at 6 h and 24 h gaps, with aerobic gains best at 24 h (Moderate). So moving barbell to separate days costs nothing measured and may help the conditioning side.\n\nTendon clustering (Magnusson 2010, PMID 20308995) applies to the high-strain days: basketball, hockey, jumps. Barbell lower work is low strain rate and was never on that list, so a barbell day between run days does not break the cluster rule (reasoning).\n\nPlacement: lower body the day after a run, never the day before when the week allows. This keeps jump-and-cut play off legs that lifted the previous day. Refalo 2023 (PMID 36752989) found velocity still about 3% down 24 h after sets to failure or 1 RIR; lower sets here end at the first slow rep, far from failure, so lift quality 24 h after a run should be acceptable (reasoning, no direct study). Whether lifting the day before basketball changes injury risk: no study found.\n\nHSR: Beyer dose needs 3 sessions (PMID 26018970). With separate days, calf work rides on the lower day, the upper day and after run 2 (about 10 minutes, slow tempo, no barbell). This is the only same-day item.\n\nCost: full rest days fall from 3 to 2 in November (Mon, Sat). Accepted; the athlete asked for it, and compliance on the same-day plan was 0 of 1 on 11/10.\n\nAchilles: 0/10 through 11/8. 11/10 read not yet reported.",
+      "changes": "1. CLAUDE.md Overview: same-day rule replaced; barbell on non-run days, lower the day after a run, upper with arms, core and seated calves, standing calf after run 2. December shape: runs Mon, Wed, Fri; Tue upper, Sat lower. Section 5 exception rewritten.\n2. knowledge/in-season-volume.md: Corrections Log entry; Unresolved item updated.\n3. modifiedWeeks 36: Tue run done, lower moved to Wed 11/11 with the calf retest, upper plus arms on Thu, Fri run plus standing calf.\n4. modifiedWeeks 37: same shape, Tue and Fri runs.\n5. Not changed: loads, progression, ramp caps, two barbell days, gym plyos off."
     }
   ],
   "bodyLog": [
@@ -9374,8 +9388,8 @@
     "36": {
       "title": "Weekday basketball starts",
       "blockLabel": "Power and jump",
-      "subtitle": "Runs Tue and Fri. Lower after Tuesday run, upper Friday.",
-      "reason": "Two-game Sunday, then two weekday runs at 11:30: Tuesday and Friday. Runs capped at 45 minutes. Never two run days in a row.\n\nTuesday: lower body at least 3 hours after the run. Wednesday: calf retest, seated calves, arms and core, no basketball. Friday: upper body before or after the run.\n\nLoads: trap bar 260, squat 175, RDL 140, seated calf 185. Bench holds at 165: last Friday's 5+ set stopped at 5. Pulldown holds at 140. Standing calf holds at BW + 67: no single-leg work since 10/9.\n\nBox jumps and the Thursday jump day are gone while three runs a week continue.",
+      "subtitle": "Basketball and barbell on separate days from 11/11.",
+      "reason": "Two-game Sunday, then weekday runs Tuesday and Friday at 11:30. Runs are capped at 45 minutes.\n\nChanged 11/11: basketball and barbell no longer share a day. Lower body goes the day after a run, so you play on fresh legs. Upper body, arms, core and seated calves go together on another non-run day. The only work on a run day is about 10 minutes of standing calves after you play.\n\nWednesday: calf retest, standing calves, lower body. Thursday: upper body, arms, core, seated calves. Friday: run, then standing calves.\n\nLoads: trap bar 260, squat 175, RDL 140, seated calf 185. Bench holds at 165: last Friday's 5+ set stopped at 5. Pulldown holds at 140. Standing calf holds at BW + 67.",
       "schedule": [
         {
           "day": "Sun",
@@ -9407,20 +9421,35 @@
           "day": "Tue",
           "date": "2026-11-10",
           "type": "training",
-          "desc": "Run 1: basketball, then lower",
-          "longDesc": "First weekday run. Play at 11:30, 45 minutes maximum. Lift at least 3 hours later: standing calves, then barbell. Every barbell set ends at the first slow rep. No box jumps.",
+          "desc": "Run 1: basketball",
+          "longDesc": "Played 30 minutes, high intensity. No lift after. Lower body moved to Wednesday.",
           "exercises": [
             {
               "name": "Basketball (pickup)",
               "sets": "11:30 AM, 45 min cap",
               "weight": "game",
-              "notes": "Stop at 45 minutes. Report minutes, intensity and any achilles or calf pain."
+              "notes": "Done: 30 minutes, high intensity."
+            }
+          ]
+        },
+        {
+          "day": "Wed",
+          "date": "2026-11-11",
+          "type": "training",
+          "desc": "Calf retest, lower body",
+          "longDesc": "No basketball. Calf retest first, while the calf is fresh. Then standing calves, then barbell. Every barbell set ends at the first slow rep. No box jumps.",
+          "exercises": [
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "1 set to failure per leg",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "Set 1 of the calf work. Left first, 2 min between legs. Floor range, 3s up and 3s down. Report both counts. Machine taken: skip it."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "3x6/leg, plus 1 extra left",
+              "sets": "2x6/leg",
               "weight": "BW + 67 lb/leg, machine",
-              "notes": "After basketball, not before. Held at the lowest pin: no single-leg work since 10/9. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
+              "notes": "After the retest. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             },
             {
               "name": "Trap Bar Deadlift",
@@ -9439,74 +9468,28 @@
               "sets": "3x5",
               "weight": "140 lbs",
               "notes": "Hinge to a hamstring stretch, flat back, bar close to the legs."
-            }
-          ]
-        },
-        {
-          "day": "Wed",
-          "date": "2026-11-11",
-          "type": "training",
-          "desc": "Non-run day: calf retest, arms, core",
-          "longDesc": "About 30 minutes. No barbell, no basketball. Calf retest first, fresh, then seated calves, arms and core.",
-          "exercises": [
-            {
-              "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "1 set to failure per leg",
-              "weight": "BW + 67 lb/leg, machine",
-              "notes": "Retest, moved off the run day so the calf is fresh. Left first, 2 min between legs. Floor range, 3s up and 3s down. Report both counts. Machine taken: skip it."
-            },
-            {
-              "name": "Seated Calf Raise (HSR)",
-              "sets": "3x8",
-              "weight": "185 lbs",
-              "notes": "Knees bent, full range, 3s up and 3s down. The eighth rep should be the last one available. Report if a ninth was there. Fallback: 35 lb dumbbell, one leg at a time."
             },
             {
               "name": "Dumbbell Lateral Raise",
-              "sets": "3x10-12",
+              "sets": "2x10-12",
               "weight": "15 lb DBs",
-              "notes": "Raise to shoulder height, slight bend in the elbow. Last set to failure. Report reps per set."
-            },
-            {
-              "name": "Cable Triceps Pushdown",
-              "sets": "3x10-12",
-              "weight": "35 lbs",
-              "notes": "Elbows pinned, full lockout. Last set to failure. Report reps per set."
-            },
-            {
-              "name": "Cable Biceps Curl",
-              "sets": "3x10-12",
-              "weight": "40 lbs",
-              "notes": "Full extension at the bottom, no swing. Last set to failure. Report reps per set."
-            },
-            {
-              "name": "Pallof Press",
-              "sets": "2x6-8/side",
-              "weight": "35 lbs",
-              "notes": "Arms fully extended, resist the pull. Last set to failure. Report reps."
-            },
-            {
-              "name": "Cable Woodchop (Low-to-High)",
-              "sets": "2x6-8/side",
-              "weight": "35 lbs",
-              "notes": "Rotate through the trunk, not the arms. Last set to failure. Skip if it bothers the lower back."
+              "notes": "Raise to shoulder height. Last set to failure."
             }
           ]
         },
         {
           "day": "Thu",
           "date": "2026-11-12",
-          "type": "rest",
-          "desc": "Rest, morning read",
-          "longDesc": "No basketball, no jumps. Report the morning pain number and the stiffness duration."
-        },
-        {
-          "day": "Fri",
-          "date": "2026-11-13",
           "type": "training",
-          "desc": "Run 2: upper, basketball",
-          "longDesc": "Upper body before basketball (finish by 10:30) or after. Standing calves after basketball. Bench carries the one calibration set of the week. Run capped at 45 minutes.",
+          "desc": "Upper body, arms, core, seated calves",
+          "longDesc": "No basketball. Seated calves first. Bench carries the one calibration set of the week. Arms and core last.",
           "exercises": [
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x8",
+              "weight": "185 lbs",
+              "notes": "Knees bent, full range, 3s up and 3s down. The eighth rep should be the last one available. Report if a ninth was there. Fallback: 35 lb dumbbell, one leg at a time."
+            },
             {
               "name": "Bench Press",
               "sets": "3x5, set 3 = 5+",
@@ -9539,21 +9522,54 @@
             },
             {
               "name": "Dumbbell Lateral Raise",
-              "sets": "2x10-12",
+              "sets": "3x10-12",
               "weight": "15 lb DBs",
-              "notes": "Raise to shoulder height. Last set to failure."
+              "notes": "Raise to shoulder height, slight bend in the elbow. Last set to failure. Report reps per set."
             },
+            {
+              "name": "Cable Triceps Pushdown",
+              "sets": "3x10-12",
+              "weight": "35 lbs",
+              "notes": "Elbows pinned, full lockout. Last set to failure. Report reps per set."
+            },
+            {
+              "name": "Cable Biceps Curl",
+              "sets": "3x10-12",
+              "weight": "40 lbs",
+              "notes": "Full extension at the bottom, no swing. Last set to failure. Report reps per set."
+            },
+            {
+              "name": "Pallof Press",
+              "sets": "2x6-8/side",
+              "weight": "35 lbs",
+              "notes": "Arms fully extended, resist the pull. Last set to failure. Report reps."
+            },
+            {
+              "name": "Cable Woodchop (Low-to-High)",
+              "sets": "2x6-8/side",
+              "weight": "35 lbs",
+              "notes": "Rotate through the trunk, not the arms. Last set to failure. Skip if it bothers the lower back."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-11-13",
+          "type": "training",
+          "desc": "Run 2: basketball, standing calves",
+          "longDesc": "Play at 11:30, 45 minutes maximum. Standing calves after, about 10 minutes. No barbell.",
+          "exercises": [
             {
               "name": "Basketball (pickup)",
               "sets": "11:30 AM, 45 min cap",
               "weight": "game",
-              "notes": "Stop at 45 minutes. Report minutes, intensity and any achilles or calf pain."
+              "notes": "Stop at 45 minutes. No barbell today. Report minutes, intensity and any achilles or calf pain."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg, plus 1 extra left",
               "weight": "BW + 67 lb/leg, machine",
-              "notes": "After basketball, not before. Held at the lowest pin: no single-leg work since 10/9. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
+              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             }
           ]
         },
@@ -9569,8 +9585,8 @@
     "37": {
       "title": "Weekday basketball starts",
       "blockLabel": "Power and jump",
-      "subtitle": "Two weekday runs, any non-consecutive days. Lifts follow the runs.",
-      "reason": "Free weekdays through February. Basketball goes to 3 days a week: Sunday plus two weekday runs while Sunday games last (through 11/29), then three weekday runs in December.\n\nPick the run days each week. Rules: never two days in a row, and not Monday after the Sunday games. Tue and Thu, Tue and Fri, or Wed and Fri all work. Wed and Fri are shown.\n\nThe lifts follow the runs. First run day: lower body after the run. Second run day: upper body, before or after. Calves, arms and core go on a non-run day. Lower body waits at least 3 hours after a run.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. They grow about 15 minutes a week only if pain while playing stays at 3/10 or less, it settles within 24 hours, and morning stiffness stays under 15 minutes.\n\nGym box jumps stop while three runs a week continue. Loads are this week's targets. They get adjusted when this week is logged.",
+      "subtitle": "Two weekday runs. Barbell on non-run days.",
+      "reason": "Free weekdays through February. Basketball 3 days a week: Sunday plus two weekday runs through 11/29, then three weekday runs in December.\n\nBasketball and barbell go on separate days. Pick the run days each week. Never two runs in a row, and no run the Monday after Sunday games. Tuesday and Friday fit best.\n\nLower body goes the day after the first run. Upper body, arms, core and seated calves go on another non-run day. Standing calves go after the second run, about 10 minutes, no barbell.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. Add about 15 minutes a week only if all three hold. Pain while playing stays at 3/10 or less. It settles within 24 hours. Morning stiffness stays under 15 minutes.\n\nLoads are targets. They get adjusted when this week's sessions are logged.",
       "schedule": [
         {
           "day": "Sun",
@@ -9602,14 +9618,98 @@
           "day": "Tue",
           "date": "2026-11-17",
           "type": "training",
-          "desc": "Non-run day: calves, arms, core",
-          "longDesc": "About 25 minutes, on any day without a run. No barbell, no spinal load. Seated calves first.",
+          "desc": "Run 1: basketball",
+          "longDesc": "Play at 11:30, 45 minutes maximum. Nothing else today.",
+          "exercises": [
+            {
+              "name": "Basketball (pickup)",
+              "sets": "11:30 AM, 45 min cap",
+              "weight": "game",
+              "notes": "Stop at 45 minutes this week. No barbell today. Report minutes, intensity and any achilles or calf pain."
+            }
+          ]
+        },
+        {
+          "day": "Wed",
+          "date": "2026-11-18",
+          "type": "training",
+          "desc": "Lower body, standing calves",
+          "longDesc": "No basketball. Standing calves, then barbell. Every barbell set ends at the first slow rep.",
+          "exercises": [
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg, plus 1 extra left",
+              "weight": "BW + 77 lb/leg, machine",
+              "notes": "Before the barbell. Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Set from the 11/11 retest. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
+            },
+            {
+              "name": "Trap Bar Deadlift",
+              "sets": "3x5",
+              "weight": "260 lbs",
+              "notes": "Every rep fast. End the set at the first rep that slows visibly. No reps-plus set. Brace before each pull."
+            },
+            {
+              "name": "Back Squat",
+              "sets": "3x5",
+              "weight": "175 lbs",
+              "notes": "At least parallel, heels flat. Every rep fast. End the set at the first rep that slows visibly. No reps-plus set."
+            },
+            {
+              "name": "Barbell Romanian Deadlift",
+              "sets": "3x5",
+              "weight": "140 lbs",
+              "notes": "Hinge to a hamstring stretch, flat back, bar close to the legs."
+            },
+            {
+              "name": "Dumbbell Lateral Raise",
+              "sets": "2x10-12",
+              "weight": "15 lb DBs",
+              "notes": "Raise to shoulder height. Last set to failure."
+            }
+          ]
+        },
+        {
+          "day": "Thu",
+          "date": "2026-11-19",
+          "type": "training",
+          "desc": "Upper body, arms, core, seated calves",
+          "longDesc": "No basketball. Seated calves first. Bench carries the one calibration set of the week. Arms and core last.",
           "exercises": [
             {
               "name": "Seated Calf Raise (HSR)",
               "sets": "3x8",
               "weight": "185 lbs",
               "notes": "Knees bent, full range, 3s up and 3s down. The eighth rep should be the last one available. Report if a ninth was there. Fallback: 35 lb dumbbell, one leg at a time."
+            },
+            {
+              "name": "Bench Press",
+              "sets": "3x5, set 3 = 5+",
+              "weight": "165 lbs",
+              "notes": "Calibration set. Stop at the last clean rep, hard cap 10. Report the count. Bar to lower chest, touch and press."
+            },
+            {
+              "name": "Close Grip Bench Press",
+              "sets": "3x5",
+              "weight": "120 lbs",
+              "notes": "Hands shoulder width, elbows tucked. Stop at five."
+            },
+            {
+              "name": "Bent Over Barbell Row",
+              "sets": "3x5",
+              "weight": "150 lbs",
+              "notes": "Flat back, bar to the lower ribs. Stop at five."
+            },
+            {
+              "name": "Strict Overhead Press",
+              "sets": "3x5",
+              "weight": "80 lbs",
+              "notes": "Barbell, standing. No leg dip, no leg drive. Collarbone to full lockout."
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "2x6-8",
+              "weight": "140 lbs",
+              "notes": "Full stretch at the top, bar to upper chest. Both sets to failure. Report reps per set."
             },
             {
               "name": "Dumbbell Lateral Raise",
@@ -9644,105 +9744,23 @@
           ]
         },
         {
-          "day": "Wed",
-          "date": "2026-11-18",
-          "type": "training",
-          "desc": "Run 1: basketball, then lower",
-          "longDesc": "Play first, 45 minutes maximum. Lift mid-afternoon or later, at least 3 hours after. Standing calves, then barbell. Every barbell set ends at the first slow rep; expect lighter-feeling days and stop there, do not push through.",
-          "exercises": [
-            {
-              "name": "Basketball (pickup)",
-              "sets": "11:30 AM, 45 min cap",
-              "weight": "game",
-              "notes": "Stop at 45 minutes this week. Report minutes, intensity and any achilles or calf pain."
-            },
-            {
-              "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "3x6/leg, plus 1 extra left",
-              "weight": "BW + 77 lb/leg, machine",
-              "notes": "Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
-            },
-            {
-              "name": "Trap Bar Deadlift",
-              "sets": "3x5",
-              "weight": "260 lbs",
-              "notes": "Every rep fast. End the set at the first rep that slows visibly. No reps-plus set. Brace before each pull."
-            },
-            {
-              "name": "Back Squat",
-              "sets": "3x5",
-              "weight": "175 lbs",
-              "notes": "At least parallel, heels flat. Every rep fast. End the set at the first rep that slows visibly. No reps-plus set."
-            },
-            {
-              "name": "Barbell Romanian Deadlift",
-              "sets": "3x5",
-              "weight": "140 lbs",
-              "notes": "Hinge to a hamstring stretch, flat back, bar close to the legs."
-            }
-          ]
-        },
-        {
-          "day": "Thu",
-          "date": "2026-11-19",
-          "type": "rest",
-          "desc": "Rest, morning read",
-          "longDesc": "Rest, or a run day if you swap. No two run days in a row. Report the morning pain number and the stiffness duration."
-        },
-        {
           "day": "Fri",
           "date": "2026-11-20",
           "type": "training",
-          "desc": "Run 2: upper, basketball",
-          "longDesc": "Upper body is fine before or after basketball. Before: lift early, finish by 10:30. After: lift in the afternoon. Standing calves go after basketball either way. Bench carries the one calibration set of the week.",
+          "desc": "Run 2: basketball, standing calves",
+          "longDesc": "Play at 11:30, 45 minutes maximum. Standing calves after, about 10 minutes. No barbell.",
           "exercises": [
-            {
-              "name": "Bench Press",
-              "sets": "3x5, set 3 = 5+",
-              "weight": "165 lbs",
-              "notes": "Calibration set. Stop at the last clean rep, hard cap 10. Report the count. Bar to lower chest, touch and press."
-            },
-            {
-              "name": "Close Grip Bench Press",
-              "sets": "3x5",
-              "weight": "120 lbs",
-              "notes": "Hands shoulder width, elbows tucked. Stop at five."
-            },
-            {
-              "name": "Bent Over Barbell Row",
-              "sets": "3x5",
-              "weight": "150 lbs",
-              "notes": "Flat back, bar to the lower ribs. Stop at five."
-            },
-            {
-              "name": "Strict Overhead Press",
-              "sets": "3x5",
-              "weight": "80 lbs",
-              "notes": "Barbell, standing. No leg dip, no leg drive. Collarbone to full lockout."
-            },
-            {
-              "name": "Lat Pulldown",
-              "sets": "2x6-8",
-              "weight": "140 lbs",
-              "notes": "Full stretch at the top, bar to upper chest. Both sets to failure. Report reps per set."
-            },
-            {
-              "name": "Dumbbell Lateral Raise",
-              "sets": "2x10-12",
-              "weight": "15 lb DBs",
-              "notes": "Raise to shoulder height. Last set to failure."
-            },
             {
               "name": "Basketball (pickup)",
               "sets": "11:30 AM, 45 min cap",
               "weight": "game",
-              "notes": "Stop at 45 minutes this week. Report minutes, intensity and any achilles or calf pain."
+              "notes": "Stop at 45 minutes this week. No barbell today. Report minutes, intensity and any achilles or calf pain."
             },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg, plus 1 extra left",
               "weight": "BW + 77 lb/leg, machine",
-              "notes": "After basketball, not before. Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
+              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             }
           ]
         },

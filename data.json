@@ -3764,7 +3764,8 @@
           "notes": "15s prescribed."
         }
       ],
-      "notes": "Barbell as prescribed, no extra reps. Calf retest and single-leg calf raises not done."
+      "notes": "Barbell as prescribed, no extra reps. Calf retest and single-leg calf raises not done. No achilles or calf pain.",
+      "achillesPain": 0
     }
   ],
   "scienceReviews": [

@@ -3736,6 +3736,35 @@
       "intensity": "high",
       "notes": "Weekday run 1 at 11:30. Under the 45 minute cap. No lift after the run. Lower body moved to 11/11. No achilles or calf pain.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-11-11",
+      "type": "training",
+      "activity": "Lower body (Wed Phase 3)",
+      "exercises": [
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "3x5",
+          "weight": "260 lbs"
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "175 lbs"
+        },
+        {
+          "name": "Barbell Romanian Deadlift",
+          "sets": "3x5",
+          "weight": "140 lbs"
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "2x12",
+          "weight": "14 lb DBs",
+          "notes": "15s prescribed."
+        }
+      ],
+      "notes": "Barbell as prescribed, no extra reps. Calf retest and single-leg calf raises not done."
     }
   ],
   "scienceReviews": [
@@ -9634,14 +9663,20 @@
           "day": "Wed",
           "date": "2026-11-18",
           "type": "training",
-          "desc": "Lower body, standing calves",
-          "longDesc": "No basketball. Standing calves, then barbell. Every barbell set ends at the first slow rep.",
+          "desc": "Calf retest, lower body",
+          "longDesc": "No basketball. Calf retest first, while the calf is fresh. Then standing calves, then barbell. Every barbell set ends at the first slow rep.",
           "exercises": [
             {
               "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "3x6/leg, plus 1 extra left",
-              "weight": "BW + 77 lb/leg, machine",
-              "notes": "Before the barbell. Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Set from the 11/11 retest. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
+              "sets": "1 set to failure per leg",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "Retest, moved from 11/11 (not run). Set 1 of the calf work, before the barbell. Left first, 2 min between legs. Floor range, 3s up and 3s down. Report both counts. Machine taken: skip it."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "2x6/leg",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "After the retest. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             },
             {
               "name": "Trap Bar Deadlift",
@@ -9760,8 +9795,8 @@
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg, plus 1 extra left",
-              "weight": "BW + 77 lb/leg, machine",
-              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Sixth rep near the last. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Load may rise to BW + 77 if the 11/18 retest supports it. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             }
           ]
         },

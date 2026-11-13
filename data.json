@@ -3766,6 +3766,39 @@
       ],
       "notes": "Barbell as prescribed, no extra reps. Calf retest and single-leg calf raises not done. No achilles or calf pain.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-11-12",
+      "type": "training",
+      "activity": "Upper body (Thu Phase 3)",
+      "exercises": [
+        {
+          "name": "Seated Calf Raise (HSR)",
+          "sets": "3x8",
+          "weight": "185 lbs"
+        },
+        {
+          "name": "Bench Press",
+          "sets": "3x5",
+          "weight": "165 lbs"
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5",
+          "weight": "120 lbs"
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "3x5",
+          "weight": "150 lbs"
+        },
+        {
+          "name": "Strict Overhead Press",
+          "sets": "3x5",
+          "weight": "80 lbs"
+        }
+      ],
+      "notes": "Five lifts as prescribed. Bench set 3 rep count not reported. Lat pulldown, arms and core moved to 11/13."
     }
   ],
   "scienceReviews": [
@@ -9512,8 +9545,8 @@
           "day": "Thu",
           "date": "2026-11-12",
           "type": "training",
-          "desc": "Upper body, arms, core, seated calves",
-          "longDesc": "No basketball. Seated calves first. Bench carries the one calibration set of the week. Arms and core last.",
+          "desc": "Upper body, seated calves",
+          "longDesc": "No basketball. Seated calves first. Bench carries the one calibration set of the week. Lat pulldown, arms and core moved to Fri 11/13.",
           "exercises": [
             {
               "name": "Seated Calf Raise (HSR)",
@@ -9544,6 +9577,27 @@
               "sets": "3x5",
               "weight": "80 lbs",
               "notes": "Barbell, standing. No leg dip, no leg drive. Collarbone to full lockout."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-11-13",
+          "type": "training",
+          "desc": "Run 2, standing calves, arms and core",
+          "longDesc": "Play at 11:30, 45 minutes maximum. Standing calves after, about 10 minutes. Then the moved Thursday work: lat pulldown, arms, core. No barbell.",
+          "exercises": [
+            {
+              "name": "Basketball (pickup)",
+              "sets": "11:30 AM, 45 min cap",
+              "weight": "game",
+              "notes": "Stop at 45 minutes. No barbell today. Report minutes, intensity and any achilles or calf pain."
+            },
+            {
+              "name": "Single-Leg Calf Raise (HSR)",
+              "sets": "3x6/leg, plus 1 extra left",
+              "weight": "BW + 67 lb/leg, machine",
+              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             },
             {
               "name": "Lat Pulldown",
@@ -9580,27 +9634,6 @@
               "sets": "2x6-8/side",
               "weight": "35 lbs",
               "notes": "Rotate through the trunk, not the arms. Last set to failure. Skip if it bothers the lower back."
-            }
-          ]
-        },
-        {
-          "day": "Fri",
-          "date": "2026-11-13",
-          "type": "training",
-          "desc": "Run 2: basketball, standing calves",
-          "longDesc": "Play at 11:30, 45 minutes maximum. Standing calves after, about 10 minutes. No barbell.",
-          "exercises": [
-            {
-              "name": "Basketball (pickup)",
-              "sets": "11:30 AM, 45 min cap",
-              "weight": "game",
-              "notes": "Stop at 45 minutes. No barbell today. Report minutes, intensity and any achilles or calf pain."
-            },
-            {
-              "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "3x6/leg, plus 1 extra left",
-              "weight": "BW + 67 lb/leg, machine",
-              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             }
           ]
         },

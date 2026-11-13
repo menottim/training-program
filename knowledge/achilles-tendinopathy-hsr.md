@@ -97,6 +97,16 @@ After a loading bout, tendon collagen synthesis and breakdown both rise. Over th
 
 Applied to this athlete: put the heavy tendon days (basketball, jumps, hockey) on the same days and leave about 48 hours between them, rather than spreading moderate tendon load across every day. The 48-hour figure is reasoning from the 36-to-72-hour window. It is not a published cutoff. HSR at a slow tempo is a lower tendon-strain stimulus than jump-and-cut sport, and Silbernagel 2007 allowed daily loading under pain monitoring, so a calf session on a rest day is acceptable when the schedule needs it.
 
+### Maintenance after the treatment block
+
+Beyer 2015 is a 12-week treatment protocol for a symptomatic tendon. It does not test a maintenance dose, and no trial found here does. Three findings bound the question:
+
+- __Tendon properties detrain fast.__ After 3 months of isometric plantar-flexion training, Achilles tendon stiffness rose about 50% and was back at baseline after 1 month of detraining (Kubo et al. 2012, PMID 22105708). In the patellar tendon, stiffness returned to baseline after 2 months, while muscle strength did not change (Kubo et al. 2010, PMID 19996769). Tier: Moderate (small samples, young men, isometric training).
+- __A reduced dose holds strength.__ After 16 weeks of training at 3 days per week, one-third of the weekly dose held strength in young and older adults for 32 weeks. Older adults needed more than young adults to keep muscle size (Bickel et al. 2011, PMID 21131862). This is muscle, not tendon. Tier: Moderate.
+- __Strain magnitude, not volume, drives tendon adaptation__ (Kjaer 2009; Magnusson and Kjaer 2019, in the mechanism section above). A maintenance dose must stay heavy.
+
+Applied to this athlete: once symptoms are quiet, the three-session treatment dose can step down to two heavy sessions per week, one straight-knee and one bent-knee. Never drop to zero, because the tendon detrains inside a month. Two sessions is reasoning from the data above, not a tested maintenance dose. Tier: Emerging. Return to three sessions when symptoms return.
+
 ## Unresolved or Bleeding-Edge Questions
 
 - __Collagen peptides with vitamin C, measured against clinical endpoints.__ The mechanistic data (Shaw 2017) and the pilot clinical data (Praet 2019) agree with each other, but both studies are small. No well-powered RCT with VISA-A as the primary outcome has replicated Praet. The supplement is worth a trial. It is not proven.
@@ -125,6 +135,9 @@ Applied to this athlete: put the heavy tendon days (basketball, jumps, hockey) o
 16. Silbernagel KG, Hanlon S, Sprague A. __Current Clinical Concepts: Conservative Management of Achilles Tendinopathy.__ Journal of Athletic Training, 2020; 55(5): 438-447. PMID: 32267723. PMCID: PMC7249277.
 17. Habets B, van Cingel REH, Backx FJG, et al. __Return to Sport in Athletes with Midportion Achilles Tendinopathy: A Qualitative Systematic Review Regarding Definitions and Criteria.__ Sports Medicine, 2018; 48(3): 705-723. PMCID: PMC5808052.
 18. Magnusson SP, Langberg H, Kjaer M. __The pathogenesis of tendinopathy: balancing the response to loading.__ Nature Reviews Rheumatology, 2010; 6(5): 262-268. PMID: 20308995. DOI: 10.1038/nrrheum.2010.43.
+19. Kubo K, Ikebukuro T, Yata H, Tsunoda N, Kanehisa H. __Time course of changes in muscle and tendon properties during strength training and detraining.__ Journal of Strength and Conditioning Research, 2010; 24(2): 322-331. PMID: 19996769. DOI: 10.1519/JSC.0b013e3181c865e2.
+20. Kubo K, Ikebukuro T, Maki A, et al. __Time course of changes in the human Achilles tendon properties and metabolism during training and detraining in vivo.__ European Journal of Applied Physiology, 2012; 112(7): 2679-2691. PMID: 22105708. DOI: 10.1007/s00421-011-2248-x.
+21. Bickel CS, Cross JM, Bamman MM. __Exercise dosing to retain resistance training adaptations in young and older adults.__ Medicine and Science in Sports and Exercise, 2011; 43(7): 1177-1187. PMID: 21131862. DOI: 10.1249/MSS.0b013e318207c15d.
 
 ## Corrections Log
 
@@ -133,3 +146,4 @@ Applied to this athlete: put the heavy tendon days (basketball, jumps, hockey) o
   - __The Silbernagel 2007 numeric thresholds.__ The bands of 0 to 3 safe, 4 to 5 caution, and above 5 stop are consensus refinements from secondary literature. The sources are the JOSPT 2018 clinical practice guidelines and Silbernagel et al. 2020. The 2007 primary paper does not state them. Two things are correctly attributed to Silbernagel 2007: the 24-hour return-to-baseline rule, and the principle of continued sport under pain monitoring.
   - __The status of PRP.__ CLAUDE.md did not address this. The de Vos 2010 JAMA RCT and the later meta-analyses put PRP in the __not recommended__ category for Achilles tendinopathy. It is not an emerging treatment.
   - __"Heavy" in HSR may not be heavy enough.__ The Morrison and Cook 2022 caveat is new. Check that the working weight stays above 70% of 1RM through the whole set, despite the slow tempo. If it does not, the protocol underloads the tendon.
+- __2026-11-13:__ Added the maintenance section. The file previously gave only the 12-week treatment dose, and the program applied it as a standing rule with no end. With symptoms at 0/10 and morning stiffness under 15 minutes since 9/21, the program moves to a maintenance dose of two heavy sessions per week, with a rule to return to three. No maintenance trial exists for tendinopathy; the dose is reasoned from Kubo 2010, Kubo 2012 and Bickel 2011.

@@ -3996,6 +3996,12 @@
       "week": 36,
       "findings": "Triggered by the athlete after the first weekday run (11/10, 30 min, high intensity, no lift after): he judged basketball plus lifting on one day too much. Run on Opus 5.5.\n\nThe 11/10 plan put barbell on run days for tendon clustering, play at 11:30 and lower body 3 h later. That order was untested: Eddens 2018 (PMC5752732) is intra-session order and Robineau 2016 (DOI 10.1519/JSC.0000000000000798) always ran strength first. Robineau 2016 does show strength gains similar at 6 h and 24 h gaps, with aerobic gains best at 24 h (Moderate). So moving barbell to separate days costs nothing measured and may help the conditioning side.\n\nTendon clustering (Magnusson 2010, PMID 20308995) applies to the high-strain days: basketball, hockey, jumps. Barbell lower work is low strain rate and was never on that list, so a barbell day between run days does not break the cluster rule (reasoning).\n\nPlacement: lower body the day after a run, never the day before when the week allows. This keeps jump-and-cut play off legs that lifted the previous day. Refalo 2023 (PMID 36752989) found velocity still about 3% down 24 h after sets to failure or 1 RIR; lower sets here end at the first slow rep, far from failure, so lift quality 24 h after a run should be acceptable (reasoning, no direct study). Whether lifting the day before basketball changes injury risk: no study found.\n\nHSR: Beyer dose needs 3 sessions (PMID 26018970). With separate days, calf work rides on the lower day, the upper day and after run 2 (about 10 minutes, slow tempo, no barbell). This is the only same-day item.\n\nCost: full rest days fall from 3 to 2 in November (Mon, Sat). Accepted; the athlete asked for it, and compliance on the same-day plan was 0 of 1 on 11/10.\n\nAchilles: 0/10 through 11/8. 11/10 read not yet reported.",
       "changes": "1. CLAUDE.md Overview: same-day rule replaced; barbell on non-run days, lower the day after a run, upper with arms, core and seated calves, standing calf after run 2. December shape: runs Mon, Wed, Fri; Tue upper, Sat lower. Section 5 exception rewritten.\n2. knowledge/in-season-volume.md: Corrections Log entry; Unresolved item updated.\n3. modifiedWeeks 36: Tue run done, lower moved to Wed 11/11 with the calf retest, upper plus arms on Thu, Fri run plus standing calf.\n4. modifiedWeeks 37: same shape, Tue and Fri runs.\n5. Not changed: loads, progression, ramp caps, two barbell days, gym plyos off."
+    },
+    {
+      "date": "2026-11-13",
+      "week": 36,
+      "findings": "Run on Opus 5.5 at the athlete's request: \"Do I need to keep the 3 weekly HSR on calves? Any other tweaks?\"\n\nCompliance. Week 35: 3 sessions logged (11/3 lower, 11/5 seated calves and arms, 11/6 upper), first lifting after 4 weeks off (travel 10/18 to 11/1). Week 36: both barbell days ran as prescribed (11/11 lower, 11/12 upper); the arms, pulldown and core block was split off to 11/13 for the second time in two weeks (11/5 and 11/12). The upper day with 11 exercises does not fit one session. Fix the placement, not the athlete.\n\nHSR compliance (loaded sessions per week). Weeks 23 to 27: 2, 3, 3, 3, 3. Weeks 28 to 36: 0, 1, 1, 3, 0, 0, 0, 1, 1. Since week 28 the 3-per-week dose ran in 1 week of 9. Standing single-leg (gastrocnemius) HSR has not run since 10/9: five weeks, through travel, two prescriptions on lower days (11/11) and one after a run (11/13, no run). Only the seated (soleus) raise has run since. The left gastroc was the strained tissue in June.\n\nSymptoms. Achilles and calf 0/10 at every logged read since 10/12, through two travel weeks without calf work, a two-game Sunday (11/8) and the first weekday run (11/10). Morning stiffness under 15 minutes since 9/21. Last retest 10/6: R 12, L 11 (8%). Retests since have not run.\n\nThe question. Beyer 2015 (PMID 26018970) is a 12-week treatment protocol for symptomatic tendinopathy; it sets no maintenance dose and no end rule. The program had applied it as a permanent rule. The athlete is asymptomatic and has stayed so on roughly one loaded session a week for nine weeks, which is the honest observational data point (n=1, confounded by reduced game load in Oct). No trial gives a maintenance dose for tendinopathy. Bounding evidence, verified against abstracts: Kubo 2012 (Eur J Appl Physiol 112:2679, PMID 22105708): Achilles stiffness up ~50% after 3 months of training, back at baseline after 1 month of detraining. Kubo 2010 (JSCR 24:322, PMID 19996769): patellar tendon stiffness to baseline at 2 months of detraining, strength unchanged. Bickel 2011 (MSSE 43:1177, PMID 21131862, RCT): one-third of the training dose kept strength for 32 weeks; older adults needed more to keep size. Tier: Moderate for each finding; Emerging for the applied dose.\n\nDecision: maintenance at 2 heavy sessions a week, one gastrocnemius-biased (standing single-leg) and one soleus-biased (seated). Not zero, because the tendon detrains inside a month. Not 3, because the athlete is asymptomatic, game load is now the highest of the program (3 basketball days plus hockey), and the third slot is the one that does not run. Return-to-treatment triggers written into Section 4. Weekday basketball will raise Achilles load from Week 37; the ramp rule and the triggers are the monitor.\n\nProgression. Trap bar 250 to 260, squat 165 to 175, RDL 130 to 140 between 11/3 and 11/11: double progression after the layoff, on track. Bench 165, 5+ set gave 5 on 11/12: hold. Close grip 115 to 120, row 145 to 150, OHP 75 to 80. All within Section 7 bands. No stall, no deload trigger.\n\nBody composition: last weight 219.0 on 11/2 (post-flight). 11/7 weigh-in missed. Nothing to call.\n\nNot reviewed: nutrition and sleep, per the Week 23 rule.",
+      "changes": "1. knowledge/achilles-tendinopathy-hsr.md: new Maintenance section (Kubo 2010, Kubo 2012, Bickel 2011), references 19 to 21, Corrections Log entry.\n2. CLAUDE.md Section 4: treatment versus maintenance; maintenance = 2 heavy sessions per week (standing single-leg plus seated); four return-to-3 triggers. Section 3 table and calf targets, the review checklist and the equipment note updated to match. The standalone third calf session marked as treatment-only.\n3. CLAUDE.md Overview: pulldown, arms and core move off the upper day to after a run (no barbell, no leg load). Standing calf no longer rides after a run; it rides on the lower day. December shape updated.\n4. modifiedWeeks 37: Thu is upper barbell plus seated calves. Fri is run plus pulldown, arms, core; standing calves removed. Wed keeps the retest plus standing single-leg 2x6. Triceps 35 to 40 and Pallof 37 to 40 after top-of-range sets on 11/13.\n5. Not changed: barbell loads, ramp caps, two barbell days, gym plyos off."
     }
   ],
   "bodyLog": [
@@ -9683,7 +9689,7 @@
       "title": "Weekday basketball starts",
       "blockLabel": "Power and jump",
       "subtitle": "Two weekday runs. Barbell on non-run days.",
-      "reason": "Free weekdays through February. Basketball 3 days a week: Sunday plus two weekday runs through 11/29, then three weekday runs in December.\n\nBasketball and barbell go on separate days. Pick the run days each week. Never two runs in a row, and no run the Monday after Sunday games. Tuesday and Friday fit best.\n\nLower body goes the day after the first run. Upper body, arms, core and seated calves go on another non-run day. Standing calves go after the second run, about 10 minutes, no barbell.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. Add about 15 minutes a week only if all three hold. Pain while playing stays at 3/10 or less. It settles within 24 hours. Morning stiffness stays under 15 minutes.\n\nLoads are targets. They get adjusted when this week's sessions are logged.",
+      "reason": "Free weekdays through February. Basketball 3 days a week: Sunday plus two weekday runs through 11/29, then three weekday runs in December.\n\nBasketball and barbell go on separate days. Pick the run days each week. Never two runs in a row, and no run the Monday after Sunday games. Tuesday and Friday fit best.\n\nLower body goes the day after the first run. Upper body and seated calves go on another non-run day. Pulldown, arms and core go after the second run. No barbell on a run day.\n\nCalf work is now 2 heavy sessions a week: standing single-leg on the lower day, seated on the upper day. It goes back to 3 if morning stiffness reaches 15 minutes on two mornings, pain passes 3/10 while playing, or the retest gap passes 10%.\n\nWeekday runs are capped at 45 minutes this week and 60 next week. Add about 15 minutes a week only if all three hold. Pain while playing stays at 3/10 or less. It settles within 24 hours. Morning stiffness stays under 15 minutes.\n\nLoads are targets. They get adjusted when this week's sessions are logged.",
       "schedule": [
         {
           "day": "Sun",
@@ -9775,8 +9781,8 @@
           "day": "Thu",
           "date": "2026-11-19",
           "type": "training",
-          "desc": "Upper body, arms, core, seated calves",
-          "longDesc": "No basketball. Seated calves first. Bench carries the one calibration set of the week. Arms and core last.",
+          "desc": "Upper body, seated calves",
+          "longDesc": "No basketball. Seated calves first. Bench carries the one calibration set of the week. Pulldown, arms and core now go after Friday's run.",
           "exercises": [
             {
               "name": "Seated Calf Raise (HSR)",
@@ -9807,6 +9813,21 @@
               "sets": "3x5",
               "weight": "80 lbs",
               "notes": "Barbell, standing. No leg dip, no leg drive. Collarbone to full lockout."
+            }
+          ]
+        },
+        {
+          "day": "Fri",
+          "date": "2026-11-20",
+          "type": "training",
+          "desc": "Run 2: basketball, pulldown, arms, core",
+          "longDesc": "Play at 11:30, 45 minutes maximum. Then pulldown, arms and core, about 25 minutes. No barbell, no calf work today.",
+          "exercises": [
+            {
+              "name": "Basketball (pickup)",
+              "sets": "11:30 AM, 45 min cap",
+              "weight": "game",
+              "notes": "Stop at 45 minutes this week. No barbell today. Report minutes, intensity and any achilles or calf pain."
             },
             {
               "name": "Lat Pulldown",
@@ -9823,47 +9844,26 @@
             {
               "name": "Cable Triceps Pushdown",
               "sets": "3x10-12",
-              "weight": "35 lbs",
-              "notes": "Elbows pinned, full lockout. Last set to failure. Report reps per set."
+              "weight": "40 lbs",
+              "notes": "Elbows pinned, full lockout. Up from 35 after 3x12 on 11/13; use the next setting above 35 if 40 is not on the stack. Last set to failure. Report reps per set."
             },
             {
               "name": "Cable Biceps Curl",
               "sets": "3x10-12",
-              "weight": "40 lbs",
+              "weight": "42 lbs",
               "notes": "Full extension at the bottom, no swing. Last set to failure. Report reps per set."
             },
             {
               "name": "Pallof Press",
               "sets": "2x6-8/side",
-              "weight": "35 lbs",
-              "notes": "Arms fully extended, resist the pull. Last set to failure. Report reps."
+              "weight": "40 lbs",
+              "notes": "Arms fully extended, resist the pull. Up from 37 after 2x8 per side on 11/13. Last set to failure. Report reps."
             },
             {
               "name": "Cable Woodchop (Low-to-High)",
               "sets": "2x6-8/side",
-              "weight": "35 lbs",
+              "weight": "37 lbs",
               "notes": "Rotate through the trunk, not the arms. Last set to failure. Skip if it bothers the lower back."
-            }
-          ]
-        },
-        {
-          "day": "Fri",
-          "date": "2026-11-20",
-          "type": "training",
-          "desc": "Run 2: basketball, standing calves",
-          "longDesc": "Play at 11:30, 45 minutes maximum. Standing calves after, about 10 minutes. No barbell.",
-          "exercises": [
-            {
-              "name": "Basketball (pickup)",
-              "sets": "11:30 AM, 45 min cap",
-              "weight": "game",
-              "notes": "Stop at 45 minutes this week. No barbell today. Report minutes, intensity and any achilles or calf pain."
-            },
-            {
-              "name": "Single-Leg Calf Raise (HSR)",
-              "sets": "3x6/leg, plus 1 extra left",
-              "weight": "BW + 67 lb/leg, machine",
-              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Load may rise to BW + 77 if the 11/18 retest supports it. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             }
           ]
         },

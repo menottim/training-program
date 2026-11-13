@@ -3800,6 +3800,49 @@
       ],
       "notes": "Five lifts as prescribed. Bench set 3 gave 5 reps, so bench holds at 165. Lat pulldown, arms and core moved to 11/13. No achilles or calf pain.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-11-13",
+      "type": "training",
+      "activity": "Calves, pulldown, arms, core (Fri Phase 3)",
+      "exercises": [
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "3x6/leg, plus 1 extra left",
+          "weight": "BW + 67 lb/leg, machine"
+        },
+        {
+          "name": "Lat Pulldown",
+          "sets": "2x6-8",
+          "weight": "140 lbs"
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3x10-12",
+          "weight": "15 lb DBs"
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "sets": "3x10-12",
+          "weight": "35 lbs"
+        },
+        {
+          "name": "Cable Biceps Curl",
+          "sets": "3x10-12",
+          "weight": "40 lbs"
+        },
+        {
+          "name": "Pallof Press",
+          "sets": "2x6-8/side",
+          "weight": "35 lbs"
+        },
+        {
+          "name": "Cable Woodchop (Low-to-High)",
+          "sets": "2x6-8/side",
+          "weight": "35 lbs"
+        }
+      ],
+      "notes": "No basketball. All work as prescribed, including the lat pulldown, arms and core moved from 11/12."
     }
   ],
   "scienceReviews": [

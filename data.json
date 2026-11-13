@@ -9585,20 +9585,14 @@
           "day": "Fri",
           "date": "2026-11-13",
           "type": "training",
-          "desc": "Run 2, standing calves, arms and core",
-          "longDesc": "Play at 11:30, 45 minutes maximum. Standing calves after, about 10 minutes. Then the moved Thursday work: lat pulldown, arms, core. No barbell.",
+          "desc": "Standing calves, pulldown, arms, core",
+          "longDesc": "No basketball. Standing calves first, about 10 minutes. Then lat pulldown, arms and core moved from Thursday. No barbell.",
           "exercises": [
-            {
-              "name": "Basketball (pickup)",
-              "sets": "11:30 AM, 45 min cap",
-              "weight": "game",
-              "notes": "Stop at 45 minutes. No barbell today. Report minutes, intensity and any achilles or calf pain."
-            },
             {
               "name": "Single-Leg Calf Raise (HSR)",
               "sets": "3x6/leg, plus 1 extra left",
               "weight": "BW + 67 lb/leg, machine",
-              "notes": "After basketball, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
+              "notes": "First today, about 10 minutes. Floor range, no heel drop, 3s up and 3s down. Machine taken: 35 lb dumbbell held, each set to the last full-tempo rep."
             },
             {
               "name": "Lat Pulldown",

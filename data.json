@@ -3860,6 +3860,14 @@
       "type": "recovery",
       "activity": "Rest day",
       "notes": "Morning calf read fine. Day after a two-game Sunday. Left calf tightness from Sunday resolved. No weigh-in on 11/14."
+    },
+    {
+      "date": "2026-11-17",
+      "type": "game",
+      "activity": "Basketball",
+      "duration": "30 min",
+      "intensity": "high",
+      "notes": "Tuesday weekday run, 11:30. Run 1 of the week."
     }
   ],
   "scienceReviews": [

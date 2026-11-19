@@ -3904,6 +3904,36 @@
       ],
       "notes": "Calf retest 10 left, 10 right (last test 10/9). No pain. Left achilles and calf felt about 25% weaker than right. Calf work, trap bar and squat as prescribed. RDL 145 instead of 140. Lateral raises skipped.",
       "achillesPain": 0
+    },
+    {
+      "date": "2026-11-19",
+      "type": "training",
+      "activity": "Upper body (Thu Phase 3)",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "3x5, set 3 = 7 reps",
+          "weight": "165 lbs"
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "sets": "3x5",
+          "weight": "120 lbs"
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "sets": "3x5",
+          "weight": "155 lbs",
+          "notes": "5 lb over the 150 prescribed."
+        },
+        {
+          "name": "Strict Overhead Press",
+          "sets": "3x5",
+          "weight": "85 lbs",
+          "notes": "5 lb over the 80 prescribed."
+        }
+      ],
+      "notes": "Bench set 3 gave 7 reps, so bench goes to 170. Close grip as prescribed. Row 155 and overhead press 85, both 5 lb up. Seated calf raises not done, moved to 11/20."
     }
   ],
   "scienceReviews": [
@@ -9899,13 +9929,19 @@
           "date": "2026-11-20",
           "type": "training",
           "desc": "Run 2: basketball, pulldown, arms, core",
-          "longDesc": "Play at 11:30, 45 minutes maximum. Then pulldown, arms and core, about 25 minutes. No barbell, no calf work today.",
+          "longDesc": "Play at 11:30, 45 minutes maximum. Then seated calves, pulldown, arms and core, about 35 minutes. Seated calves moved from Thursday. No barbell today.",
           "exercises": [
             {
               "name": "Basketball (pickup)",
               "sets": "11:30 AM, 45 min cap",
               "weight": "game",
               "notes": "Stop at 45 minutes this week. No barbell today. Report minutes, intensity and any achilles or calf pain."
+            },
+            {
+              "name": "Seated Calf Raise (HSR)",
+              "sets": "3x8",
+              "weight": "185 lbs",
+              "notes": "After the run. Knees bent, full range, 3s up and 3s down. The eighth rep should be the last one available. Report if a ninth was there. Skip if achilles pain passed 3/10 in the run. Fallback: 35 lb dumbbell, one leg at a time."
             },
             {
               "name": "Lat Pulldown",
@@ -10050,12 +10086,14 @@
             {
               "name": "Bench Press",
               "sets": "3x5, set 3 = 5+",
-              "notes": "Calibration set, load from the 11/19 count. 5 to 6 reps holds. 7 to 8 adds 5. 9 to 10 adds 10. Stop at the last clean rep, cap 10."
+              "notes": "Calibration set. 5 to 6 reps holds. 7 to 8 adds 5. 9 to 10 adds 10. Stop at the last clean rep, cap 10.",
+              "weight": "170 lbs"
             },
             {
               "name": "Close Grip Bench Press",
               "sets": "3x5",
-              "notes": "Hands shoulder width, elbows tucked. Stop at five."
+              "notes": "Hands shoulder width, elbows tucked. Stop at five.",
+              "weight": "125 lbs"
             },
             {
               "name": "Bent Over Barbell Row",

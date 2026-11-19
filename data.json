@@ -9928,20 +9928,14 @@
           "day": "Fri",
           "date": "2026-11-20",
           "type": "training",
-          "desc": "Run 2: basketball, pulldown, arms, core",
-          "longDesc": "Play at 11:30, 45 minutes maximum. Then seated calves, pulldown, arms and core, about 35 minutes. Seated calves moved from Thursday. No barbell today.",
+          "desc": "No run, seated calves, pulldown, arms, core",
+          "longDesc": "No basketball today, and the run is not made up. Seated calves first, then pulldown, arms and core, about 35 minutes. Seated calves moved from Thursday. No barbell today.",
           "exercises": [
-            {
-              "name": "Basketball (pickup)",
-              "sets": "11:30 AM, 45 min cap",
-              "weight": "game",
-              "notes": "Stop at 45 minutes this week. No barbell today. Report minutes, intensity and any achilles or calf pain."
-            },
             {
               "name": "Seated Calf Raise (HSR)",
               "sets": "3x8",
               "weight": "185 lbs",
-              "notes": "After the run. Knees bent, full range, 3s up and 3s down. The eighth rep should be the last one available. Report if a ninth was there. Skip if achilles pain passed 3/10 in the run. Fallback: 35 lb dumbbell, one leg at a time."
+              "notes": "First today. Knees bent, full range, 3s up and 3s down. The eighth rep should be the last one available. Report if a ninth was there. Fallback: 35 lb dumbbell, one leg at a time."
             },
             {
               "name": "Lat Pulldown",

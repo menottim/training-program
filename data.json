@@ -3868,6 +3868,41 @@
       "duration": "30 min",
       "intensity": "high",
       "notes": "Tuesday weekday run, 11:30. Run 1 of the week. Slight left achilles tightness and soreness."
+    },
+    {
+      "date": "2026-11-18",
+      "type": "training",
+      "activity": "Lower body (Wed Phase 3)",
+      "exercises": [
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "1 set to failure per leg (retest)",
+          "weight": "BW + 67 lb/leg, machine",
+          "notes": "Retest. 10 reps left, 10 reps right."
+        },
+        {
+          "name": "Single-Leg Calf Raise (HSR)",
+          "sets": "2x6/leg",
+          "weight": "BW + 67 lb/leg, machine"
+        },
+        {
+          "name": "Trap Bar Deadlift",
+          "sets": "3x5",
+          "weight": "260 lbs"
+        },
+        {
+          "name": "Back Squat",
+          "sets": "3x5",
+          "weight": "175 lbs"
+        },
+        {
+          "name": "Barbell Romanian Deadlift",
+          "sets": "3x5",
+          "weight": "145 lbs",
+          "notes": "5 lb over the 140 prescribed."
+        }
+      ],
+      "notes": "Calf retest 10 left, 10 right (last test 10/9). Calf work and trap bar and squat as prescribed. RDL 145 instead of 140. Lateral raises skipped."
     }
   ],
   "scienceReviews": [
